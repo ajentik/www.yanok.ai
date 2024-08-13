@@ -7,19 +7,12 @@ title: "Privacy Policy"
 
 ## **For Yanok Gab Chat App**
 
-### How we handle your data for free users:
-
-- All of your data include API keys, chat history, chat messages are stored locally on your browser (using Local Storage).
+- All of your data include chat history, chat messages are stored locally on your browser (using Local Storage).
 - The entire app is a static website, we don't have a backend server to collect data to the server side.
-- When you send a message on chat.yanok.ai, the website sends a request to OpenAI API endpoints using the API key you provided.
+- When you send a message on chat.yanok.ai, the website sends a request to OpenAI API endpoints using Yanok's API key.
 - Requests are sent directly from your browser to OpenAI's server using secured transport protocol HTTPS. There is no middle server and no one else can see the requests, responses and their content.
 - For Anthropic models, requests are proxied through Yanok Gab proxy server to Anthropic's server. This is because Anthropic doesn't support direct request from your browser. We don't log and store any data from the requests. The proxy server purely forwards your request to Anthropic's server and does nothing else. For maximum privacy, you can setup your own proxy server for Anthropic models by going to the Setting panel (click the gear icon) → Advanced Settings → Anthropic Chat Completions Endpoint.
 - There is strictly no external JavaScript run on Yanok Gab.
-
-### How we handle your data for paid users:
-
-Privacy policy for paid users are the same as free users, with the following additional points:
-
 - When you subscribe to a plan, we store your email address and plan details in our database. We use this information to send you information and verify your account to use Yanok Gab.
 - When a new version of Yanok Gab is available, we will send you an email to notify you about new features and updates. You can unsubscribe from the email list at any time.
 
