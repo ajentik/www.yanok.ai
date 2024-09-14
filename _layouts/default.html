@@ -1,35 +1,7 @@
 <!DOCTYPE html>
 <html lang="{{ site.lang | default: "en-US" }}">
   <head>{% include head.html %}
-    <meta charset="UTF-8">
-    <title>yno - Drive Daily Productivity</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- CSS Styling -->
-    <style>
-        /* Widget Container */
-        .yno-widget {
-            position: fixed;
-            bottom: 20px;
-            right: 20px;
-            z-index: 1000;
-        }
-
-        /* Toggle Button */
-        .yno-button {
-            background-color: #007BFF;
-            color: #fff;
-            padding: 15px;
-            border: none;
-            border-radius: 50%;
-            cursor: pointer;
-            font-size: 16px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        }
-
-        .yno-button:hover {
-            background-color: #0056b3;
-        }
-    </style>
+    <script defer src="https://www.yno.ai/widget.js"></script>
   </head>
   
   <body class="font-jost antialiased text-white bg-gradient-to-br from-darkerBlue to-darkBlue">
@@ -39,32 +11,6 @@
       <div class="grow w-full">{{ content }}</div>
       <div class="site-gutter w-full max-w-container">{% include footer.html %}</div>
     </div>
-
-    <!-- Widget Structure -->
-    <div class="yno-widget">
-      <!-- Toggle Button -->
-      <button class="yno-button" onclick="openYnoChat()" aria-label="Chat with yno window">yno ai</button>
-  </div>
-
-  <!-- JavaScript Functionality -->
-  <script>
-      function openYnoChat() {
-          var chatUrl = 'www.yno.ai'; // Replace with the URL of your chat service
-          var width = 400;
-          var height = 600;
-          var left = (window.screen.width / 2) - (width / 2);
-          var top = (window.screen.height / 2) - (height / 2);
-          var windowFeatures = 'toolbar=no,location=no,status=no,menubar=no,scrollbars=yes,resizable=yes';
-          windowFeatures += ',width=' + width;
-          windowFeatures += ',height=' + height;
-          windowFeatures += ',top=' + top;
-          windowFeatures += ',left=' + left;
-          var newWindow = window.open(chatUrl, 'ynoChat', windowFeatures);
-          if (window.focus) {
-              newWindow.focus();
-          }
-      }
-  </script>
 
   </body>
 </html>
