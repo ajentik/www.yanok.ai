@@ -12,7 +12,6 @@
             bottom: 20px;
             right: 20px;
             z-index: 1000;
-            font-family: Arial, sans-serif;
         }
 
         /* Toggle Button */
@@ -30,43 +29,6 @@
         .yno-button:hover {
             background-color: #0056b3;
         }
-
-        /* Chat Window */
-        .yno-chat-window {
-            display: none;
-            position: fixed;
-            bottom: 80px;
-            right: 20px;
-            width: 350px;
-            height: 500px;
-            max-width: 90%;
-            max-height: 80%;
-            border: 1px solid #ccc;
-            border-radius: 10px;
-            overflow: hidden;
-            background-color: #fff;
-            box-shadow: 0 8px 16px rgba(0,0,0,0.2);
-        }
-
-        /* Responsive Design */
-        @media screen and (max-width: 600px) {
-            .yno-chat-window {
-                width: 100%;
-                height: 100%;
-                bottom: 0;
-                right: 0;
-                border-radius: 0;
-                max-width: none;
-                max-height: none;
-            }
-        }
-
-        /* Iframe Styling */
-        .yno-chat-window iframe {
-            width: 100%;
-            height: 100%;
-            border: none;
-        }
     </style>
   </head>
   
@@ -81,21 +43,25 @@
     <!-- Widget Structure -->
     <div class="yno-widget">
       <!-- Toggle Button -->
-      <button class="yno-button" onclick="toggleYnoChat()">yno</button>
-      <!-- Chat Window -->
-      <div class="yno-chat-window" id="ynoChatWindow">
-          <iframe src="https://www.yno.ai" id="ynoIframe"></iframe>
-      </div>
+      <button class="yno-button" onclick="openYnoChat()" aria-label="Chat with yno window">yno ai</button>
   </div>
 
   <!-- JavaScript Functionality -->
   <script>
-      function toggleYnoChat() {
-          var chatWindow = document.getElementById('ynoChatWindow');
-          if (chatWindow.style.display === 'block') {
-              chatWindow.style.display = 'none';
-          } else {
-              chatWindow.style.display = 'block';
+      function openYnoChat() {
+          var chatUrl = 'www.yno.ai'; // Replace with the URL of your chat service
+          var width = 400;
+          var height = 600;
+          var left = (window.screen.width / 2) - (width / 2);
+          var top = (window.screen.height / 2) - (height / 2);
+          var windowFeatures = 'toolbar=no,location=no,status=no,menubar=no,scrollbars=yes,resizable=yes';
+          windowFeatures += ',width=' + width;
+          windowFeatures += ',height=' + height;
+          windowFeatures += ',top=' + top;
+          windowFeatures += ',left=' + left;
+          var newWindow = window.open(chatUrl, 'ynoChat', windowFeatures);
+          if (window.focus) {
+              newWindow.focus();
           }
       }
   </script>
