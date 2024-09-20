@@ -35,7 +35,7 @@
           sidebar.classList.toggle('w-12');
           contentWrapper.classList.toggle('md:ml-64');
           contentWrapper.classList.toggle('md:ml-12');
-          document.querySelectorAll('.submenu, .navigation-link, #sidebar > div:not(:last-child)').forEach(el => el.classList.toggle('hidden'));
+          document.querySelectorAll('.submenu, .navigation-link, #sidebar > div:not(:first-child, :last-child)').forEach(el => el.classList.toggle('hidden'));
           document.querySelectorAll('.submenu-toggle svg').forEach(el => el.classList.toggle('hidden'));
           sidebarCollapse.querySelector('svg').classList.toggle('rotate-180');
         }
