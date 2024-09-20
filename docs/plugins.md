@@ -1,3 +1,8 @@
+---
+layout: solutions
+title: "Plugins"
+---
+
 # Plugins
 
 **Yanok Gab Plugins** allow you to extend the capabilities of the AI assistant by providing external tools. To get started, click the “Plugins” button on the start screen.
@@ -265,8 +270,8 @@ When running an HTTP Action on server side (server plugin), your plugin has acce
 | --- | --- |
 | CHAT_ID | Unique identifier of a chat (current conversation) where the plugin is used. |
 | USER_ID | Unique identifier of the user who is using the plugin. |
-| OAUTH_USER_ID_TOKEN | The id_token of the user. Only available if the current user is authenticated using https://docs.typingmind.com/typingmind-custom/user-management/setup-oauth-2.0. |
-| OAUTH_USER_ACCESS_TOKEN | The access_token of the user. Only available if the current user is authenticated using https://docs.typingmind.com/typingmind-custom/user-management/setup-oauth-2.0. |
+| OAUTH_USER_ID_TOKEN | The id_token of the user. Only available if the current user is authenticated. |
+| OAUTH_USER_ACCESS_TOKEN | The access_token of the user. Only available if the current user is authenticated. |
 
 ## **HTTP Action Post-Processing**
 
@@ -281,7 +286,7 @@ For example, here is how the DALLE-3 plugin uses Handlebars.js template to trans
 
 You can also use all variables in this post-processing via a special property called `__VARIABLES` (Only support for object responses):
 
-![__variables.png](Plugins%2005f741f780804a8bacd03252a1ab0a46/__variables.png)
+![variables_post.png](Plugins%2005f741f780804a8bacd03252a1ab0a46/variables_post.png)
 
 ## **Test your HTTP Action**
 
@@ -414,16 +419,16 @@ To share a plugin via GitHub:
 2. Create 3 files: `README.md` , `implementation.js` and `plugin.json`:
     - `README.md`: plugin overview
     - `implementation.js`: this file contains the JS code, it is only required if you use Javascript code implementation. It must contain a function with the name as same as the id in plugin.json file
-    - `plugin.json`: a JSON file containing all configs of the plugin, please check [**this guide**](https://docs.typingmind.com/plugins/build-a-typingmind-plugin) to understand more. It has the following properties:
+    - `plugin.json`: a JSON file containing all configs of the plugin. It has the following properties:
         - `version`: number, for other users to notice to update
         - `uuid`: string, this is the unique id to distinguish plugins
         - `iconURL`: string
         - `emoji`: string, this will be used if `iconURL` is not available
         - `title`: string, the displayed name of the plugin
-        - `userSettings`: JSON string, check details in [**this guide**](https://docs.typingmind.com/plugins/build-a-typingmind-plugin#0e3d2ca8c78f4b62b1a8504957bbb268)
-        - `openaiSpec`: JSON string, check details in [**this guide**](https://docs.typingmind.com/plugins/build-a-typingmind-plugin#f75675f108634820be70b39319cafb08)
+        - `userSettings`: JSON string
+        - `openaiSpec`: JSON string
         - `implementationType`: string, `"http"` or `"javascript"`
-        - `httpAction`: JSON string, required if the implementation is HTTP, check details in [**this guide**](https://docs.typingmind.com/plugins/build-a-typingmind-plugin#f8f5759520614775aaf136c279931e76)
+        - `httpAction`: JSON string, required if the implementation is HTTP
             - `id`: string, uuid preferred
             - `method`: string, the request method
             - `url`: string
