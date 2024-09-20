@@ -35,11 +35,17 @@
       #sidebar.overflow-hidden::-webkit-scrollbar {
         display: none;
       }
+
+      /* Apply 8% indent for main content sections */
+      #content-wrapper > div {
+        padding-left: 8%;
+        padding-right: 8%;
+      }
     </style>
   </head>
-  
+
   <body class="font-jost antialiased text-white bg-gradient-to-br from-darkerBlue to-darkBlue flex">
-    <script type="module" src="{{ "/assets/javascript/cookieconsent-config.js" | relative_url }}"></script>
+    <script type="module" src="{{ '/assets/javascript/cookieconsent-config.js' | relative_url }}"></script>
     
     {% include navigation.html %}
     
@@ -112,6 +118,14 @@
             contentWrapper.classList.add('ml-0');
             contentWrapper.classList.remove('md:ml-64');
           }
+        });
+
+        // Maintain menu status after clicking
+        const menuItems = document.querySelectorAll('.submenu a');
+        menuItems.forEach(item => {
+          item.addEventListener('click', (e) => {
+            e.stopPropagation();
+          });
         });
       });
     </script>
