@@ -32,13 +32,6 @@ module.exports = {
         medBlue: 'rgb(4, 57, 91)',
         darkBlue: 'rgb(2, 16, 49)',
         darkerBlue: 'rgb(0, 5, 16)',
-        menuBg: 'rgb(0, 10, 30)', // Adjust this color as needed
-      },
-      spacing: {
-        'side-menu': '16rem', // 64px, matching the width in the HTML
-      },
-      width: {
-        '20': '5rem', // For collapsed menu
       },
     },
   },
