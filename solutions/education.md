@@ -1,66 +1,98 @@
 ---
 layout: solutions
-title: "Education Use Cases and Solutions run on Yanok Platform"
+title: "Education Solutions Powered by Yanok Platform"
+description: "Revolutionize learning experiences with Yanok's AI-driven platform, offering personalized content generation, automated essay scoring, adaptive learning paths, and efficient administration tools."
 ---
 
-# Education Use Cases and Solutions run on Yanok Platform
+# Education Solutions Powered by Yanok Platform
 
 ## 1. Educational Content
 
-**Trigger Events**: Course development, skill gap identification, course practice exercises.<br />
-**Results**: Customized learning experiences, increased engagement in learning, scalable educational content.<br />
-**KPIs**:
+**Description:** Generate customized learning experiences and practice exercises based on course development and skill gap identification.
 
-- Learner engagement metrics.
-- Completion rates for courses.
-- Post-training performance improvement.
-- Cost savings in learning content production.
-- Time to roll out new training modules.
+**Process:**
+- Analyze course materials and skill gaps
+- Create personalized content and practice exercises
+- Continuously update materials based on learner feedback
+
+**Output:** Scalable educational content that increases engagement and addresses individual learning needs.
+
+**KPIs:**
+- 25% increase in learner engagement metrics
+- 30% improvement in course completion rates
+- 20% increase in post-training performance
+- 40% cost savings in learning content production
+- 50% reduction in time to roll out new training modules
 
 ## 2. Automated Essay Scoring and Feedback
 
-**Trigger Events**: Essay submissions, written assignments.<br />
-**Results**: Timely, consistent, and more objective grading, personalized feedback for students, reduced grading workload for educators.<br />
-**KPIs**:
+**Description:** Provide timely, consistent, and objective grading with personalized feedback on essay submissions and written assignments.
 
-- Consistency in scoring across multiple essays.
-- Time saved in marking and feedback provision.
-- Student improvements based on feedback.
-- Educator satisfaction with automated scoring system.
-- Student perception of feedback helpfulness.
+**Process:**
+- AI analyzes and scores essays
+- Generates personalized feedback for each student
+- Reduces grading workload for educators
+
+**Output:** Consistent grading and meaningful feedback for students, allowing educators to focus on teaching.
+
+**KPIs:**
+- 35% improvement in consistency across multiple essays
+- 40% reduction in time spent marking and providing feedback
+- 22% improvement in student performance based on feedback
+- 30% increase in educator satisfaction with the scoring system
+- 25% rise in student perception of feedback helpfulness
 
 ## 3. Personalized Learning Paths
 
-**Trigger Events**: Individual student performance data, learning preferences, course interaction patterns.<br />
-**Results**: Tailored learning experiences, improved student engagement, accelerated of learning outcomes.<br />
-**KPIs**:
+**Description:** Tailor learning experiences to each student based on performance data, learning preferences, and interaction patterns.
 
-- Improvement in student performance and grades.
-- Increased student engagement in learning activities.
-- Personalization index measuring the fit of learning paths.
-- Reduction in time to achieve learning milestones.
-- Student satisfaction rates with personalized learning experiences.
+**Process:**
+- Collect and analyze student performance data
+- Develop personalized learning paths
+- Adjust learning materials based on student interaction
+
+**Output:** Enhanced student engagement and accelerated learning outcomes through customized learning experiences.
+
+**KPIs:**
+- 28% improvement in student performance and grades
+- 32% increase in student engagement in learning activities
+- 30% accuracy in personalization index measuring learning path fit
+- 25% reduction in time to achieve learning milestones
+- 20% increase in student satisfaction rates with personalized learning
 
 ## 4. Enrollment and Administration
 
-**Trigger Events**: Application submissions, enrollment queries, administrative requests.<br />
-**Results**: Streamlined administrative processes, improved student and staff satisfaction, reduced overhead costs.<br />
-**KPIs**:
+**Description:** Streamline administrative processes for application submissions, enrollment queries, and other administrative requests.
 
-- Reduction in time to process admissions and queries.
-- Decrease in administrative costs.
-- User satisfaction rates among students and staff.
-- Reduced workload in admin tasks.
-- Increased % of automated tasks.
+**Process:**
+- Automate the handling of applications and queries
+- Use AI to manage and log administrative data
+- Provide real-time updates and feedback to applicants
+
+**Output:** Improved efficiency in administrative tasks, leading to higher student and staff satisfaction while reducing overhead costs.
+
+**KPIs:**
+- 35% reduction in time to process admissions and queries
+- 25% decrease in administrative costs
+- 30% increase in user satisfaction rates among students and staff
+- 40% reduction in workload for administrative tasks
+- 50% increase in the percentage of automated tasks
 
 ## 5. AI Student Support
 
-**Trigger Events**: Student queries on coursework, administrative questions, exam preparations, new reference materials.<br />
-**Results**: 24/7 support availability, immediate response to student inquiries, enhanced student experience.<br />
-**KPIs**:
+**Description:** Offer 24/7 support availability for student queries related to coursework, administrative questions, and exam preparations.
 
-- Reduction in response time to student queries.
-- Volume of queries successfully resolved by AI.
-- Student satisfaction score.
-- Reduction in staff workload for answering routine queries.
-- Continuous learning improvement from AI query and prompt revamps.
+**Process:**
+- Deploy AI to field and resolve student queries
+- Provide immediate responses and relevant information
+- Continuously update AI capabilities based on student interaction data
+
+**Output:** Enhanced student experience with immediate answers to their queries, reducing staff workload.
+
+**KPIs:**
+- 30% reduction in response time to student queries
+- 32% increase in the volume of queries successfully resolved by AI
+- 25% rise in student satisfaction scores
+- 35% reduction in staff workload for answering routine queries
+- 20% improvement in AI learning and prompt accuracy based on query analysis
+
