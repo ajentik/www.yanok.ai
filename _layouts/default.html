@@ -32,12 +32,18 @@
 
         function collapseSidebar() {
           sidebar.classList.toggle('w-64');
-          sidebar.classList.toggle('w-12');
+          sidebar.classList.toggle('w-0');
           contentWrapper.classList.toggle('md:ml-64');
-          contentWrapper.classList.toggle('md:ml-12');
-          document.querySelectorAll('.submenu, .navigation-link, #sidebar > div:not(:first-child, :last-child)').forEach(el => el.classList.toggle('hidden'));
-          document.querySelectorAll('.submenu-toggle svg').forEach(el => el.classList.toggle('hidden'));
+          contentWrapper.classList.toggle('md:ml-0');
+          document.querySelectorAll('#sidebar > *:not(:first-child, :last-child)').forEach(el => el.classList.toggle('hidden'));
           sidebarCollapse.querySelector('svg').classList.toggle('rotate-180');
+          
+          // Ensure the logo is visible when collapsed
+          const logo = sidebar.querySelector('img');
+          logo.classList.toggle('hidden');
+          
+          // Hide scrollbars when collapsed
+          sidebar.classList.toggle('overflow-hidden');
         }
 
         sidebarToggle.addEventListener('click', toggleSidebar);
