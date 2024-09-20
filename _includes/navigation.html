@@ -1,10 +1,8 @@
 <div id="sidebar" class="flex flex-col h-screen bg-darkerBlue w-64 fixed left-0 top-0 transition-all duration-300 z-50 transform -translate-x-full md:translate-x-0">
   <div class="p-5 border-b border-gray-700">
-    <a href="/" class="text-xl font-bold flex items-center mb-4">
-      <span>Yanok AI</span>
-    </a>
-    <a href="https://buy.stripe.com/dR6g2j9r85wD5FK000" target="_blank" class="text-sm font-medium hover:underline">
-      Pay for yno ai
+    <a href="/" class="flex items-center mb-4">
+      <img src="{{ "assets/images/logo.png" | relative_url }}" class="size-10 inline-block" alt="Yanok AI Logo">
+      <span class="invisible">Yanok AI</span>
     </a>
   </div>
   
@@ -68,11 +66,17 @@
           <a href="{{ "/diversity-and-inclusion.html" | relative_url }}" class="block text-sm hover:underline">Diversity & Inclusion</a>
         </div>
       </div>
-
-      <!-- Pay for yno ai link -->
-      <a href="https://buy.stripe.com/dR6g2j9r85wD5FK000" target="_blank" class="text-base font-medium navigation-link">Pay for yno ai</a>
     </div>
   </nav>
+  
+  <div class="mt-auto p-5 border-t border-gray-700 text-sm">
+    <div class="mb-2">
+      <a href="tel:+6588928831" class="hover:underline">+65 8892 8831</a>
+    </div>
+    <div>
+      160 Robinson Road, #14-04<br />Singapore
+    </div>
+  </div>
   
   <button id="sidebar-collapse" class="p-4 w-full text-center border-t border-gray-700">
     <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor">
