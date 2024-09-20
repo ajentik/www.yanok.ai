@@ -1,8 +1,7 @@
-<div id="sidebar" class="flex flex-col h-screen bg-darkerBlue w-64 fixed left-0 top-0 transition-all duration-300 z-50 transform -translate-x-full md:translate-x-0">
-  <div class="p-5 border-b border-gray-700">
+<div id="sidebar" class="flex flex-col h-screen bg-darkerBlue w-64 fixed left-0 top-0 transition-all duration-300 z-50 transform -translate-x-full md:translate-x-0 overflow-hidden">
+  <div class="p-5 border-b border-gray-700 flex-shrink-0">
     <a href="/" class="flex items-center">
-      <img src="{{ "assets/images/logo.png" | relative_url }}" class="size-10" alt="Yanok AI Logo">
-      <span class="invisible">Yanok AI</span>
+      <img src="{{ "assets/images/logo.png" | relative_url }}" class="w-10" alt="Yanok AI Logo">
     </a>
   </div>
   
@@ -11,73 +10,86 @@
       <!-- Product Menu Item -->
       <div class="group relative">
         <button class="w-full text-left flex items-center justify-between submenu-toggle py-2">
-          <span class="text-base font-medium navigation-link">Product</span>
+          <span class="text-base font-medium navigation-link pl-5">Product</span>
           <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 flex-shrink-0" viewBox="0 0 20 20" fill="currentColor">
-            <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
+            <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 1 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
           </svg>
         </button>
         <div class="submenu hidden pl-4 mt-2 space-y-2">
-          <a href="{{ "/platform.html#run-ai" | relative_url }}" class="block text-sm text-gray-400 hover:text-white">Run AI</a>
-          <a href="{{ "/platform.html#manage-api" | relative_url }}" class="block text-sm text-gray-400 hover:text-white">Manage API</a>
-          <a href="{{ "/platform.html#rag-data" | relative_url }}" class="block text-sm text-gray-400 hover:text-white">RAG Data</a>
-          <a href="{{ "/platform.html#maintain-security" | relative_url }}" class="block text-sm text-gray-400 hover:text-white">Maintain Security</a>
+          <a href="{{ "/platform.html#auto-workers" | relative_url }}" class="block text-sm text-gray-400 hover:text-white">AI Agents</a>
+          <a href="{{ "/platform.html#app-integrations" | relative_url }}" class="block text-sm text-gray-400 hover:text-white">API Integrations</a>
+          <a href="{{ "/platform.html#ai-integrations" | relative_url }}" class="block text-sm text-gray-400 hover:text-white">AI Integrations</a>
+          <a href="{{ "/platform.html#data-and-security" | relative_url }}" class="block text-sm text-gray-400 hover:text-white">Data & Security</a>
         </div>
       </div>
 
       <!-- Use Cases Menu Item (formerly Solutions) -->
       <div class="group relative">
         <button class="w-full text-left flex items-center justify-between submenu-toggle py-2">
-          <span class="text-base font-medium navigation-link">Use Cases</span>
+          <span class="text-base font-medium navigation-link pl-5">Use Cases</span>
           <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 flex-shrink-0" viewBox="0 0 20 20" fill="currentColor">
-            <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
+            <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 1 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
           </svg>
         </button>
         <div class="submenu hidden pl-4 mt-2 space-y-2">
-          <a href="{{ "/solutions/communication.html" | relative_url }}" class="block text-sm text-gray-500 hover:text-white">Communication</a>
-          <a href="{{ "/solutions/education.html" | relative_url }}" class="block text-sm text-gray-500 hover:text-white">Education and Training</a>
-          <a href="{{ "/solutions/legal.html" | relative_url }}" class="block text-sm text-gray-500 hover:text-white">Legal</a>
-          <a href="{{ "/solutions/regulatory-compliance.html" | relative_url }}" class="block text-sm text-gray-500 hover:text-white">Regulatory & Compliance</a>
-          <a href="{{ "/solutions/human-resources.html" | relative_url }}" class="block text-sm text-gray-500 hover:text-white">Human Resources</a>
-          <a href="{{ "/solutions/information-technology.html" | relative_url }}" class="block text-sm text-gray-500 hover:text-white">IT</a>
-          <a href="{{ "/solutions/marketing.html" | relative_url }}" class="block text-sm text-gray-500 hover:text-white">Marketing</a>
+          <a href="{{ "/solutions/communication.html" | relative_url }}" class="block text-sm text-gray-400 hover:text-white">Communication</a>
+          <a href="{{ "/solutions/education.html" | relative_url }}" class="block text-sm text-gray-400 hover:text-white">Education and Training</a>
+          <a href="{{ "/solutions/legal.html" | relative_url }}" class="block text-sm text-gray-400 hover:text-white">Legal</a>
+          <a href="{{ "/solutions/regulatory-compliance.html" | relative_url }}" class="block text-sm text-gray-400 hover:text-white">Regulatory & Compliance</a>
+          <a href="{{ "/solutions/human-resources.html" | relative_url }}" class="block text-sm text-gray-400 hover:text-white">Human Resources</a>
+          <a href="{{ "/solutions/information-technology.html" | relative_url }}" class="block text-sm text-gray-400 hover:text-white">IT</a>
+          <a href="{{ "/solutions/marketing.html" | relative_url }}" class="block text-sm text-gray-400 hover:text-white">Marketing</a>
         </div>
       </div>
 
       <!-- Company Menu Item -->
       <div class="group relative">
         <button class="w-full text-left flex items-center justify-between submenu-toggle py-2">
-          <span class="text-base font-medium navigation-link">Company</span>
+          <span class="text-base font-medium navigation-link pl-5">Company</span>
           <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 flex-shrink-0" viewBox="0 0 20 20" fill="currentColor">
-            <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
+            <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 1 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
           </svg>
         </button>
         <div class="submenu hidden pl-4 mt-2 space-y-2">
-          <a href="{{ "/about.html" | relative_url }}" class="block text-sm text-gray-500 hover:text-white">About</a>
-          <a href="{{ "/about.html#careers" | relative_url }}" class="block text-sm text-gray-500 hover:text-white">Careers</a>
-          <a href="{{ "/partners.html" | relative_url }}" class="block text-sm text-gray-500 hover:text-white">Partners</a>
-          <a href="{{ "/diversity-and-inclusion.html" | relative_url }}" class="block text-sm text-gray-500 hover:text-white">Diversity & Inclusion</a>
+          <a href="{{ "/about.html" | relative_url }}" class="block text-sm text-gray-400 hover:text-white">About</a>
+          <a href="{{ "/about.html#careers" | relative_url }}" class="block text-sm text-gray-400 hover:text-white">Careers</a>
+          <a href="{{ "/partners.html" | relative_url }}" class="block text-sm text-gray-400 hover:text-white">Partners</a>
+          <a href="{{ "/diversity-and-inclusion.html" | relative_url }}" class="block text-sm text-gray-400 hover:text-white">Diversity & Inclusion</a>
+        </div>
+      </div>
+
+      <!-- Payments Menu Item -->
+      <div class="group relative">
+        <button class="w-full text-left flex items-center justify-between submenu-toggle py-2">
+          <span class="text-base font-medium navigation-link text-yellow-300 pl-5">Payments</span>
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 flex-shrink-0" viewBox="0 0 20 20" fill="currentColor">
+            <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 1 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
+          </svg>
+        </button>
+        <div class="submenu hidden pl-4 mt-2 space-y-2">
+          <a href="https://buy.stripe.com/test_28o5mq1Hl2Ht1LW000" class="block text-sm text-gray-400 hover:text-white">yno AI</a>
+          <a href="https://buy.stripe.com/test_28o5mq1Hl2Ht1LW000" class="block text-sm text-gray-400 hover:text-white">Yanok Access</a>
         </div>
       </div>
     </div>
   </nav>
-  
+
   <div class="mt-auto p-5 border-t border-gray-700 text-sm">
-    <div class="mb-2">
-      <a href="tel:+6588928831" class="hover:underline">+65 8892 8831</a>
-    </div>
-    <div>
-      160 Robinson Road, #14-04<br />Singapore
-    </div>
+    <footer class="bg-darkerBlue text-center py-4">
+      <p class="text-sm text-gray-400">
+        Copyright © 2023-2024 Yanok AI. All rights reserved. All trademarks are protected by law and owned by their respective holders.
+      </p>
+    </footer>
   </div>
-  
-  <button id="sidebar-collapse" class="p-4 w-full text-center border-t border-gray-700">
+
+  <button id="sidebar-collapse" class="p-4 w-full text-center border-t border-gray-700 absolute bottom-0 left-0">
     <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mx-auto transform transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 19l-7-7 7-7m8 14l-7-7 7-7" />
     </svg>
   </button>
 </div>
 
-<button id="sidebar-toggle" class="fixed top-4 left-4 z-50 md:hidden bg-blue-500 p-2 rounded-full">
+<button id="sidebar-toggle" class="fixed top-20 left-4 z-50 md:hidden bg-blue-500 p-2 rounded-full">
   <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
   </svg>
