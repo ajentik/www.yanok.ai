@@ -2,6 +2,40 @@
 <html lang="{{ site.lang | default: "en-US" }}">
   <head>{% include head.html %}
     <script defer src="https://www.yno.ai/widget.js"></script>
+    <style>
+      /* Custom scrollbar styles */
+      #sidebar::-webkit-scrollbar {
+        width: 6px;
+      }
+
+      #sidebar::-webkit-scrollbar-track {
+        background: transparent;
+      }
+
+      #sidebar::-webkit-scrollbar-thumb {
+        background-color: rgba(255, 255, 255, 0.3);
+        border-radius: 20px;
+        border: transparent;
+      }
+
+      #sidebar::-webkit-scrollbar-thumb:hover {
+        background-color: rgba(255, 255, 255, 0.5);
+      }
+
+      /* Hide scrollbar when not needed */
+      #sidebar {
+        scrollbar-width: thin;
+        scrollbar-color: rgba(255, 255, 255, 0.3) transparent;
+      }
+
+      #sidebar.overflow-hidden {
+        scrollbar-width: none;
+      }
+
+      #sidebar.overflow-hidden::-webkit-scrollbar {
+        display: none;
+      }
+    </style>
   </head>
   
   <body class="font-jost antialiased text-white bg-gradient-to-br from-darkerBlue to-darkBlue flex">
@@ -11,7 +45,7 @@
     
     <div id="content-wrapper" class="flex-grow transition-all duration-300 ml-0 md:ml-64">
       <div class="flex flex-col items-center min-h-screen">
-        <div class="grow w-full pl-[8%] pr-[8%]">{{ content }}</div>
+        <div class="grow w-full">{{ content }}</div>
         <div class="w-full">{% include footer.html %}</div>
       </div>
     </div>
@@ -32,15 +66,17 @@
 
         function collapseSidebar() {
           sidebar.classList.toggle('w-64');
-          sidebar.classList.toggle('w-0');
+          sidebar.classList.toggle('w-16');
           contentWrapper.classList.toggle('md:ml-64');
-          contentWrapper.classList.toggle('md:ml-0');
+          contentWrapper.classList.toggle('md:ml-16');
           document.querySelectorAll('#sidebar > *:not(:first-child, :last-child)').forEach(el => el.classList.toggle('hidden'));
           sidebarCollapse.querySelector('svg').classList.toggle('rotate-180');
           
-          // Ensure the logo is visible when collapsed
+          // Ensure the logo and collapse button are visible when collapsed
           const logo = sidebar.querySelector('img');
-          logo.classList.toggle('hidden');
+          logo.classList.toggle('w-10');
+          logo.classList.toggle('w-6');
+          sidebarCollapse.classList.toggle('hidden');
           
           // Hide scrollbars when collapsed
           sidebar.classList.toggle('overflow-hidden');
@@ -54,6 +90,7 @@
             e.preventDefault();
             const submenu = toggle.closest('.group').querySelector('.submenu');
             submenu.classList.toggle('hidden');
+            toggle.querySelector('svg').classList.toggle('rotate-180');
           });
         });
 
