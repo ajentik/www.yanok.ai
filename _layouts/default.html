@@ -45,7 +45,7 @@
     
     <div id="content-wrapper" class="flex-grow transition-all duration-300 ml-0 md:ml-64">
       <div class="flex flex-col items-center min-h-screen">
-        <div class="grow w-full">{{ content }}</div>
+        <div class="grow w-full px-[8%]">{{ content }}</div>
         <div class="w-full">{% include footer.html %}</div>
       </div>
     </div>
@@ -62,6 +62,10 @@
           sidebar.classList.toggle('-translate-x-full');
           contentWrapper.classList.toggle('ml-0');
           contentWrapper.classList.toggle('md:ml-64');
+          
+          // Ensure the logo is visible when sidebar is toggled
+          const logo = sidebar.querySelector('img');
+          logo.classList.toggle('hidden');
         }
 
         function collapseSidebar() {
@@ -69,16 +73,19 @@
           sidebar.classList.toggle('w-16');
           contentWrapper.classList.toggle('md:ml-64');
           contentWrapper.classList.toggle('md:ml-16');
-          document.querySelectorAll('#sidebar > *:not(:first-child, :last-child)').forEach(el => el.classList.toggle('hidden'));
+          
+          const sidebarContent = document.querySelectorAll('#sidebar > *:not(:first-child, :last-child)');
+          sidebarContent.forEach(el => el.classList.toggle('hidden'));
+          
           sidebarCollapse.querySelector('svg').classList.toggle('rotate-180');
           
           // Ensure the logo and collapse button are visible when collapsed
           const logo = sidebar.querySelector('img');
           logo.classList.toggle('w-10');
           logo.classList.toggle('w-6');
-          sidebarCollapse.classList.toggle('hidden');
           
-          // Hide scrollbars when collapsed
+          // Toggle overflow on sidebar
+          sidebar.classList.toggle('overflow-y-auto');
           sidebar.classList.toggle('overflow-hidden');
         }
 
