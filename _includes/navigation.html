@@ -1,129 +1,89 @@
-<div class="flex items-center gap-7 py-5">
-  <a href="/" class="grow text-xl font-bold flex flex-row items-center">
-    <img src="{{ "assets/images/logo.png" | relative_url }}" class="size-10 inline-block">
-    <span class="hidden -ml-4">Yanok AI</span>
-  </a>
-  <div
-    class="bg-darkerBlue translate-x-full md:translate-x-0 absolute md:relative top-20 md:top-0 mt-[3px] md:mt-0 right-0 bottom-0 h-fit border-l border-l-gray-700 md:border-l-0 pt-5 md:py-0 pl-10 md:pl-0 transition duration-300 z-50"
-    id="menu">
-    <div class="flex flex-col md:flex-row gap-7 items-start md:items-center">
-      <div class="group relative cursor-pointer">
-        <div class="flex items-center justify-between">
-          <a class="menu-hover text-base font-medium navigation-link group" href="{{ "/platform.html" | relative_url
-            }}">
-            Product
-            <span class="navigation-link-underline"></span>
-          </a>
-        </div>
-        <div
-          class="md:invisible md:opacity-0 group-hover:visible group-hover:opacity-100 relative md:absolute md:z-50 w-full w-max md:ml-[-200%] transition-all duration-300"
-          onClick="">
-          <div
-            class="md:mt-5 border-white border-0 md:border-2 rounded-md md:bg-white text-white md:text-black shadow-xl flex flex-col md:grid md:grid-cols-2 gap-2 gap-x-8 py-7 px-10">
-            <a class="font-semibold text-lg mb-2 col-span-2 hover:underline" href="{{ "/platform.html" | relative_url
-              }}">Yanok AI Platform</a>
-            <a class="block hover:underline" href="{{ "/platform.html#auto-workers" | relative_url }}">AI Agents</a>
-            <a class="block hover:underline" href="{{ "/platform.html#app-integrations" | relative_url }}">API
-              Integrations</a>
-            <a class="block hover:underline" href="{{ "/platform.html#ai-integrations" | relative_url }}">AI
-              Integrations</a>
-            <a class="block hover:underline" href="{{ "/platform.html#data-and-security" | relative_url }}">Data &amp;
-              Security</a>
-          </div>
-        </div>
-      </div>
-      <div class="group relative cursor-pointer">
-        <div class="flex items-center justify-between">
-          <a class="menu-hover text-base font-medium navigation-link group" href="/solutions.html">
-            Solutions
-            <span class="navigation-link-underline"></span>
-          </a>
-        </div>
-        <div
-          class="md:invisible md:opacity-0 group-hover:visible group-hover:opacity-100 relative md:absolute md:z-50 w-full w-max md:ml-[-200%] transition-all duration-300"
-          onClick="">
-          <div
-            class="md:mt-5 border-white border-0 md:border-2 rounded-md md:bg-white text-white md:text-black shadow-xl grid md:grid-cols-2 gap-8 py-7 px-10">
-            <div class="flex flex-col gap-2">
-              <a class="font-semibold text-lg mb-2" href="{{ "/solutions.html#industry" | relative_url }}">By
-                Industry</span>
-                <a class="block hover:underline" href="{{ "/solutions/communication.html" | relative_url
-                  }}">Communication</a>
-                <a class="block hover:underline" href="{{ "/solutions/education.html" | relative_url }}">Education and
-                  Training</a>
-                <a class="block hover:underline" href="{{ "/solutions/legal.html" | relative_url }}">Legal</a>
-                <a class="block hover:underline" href="{{ "/solutions/regulatory-compliance.html" | relative_url
-                  }}">Regulatory & Compliance</a>
-            </div>
-            <div class="flex flex-col gap-2">
-              <a class="font-semibold text-lg mb-2" href="{{ "/solutions.html#role" | relative_url }}">By Role</span>
-                <a class="block hover:underline" href="{{ "/solutions/human-resources.html" | relative_url }}">Human
-                  Resources</a>
-                <a class="block hover:underline" href="{{ "/solutions/information-technology.html" | relative_url
-                  }}">IT</a>
-                <a class="block hover:underline" href="{{ "/solutions/marketing.html" | relative_url }}">Marketing</a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="group relative cursor-pointer hidden">
-        <div class="flex items-center justify-between">
-          <a class="menu-hover text-base font-medium navigation-link group" onClick="">
-            Resources
-            <span class="navigation-link-underline"></span>
-          </a>
-        </div>
-        <div
-          class="md:invisible md:opacity-0 group-hover:visible group-hover:opacity-100 relative md:absolute md:z-50 w-full w-max md:ml-[-200%] transition-all duration-300"
-          onClick="">
-          <div
-            class="md:mt-5 border-white border-0 md:border-2 rounded-md md:bg-white text-white md:text-black shadow-xl flex flex-col md:grid md:grid-cols-2 gap-2 gap-x-8 py-7 px-10">
-            <span class="font-semibold text-lg mb-2 col-span-2">For Developers</span>
-            <a class="block hover:underline" href="{{ "/docs.html#get-started" | relative_url }}">Getting Started</a>
-            <a class="block hover:underline" href="{{ "/docs.html#docs" | relative_url }}">Docs</a>
-            <a class="block hover:underline" href="{{ "/docs.html#guides" | relative_url }}">Guides</a>
-            <a class="block hover:underline" href="{{ "/docs.html#references" | relative_url }}">API References</a>
-          </div>
-        </div>
-      </div>
-      <div class="group relative cursor-pointer">
-        <div class="flex items-center justify-between">
-          <a class="menu-hover text-base font-medium navigation-link group" href="{{ "/about.html" | relative_url }}">
-            Company
-            <span class="navigation-link-underline"></span>
-          </a>
-        </div>
-        <div
-          class="md:invisible md:opacity-0 group-hover:visible group-hover:opacity-100 relative md:absolute md:z-50 w-full w-max md:ml-[-200%] transition-all duration-300"
-          onClick="">
-          <div
-            class="md:mt-5 border-white border-0 md:border-2 rounded-md md:bg-white text-white md:text-black shadow-xl flex flex-col md:grid md:grid-cols-2 gap-2 gap-x-8 py-7 px-10">
-            <span class="font-semibold text-lg mb-2 col-span-2">What is Yanok AI?</span>
-            <a class="block hover:underline" href="{{ "/about.html" | relative_url }}">About</a>
-            <a class="block hover:underline" href="{{ "/about.html#careers" | relative_url }}">Careers</a>
-            <a class="block hover:underline" href="{{ "/partners.html" | relative_url }}">Partners</a>
-            <a class="block hover:underline" href="{{ "/diversity-and-inclusion.html" | relative_url }}">Diversity
-              &amp; Inclusion</a>
-          </div>
-        </div>
-      </div>
-      <div class="group relative cursor-pointer">
-        <div class="flex items-center justify-between">
-          <a class="menu-hover text-base font-medium navigation-link group" target="_blank" href="{{ "https://buy.stripe.com/dR6g2j9r85wD5FK000" | relative_url }}">
-            Pay for Gab
-            <span class="navigation-link-underline"></span>
-          </a>
+<div class="vertical-menu fixed left-0 top-0 h-screen w-64 bg-darkerBlue flex flex-col py-5 px-4 z-50 overflow-y-auto transition-transform duration-300" id="sideMenu" style="transform: translateX(-100%);">
+  <div class="flex flex-col items-center gap-4 mb-8">
+    <a href="/" class="text-xl font-bold flex flex-row items-center">
+      <img src="{{ "assets/images/logo.png" | relative_url }}" class="size-10 inline-block">
+      <span class="ml-2">Yanok AI</span>
+    </a>
+    <a class="menu-hover text-base font-medium navigation-link group" target="_blank" href="{{ "https://buy.stripe.com/dR6g2j9r85wD5FK000" | relative_url }}">
+      Pay for yno ai
+      <span class="navigation-link-underline"></span>
+    </a>
+  </div>
+  
+  <nav class="flex flex-col gap-4">
+    <!-- Product menu item -->
+    <div class="group relative cursor-pointer">
+      <a class="block py-2 text-base font-medium hover:bg-blue-700 transition-colors duration-200" href="{{ "/platform.html" | relative_url }}">
+        Product
+      </a>
+      <div class="submenu invisible opacity-0 group-hover:visible group-hover:opacity-100 absolute left-full top-0 ml-2 w-64 bg-white text-black shadow-xl rounded-md transition-all duration-200">
+        <div class="p-4 flex flex-col gap-2">
+          <a class="font-semibold text-lg mb-2 hover:underline" href="{{ "/platform.html" | relative_url }}">Yanok AI Platform</a>
+          <a class="block hover:underline" href="{{ "/platform.html#auto-workers" | relative_url }}">AI Agents</a>
+          <a class="block hover:underline" href="{{ "/platform.html#app-integrations" | relative_url }}">API Integrations</a>
+          <a class="block hover:underline" href="{{ "/platform.html#ai-integrations" | relative_url }}">AI Integrations</a>
+          <a class="block hover:underline" href="{{ "/platform.html#data-and-security" | relative_url }}">Data & Security</a>
         </div>
       </div>
     </div>
-  </div>
-  <a href="/book-demo.html" class="btn font-semibold rounded-lg">
-    Contact Us
-  </a>
-  <div class="block md:hidden pr-5 cursor-pointer"
-    onClick="document.querySelector('#menu').classList.toggle('translate-x-full');">
-    <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-    </svg>
+
+    <!-- Solutions menu item -->
+    <div class="group relative cursor-pointer">
+      <a class="block py-2 text-base font-medium hover:bg-blue-700 transition-colors duration-200" href="/solutions.html">
+        Solutions
+      </a>
+      <div class="submenu invisible opacity-0 group-hover:visible group-hover:opacity-100 absolute left-full top-0 ml-2 w-64 bg-white text-black shadow-xl rounded-md transition-all duration-200">
+        <div class="p-4 flex flex-col gap-2">
+          <div class="mb-4">
+            <a class="font-semibold text-lg mb-2" href="{{ "/solutions.html#industry" | relative_url }}">By Industry</a>
+            <a class="block hover:underline" href="{{ "/solutions/communication.html" | relative_url }}">Communication</a>
+            <a class="block hover:underline" href="{{ "/solutions/education.html" | relative_url }}">Education and Training</a>
+            <a class="block hover:underline" href="{{ "/solutions/legal.html" | relative_url }}">Legal</a>
+            <a class="block hover:underline" href="{{ "/solutions/regulatory-compliance.html" | relative_url }}">Regulatory & Compliance</a>
+          </div>
+          <div>
+            <a class="font-semibold text-lg mb-2" href="{{ "/solutions.html#role" | relative_url }}">By Role</a>
+            <a class="block hover:underline" href="{{ "/solutions/human-resources.html" | relative_url }}">Human Resources</a>
+            <a class="block hover:underline" href="{{ "/solutions/information-technology.html" | relative_url }}">IT</a>
+            <a class="block hover:underline" href="{{ "/solutions/marketing.html" | relative_url }}">Marketing</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Company menu item -->
+    <div class="group relative cursor-pointer">
+      <a class="block py-2 text-base font-medium hover:bg-blue-700 transition-colors duration-200" href="{{ "/about.html" | relative_url }}">
+        Company
+      </a>
+      <div class="submenu invisible opacity-0 group-hover:visible group-hover:opacity-100 absolute left-full top-0 ml-2 w-64 bg-white text-black shadow-xl rounded-md transition-all duration-200">
+        <div class="p-4 flex flex-col gap-2">
+          <span class="font-semibold text-lg mb-2">What is Yanok AI?</span>
+          <a class="block hover:underline" href="{{ "/about.html" | relative_url }}">About</a>
+          <a class="block hover:underline" href="{{ "/about.html#careers" | relative_url }}">Careers</a>
+          <a class="block hover:underline" href="{{ "/partners.html" | relative_url }}">Partners</a>
+          <a class="block hover:underline" href="{{ "/diversity-and-inclusion.html" | relative_url }}">Diversity & Inclusion</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <div class="mt-auto">
+    <a href="/book-demo.html" class="btn font-semibold rounded-lg w-full text-center">
+      Contact Us
+    </a>
   </div>
 </div>
+
+<div class="fixed top-4 right-4 z-50 md:hidden cursor-pointer" id="menuToggle">
+  <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+  </svg>
+</div>
+
+<script>
+  document.getElementById('menuToggle').addEventListener('click', function() {
+    const sideMenu = document.getElementById('sideMenu');
+    sideMenu.style.transform = sideMenu.style.transform === 'translateX(0px)' ? 'translateX(-100%)' : 'translateX(0)';
+  });
+</script>
