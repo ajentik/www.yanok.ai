@@ -10,9 +10,9 @@
       <!-- Product Menu Item -->
       <div class="group relative">
         <button class="w-full text-left flex items-center justify-between submenu-toggle py-2">
-          <span class="text-base font-medium navigation-link">Product</span>
+          <span class="text-base font-medium navigation-link pl-5">Product</span>
           <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 flex-shrink-0" viewBox="0 0 20 20" fill="currentColor">
-            <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
+            <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 1 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
           </svg>
         </button>
         <div class="submenu hidden pl-4 mt-2 space-y-2">
@@ -26,9 +26,9 @@
       <!-- Use Cases Menu Item (formerly Solutions) -->
       <div class="group relative">
         <button class="w-full text-left flex items-center justify-between submenu-toggle py-2">
-          <span class="text-base font-medium navigation-link">Use Cases</span>
+          <span class="text-base font-medium navigation-link pl-5">Use Cases</span>
           <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 flex-shrink-0" viewBox="0 0 20 20" fill="currentColor">
-            <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
+            <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 1 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
           </svg>
         </button>
         <div class="submenu hidden pl-4 mt-2 space-y-2">
@@ -45,9 +45,9 @@
       <!-- Company Menu Item -->
       <div class="group relative">
         <button class="w-full text-left flex items-center justify-between submenu-toggle py-2">
-          <span class="text-base font-medium navigation-link">Company</span>
+          <span class="text-base font-medium navigation-link pl-5">Company</span>
           <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 flex-shrink-0" viewBox="0 0 20 20" fill="currentColor">
-            <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
+            <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 1 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
           </svg>
         </button>
         <div class="submenu hidden pl-4 mt-2 space-y-2">
@@ -57,19 +57,32 @@
           <a href="{{ "/diversity-and-inclusion.html" | relative_url }}" class="block text-sm text-gray-400 hover:text-white">Diversity & Inclusion</a>
         </div>
       </div>
+
+      <!-- Payments Menu Item -->
+      <div class="group relative">
+        <button class="w-full text-left flex items-center justify-between submenu-toggle py-2">
+          <span class="text-base font-medium navigation-link text-yellow-300 pl-5">Payments</span>
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 flex-shrink-0" viewBox="0 0 20 20" fill="currentColor">
+            <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 1 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
+          </svg>
+        </button>
+        <div class="submenu hidden pl-4 mt-2 space-y-2">
+          <a href="https://buy.stripe.com/test_28o5mq1Hl2Ht1LW000" class="block text-sm text-gray-400 hover:text-white">yno AI</a>
+          <a href="https://buy.stripe.com/test_28o5mq1Hl2Ht1LW000" class="block text-sm text-gray-400 hover:text-white">Yanok Access</a>
+        </div>
+      </div>
     </div>
   </nav>
-  
+
   <div class="mt-auto p-5 border-t border-gray-700 text-sm">
-    <div class="mb-2">
-      <a href="tel:+6588928831" class="hover:underline">+65 8892 8831</a>
-    </div>
-    <div>
-      160 Robinson Road, #14-04<br />Singapore
-    </div>
+    <footer class="bg-darkerBlue text-center py-4">
+      <p class="text-sm text-gray-400">
+        Copyright © 2023-2024 Yanok AI. All rights reserved. All trademarks are protected by law and owned by their respective holders.
+      </p>
+    </footer>
   </div>
-  
-  <button id="sidebar-collapse" class="p-4 w-full text-center border-t border-gray-700">
+
+  <button id="sidebar-collapse" class="p-4 w-full text-center border-t border-gray-700 absolute bottom-0 left-0">
     <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mx-auto transform transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 19l-7-7 7-7m8 14l-7-7 7-7" />
     </svg>
