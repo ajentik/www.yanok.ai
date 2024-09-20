@@ -7,57 +7,55 @@
   </div>
   
   <nav class="flex-grow overflow-y-auto">
-    <div class="flex flex-col pl-4 space-y-2">
+    <div class="flex flex-col space-y-2 pl-5">
       <!-- Product Menu Item -->
       <div class="group relative">
-        <button class="w-full text-left flex items-center justify-between submenu-toggle">
-          <a class="text-base font-medium navigation-link w-full" href="{{ "/platform.html" | relative_url }}">Product</a>
+        <button class="w-full text-left flex items-center justify-between submenu-toggle py-2">
+          <span class="text-base font-medium navigation-link">Product</span>
           <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 flex-shrink-0" viewBox="0 0 20 20" fill="currentColor">
             <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
           </svg>
         </button>
         <div class="submenu hidden pl-4 mt-2 space-y-2">
-          <a href="{{ "/platform.html#auto-workers" | relative_url }}" class="block text-sm text-gray-400 hover:text-white">AI Agents</a>
-          <a href="{{ "/platform.html#app-integrations" | relative_url }}" class="block text-sm text-gray-400 hover:text-white">API Integrations</a>
-          <a href="{{ "/platform.html#ai-integrations" | relative_url }}" class="block text-sm text-gray-400 hover:text-white">AI Integrations</a>
-          <a href="{{ "/platform.html#data-and-security" | relative_url }}" class="block text-sm text-gray-400 hover:text-white">Data & Security</a>
+          <a href="{{ "/platform.html#auto-workers" | relative_url }}" class="block text-sm text-gray-500 hover:text-white">AI Agents</a>
+          <a href="{{ "/platform.html#app-integrations" | relative_url }}" class="block text-sm text-gray-500 hover:text-white">API Integrations</a>
+          <a href="{{ "/platform.html#ai-integrations" | relative_url }}" class="block text-sm text-gray-500 hover:text-white">AI Integrations</a>
+          <a href="{{ "/platform.html#data-and-security" | relative_url }}" class="block text-sm text-gray-500 hover:text-white">Data & Security</a>
         </div>
       </div>
 
-      <!-- Solutions Menu Item -->
+      <!-- Use Cases Menu Item (formerly Solutions) -->
       <div class="group relative">
-        <button class="w-full text-left flex items-center justify-between submenu-toggle">
-          <a class="text-base font-medium navigation-link w-full" href="/solutions.html">Solutions</a>
+        <button class="w-full text-left flex items-center justify-between submenu-toggle py-2">
+          <span class="text-base font-medium navigation-link">Use Cases</span>
           <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 flex-shrink-0" viewBox="0 0 20 20" fill="currentColor">
             <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
           </svg>
         </button>
         <div class="submenu hidden pl-4 mt-2 space-y-2">
-          <span class="block font-semibold text-sm text-gray-500">By Industry</span>
-          <a href="{{ "/solutions/communication.html" | relative_url }}" class="block text-sm text-gray-400 hover:text-white">Communication</a>
-          <a href="{{ "/solutions/education.html" | relative_url }}" class="block text-sm text-gray-400 hover:text-white">Education and Training</a>
-          <a href="{{ "/solutions/legal.html" | relative_url }}" class="block text-sm text-gray-400 hover:text-white">Legal</a>
-          <a href="{{ "/solutions/regulatory-compliance.html" | relative_url }}" class="block text-sm text-gray-400 hover:text-white">Regulatory & Compliance</a>
-          <span class="block font-semibold text-sm text-gray-500 mt-2">By Role</span>
-          <a href="{{ "/solutions/human-resources.html" | relative_url }}" class="block text-sm text-gray-400 hover:text-white">Human Resources</a>
-          <a href="{{ "/solutions/information-technology.html" | relative_url }}" class="block text-sm text-gray-400 hover:text-white">IT</a>
-          <a href="{{ "/solutions/marketing.html" | relative_url }}" class="block text-sm text-gray-400 hover:text-white">Marketing</a>
+          <a href="{{ "/solutions/communication.html" | relative_url }}" class="block text-sm text-gray-500 hover:text-white">Communication</a>
+          <a href="{{ "/solutions/education.html" | relative_url }}" class="block text-sm text-gray-500 hover:text-white">Education and Training</a>
+          <a href="{{ "/solutions/legal.html" | relative_url }}" class="block text-sm text-gray-500 hover:text-white">Legal</a>
+          <a href="{{ "/solutions/regulatory-compliance.html" | relative_url }}" class="block text-sm text-gray-500 hover:text-white">Regulatory & Compliance</a>
+          <a href="{{ "/solutions/human-resources.html" | relative_url }}" class="block text-sm text-gray-500 hover:text-white">Human Resources</a>
+          <a href="{{ "/solutions/information-technology.html" | relative_url }}" class="block text-sm text-gray-500 hover:text-white">IT</a>
+          <a href="{{ "/solutions/marketing.html" | relative_url }}" class="block text-sm text-gray-500 hover:text-white">Marketing</a>
         </div>
       </div>
 
       <!-- Company Menu Item -->
       <div class="group relative">
-        <button class="w-full text-left flex items-center justify-between submenu-toggle">
-          <a class="text-base font-medium navigation-link w-full" href="{{ "/about.html" | relative_url }}">Company</a>
+        <button class="w-full text-left flex items-center justify-between submenu-toggle py-2">
+          <span class="text-base font-medium navigation-link">Company</span>
           <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 flex-shrink-0" viewBox="0 0 20 20" fill="currentColor">
             <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
           </svg>
         </button>
         <div class="submenu hidden pl-4 mt-2 space-y-2">
-          <a href="{{ "/about.html" | relative_url }}" class="block text-sm text-gray-400 hover:text-white">About</a>
-          <a href="{{ "/about.html#careers" | relative_url }}" class="block text-sm text-gray-400 hover:text-white">Careers</a>
-          <a href="{{ "/partners.html" | relative_url }}" class="block text-sm text-gray-400 hover:text-white">Partners</a>
-          <a href="{{ "/diversity-and-inclusion.html" | relative_url }}" class="block text-sm text-gray-400 hover:text-white">Diversity & Inclusion</a>
+          <a href="{{ "/about.html" | relative_url }}" class="block text-sm text-gray-500 hover:text-white">About</a>
+          <a href="{{ "/about.html#careers" | relative_url }}" class="block text-sm text-gray-500 hover:text-white">Careers</a>
+          <a href="{{ "/partners.html" | relative_url }}" class="block text-sm text-gray-500 hover:text-white">Partners</a>
+          <a href="{{ "/diversity-and-inclusion.html" | relative_url }}" class="block text-sm text-gray-500 hover:text-white">Diversity & Inclusion</a>
         </div>
       </div>
     </div>
