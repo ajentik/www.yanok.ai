@@ -77,10 +77,8 @@
 
         function toggleSidebar() {
           sidebar.classList.toggle('-translate-x-full');
-          contentWrapper.classList.toggle('ml-0');
-          contentWrapper.classList.toggle('md:ml-64');
-          sidebarToggle.classList.toggle('right-4');
           sidebarToggle.classList.toggle('left-4');
+          sidebarToggle.classList.toggle('left-68');
           saveMenuState();
         }
 
@@ -117,8 +115,6 @@
           const state = JSON.parse(localStorage.getItem('sidebarState')) || { isOpen: true, isCollapsed: false, openSubmenus: [] };
           if (state.isOpen && window.innerWidth >= 768) {
             sidebar.classList.remove('-translate-x-full');
-            contentWrapper.classList.remove('ml-0');
-            contentWrapper.classList.add('md:ml-64');
           }
           if (state.isCollapsed) {
             collapseSidebar();
@@ -130,18 +126,17 @@
               submenuToggle.querySelector('svg').classList.add('rotate-180');
             }
           });
+          if (window.innerWidth < 768) {
+            sidebar.classList.add('-translate-x-full');
+          }
         }
 
         function handleResize() {
           if (window.innerWidth >= 768) {
             sidebar.classList.remove('-translate-x-full');
-            contentWrapper.classList.remove('ml-0');
-            contentWrapper.classList.add('md:ml-64');
             sidebarToggle.classList.add('hidden');
           } else {
             sidebar.classList.add('-translate-x-full');
-            contentWrapper.classList.add('ml-0');
-            contentWrapper.classList.remove('md:ml-64');
             sidebarToggle.classList.remove('hidden');
           }
         }
@@ -156,6 +151,15 @@
           }
         }
 
+        function closeSidebarOnOutsideClick(e) {
+          if (window.innerWidth < 768 && !sidebar.contains(e.target) && !sidebarToggle.contains(e.target)) {
+            sidebar.classList.add('-translate-x-full');
+            sidebarToggle.classList.remove('left-68');
+            sidebarToggle.classList.add('left-4');
+          }
+        }
+
+        document.addEventListener('click', closeSidebarOnOutsideClick);
         loadMenuState();
         handleResize();
         updateScrollbarVisibility();
@@ -169,6 +173,7 @@
 
         submenus.forEach(item => {
           item.addEventListener('click', (e) => {
+            e.preventDefault();
             const submenu = item.nextElementSibling;
             submenu.classList.toggle('hidden');
             item.querySelector('svg').classList.toggle('rotate-180');
