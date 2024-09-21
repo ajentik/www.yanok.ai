@@ -3,9 +3,15 @@
   <head>{% include head.html %}
     <script defer src="https://www.yno.ai/widget.js"></script>
     <style>
-      /* Custom scrollbar styles */
+      /* Custom scrollbar styles with fade effect */
       #sidebar::-webkit-scrollbar {
         width: 6px;
+        opacity: 0;
+        transition: opacity 0.3s;
+      }
+
+      #sidebar:hover::-webkit-scrollbar {
+        opacity: 1;
       }
 
       #sidebar::-webkit-scrollbar-track {
@@ -89,7 +95,6 @@
           
           sidebarCollapse.querySelector('svg').classList.toggle('rotate-180');
           
-          // Toggle overflow on sidebar
           sidebar.classList.toggle('overflow-y-auto');
           sidebar.classList.toggle('overflow-hidden');
 
@@ -141,10 +146,24 @@
           }
         }
 
+        function updateScrollbarVisibility() {
+          if (sidebar.scrollHeight > sidebar.clientHeight) {
+            sidebar.classList.add('overflow-y-auto');
+            sidebar.classList.remove('overflow-hidden');
+          } else {
+            sidebar.classList.remove('overflow-y-auto');
+            sidebar.classList.add('overflow-hidden');
+          }
+        }
+
         loadMenuState();
         handleResize();
+        updateScrollbarVisibility();
 
-        window.addEventListener('resize', handleResize);
+        window.addEventListener('resize', () => {
+          handleResize();
+          updateScrollbarVisibility();
+        });
         sidebarToggle.addEventListener('click', toggleSidebar);
         sidebarCollapse.addEventListener('click', collapseSidebar);
 
@@ -154,6 +173,16 @@
             submenu.classList.toggle('hidden');
             item.querySelector('svg').classList.toggle('rotate-180');
             saveMenuState();
+            updateScrollbarVisibility();
+          });
+        });
+
+        document.querySelectorAll('.submenu a').forEach(link => {
+          link.addEventListener('click', (e) => {
+            e.preventDefault();
+            const href = link.getAttribute('href');
+            saveMenuState();
+            window.location.href = href;
           });
         });
       });
