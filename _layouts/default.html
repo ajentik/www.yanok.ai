@@ -41,6 +41,11 @@
         padding-left: 8%;
         padding-right: 8%;
       }
+
+      /* Adjust submenu item brightness */
+      .submenu a {
+        opacity: 0.8;
+      }
     </style>
   </head>
 
@@ -70,6 +75,7 @@
           contentWrapper.classList.toggle('md:ml-64');
           sidebarToggle.classList.toggle('right-4');
           sidebarToggle.classList.toggle('left-4');
+          saveMenuState();
         }
 
         function collapseSidebar() {
@@ -91,28 +97,37 @@
           const logo = sidebar.querySelector('img');
           logo.classList.toggle('w-10');
           logo.classList.toggle('w-6');
+          
+          saveMenuState();
         }
 
-        // Make entire menu lines clickable
-        const menuItems = document.querySelectorAll('.submenu-toggle');
-        menuItems.forEach(item => {
-          item.addEventListener('click', (e) => {
-            const submenu = item.nextElementSibling;
-            submenu.classList.toggle('hidden');
-            item.querySelector('svg').classList.toggle('rotate-180');
-          });
-        });
+        function saveMenuState() {
+          const isOpen = !sidebar.classList.contains('-translate-x-full');
+          const isCollapsed = sidebar.classList.contains('w-16');
+          const openSubmenus = Array.from(document.querySelectorAll('.submenu:not(.hidden)')).map(el => el.previousElementSibling.textContent.trim());
+          localStorage.setItem('sidebarState', JSON.stringify({ isOpen, isCollapsed, openSubmenus }));
+        }
 
-        // Maintain menu status after clicking
-        const submenuLinks = document.querySelectorAll('.submenu a');
-        submenuLinks.forEach(link => {
-          link.addEventListener('click', (e) => {
-            e.stopPropagation();
+        function loadMenuState() {
+          const state = JSON.parse(localStorage.getItem('sidebarState')) || { isOpen: true, isCollapsed: false, openSubmenus: [] };
+          if (state.isOpen && window.innerWidth >= 768) {
+            sidebar.classList.remove('-translate-x-full');
+            contentWrapper.classList.remove('ml-0');
+            contentWrapper.classList.add('md:ml-64');
+          }
+          if (state.isCollapsed) {
+            collapseSidebar();
+          }
+          state.openSubmenus.forEach(submenuTitle => {
+            const submenuToggle = Array.from(submenus).find(el => el.textContent.trim() === submenuTitle);
+            if (submenuToggle) {
+              submenuToggle.nextElementSibling.classList.remove('hidden');
+              submenuToggle.querySelector('svg').classList.add('rotate-180');
+            }
           });
-        });
+        }
 
-        // Handle window resize
-        window.addEventListener('resize', () => {
+        function handleResize() {
           if (window.innerWidth >= 768) {
             sidebar.classList.remove('-translate-x-full');
             contentWrapper.classList.remove('ml-0');
@@ -124,17 +139,23 @@
             contentWrapper.classList.remove('md:ml-64');
             sidebarToggle.classList.remove('hidden');
           }
-        });
-
-        // Set initial state for mobile devices
-        if (window.innerWidth < 768) {
-          sidebar.classList.add('-translate-x-full');
-          contentWrapper.classList.add('ml-0');
-          sidebarToggle.classList.remove('hidden');
         }
 
+        loadMenuState();
+        handleResize();
+
+        window.addEventListener('resize', handleResize);
         sidebarToggle.addEventListener('click', toggleSidebar);
         sidebarCollapse.addEventListener('click', collapseSidebar);
+
+        submenus.forEach(item => {
+          item.addEventListener('click', (e) => {
+            const submenu = item.nextElementSibling;
+            submenu.classList.toggle('hidden');
+            item.querySelector('svg').classList.toggle('rotate-180');
+            saveMenuState();
+          });
+        });
       });
     </script>
   </body>
