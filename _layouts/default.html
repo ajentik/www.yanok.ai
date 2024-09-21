@@ -35,11 +35,22 @@
       #sidebar.overflow-hidden::-webkit-scrollbar {
         display: none;
       }
+
+      /* Apply 8% indent for main content sections */
+      #content-wrapper > div {
+        padding-left: 8%;
+        padding-right: 8%;
+      }
+
+      /* Adjust submenu item brightness */
+      .submenu a {
+        opacity: 0.8;
+      }
     </style>
   </head>
-  
+
   <body class="font-jost antialiased text-white bg-gradient-to-br from-darkerBlue to-darkBlue flex">
-    <script type="module" src="{{ "/assets/javascript/cookieconsent-config.js" | relative_url }}"></script>
+    <script type="module" src="{{ '/assets/javascript/cookieconsent-config.js' | relative_url }}"></script>
     
     {% include navigation.html %}
     
@@ -62,10 +73,9 @@
           sidebar.classList.toggle('-translate-x-full');
           contentWrapper.classList.toggle('ml-0');
           contentWrapper.classList.toggle('md:ml-64');
-          
-          // Ensure the logo is visible when sidebar is toggled
-          const logo = sidebar.querySelector('img');
-          logo.classList.toggle('hidden');
+          sidebarToggle.classList.toggle('right-4');
+          sidebarToggle.classList.toggle('left-4');
+          saveMenuState();
         }
 
         function collapseSidebar() {
@@ -79,39 +89,72 @@
           
           sidebarCollapse.querySelector('svg').classList.toggle('rotate-180');
           
-          // Ensure the logo and collapse button are visible when collapsed
+          // Toggle overflow on sidebar
+          sidebar.classList.toggle('overflow-y-auto');
+          sidebar.classList.toggle('overflow-hidden');
+
+          // Ensure logo visibility
           const logo = sidebar.querySelector('img');
           logo.classList.toggle('w-10');
           logo.classList.toggle('w-6');
           
-          // Toggle overflow on sidebar
-          sidebar.classList.toggle('overflow-y-auto');
-          sidebar.classList.toggle('overflow-hidden');
+          saveMenuState();
         }
 
-        sidebarToggle.addEventListener('click', toggleSidebar);
-        sidebarCollapse.addEventListener('click', collapseSidebar);
+        function saveMenuState() {
+          const isOpen = !sidebar.classList.contains('-translate-x-full');
+          const isCollapsed = sidebar.classList.contains('w-16');
+          const openSubmenus = Array.from(document.querySelectorAll('.submenu:not(.hidden)')).map(el => el.previousElementSibling.textContent.trim());
+          localStorage.setItem('sidebarState', JSON.stringify({ isOpen, isCollapsed, openSubmenus }));
+        }
 
-        submenus.forEach(toggle => {
-          toggle.addEventListener('click', (e) => {
-            e.preventDefault();
-            const submenu = toggle.closest('.group').querySelector('.submenu');
-            submenu.classList.toggle('hidden');
-            toggle.querySelector('svg').classList.toggle('rotate-180');
+        function loadMenuState() {
+          const state = JSON.parse(localStorage.getItem('sidebarState')) || { isOpen: true, isCollapsed: false, openSubmenus: [] };
+          if (state.isOpen && window.innerWidth >= 768) {
+            sidebar.classList.remove('-translate-x-full');
+            contentWrapper.classList.remove('ml-0');
+            contentWrapper.classList.add('md:ml-64');
+          }
+          if (state.isCollapsed) {
+            collapseSidebar();
+          }
+          state.openSubmenus.forEach(submenuTitle => {
+            const submenuToggle = Array.from(submenus).find(el => el.textContent.trim() === submenuTitle);
+            if (submenuToggle) {
+              submenuToggle.nextElementSibling.classList.remove('hidden');
+              submenuToggle.querySelector('svg').classList.add('rotate-180');
+            }
           });
-        });
+        }
 
-        // Handle window resize
-        window.addEventListener('resize', () => {
+        function handleResize() {
           if (window.innerWidth >= 768) {
             sidebar.classList.remove('-translate-x-full');
             contentWrapper.classList.remove('ml-0');
             contentWrapper.classList.add('md:ml-64');
+            sidebarToggle.classList.add('hidden');
           } else {
             sidebar.classList.add('-translate-x-full');
             contentWrapper.classList.add('ml-0');
             contentWrapper.classList.remove('md:ml-64');
+            sidebarToggle.classList.remove('hidden');
           }
+        }
+
+        loadMenuState();
+        handleResize();
+
+        window.addEventListener('resize', handleResize);
+        sidebarToggle.addEventListener('click', toggleSidebar);
+        sidebarCollapse.addEventListener('click', collapseSidebar);
+
+        submenus.forEach(item => {
+          item.addEventListener('click', (e) => {
+            const submenu = item.nextElementSibling;
+            submenu.classList.toggle('hidden');
+            item.querySelector('svg').classList.toggle('rotate-180');
+            saveMenuState();
+          });
         });
       });
     </script>
