@@ -97,11 +97,12 @@
           
           sidebar.classList.toggle('overflow-y-auto');
           sidebar.classList.toggle('overflow-hidden');
-
-          // Ensure logo visibility
+          
           const logo = sidebar.querySelector('img');
-          logo.classList.toggle('w-10');
+          logo.classList.toggle('w-full');
+          logo.classList.toggle('max-w-[180px]');
           logo.classList.toggle('w-6');
+          logo.classList.toggle('h-6');
           
           saveMenuState();
         }
