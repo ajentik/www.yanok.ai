@@ -52,73 +52,6 @@
       .submenu a {
         opacity: 0.8;
       }
-
-      /* Tooltip styles */
-      .tooltip {
-        position: absolute;
-        left: 100%;
-        top: 50%;
-        transform: translateY(-50%);
-        background-color: rgba(0, 0, 0, 0.8);
-        color: white;
-        padding: 4px 8px;
-        border-radius: 4px;
-        font-size: 12px;
-        white-space: nowrap;
-        opacity: 0;
-        transition: opacity 0.3s;
-      }
-
-      .sidebar-item:hover .tooltip {
-        opacity: 1;
-      }
-
-      /* Minimized sidebar styles */
-      #sidebar.w-16 .sidebar-item {
-        justify-content: center;
-      }
-
-      #sidebar.w-16 .sidebar-item svg {
-        margin-right: 0;
-      }
-
-      /* Custom scrollbar styles */
-      #sidebar::-webkit-scrollbar {
-        width: 6px;
-        opacity: 0;
-        transition: opacity 0.3s;
-      }
-
-      #sidebar:hover::-webkit-scrollbar {
-        opacity: 1;
-      }
-
-      #sidebar::-webkit-scrollbar-track {
-        background: transparent;
-      }
-
-      #sidebar::-webkit-scrollbar-thumb {
-        background-color: rgba(255, 255, 255, 0.3);
-        border-radius: 20px;
-        border: transparent;
-      }
-
-      #sidebar::-webkit-scrollbar-thumb:hover {
-        background-color: rgba(255, 255, 255, 0.5);
-      }
-
-      #sidebar {
-        scrollbar-width: thin;
-        scrollbar-color: rgba(255, 255, 255, 0.3) transparent;
-      }
-
-      #sidebar.overflow-hidden {
-        scrollbar-width: none;
-      }
-
-      #sidebar.overflow-hidden::-webkit-scrollbar {
-        display: none;
-      }
     </style>
   </head>
 
@@ -140,11 +73,15 @@
         const contentWrapper = document.getElementById('content-wrapper');
         const sidebarToggle = document.getElementById('sidebar-toggle');
         const sidebarCollapse = document.getElementById('sidebar-collapse');
+        const submenus = document.querySelectorAll('.submenu-toggle');
 
         function toggleSidebar() {
           sidebar.classList.toggle('-translate-x-full');
           contentWrapper.classList.toggle('ml-0');
           contentWrapper.classList.toggle('md:ml-64');
+          sidebarToggle.classList.toggle('right-4');
+          sidebarToggle.classList.toggle('left-4');
+          saveMenuState();
         }
 
         function collapseSidebar() {
@@ -153,8 +90,8 @@
           contentWrapper.classList.toggle('md:ml-64');
           contentWrapper.classList.toggle('md:ml-16');
           
-          document.querySelectorAll('#sidebar .menu-text, #sidebar .badge').forEach(el => el.classList.toggle('hidden'));
-          document.querySelectorAll('#sidebar .tooltip').forEach(el => el.classList.toggle('hidden'));
+          const sidebarContent = document.querySelectorAll('#sidebar > *:not(:first-child, :last-child)');
+          sidebarContent.forEach(el => el.classList.toggle('hidden'));
           
           sidebarCollapse.querySelector('svg').classList.toggle('rotate-180');
           
@@ -177,7 +114,7 @@
         }
 
         function loadMenuState() {
-          const state = JSON.parse(localStorage.getItem('sidebarState')) || { isOpen: true, isCollapsed: false };
+          const state = JSON.parse(localStorage.getItem('sidebarState')) || { isOpen: true, isCollapsed: false, openSubmenus: [] };
           if (state.isOpen && window.innerWidth >= 768) {
             sidebar.classList.remove('-translate-x-full');
             contentWrapper.classList.remove('ml-0');
@@ -186,6 +123,13 @@
           if (state.isCollapsed) {
             collapseSidebar();
           }
+          state.openSubmenus.forEach(submenuTitle => {
+            const submenuToggle = Array.from(submenus).find(el => el.textContent.trim() === submenuTitle);
+            if (submenuToggle) {
+              submenuToggle.nextElementSibling.classList.remove('hidden');
+              submenuToggle.querySelector('svg').classList.add('rotate-180');
+            }
+          });
         }
 
         function handleResize() {
