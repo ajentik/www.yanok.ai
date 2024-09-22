@@ -1,9 +1,9 @@
-<div id="sidebar" class="flex flex-col h-screen bg-darkerBlue w-64 fixed left-0 top-0 transition-all duration-300 z-50 overflow-y-auto">
+<div id="sidebar" class="flex flex-col h-screen bg-darkerBlue w-64 fixed left-0 top-0 transition-all duration-300 z-50 overflow-y-auto -translate-x-full md:translate-x-0">
   <div class="p-5 border-b border-gray-700">
     <a href="/" class="flex items-center justify-center w-full mb-4">
       <img src="{{ "assets/images/logo.png" | relative_url }}" class="w-full max-w-[180px] h-auto" alt="Yanok AI Logo">
     </a>
-    <button id="sidebar-toggle" class="bg-blue-500 p-2 rounded-full md:hidden absolute top-5 right-5">
+    <button id="mobile-sidebar-toggle" class="md:hidden absolute top-4 right-4 bg-blue-500 p-2 rounded-full">
       <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
       </svg>
@@ -87,7 +87,7 @@
     </footer>
   </div>
 
-  <button id="sidebar-collapse" class="p-4 w-full text-center border-t border-gray-700 absolute bottom-0 left-0">
+  <button id="sidebar-collapse" class="p-4 w-full text-center border-t border-gray-700 absolute bottom-0 left-0 hidden md:block">
     <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mx-auto transform transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 19l-7-7 7-7m8 14l-7-7 7-7" />
     </svg>
