@@ -26,8 +26,47 @@
   rel="stylesheet">
 <link rel="stylesheet" href="{{ "/assets/css/main.css" | relative_url }}">
 <link rel="stylesheet" href="{{ "/assets/css/cookieconsent.css" | relative_url }}">
+
 <script type="text/plain" data-category="analytics" data-service="Google Analytics">
-      (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','{{ site.google_tag_manager }}');</script>
+      (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','{{ site.google_tag_manager }}');
 </script>
+
 <script type="module" src="{{ "/assets/javascript/intersection.js" | relative_url }}"></script>
 <link rel="icon" type="image/png" href="/assets/images/favicon.png">
+
+<style>
+  #content-variation-menu {
+    height: 40px;
+  }
+  .variation-btn {
+    background-color: transparent;
+    color: #ffffff;
+    border: 1px solid #ffffff;
+    font-size: 0.875rem;
+    transition: background-color 0.3s;
+  }
+  .variation-btn:hover, .variation-btn:focus {
+    background-color: rgba(59, 130, 246, 0.5);
+    outline: none;
+  }
+  .variation-btn.active {
+    background-color: #3b82f6;
+    color: #ffffff;
+  }
+  @media (max-width: 767px) {
+    #sidebar {
+      top: 40px;
+    }
+    #mobile-sidebar-toggle {
+      top: 54px;
+    }
+  }
+  @media (max-width: 480px) {
+    #content-variation-menu {
+      flex-wrap: wrap;
+    }
+    .variation-btn {
+      margin-bottom: 0.5rem;
+    }
+  }
+</style>
