@@ -71,40 +71,40 @@
       document.addEventListener('DOMContentLoaded', () => {
         const sidebar = document.getElementById('sidebar');
         const contentWrapper = document.getElementById('content-wrapper');
-        const sidebarToggle = document.getElementById('sidebar-toggle');
         const sidebarCollapse = document.getElementById('sidebar-collapse');
         const submenus = document.querySelectorAll('.submenu-toggle');
+        const mobileSidebarToggle = document.getElementById('mobile-sidebar-toggle');
 
         function toggleSidebar() {
           sidebar.classList.toggle('-translate-x-full');
           contentWrapper.classList.toggle('ml-0');
           contentWrapper.classList.toggle('md:ml-64');
-          sidebarToggle.classList.toggle('right-4');
-          sidebarToggle.classList.toggle('left-4');
           saveMenuState();
         }
 
         function collapseSidebar() {
-          sidebar.classList.toggle('w-64');
-          sidebar.classList.toggle('w-16');
-          contentWrapper.classList.toggle('md:ml-64');
-          contentWrapper.classList.toggle('md:ml-16');
-          
-          const sidebarContent = document.querySelectorAll('#sidebar > *:not(:first-child, :last-child)');
-          sidebarContent.forEach(el => el.classList.toggle('hidden'));
-          
-          sidebarCollapse.querySelector('svg').classList.toggle('rotate-180');
-          
-          sidebar.classList.toggle('overflow-y-auto');
-          sidebar.classList.toggle('overflow-hidden');
-          
-          const logo = sidebar.querySelector('img');
-          logo.classList.toggle('w-full');
-          logo.classList.toggle('max-w-[180px]');
-          logo.classList.toggle('w-6');
-          logo.classList.toggle('h-6');
-          
-          saveMenuState();
+          if (window.innerWidth >= 768) {
+            sidebar.classList.toggle('w-64');
+            sidebar.classList.toggle('w-16');
+            contentWrapper.classList.toggle('md:ml-64');
+            contentWrapper.classList.toggle('md:ml-16');
+            
+            const sidebarContent = document.querySelectorAll('#sidebar > *:not(:first-child, :last-child)');
+            sidebarContent.forEach(el => el.classList.toggle('hidden'));
+            
+            sidebarCollapse.querySelector('svg').classList.toggle('rotate-180');
+            
+            sidebar.classList.toggle('overflow-y-auto');
+            sidebar.classList.toggle('overflow-hidden');
+            
+            const logo = sidebar.querySelector('img');
+            logo.classList.toggle('w-full');
+            logo.classList.toggle('max-w-[180px]');
+            logo.classList.toggle('w-6');
+            logo.classList.toggle('h-6');
+            
+            saveMenuState();
+          }
         }
 
         function saveMenuState() {
@@ -138,13 +138,12 @@
             sidebar.classList.remove('-translate-x-full');
             contentWrapper.classList.remove('ml-0');
             contentWrapper.classList.add('md:ml-64');
-            sidebarToggle.classList.add('hidden');
           } else {
             sidebar.classList.add('-translate-x-full');
             contentWrapper.classList.add('ml-0');
             contentWrapper.classList.remove('md:ml-64');
-            sidebarToggle.classList.remove('hidden');
           }
+          updateScrollbarVisibility();
         }
 
         function updateScrollbarVisibility() {
@@ -165,7 +164,8 @@
           handleResize();
           updateScrollbarVisibility();
         });
-        sidebarToggle.addEventListener('click', toggleSidebar);
+
+        mobileSidebarToggle.addEventListener('click', toggleSidebar);
         sidebarCollapse.addEventListener('click', collapseSidebar);
 
         submenus.forEach(item => {
