@@ -52,10 +52,40 @@
       .submenu a {
         opacity: 0.8;
       }
+
+      /* Mobile layout adjustments */
+      @media (max-width: 767px) {
+        #sidebar {
+          position: fixed;
+          top: 0;
+          left: 0;
+          bottom: 0;
+          z-index: 40;
+          transition: transform 0.3s ease-in-out;
+        }
+
+        #sidebar.hidden {
+          transform: translateX(-100%);
+        }
+
+        #sidebar img {
+          max-width: 120px;
+          height: auto;
+        }
+      }
+
+      #content-wrapper {
+        transition: margin-left 0.3s ease-in-out;
+      }
     </style>
   </head>
 
   <body class="font-jost antialiased text-white bg-gradient-to-br from-darkerBlue to-darkBlue flex">
+    <button id="mobile-sidebar-toggle" class="md:hidden fixed top-4 left-4 z-50 bg-blue-500 p-2 rounded-full">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+      </svg>
+    </button>
     <script type="module" src="{{ '/assets/javascript/cookieconsent-config.js' | relative_url }}"></script>
     
     {% include navigation.html %}
@@ -79,6 +109,7 @@
           sidebar.classList.toggle('-translate-x-full');
           contentWrapper.classList.toggle('ml-0');
           contentWrapper.classList.toggle('md:ml-64');
+          document.body.classList.toggle('overflow-hidden');
           saveMenuState();
         }
 
@@ -120,6 +151,10 @@
             sidebar.classList.remove('-translate-x-full');
             contentWrapper.classList.remove('ml-0');
             contentWrapper.classList.add('md:ml-64');
+          } else if (window.innerWidth < 768) {
+            sidebar.classList.add('-translate-x-full');
+            contentWrapper.classList.add('ml-0');
+            contentWrapper.classList.remove('md:ml-64');
           }
           if (state.isCollapsed) {
             collapseSidebar();
@@ -165,7 +200,7 @@
           updateScrollbarVisibility();
         });
 
-        mobileSidebarToggle.addEventListener('click', toggleSidebar);
+        document.getElementById('mobile-sidebar-toggle').addEventListener('click', toggleSidebar);
         sidebarCollapse.addEventListener('click', collapseSidebar);
 
         submenus.forEach(item => {
