@@ -1,77 +1,90 @@
-<div id="sidebar" class="flex flex-col h-screen bg-gray-900 w-64 fixed left-0 top-0 transition-all duration-300 z-50 overflow-y-auto">
-  <div class="p-5 border-b border-gray-700 flex-shrink-0 flex items-center justify-between">
-    <a href="/" class="flex items-center">
-      <img src="{{ "assets/images/logo.png" | relative_url }}" class="w-10 mr-2" alt="Brainwave Logo">
-      <span class="text-xl font-bold text-white">Brainwave</span>
+<div id="sidebar" class="flex flex-col h-screen bg-darkerBlue w-64 fixed left-0 top-0 transition-all duration-300 z-50 overflow-y-auto">
+  <div class="p-5 border-b border-gray-700 flex-shrink-0 flex flex-col items-start">
+    <a href="/" class="flex items-center mb-4">
+      <img src="{{ "assets/images/logo.png" | relative_url }}" class="w-10" alt="Yanok AI Logo">
     </a>
-    <button id="sidebar-toggle" class="bg-gray-700 p-2 rounded-full md:hidden">
-      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+    <button id="sidebar-toggle" class="bg-blue-500 p-2 rounded-full md:hidden">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
       </svg>
     </button>
   </div>
   
-  <nav class="flex-grow py-4">
-    <div class="flex flex-col space-y-2 px-4">
-      <a href="#" class="sidebar-item flex items-center text-white hover:bg-gray-800 px-4 py-2 rounded">
-        <svg class="w-5 h-5 mr-3" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-          <path fill-rule="evenodd" d="M18 10c0 3.866-3.582 7-8 7a8.841 8.841 0 01-4.083-.98L2 17l1.338-3.123C2.493 12.767 2 11.434 2 10c0-3.866 3.582-7 8-7s8 3.134 8 7zM7 9H5v2h2V9zm8 0h-2v2h2V9zM9 9h2v2H9V9z" clip-rule="evenodd" />
-        </svg>
-        <span class="menu-text">Chats</span>
-        <span class="tooltip hidden">Chats</span>
-      </a>
-      <a href="#" class="sidebar-item flex items-center text-white hover:bg-gray-800 px-4 py-2 rounded">
-        <svg class="w-5 h-5 mr-3" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-          <path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd" />
-        </svg>
-        <span class="menu-text">Search</span>
-        <span class="ml-auto text-sm text-gray-400">⌘F</span>
-        <span class="tooltip hidden">Search</span>
-      </a>
-      <a href="#" class="sidebar-item flex items-center text-white hover:bg-gray-800 px-4 py-2 rounded">
-        <svg class="w-5 h-5 mr-3" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-          <path fill-rule="evenodd" d="M4 4a2 2 0 012-2h8a2 2 0 012 2v12a1 1 0 01-1.5.866l-4.5-2.6a1 1 0 00-1 0l-4.5 2.6A1 1 0 014 16V4z" clip-rule="evenodd" />
-        </svg>
-        <span class="menu-text">Manage subscription</span>
-        <span class="tooltip hidden">Manage subscription</span>
-      </a>
-      <a href="#" class="sidebar-item flex items-center text-white hover:bg-gray-800 px-4 py-2 rounded">
-        <svg class="w-5 h-5 mr-3" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-          <path fill-rule="evenodd" d="M3 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd" />
-        </svg>
-        <span class="menu-text">Updates & FAQ</span>
-        <span class="tooltip hidden">Updates & FAQ</span>
-      </a>
-      <a href="#" class="sidebar-item flex items-center text-white hover:bg-gray-800 px-4 py-2 rounded">
-        <svg class="w-5 h-5 mr-3" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-          <path fill-rule="evenodd" d="M11.49 3.17c-.38-1.56-2.6-1.56-2.98 0a1.532 1.532 0 01-2.286.948c-1.372-.836-2.942.734-2.106 2.106.54.886.061 2.042-.947 2.287-1.561.379-1.561 2.6 0 2.978a1.532 1.532 0 01.947 2.287c-.836 1.372.734 2.942 2.106 2.106a1.532 1.532 0 012.287.947c.379 1.561 2.6 1.561 2.978 0a1.533 1.533 0 012.287-.947c1.372.836 2.942-.734 2.106-2.106a1.533 1.533 0 01.947-2.287c1.561-.379 1.561-2.6 0-2.978a1.532 1.532 0 01-.947-2.287c.836-1.372-.734-2.942-2.106-2.106a1.532 1.532 0 01-2.287-.947zM10 13a3 3 0 100-6 3 3 0 000 6z" clip-rule="evenodd" />
-        </svg>
-        <span class="menu-text">Settings</span>
-        <span class="tooltip hidden">Settings</span>
-      </a>
+  <nav class="flex-grow">
+    <div class="flex flex-col space-y-2">
+      <!-- Product Menu Item -->
+      <div class="group relative">
+        <button class="w-full text-left flex items-center justify-between submenu-toggle py-2 px-5">
+          <span class="text-base font-medium navigation-link">Product</span>
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 flex-shrink-0 mr-3" viewBox="0 0 20 20" fill="currentColor" style="margin-right: 3px;">
+            <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 1 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
+          </svg>
+        </button>
+        <div class="submenu hidden mt-2 space-y-2 pl-5">
+          <a href="{{ "/platform.html#run-ai" | relative_url }}" class="block text-sm text-gray-300 hover:text-white">Run AI</a>
+          <a href="{{ "/platform.html#manage-api" | relative_url }}" class="block text-sm text-gray-300 hover:text-white">Manage API</a>
+          <a href="{{ "/platform.html#rag-data" | relative_url }}" class="block text-sm text-gray-300 hover:text-white">RAG Data</a>
+          <a href="{{ "/platform.html#maintain-security" | relative_url }}" class="block text-sm text-gray-300 hover:text-white">Maintain Security</a>
+        </div>
+      </div>
+
+      <!-- Use Cases Menu Item -->
+      <div class="group relative">
+        <button class="w-full text-left flex items-center justify-between submenu-toggle py-2 px-5">
+          <span class="text-base font-medium navigation-link">Use Cases</span>
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 flex-shrink-0 mr-3" viewBox="0 0 20 20" fill="currentColor" style="margin-right: 3px;">
+            <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 1 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
+          </svg>
+        </button>
+        <div class="submenu hidden mt-2 space-y-2 pl-5">
+          <a href="{{ "/solutions/communication.html" | relative_url }}" class="block text-sm text-gray-300 hover:text-white">Communication</a>
+          <a href="{{ "/solutions/education.html" | relative_url }}" class="block text-sm text-gray-300 hover:text-white">Education and Training</a>
+          <a href="{{ "/solutions/legal.html" | relative_url }}" class="block text-sm text-gray-300 hover:text-white">Legal</a>
+          <a href="{{ "/solutions/regulatory-compliance.html" | relative_url }}" class="block text-sm text-gray-300 hover:text-white">Regulatory & Compliance</a>
+          <a href="{{ "/solutions/human-resources.html" | relative_url }}" class="block text-sm text-gray-300 hover:text-white">Human Resources</a>
+          <a href="{{ "/solutions/information-technology.html" | relative_url }}" class="block text-sm text-gray-300 hover:text-white">IT</a>
+          <a href="{{ "/solutions/marketing.html" | relative_url }}" class="block text-sm text-gray-300 hover:text-white">Marketing</a>
+        </div>
+      </div>
+
+      <!-- Company Menu Item -->
+      <div class="group relative">
+        <button class="w-full text-left flex items-center justify-between submenu-toggle py-2 px-5">
+          <span class="text-base font-medium navigation-link">Company</span>
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 flex-shrink-0 mr-3" viewBox="0 0 20 20" fill="currentColor" style="margin-right: 3px;">
+            <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 1 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
+          </svg>
+        </button>
+        <div class="submenu hidden mt-2 space-y-2 pl-5">
+          <a href="{{ "/about.html" | relative_url }}" class="block text-sm text-gray-300 hover:text-white">About</a>
+          <a href="{{ "/about.html#careers" | relative_url }}" class="block text-sm text-gray-300 hover:text-white">Careers</a>
+          <a href="{{ "/partners.html" | relative_url }}" class="block text-sm text-gray-300 hover:text-white">Partners</a>
+          <a href="{{ "/diversity-and-inclusion.html" | relative_url }}" class="block text-sm text-gray-300 hover:text-white">Diversity & Inclusion</a>
+        </div>
+      </div>
+
+      <!-- Payments Menu Item -->
+      <div class="group relative">
+        <button class="w-full text-left flex items-center justify-between submenu-toggle py-2 px-5">
+          <span class="text-base font-medium navigation-link text-yellow-300">Payments</span>
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 flex-shrink-0 mr-3" viewBox="0 0 20 20" fill="currentColor" style="margin-right: 3px;">
+            <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 1 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
+          </svg>
+        </button>
+        <div class="submenu hidden mt-2 space-y-2 pl-5">
+          <a href="https://buy.stripe.com/dR6g2j9r85wD5FK000" class="block text-sm text-gray-300 hover:text-white">YNO Chat</a>
+          <a href="https://buy.stripe.com/dR6g2j9r85wD5FK000" class="block text-sm text-gray-300 hover:text-white">Yanok Access</a>
+        </div>
+      </div>
     </div>
   </nav>
 
-  <div class="px-4 py-2 border-t border-gray-700">
-    <h3 class="text-sm font-semibold text-gray-400 mb-2">Chat List</h3>
-    <div class="space-y-2">
-      <a href="#" class="flex items-center justify-between text-white hover:bg-gray-800 px-4 py-2 rounded">
-        <span class="menu-text">Welcome</span>
-        <span class="bg-gray-700 text-xs px-2 py-1 rounded-full">48</span>
-      </a>
-      <a href="#" class="flex items-center justify-between text-white bg-purple-700 px-4 py-2 rounded">
-        <span class="menu-text">UI8 Production</span>
-        <span class="bg-gray-700 text-xs px-2 py-1 rounded-full">16</span>
-      </a>
-      <a href="#" class="flex items-center justify-between text-white hover:bg-gray-800 px-4 py-2 rounded">
-        <span class="menu-text">Favorites</span>
-        <span class="bg-gray-700 text-xs px-2 py-1 rounded-full">8</span>
-      </a>
-      <a href="#" class="flex items-center justify-between text-white hover:bg-gray-800 px-4 py-2 rounded">
-        <span class="menu-text">Archived</span>
-        <span class="bg-gray-700 text-xs px-2 py-1 rounded-full">128</span>
-      </a>
-    </div>
+  <div class="mt-auto p-5 border-t border-gray-700 text-sm">
+    <footer class="bg-darkerBlue text-center py-4">
+      <p class="text-sm text-gray-400">
+        Copyright © 2023-2024 Yanok AI. All rights reserved. All trademarks are protected by law and owned by their respective holders.
+      </p>
+    </footer>
   </div>
 
   <button id="sidebar-collapse" class="p-4 w-full text-center border-t border-gray-700 absolute bottom-0 left-0">
