@@ -43,7 +43,7 @@
       }
 
       /* Apply 3% indent for main content sections */
-      #content-wrapper > div {
+      #content-wrapper > div:not(.w-full) {
         padding-left: 3%;
         padding-right: 3%;
       }
@@ -71,6 +71,11 @@
         #sidebar img {
           max-width: 120px;
           height: auto;
+        }
+
+        #content-wrapper > div:not(.w-full) {
+          padding-left: 5%;
+          padding-right: 2%;
         }
       }
 
