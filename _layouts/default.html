@@ -204,12 +204,15 @@
             
             sidebar.classList.toggle('overflow-y-auto');
             sidebar.classList.toggle('overflow-hidden');
-            
-            const logo = sidebar.querySelector('img');
-            logo.classList.toggle('w-full');
-            logo.classList.toggle('max-w-[180px]');
-            logo.classList.toggle('w-6');
-            logo.classList.toggle('h-6');
+
+            const logo = sidebar.querySelector('#sidebar-logo');
+            if (sidebar.classList.contains('w-16')) {
+              logo.classList.remove('w-full', 'md:max-w-[180px]');
+              logo.classList.add('w-8', 'h-8');
+            } else {
+              logo.classList.add('w-full', 'md:max-w-[180px]');
+              logo.classList.remove('w-8', 'h-8');
+            }
             
             saveMenuState();
           }
@@ -234,7 +237,15 @@
             contentWrapper.classList.remove('md:ml-64');
           }
           if (state.isCollapsed) {
+            const logo = sidebar.querySelector('#sidebar-logo');
+            logo.classList.remove('w-full', 'md:max-w-[180px]');
+            logo.classList.add('w-8', 'h-8');
+            
             collapseSidebar();
+          } else {
+            const logo = sidebar.querySelector('#sidebar-logo');
+            logo.classList.add('w-full', 'md:max-w-[180px]');
+            logo.classList.remove('w-8', 'h-8');
           }
           state.openSubmenus.forEach(submenuTitle => {
             const submenuToggle = Array.from(submenus).find(el => el.textContent.trim() === submenuTitle);
