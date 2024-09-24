@@ -42,10 +42,13 @@
         display: none;
       }
 
-      /* Apply 3% indent for main content sections */
+      /* Apply 5% indent and max width for main content sections */
       #content-wrapper > div:not(.w-full) {
-        padding-left: 3%;
-        padding-right: 3%;
+        padding-left: 5%;
+        padding-right: 5%;
+        max-width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
       }
 
       /* Adjust submenu item brightness */
@@ -75,7 +78,14 @@
 
         #content-wrapper > div:not(.w-full) {
           padding-left: 5%;
-          padding-right: 2%;
+          padding-right: 5%;
+        }
+      }
+
+      @media (min-width: 1201px) {
+        #content-wrapper > div:not(.w-full) {
+          padding-left: 8%;
+          padding-right: 8%;
         }
       }
 
@@ -114,9 +124,9 @@
     
     {% include navigation.html %}
     
-    <div id="content-wrapper" class="flex-grow transition-all duration-300 ml-0 md:ml-64 pt-10">
+    <div id="content-wrapper" class="flex-grow transition-all duration-300 ml-0 md:ml-64 pt-14">
       <div class="flex flex-col items-center min-h-screen">
-        <div class="grow w-full px-[3%]">
+        <div class="grow w-full">
           <div data-content-variation="regular">{{ content }}</div>
           <div data-content-variation="manager" class="hidden">
             {% include content_variations/manager.html %}
