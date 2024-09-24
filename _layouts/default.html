@@ -90,7 +90,7 @@
       }
 
       #content-wrapper {
-        transition: margin-left 0.3s ease-in-out;
+        transition: margin-right 0.3s ease-in-out;
       }
 
       @media (max-width: 767px) {
@@ -115,16 +115,11 @@
   </head>
 
   <body class="font-jost antialiased text-white bg-gradient-to-br from-darkerBlue to-darkBlue flex">
-    <button id="mobile-sidebar-toggle" class="md:hidden fixed top-14 left-4 z-50 bg-blue-500 p-2 rounded-full">
-      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-      </svg>
-    </button>
     <script type="module" src="{{ '/assets/javascript/cookieconsent-config.js' | relative_url }}"></script>
     
     {% include navigation.html %}
     
-    <div id="content-wrapper" class="flex-grow transition-all duration-300 ml-0 md:ml-64 pt-14">
+    <div id="content-wrapper" class="flex-grow transition-all duration-300 mr-0 md:mr-64 pt-14">
       <div class="flex flex-col items-center min-h-screen">
         <div class="grow w-full">
           <div data-content-variation="regular">{{ content }}</div>
@@ -193,9 +188,10 @@
         const mobileSidebarToggle = document.getElementById('mobile-sidebar-toggle');
 
         function toggleSidebar() {
-          sidebar.classList.toggle('-translate-x-full');
-          contentWrapper.classList.toggle('ml-0');
-          contentWrapper.classList.toggle('md:ml-64');
+          sidebar.classList.toggle('translate-x-full');
+          sidebar.classList.toggle('-translate-x-0');
+          contentWrapper.classList.toggle('mr-0');
+          contentWrapper.classList.toggle('md:mr-64');
           document.body.classList.toggle('overflow-hidden');
           saveMenuState();
         }
@@ -204,8 +200,8 @@
           if (window.innerWidth >= 768) {
             sidebar.classList.toggle('w-64');
             sidebar.classList.toggle('w-16');
-            contentWrapper.classList.toggle('md:ml-64');
-            contentWrapper.classList.toggle('md:ml-16');
+            contentWrapper.classList.toggle('md:mr-64');
+            contentWrapper.classList.toggle('md:mr-16');
             
             const sidebarContent = document.querySelectorAll('#sidebar > *:not(:first-child, :last-child)');
             sidebarContent.forEach(el => el.classList.toggle('hidden'));
@@ -229,7 +225,7 @@
         }
 
         function saveMenuState() {
-          const isOpen = !sidebar.classList.contains('-translate-x-full');
+          const isOpen = !sidebar.classList.contains('translate-x-full');
           const isCollapsed = sidebar.classList.contains('w-16');
           const openSubmenus = Array.from(document.querySelectorAll('.submenu:not(.hidden)')).map(el => el.previousElementSibling.textContent.trim());
           localStorage.setItem('sidebarState', JSON.stringify({ isOpen, isCollapsed, openSubmenus }));
@@ -238,13 +234,15 @@
         function loadMenuState() {
           const state = JSON.parse(localStorage.getItem('sidebarState')) || { isOpen: true, isCollapsed: false, openSubmenus: [] };
           if (state.isOpen && window.innerWidth >= 768) {
-            sidebar.classList.remove('-translate-x-full');
-            contentWrapper.classList.remove('ml-0');
-            contentWrapper.classList.add('md:ml-64');
+            sidebar.classList.remove('translate-x-full');
+            sidebar.classList.add('-translate-x-0');
+            contentWrapper.classList.remove('mr-0');
+            contentWrapper.classList.add('md:mr-64');
           } else if (window.innerWidth < 768) {
-            sidebar.classList.add('-translate-x-full');
-            contentWrapper.classList.add('ml-0');
-            contentWrapper.classList.remove('md:ml-64');
+            sidebar.classList.add('translate-x-full');
+            sidebar.classList.remove('-translate-x-0');
+            contentWrapper.classList.add('mr-0');
+            contentWrapper.classList.remove('md:mr-64');
           }
           if (state.isCollapsed) {
             const logo = sidebar.querySelector('#sidebar-logo');
@@ -268,13 +266,15 @@
 
         function handleResize() {
           if (window.innerWidth >= 768) {
-            sidebar.classList.remove('-translate-x-full');
-            contentWrapper.classList.remove('ml-0');
-            contentWrapper.classList.add('md:ml-64');
+            sidebar.classList.remove('translate-x-full');
+            sidebar.classList.add('-translate-x-0');
+            contentWrapper.classList.remove('mr-0');
+            contentWrapper.classList.add('md:mr-64');
           } else {
-            sidebar.classList.add('-translate-x-full');
-            contentWrapper.classList.add('ml-0');
-            contentWrapper.classList.remove('md:ml-64');
+            sidebar.classList.add('translate-x-full');
+            sidebar.classList.remove('-translate-x-0');
+            contentWrapper.classList.add('mr-0');
+            contentWrapper.classList.remove('md:mr-64');
           }
           updateScrollbarVisibility();
         }
