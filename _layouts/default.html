@@ -60,33 +60,26 @@
       /* Mobile layout adjustments */
       @media (max-width: 767px) {
         #sidebar {
-          position: fixed;
-          top: 0;
-          left: 0;
-          bottom: 0;
-          z-index: 40;
-          transition: transform 0.3s ease-in-out;
-        }
-
-        #sidebar.hidden {
           transform: translateX(-100%);
         }
 
-        #sidebar img {
-          max-width: 120px;
-          height: auto;
+        #sidebar.active {
+          transform: translateX(0);
         }
 
-        #content-wrapper > div:not(.w-full) {
-          padding-left: 5%;
-          padding-right: 5%;
+        #content-wrapper {
+          margin-left: 0 !important;
+        }
+
+        #mobile-sidebar-toggle {
+          display: block;
         }
       }
 
-      @media (min-width: 1201px) {
-        #content-wrapper > div:not(.w-full) {
-          padding-left: 8%;
-          padding-right: 8%;
+      /* Desktop layout adjustments */
+      @media (min-width: 768px) {
+        #content-wrapper.sidebar-collapsed {
+          margin-left: 4rem !important; /* 16px * 4 = 64px */
         }
       }
 
@@ -111,6 +104,17 @@
         #content-wrapper h3 {
           font-size: 1.25rem;
         }
+      }
+
+      @media (min-width: 1201px) {
+        #content-wrapper > div:not(.w-full) {
+          padding-left: 8%;
+          padding-right: 8%;
+        }
+      }
+
+      #content-wrapper {
+        transition: margin-left 0.3s ease-in-out;
       }
     </style>
   </head>
@@ -203,6 +207,7 @@
             sidebar.classList.toggle('w-16');
             contentWrapper.classList.toggle('md:ml-64');
             contentWrapper.classList.toggle('md:ml-16');
+            contentWrapper.classList.toggle('sidebar-collapsed');
             
             const sidebarContent = document.querySelectorAll('#sidebar > *:not(:first-child, :last-child)');
             sidebarContent.forEach(el => el.classList.toggle('hidden'));
@@ -212,14 +217,11 @@
             sidebar.classList.toggle('overflow-y-auto');
             sidebar.classList.toggle('overflow-hidden');
 
-            const logo = sidebar.querySelector('#sidebar-logo');
-            if (sidebar.classList.contains('w-16')) {
-              logo.classList.remove('md:w-24', 'md:h-24');
-              logo.classList.add('w-8', 'h-8');
-            } else {
-              logo.classList.add('md:w-24', 'md:h-24');
-              logo.classList.remove('w-8', 'h-8');
-            }
+            const logoContainer = sidebar.querySelector('#sidebar > div:first-child');
+            logoContainer.classList.toggle('h-24');
+            logoContainer.classList.toggle('w-24');
+            logoContainer.classList.toggle('h-16');
+            logoContainer.classList.toggle('w-16');
             
             saveMenuState();
           }
@@ -246,15 +248,7 @@
             contentWrapper.classList.remove('md:ml-64');
           }
           if (state.isCollapsed) {
-            const logo = sidebar.querySelector('#sidebar-logo');
-            logo.classList.remove('md:w-24', 'md:h-24');
-            logo.classList.add('w-8', 'h-8');
-            
             collapseSidebar();
-          } else {
-            const logo = sidebar.querySelector('#sidebar-logo');
-            logo.classList.add('md:w-24', 'md:h-24');
-            logo.classList.remove('w-8', 'h-8');
           }
           state.openSubmenus.forEach(submenuTitle => {
             const submenuToggle = Array.from(submenus).find(el => el.textContent.trim() === submenuTitle);
@@ -290,17 +284,22 @@
           }
         }
 
+        mobileSidebarToggle.addEventListener('click', toggleSidebar);
+        sidebarCollapse.addEventListener('click', collapseSidebar);
+        window.addEventListener('resize', handleResize);
+
         loadMenuState();
         handleResize();
         updateScrollbarVisibility();
 
-        window.addEventListener('resize', () => {
-          handleResize();
-          updateScrollbarVisibility();
+        document.querySelectorAll('.submenu a').forEach(link => {
+          link.addEventListener('click', (e) => {
+            e.preventDefault();
+            const href = link.getAttribute('href');
+            saveMenuState();
+            window.location.href = href;
+          });
         });
-
-        document.getElementById('mobile-sidebar-toggle').addEventListener('click', toggleSidebar);
-        sidebarCollapse.addEventListener('click', collapseSidebar);
 
         submenus.forEach(item => {
           item.addEventListener('click', (e) => {
@@ -309,15 +308,6 @@
             item.querySelector('svg').classList.toggle('rotate-180');
             saveMenuState();
             updateScrollbarVisibility();
-          });
-        });
-
-        document.querySelectorAll('.submenu a').forEach(link => {
-          link.addEventListener('click', (e) => {
-            e.preventDefault();
-            const href = link.getAttribute('href');
-            saveMenuState();
-            window.location.href = href;
           });
         });
       });
