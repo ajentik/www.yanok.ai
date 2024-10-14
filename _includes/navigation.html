@@ -107,21 +107,3 @@
 </button>
 <!-- Overlay -->
 <div id="sidebar-overlay" class="fixed inset-0 bg-black opacity-50 z-40 hidden"></div>
-
-<!-- Sidebar Toggle Script -->
-<script>
-  document.addEventListener('DOMContentLoaded', () => {
-    const sidebar = document.getElementById('sidebar');
-    const mobileToggle = document.getElementById('mobile-sidebar-toggle');
-    const overlay = document.getElementById('sidebar-overlay');
-
-    function toggleSidebar() {
-      sidebar.classList.toggle('-translate-x-full');
-      overlay.classList.toggle('hidden');
-      document.body.classList.toggle('overflow-hidden');
-    }
-
-    mobileToggle.addEventListener('click', toggleSidebar);
-    overlay.addEventListener('click', toggleSidebar);
-  });
-</script>
