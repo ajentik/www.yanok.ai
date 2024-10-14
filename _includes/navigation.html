@@ -100,34 +100,10 @@
   </button>
 </div>
 <!-- Mobile Sidebar Toggle Button -->
-<button id="mobile-sidebar-toggle" class="md:hidden fixed top-4 left-4 z-60 bg-blue-500 p-2 rounded-full transition-all duration-300">
+<button id="mobile-sidebar-toggle" class="md:hidden fixed top-4 z-60 bg-blue-500 p-2 rounded-full transition-all duration-300" style="left: 16px;">
   <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
   </svg>
 </button>
 <!-- Overlay -->
 <div id="sidebar-overlay" class="fixed inset-0 bg-black opacity-50 z-40 hidden"></div>
-<script>
-  document.addEventListener('DOMContentLoaded', function() {
-    const sidebar = document.getElementById('sidebar');
-    const toggleButton = document.getElementById('mobile-sidebar-toggle');
-    const overlay = document.getElementById('sidebar-overlay');
-    let isOpen = false;
-
-    function toggleSidebar() {
-      isOpen = !isOpen;
-      if (isOpen) {
-        sidebar.classList.remove('-translate-x-full');
-        toggleButton.classList.add('left-64');
-        overlay.classList.remove('hidden');
-      } else {
-        sidebar.classList.add('-translate-x-full');
-        toggleButton.classList.remove('left-64');
-        overlay.classList.add('hidden');
-      }
-    }
-
-    toggleButton.addEventListener('click', toggleSidebar);
-    overlay.addEventListener('click', toggleSidebar);
-  });
-</script>

@@ -57,10 +57,13 @@
         opacity: 0.8;
       }
 
-      /* Mobile layout adjustments */
+      /* New mobile layout adjustments */
       @media (max-width: 767px) {
         #sidebar {
+          width: 100%;
+          max-width: 256px;
           transform: translateX(-100%);
+          transition: transform 0.3s ease-in-out;
         }
 
         #sidebar.active {
@@ -69,28 +72,25 @@
 
         #content-wrapper {
           margin-left: 0 !important;
+          transition: margin-left 0.3s ease-in-out;
+        }
+
+        #content-wrapper.sidebar-open {
+          margin-left: 256px;
         }
 
         #mobile-sidebar-toggle {
           display: block;
+          transition: left 0.3s ease-in-out;
         }
-      }
 
-      /* Desktop layout adjustments */
-      @media (min-width: 768px) {
-        #content-wrapper.sidebar-collapsed {
-          margin-left: 4rem !important; /* 16px * 4 = 64px */
+        body.overflow-hidden {
+          overflow: hidden;
         }
-      }
 
-      #content-wrapper {
-        transition: margin-left 0.3s ease-in-out;
-      }
-
-      @media (max-width: 767px) {
         #content-wrapper > div:not(#content-variation-menu) {
-          font-size: 70%; /* Reduces font size by 30% */
-          line-height: 1.5; /* Improves readability for smaller text */
+          font-size: 70%;
+          line-height: 1.5;
         }
 
         #content-wrapper h1 {
@@ -106,6 +106,13 @@
         }
       }
 
+      /* Desktop layout adjustments */
+      @media (min-width: 768px) {
+        #content-wrapper.sidebar-collapsed {
+          margin-left: 4rem !important;
+        }
+      }
+
       @media (min-width: 1201px) {
         #content-wrapper > div:not(.w-full) {
           padding-left: 8%;
@@ -115,6 +122,10 @@
 
       #content-wrapper {
         transition: margin-left 0.3s ease-in-out;
+      }
+
+      #sidebar-overlay {
+        transition: opacity 0.3s ease-in-out;
       }
     </style>
   </head>
@@ -191,13 +202,21 @@
         const sidebarCollapse = document.getElementById('sidebar-collapse');
         const submenus = document.querySelectorAll('.submenu-toggle');
         const mobileSidebarToggle = document.getElementById('mobile-sidebar-toggle');
+        const overlay = document.getElementById('sidebar-overlay');
 
         function toggleSidebar() {
-          sidebar.classList.toggle('-translate-x-full');
-          sidebar.classList.toggle('translate-x-0');
-          contentWrapper.classList.toggle('ml-0');
-          contentWrapper.classList.toggle('md:ml-64');
+          sidebar.classList.toggle('active');
+          contentWrapper.classList.toggle('sidebar-open');
+          overlay.classList.toggle('hidden');
           document.body.classList.toggle('overflow-hidden');
+
+          if (window.innerWidth < 768) {
+            if (sidebar.classList.contains('active')) {
+              mobileSidebarToggle.style.left = '256px';
+            } else {
+              mobileSidebarToggle.style.left = '16px';
+            }
+          }
           saveMenuState();
         }
 
@@ -228,26 +247,19 @@
         }
 
         function saveMenuState() {
-          const isOpen = !sidebar.classList.contains('-translate-x-full');
+          const isOpen = sidebar.classList.contains('active');
           const isCollapsed = sidebar.classList.contains('w-16');
           const openSubmenus = Array.from(document.querySelectorAll('.submenu:not(.hidden)')).map(el => el.previousElementSibling.textContent.trim());
           localStorage.setItem('sidebarState', JSON.stringify({ isOpen, isCollapsed, openSubmenus }));
         }
 
         function loadMenuState() {
-          const state = JSON.parse(localStorage.getItem('sidebarState')) || { isOpen: true, isCollapsed: false, openSubmenus: [] };
+          const state = JSON.parse(localStorage.getItem('sidebarState')) || { isOpen: false, isCollapsed: false, openSubmenus: [] };
           if (state.isOpen && window.innerWidth >= 768) {
-            sidebar.classList.remove('-translate-x-full');
-            sidebar.classList.add('translate-x-0');
-            contentWrapper.classList.remove('ml-0');
-            contentWrapper.classList.add('md:ml-64');
-          } else if (window.innerWidth < 768) {
-            sidebar.classList.add('-translate-x-full');
-            sidebar.classList.remove('translate-x-0');
-            contentWrapper.classList.add('ml-0');
-            contentWrapper.classList.remove('md:ml-64');
+            sidebar.classList.add('active');
+            contentWrapper.classList.add('sidebar-open');
           }
-          if (state.isCollapsed) {
+          if (state.isCollapsed && window.innerWidth >= 768) {
             collapseSidebar();
           }
           state.openSubmenus.forEach(submenuTitle => {
@@ -261,15 +273,15 @@
 
         function handleResize() {
           if (window.innerWidth >= 768) {
-            sidebar.classList.remove('-translate-x-full');
-            sidebar.classList.add('translate-x-0');
-            contentWrapper.classList.remove('ml-0');
-            contentWrapper.classList.add('md:ml-64');
+            sidebar.classList.remove('active');
+            contentWrapper.classList.remove('sidebar-open');
+            overlay.classList.add('hidden');
+            mobileSidebarToggle.style.left = '16px';
           } else {
-            sidebar.classList.add('-translate-x-full');
-            sidebar.classList.remove('translate-x-0');
-            contentWrapper.classList.add('ml-0');
-            contentWrapper.classList.remove('md:ml-64');
+            sidebar.classList.remove('w-16');
+            sidebar.classList.add('w-64');
+            contentWrapper.classList.remove('md:ml-16');
+            contentWrapper.classList.add('md:ml-64');
           }
           updateScrollbarVisibility();
         }
@@ -285,21 +297,13 @@
         }
 
         mobileSidebarToggle.addEventListener('click', toggleSidebar);
+        overlay.addEventListener('click', toggleSidebar);
         sidebarCollapse.addEventListener('click', collapseSidebar);
         window.addEventListener('resize', handleResize);
 
         loadMenuState();
         handleResize();
         updateScrollbarVisibility();
-
-        document.querySelectorAll('.submenu a').forEach(link => {
-          link.addEventListener('click', (e) => {
-            e.preventDefault();
-            const href = link.getAttribute('href');
-            saveMenuState();
-            window.location.href = href;
-          });
-        });
 
         submenus.forEach(item => {
           item.addEventListener('click', (e) => {
