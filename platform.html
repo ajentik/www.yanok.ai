@@ -49,27 +49,49 @@ description: "Yanok Automation Platform"
 <div id="rag" class="w-full text-white">
   <div class="site-gutter max-w-container mx-auto flex flex-col items-center gap-20 py-24">
     <h2 class="text-4xl md:text-5xl font-bold">RAG</h2>
-    <p class="text-xl">RAG (Retrieval-Augmented Generation) enhances Large Language Models by combining them with your organization's knowledge sources, enabling more accurate, contextual, and verifiable AI responses.</p>
     
-    <div class="mt-8 space-y-8">
-      <div>
-        <h3 class="text-2xl font-semibold mb-4">What's RAG</h3>
-        <p>RAG combines the power of large language models with your organization's specific knowledge base, ensuring responses are both contextually relevant and aligned with your data.</p>
+    <!-- Manager View -->
+    <div data-content-variation="manager">
+      <p class="text-xl mb-8">RAG enhances your organization's AI capabilities by combining your knowledge base with advanced language models, ensuring accurate and contextual responses while maintaining data control.</p>
+      <div class="space-y-8">
+        <div>
+          <h3 class="text-2xl font-semibold mb-4">Strategic Value</h3>
+          <p>Leverage existing organizational knowledge to improve decision-making and reduce operational costs while maintaining compliance and data accuracy.</p>
+        </div>
+        <div>
+          <h3 class="text-2xl font-semibold mb-4">Implementation Benefits</h3>
+          <p>Quick deployment with minimal disruption to existing workflows, providing immediate ROI through improved efficiency and reduced errors.</p>
+        </div>
       </div>
-      
-      <div>
-        <h3 class="text-2xl font-semibold mb-4">RAG Methods</h3>
-        <p>Utilizing semantic search, vector embeddings, and context-aware filtering, RAG efficiently retrieves and incorporates relevant information into AI responses.</p>
+    </div>
+
+    <!-- Consultant View -->
+    <div data-content-variation="consultant" class="hidden">
+      <p class="text-xl mb-8">RAG provides a framework for integrating domain-specific knowledge with AI models, creating customized solutions that align with industry standards and client requirements.</p>
+      <div class="space-y-8">
+        <div>
+          <h3 class="text-2xl font-semibold mb-4">Integration Strategy</h3>
+          <p>Seamless integration with existing systems and databases, ensuring consistent knowledge retrieval and application across different use cases.</p>
+        </div>
+        <div>
+          <h3 class="text-2xl font-semibold mb-4">Best Practices</h3>
+          <p>Optimize knowledge base structure and retrieval methods for maximum efficiency and accuracy in AI responses.</p>
+        </div>
       </div>
-      
-      <div>
-        <h3 class="text-2xl font-semibold mb-4">RAG Frameworks</h3>
-        <p>Supporting multiple frameworks and architectures, our platform enables flexible RAG implementation tailored to your specific needs and use cases.</p>
-      </div>
-      
-      <div>
-        <h3 class="text-2xl font-semibold mb-4">Interaction with Agentic AI</h3>
-        <p>RAG seamlessly integrates with autonomous AI agents, providing them with accurate, up-to-date information to enhance their decision-making capabilities.</p>
+    </div>
+
+    <!-- Engineer View -->
+    <div data-content-variation="engineer" class="hidden">
+      <p class="text-xl mb-8">RAG combines vector embeddings and semantic search with LLMs to enable accurate, context-aware responses based on your organization's data.</p>
+      <div class="space-y-8">
+        <div>
+          <h3 class="text-2xl font-semibold mb-4">Technical Architecture</h3>
+          <p>Utilizes vector databases and embedding models for efficient information retrieval and contextual matching.</p>
+        </div>
+        <div>
+          <h3 class="text-2xl font-semibold mb-4">Integration Points</h3>
+          <p>Supports multiple embedding models, custom tokenization, and flexible integration patterns through standardized APIs.</p>
+        </div>
       </div>
     </div>
   </div>
