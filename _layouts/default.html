@@ -142,63 +142,12 @@
     <div id="content-wrapper" class="flex-grow transition-all duration-300 ml-0 md:ml-64 pt-14">
       <div class="flex flex-col items-center min-h-screen">
         <div class="grow w-full">
-          <div data-content-variation="regular">{{ content }}</div>
-          <div data-content-variation="manager" class="hidden">
-            {% include content_variations/manager.html %}
-          </div>
-          <div data-content-variation="consultant" class="hidden">
-            {% include content_variations/consultant.html %}
-          </div>
-          <div data-content-variation="engineer" class="hidden">
-            {% include content_variations/engineer.html %}
-          </div>
+          {{ content }}
         </div>
         <div class="w-full">{% include footer.html %}</div>
       </div>
     </div>
 
-    <script>
-      document.addEventListener('DOMContentLoaded', () => {
-        const variationButtons = document.querySelectorAll('.variation-btn');
-        const contentSections = document.querySelectorAll('[data-content-variation]');
-
-        function setActiveVariation(variation) {
-          variationButtons.forEach(button => {
-            const isActive = button.dataset.variation === variation;
-            button.classList.toggle('active', isActive);
-            button.setAttribute('aria-pressed', isActive.toString());
-          });
-
-          contentSections.forEach(section => {
-            section.classList.toggle('hidden', section.dataset.contentVariation !== variation && variation !== 'regular');
-          });
-
-          localStorage.setItem('selectedVariation', variation);
-          
-          // Update URL for bookmarking and sharing
-          const url = new URL(window.location);
-          url.searchParams.set('view', variation);
-          history.pushState({}, '', url);
-        }
-
-        variationButtons.forEach(button => {
-          button.addEventListener('click', () => {
-            setActiveVariation(button.dataset.variation);
-          });
-        });
-
-        // Handle initial load and browser back/forward
-        window.addEventListener('popstate', () => {
-          const urlParams = new URLSearchParams(window.location.search);
-          const variation = urlParams.get('view') || 'regular';
-          setActiveVariation(variation);
-        });
-
-        const urlParams = new URLSearchParams(window.location.search);
-        const initialVariation = urlParams.get('view') || localStorage.getItem('selectedVariation') || 'regular';
-        setActiveVariation(initialVariation);
-      });
-    </script>
     <script>
       document.addEventListener('DOMContentLoaded', () => {
         const sidebar = document.getElementById('sidebar');
