@@ -44,12 +44,13 @@ body       { position: relative }
     }
   }
   .site-gutter {
-    @apply px-3 md:px-10;
+    @apply px-2 md:px-4;
   }
 
   .navigation {
     &-link {
       @apply text-white transition duration-300 font-semibold;
+      // Removed padding to revert changes
 
       &-underline {
         @apply block max-w-0 group-hover:max-w-full transition-all duration-300 h-0.5 bg-white;
