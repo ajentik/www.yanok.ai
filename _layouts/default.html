@@ -132,7 +132,15 @@
         transition: opacity 0.3s ease-in-out;
       }
 
-      /* Additional CSS rules as per instructions */
+      /* Core layout structure */
+      #content-wrapper {
+        position: relative;
+        z-index: 10;
+        min-height: 100vh;
+        width: 100%;
+        transition: margin-left 0.3s ease-in-out;
+      }
+
       #content-wrapper main {
         position: relative;
         z-index: 1;
@@ -143,21 +151,13 @@
         position: fixed;
         left: 0;
         top: 0;
+        height: 100vh;
         transition: transform 0.3s ease-in-out;
       }
 
       #mobile-sidebar-toggle {
         z-index: 55;
         transition: left 0.3s ease-in-out;
-      }
-
-      /* Core layout structure */
-      #content-wrapper {
-        position: relative;
-        z-index: 10;
-        min-height: 100vh;
-        width: 100%;
-        transition: margin-left 0.3s ease-in-out;
       }
 
       #sidebar-overlay {
@@ -208,10 +208,10 @@
     
     <div id="content-wrapper" class="flex-grow transition-all duration-300 ml-0 md:ml-64 pt-14">
       <main class="flex flex-col min-h-screen relative">
-        <div class="grow w-full px-4 md:px-8">
+        <div class="flex-grow w-full px-4 md:px-8 relative z-10">
           {{ content }}
         </div>
-        <div class="w-full">{% include footer.html %}</div>
+        <div class="w-full relative z-10">{% include footer.html %}</div>
       </main>
     </div>
 
@@ -300,11 +300,16 @@
             contentWrapper.classList.remove('sidebar-open');
             overlay.classList.add('hidden');
             mobileSidebarToggle.style.left = '16px';
+            document.body.classList.remove('overflow-hidden');
           } else {
             sidebar.classList.remove('w-16');
             sidebar.classList.add('w-64');
             contentWrapper.classList.remove('md:ml-16');
             contentWrapper.classList.add('md:ml-64');
+            
+            if (!sidebar.classList.contains('active')) {
+              mobileSidebarToggle.style.left = '16px';
+            }
           }
           updateScrollbarVisibility();
         }
