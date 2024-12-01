@@ -140,13 +140,38 @@
 
       #sidebar {
         z-index: 50;
+        position: fixed;
+        left: 0;
+        top: 0;
+        transition: transform 0.3s ease-in-out;
       }
 
       #mobile-sidebar-toggle {
         z-index: 55;
+        transition: left 0.3s ease-in-out;
       }
 
+      /* Core layout structure */
+      #content-wrapper {
+        position: relative;
+        z-index: 10;
+        min-height: 100vh;
+        width: 100%;
+        transition: margin-left 0.3s ease-in-out;
+      }
+
+      #sidebar-overlay {
+        z-index: 40;
+        transition: opacity 0.3s ease-in-out;
+      }
+
+      /* Mobile layout */
       @media (max-width: 767px) {
+        #content-wrapper {
+          margin-left: 0;
+          width: 100%;
+        }
+
         #sidebar {
           transform: translateX(-100%);
         }
@@ -155,11 +180,24 @@
           transform: translateX(0);
         }
       }
+
+      /* Desktop layout */
+      @media (min-width: 768px) {
+        #content-wrapper {
+          margin-left: 16rem;
+          width: calc(100% - 16rem);
+        }
+
+        #content-wrapper.sidebar-collapsed {
+          margin-left: 4rem;
+          width: calc(100% - 4rem);
+        }
+      }
     </style>
   </head>
 
   <body class="font-jost antialiased text-white bg-gradient-to-br from-darkerBlue to-darkBlue flex">
-    <button id="mobile-sidebar-toggle" class="md:hidden fixed top-14 left-4 z-50 bg-blue-500 p-2 rounded-full">
+    <button id="mobile-sidebar-toggle" class="md:hidden fixed top-14 left-4 z-50 bg-blue-500 p-2 rounded-full transition-all duration-300">
       <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
       </svg>
@@ -169,8 +207,8 @@
     {% include navigation.html %}
     
     <div id="content-wrapper" class="flex-grow transition-all duration-300 ml-0 md:ml-64 pt-14">
-      <main class="flex flex-col items-center min-h-screen relative z-1">
-        <div class="grow w-full">
+      <main class="flex flex-col min-h-screen relative">
+        <div class="grow w-full px-4 md:px-8">
           {{ content }}
         </div>
         <div class="w-full">{% include footer.html %}</div>
