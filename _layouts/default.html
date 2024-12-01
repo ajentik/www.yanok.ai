@@ -268,11 +268,34 @@
 
         submenus.forEach(item => {
           item.addEventListener('click', (e) => {
-            const submenu = item.nextElementSibling;
-            submenu.classList.toggle('hidden');
-            item.querySelector('svg').classList.toggle('rotate-180');
-            saveMenuState();
-            updateScrollbarVisibility();
+            // Allow normal link navigation
+            if (e.target.tagName.toLowerCase() === 'a') {
+              return;
+            }
+            
+            // Only toggle submenu if clicking the toggle button or arrow icon
+            if (e.target === item || e.target.closest('.submenu-toggle')) {
+              e.preventDefault();
+              const submenu = item.nextElementSibling;
+              submenu.classList.toggle('hidden');
+              item.querySelector('svg').classList.toggle('rotate-180');
+              saveMenuState();
+              updateScrollbarVisibility();
+            }
+          });
+        });
+        
+        // Add new handler for all sidebar links
+        document.querySelectorAll('#sidebar a').forEach(link => {
+          link.addEventListener('click', () => {
+            // Close mobile sidebar after clicking a link
+            if (window.innerWidth < 768) {
+              sidebar.classList.remove('active');
+              contentWrapper.classList.remove('sidebar-open');
+              overlay.classList.add('hidden');
+              document.body.classList.remove('overflow-hidden');
+              mobileSidebarToggle.style.left = '16px';
+            }
           });
         });
       });
