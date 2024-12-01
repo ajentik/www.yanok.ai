@@ -1,21 +1,15 @@
-<div id="content-variation-menu" class="fixed top-0 left-0 right-0 bg-darkerBlue z-60 py-2 px-4 flex justify-end items-center">
-  <button class="variation-btn mx-1 py-1 px-2 rounded text-xs" data-variation="manager" aria-pressed="false" aria-label="Switch to Manager view">Manager</button>
-  <button class="variation-btn mx-1 py-1 px-2 rounded text-xs" data-variation="consultant" aria-pressed="false" aria-label="Switch to Consultant view">Consultant</button>
-  <button class="variation-btn mx-1 py-1 px-2 rounded text-xs" data-variation="engineer" aria-pressed="false" aria-label="Switch to Engineer view">Engineer</button>
-</div>
-
-<div id="sidebar" class="flex flex-col h-screen bg-darkerBlue w-64 fixed left-0 top-0 transition-all duration-300 z-50 overflow-y-auto -translate-x-full md:translate-x-0">
-  <div class="p-5 border-b border-gray-700 flex-shrink-0 flex flex-row items-center justify-between">
-    <a href="/" class="flex items-center w-full justify-center">
-      <img src="{{ "assets/images/logo.png" | relative_url }}" class="w-full max-w-full md:max-w-[180px] transition-all duration-300" alt="Yanok AI Logo" id="sidebar-logo">
+=======
+<!-- Sidebar Navigation -->
+<div id="sidebar" class="flex flex-col h-screen bg-darkerBlue w-64 fixed left-0 top-0 transition-all duration-300 z-50 overflow-y-auto transform -translate-x-full md:translate-x-0">
+<!-- Logo Section -->
+<div class="border-b border-gray-700 w-full">
+  <div class="p-5 flex items-center justify-center h-16 md:h-24">
+    <a href="/" class="flex items-center justify-center">
+      <img src="{{ "assets/images/logo.png" | relative_url }}" class="h-full object-contain w-1/3 md:w-1/3 p-1.5 min-p-1.5" alt="Yanok AI Logo" id="sidebar-logo">
     </a>
-    <button id="mobile-sidebar-toggle" class="md:hidden bg-blue-500 p-2 rounded-full">
-      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-      </svg>
-    </button>
   </div>
-  
+</div>
+  <!-- Navigation Menu -->
   <nav class="flex-grow">
     <div class="flex flex-col space-y-2">
       <!-- Product Menu Item -->
@@ -26,9 +20,10 @@
             <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 1 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
           </svg>
         </button>
-        <div class="submenu hidden mt-2 space-y-2 pl-5">
-          <a href="https://www.yno.ai" class="block text-sm text-gray-300 hover:text-white">Chat with AI</a>
-          <a href="https://app.yanok.ai/" class="block text-sm text-gray-300 hover:text-white">Process Platform</a>
+        <!-- Product submenu items -->
+        <div class="submenu hidden mt-2 space-y-2">
+          <a href="https://www.yno.ai" class="block text-sm text-gray-300 hover:text-white px-5">YnO Use AI</a>
+          <a href="https://app.yanok.ai/" class="block text-sm text-gray-300 hover:text-white px-5">Assign and run async jobs</a>
         </div>
       </div>
 
@@ -40,18 +35,11 @@
             <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 1 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
           </svg>
         </button>
-        <div class="submenu hidden mt-2 space-y-2 pl-5">
-          <a href="{{ "/platform.html#run-ai" | relative_url }}" class="block text-sm text-gray-300 hover:text-white">Run AI</a>
-          <a href="{{ "/platform.html#manage-api" | relative_url }}" class="block text-sm text-gray-300 hover:text-white">Manage API</a>
-          <a href="{{ "/platform.html#rag-data" | relative_url }}" class="block text-sm text-gray-300 hover:text-white">RAG Data</a>
-          <a href="{{ "/platform.html#maintain-security" | relative_url }}" class="block text-sm text-gray-300 hover:text-white">Maintain Security</a>
-          <a href="{{ "/solutions/communication.html" | relative_url }}" class="block text-sm text-gray-300 hover:text-white">Communication</a>
-          <a href="{{ "/solutions/education.html" | relative_url }}" class="block text-sm text-gray-300 hover:text-white">Education and Training</a>
-          <a href="{{ "/solutions/legal.html" | relative_url }}" class="block text-sm text-gray-300 hover:text-white">Legal</a>
-          <a href="{{ "/solutions/regulatory-compliance.html" | relative_url }}" class="block text-sm text-gray-300 hover:text-white">Regulatory & Compliance</a>
-          <a href="{{ "/solutions/human-resources.html" | relative_url }}" class="block text-sm text-gray-300 hover:text-white">Human Resources</a>
-          <a href="{{ "/solutions/information-technology.html" | relative_url }}" class="block text-sm text-gray-300 hover:text-white">IT</a>
-          <a href="{{ "/solutions/marketing.html" | relative_url }}" class="block text-sm text-gray-300 hover:text-white">Marketing</a>
+        <div class="submenu hidden mt-2 space-y-2">
+          <a href="{{ "/run-ai.html" | relative_url }}" class="block text-sm text-gray-300 hover:text-white px-5">Run AI</a>
+          <a href="{{ "/manage-api.html" | relative_url }}" class="block text-sm text-gray-300 hover:text-white px-5">Manage API</a>
+          <a href="{{ "/rag.html" | relative_url }}" class="block text-sm text-gray-300 hover:text-white px-5">RAG</a>
+          <a href="{{ "/maintain-security.html" | relative_url }}" class="block text-sm text-gray-300 hover:text-white px-5">Maintain Security</a>
         </div>
       </div>
 
@@ -63,11 +51,10 @@
             <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 1 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
           </svg>
         </button>
-        <div class="submenu hidden mt-2 space-y-2 pl-5">
-          <a href="{{ "/about.html" | relative_url }}" class="block text-sm text-gray-300 hover:text-white">About</a>
-          <a href="{{ "/about.html#careers" | relative_url }}" class="block text-sm text-gray-300 hover:text-white">Careers</a>
-          <a href="{{ "/partners.html" | relative_url }}" class="block text-sm text-gray-300 hover:text-white">Partners</a>
-          <a href="{{ "/diversity-and-inclusion.html" | relative_url }}" class="block text-sm text-gray-300 hover:text-white">Diversity & Inclusion</a>
+        <div class="submenu hidden mt-2 space-y-2">
+          <a href="{{ "/about.html" | relative_url }}" class="block text-sm text-gray-300 hover:text-white px-5">About</a>
+          <a href="{{ "/careers.html" | relative_url }}" class="block text-sm text-gray-300 hover:text-white px-5">Careers</a>
+          <a href="{{ "/partners.html" | relative_url }}" class="block text-sm text-gray-300 hover:text-white px-5">Partners</a>
         </div>
       </div>
 
@@ -79,23 +66,34 @@
             <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 1 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
           </svg>
         </button>
-        <div class="submenu hidden mt-2 space-y-2 pl-5">
-          <a href="https://buy.stripe.com/dR6g2j9r85wD5FK000" class="block text-sm text-gray-300 hover:text-white">YNO Chat</a>
-          <a href="https://buy.stripe.com/dR6g2j9r85wD5FK000" class="block text-sm text-gray-300 hover:text-white">Yanok Access</a>
+        <div class="submenu hidden mt-2 space-y-2">
+          <a href="https://buy.stripe.com/dR6g2j9r85wD5FK000" class="block text-sm text-gray-300 hover:text-white px-5">YnO AI</a>
+          <a href="https://buy.stripe.com/dR6g2j9r85wD5FK000" class="block text-sm text-gray-300 hover:text-white px-5">Yanok Access</a>
         </div>
       </div>
     </div>
   </nav>
-
-  <div class="mt-auto p-5 border-t border-gray-700 text-sm">
+  <!-- Footer Section -->
+  <div class="mt-auto p-6 border-t border-gray-700 text-sm">
     <footer class="bg-darkerBlue text-center">
-      <!-- menu footer -->
+      <div class="space-y-2">
+        <a href="{{ "/diversity-and-inclusion.html" | relative_url }}" class="block text-gray-300 hover:text-white">Diversity & Inclusion</a>
+        <a href="{{ "/privacy.html" | relative_url }}" class="block text-gray-300 hover:text-white">Privacy Policy</a>
+        <a href="{{ "/terms.html" | relative_url }}" class="block text-gray-300 hover:text-white">Terms & Conditions</a>
+      </div>
     </footer>
-  </div>
-
-  <button id="sidebar-collapse" class="p-4 w-full text-center border-t border-gray-700 absolute bottom-0 left-0 hidden md:block">
+<!-- Sidebar Collapse Button -->
+  <button id="sidebar-collapse" class="p-4 w-full text-center absolute bottom-0 left-0 hidden md:block">
     <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mx-auto transform transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 19l-7-7 7-7m8 14l-7-7 7-7" />
     </svg>
   </button>
 </div>
+<!-- Mobile Sidebar Toggle Button -->
+<button id="mobile-sidebar-toggle" class="md:hidden fixed top-4 left-4 z-60 bg-blue-500 p-2 rounded-full transition-all duration-300">
+  <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+  </svg>
+</button>
+<!-- Overlay -->
+<div id="sidebar-overlay" class="fixed inset-0 bg-black opacity-50 z-40 hidden"></div>
