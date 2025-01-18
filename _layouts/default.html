@@ -59,7 +59,6 @@
       /* New mobile layout adjustments */
       @media (max-width: 767px) {
         #sidebar {
-          pointer-events: auto; /* Add this */
           width: 100%;
           max-width: 256px;
           transform: translateX(-100%);
@@ -130,8 +129,6 @@
       }
 
       #sidebar-overlay {
-        z-index: 45; /* Between sidebar and toggle button */
-        pointer-events: auto;
         transition: opacity 0.3s ease-in-out;
       }
 
@@ -361,16 +358,20 @@
         
         // Add new handler for all sidebar links
         document.querySelectorAll('#sidebar a').forEach(link => {
-  link.addEventListener('click', (e) => {
-    // Don't prevent default navigation
-    if (window.innerWidth < 768) {
-      // Close mobile menu after a short delay
-      requestAnimationFrame(() => {
-        toggleSidebar();
+          link.addEventListener('click', (e) => {
+            if (window.innerWidth < 768) {
+              // Allow navigation to complete before closing mobile menu
+              setTimeout(() => {
+                sidebar.classList.remove('active');
+                contentWrapper.classList.remove('sidebar-open');
+                overlay.classList.add('hidden');
+                document.body.classList.remove('overflow-hidden');
+                mobileSidebarToggle.style.left = '16px';
+              }, 100);
+            }
+          });
+        });
       });
-    }
-  });
-});
     </script>
   </body>
 </html>
