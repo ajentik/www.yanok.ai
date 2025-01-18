@@ -41,7 +41,32 @@
       #sidebar.overflow-hidden::-webkit-scrollbar {
         display: none;
       }
+      #sidebar {
+    touch-action: manipulation;
+    -webkit-overflow-scrolling: touch;
+      }
 
+.submenu-toggle {
+    cursor: pointer;
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
+      }
+
+#sidebar-overlay {
+    backdrop-filter: blur(2px);
+    transition: opacity 0.3s ease;
+      }
+
+@media (max-width: 768px) {
+    body.overflow-hidden {
+        overflow: hidden;
+    }
+    
+    #sidebar {
+        width: 80%;
+        max-width: 300px;
+    }
+}
       /* Apply 2% indent and max width for main content sections */
       #content-wrapper > div:not(.w-full) {
         padding-left: 2%;
@@ -373,5 +398,44 @@
         });
       });
     </script>
+    
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const sidebar = document.getElementById('sidebar');
+      const overlay = document.getElementById('sidebar-overlay');
+      const mobileMenuButton = document.getElementById('mobile-menu-button'); // Your mobile menu trigger button
+      const submenuToggles = document.querySelectorAll('.submenu-toggle');
+  
+      // Toggle mobile menu
+      function toggleMobileMenu() {
+          sidebar.classList.toggle('-translate-x-full');
+          overlay.classList.toggle('hidden');
+          document.body.classList.toggle('overflow-hidden');
+      }
+  
+      // Mobile menu button click handler
+      if (mobileMenuButton) {
+          mobileMenuButton.addEventListener('click', toggleMobileMenu);
+      }
+  
+      // Overlay click handler
+      overlay.addEventListener('click', toggleMobileMenu);
+  
+      // Submenu toggles
+      submenuToggles.forEach(toggle => {
+          toggle.addEventListener('click', (e) => {
+              e.stopPropagation();
+              const submenu = toggle.nextElementSibling;
+              const arrow = toggle.querySelector('svg');
+              
+              // Toggle submenu visibility
+              submenu.classList.toggle('hidden');
+              
+              // Rotate arrow
+              arrow.classList.toggle('rotate-180');
+          });
+      });
+  });
+      </script>
   </body>
 </html>
