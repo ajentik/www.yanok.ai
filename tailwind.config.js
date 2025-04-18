@@ -1,44 +1,37 @@
 /** @type {import('tailwindcss').Config} */
-// tailwind.config.js
 module.exports = {
-  mode: 'jit',
   content: [
-    './_includes/**/*.html',
-    './_layouts/**/*.html',
-    './_posts/*.md',
-    './*.html',
-    './integrations/**/*.html',
+    "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
-    fontFamily: {
-      'jost': ['Jost', 'sans-serif'],
-    },
     extend: {
-      spacing: {
-        'site-gutter': {
-          default: '5em',
-        },
-        'container': '80rem',
-      },
-      backgroundColor: {
-        black: 'rgb(2, 16, 49)',
-        brand: {
-          default: "#0f659b",
-        },
+      fontFamily: {
+        jost: ['Jost', 'sans-serif'],
       },
       colors: {
-        blue: "#0f659b",
-        teal: "#0abab5",
-        medBlue: 'rgb(4, 57, 91)',
-        darkBlue: 'rgb(2, 16, 49)',
-        darkerBlue: 'rgb(0, 5, 16)',
+        darkerBlue: '#051b30',
+        darkBlue: '#0a2540',
+        teal: '#22d3ee',
+        blue: '#4ade80',
+      },
+      container: {
+        center: true,
+        padding: '1rem',
+        screens: {
+          sm: '100%',
+          md: '100%',
+          lg: '1024px',
+          xl: '1280px',
+        },
+      },
+      maxWidth: {
+        'container': '1280px',
       },
     },
-  },
-  variants: {
-    extend: {},
   },
   plugins: [
     require('@tailwindcss/typography'),
   ],
-}
+};
