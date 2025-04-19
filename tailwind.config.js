@@ -2,7 +2,6 @@
 module.exports = {
   content: [
     "./src/**/*.{js,ts,jsx,tsx,mdx}", // Scan the entire src directory
-    "./src/styles/globals.css",
   ],
   theme: {
     fontFamily: {
