@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="QPage"
-      description="QPage is a one-stop recruiting solution offering AI-powered tools and Analytics including content generation in JD, Emails and Interview questions, Job and Resume analytics, Psychometric assessments, Cohorts, AI sourcing, Sequences, Workflow automation and more."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -131,7 +130,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>QPage</title>
-          <meta name="description" content="QPage is a one-stop recruiting solution offering AI-powered tools and Analytics including content generation in JD, Emails and Interview questions, Job and Resume analytics, Psychometric assessments, Cohorts, AI sourcing, Sequences, Workflow automation and more." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

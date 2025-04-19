@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Well World"
-      description="Well World puts an Integrative Health Practitioner in Your Pocket. View custom plans and share your nutrition, exercise, sleep and meditation data with your practitioner."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -62,7 +61,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Well World</title>
-          <meta name="description" content="Well World puts an Integrative Health Practitioner in Your Pocket. View custom plans and share your nutrition, exercise, sleep and meditation data with your practitioner." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

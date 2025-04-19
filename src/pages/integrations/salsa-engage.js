@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Salsa Engage"
-      description="Salsa Engage is a purpose-built marketing automation, fundraising, advocacy, and peer-to-peer online software for nonprofits."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -72,7 +71,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Salsa Engage</title>
-          <meta name="description" content="Salsa Engage is a purpose-built marketing automation, fundraising, advocacy, and peer-to-peer online software for nonprofits." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

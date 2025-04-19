@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="My Web Audit"
-      description="My Web Audit is an audit and reporting tool to help agencies generate more leads and close more deals."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -86,7 +85,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>My Web Audit</title>
-          <meta name="description" content="My Web Audit is an audit and reporting tool to help agencies generate more leads and close more deals." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Boberdoo"
-      description="A SaaS company that offers lead capture software for companies that sell leads. Track, route and bill for all of your web leads & calls in one platform regardless of vertical."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +52,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Boberdoo</title>
-          <meta name="description" content="A SaaS company that offers lead capture software for companies that sell leads. Track, route and bill for all of your web leads & calls in one platform regardless of vertical." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

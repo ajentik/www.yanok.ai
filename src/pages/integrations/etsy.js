@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Etsy"
-      description="Etsy is a store that makes it easy to buy and sell handmade, vintage or uniquely manufactured goods online!"
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +52,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Etsy</title>
-          <meta name="description" content="Etsy is a store that makes it easy to buy and sell handmade, vintage or uniquely manufactured goods online!" />
+          <meta name="description" content={}/> />
         </>
       ),
     },

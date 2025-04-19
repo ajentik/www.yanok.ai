@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="CentricMinds"
-      description="CentricMinds is a digital platform delivering powerful Intranet, Document Management & Digital Experiences."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -61,7 +60,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>CentricMinds</title>
-          <meta name="description" content="CentricMinds is a digital platform delivering powerful Intranet, Document Management & Digital Experiences." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

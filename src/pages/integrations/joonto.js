@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Joonto"
-      description="JOONTO automatically tracks, manages, and monitors your business user's call activities from their mobile phone including call stats, optional call recording, call logs, and call monitoring."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -71,7 +70,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Joonto</title>
-          <meta name="description" content="JOONTO automatically tracks, manages, and monitors your business user's call activities from their mobile phone including call stats, optional call recording, call logs, and call monitoring." />
+          <meta name="description" content={}/>s call activities from their mobile phone including call stats, optional call recording, call logs, and call monitoring.' />
         </>
       ),
     },

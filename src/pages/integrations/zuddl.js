@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Zuddl"
-      description="Zuddl is a platform for B2B marketers and conference organizers to plan and run webinar and event programs that drive revenue. Zuddl supports the entire event lifecycle regardless of event format."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +56,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Zuddl</title>
-          <meta name="description" content="Zuddl is a platform for B2B marketers and conference organizers to plan and run webinar and event programs that drive revenue. Zuddl supports the entire event lifecycle regardless of event format." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

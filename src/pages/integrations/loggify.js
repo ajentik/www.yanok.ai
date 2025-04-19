@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Loggify"
-      description="A central release note repository enabling automatic communication of app updates. Build target-group specific communication pipelines now!"
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -66,7 +65,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Loggify</title>
-          <meta name="description" content="A central release note repository enabling automatic communication of app updates. Build target-group specific communication pipelines now!" />
+          <meta name="description" content={}/> />
         </>
       ),
     },

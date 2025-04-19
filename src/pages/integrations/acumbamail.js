@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Acumbamail"
-      description="Acumbamail is a simple and effective Email Marketing tool for everyone."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -106,7 +105,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Acumbamail</title>
-          <meta name="description" content="Acumbamail is a simple and effective Email Marketing tool for everyone." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

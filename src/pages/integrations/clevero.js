@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Clevero"
-      description="Clevero is a CRM that runs your daily operations in a simple to use platform. Capture data and automate process around for your Sales, Projects, Support, Timesheets, Invoicing and much much more."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -66,7 +65,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Clevero</title>
-          <meta name="description" content="Clevero is a CRM that runs your daily operations in a simple to use platform. Capture data and automate process around for your Sales, Projects, Support, Timesheets, Invoicing and much much more." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

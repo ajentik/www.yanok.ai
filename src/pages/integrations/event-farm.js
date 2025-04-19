@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Event Farm"
-      description="Event Farm is an enterprise event marketing platform: invitation & digital activation designed to promote and engage targeted audiences."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -106,7 +105,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Event Farm</title>
-          <meta name="description" content="Event Farm is an enterprise event marketing platform: invitation & digital activation designed to promote and engage targeted audiences." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

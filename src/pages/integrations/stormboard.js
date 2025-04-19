@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Stormboard"
-      description="An online stickynote whiteboard making meetings, brainstorms, and creative projects more productive and effective."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -101,7 +100,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Stormboard</title>
-          <meta name="description" content="An online stickynote whiteboard making meetings, brainstorms, and creative projects more productive and effective." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

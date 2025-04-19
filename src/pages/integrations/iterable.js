@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Iterable"
-      description="Iterable is the growth marketing platform that empowers you to deliver completely seamless, personalized customer experiences."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -77,7 +76,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Iterable</title>
-          <meta name="description" content="Iterable is the growth marketing platform that empowers you to deliver completely seamless, personalized customer experiences." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

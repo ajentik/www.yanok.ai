@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="CoffeeCup App"
-      description="Coffeecup is an extension for your product management software that supercharges your workflow with budget, cost- and team capacity management and billing."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -126,7 +125,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>CoffeeCup App</title>
-          <meta name="description" content="Coffeecup is an extension for your product management software that supercharges your workflow with budget, cost- and team capacity management and billing." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="LaunchDarkly"
-      description="LaunchDarkly allows you to innovate faster, deploy fearlessly, and make each release a masterpiece."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -131,7 +130,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>LaunchDarkly</title>
-          <meta name="description" content="LaunchDarkly allows you to innovate faster, deploy fearlessly, and make each release a masterpiece." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

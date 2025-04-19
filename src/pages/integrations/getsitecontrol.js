@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Getsitecontrol"
-      description="Getsitecontrol is a website popup builder for ecommerce. It’s designed to help merchants promote special offers, upsell and cross-sell products, collect emails, conduct surveys, prevent cart abandonment — all without having to hire a developer."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +56,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Getsitecontrol</title>
-          <meta name="description" content="Getsitecontrol is a website popup builder for ecommerce. It’s designed to help merchants promote special offers, upsell and cross-sell products, collect emails, conduct surveys, prevent cart abandonment — all without having to hire a developer." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

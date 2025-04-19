@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Redtie"
-      description="Redtie is an advanced, feature rich text messaging solution that lets you send attachments just like you would in an email. Businesses can share any type of files over a simple text message to their customers or contacts over a text message."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -71,7 +70,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Redtie</title>
-          <meta name="description" content="Redtie is an advanced, feature rich text messaging solution that lets you send attachments just like you would in an email. Businesses can share any type of files over a simple text message to their customers or contacts over a text message." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

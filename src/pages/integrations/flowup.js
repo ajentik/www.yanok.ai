@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Flowup"
-      description="With Flowup, you register service sales and related customer data, allowing you to control your sales in a fully integrated and online way."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -67,7 +66,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Flowup</title>
-          <meta name="description" content="With Flowup, you register service sales and related customer data, allowing you to control your sales in a fully integrated and online way." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

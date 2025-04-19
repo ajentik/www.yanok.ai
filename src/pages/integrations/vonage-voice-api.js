@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Vonage Voice API"
-      description="The Vonage Voice API (formerly Nexmo) allows you to make and receive calls with text-to-speech, audio playback, and forwarding."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -91,7 +90,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Vonage Voice API</title>
-          <meta name="description" content="The Vonage Voice API (formerly Nexmo) allows you to make and receive calls with text-to-speech, audio playback, and forwarding." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

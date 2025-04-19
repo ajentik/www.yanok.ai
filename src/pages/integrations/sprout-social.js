@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Sprout Social"
-      description="Sprout Social is a social media management and optimization platform for brands and agencies."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +52,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Sprout Social</title>
-          <meta name="description" content="Sprout Social is a social media management and optimization platform for brands and agencies." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

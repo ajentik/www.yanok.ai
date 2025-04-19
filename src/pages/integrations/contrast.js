@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Contrast"
-      description="Create, host and analyze your webinars and videos with an easy-to-use, collaborative video platform."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -71,7 +70,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Contrast</title>
-          <meta name="description" content="Create, host and analyze your webinars and videos with an easy-to-use, collaborative video platform." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

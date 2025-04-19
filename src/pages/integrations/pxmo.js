@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Pxmo"
-      description="Pxmo is an app for creating compelling proposals."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -96,7 +95,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Pxmo</title>
-          <meta name="description" content="Pxmo is an app for creating compelling proposals." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="NinjaOutreach"
-      description="NinjaOutreach streamlines your influencer marketing, blogger outreach and lead generation process with automated campaigns and follow-ups."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -66,7 +65,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>NinjaOutreach</title>
-          <meta name="description" content="NinjaOutreach streamlines your influencer marketing, blogger outreach and lead generation process with automated campaigns and follow-ups." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

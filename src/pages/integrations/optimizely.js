@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Optimizely"
-      description="The Optimizely platform technology provides A/B testing tools, in which two versions of a web page can be compared for performance, and multivariate testing."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +52,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Optimizely</title>
-          <meta name="description" content="The Optimizely platform technology provides A/B testing tools, in which two versions of a web page can be compared for performance, and multivariate testing." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Joomla!"
-      description="Joomla! is a popular open source CMS that is powerful and easy to use. Combined with extensions like RSform and Proforms, its a powerful tool for creating a web presence."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +52,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Joomla!</title>
-          <meta name="description" content="Joomla! is a popular open source CMS that is powerful and easy to use. Combined with extensions like RSform and Proforms, its a powerful tool for creating a web presence." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

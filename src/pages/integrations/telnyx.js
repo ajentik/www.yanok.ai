@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Telnyx"
-      description="Telnyx is a full-featured global communications platform with an SMS API built for reliable, enterprise-grade messaging on a secure network."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -116,7 +115,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Telnyx</title>
-          <meta name="description" content="Telnyx is a full-featured global communications platform with an SMS API built for reliable, enterprise-grade messaging on a secure network." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Protonmail"
-      description="ProtonMail is an end-to-end encrypted email service. ProtonMail uses client-side encryption to protect email contents and user data before they are sent to ProtonMail servers."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +52,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Protonmail</title>
-          <meta name="description" content="ProtonMail is an end-to-end encrypted email service. ProtonMail uses client-side encryption to protect email contents and user data before they are sent to ProtonMail servers." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

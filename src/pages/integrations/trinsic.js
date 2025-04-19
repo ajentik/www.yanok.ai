@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Trinsic"
-      description="Trinsic is a full-stack verifiable credential and digital wallet platform based on open standards."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -86,7 +85,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Trinsic</title>
-          <meta name="description" content="Trinsic is a full-stack verifiable credential and digital wallet platform based on open standards." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

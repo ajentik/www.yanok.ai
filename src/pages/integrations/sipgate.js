@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Sipgate"
-      description="sipgate is one of Europe's leading Business and Residential VoIP Providers, offering high quality pay as you go phone services."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +52,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Sipgate</title>
-          <meta name="description" content="sipgate is one of Europe's leading Business and Residential VoIP Providers, offering high quality pay as you go phone services." />
+          <meta name="description" content={}/>s leading Business and Residential VoIP Providers, offering high quality pay as you go phone services.' />
         </>
       ),
     },

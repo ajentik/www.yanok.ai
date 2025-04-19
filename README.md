@@ -17,7 +17,7 @@ This project is a migration of the Yanok AI website from Jekyll to Next.js, a mo
 ### Prerequisites
 
 - Node.js 18.17 or later
-- npm or yarn
+- npm
 
 ### Installation
 
@@ -30,15 +30,11 @@ cd yanok-ai
 2. Install dependencies:
 ```bash
 npm install
-# or
-yarn
 ```
 
 3. Run the development server:
 ```bash
 npm run dev
-# or
-yarn dev
 ```
 
 4. Open [http://localhost:3000](http://localhost:3000) in your browser to see the result.
@@ -102,19 +98,13 @@ The site can be deployed to various platforms:
 
 ```bash
 npm run build
-# or
-yarn build
 ```
 
 This generates a static export in the `out` directory that can be deployed to any static hosting service.
 
-### Vercel Deployment
+### GitHub Pages Deployment
 
-For advanced features like serverless functions, incremental static regeneration, and more:
-
-1. Push your code to a Git repository
-2. Import the project into [Vercel](https://vercel.com)
-3. Vercel will automatically detect Next.js and configure the build settings
+The site is deployed solely using GitHub Pages via the static export generated in the `out` directory. The GitHub Actions workflow (`.github/workflows/nextjs.yml`) builds, exports, and deploys your Next.js site without requiring Vercel. Ensure `NEXT_PUBLIC_BASE_PATH` is set correctly in your repository secrets or workflow configuration.
 
 ## Additional Resources
 

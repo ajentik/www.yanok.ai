@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Intuto"
-      description="Intuto is an online Learning Management System designed to help businesses get their learning online quickly and easily."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -71,7 +70,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Intuto</title>
-          <meta name="description" content="Intuto is an online Learning Management System designed to help businesses get their learning online quickly and easily." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

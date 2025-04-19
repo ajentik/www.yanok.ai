@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="BoothBook"
-      description="BoothBook is a booking system and CRM for event rental businesses. Use Zapier to integrate data from Bookings, Leads and Payments."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -76,7 +75,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>BoothBook</title>
-          <meta name="description" content="BoothBook is a booking system and CRM for event rental businesses. Use Zapier to integrate data from Bookings, Leads and Payments." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Transloadit"
-      description="Transloadit is a file encoding service that helps you handle file uploads, resize, crop and watermark images, make GIFs, transcode your videos, extract thumbnails, generate audio waveforms, and so much more. In short, Transloadit is a Swiss Army Knife for your files."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -101,7 +100,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Transloadit</title>
-          <meta name="description" content="Transloadit is a file encoding service that helps you handle file uploads, resize, crop and watermark images, make GIFs, transcode your videos, extract thumbnails, generate audio waveforms, and so much more. In short, Transloadit is a Swiss Army Knife for your files." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

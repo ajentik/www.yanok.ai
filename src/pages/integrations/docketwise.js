@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Docketwise"
-      description="Docketwise is a practice management and forms software for immigration lawyers and law firms."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -71,7 +70,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Docketwise</title>
-          <meta name="description" content="Docketwise is a practice management and forms software for immigration lawyers and law firms." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

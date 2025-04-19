@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Clust"
-      description="Receive online applications easily through a branded client portal and manage them from a robust web-app with Clust."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -91,7 +90,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Clust</title>
-          <meta name="description" content="Receive online applications easily through a branded client portal and manage them from a robust web-app with Clust." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

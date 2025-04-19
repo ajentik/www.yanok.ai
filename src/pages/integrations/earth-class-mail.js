@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Earth Class Mail"
-      description="Earth Class Mail is a fully digital mailroom for business. Use a virtual address from our vast network to get us your mail. We'll scan your mail items, make them digital so you can take action."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +56,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Earth Class Mail</title>
-          <meta name="description" content="Earth Class Mail is a fully digital mailroom for business. Use a virtual address from our vast network to get us your mail. We'll scan your mail items, make them digital so you can take action." />
+          <meta name="description" content={}/>ll scan your mail items, make them digital so you can take action.' />
         </>
       ),
     },

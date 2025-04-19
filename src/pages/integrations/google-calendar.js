@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Google Calendar"
-      description="Google Calendar lets you organize your schedule and share events with co-workers and friends. With Google's free online calendar, it's easy to keep track of your daily schedule."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -126,7 +125,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Google Calendar</title>
-          <meta name="description" content="Google Calendar lets you organize your schedule and share events with co-workers and friends. With Google's free online calendar, it's easy to keep track of your daily schedule." />
+          <meta name="description" content={}/>s free online calendar, it's easy to keep track of your daily schedule.' />
         </>
       ),
     },

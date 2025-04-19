@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Hiro.fm"
-      description="Hiro.fm lets you quickly create private audio products to share with your customers so they can consume your content on the go using their favorite podcast player."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -81,7 +80,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Hiro.fm</title>
-          <meta name="description" content="Hiro.fm lets you quickly create private audio products to share with your customers so they can consume your content on the go using their favorite podcast player." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

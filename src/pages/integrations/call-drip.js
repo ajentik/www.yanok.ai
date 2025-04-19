@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Calldrip"
-      description="Calldrip connects you and your new lead within 20 seconds increasing your chances of closing by 100%"
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -61,7 +60,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Calldrip</title>
-          <meta name="description" content="Calldrip connects you and your new lead within 20 seconds increasing your chances of closing by 100%" />
+          <meta name="description" content={}/> />
         </>
       ),
     },

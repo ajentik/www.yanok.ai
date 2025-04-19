@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Momindum"
-      description="Momindum provides software and services for online communication, training, learning, and collaboration with video presentations."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +56,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Momindum</title>
-          <meta name="description" content="Momindum provides software and services for online communication, training, learning, and collaboration with video presentations." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

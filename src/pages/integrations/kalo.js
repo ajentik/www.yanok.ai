@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Kalo"
-      description="Kalo's Freelance Management System enables the world's biggest companies to organize, onboard, manage, and pay their freelance workforce."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +52,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Kalo</title>
-          <meta name="description" content="Kalo's Freelance Management System enables the world's biggest companies to organize, onboard, manage, and pay their freelance workforce." />
+          <meta name="description" content={}/>s Freelance Management System enables the world's biggest companies to organize, onboard, manage, and pay their freelance workforce.' />
         </>
       ),
     },

@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Revv"
-      description="Revv is a donation platform that will help your cause, non-profit, or political campaign raise more money."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -87,7 +86,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Revv</title>
-          <meta name="description" content="Revv is a donation platform that will help your cause, non-profit, or political campaign raise more money." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Magento"
-      description="Magento is the premier open source e-commerce app used by millions of customers each and every day."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -121,7 +120,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Magento</title>
-          <meta name="description" content="Magento is the premier open source e-commerce app used by millions of customers each and every day." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

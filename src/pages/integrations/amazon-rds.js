@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Amazon Relational Database Services (RDS)"
-      description="Amazon Relational Database Services (RDS) allow you to set up, operate, and scale relational databases in the cloud."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +56,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Amazon Relational Database Services (RDS)</title>
-          <meta name="description" content="Amazon Relational Database Services (RDS) allow you to set up, operate, and scale relational databases in the cloud." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

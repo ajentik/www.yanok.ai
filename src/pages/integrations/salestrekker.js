@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Salestrekker"
-      description="Salestrekker is CRM software for finance professionals."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -151,7 +150,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Salestrekker</title>
-          <meta name="description" content="Salestrekker is CRM software for finance professionals." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

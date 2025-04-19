@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Skedda"
-      description="The elegant booking app for scheduling the use of spaces at venues, offices, clinics, studios and more."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -62,7 +61,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Skedda</title>
-          <meta name="description" content="The elegant booking app for scheduling the use of spaces at venues, offices, clinics, studios and more." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

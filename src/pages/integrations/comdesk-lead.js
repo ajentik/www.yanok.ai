@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Comdesk Lead"
-      description="Comdesk Lead is an inside sales CTI tool that can be linked to mobile phone lines."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -67,7 +66,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Comdesk Lead</title>
-          <meta name="description" content="Comdesk Lead is an inside sales CTI tool that can be linked to mobile phone lines." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

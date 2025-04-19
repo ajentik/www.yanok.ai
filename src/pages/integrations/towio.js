@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="towio"
-      description="towio helps craftsmen in the office and on the construction site to document, plan and organize their business more professionally"
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -76,7 +75,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>towio</title>
-          <meta name="description" content="towio helps craftsmen in the office and on the construction site to document, plan and organize their business more professionally" />
+          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Sift Science"
-      description="Sift Science applies insights from a global network of data to detect fraud and increase positive user experience."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +52,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Sift Science</title>
-          <meta name="description" content="Sift Science applies insights from a global network of data to detect fraud and increase positive user experience." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

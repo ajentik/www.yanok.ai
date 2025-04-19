@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Triggerbee"
-      description="Triggerbee's software will help you turn clicks, pageviews and digital footprints on your website into profit."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +52,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Triggerbee</title>
-          <meta name="description" content="Triggerbee's software will help you turn clicks, pageviews and digital footprints on your website into profit." />
+          <meta name="description" content={}/>s software will help you turn clicks, pageviews and digital footprints on your website into profit.' />
         </>
       ),
     },

@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Life Peaks"
-      description="Life Peaks is an online software allowing companies to sell gift cards and tickets to events."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +56,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Life Peaks</title>
-          <meta name="description" content="Life Peaks is an online software allowing companies to sell gift cards and tickets to events." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

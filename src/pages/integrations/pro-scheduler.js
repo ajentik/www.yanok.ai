@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Pro Scheduler"
-      description="Pro Scheduler helps you to share your social media posts at the time you decide or the 'Best Time' to post."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +52,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Pro Scheduler</title>
-          <meta name="description" content="Pro Scheduler helps you to share your social media posts at the time you decide or the 'Best Time' to post." />
+          <meta name="description" content={}/>Best Time' to post.' />
         </>
       ),
     },

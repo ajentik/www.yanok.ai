@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="MediaSilo"
-      description="MediaSilo is a collaboration tool for creative teams to review and organize your videos, images, and files."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -111,7 +110,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>MediaSilo</title>
-          <meta name="description" content="MediaSilo is a collaboration tool for creative teams to review and organize your videos, images, and files." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

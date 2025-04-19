@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Mailchimp"
-      description="Share your ideas with Mailchimp email newsletters—then use its landing page and form builders to grow your lists and take marketing further with drip and transactional emails."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -181,7 +180,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Mailchimp</title>
-          <meta name="description" content="Share your ideas with Mailchimp email newsletters—then use its landing page and form builders to grow your lists and take marketing further with drip and transactional emails." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

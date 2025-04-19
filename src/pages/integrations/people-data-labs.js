@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="People Data Labs"
-      description="People Data Labs is a data API that lets you enrich your person and company records with resume, contact, social, and demographic information."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -62,7 +61,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>People Data Labs</title>
-          <meta name="description" content="People Data Labs is a data API that lets you enrich your person and company records with resume, contact, social, and demographic information." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

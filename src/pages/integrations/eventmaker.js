@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Eventmaker"
-      description="Eventmaker is a platform for professional event managers and organizers. It provides everything required for a successful event such as registrations, badges, access control, check-ins, and statistics."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -131,7 +130,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Eventmaker</title>
-          <meta name="description" content="Eventmaker is a platform for professional event managers and organizers. It provides everything required for a successful event such as registrations, badges, access control, check-ins, and statistics." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

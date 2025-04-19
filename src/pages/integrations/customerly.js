@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Customerly"
-      description="Boost your customer engagement. The fully integrated tool your online business needs to scale up and automate your engagement."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -91,7 +90,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Customerly</title>
-          <meta name="description" content="Boost your customer engagement. The fully integrated tool your online business needs to scale up and automate your engagement." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

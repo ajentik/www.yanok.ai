@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="AccountingSuite"
-      description="AccountingSuite is a powerful, all-in-one business application for accounting, cloud banking, order management, inventory management, project and time tracking into one cloud-driven platform."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -122,7 +121,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>AccountingSuite</title>
-          <meta name="description" content="AccountingSuite is a powerful, all-in-one business application for accounting, cloud banking, order management, inventory management, project and time tracking into one cloud-driven platform." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

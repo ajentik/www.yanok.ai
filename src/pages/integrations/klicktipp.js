@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="KlickTipp"
-      description="KlickTipp is an email marketing service provider. On our easy to use platform, you can segment your subscribers by tags and send highly relevant emails or even SMS to them. Keep track of your success by analysing real-time data like Conversions, Opens, Clicks and more."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -106,7 +105,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>KlickTipp</title>
-          <meta name="description" content="KlickTipp is an email marketing service provider. On our easy to use platform, you can segment your subscribers by tags and send highly relevant emails or even SMS to them. Keep track of your success by analysing real-time data like Conversions, Opens, Clicks and more." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

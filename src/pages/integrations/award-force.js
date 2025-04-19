@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Award Force"
-      description="Award Force is an awards management software for organisers of awards, grants, scholarships, and pitch competitions to manage entry, judging and award of results online."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -171,7 +170,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Award Force</title>
-          <meta name="description" content="Award Force is an awards management software for organisers of awards, grants, scholarships, and pitch competitions to manage entry, judging and award of results online." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

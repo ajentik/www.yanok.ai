@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Payfirma"
-      description="Payfirma is your one-stop merchant services partner for secure credit card processing. They offer one solution that lets you take payments any way your customers want to pay."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +52,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Payfirma</title>
-          <meta name="description" content="Payfirma is your one-stop merchant services partner for secure credit card processing. They offer one solution that lets you take payments any way your customers want to pay." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

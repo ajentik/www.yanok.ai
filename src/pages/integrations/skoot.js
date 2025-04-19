@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="SKOOT"
-      description="The SKOOT Climate Platform helps businesses achieve their goal of being net-zero, our API makes it easy to Plant Trees and Buying Carbon Offset."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +56,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>SKOOT</title>
-          <meta name="description" content="The SKOOT Climate Platform helps businesses achieve their goal of being net-zero, our API makes it easy to Plant Trees and Buying Carbon Offset." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

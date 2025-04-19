@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Chatkick Talent CRM"
-      description="Talent CRM provides recruiting and sourcing teams a powerful tool to source candidates, and automatically follow up on their email outreach."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +56,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Chatkick Talent CRM</title>
-          <meta name="description" content="Talent CRM provides recruiting and sourcing teams a powerful tool to source candidates, and automatically follow up on their email outreach." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

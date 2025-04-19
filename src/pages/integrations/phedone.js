@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Phedone"
-      description="Phedone is an natural language processing tool to automate and improve your customer ticketing and knowledge base flow"
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -97,7 +96,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Phedone</title>
-          <meta name="description" content="Phedone is an natural language processing tool to automate and improve your customer ticketing and knowledge base flow" />
+          <meta name="description" content={}/> />
         </>
       ),
     },

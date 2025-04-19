@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Invoice2go"
-      description="Invoice2go is the all-in-one tool that helps you run your small business. Manage customer relationships, send invoices, accept payments, improve cash flow, create an online presence, and much more."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -62,7 +61,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Invoice2go</title>
-          <meta name="description" content="Invoice2go is the all-in-one tool that helps you run your small business. Manage customer relationships, send invoices, accept payments, improve cash flow, create an online presence, and much more." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

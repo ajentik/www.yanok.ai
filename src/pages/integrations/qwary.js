@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Qwary"
-      description="Online survey product to create stunning surveys, generate actionable insights."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -66,7 +65,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Qwary</title>
-          <meta name="description" content="Online survey product to create stunning surveys, generate actionable insights." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

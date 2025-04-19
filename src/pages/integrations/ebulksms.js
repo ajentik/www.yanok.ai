@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="EbulkSMS"
-      description="An easy tool for developers to send bulk SMS from any source using the EbulkSMS API"
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +56,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>EbulkSMS</title>
-          <meta name="description" content="An easy tool for developers to send bulk SMS from any source using the EbulkSMS API" />
+          <meta name="description" content={}/> />
         </>
       ),
     },

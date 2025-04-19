@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Wemero Online Manage"
-      description="Wemero Online Manage is a CRM that manages your your service, customers, products, gift-cards, and memberships whether you’re running a beauty salon or hair salon or massage parlour or tattoo salon or you are working as beauty hair stylist."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +56,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Wemero Online Manage</title>
-          <meta name="description" content="Wemero Online Manage is a CRM that manages your your service, customers, products, gift-cards, and memberships whether you’re running a beauty salon or hair salon or massage parlour or tattoo salon or you are working as beauty hair stylist." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

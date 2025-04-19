@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="GoReminders"
-      description="Text and email appointment reminders for your customers."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -66,7 +65,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>GoReminders</title>
-          <meta name="description" content="Text and email appointment reminders for your customers." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

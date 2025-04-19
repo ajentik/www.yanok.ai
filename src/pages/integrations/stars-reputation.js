@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="5 Stars Reputation"
-      description="5 Stars Reputation enables users to add their company's reviews to the 5 Stars Reputation platform"
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +56,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>5 Stars Reputation</title>
-          <meta name="description" content="5 Stars Reputation enables users to add their company's reviews to the 5 Stars Reputation platform" />
+          <meta name="description" content={}/>s reviews to the 5 Stars Reputation platform' />
         </>
       ),
     },

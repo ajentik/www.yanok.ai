@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="JobTread"
-      description="JobTread is construction estimating & project management software that will help you keep your budget and jobs on track."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -211,7 +210,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>JobTread</title>
-          <meta name="description" content="JobTread is construction estimating & project management software that will help you keep your budget and jobs on track." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

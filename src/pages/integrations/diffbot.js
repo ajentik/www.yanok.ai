@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Diffbot"
-      description="Diffbot APIs extract data from web pages: articles, blog posts, products -- or any other page using our Custom API Toolkit. Crawlbot, our intelligent spider, crawls entire sites and returns the full data in clean, readable JSON. Our Bulk API allows for the extraction of thousands or millions of URLs. Be notified whenever a Crawlbot crawl or Bulk API job completes."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +56,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Diffbot</title>
-          <meta name="description" content="Diffbot APIs extract data from web pages: articles, blog posts, products -- or any other page using our Custom API Toolkit. Crawlbot, our intelligent spider, crawls entire sites and returns the full data in clean, readable JSON. Our Bulk API allows for the extraction of thousands or millions of URLs. Be notified whenever a Crawlbot crawl or Bulk API job completes." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

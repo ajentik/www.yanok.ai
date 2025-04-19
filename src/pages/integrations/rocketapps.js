@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="RocketApps"
-      description="RocketApps allows Roblox groups, teams, and game developers to collect applications on the Roblox platform."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +56,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>RocketApps</title>
-          <meta name="description" content="RocketApps allows Roblox groups, teams, and game developers to collect applications on the Roblox platform." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

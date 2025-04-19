@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Copper"
-      description="Copper is a new kind of productivity CRM that's designed to do all your busywork, so you can focus on building long-lasting business relationships"
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -291,7 +290,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Copper</title>
-          <meta name="description" content="Copper is a new kind of productivity CRM that's designed to do all your busywork, so you can focus on building long-lasting business relationships" />
+          <meta name="description" content={}/>s designed to do all your busywork, so you can focus on building long-lasting business relationships' />
         </>
       ),
     },

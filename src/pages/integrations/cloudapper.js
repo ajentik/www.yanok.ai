@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="CloudApper"
-      description="CloudApper is an app builder that lets you consolidate all of your business tools under a single mobile app, giving your employees instant access to everything they need to drive success."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -66,7 +65,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>CloudApper</title>
-          <meta name="description" content="CloudApper is an app builder that lets you consolidate all of your business tools under a single mobile app, giving your employees instant access to everything they need to drive success." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

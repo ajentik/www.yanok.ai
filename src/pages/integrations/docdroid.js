@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="DocDroid"
-      description="DocDroid is a document sharing platform. Distribute your PDFs, DOCs and presentations easily using a public URL."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -81,7 +80,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>DocDroid</title>
-          <meta name="description" content="DocDroid is a document sharing platform. Distribute your PDFs, DOCs and presentations easily using a public URL." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

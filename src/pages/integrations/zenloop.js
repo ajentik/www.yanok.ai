@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="zenloop"
-      description="zenloop is a NPS feedback management platform which improves customer retention by using the Net Promoter System® (NPS) framework. zenloop's SaaS platform collects quantitative and qualitative feedback through various channels (link, email, website or each embedded). Our smart label technology analyzes the feedback and automatically identifies all relevant insights and trends."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -61,7 +60,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>zenloop</title>
-          <meta name="description" content="zenloop is a NPS feedback management platform which improves customer retention by using the Net Promoter System® (NPS) framework. zenloop's SaaS platform collects quantitative and qualitative feedback through various channels (link, email, website or each embedded). Our smart label technology analyzes the feedback and automatically identifies all relevant insights and trends." />
+          <meta name="description" content={}/>s SaaS platform collects quantitative and qualitative feedback through various channels (link, email, website or each embedded). Our smart label technology analyzes the feedback and automatically identifies all relevant insights and trends.' />
         </>
       ),
     },

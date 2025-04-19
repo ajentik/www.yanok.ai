@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Aivo"
-      description="Aivo is a company that develops artificial intelligence solutions with the aim of transforming the way companies and customers interact."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +52,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Aivo</title>
-          <meta name="description" content="Aivo is a company that develops artificial intelligence solutions with the aim of transforming the way companies and customers interact." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

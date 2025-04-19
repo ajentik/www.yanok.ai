@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Hello Moe"
-      description="Build conversational bot flows using our visual chatbot builder and templates - no coding is required to automate customer support."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +56,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Hello Moe</title>
-          <meta name="description" content="Build conversational bot flows using our visual chatbot builder and templates - no coding is required to automate customer support." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

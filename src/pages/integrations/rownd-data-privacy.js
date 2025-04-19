@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Rownd Data Privacy"
-      description="Rownd is a data privacy platform that gives end-users and consumers the ability to redact their data."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -76,7 +75,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Rownd Data Privacy</title>
-          <meta name="description" content="Rownd is a data privacy platform that gives end-users and consumers the ability to redact their data." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

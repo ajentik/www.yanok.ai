@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Rank Ranger"
-      description="Worldclass SEO software powered by big data allowing you to monitor, analyze and improve your SEO ranking and optimize marketing & social media campaigns."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +52,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Rank Ranger</title>
-          <meta name="description" content="Worldclass SEO software powered by big data allowing you to monitor, analyze and improve your SEO ranking and optimize marketing & social media campaigns." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="LoopVOC"
-      description="LoopVOC provides customer feedback analytics built to fuel your growth and is used to build, position, and grow the best products."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +56,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>LoopVOC</title>
-          <meta name="description" content="LoopVOC provides customer feedback analytics built to fuel your growth and is used to build, position, and grow the best products." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

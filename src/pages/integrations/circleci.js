@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Circleci"
-      description="CircleCI’s continuous integration and delivery platform makes it easy for teams of all sizes to rapidly build and release quality software at scale."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +52,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Circleci</title>
-          <meta name="description" content="CircleCI’s continuous integration and delivery platform makes it easy for teams of all sizes to rapidly build and release quality software at scale." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

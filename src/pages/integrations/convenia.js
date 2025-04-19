@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Convenia"
-      description="Convenia is a cloud people management software for small business that increase its efficiency and eliminating operational labor."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -77,7 +76,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Convenia</title>
-          <meta name="description" content="Convenia is a cloud people management software for small business that increase its efficiency and eliminating operational labor." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

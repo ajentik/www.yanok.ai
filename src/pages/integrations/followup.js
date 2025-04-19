@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="FollowUp.cc"
-      description="FollowUp.cc is a timed email reminder system that gives users the ability to create reminders via email through formatted email addresses in the TO, CC and BCC fields. Allows users to set time based email reminders for individuals or from groups for single or recurring events."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -66,7 +65,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>FollowUp.cc</title>
-          <meta name="description" content="FollowUp.cc is a timed email reminder system that gives users the ability to create reminders via email through formatted email addresses in the TO, CC and BCC fields. Allows users to set time based email reminders for individuals or from groups for single or recurring events." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

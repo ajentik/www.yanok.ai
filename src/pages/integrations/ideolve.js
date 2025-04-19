@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Ideolve"
-      description="Ideolve is a note based team collaboration app that helps you resolve issue, and work collectively on ideas and initiatives."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +56,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Ideolve</title>
-          <meta name="description" content="Ideolve is a note based team collaboration app that helps you resolve issue, and work collectively on ideas and initiatives." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

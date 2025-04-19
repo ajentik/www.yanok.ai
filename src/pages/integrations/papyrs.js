@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Papyrs"
-      description="Dream up your own intranet site or internal wiki with simple drag & drop. Easily share and collect information, files, discussions, online forms and much more -- work better together with colleagues and clients."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -101,7 +100,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Papyrs</title>
-          <meta name="description" content="Dream up your own intranet site or internal wiki with simple drag & drop. Easily share and collect information, files, discussions, online forms and much more -- work better together with colleagues and clients." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

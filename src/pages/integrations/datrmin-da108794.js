@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Datrm.in"
-      description="A CRM solution for advocacy organizations, Datrm.in is determined to empower non-profits, advance advocacy, build movements, and change the world."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +56,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Datrm.in</title>
-          <meta name="description" content="A CRM solution for advocacy organizations, Datrm.in is determined to empower non-profits, advance advocacy, build movements, and change the world." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Revv Documents"
-      description="Revv Documents is intended for individuals and teams looking to automate everyday paperwork accurately and smartly, all-in-one tool. Use Revv Documents to manage proposals, quotes, contracts and agreements."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -106,7 +105,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Revv Documents</title>
-          <meta name="description" content="Revv Documents is intended for individuals and teams looking to automate everyday paperwork accurately and smartly, all-in-one tool. Use Revv Documents to manage proposals, quotes, contracts and agreements." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

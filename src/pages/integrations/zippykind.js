@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Zippykind"
-      description="Zippykind is a SaaS Delivery Management Software that combines automation, communication & effective dispatching into one powerful platform"
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +52,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Zippykind</title>
-          <meta name="description" content="Zippykind is a SaaS Delivery Management Software that combines automation, communication & effective dispatching into one powerful platform" />
+          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="JivoChat"
-      description="JivoChat offers live chats on your website, chats with clients on Facebook, Emails, and calls in any country."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +56,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>JivoChat</title>
-          <meta name="description" content="JivoChat offers live chats on your website, chats with clients on Facebook, Emails, and calls in any country." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Safetymails"
-      description="SafetyMails is a validation and verification of e-mails for databases and forms. Quickly know which emails you can use in your email marketing without harming your reputation."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +56,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Safetymails</title>
-          <meta name="description" content="SafetyMails is a validation and verification of e-mails for databases and forms. Quickly know which emails you can use in your email marketing without harming your reputation." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

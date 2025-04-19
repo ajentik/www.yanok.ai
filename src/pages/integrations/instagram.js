@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Instagram"
-      description="Instagram is a social network which is a fast, beautiful and fun way to share your photos with friends and family."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +56,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Instagram</title>
-          <meta name="description" content="Instagram is a social network which is a fast, beautiful and fun way to share your photos with friends and family." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

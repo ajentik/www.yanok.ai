@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Mighty Networks"
-      description="Mighty Networks is a platform that offers anyone the opportunity to create their own community and start getting paid to support their work. Your members can message, meet, and go deeper around the topics and interests they care about most."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -101,7 +100,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Mighty Networks</title>
-          <meta name="description" content="Mighty Networks is a platform that offers anyone the opportunity to create their own community and start getting paid to support their work. Your members can message, meet, and go deeper around the topics and interests they care about most." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Axonaut"
-      description="Axonaut is a CRM and more: follow your customer from before the first contact, beginning at the marketing campaign, though negotiations, billing, bank reconciliation."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -216,7 +215,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Axonaut</title>
-          <meta name="description" content="Axonaut is a CRM and more: follow your customer from before the first contact, beginning at the marketing campaign, though negotiations, billing, bank reconciliation." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

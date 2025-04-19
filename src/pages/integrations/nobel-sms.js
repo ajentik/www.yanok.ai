@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Nobel SMS"
-      description="Nobel SMS provides international A to Z SMS termination at the most competitive rates, web based SMS applications, bulk SMS for SMS campaigns and advanced SMS enterprise solutions via API with real-time monitoring."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +56,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Nobel SMS</title>
-          <meta name="description" content="Nobel SMS provides international A to Z SMS termination at the most competitive rates, web based SMS applications, bulk SMS for SMS campaigns and advanced SMS enterprise solutions via API with real-time monitoring." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Saay"
-      description="Saay is a powerful text messaging marketing tool for businesses to communicate and engage with their customers with two-way & bulk texting."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -67,7 +66,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Saay</title>
-          <meta name="description" content="Saay is a powerful text messaging marketing tool for businesses to communicate and engage with their customers with two-way & bulk texting." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

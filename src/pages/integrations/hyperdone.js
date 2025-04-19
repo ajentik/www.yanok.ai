@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="HyperDone"
-      description="HyperDone is a team collaboration CRM tool that helps you organize work and life."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -71,7 +70,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>HyperDone</title>
-          <meta name="description" content="HyperDone is a team collaboration CRM tool that helps you organize work and life." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

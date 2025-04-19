@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Intruder"
-      description="Intruder is a vulnerability scanner that finds the cyber security weaknesses in your computer systems, before the hackers do."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -91,7 +90,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Intruder</title>
-          <meta name="description" content="Intruder is a vulnerability scanner that finds the cyber security weaknesses in your computer systems, before the hackers do." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

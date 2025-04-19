@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Kaiten"
-      description="Kaiten is an online platform for collaborative work. With a built-in proven methodology, it will help you to take your team and business to the next level."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -116,7 +115,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Kaiten</title>
-          <meta name="description" content="Kaiten is an online platform for collaborative work. With a built-in proven methodology, it will help you to take your team and business to the next level." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

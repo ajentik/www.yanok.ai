@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Cerego"
-      description="Cerego is an adaptive learning platform that uses artificial intelligence and machine learning to scale proven cognitive science and make learning possible for anyone."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +52,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Cerego</title>
-          <meta name="description" content="Cerego is an adaptive learning platform that uses artificial intelligence and machine learning to scale proven cognitive science and make learning possible for anyone." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

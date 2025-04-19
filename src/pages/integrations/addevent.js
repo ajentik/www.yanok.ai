@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="AddEvent"
-      description="AddEvent is an add to calendar service on the internet. We handle millions of events every year for businesses around the world."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -116,7 +115,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>AddEvent</title>
-          <meta name="description" content="AddEvent is an add to calendar service on the internet. We handle millions of events every year for businesses around the world." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

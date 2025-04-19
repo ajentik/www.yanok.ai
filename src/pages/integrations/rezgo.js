@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Rezgo"
-      description="Rezgo is tour operator software that allows tourism agencies to integrate a real-time online booking system into their websites."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +52,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Rezgo</title>
-          <meta name="description" content="Rezgo is tour operator software that allows tourism agencies to integrate a real-time online booking system into their websites." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

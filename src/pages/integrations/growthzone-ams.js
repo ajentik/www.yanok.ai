@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="GrowthZone AMS"
-      description="GrowthZone AMS helps organizations grow and retain membership, engage and inform members and prospects, and streamline tedious tasks."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -66,7 +65,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>GrowthZone AMS</title>
-          <meta name="description" content="GrowthZone AMS helps organizations grow and retain membership, engage and inform members and prospects, and streamline tedious tasks." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

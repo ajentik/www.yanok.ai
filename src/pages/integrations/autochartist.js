@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Autochartist"
-      description="Autochartist is a powerful pattern recognition tool that simplifies Technical Analysis for traders by identifying 100’s of trading opportunities based on key support and resistance levels."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +52,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Autochartist</title>
-          <meta name="description" content="Autochartist is a powerful pattern recognition tool that simplifies Technical Analysis for traders by identifying 100’s of trading opportunities based on key support and resistance levels." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

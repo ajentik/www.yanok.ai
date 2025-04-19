@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="NewsBlur"
-      description="NewsBlur runs an online RSS news reader service accessible both online and via a free open-source mobile app for offline reading."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +52,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>NewsBlur</title>
-          <meta name="description" content="NewsBlur runs an online RSS news reader service accessible both online and via a free open-source mobile app for offline reading." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

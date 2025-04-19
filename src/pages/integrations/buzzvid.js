@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Buzzvid"
-      description="Convert text into fully animated videos with graphics and voice-over."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +56,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Buzzvid</title>
-          <meta name="description" content="Convert text into fully animated videos with graphics and voice-over." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

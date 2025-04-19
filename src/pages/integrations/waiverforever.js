@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="WaiverForever"
-      description="WaiverForever is an electronic waiver signing solution. Small businesses can enjoy the full benefit of having an automated software system."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -61,7 +60,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>WaiverForever</title>
-          <meta name="description" content="WaiverForever is an electronic waiver signing solution. Small businesses can enjoy the full benefit of having an automated software system." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

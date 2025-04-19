@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="CleverReach"
-      description="CleverReach is an email marketing solution that lets you easily create newsletters online and send them to your customers."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -91,7 +90,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>CleverReach</title>
-          <meta name="description" content="CleverReach is an email marketing solution that lets you easily create newsletters online and send them to your customers." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

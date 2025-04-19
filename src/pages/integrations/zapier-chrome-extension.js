@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Zapier Chrome extension"
-      description="Run workflows right from your browser. Include the URL & Title of the current page or add fields to include any other data you want to use in your Zap."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -61,7 +60,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Zapier Chrome extension</title>
-          <meta name="description" content="Run workflows right from your browser. Include the URL & Title of the current page or add fields to include any other data you want to use in your Zap." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

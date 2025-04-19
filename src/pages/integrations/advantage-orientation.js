@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Advantage Orientation"
-      description="Advantage Orientation is a SaaS platform providing orientation content delivery in fun interactive ways. This integration provides access to completion information."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -62,7 +61,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Advantage Orientation</title>
-          <meta name="description" content="Advantage Orientation is a SaaS platform providing orientation content delivery in fun interactive ways. This integration provides access to completion information." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

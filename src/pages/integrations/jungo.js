@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Jungo"
-      description="Jungo is the premier mortgage app for Salesforce, offering a comprehensive solution with workflow management, referral tracking, and more."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +52,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Jungo</title>
-          <meta name="description" content="Jungo is the premier mortgage app for Salesforce, offering a comprehensive solution with workflow management, referral tracking, and more." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

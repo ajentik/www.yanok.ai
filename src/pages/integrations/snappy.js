@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Snappy"
-      description="Snappy is a help desk application for managing your email, providing customer self service and efficiently managing all your customer service tickets."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -86,7 +85,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Snappy</title>
-          <meta name="description" content="Snappy is a help desk application for managing your email, providing customer self service and efficiently managing all your customer service tickets." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

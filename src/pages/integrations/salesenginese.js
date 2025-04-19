@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="SALESENGINE.SE"
-      description="Integration with the Mortgage CRM SalesEngine.SE"
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +56,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>SALESENGINE.SE</title>
-          <meta name="description" content="Integration with the Mortgage CRM SalesEngine.SE" />
+          <meta name="description" content={}/> />
         </>
       ),
     },

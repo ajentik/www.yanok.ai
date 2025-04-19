@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Elite Funnels"
-      description="Elite Funnels is a service that allows you to build awesome super fast funnels and websites"
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -91,7 +90,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Elite Funnels</title>
-          <meta name="description" content="Elite Funnels is a service that allows you to build awesome super fast funnels and websites" />
+          <meta name="description" content={}/> />
         </>
       ),
     },

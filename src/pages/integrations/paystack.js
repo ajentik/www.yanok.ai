@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Paystack"
-      description="Paystack helps African merchants accept one-time and recurring payments online with a modern, safe, and secure payment gateway."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -171,7 +170,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Paystack</title>
-          <meta name="description" content="Paystack helps African merchants accept one-time and recurring payments online with a modern, safe, and secure payment gateway." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

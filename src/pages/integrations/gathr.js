@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Gathr"
-      description="Gathr is an all-in-one event management and talent booking platform helping creatives, performers, and speakers to get booked, and event organizers to fund, manage and promote their events."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -62,7 +61,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Gathr</title>
-          <meta name="description" content="Gathr is an all-in-one event management and talent booking platform helping creatives, performers, and speakers to get booked, and event organizers to fund, manage and promote their events." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

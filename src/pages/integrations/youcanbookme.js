@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="YouCanBook.Me"
-      description="Take bookings online. YouCanBook.me links to your calendar to allow your customers to book your services via the web."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -71,7 +70,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>YouCanBook.Me</title>
-          <meta name="description" content="Take bookings online. YouCanBook.me links to your calendar to allow your customers to book your services via the web." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

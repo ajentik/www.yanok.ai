@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Mortgage iQ"
-      description="Mortgage iQ is a system for providing Mortgage CRM, Lead Management and Marketing for Retail, Wholesale, Correspondent and Consumer Direct Lenders."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +56,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Mortgage iQ</title>
-          <meta name="description" content="Mortgage iQ is a system for providing Mortgage CRM, Lead Management and Marketing for Retail, Wholesale, Correspondent and Consumer Direct Lenders." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

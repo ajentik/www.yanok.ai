@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Octane AI"
-      description="Octane AI is the zero-party data marketing platform for Shopify merchants."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -62,7 +61,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Octane AI</title>
-          <meta name="description" content="Octane AI is the zero-party data marketing platform for Shopify merchants." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

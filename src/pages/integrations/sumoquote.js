@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="SumoQuote"
-      description="SumoQuote is a better way to build beautiful proposals so you can win more work."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -106,7 +105,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>SumoQuote</title>
-          <meta name="description" content="SumoQuote is a better way to build beautiful proposals so you can win more work." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

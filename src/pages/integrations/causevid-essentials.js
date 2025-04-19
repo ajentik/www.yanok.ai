@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="CauseVid Essentials"
-      description="CauseVid makes it easy to send personalized video messages to wow donors and put a human face on every interaction."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +56,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>CauseVid Essentials</title>
-          <meta name="description" content="CauseVid makes it easy to send personalized video messages to wow donors and put a human face on every interaction." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

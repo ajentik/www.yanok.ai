@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Stunning"
-      description="Stunning helps our customers to recover more failed payments on Stripe."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -82,7 +81,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Stunning</title>
-          <meta name="description" content="Stunning helps our customers to recover more failed payments on Stripe." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

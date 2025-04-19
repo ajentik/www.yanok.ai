@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="NextEvent"
-      description="NextEvent is an event management platform that lets you sell tickets, create powerful seating plans and provides you a mobile app to validate your visitors tickets."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -82,7 +81,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>NextEvent</title>
-          <meta name="description" content="NextEvent is an event management platform that lets you sell tickets, create powerful seating plans and provides you a mobile app to validate your visitors tickets." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

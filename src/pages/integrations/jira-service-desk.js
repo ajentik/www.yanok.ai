@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Jira Service Management"
-      description="Jira Service Management is help desk software that enables support agents to receive, track, manage and resolve requests from help seekers."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -66,7 +65,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Jira Service Management</title>
-          <meta name="description" content="Jira Service Management is help desk software that enables support agents to receive, track, manage and resolve requests from help seekers." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Apparound"
-      description="Apparound is an app to digitise sales and improve sales productivity. Combines content and quoting together."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -76,7 +75,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Apparound</title>
-          <meta name="description" content="Apparound is an app to digitise sales and improve sales productivity. Combines content and quoting together." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

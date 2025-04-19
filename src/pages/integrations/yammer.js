@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Yammer"
-      description="Yammer makes it easy to communicate within your company at the speed of light with your own internal social networks where employees can connect and build meaningful business relationships."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -61,7 +60,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Yammer</title>
-          <meta name="description" content="Yammer makes it easy to communicate within your company at the speed of light with your own internal social networks where employees can connect and build meaningful business relationships." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

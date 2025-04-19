@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Beacon"
-      description="Beacon is the modern CRM for charities. It's easy to use, cloud-based, and flexible enough for anything."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -72,7 +71,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Beacon</title>
-          <meta name="description" content="Beacon is the modern CRM for charities. It's easy to use, cloud-based, and flexible enough for anything." />
+          <meta name="description" content={}/>s easy to use, cloud-based, and flexible enough for anything.' />
         </>
       ),
     },

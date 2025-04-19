@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Myphoner"
-      description="Myphoner is a cold calling tool used for lead management and lead tracking, with the focus of creating a superior workflow for the sales agent."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -116,7 +115,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Myphoner</title>
-          <meta name="description" content="Myphoner is a cold calling tool used for lead management and lead tracking, with the focus of creating a superior workflow for the sales agent." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Sina Weibo"
-      description="Sina Weibo is a popular social and microblogging service in China."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +52,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Sina Weibo</title>
-          <meta name="description" content="Sina Weibo is a popular social and microblogging service in China." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

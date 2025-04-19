@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="ClearPoint Strategy"
-      description="Manage your strategy and create reports in less time. ClearPoint makes it simple for you to link and align goals, KPIs and projects, to integrate data from multiple sources, and to automatically generate and distribute reports."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -81,7 +80,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>ClearPoint Strategy</title>
-          <meta name="description" content="Manage your strategy and create reports in less time. ClearPoint makes it simple for you to link and align goals, KPIs and projects, to integrate data from multiple sources, and to automatically generate and distribute reports." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

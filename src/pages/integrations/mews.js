@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Mews"
-      description="Mews is an innovative hospitality cloud that empowers the modern hotelier to improve performance, maximize revenue, and provide remarkable guest experiences."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -166,7 +165,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Mews</title>
-          <meta name="description" content="Mews is an innovative hospitality cloud that empowers the modern hotelier to improve performance, maximize revenue, and provide remarkable guest experiences." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

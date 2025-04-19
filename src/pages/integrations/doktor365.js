@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Doktor365"
-      description="Easily follow up and plan your potential and active patients. Manage all processes of your clinic from a single platform."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +56,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Doktor365</title>
-          <meta name="description" content="Easily follow up and plan your potential and active patients. Manage all processes of your clinic from a single platform." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

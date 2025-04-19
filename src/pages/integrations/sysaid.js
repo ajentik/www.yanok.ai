@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="SysAid"
-      description="SysAid is a service automation company delivering software for organizations that want to get more done."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -71,7 +70,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>SysAid</title>
-          <meta name="description" content="SysAid is a service automation company delivering software for organizations that want to get more done." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

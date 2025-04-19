@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="FocusVision"
-      description="We are in the business of customer truth, looking beyond the voice of the customer to understand their hearts & mind through our integrated research solutions."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +52,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>FocusVision</title>
-          <meta name="description" content="We are in the business of customer truth, looking beyond the voice of the customer to understand their hearts & mind through our integrated research solutions." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

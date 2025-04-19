@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Xola"
-      description="Xola is a powerful booking system built for tour and activity operators. Easily book customers and accept payments for online, phone, in-person, or reseller reservations. Ignite your growth with Xola's cart abandonment recovery, automated guest communication, gifts, and more."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -77,7 +76,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Xola</title>
-          <meta name="description" content="Xola is a powerful booking system built for tour and activity operators. Easily book customers and accept payments for online, phone, in-person, or reseller reservations. Ignite your growth with Xola's cart abandonment recovery, automated guest communication, gifts, and more." />
+          <meta name="description" content={}/>s cart abandonment recovery, automated guest communication, gifts, and more.' />
         </>
       ),
     },

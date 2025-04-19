@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Fizzpa"
-      description="Fizzpa is a delivery system platform to help companies manage shipments and deliveries."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -72,7 +71,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Fizzpa</title>
-          <meta name="description" content="Fizzpa is a delivery system platform to help companies manage shipments and deliveries." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

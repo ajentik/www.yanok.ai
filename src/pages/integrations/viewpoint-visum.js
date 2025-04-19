@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="ViewPoint VISUM"
-      description="ViewPoint VISUM is a great tool for Visual Portfolio Project Management. VISUM helps to deliver projects on time, in less time by streamlining execution. It simplifies managing projects by improving communication, collaboration and decision making."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -86,7 +85,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>ViewPoint VISUM</title>
-          <meta name="description" content="ViewPoint VISUM is a great tool for Visual Portfolio Project Management. VISUM helps to deliver projects on time, in less time by streamlining execution. It simplifies managing projects by improving communication, collaboration and decision making." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

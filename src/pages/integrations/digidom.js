@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Digidom"
-      description="This app is for digidom's customers and to help them always be aware of the new stuffs"
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -67,7 +66,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Digidom</title>
-          <meta name="description" content="This app is for digidom's customers and to help them always be aware of the new stuffs" />
+          <meta name="description" content={}/>s customers and to help them always be aware of the new stuffs' />
         </>
       ),
     },

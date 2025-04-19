@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Walls.io"
-      description="Walls.io allows you to connect your social wall with hundreds of other applications easily and with out any code."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +56,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Walls.io</title>
-          <meta name="description" content="Walls.io allows you to connect your social wall with hundreds of other applications easily and with out any code." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Magpi"
-      description="Magpi is a full-featured and easy to use mobile data collection and messaging system, allowing online or offline data collection from any mobile device. Collect data using iOS, Android, or Symbian apps, or using SMS from any device."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -67,7 +66,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Magpi</title>
-          <meta name="description" content="Magpi is a full-featured and easy to use mobile data collection and messaging system, allowing online or offline data collection from any mobile device. Collect data using iOS, Android, or Symbian apps, or using SMS from any device." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Billetto"
-      description="Billetto offers smart self-service plug-and-play ticketing solution for event organisers to sell tickets and promote events online."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -141,7 +140,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Billetto</title>
-          <meta name="description" content="Billetto offers smart self-service plug-and-play ticketing solution for event organisers to sell tickets and promote events online." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

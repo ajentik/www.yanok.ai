@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Clientify"
-      description="Clientify is a marketing and sales automation platform to easily grow your business. It includes all the marketing tools, in just one place"
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -101,7 +100,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Clientify</title>
-          <meta name="description" content="Clientify is a marketing and sales automation platform to easily grow your business. It includes all the marketing tools, in just one place" />
+          <meta name="description" content={}/> />
         </>
       ),
     },

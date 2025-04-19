@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Axosoft"
-      description="Axosoft is agile project management for software development teams."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -121,7 +120,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Axosoft</title>
-          <meta name="description" content="Axosoft is agile project management for software development teams." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

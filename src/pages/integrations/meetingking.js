@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="MeetingKing"
-      description="MeetingKing makes it easy to manage, structure, record and follow-up on your meetings. Set the agenda, meet and get things done."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +56,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>MeetingKing</title>
-          <meta name="description" content="MeetingKing makes it easy to manage, structure, record and follow-up on your meetings. Set the agenda, meet and get things done." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

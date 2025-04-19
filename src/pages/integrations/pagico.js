@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Pagico"
-      description="Pagico is a powerful productivity suite that helps you manage projects, contacts, daily tasks and files in one place. Available for Mac, Windows, Linux, iOS and Android, Pagico is your best cross-platform information management platform."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -76,7 +75,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Pagico</title>
-          <meta name="description" content="Pagico is a powerful productivity suite that helps you manage projects, contacts, daily tasks and files in one place. Available for Mac, Windows, Linux, iOS and Android, Pagico is your best cross-platform information management platform." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Digistore24"
-      description="Digistore24 is a highly automated Internet Marketing platform for selling Digital information products and seminars."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -67,7 +66,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Digistore24</title>
-          <meta name="description" content="Digistore24 is a highly automated Internet Marketing platform for selling Digital information products and seminars." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

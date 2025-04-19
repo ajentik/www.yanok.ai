@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Caplena"
-      description="Caplena helps you automatically analyse free-text, creating actionable results from unstructured customer feedback, tweets or app reviews."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -76,7 +75,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Caplena</title>
-          <meta name="description" content="Caplena helps you automatically analyse free-text, creating actionable results from unstructured customer feedback, tweets or app reviews." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Repuso"
-      description="Repuso is a cloud-based review aggregation tool which automatically collects reviews from social media channels and showcase them on your website."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +56,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Repuso</title>
-          <meta name="description" content="Repuso is a cloud-based review aggregation tool which automatically collects reviews from social media channels and showcase them on your website." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

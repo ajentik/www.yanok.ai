@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="SavvyCal"
-      description="SavvyCal is scheduling software that makes it easy for both parties to find the best time to meet."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -72,7 +71,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>SavvyCal</title>
-          <meta name="description" content="SavvyCal is scheduling software that makes it easy for both parties to find the best time to meet." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

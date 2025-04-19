@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Webhooks by Zapier"
-      description="Webhooks simply POST data (or JSON) to a specific URL every time we see something new. Webhooks can also accept data (or JSON) to kick off a workflow in Zapier."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -86,7 +85,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Webhooks by Zapier</title>
-          <meta name="description" content="Webhooks simply POST data (or JSON) to a specific URL every time we see something new. Webhooks can also accept data (or JSON) to kick off a workflow in Zapier." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

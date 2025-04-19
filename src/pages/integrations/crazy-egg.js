@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Crazy Egg"
-      description="Use Crazy Egg to see what’s hot and what’s not, and to know what your web visitors are doing with tools, such as heatmaps, recordings, surveys, A/B testing & more."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +56,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Crazy Egg</title>
-          <meta name="description" content="Use Crazy Egg to see what’s hot and what’s not, and to know what your web visitors are doing with tools, such as heatmaps, recordings, surveys, A/B testing & more." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

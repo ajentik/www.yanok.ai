@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="nodaFi"
-      description="nodaFi is a proptech platform that helps facility leaders create a better tenant experience at a reduced operating cost. Our inexpensive, easy to deploy indoor positioning system helps you track and monitor facility issues and collect tenant feedback in realtime."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +56,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>nodaFi</title>
-          <meta name="description" content="nodaFi is a proptech platform that helps facility leaders create a better tenant experience at a reduced operating cost. Our inexpensive, easy to deploy indoor positioning system helps you track and monitor facility issues and collect tenant feedback in realtime." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

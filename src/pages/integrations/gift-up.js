@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Gift Up!"
-      description="Gift Up! is a digital gift card system for your website or Facebook page."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -86,7 +85,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Gift Up!</title>
-          <meta name="description" content="Gift Up! is a digital gift card system for your website or Facebook page." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

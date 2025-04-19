@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="CommunityForce"
-      description="Automate the tedious, repetitive tasks in your application review and workflow process. Save time and focus on maximizing your impact."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -67,7 +66,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>CommunityForce</title>
-          <meta name="description" content="Automate the tedious, repetitive tasks in your application review and workflow process. Save time and focus on maximizing your impact." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

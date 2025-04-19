@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Jira Software Cloud"
-      description="Jira Software is a bug and issue tracking tool that allows software developers to manage product development and build better software. This integration connects to cloud-hosted instances of Jira."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -106,7 +105,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Jira Software Cloud</title>
-          <meta name="description" content="Jira Software is a bug and issue tracking tool that allows software developers to manage product development and build better software. This integration connects to cloud-hosted instances of Jira." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

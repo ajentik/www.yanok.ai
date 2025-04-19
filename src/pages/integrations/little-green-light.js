@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Little Green Light"
-      description="Little Green Light helps nonprofits run campaigns, manage events, and maintain better constituent records, even from remote locations."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +56,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Little Green Light</title>
-          <meta name="description" content="Little Green Light helps nonprofits run campaigns, manage events, and maintain better constituent records, even from remote locations." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

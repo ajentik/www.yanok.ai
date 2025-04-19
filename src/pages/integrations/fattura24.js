@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Fattura24"
-      description="Fattura24 is an application available for web and mobile that helps entrepreneurs send invoices, track expenses, manage their clients and do many other things."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -67,7 +66,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Fattura24</title>
-          <meta name="description" content="Fattura24 is an application available for web and mobile that helps entrepreneurs send invoices, track expenses, manage their clients and do many other things." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

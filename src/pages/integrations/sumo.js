@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Sumo"
-      description="Tools to grow Your website’s traffic, including email list builders, sharing buttons, and heat maps. Sumo works with any website."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +56,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Sumo</title>
-          <meta name="description" content="Tools to grow Your website’s traffic, including email list builders, sharing buttons, and heat maps. Sumo works with any website." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="SEO Tester Online"
-      description="SEO Tester Online is an all-in-one SEO Platform for agencies, marketers and SMEs to get more organic traffic."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +56,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>SEO Tester Online</title>
-          <meta name="description" content="SEO Tester Online is an all-in-one SEO Platform for agencies, marketers and SMEs to get more organic traffic." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Brunch"
-      description="Brunch is a tool for giving feedback on live websites. No need for long calls to explain where that text should be different or where is that extra pixel you didn’t notice in design. People can use Brunch to show you exactly what they want and where they want."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +56,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Brunch</title>
-          <meta name="description" content="Brunch is a tool for giving feedback on live websites. No need for long calls to explain where that text should be different or where is that extra pixel you didn’t notice in design. People can use Brunch to show you exactly what they want and where they want." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

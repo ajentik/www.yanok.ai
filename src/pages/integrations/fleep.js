@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Fleep"
-      description="Fleep is your own business messenger. Leave email behind and manage all conversations with your team, partners and clients in Fleep. If some of them are not Fleep users yet, you can include them in the conversation with their email address and they will receive all the messages and files as normal emails."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +56,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Fleep</title>
-          <meta name="description" content="Fleep is your own business messenger. Leave email behind and manage all conversations with your team, partners and clients in Fleep. If some of them are not Fleep users yet, you can include them in the conversation with their email address and they will receive all the messages and files as normal emails." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

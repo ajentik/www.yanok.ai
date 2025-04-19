@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Rocketlane"
-      description="Rocketlane is a collaborative customer onboarding platform that helps you shorten time to value and deliver a delightful onboarding experience."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -141,7 +140,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Rocketlane</title>
-          <meta name="description" content="Rocketlane is a collaborative customer onboarding platform that helps you shorten time to value and deliver a delightful onboarding experience." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

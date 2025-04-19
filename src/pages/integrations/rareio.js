@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Rare.io"
-      description="Rare.io is a predictive email marketing platform that helps shops increase conversions using personalized product and timing recommendations."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -67,7 +66,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Rare.io</title>
-          <meta name="description" content="Rare.io is a predictive email marketing platform that helps shops increase conversions using personalized product and timing recommendations." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

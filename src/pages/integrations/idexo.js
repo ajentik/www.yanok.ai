@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="idexo"
-      description="idexo lets you create NFTs from any web2 application"
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -127,7 +126,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>idexo</title>
-          <meta name="description" content="idexo lets you create NFTs from any web2 application" />
+          <meta name="description" content={}/> />
         </>
       ),
     },

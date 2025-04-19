@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="CallRail"
-      description="CallRail is an analytics platform designed for those who rely on quality calls and inbound leads to measure success."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -117,7 +116,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>CallRail</title>
-          <meta name="description" content="CallRail is an analytics platform designed for those who rely on quality calls and inbound leads to measure success." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

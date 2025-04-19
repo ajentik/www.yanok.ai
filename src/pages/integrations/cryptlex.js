@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Cryptlex"
-      description="Cryptlex provides a complete software licensing solution to help you license and distribute your apps and software."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +52,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Cryptlex</title>
-          <meta name="description" content="Cryptlex provides a complete software licensing solution to help you license and distribute your apps and software." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

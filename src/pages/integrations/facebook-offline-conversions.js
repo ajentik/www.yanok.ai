@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Facebook Offline Conversions"
-      description="With offline conversion measurement on Facebook, you can track when events occur in your physical retail store and other offline channels (ex: email marketing and CRM apps) after people see or engage with your Facebook ad. ."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +56,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Facebook Offline Conversions</title>
-          <meta name="description" content="With offline conversion measurement on Facebook, you can track when events occur in your physical retail store and other offline channels (ex: email marketing and CRM apps) after people see or engage with your Facebook ad. ." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

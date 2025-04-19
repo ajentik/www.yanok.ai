@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="The Gift Goose"
-      description="The Gift Goose designs custom tailored gifts and automates their delivery."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -61,7 +60,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>The Gift Goose</title>
-          <meta name="description" content="The Gift Goose designs custom tailored gifts and automates their delivery." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

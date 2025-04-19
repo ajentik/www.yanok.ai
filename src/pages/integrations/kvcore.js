@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="kvCORE"
-      description="KvCORE is the next gen solution for modern brokerages, agents, and teams to run their entire business on one platform."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -71,7 +70,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>kvCORE</title>
-          <meta name="description" content="KvCORE is the next gen solution for modern brokerages, agents, and teams to run their entire business on one platform." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Drip"
-      description="Automate your ecommerce marketing at scale. Drip is your ecommerce marketing engine. Build personalized customer experiences, drive more revenue, and take your marketing strategy to the next level with Drip."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -161,7 +160,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Drip</title>
-          <meta name="description" content="Automate your ecommerce marketing at scale. Drip is your ecommerce marketing engine. Build personalized customer experiences, drive more revenue, and take your marketing strategy to the next level with Drip." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

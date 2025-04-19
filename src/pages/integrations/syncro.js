@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Syncro"
-      description="Syncro is a platform to manage your IT Consulting / Managed Services business with CRM, Ticketing, full-featured RMM (remote machine management) and an emphasis on great communication."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -111,7 +110,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Syncro</title>
-          <meta name="description" content="Syncro is a platform to manage your IT Consulting / Managed Services business with CRM, Ticketing, full-featured RMM (remote machine management) and an emphasis on great communication." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

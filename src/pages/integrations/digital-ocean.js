@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="DigitalOcean"
-      description="DigitalOcean is a cloud computing platform to quickly deploy virtual machines—with your custom code, or with a one-click app—manage storage, balance loads, and run it all from one place."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -96,7 +95,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>DigitalOcean</title>
-          <meta name="description" content="DigitalOcean is a cloud computing platform to quickly deploy virtual machines—with your custom code, or with a one-click app—manage storage, balance loads, and run it all from one place." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Zoho Recruit"
-      description="The all-in-one applicant tracking system for the modern recruiter. Share your job openings with the world! Publish job openings to your company's website and the most popular job boards to increase exposure and start sourcing top talent."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -96,7 +95,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Zoho Recruit</title>
-          <meta name="description" content="The all-in-one applicant tracking system for the modern recruiter. Share your job openings with the world! Publish job openings to your company's website and the most popular job boards to increase exposure and start sourcing top talent." />
+          <meta name="description" content={}/>s website and the most popular job boards to increase exposure and start sourcing top talent.' />
         </>
       ),
     },

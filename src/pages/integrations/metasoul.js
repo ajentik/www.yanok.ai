@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="MetaSoul"
-      description="MetaSoul™ is a sentient digital entity (soul) that feels, reacts, learns, and develops a personality."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -62,7 +61,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>MetaSoul</title>
-          <meta name="description" content="MetaSoul™ is a sentient digital entity (soul) that feels, reacts, learns, and develops a personality." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

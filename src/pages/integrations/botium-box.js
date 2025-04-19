@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Botium Box"
-      description="Botium, also known as "the Selenium for Chatbots", is the industry standard for testing of conversational A.I. (chatbots)."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -62,7 +61,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Botium Box</title>
-          <meta name="description" content="Botium, also known as "the Selenium for Chatbots", is the industry standard for testing of conversational A.I. (chatbots)." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

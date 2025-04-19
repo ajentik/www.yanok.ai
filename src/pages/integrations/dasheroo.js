@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Dasheroo"
-      description="Track all of your important metrics for web analytics, email marketing, social media, marketing and sales, in one great-looking free business dashboard."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +56,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Dasheroo</title>
-          <meta name="description" content="Track all of your important metrics for web analytics, email marketing, social media, marketing and sales, in one great-looking free business dashboard." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

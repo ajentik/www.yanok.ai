@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Client Dispute Manager"
-      description="Client Dispute Manager is an online Credit Repair Business Software."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -156,7 +155,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Client Dispute Manager</title>
-          <meta name="description" content="Client Dispute Manager is an online Credit Repair Business Software." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

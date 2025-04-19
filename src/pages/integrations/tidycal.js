@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="TidyCal"
-      description="TidyCal is simple and easy calendar management and booking tool."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -67,7 +66,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>TidyCal</title>
-          <meta name="description" content="TidyCal is simple and easy calendar management and booking tool." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

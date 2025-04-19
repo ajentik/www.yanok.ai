@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Evolphin Zoom"
-      description="Evolphin Zoom is a media management platform that powers the work-in-progress creative pipelines of companies around the globe."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -61,7 +60,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Evolphin Zoom</title>
-          <meta name="description" content="Evolphin Zoom is a media management platform that powers the work-in-progress creative pipelines of companies around the globe." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

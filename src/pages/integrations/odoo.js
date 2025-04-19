@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Odoo CRM"
-      description="Odoo is a powerful open source platform with dozens of apps to help you grow your business. Available apps range from CRM to eCommerce, and from accounting to manufacturing and project management. This Odoo CRM integration allows users to connect Odoo's CRM product to other apps. This integration works with instances that are cloud hosted at "odoo.com.""
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -61,7 +60,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Odoo CRM</title>
-          <meta name="description" content="Odoo is a powerful open source platform with dozens of apps to help you grow your business. Available apps range from CRM to eCommerce, and from accounting to manufacturing and project management. This Odoo CRM integration allows users to connect Odoo's CRM product to other apps. This integration works with instances that are cloud hosted at "odoo.com."" />
+          <meta name="description" content={}/>s CRM product to other apps. This integration works with instances that are cloud hosted at "odoo.com."' />
         </>
       ),
     },

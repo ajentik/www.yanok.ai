@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Ambee"
-      description="Ambee fuses the power of thousands of on-ground sensor data and hundreds of remote imagery from satellites. We analyze environmental factors such as air quality, soil, micro weather, pollen, and more to help millions worldwide stay safe and protect themselves."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -87,7 +86,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Ambee</title>
-          <meta name="description" content="Ambee fuses the power of thousands of on-ground sensor data and hundreds of remote imagery from satellites. We analyze environmental factors such as air quality, soil, micro weather, pollen, and more to help millions worldwide stay safe and protect themselves." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

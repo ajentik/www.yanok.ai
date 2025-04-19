@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Instant Offer Engine"
-      description="Powers Instant Cash Offers on REI websites"
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +56,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Instant Offer Engine</title>
-          <meta name="description" content="Powers Instant Cash Offers on REI websites" />
+          <meta name="description" content={}/> />
         </>
       ),
     },

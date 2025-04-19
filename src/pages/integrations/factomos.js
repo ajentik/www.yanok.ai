@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Factomos"
-      description="Factomos is an invoicing tool that can help you create invoices and quotes."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -102,7 +101,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Factomos</title>
-          <meta name="description" content="Factomos is an invoicing tool that can help you create invoices and quotes." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

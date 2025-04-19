@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="CloudBoost"
-      description="CloudBoost is a serverless platform that helps you build your apps & allows users to have real-time implementation in their app."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -72,7 +71,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>CloudBoost</title>
-          <meta name="description" content="CloudBoost is a serverless platform that helps you build your apps & allows users to have real-time implementation in their app." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

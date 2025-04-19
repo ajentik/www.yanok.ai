@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Magnetis"
-      description="Magnetis Call-tracking is a ROI solution which permits your company to follow and analyse its incoming calls. Thanks to the data collected, you get a precise and reliable insight of the performance of each channel or operation of communication that you use in your strategy."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -77,7 +76,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Magnetis</title>
-          <meta name="description" content="Magnetis Call-tracking is a ROI solution which permits your company to follow and analyse its incoming calls. Thanks to the data collected, you get a precise and reliable insight of the performance of each channel or operation of communication that you use in your strategy." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

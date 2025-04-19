@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Holded"
-      description="The cloud-based tool that has everything you need to manage your company — wherever you are, whenever you need."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -176,7 +175,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Holded</title>
-          <meta name="description" content="The cloud-based tool that has everything you need to manage your company — wherever you are, whenever you need." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

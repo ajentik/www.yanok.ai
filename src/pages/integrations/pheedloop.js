@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="PheedLoop"
-      description="Live, Virtual, Hybrid Event Management Software"
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -91,7 +90,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>PheedLoop</title>
-          <meta name="description" content="Live, Virtual, Hybrid Event Management Software" />
+          <meta name="description" content={}/> />
         </>
       ),
     },

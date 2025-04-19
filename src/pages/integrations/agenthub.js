@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="AgentHub"
-      description="The #1 Automation & Text Messaging Platform For The Real Estate Industry The first ever platform built to manage a Business's follow up, two-way texting, pipeline, scheduling, and so much more. Built for Real Estate Professionals, By Real Estate Professionals."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -81,7 +80,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>AgentHub</title>
-          <meta name="description" content="The #1 Automation & Text Messaging Platform For The Real Estate Industry The first ever platform built to manage a Business's follow up, two-way texting, pipeline, scheduling, and so much more. Built for Real Estate Professionals, By Real Estate Professionals." />
+          <meta name="description" content={}/>s follow up, two-way texting, pipeline, scheduling, and so much more. Built for Real Estate Professionals, By Real Estate Professionals.' />
         </>
       ),
     },

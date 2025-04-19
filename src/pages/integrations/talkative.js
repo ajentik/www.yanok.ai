@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Talkative"
-      description="Talkative lets your customers contact you on the channel of their choice: video chat, live chat, chatbot, cobrowse and social media."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +56,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Talkative</title>
-          <meta name="description" content="Talkative lets your customers contact you on the channel of their choice: video chat, live chat, chatbot, cobrowse and social media." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

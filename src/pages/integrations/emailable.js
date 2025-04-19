@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Emailable"
-      description="Emailable is an email checker that helps to improve your deliverability and email marketing campaign ROI."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -62,7 +61,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Emailable</title>
-          <meta name="description" content="Emailable is an email checker that helps to improve your deliverability and email marketing campaign ROI." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

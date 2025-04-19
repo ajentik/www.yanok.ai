@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Hiretalent"
-      description="AI-Powered Hiring Automation Platform For Global Hiring Empowering companies to source, select, and appoint talent."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -62,7 +61,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Hiretalent</title>
-          <meta name="description" content="AI-Powered Hiring Automation Platform For Global Hiring Empowering companies to source, select, and appoint talent." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

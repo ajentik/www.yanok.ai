@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Twitter"
-      description="Twitter is the social network that shows what's happening around the world in real time. Share your ideas in Tweets, follow hashtags to keep up with trends, and join in the global conversation."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -111,7 +110,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Twitter</title>
-          <meta name="description" content="Twitter is the social network that shows what's happening around the world in real time. Share your ideas in Tweets, follow hashtags to keep up with trends, and join in the global conversation." />
+          <meta name="description" content={}/>s happening around the world in real time. Share your ideas in Tweets, follow hashtags to keep up with trends, and join in the global conversation.' />
         </>
       ),
     },

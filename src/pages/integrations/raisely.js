@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Raisely"
-      description="Raisely is an online fundraising platform to help charities raise money online and nurture their supporters."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -111,7 +110,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Raisely</title>
-          <meta name="description" content="Raisely is an online fundraising platform to help charities raise money online and nurture their supporters." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

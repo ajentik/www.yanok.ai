@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Firespring"
-      description="We provide an unmatched range of integrated print, creative and technology solutions in addition to subscription-based software, cloud IT services and turnkey marketing tools for nonprofits and small to midsize businesses."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +52,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Firespring</title>
-          <meta name="description" content="We provide an unmatched range of integrated print, creative and technology solutions in addition to subscription-based software, cloud IT services and turnkey marketing tools for nonprofits and small to midsize businesses." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

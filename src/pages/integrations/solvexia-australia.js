@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="SolveXia"
-      description="SolveXia helps Finance and Accounting teams automate their reporting, reconciliations and analytics quickly and easily with zero-coding. Location support: Australia"
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -61,7 +60,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>SolveXia</title>
-          <meta name="description" content="SolveXia helps Finance and Accounting teams automate their reporting, reconciliations and analytics quickly and easily with zero-coding. Location support: Australia" />
+          <meta name="description" content={}/> />
         </>
       ),
     },

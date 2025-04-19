@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="CommCare"
-      description="CommCare is an an open source platform that lets you make free, customized mobile applications for your mobile workforce or yourself."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -72,7 +71,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>CommCare</title>
-          <meta name="description" content="CommCare is an an open source platform that lets you make free, customized mobile applications for your mobile workforce or yourself." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

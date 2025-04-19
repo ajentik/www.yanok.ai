@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Whatboard"
-      description="Whatboard is a team collaboration tool to share boards between the teammates."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +56,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Whatboard</title>
-          <meta name="description" content="Whatboard is a team collaboration tool to share boards between the teammates." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

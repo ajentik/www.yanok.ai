@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Blueshift"
-      description="Blueshift is a CDP + Marketing Automation platform that empowers you to create the omnichannel experiences your customers expect."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -116,7 +115,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Blueshift</title>
-          <meta name="description" content="Blueshift is a CDP + Marketing Automation platform that empowers you to create the omnichannel experiences your customers expect." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

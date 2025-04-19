@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="MoEngage"
-      description="MoEngage is a full-stack solution consisting of powerful customer analytics, automated cross-channel engagement and AI-driven personalization."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -72,7 +71,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>MoEngage</title>
-          <meta name="description" content="MoEngage is a full-stack solution consisting of powerful customer analytics, automated cross-channel engagement and AI-driven personalization." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

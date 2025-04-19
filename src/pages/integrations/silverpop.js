@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Silverpop"
-      description="Silverpop is a web based, on-demand digital marketing technology provider that brings marketing automation, mobile, email, social and more under one roof! Silverpop handles everything from lead nurturing to campaign automation."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +52,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Silverpop</title>
-          <meta name="description" content="Silverpop is a web based, on-demand digital marketing technology provider that brings marketing automation, mobile, email, social and more under one roof! Silverpop handles everything from lead nurturing to campaign automation." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

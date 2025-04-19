@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Obeatow"
-      description="Obeatow is a visual feedback and bug-reporting software."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -62,7 +61,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Obeatow</title>
-          <meta name="description" content="Obeatow is a visual feedback and bug-reporting software." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

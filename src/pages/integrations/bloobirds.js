@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Bloobirds"
-      description="Bloobirds is a Lead Management System that helps Sales team to apply an effective sales methodology."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -71,7 +70,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Bloobirds</title>
-          <meta name="description" content="Bloobirds is a Lead Management System that helps Sales team to apply an effective sales methodology." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

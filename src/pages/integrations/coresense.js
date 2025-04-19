@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="CORESense"
-      description="CORESense is a cloud-based point of sale and retail management solution that is designed for merchants."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +52,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>CORESense</title>
-          <meta name="description" content="CORESense is a cloud-based point of sale and retail management solution that is designed for merchants." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

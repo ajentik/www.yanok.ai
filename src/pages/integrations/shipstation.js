@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="ShipStation"
-      description="ShipStation helps eCommerce retailers organize, process, and fulfill their orders from all the most popular marketplaces and shopping carts using the top shipping carriers."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -76,7 +75,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>ShipStation</title>
-          <meta name="description" content="ShipStation helps eCommerce retailers organize, process, and fulfill their orders from all the most popular marketplaces and shopping carts using the top shipping carriers." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

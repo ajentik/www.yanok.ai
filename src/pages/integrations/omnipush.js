@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="OmniPUSH"
-      description="The Preeminent SaaS for TOTAL Remote Sales Pros"
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -66,7 +65,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>OmniPUSH</title>
-          <meta name="description" content="The Preeminent SaaS for TOTAL Remote Sales Pros" />
+          <meta name="description" content={}/> />
         </>
       ),
     },

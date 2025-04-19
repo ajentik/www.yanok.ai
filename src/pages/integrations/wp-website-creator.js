@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="WordPress Website Creator"
-      description="wp-website-creator allows you to install wordpress websites on your own server or our cloud server. Install websites directly from your APP"
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -76,7 +75,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>WordPress Website Creator</title>
-          <meta name="description" content="wp-website-creator allows you to install wordpress websites on your own server or our cloud server. Install websites directly from your APP" />
+          <meta name="description" content={}/> />
         </>
       ),
     },

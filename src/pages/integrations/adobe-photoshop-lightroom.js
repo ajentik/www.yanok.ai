@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Adobe Photoshop Lightroom"
-      description="Adobe Photoshop Lightroom is the cloud-based service that gives you everything you need to edit, organize, store, and share your photos across any device."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -77,7 +76,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Adobe Photoshop Lightroom</title>
-          <meta name="description" content="Adobe Photoshop Lightroom is the cloud-based service that gives you everything you need to edit, organize, store, and share your photos across any device." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Formplus"
-      description="Create beautiful forms, gather insightful data, and improve collaboration with Formplusㅡan online form builder designed for everyone. Formplus is a flexible tool that lets you build online surveys, application forms, collect feedback, receive payments, and do so much more"
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +56,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Formplus</title>
-          <meta name="description" content="Create beautiful forms, gather insightful data, and improve collaboration with Formplusㅡan online form builder designed for everyone. Formplus is a flexible tool that lets you build online surveys, application forms, collect feedback, receive payments, and do so much more" />
+          <meta name="description" content={}/> />
         </>
       ),
     },

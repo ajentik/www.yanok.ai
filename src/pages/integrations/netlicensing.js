@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="NetLicensing"
-      description="NetLicensing is a first-class solution in the Licensing-as-a-Service sector enabling efficient license management for software."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -91,7 +90,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>NetLicensing</title>
-          <meta name="description" content="NetLicensing is a first-class solution in the Licensing-as-a-Service sector enabling efficient license management for software." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

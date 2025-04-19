@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Yousign"
-      description="Yousign: the easy-to-use, legally binding eSignature solution for all your documents."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -71,7 +70,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Yousign</title>
-          <meta name="description" content="Yousign: the easy-to-use, legally binding eSignature solution for all your documents." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

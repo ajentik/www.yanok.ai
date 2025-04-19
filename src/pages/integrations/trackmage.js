@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="TrackMage"
-      description="TrackMage is an order tracking platform that combines order fulfillment and customer support to provide customer's with a comprehensive post-purchase experience."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -121,7 +120,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>TrackMage</title>
-          <meta name="description" content="TrackMage is an order tracking platform that combines order fulfillment and customer support to provide customer's with a comprehensive post-purchase experience." />
+          <meta name="description" content={}/>s with a comprehensive post-purchase experience.' />
         </>
       ),
     },

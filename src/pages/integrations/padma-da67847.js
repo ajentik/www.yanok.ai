@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="PADMA"
-      description="PADMA CRM is the official system for administration of DeROSE Method schools."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -86,7 +85,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>PADMA</title>
-          <meta name="description" content="PADMA CRM is the official system for administration of DeROSE Method schools." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

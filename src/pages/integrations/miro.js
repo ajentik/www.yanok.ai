@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Miro"
-      description="Miro (formerly RealtimeBoard) is an intuitive visual collaboration and whiteboarding platform for cross-functional teams."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -67,7 +66,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Miro</title>
-          <meta name="description" content="Miro (formerly RealtimeBoard) is an intuitive visual collaboration and whiteboarding platform for cross-functional teams." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Pipes.ai"
-      description="Pipes.ai is a platform that improves your outbound marketing contact rates: Get more of your customers on the phone without making a hire."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +56,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Pipes.ai</title>
-          <meta name="description" content="Pipes.ai is a platform that improves your outbound marketing contact rates: Get more of your customers on the phone without making a hire." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

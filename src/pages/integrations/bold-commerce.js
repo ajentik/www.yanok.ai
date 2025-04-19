@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Bold Commerce"
-      description="Bold Commerce provides a selection of apps that help convert more customers, maximize average order value and increase customer lifetime value. Specifically the Bold Subscriptions app allows merchants to build a custom recurring revenue solution."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -81,7 +80,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Bold Commerce</title>
-          <meta name="description" content="Bold Commerce provides a selection of apps that help convert more customers, maximize average order value and increase customer lifetime value. Specifically the Bold Subscriptions app allows merchants to build a custom recurring revenue solution." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Facebook Custom Audiences"
-      description="Facebook Custom Audiences makes signing up for business information easy for people and more valuable for businesses."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -62,7 +61,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Facebook Custom Audiences</title>
-          <meta name="description" content="Facebook Custom Audiences makes signing up for business information easy for people and more valuable for businesses." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

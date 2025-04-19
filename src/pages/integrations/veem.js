@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Veem"
-      description="Veem is an online global bank transfer service for you to send & receive payments internationally with ease."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -76,7 +75,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Veem</title>
-          <meta name="description" content="Veem is an online global bank transfer service for you to send & receive payments internationally with ease." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

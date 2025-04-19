@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Pointerpro"
-      description="Pointerpro is an easy-to-use tool to create fun, mobile and interactive surveys & quizzes."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -61,7 +60,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Pointerpro</title>
-          <meta name="description" content="Pointerpro is an easy-to-use tool to create fun, mobile and interactive surveys & quizzes." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

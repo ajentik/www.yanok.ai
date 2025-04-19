@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Planfix"
-      description="Planfix is a platform for creating Enterprise Management Systems and allows you to configure various business processes of the company without programming."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -156,7 +155,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Planfix</title>
-          <meta name="description" content="Planfix is a platform for creating Enterprise Management Systems and allows you to configure various business processes of the company without programming." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

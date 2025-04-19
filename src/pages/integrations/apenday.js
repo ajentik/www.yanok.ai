@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Apenday"
-      description="Apenday creates a unique, highly customizable booking experience. The interface adapts to your visual identity (logo, colors) for perfect integration on all your devices (website, email, SMS, etc.)."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -82,7 +81,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Apenday</title>
-          <meta name="description" content="Apenday creates a unique, highly customizable booking experience. The interface adapts to your visual identity (logo, colors) for perfect integration on all your devices (website, email, SMS, etc.)." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

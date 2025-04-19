@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Visual Lease"
-      description="Visual Lease is a comprehensive, powerful and easy-to-use real estate and lease management software solution that makes it easy to know what your leases say, how much they cost, and when they need attention. It enables companies to control, report, track, and manage owned and leased real estate and make better decisions on leases and related information."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -121,7 +120,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Visual Lease</title>
-          <meta name="description" content="Visual Lease is a comprehensive, powerful and easy-to-use real estate and lease management software solution that makes it easy to know what your leases say, how much they cost, and when they need attention. It enables companies to control, report, track, and manage owned and leased real estate and make better decisions on leases and related information." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

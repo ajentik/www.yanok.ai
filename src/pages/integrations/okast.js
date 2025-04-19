@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="OKAST"
-      description="OKAST is a video streaming service that helps you to build, in a click, a branded VOD or video streaming platform to monetize your contents"
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -117,7 +116,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>OKAST</title>
-          <meta name="description" content="OKAST is a video streaming service that helps you to build, in a click, a branded VOD or video streaming platform to monetize your contents" />
+          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Superthread"
-      description="Superthread is the world's fastest issue tracker with tasks and docs in one tool."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -61,7 +60,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Superthread</title>
-          <meta name="description" content="Superthread is the world's fastest issue tracker with tasks and docs in one tool." />
+          <meta name="description" content={}/>s fastest issue tracker with tasks and docs in one tool.' />
         </>
       ),
     },

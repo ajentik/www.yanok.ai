@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Google Slides"
-      description="Google Slides allows you to create, edit, and share presentations with anyone, online, for free."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -71,7 +70,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Google Slides</title>
-          <meta name="description" content="Google Slides allows you to create, edit, and share presentations with anyone, online, for free." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

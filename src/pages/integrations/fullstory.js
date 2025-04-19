@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="FullStory"
-      description="FullStory is a digital experience analytics platform that uses session replay and other tools to give you valuable insights into your user's experiences."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -81,7 +80,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>FullStory</title>
-          <meta name="description" content="FullStory is a digital experience analytics platform that uses session replay and other tools to give you valuable insights into your user's experiences." />
+          <meta name="description" content={}/>s experiences.' />
         </>
       ),
     },

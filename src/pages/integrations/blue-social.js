@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Blue Social"
-      description="Blue helps professionals and businesses build and grow their networks using Bluetooth, NFC and digital business cards."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +56,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Blue Social</title>
-          <meta name="description" content="Blue helps professionals and businesses build and grow their networks using Bluetooth, NFC and digital business cards." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

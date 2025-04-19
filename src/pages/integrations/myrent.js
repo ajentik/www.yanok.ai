@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="MyRent"
-      description="MyRent is a complete Car Rental Software that makes running your rental business easy, fast and profitable."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -97,7 +96,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>MyRent</title>
-          <meta name="description" content="MyRent is a complete Car Rental Software that makes running your rental business easy, fast and profitable." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

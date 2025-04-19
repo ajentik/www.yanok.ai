@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="AdviserLogic Fact Finder"
-      description="Fact Finder is an application to either fetch, create, or update Fact Finder data as per current AdviserLogic schema"
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -161,7 +160,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>AdviserLogic Fact Finder</title>
-          <meta name="description" content="Fact Finder is an application to either fetch, create, or update Fact Finder data as per current AdviserLogic schema" />
+          <meta name="description" content={}/> />
         </>
       ),
     },

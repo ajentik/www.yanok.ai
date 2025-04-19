@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="fitbox"
-      description="fitbox is an essential gym management software for member, billing, workout, and class management backed by an innovative business model that turns every dollar you spend into free credit that can be used to improve your gym, or reduce operating costs."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -86,7 +85,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>fitbox</title>
-          <meta name="description" content="fitbox is an essential gym management software for member, billing, workout, and class management backed by an innovative business model that turns every dollar you spend into free credit that can be used to improve your gym, or reduce operating costs." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

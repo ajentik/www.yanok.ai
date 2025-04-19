@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="LeadCenter.AI"
-      description="AI-Powered Lead Management Software that automates tracking, scoring, and engaging leads to improve conversion of leads to business to grow your revenue."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -81,7 +80,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>LeadCenter.AI</title>
-          <meta name="description" content="AI-Powered Lead Management Software that automates tracking, scoring, and engaging leads to improve conversion of leads to business to grow your revenue." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

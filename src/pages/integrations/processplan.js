@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Process Plan"
-      description="ProcessPlan is a process, procedure, project, and workflow tool. Visually diagram your processes and then let ProcessPlan automate and manage your daily operations so you don't have to worry about making sure things are done correctly. Make your business run like a well-oiled machine while you sit back and relax!"
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -136,7 +135,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Process Plan</title>
-          <meta name="description" content="ProcessPlan is a process, procedure, project, and workflow tool. Visually diagram your processes and then let ProcessPlan automate and manage your daily operations so you don't have to worry about making sure things are done correctly. Make your business run like a well-oiled machine while you sit back and relax!" />
+          <meta name="description" content={}/>t have to worry about making sure things are done correctly. Make your business run like a well-oiled machine while you sit back and relax!' />
         </>
       ),
     },

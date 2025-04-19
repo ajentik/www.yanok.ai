@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Projectworks"
-      description="Projectworks is an intelligent business management software for your entire professional services company."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -211,7 +210,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Projectworks</title>
-          <meta name="description" content="Projectworks is an intelligent business management software for your entire professional services company." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

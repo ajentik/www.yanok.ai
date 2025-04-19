@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="8xpand"
-      description="8xpand is a suite of HR features such as payroll management, time attendance, work documents, recruitment, AI etc, your best partner is HR management solution"
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -61,7 +60,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>8xpand</title>
-          <meta name="description" content="8xpand is a suite of HR features such as payroll management, time attendance, work documents, recruitment, AI etc, your best partner is HR management solution" />
+          <meta name="description" content={}/> />
         </>
       ),
     },

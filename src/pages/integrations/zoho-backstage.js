@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Zoho Backstage"
-      description="Zoho Backstage is an enterprise event management tool to help you create memorable event experiences."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -76,7 +75,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Zoho Backstage</title>
-          <meta name="description" content="Zoho Backstage is an enterprise event management tool to help you create memorable event experiences." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

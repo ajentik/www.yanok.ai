@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="ActiveCampaign Postmark"
-      description="Postmark is specifically built to deliver your app's emails to the inbox, fast. Instantly send and receive emails with zero maintenance. Our infrastructure combined with proper content and delivery practices means higher response rates from your customers."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -76,7 +75,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>ActiveCampaign Postmark</title>
-          <meta name="description" content="Postmark is specifically built to deliver your app's emails to the inbox, fast. Instantly send and receive emails with zero maintenance. Our infrastructure combined with proper content and delivery practices means higher response rates from your customers." />
+          <meta name="description" content={}/>s emails to the inbox, fast. Instantly send and receive emails with zero maintenance. Our infrastructure combined with proper content and delivery practices means higher response rates from your customers.' />
         </>
       ),
     },

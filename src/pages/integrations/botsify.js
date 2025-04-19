@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Botsify"
-      description="Botsify is a platform to create artificial intelligent Chatbots to replace your live support without any coding."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -91,7 +90,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Botsify</title>
-          <meta name="description" content="Botsify is a platform to create artificial intelligent Chatbots to replace your live support without any coding." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

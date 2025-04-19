@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Tide Software SMS"
-      description="Tide Software SMS is an SMS platform to message your customers automatically with full control, message customization, phishing protection, and more."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +56,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Tide Software SMS</title>
-          <meta name="description" content="Tide Software SMS is an SMS platform to message your customers automatically with full control, message customization, phishing protection, and more." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

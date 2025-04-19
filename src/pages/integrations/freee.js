@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="freee"
-      description="freee provides cloud-based accounting & HR software for SMBs in Japan to automate and simplify back-office tasks."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -96,7 +95,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>freee</title>
-          <meta name="description" content="freee provides cloud-based accounting & HR software for SMBs in Japan to automate and simplify back-office tasks." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

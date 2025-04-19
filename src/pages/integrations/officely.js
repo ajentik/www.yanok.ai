@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Officely"
-      description="Officely allows for a business virtual assistants to run the business easily directly from WhatsApp through a chatbot."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +56,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Officely</title>
-          <meta name="description" content="Officely allows for a business virtual assistants to run the business easily directly from WhatsApp through a chatbot." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

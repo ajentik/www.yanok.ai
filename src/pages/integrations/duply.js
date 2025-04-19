@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Duply"
-      description="Duply is a dynamic image creation tool for marketing & content."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -91,7 +90,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Duply</title>
-          <meta name="description" content="Duply is a dynamic image creation tool for marketing & content." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

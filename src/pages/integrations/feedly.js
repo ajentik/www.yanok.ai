@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Feedly"
-      description="The best way to follow your favorite blogs, news sites, YouTube shows, podcasts, tumblr blogs, magazines, eBay listings, Hulu shows and more. feedly delivers all your favorite news in one place—and it is blazing fast."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -111,7 +110,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Feedly</title>
-          <meta name="description" content="The best way to follow your favorite blogs, news sites, YouTube shows, podcasts, tumblr blogs, magazines, eBay listings, Hulu shows and more. feedly delivers all your favorite news in one place—and it is blazing fast." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

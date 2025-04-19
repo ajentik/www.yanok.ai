@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Smally Link"
-      description="A Free Link Shortening and Management system that caters to businesses on a budget. Don’t leave your lengthy URLs like that, #SmallyIt! and transform your user reach with us!"
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -66,7 +65,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Smally Link</title>
-          <meta name="description" content="A Free Link Shortening and Management system that caters to businesses on a budget. Don’t leave your lengthy URLs like that, #SmallyIt! and transform your user reach with us!" />
+          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Sendloop"
-      description="All-in-one email marketing solution for SaaS, e-commerce, application and small business owners."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -81,7 +80,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Sendloop</title>
-          <meta name="description" content="All-in-one email marketing solution for SaaS, e-commerce, application and small business owners." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

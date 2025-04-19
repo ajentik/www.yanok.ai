@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="FreeAgent CRM"
-      description="FreeAgent CRM is a sales, marketing and customer service platform for businesses big-and-small who care about their customers."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -86,7 +85,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>FreeAgent CRM</title>
-          <meta name="description" content="FreeAgent CRM is a sales, marketing and customer service platform for businesses big-and-small who care about their customers." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

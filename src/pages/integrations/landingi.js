@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Landingi"
-      description="Landing Page Builder for non-programmers. With Landingi you don’t need any programming skills to create and optimize your own custom landing pages."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -67,7 +66,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Landingi</title>
-          <meta name="description" content="Landing Page Builder for non-programmers. With Landingi you don’t need any programming skills to create and optimize your own custom landing pages." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

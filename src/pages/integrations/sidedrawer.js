@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="SideDrawer"
-      description="SideDrawer is a collaborative digital vault platform designed for efficiency & privacy."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -87,7 +86,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>SideDrawer</title>
-          <meta name="description" content="SideDrawer is a collaborative digital vault platform designed for efficiency & privacy." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

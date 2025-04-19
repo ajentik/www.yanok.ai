@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Route4Me"
-      description="Route4Me optimizes where, when, and how your people, vehicles, assets, and routes should work."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -81,7 +80,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Route4Me</title>
-          <meta name="description" content="Route4Me optimizes where, when, and how your people, vehicles, assets, and routes should work." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

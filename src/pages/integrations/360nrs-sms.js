@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="360NRS SMS"
-      description="An easy way to send SMS. 360NRS allows you to send fully personalized SMS automatically."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +56,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>360NRS SMS</title>
-          <meta name="description" content="An easy way to send SMS. 360NRS allows you to send fully personalized SMS automatically." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

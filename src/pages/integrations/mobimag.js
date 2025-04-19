@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Mobimag"
-      description="Mobimag is a cool new way to publish and monetize magazines."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +56,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Mobimag</title>
-          <meta name="description" content="Mobimag is a cool new way to publish and monetize magazines." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

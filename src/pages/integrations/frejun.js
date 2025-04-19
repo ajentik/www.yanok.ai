@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Frejun"
-      description="Frejun helps get actionable insights, transcripts, summaries, and notes of your meetings and business conversations using AI"
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -62,7 +61,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Frejun</title>
-          <meta name="description" content="Frejun helps get actionable insights, transcripts, summaries, and notes of your meetings and business conversations using AI" />
+          <meta name="description" content={}/> />
         </>
       ),
     },

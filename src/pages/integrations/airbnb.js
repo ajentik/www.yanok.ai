@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Airbnb"
-      description="Airbnb is a unique marketplace for renting amazing lodging in over 190 different countries. Use Zapier's Email Parser to take confirmation emails and send them to hundreds of different SaaS apps!"
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +52,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Airbnb</title>
-          <meta name="description" content="Airbnb is a unique marketplace for renting amazing lodging in over 190 different countries. Use Zapier's Email Parser to take confirmation emails and send them to hundreds of different SaaS apps!" />
+          <meta name="description" content={}/>s Email Parser to take confirmation emails and send them to hundreds of different SaaS apps!' />
         </>
       ),
     },

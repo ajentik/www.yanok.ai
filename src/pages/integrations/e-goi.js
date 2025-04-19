@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="E-goi"
-      description="E-goi is a Multichannel Marketing Automation Platform, including email marketing services, SMS, Voice Broadcast, Push Notifications, Web Push and Forms to Capture, Automate, Communicate, Analyse and Generate more Sales."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -106,7 +105,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>E-goi</title>
-          <meta name="description" content="E-goi is a Multichannel Marketing Automation Platform, including email marketing services, SMS, Voice Broadcast, Push Notifications, Web Push and Forms to Capture, Automate, Communicate, Analyse and Generate more Sales." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

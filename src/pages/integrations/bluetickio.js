@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Bluetick.io"
-      description="Bluetick.io is an automated email followup tool designed to help move leads through your sales funnel."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -121,7 +120,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Bluetick.io</title>
-          <meta name="description" content="Bluetick.io is an automated email followup tool designed to help move leads through your sales funnel." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

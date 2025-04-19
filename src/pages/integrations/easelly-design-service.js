@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Easelly Design Service"
-      description="Trusted by thousand of customers, Easelly Design is a professional services for fast and high quality design needs. This application provides access to to create, retrieve status, update, request revision, get design files and approve order per customer/partner."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -91,7 +90,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Easelly Design Service</title>
-          <meta name="description" content="Trusted by thousand of customers, Easelly Design is a professional services for fast and high quality design needs. This application provides access to to create, retrieve status, update, request revision, get design files and approve order per customer/partner." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

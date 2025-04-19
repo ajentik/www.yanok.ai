@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="LoanOfficer.ai"
-      description="Loan Officer.ai CRM will help you manage every front of your mortgage business and grow like never before - without the stress."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -72,7 +71,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>LoanOfficer.ai</title>
-          <meta name="description" content="Loan Officer.ai CRM will help you manage every front of your mortgage business and grow like never before - without the stress." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

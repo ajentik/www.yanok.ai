@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Upwork"
-      description="Upwork is a global freelancing platform where businesses and independent professionals connect and collaborate remotely."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -61,7 +60,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Upwork</title>
-          <meta name="description" content="Upwork is a global freelancing platform where businesses and independent professionals connect and collaborate remotely." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

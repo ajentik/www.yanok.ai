@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Freedcamp"
-      description="Freedcamp is a project management tool equipt with all the tools you need to work with your team and organize any project."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -86,7 +85,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Freedcamp</title>
-          <meta name="description" content="Freedcamp is a project management tool equipt with all the tools you need to work with your team and organize any project." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

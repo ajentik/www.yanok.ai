@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="AcademyOcean"
-      description="AcademyOcean is an LMS system that helps businesses automate training for employees, customers, and partners."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -121,7 +120,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>AcademyOcean</title>
-          <meta name="description" content="AcademyOcean is an LMS system that helps businesses automate training for employees, customers, and partners." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Surveypal"
-      description="Send branded surveys after any customer interaction, then monitor performance and improve survey response rates with Surveypal's real-time analytics and intelligent alerts."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -66,7 +65,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Surveypal</title>
-          <meta name="description" content="Send branded surveys after any customer interaction, then monitor performance and improve survey response rates with Surveypal's real-time analytics and intelligent alerts." />
+          <meta name="description" content={}/>s real-time analytics and intelligent alerts.' />
         </>
       ),
     },

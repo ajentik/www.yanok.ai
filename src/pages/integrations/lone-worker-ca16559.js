@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Lone Worker by Ok Alone"
-      description="Ok Alone protects your lone workers. The solution lets workers check in on the move, automatically reminds staff when they miss a check-in, monitors their location and request help when needed."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -77,7 +76,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Lone Worker by Ok Alone</title>
-          <meta name="description" content="Ok Alone protects your lone workers. The solution lets workers check in on the move, automatically reminds staff when they miss a check-in, monitors their location and request help when needed." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

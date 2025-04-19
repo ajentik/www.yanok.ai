@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="INBOX"
-      description="INBOX offers an email marketing platform that is easy to use for small businesses and organizations."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -81,7 +80,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>INBOX</title>
-          <meta name="description" content="INBOX offers an email marketing platform that is easy to use for small businesses and organizations." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

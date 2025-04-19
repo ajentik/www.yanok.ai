@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="ParcelSync"
-      description="Track your fleet, connect with customers and document deliveries, all in one app"
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +56,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>ParcelSync</title>
-          <meta name="description" content="Track your fleet, connect with customers and document deliveries, all in one app" />
+          <meta name="description" content={}/> />
         </>
       ),
     },

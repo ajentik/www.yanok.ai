@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Centiment"
-      description="Centiment is purpose-built to simplify feedback. Build a survey in minutes to gather responses from your customers and employees or target respondents in 100+ countries using Centiment's Audience Panel."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +56,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Centiment</title>
-          <meta name="description" content="Centiment is purpose-built to simplify feedback. Build a survey in minutes to gather responses from your customers and employees or target respondents in 100+ countries using Centiment's Audience Panel." />
+          <meta name="description" content={}/>s Audience Panel.' />
         </>
       ),
     },

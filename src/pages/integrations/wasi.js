@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Wasi"
-      description="Wasi is a real estate platform for real estate professionals. It easily combines CRM, websites, reporting, automation, and sharing properties with your clients."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +56,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Wasi</title>
-          <meta name="description" content="Wasi is a real estate platform for real estate professionals. It easily combines CRM, websites, reporting, automation, and sharing properties with your clients." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

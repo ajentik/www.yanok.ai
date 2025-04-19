@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Spiro"
-      description="Spiro is an AI-Powered CRM that learns your sales process to increase effectiveness and deliver more accurate business insights."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -341,7 +340,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Spiro</title>
-          <meta name="description" content="Spiro is an AI-Powered CRM that learns your sales process to increase effectiveness and deliver more accurate business insights." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

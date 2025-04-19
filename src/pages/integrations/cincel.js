@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="CINCEL"
-      description="CINCEL is the suite of multi-signature, notarization, blockchain and identity with legal compliance for companies in Mexico and LATAM."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -61,7 +60,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>CINCEL</title>
-          <meta name="description" content="CINCEL is the suite of multi-signature, notarization, blockchain and identity with legal compliance for companies in Mexico and LATAM." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

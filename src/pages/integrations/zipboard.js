@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="zipBoard"
-      description="zipBoard is a web-based visual feedback and bug tracking tool that helps developers, testers and project managers collaborate during product development."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -126,7 +125,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>zipBoard</title>
-          <meta name="description" content="zipBoard is a web-based visual feedback and bug tracking tool that helps developers, testers and project managers collaborate during product development." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

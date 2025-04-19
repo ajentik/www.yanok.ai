@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Talenteria"
-      description="A New Generation Career Site Builder and Recruitment Marketing Platform"
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -61,7 +60,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Talenteria</title>
-          <meta name="description" content="A New Generation Career Site Builder and Recruitment Marketing Platform" />
+          <meta name="description" content={}/> />
         </>
       ),
     },

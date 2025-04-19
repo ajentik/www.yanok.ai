@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Sivo"
-      description="Sivo provides debt-as-a-service. Our API allows companies to access debt funding and lend money to their users at scale."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -121,7 +120,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Sivo</title>
-          <meta name="description" content="Sivo provides debt-as-a-service. Our API allows companies to access debt funding and lend money to their users at scale." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

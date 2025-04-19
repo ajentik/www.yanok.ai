@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Aha!"
-      description="Aha! Roadmaps is the complete product management suite - set strategy, capture ideas, score features, and share visual plans. It includes Aha! Ideas Essentials for crowdsourcing feedback. More than 5,000 companies trust our cloud-based software to build lovable products and be happy doing it."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -71,7 +70,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Aha!</title>
-          <meta name="description" content="Aha! Roadmaps is the complete product management suite - set strategy, capture ideas, score features, and share visual plans. It includes Aha! Ideas Essentials for crowdsourcing feedback. More than 5,000 companies trust our cloud-based software to build lovable products and be happy doing it." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Udio"
-      description="Udio is a booking management software designed to help business owners and managers streamline their day-to-day operations."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -252,7 +251,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Udio</title>
-          <meta name="description" content="Udio is a booking management software designed to help business owners and managers streamline their day-to-day operations." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Spylead"
-      description="Spylead is a scraping tool that finds and checks emails from LinkedIn, Google maps and SERPs."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -71,7 +70,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Spylead</title>
-          <meta name="description" content="Spylead is a scraping tool that finds and checks emails from LinkedIn, Google maps and SERPs." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

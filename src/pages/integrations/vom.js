@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="VOM"
-      description="VôM is a homegrown accounting software platform. VôM aims to provide “Value of Money” to small businesses that are focused on easily managing their financials. Provides anyone that has no background in accounting with all accounting reports easily"
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -77,7 +76,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>VOM</title>
-          <meta name="description" content="VôM is a homegrown accounting software platform. VôM aims to provide “Value of Money” to small businesses that are focused on easily managing their financials. Provides anyone that has no background in accounting with all accounting reports easily" />
+          <meta name="description" content={}/> />
         </>
       ),
     },

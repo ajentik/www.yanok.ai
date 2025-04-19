@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Notud"
-      description="Notud is cloud note-taking for small business. Handwrite on your tablet or iPad and your notes save instantly to a client file."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -81,7 +80,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Notud</title>
-          <meta name="description" content="Notud is cloud note-taking for small business. Handwrite on your tablet or iPad and your notes save instantly to a client file." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="UseResponse"
-      description="UseResponse is all-in-one support suite to capture feedback, organize community with a self-service knowledge base, and support customers in multiple channels."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -126,7 +125,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>UseResponse</title>
-          <meta name="description" content="UseResponse is all-in-one support suite to capture feedback, organize community with a self-service knowledge base, and support customers in multiple channels." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

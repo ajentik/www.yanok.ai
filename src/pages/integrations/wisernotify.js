@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Wisernotify"
-      description="Wisernotify is a social proof & FOMO marketing app that allows you to automate visitors' actions into social proof notifications on your website that build trust and increase conversions rate."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -61,7 +60,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Wisernotify</title>
-          <meta name="description" content="Wisernotify is a social proof & FOMO marketing app that allows you to automate visitors' actions into social proof notifications on your website that build trust and increase conversions rate." />
+          <meta name="description" content={}/> actions into social proof notifications on your website that build trust and increase conversions rate.' />
         </>
       ),
     },

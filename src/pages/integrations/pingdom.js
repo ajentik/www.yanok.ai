@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Pingdom"
-      description="Pingdom website monitoring reports the uptime, downtime and performance of your website, network and server and alerts you of errors."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -67,7 +66,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Pingdom</title>
-          <meta name="description" content="Pingdom website monitoring reports the uptime, downtime and performance of your website, network and server and alerts you of errors." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

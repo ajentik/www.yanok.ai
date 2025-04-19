@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Upstream Tech Lens"
-      description="Lens gives everyone in your organization eyes on the ground with aggregated satellite, aerial and environmental data and a powerful workflow for collaborative monitoring."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +56,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Upstream Tech Lens</title>
-          <meta name="description" content="Lens gives everyone in your organization eyes on the ground with aggregated satellite, aerial and environmental data and a powerful workflow for collaborative monitoring." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

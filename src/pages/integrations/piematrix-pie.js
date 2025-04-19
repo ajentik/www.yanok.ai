@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="PieMatrix Pie"
-      description="Pie is a visual process and project management web application that combines agile with waterfall and made for repeatable project processes. Pie is designed for improving end-project results with team collaboration."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -72,7 +71,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>PieMatrix Pie</title>
-          <meta name="description" content="Pie is a visual process and project management web application that combines agile with waterfall and made for repeatable project processes. Pie is designed for improving end-project results with team collaboration." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

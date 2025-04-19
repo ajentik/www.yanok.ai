@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Cloud Attract"
-      description="Cloud Attract is a lead capture tool to attract buyers and sellers with beautiful landing pages that automatically respond with a home valuation, CMA, or listing alerts."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +56,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Cloud Attract</title>
-          <meta name="description" content="Cloud Attract is a lead capture tool to attract buyers and sellers with beautiful landing pages that automatically respond with a home valuation, CMA, or listing alerts." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

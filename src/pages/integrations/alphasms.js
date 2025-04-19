@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="AlphaSMS"
-      description="AlphaSMS provides messaging services via SMS and messengers throughout Ukraine and worldwide."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -67,7 +66,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>AlphaSMS</title>
-          <meta name="description" content="AlphaSMS provides messaging services via SMS and messengers throughout Ukraine and worldwide." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

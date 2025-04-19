@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Gloobobusiness"
-      description="GlooboBusiness is a simple, straightforward VoIP service for business telephony that helps you cut billing costs without sacrificing quality."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -72,7 +71,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Gloobobusiness</title>
-          <meta name="description" content="GlooboBusiness is a simple, straightforward VoIP service for business telephony that helps you cut billing costs without sacrificing quality." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

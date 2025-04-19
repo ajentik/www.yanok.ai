@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Emotive"
-      description="Emotive is an eCommerce service that enables eCommerce businesses to scale 1:1 relationships through conversational text messaging."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +56,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Emotive</title>
-          <meta name="description" content="Emotive is an eCommerce service that enables eCommerce businesses to scale 1:1 relationships through conversational text messaging." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Como"
-      description="Como Sense constantly senses who your customers are and what they buy.They empower POS companies with next-generation personalization for their business clients."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +52,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Como</title>
-          <meta name="description" content="Como Sense constantly senses who your customers are and what they buy.They empower POS companies with next-generation personalization for their business clients." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Bitly"
-      description="Bitly is a link management and shortener platform."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -86,7 +85,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Bitly</title>
-          <meta name="description" content="Bitly is a link management and shortener platform." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

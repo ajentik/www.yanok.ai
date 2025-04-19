@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Reputation Loop"
-      description="We promote small business growth online through our automated reputation marketing software"
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +52,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Reputation Loop</title>
-          <meta name="description" content="We promote small business growth online through our automated reputation marketing software" />
+          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Maintenance Care"
-      description="Maintenance Care is a CMMS software for work orders, preventive maintenance and asset management."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -67,7 +66,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Maintenance Care</title>
-          <meta name="description" content="Maintenance Care is a CMMS software for work orders, preventive maintenance and asset management." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

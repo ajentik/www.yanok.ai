@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="eMarketeer"
-      description="eMarketeer's All-in-One Online Marketing Software helps small businesses and marketing agencies to deliver relevant marketing material to their customers."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +52,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>eMarketeer</title>
-          <meta name="description" content="eMarketeer's All-in-One Online Marketing Software helps small businesses and marketing agencies to deliver relevant marketing material to their customers." />
+          <meta name="description" content={}/>s All-in-One Online Marketing Software helps small businesses and marketing agencies to deliver relevant marketing material to their customers.' />
         </>
       ),
     },

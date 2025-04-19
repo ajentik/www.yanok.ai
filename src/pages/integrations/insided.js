@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="inSided"
-      description="inSided offers a customer success community platform for B2B software companies. We scale customer success by increasing self service and engagement with customers at crucial phases of their journey."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -131,7 +130,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>inSided</title>
-          <meta name="description" content="inSided offers a customer success community platform for B2B software companies. We scale customer success by increasing self service and engagement with customers at crucial phases of their journey." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

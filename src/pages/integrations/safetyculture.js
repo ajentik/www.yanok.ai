@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="SafetyCulture"
-      description="SafetyCulture (formerly iAuditor) is a business platform to conduct inspections, capture issues, manage tasks, communicate clearly and train working teams."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -111,7 +110,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>SafetyCulture</title>
-          <meta name="description" content="SafetyCulture (formerly iAuditor) is a business platform to conduct inspections, capture issues, manage tasks, communicate clearly and train working teams." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Growbots"
-      description="Growbots is an all-in-one AI tool for automated outbound sales, combining scalable prospecting and targeted email outreach."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -106,7 +105,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Growbots</title>
-          <meta name="description" content="Growbots is an all-in-one AI tool for automated outbound sales, combining scalable prospecting and targeted email outreach." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

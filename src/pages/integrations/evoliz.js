@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Evoliz"
-      description="Evoliz is an invoicing and management software designed for small businesses but also their accountants."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -261,7 +260,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Evoliz</title>
-          <meta name="description" content="Evoliz is an invoicing and management software designed for small businesses but also their accountants." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

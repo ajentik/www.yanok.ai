@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="ReadyCloud Suite"
-      description="ReadyCloud is the shipping, returns and CRM suite built for eCommerce."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -111,7 +110,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>ReadyCloud Suite</title>
-          <meta name="description" content="ReadyCloud is the shipping, returns and CRM suite built for eCommerce." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

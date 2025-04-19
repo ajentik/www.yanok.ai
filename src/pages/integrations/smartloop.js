@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Smartloop"
-      description="Simplicity and automation. Sell more by using conversational AI to collect leads, nurture and engage with better insights. Enjoy improved CTR by elevating your email marketing."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -61,7 +60,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Smartloop</title>
-          <meta name="description" content="Simplicity and automation. Sell more by using conversational AI to collect leads, nurture and engage with better insights. Enjoy improved CTR by elevating your email marketing." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

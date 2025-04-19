@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Google Drive"
-      description="Google Drive is Google's file sync app that lets you store all of your files online alongside your Google Docs documents, and keep them synced with all of your devices."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -131,7 +130,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Google Drive</title>
-          <meta name="description" content="Google Drive is Google's file sync app that lets you store all of your files online alongside your Google Docs documents, and keep them synced with all of your devices." />
+          <meta name="description" content={}/>s file sync app that lets you store all of your files online alongside your Google Docs documents, and keep them synced with all of your devices.' />
         </>
       ),
     },

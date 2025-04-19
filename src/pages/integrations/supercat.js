@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="SuperCat 360"
-      description="SuperCat 360 is a review collection platform. Automatically send surveys to your customers via text message and collect reviews on all the major review sites."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +56,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>SuperCat 360</title>
-          <meta name="description" content="SuperCat 360 is a review collection platform. Automatically send surveys to your customers via text message and collect reviews on all the major review sites." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

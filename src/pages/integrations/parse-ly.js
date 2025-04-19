@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Parse.ly"
-      description="Parse.ly partners with digital publishers to provide clear audience insights through an intuitive analytics platform."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +52,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Parse.ly</title>
-          <meta name="description" content="Parse.ly partners with digital publishers to provide clear audience insights through an intuitive analytics platform." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

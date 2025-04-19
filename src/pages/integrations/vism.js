@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Vism"
-      description="Vism is a project management & collaboration tool for print & signage companies."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -72,7 +71,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Vism</title>
-          <meta name="description" content="Vism is a project management & collaboration tool for print & signage companies." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="HTML/CSS to Image"
-      description="HTML/CSS to Image is a tool for converting code into an image (jpg, png or webp). Images render exactly like they do in Google Chrome."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -62,7 +61,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>HTML/CSS to Image</title>
-          <meta name="description" content="HTML/CSS to Image is a tool for converting code into an image (jpg, png or webp). Images render exactly like they do in Google Chrome." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

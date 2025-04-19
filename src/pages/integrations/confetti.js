@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Confetti"
-      description="Confetti is the all-in-one tool for all your conferences, festivals, workshops and social events."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -112,7 +111,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Confetti</title>
-          <meta name="description" content="Confetti is the all-in-one tool for all your conferences, festivals, workshops and social events." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

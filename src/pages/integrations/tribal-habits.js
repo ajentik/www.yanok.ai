@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Tribal Habits LMS"
-      description="Tribal Habits is an all-in-one learning management system (LMS) - create interactive learning, manage online and blended training, dive into ready-made modules and report on all learning contributions"
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -96,7 +95,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Tribal Habits LMS</title>
-          <meta name="description" content="Tribal Habits is an all-in-one learning management system (LMS) - create interactive learning, manage online and blended training, dive into ready-made modules and report on all learning contributions" />
+          <meta name="description" content={}/> />
         </>
       ),
     },

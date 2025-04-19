@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="ReviewRail"
-      description="ReviewRail offers Small Businesses a way to automate the feedback request process with their customers. We invite happy customers to share ratings on review sites like Google and Facebook for your business."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +56,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>ReviewRail</title>
-          <meta name="description" content="ReviewRail offers Small Businesses a way to automate the feedback request process with their customers. We invite happy customers to share ratings on review sites like Google and Facebook for your business." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

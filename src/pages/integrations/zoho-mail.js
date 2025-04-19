@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Zoho Mail"
-      description="Zoho Mail is a collaborative business communication platform for the modern workforce. It is a blend of classic email and the modern collaboration tools using comments, likes and sharing."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -91,7 +90,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Zoho Mail</title>
-          <meta name="description" content="Zoho Mail is a collaborative business communication platform for the modern workforce. It is a blend of classic email and the modern collaboration tools using comments, likes and sharing." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

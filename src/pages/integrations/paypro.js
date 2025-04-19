@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="PayPro"
-      description="PayPro is a payment service provider combined with affiliate marketing services. We make it as easy as possible to sell your products."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +56,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>PayPro</title>
-          <meta name="description" content="PayPro is a payment service provider combined with affiliate marketing services. We make it as easy as possible to sell your products." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

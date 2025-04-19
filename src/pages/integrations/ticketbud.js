@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Ticketbud"
-      description="Ticketbud is a tool that helps you manage your event, sell tickets, promote your ticket sales and capture data about your audience."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -62,7 +61,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Ticketbud</title>
-          <meta name="description" content="Ticketbud is a tool that helps you manage your event, sell tickets, promote your ticket sales and capture data about your audience." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

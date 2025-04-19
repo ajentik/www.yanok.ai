@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="UpHabit"
-      description="UpHabit is a Personal CRM available on mobile and web. It has advanced reminders, notes and tags, along with deep integrations with address books, calendars and email platforms."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +56,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>UpHabit</title>
-          <meta name="description" content="UpHabit is a Personal CRM available on mobile and web. It has advanced reminders, notes and tags, along with deep integrations with address books, calendars and email platforms." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="cube-usa"
-      description="Cube is comprehensive business management software for the building automation controls (BAC) industry. Developed by controls contractors for controls contractors, Cube reduces paperwork and costs while streamlining efficiency and boosting revenue."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -76,7 +75,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>cube-usa</title>
-          <meta name="description" content="Cube is comprehensive business management software for the building automation controls (BAC) industry. Developed by controls contractors for controls contractors, Cube reduces paperwork and costs while streamlining efficiency and boosting revenue." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

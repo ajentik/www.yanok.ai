@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Moverbase"
-      description="Moverbase is moving company software that manages the entire operations of a moving company. It is 100% cloud-based and works on any computer, tablet or mobile phone."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -76,7 +75,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Moverbase</title>
-          <meta name="description" content="Moverbase is moving company software that manages the entire operations of a moving company. It is 100% cloud-based and works on any computer, tablet or mobile phone." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

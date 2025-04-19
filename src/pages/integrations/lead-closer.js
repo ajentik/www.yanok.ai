@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Lead Closer"
-      description="Intellect Lead Closer is your AI powered CRM - your virtual sales assistant that helps you quickly convert leads to customers."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +56,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Lead Closer</title>
-          <meta name="description" content="Intellect Lead Closer is your AI powered CRM - your virtual sales assistant that helps you quickly convert leads to customers." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

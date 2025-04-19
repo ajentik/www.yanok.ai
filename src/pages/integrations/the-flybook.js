@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="The Flybook"
-      description="The Flybook is a reservation software for the tourism industry. It handles everything from scheduling to payments to online booking and more."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -77,7 +76,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>The Flybook</title>
-          <meta name="description" content="The Flybook is a reservation software for the tourism industry. It handles everything from scheduling to payments to online booking and more." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

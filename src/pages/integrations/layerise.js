@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Layerise"
-      description="Layerise helps you build product assistants that guide and interact with your customers."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +56,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Layerise</title>
-          <meta name="description" content="Layerise helps you build product assistants that guide and interact with your customers." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

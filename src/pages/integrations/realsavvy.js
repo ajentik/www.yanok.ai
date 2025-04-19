@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Realsavvy"
-      description="All-in-1 real estate platform with custom websites, Pinterest-style IDX, branded mobile apps and a powerful CRM."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +52,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Realsavvy</title>
-          <meta name="description" content="All-in-1 real estate platform with custom websites, Pinterest-style IDX, branded mobile apps and a powerful CRM." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

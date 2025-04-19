@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Dentally"
-      description="Dentally is amazing dental software for practice management created for private and NHS dental practices."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +52,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Dentally</title>
-          <meta name="description" content="Dentally is amazing dental software for practice management created for private and NHS dental practices." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

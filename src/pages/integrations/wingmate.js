@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Wingmate"
-      description="Grow, engage & simplify with the #1 in-field solution. Wingmate makes it easy for your people on-the-go to capture information and bridge communication."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -206,7 +205,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Wingmate</title>
-          <meta name="description" content="Grow, engage & simplify with the #1 in-field solution. Wingmate makes it easy for your people on-the-go to capture information and bridge communication." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

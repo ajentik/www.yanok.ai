@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="HitSend"
-      description="HitSend is an audio review and collaboration platform that consolidates file sharing, feedback, and payments to one secure, centralized hub."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -92,7 +91,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>HitSend</title>
-          <meta name="description" content="HitSend is an audio review and collaboration platform that consolidates file sharing, feedback, and payments to one secure, centralized hub." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

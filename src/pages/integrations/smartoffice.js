@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="SmartOffice"
-      description="SmartOffice, powered by Ebix, is the premier CRM solution for the financial services industry. We help insurance agents and financial advisors manage and better understand their existing clients while attracting new ones."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -76,7 +75,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>SmartOffice</title>
-          <meta name="description" content="SmartOffice, powered by Ebix, is the premier CRM solution for the financial services industry. We help insurance agents and financial advisors manage and better understand their existing clients while attracting new ones." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

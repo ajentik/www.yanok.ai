@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Learnifier"
-      description="Learnifier is a multi-featured tool that makes it easy to create online courses, onboarding programs or even a learning academy. You get the best of two worlds. Technology simplified, learning amplified."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -197,7 +196,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Learnifier</title>
-          <meta name="description" content="Learnifier is a multi-featured tool that makes it easy to create online courses, onboarding programs or even a learning academy. You get the best of two worlds. Technology simplified, learning amplified." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

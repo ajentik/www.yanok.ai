@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Convolo Leads"
-      description="Convolo Leads is a lead-to-call automation tool that connects a phone call between your sales people and your new leads within 30 seconds after they showed interest."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -61,7 +60,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Convolo Leads</title>
-          <meta name="description" content="Convolo Leads is a lead-to-call automation tool that connects a phone call between your sales people and your new leads within 30 seconds after they showed interest." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

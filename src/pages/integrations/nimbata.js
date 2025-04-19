@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Nimbata"
-      description="Nimbata is a call tracking platform that lets you attribute phone calls back to keyword searches, web pages, social media, digital ads or offline campaigns."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +56,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Nimbata</title>
-          <meta name="description" content="Nimbata is a call tracking platform that lets you attribute phone calls back to keyword searches, web pages, social media, digital ads or offline campaigns." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

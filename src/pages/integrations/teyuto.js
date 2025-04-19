@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Teyuto"
-      description="Teyuto is a service that allows you to create a full custom video ondemand platform to distribute and monetize videos."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -101,7 +100,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Teyuto</title>
-          <meta name="description" content="Teyuto is a service that allows you to create a full custom video ondemand platform to distribute and monetize videos." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

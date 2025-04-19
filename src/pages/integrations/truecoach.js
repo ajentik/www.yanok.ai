@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="TrueCoach"
-      description="The only personal training platform built to save you time and grow your business. Trusted by over 5000 coaches and gym owners worldwide."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +52,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>TrueCoach</title>
-          <meta name="description" content="The only personal training platform built to save you time and grow your business. Trusted by over 5000 coaches and gym owners worldwide." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

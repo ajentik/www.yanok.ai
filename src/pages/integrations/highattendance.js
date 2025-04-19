@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="High Attendance"
-      description="High Attendance is an enterprise event management and lead generation software."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -66,7 +65,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>High Attendance</title>
-          <meta name="description" content="High Attendance is an enterprise event management and lead generation software." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

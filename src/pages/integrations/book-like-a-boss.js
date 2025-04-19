@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Book Like A Boss"
-      description="Book Like A Boss is a powerful scheduling platform that allows you to take appointments, sell your services, and manage your business."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -67,7 +66,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Book Like A Boss</title>
-          <meta name="description" content="Book Like A Boss is a powerful scheduling platform that allows you to take appointments, sell your services, and manage your business." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

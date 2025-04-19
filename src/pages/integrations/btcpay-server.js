@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="BTCPay Server"
-      description="Start Accepting Bitcoin Payments With 0% Fees & No Third-party"
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -176,7 +175,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>BTCPay Server</title>
-          <meta name="description" content="Start Accepting Bitcoin Payments With 0% Fees & No Third-party" />
+          <meta name="description" content={}/> />
         </>
       ),
     },

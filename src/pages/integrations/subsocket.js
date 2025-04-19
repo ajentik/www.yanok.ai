@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="SubSocket"
-      description="SubSocket offers a beautiful solution to easily integrate and manage your PayPal products, plans and subscriptions. All run on PayPal’s powerful billing engine. No code required."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -72,7 +71,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>SubSocket</title>
-          <meta name="description" content="SubSocket offers a beautiful solution to easily integrate and manage your PayPal products, plans and subscriptions. All run on PayPal’s powerful billing engine. No code required." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

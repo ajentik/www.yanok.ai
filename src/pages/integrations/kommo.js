@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Kommo"
-      description="Kommo is a messaging-powered CRM that helps you engage with your customers on a whole new level. It's a versatile, cloud-based sales automation tool that enables you to manage leads and monitor your sales pipeline in only a few clicks."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -221,7 +220,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Kommo</title>
-          <meta name="description" content="Kommo is a messaging-powered CRM that helps you engage with your customers on a whole new level. It's a versatile, cloud-based sales automation tool that enables you to manage leads and monitor your sales pipeline in only a few clicks." />
+          <meta name="description" content={}/>s a versatile, cloud-based sales automation tool that enables you to manage leads and monitor your sales pipeline in only a few clicks.' />
         </>
       ),
     },

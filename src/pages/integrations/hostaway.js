@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Hostaway"
-      description="Hostaway is a property management system with a built-in channel manager software that lets you manage hundreds of short-term rentals in real-time in one easy-to-use dashboard and mobile app."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -76,7 +75,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Hostaway</title>
-          <meta name="description" content="Hostaway is a property management system with a built-in channel manager software that lets you manage hundreds of short-term rentals in real-time in one easy-to-use dashboard and mobile app." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

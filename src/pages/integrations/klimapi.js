@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="KlimAPI"
-      description="KlimAPI is a platform that enables you and your customers to offset the unavoidable CO2 emissions of the service or product you sell."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -121,7 +120,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>KlimAPI</title>
-          <meta name="description" content="KlimAPI is a platform that enables you and your customers to offset the unavoidable CO2 emissions of the service or product you sell." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

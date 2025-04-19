@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Wix Answers"
-      description="Wix Answers is a customer service software that makes it possible and easier for businesses of all sizes to support their customers."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -76,7 +75,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Wix Answers</title>
-          <meta name="description" content="Wix Answers is a customer service software that makes it possible and easier for businesses of all sizes to support their customers." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

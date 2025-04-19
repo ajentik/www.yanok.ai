@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Zid"
-      description="Zid is an e-commerce solution that is designed to empower retailers to start and scale their business using the power of eCommerce by providing them with the following : **E-Store:** **Ecosystem** **Empowerment** **Community**"
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -111,7 +110,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Zid</title>
-          <meta name="description" content="Zid is an e-commerce solution that is designed to empower retailers to start and scale their business using the power of eCommerce by providing them with the following : **E-Store:** **Ecosystem** **Empowerment** **Community**" />
+          <meta name="description" content={}/> />
         </>
       ),
     },

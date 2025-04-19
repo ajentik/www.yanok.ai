@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="DreamApply"
-      description="DreamApply is a next generation digital admissions and marketing solution used by hundreds of universities and other education institutions worldwide."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -101,7 +100,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>DreamApply</title>
-          <meta name="description" content="DreamApply is a next generation digital admissions and marketing solution used by hundreds of universities and other education institutions worldwide." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

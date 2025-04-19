@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Maysee"
-      description="Maysee is a business card management app that makes it easy to send them on your smartphone or PC."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +56,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Maysee</title>
-          <meta name="description" content="Maysee is a business card management app that makes it easy to send them on your smartphone or PC." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

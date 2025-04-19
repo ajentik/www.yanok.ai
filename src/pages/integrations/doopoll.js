@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="doopoll"
-      description="doopoll helps you to engage with the people that you care about, and then impress your colleagues with impactful visual reports. Collect insights, build mailing lists, and share your new insights."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -62,7 +61,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>doopoll</title>
-          <meta name="description" content="doopoll helps you to engage with the people that you care about, and then impress your colleagues with impactful visual reports. Collect insights, build mailing lists, and share your new insights." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

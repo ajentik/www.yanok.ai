@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="PSOhub"
-      description="PSOhub provides predictive project management, smart contract management, self-driving time and expense tracking, and invoicing in a seamlessly integrated platform."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -66,7 +65,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>PSOhub</title>
-          <meta name="description" content="PSOhub provides predictive project management, smart contract management, self-driving time and expense tracking, and invoicing in a seamlessly integrated platform." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

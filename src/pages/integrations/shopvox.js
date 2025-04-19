@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Shopvox"
-      description="shopVOX is a web-based job management, CRM, and POS system built for its users’ custom shops and industries."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +52,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Shopvox</title>
-          <meta name="description" content="shopVOX is a web-based job management, CRM, and POS system built for its users’ custom shops and industries." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Doclift PDF"
-      description="Doclift PDF is PDF-as-a-service for your platform to create dynamic PDFs with the online editor or generate them through our REST API."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +56,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Doclift PDF</title>
-          <meta name="description" content="Doclift PDF is PDF-as-a-service for your platform to create dynamic PDFs with the online editor or generate them through our REST API." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

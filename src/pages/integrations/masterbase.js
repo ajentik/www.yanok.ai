@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="MasterBase"
-      description="MasterBase is a complete software-as-a-service solution, easily accessible and scalable for all your email-marketing needs."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -81,7 +80,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>MasterBase</title>
-          <meta name="description" content="MasterBase is a complete software-as-a-service solution, easily accessible and scalable for all your email-marketing needs." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

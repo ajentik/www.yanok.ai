@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="PlatoForms"
-      description="PlatoForms converts any PDF to an online web form to let your clients fill out PDF forms in the browser."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -61,7 +60,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>PlatoForms</title>
-          <meta name="description" content="PlatoForms converts any PDF to an online web form to let your clients fill out PDF forms in the browser." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

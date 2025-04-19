@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Polycom"
-      description="Polycom provides open standards-based unified communications solutions for telepresence video and voice."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +52,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Polycom</title>
-          <meta name="description" content="Polycom provides open standards-based unified communications solutions for telepresence video and voice." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

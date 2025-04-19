@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Revamp CRM"
-      description="Revamp CRM is a Sales & Marketing CRM. Make more sales whether you are using multiple sales pipelines or an eCommerce store."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -126,7 +125,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Revamp CRM</title>
-          <meta name="description" content="Revamp CRM is a Sales & Marketing CRM. Make more sales whether you are using multiple sales pipelines or an eCommerce store." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

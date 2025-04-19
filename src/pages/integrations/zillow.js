@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Zillow Tech Connect"
-      description="The Zillow Tech Connect app allows agents to send leads to tools like CRMs and marketing automation software. It works for Zillow, Trulia, HotPads, RealEstate.com, and StreetEasy. It is also known as Zillow Premier Agent."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +56,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Zillow Tech Connect</title>
-          <meta name="description" content="The Zillow Tech Connect app allows agents to send leads to tools like CRMs and marketing automation software. It works for Zillow, Trulia, HotPads, RealEstate.com, and StreetEasy. It is also known as Zillow Premier Agent." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

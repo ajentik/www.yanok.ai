@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="IDI"
-      description="IDI is a real estate technology partner to make the control of your real estate and communication with your contacts and clients more agile and easy."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +56,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>IDI</title>
-          <meta name="description" content="IDI is a real estate technology partner to make the control of your real estate and communication with your contacts and clients more agile and easy." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Wachete"
-      description="Select web page or part of web page and we will collect text from it for you. Based on rules you define we will send you notification when text of web changes, or contains some particular word."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -62,7 +61,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Wachete</title>
-          <meta name="description" content="Select web page or part of web page and we will collect text from it for you. Based on rules you define we will send you notification when text of web changes, or contains some particular word." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

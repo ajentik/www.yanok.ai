@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="QuickEmailVerification"
-      description="QuickEmailVerification verifies emails in real-time at the entry point and prevents unreachable and low-quality emails from getting into your lists."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +56,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>QuickEmailVerification</title>
-          <meta name="description" content="QuickEmailVerification verifies emails in real-time at the entry point and prevents unreachable and low-quality emails from getting into your lists." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

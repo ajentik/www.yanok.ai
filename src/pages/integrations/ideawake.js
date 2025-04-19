@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Ideawake"
-      description="Ideawake is a collaborative innovation platform to help surface the best ideas at any company."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -66,7 +65,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Ideawake</title>
-          <meta name="description" content="Ideawake is a collaborative innovation platform to help surface the best ideas at any company." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

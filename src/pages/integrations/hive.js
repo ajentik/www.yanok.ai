@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Hive"
-      description="Hive provides simple automated workflow for teams. It brings all your different tools onto one dashboard and makes it easy to see progress and bottlenecks."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -91,7 +90,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Hive</title>
-          <meta name="description" content="Hive provides simple automated workflow for teams. It brings all your different tools onto one dashboard and makes it easy to see progress and bottlenecks." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

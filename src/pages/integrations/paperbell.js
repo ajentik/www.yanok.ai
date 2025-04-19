@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Paperbell"
-      description="Paperbell is the easiest way to sell coaching online – whether you’re an experienced coach, or you’re just getting started."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -67,7 +66,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Paperbell</title>
-          <meta name="description" content="Paperbell is the easiest way to sell coaching online – whether you’re an experienced coach, or you’re just getting started." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

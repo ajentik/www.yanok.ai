@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="PEP Cloud"
-      description="PEP Cloud is a sales, estimating, and business management tool for everyone, but especially painting contractors."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -76,7 +75,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>PEP Cloud</title>
-          <meta name="description" content="PEP Cloud is a sales, estimating, and business management tool for everyone, but especially painting contractors." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

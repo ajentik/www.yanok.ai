@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Addressable"
-      description="Addressable is a mail app that provides beautiful, handwritten notes tell exactly the story you want to just the right people, and that means you get more calls and appointments!"
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -66,7 +65,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Addressable</title>
-          <meta name="description" content="Addressable is a mail app that provides beautiful, handwritten notes tell exactly the story you want to just the right people, and that means you get more calls and appointments!" />
+          <meta name="description" content={}/> />
         </>
       ),
     },

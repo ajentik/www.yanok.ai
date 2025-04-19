@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Woopra"
-      description="Woopra is a real-time customer analytics service designed to help organizations optimize the customer life-cycle by delivering live, granular behavioral data for individual website visitors and customers."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +56,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Woopra</title>
-          <meta name="description" content="Woopra is a real-time customer analytics service designed to help organizations optimize the customer life-cycle by delivering live, granular behavioral data for individual website visitors and customers." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

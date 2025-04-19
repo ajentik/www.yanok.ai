@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Plek"
-      description="Plek is a social intranet and internal communication tool."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -77,7 +76,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Plek</title>
-          <meta name="description" content="Plek is a social intranet and internal communication tool." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

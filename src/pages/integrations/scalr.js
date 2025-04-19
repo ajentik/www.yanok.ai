@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Scalr"
-      description="Scalr Cloud Management Platform offers a unified API and web interface for developers and IT users to access and manage infrastructure resources distributed across numerous public and private clouds, such as Amazon Web Services and OpenStack. Scalr delivers the balance required between development autonomy and IT control."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +56,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Scalr</title>
-          <meta name="description" content="Scalr Cloud Management Platform offers a unified API and web interface for developers and IT users to access and manage infrastructure resources distributed across numerous public and private clouds, such as Amazon Web Services and OpenStack. Scalr delivers the balance required between development autonomy and IT control." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

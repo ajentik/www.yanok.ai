@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Instiller"
-      description="Instiller is the only email marketing solution designed specifically for agencies and includes all the tools and features needed as standard."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +52,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Instiller</title>
-          <meta name="description" content="Instiller is the only email marketing solution designed specifically for agencies and includes all the tools and features needed as standard." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

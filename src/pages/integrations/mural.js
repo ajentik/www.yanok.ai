@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Mural"
-      description="Mural is a digital workspace for visual collaboration. Enables innovative teams to think and collaborate visually to solve important problems."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -81,7 +80,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Mural</title>
-          <meta name="description" content="Mural is a digital workspace for visual collaboration. Enables innovative teams to think and collaborate visually to solve important problems." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

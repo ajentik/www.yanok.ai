@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="GenerateBanners.com"
-      description="Simple and efficient way to generate your social media images. Create beautiful open graph banners and increase the click-through rate to your website."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -62,7 +61,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>GenerateBanners.com</title>
-          <meta name="description" content="Simple and efficient way to generate your social media images. Create beautiful open graph banners and increase the click-through rate to your website." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

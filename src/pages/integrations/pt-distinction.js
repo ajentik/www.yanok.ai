@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="PT Distinction"
-      description="PT Distinction enables overworked personal trainers to train more clients, take more time off, and get even better results."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -91,7 +90,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>PT Distinction</title>
-          <meta name="description" content="PT Distinction enables overworked personal trainers to train more clients, take more time off, and get even better results." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

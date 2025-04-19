@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Drift"
-      description="Drift is a messaging app that makes it easy for businesses to talk to their website visitors and customers in real-time, from anywhere."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -116,7 +115,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Drift</title>
-          <meta name="description" content="Drift is a messaging app that makes it easy for businesses to talk to their website visitors and customers in real-time, from anywhere." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

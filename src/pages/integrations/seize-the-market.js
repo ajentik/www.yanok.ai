@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Seize the Market"
-      description="Seize the Market is a All in One, Lead to Close Business Solution for Real Estate Agent, Team, Brokers."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +56,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Seize the Market</title>
-          <meta name="description" content="Seize the Market is a All in One, Lead to Close Business Solution for Real Estate Agent, Team, Brokers." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

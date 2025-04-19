@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Parserr"
-      description="Parserr allows you to turn incoming emails into useful data to use in various other 3rd party systems."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +56,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Parserr</title>
-          <meta name="description" content="Parserr allows you to turn incoming emails into useful data to use in various other 3rd party systems." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

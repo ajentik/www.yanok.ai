@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Digital Practice"
-      description="Digital Practice is a Practice Management Software that helps practices manage their day-to-day admin, HR, accounting, project management, HR, CRM and much more."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -161,7 +160,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Digital Practice</title>
-          <meta name="description" content="Digital Practice is a Practice Management Software that helps practices manage their day-to-day admin, HR, accounting, project management, HR, CRM and much more." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

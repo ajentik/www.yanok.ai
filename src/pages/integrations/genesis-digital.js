@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Genesis Digital"
-      description="Genesis Digital is a rapidly growing leader in Info-Product creation, Marketing & SaaS applications."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +52,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Genesis Digital</title>
-          <meta name="description" content="Genesis Digital is a rapidly growing leader in Info-Product creation, Marketing & SaaS applications." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

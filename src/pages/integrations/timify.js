@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="TIMIFY"
-      description="TIMIFY is an online scheduling and resource management tool for all kind of small businesses and large enterprises."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -136,7 +135,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>TIMIFY</title>
-          <meta name="description" content="TIMIFY is an online scheduling and resource management tool for all kind of small businesses and large enterprises." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

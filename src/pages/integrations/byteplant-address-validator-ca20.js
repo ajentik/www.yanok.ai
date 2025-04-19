@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Byteplant Address Validator"
-      description="Byteplant Address-Validator verifies addresses from 240 countries world-wide in real-time - see if an address is deliverable or use the suggested address corrections the service provides"
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +56,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Byteplant Address Validator</title>
-          <meta name="description" content="Byteplant Address-Validator verifies addresses from 240 countries world-wide in real-time - see if an address is deliverable or use the suggested address corrections the service provides" />
+          <meta name="description" content={}/> />
         </>
       ),
     },

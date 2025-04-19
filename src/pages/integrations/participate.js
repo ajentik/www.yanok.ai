@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Participate"
-      description="Participate is a team collaboration app that combines your favorite parts of social media and online learning in Communities of Practice (CoPs) that inspire professional learning, connection and growth."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -101,7 +100,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Participate</title>
-          <meta name="description" content="Participate is a team collaboration app that combines your favorite parts of social media and online learning in Communities of Practice (CoPs) that inspire professional learning, connection and growth." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

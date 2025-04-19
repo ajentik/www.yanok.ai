@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Facebook Messenger"
-      description="Facebook Messenger is a messaging app and platform. Users can send messages and exchange photos, videos, stickers, audio, and other files. This app on Zapier works for conversations that are sent to and from Facebook pages and does not yet support direct messages to a user."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -61,7 +60,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Facebook Messenger</title>
-          <meta name="description" content="Facebook Messenger is a messaging app and platform. Users can send messages and exchange photos, videos, stickers, audio, and other files. This app on Zapier works for conversations that are sent to and from Facebook pages and does not yet support direct messages to a user." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

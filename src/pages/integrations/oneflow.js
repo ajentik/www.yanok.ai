@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Oneflow"
-      description="Oneflow is a digital platform that automates entire contract process from creating, signing and sending."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -87,7 +86,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Oneflow</title>
-          <meta name="description" content="Oneflow is a digital platform that automates entire contract process from creating, signing and sending." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

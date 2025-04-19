@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Ycode"
-      description="Ycode empowers you to build and host advanced no-code web apps—no code or developers required."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -86,7 +85,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Ycode</title>
-          <meta name="description" content="Ycode empowers you to build and host advanced no-code web apps—no code or developers required." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

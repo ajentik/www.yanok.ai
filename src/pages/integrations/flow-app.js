@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Flow App"
-      description="Flow App is the first marketing webinar platform built exclusively for webinars. Not for meetings. You can now host webinars without requiring participants to download complicated software."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -76,7 +75,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Flow App</title>
-          <meta name="description" content="Flow App is the first marketing webinar platform built exclusively for webinars. Not for meetings. You can now host webinars without requiring participants to download complicated software." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

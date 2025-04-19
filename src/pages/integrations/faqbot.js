@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Faqbot"
-      description="Faqbot is a bot that helps to improve customer engagement and overall customer experience."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -62,7 +61,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Faqbot</title>
-          <meta name="description" content="Faqbot is a bot that helps to improve customer engagement and overall customer experience." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

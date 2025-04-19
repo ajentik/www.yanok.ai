@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Call Loop"
-      description="Call Loop lets you automatically send customized & personalized voice and sms text messages to your contacts."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -67,7 +66,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Call Loop</title>
-          <meta name="description" content="Call Loop lets you automatically send customized & personalized voice and sms text messages to your contacts." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

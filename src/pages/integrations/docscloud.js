@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="DocsCloud"
-      description="DocsCloud is a web-based software platform that helps you create web forms, generate filled documents, get the documents signed & publish documents almost anything."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -67,7 +66,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>DocsCloud</title>
-          <meta name="description" content="DocsCloud is a web-based software platform that helps you create web forms, generate filled documents, get the documents signed & publish documents almost anything." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

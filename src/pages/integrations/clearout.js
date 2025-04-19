@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Clearout"
-      description="Clearout is an email validation and verification service that helps you eliminate bounces, prevent fraudulent signups, and protect your brand's reputation."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -92,7 +91,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Clearout</title>
-          <meta name="description" content="Clearout is an email validation and verification service that helps you eliminate bounces, prevent fraudulent signups, and protect your brand's reputation." />
+          <meta name="description" content={}/>s reputation.' />
         </>
       ),
     },

@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Custom Gateway OMS"
-      description="Custom Gateway is a system for creating artwork and managing / distributing orders for personalized and print on demand products."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +56,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Custom Gateway OMS</title>
-          <meta name="description" content="Custom Gateway is a system for creating artwork and managing / distributing orders for personalized and print on demand products." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

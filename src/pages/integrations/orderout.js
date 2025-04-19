@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="OrderOut"
-      description="OrderOut integrates third-party food delivery orders (UberEats, Postmates, DoorDash, Wix, etc.) directly into any POS system."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +56,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>OrderOut</title>
-          <meta name="description" content="OrderOut integrates third-party food delivery orders (UberEats, Postmates, DoorDash, Wix, etc.) directly into any POS system." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Better Proposals"
-      description="Better Proposals is a simple, web-based proposal creation tool that lets you send professionally designed proposals."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -81,7 +80,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Better Proposals</title>
-          <meta name="description" content="Better Proposals is a simple, web-based proposal creation tool that lets you send professionally designed proposals." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

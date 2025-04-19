@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Netgsm"
-      description="Netgsm is an SMS, voice messaging and VOIP platform."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -91,7 +90,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Netgsm</title>
-          <meta name="description" content="Netgsm is an SMS, voice messaging and VOIP platform." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

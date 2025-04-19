@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="JVZoo"
-      description="JVZoo is a software service that serves both vendors and affiliate marketers for processing online payments."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -62,7 +61,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>JVZoo</title>
-          <meta name="description" content="JVZoo is a software service that serves both vendors and affiliate marketers for processing online payments." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

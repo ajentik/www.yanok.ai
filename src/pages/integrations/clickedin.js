@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Clickedin"
-      description="Clickedin is a lead generation solution that uses artificial intelligence to safely and smartly generate leads for your software or SaaS company."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -77,7 +76,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Clickedin</title>
-          <meta name="description" content="Clickedin is a lead generation solution that uses artificial intelligence to safely and smartly generate leads for your software or SaaS company." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

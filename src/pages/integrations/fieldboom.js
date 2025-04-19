@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Fieldboom"
-      description="Use Fieldboom to create conversion quizzes, lead forms and surveys that effortlessly build your email list and generate more sales."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +52,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Fieldboom</title>
-          <meta name="description" content="Use Fieldboom to create conversion quizzes, lead forms and surveys that effortlessly build your email list and generate more sales." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Sendiio"
-      description="Sendiio platform allows to create and send Unlimited Email Campaigns without a monthly fee"
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -76,7 +75,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Sendiio</title>
-          <meta name="description" content="Sendiio platform allows to create and send Unlimited Email Campaigns without a monthly fee" />
+          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Glidr"
-      description="GLIDR helps you make data-driven decisions on what to build, from roadmap through discovery, launch and iteration."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -81,7 +80,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Glidr</title>
-          <meta name="description" content="GLIDR helps you make data-driven decisions on what to build, from roadmap through discovery, launch and iteration." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="BoldSign"
-      description="BoldSign is an electronic signature solution that lets you collect legally binding eSignatures online from any device."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -71,7 +70,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>BoldSign</title>
-          <meta name="description" content="BoldSign is an electronic signature solution that lets you collect legally binding eSignatures online from any device." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

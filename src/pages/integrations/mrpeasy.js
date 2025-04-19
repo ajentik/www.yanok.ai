@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="MRPeasy"
-      description="MRPeasy is a cloud-based MRP system for small manufacturers (10 - 200 employees)"
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -71,7 +70,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>MRPeasy</title>
-          <meta name="description" content="MRPeasy is a cloud-based MRP system for small manufacturers (10 - 200 employees)" />
+          <meta name="description" content={}/> />
         </>
       ),
     },

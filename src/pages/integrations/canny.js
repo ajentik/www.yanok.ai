@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Canny"
-      description="Canny is a user feedback tool that lets you keep track of all of your user feedback in one organized place."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -86,7 +85,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Canny</title>
-          <meta name="description" content="Canny is a user feedback tool that lets you keep track of all of your user feedback in one organized place." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

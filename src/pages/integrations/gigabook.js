@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="GigaBook"
-      description="GigaBook is a cloud-based appointment booking platform designed to help businesses take appointments online."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -76,7 +75,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>GigaBook</title>
-          <meta name="description" content="GigaBook is a cloud-based appointment booking platform designed to help businesses take appointments online." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

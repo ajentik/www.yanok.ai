@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Paced Email"
-      description="Paced Email allows you to control when you receive emails by creating custom aliases. Batch messages into daily, weekly or monthly digests."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -71,7 +70,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Paced Email</title>
-          <meta name="description" content="Paced Email allows you to control when you receive emails by creating custom aliases. Batch messages into daily, weekly or monthly digests." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

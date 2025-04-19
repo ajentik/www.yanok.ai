@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Buddy Punch"
-      description="Buddy Punch is an employee time tracking and scheduling app that lets your employees track their hours and helps streamline scheduling, time off, and payroll."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -136,7 +135,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Buddy Punch</title>
-          <meta name="description" content="Buddy Punch is an employee time tracking and scheduling app that lets your employees track their hours and helps streamline scheduling, time off, and payroll." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

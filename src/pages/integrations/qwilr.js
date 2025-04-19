@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Qwilr"
-      description="Qwilr is reimagining the way you communicate with your clients. We help you make beautiful, intuitive sales and marketing documents that look impressive and integrate seamlessly with your business."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -76,7 +75,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Qwilr</title>
-          <meta name="description" content="Qwilr is reimagining the way you communicate with your clients. We help you make beautiful, intuitive sales and marketing documents that look impressive and integrate seamlessly with your business." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

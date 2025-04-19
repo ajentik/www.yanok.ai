@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Omega Estimating"
-      description="Relay Construction Solutions is a bid leveling software, connecting project owners, general contractors, and sub-contractors in one tool to deliver and award accurate, on-time bids with far less work."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -72,7 +71,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Omega Estimating</title>
-          <meta name="description" content="Relay Construction Solutions is a bid leveling software, connecting project owners, general contractors, and sub-contractors in one tool to deliver and award accurate, on-time bids with far less work." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

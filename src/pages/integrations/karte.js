@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="KARTE"
-      description="KARTE changes that by providing a seamless CX across industries, platforms and services."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -131,7 +130,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>KARTE</title>
-          <meta name="description" content="KARTE changes that by providing a seamless CX across industries, platforms and services." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

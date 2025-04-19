@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Microsoft Exchange"
-      description="Microsoft Exchange Server is a mail server and calendaring server developed by Microsoft."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -111,7 +110,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Microsoft Exchange</title>
-          <meta name="description" content="Microsoft Exchange Server is a mail server and calendaring server developed by Microsoft." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

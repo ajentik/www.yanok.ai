@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Customer Fields"
-      description="Customer Fields provides a way to collect and store custom data for Shopify customers"
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -101,7 +100,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Customer Fields</title>
-          <meta name="description" content="Customer Fields provides a way to collect and store custom data for Shopify customers" />
+          <meta name="description" content={}/> />
         </>
       ),
     },

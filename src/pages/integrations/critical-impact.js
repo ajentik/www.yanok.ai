@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Critical Impact"
-      description="Critical Impact is the easiest all-in-one email marketing platform that includes automated email messaging, A/B testing, and SMS messaging."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +52,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Critical Impact</title>
-          <meta name="description" content="Critical Impact is the easiest all-in-one email marketing platform that includes automated email messaging, A/B testing, and SMS messaging." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

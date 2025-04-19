@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Ximble"
-      description="Ximble is a powerful, cloud-based employee scheduling app with precise time tracking for retailers, restaurants and small businesses."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +52,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Ximble</title>
-          <meta name="description" content="Ximble is a powerful, cloud-based employee scheduling app with precise time tracking for retailers, restaurants and small businesses." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

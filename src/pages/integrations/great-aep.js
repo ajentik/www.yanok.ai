@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Great AEP"
-      description="Great AEP is automated scheduling for insurance agents."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -71,7 +70,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Great AEP</title>
-          <meta name="description" content="Great AEP is automated scheduling for insurance agents." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

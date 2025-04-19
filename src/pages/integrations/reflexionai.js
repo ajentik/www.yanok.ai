@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Reflexion.ai"
-      description="Reflexion.AI is a content collaboration & AI platform which supports all types of content - videos, audios, photos & documents. Content collaboration & review helps with efficient communication between teams."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -136,7 +135,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Reflexion.ai</title>
-          <meta name="description" content="Reflexion.AI is a content collaboration & AI platform which supports all types of content - videos, audios, photos & documents. Content collaboration & review helps with efficient communication between teams." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="iHomefinder"
-      description="IHomefinder is a leading national provider of real estate search technology and websites. Using the Internet Data eXchange (IDX) standard, iHomefinder powers thousands of real estate websites. We partner with a wide array of web designers to integrate our technology into real estate websites."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +56,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>iHomefinder</title>
-          <meta name="description" content="IHomefinder is a leading national provider of real estate search technology and websites. Using the Internet Data eXchange (IDX) standard, iHomefinder powers thousands of real estate websites. We partner with a wide array of web designers to integrate our technology into real estate websites." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

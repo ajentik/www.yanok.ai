@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="VoIPGRID"
-      description="VoIPGRID is a cloud telephony platform, enabling telecom providers to deliver high-quality VoIP technology to their customers."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +56,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>VoIPGRID</title>
-          <meta name="description" content="VoIPGRID is a cloud telephony platform, enabling telecom providers to deliver high-quality VoIP technology to their customers." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

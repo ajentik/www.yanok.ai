@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Kayako"
-      description="Kayako offers a multi-channel (email, social media, and live chat) customer support platform with customizable engagement workflows."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -181,7 +180,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Kayako</title>
-          <meta name="description" content="Kayako offers a multi-channel (email, social media, and live chat) customer support platform with customizable engagement workflows." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

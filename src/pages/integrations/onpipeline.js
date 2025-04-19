@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Onpipeline"
-      description="Onpipeline is a cloud based Sales CRM for small and medium businesses."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -141,7 +140,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Onpipeline</title>
-          <meta name="description" content="Onpipeline is a cloud based Sales CRM for small and medium businesses." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Credly"
-      description="Credly is the world's largest network of digital credentials. The most respected brands use Credly to issue badges, certificates, and certifications to millions of professionals every year."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +56,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Credly</title>
-          <meta name="description" content="Credly is the world's largest network of digital credentials. The most respected brands use Credly to issue badges, certificates, and certifications to millions of professionals every year." />
+          <meta name="description" content={}/>s largest network of digital credentials. The most respected brands use Credly to issue badges, certificates, and certifications to millions of professionals every year.' />
         </>
       ),
     },

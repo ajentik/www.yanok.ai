@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Recurly"
-      description="Recurly is a subscription management platform delivering a competitive advantage for leading brands worldwide. Trusted by Sling TV, BarkBox, Asana, and thousands more to drive recurring revenue."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -86,7 +85,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Recurly</title>
-          <meta name="description" content="Recurly is a subscription management platform delivering a competitive advantage for leading brands worldwide. Trusted by Sling TV, BarkBox, Asana, and thousands more to drive recurring revenue." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

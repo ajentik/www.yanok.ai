@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Wisepops"
-      description="Wisepops is an on-site marketing platform used to grow your email list and boost sales. It allows you to display a message to any segment of your visitors using popups, sign-up bars, exit-intent popups, and on-site messaging without any dev needed."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -67,7 +66,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Wisepops</title>
-          <meta name="description" content="Wisepops is an on-site marketing platform used to grow your email list and boost sales. It allows you to display a message to any segment of your visitors using popups, sign-up bars, exit-intent popups, and on-site messaging without any dev needed." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

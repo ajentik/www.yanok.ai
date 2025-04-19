@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="CalendarHero"
-      description="CalendarHero is the smarter, faster way to schedule all of your meetings"
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -116,7 +115,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>CalendarHero</title>
-          <meta name="description" content="CalendarHero is the smarter, faster way to schedule all of your meetings" />
+          <meta name="description" content={}/> />
         </>
       ),
     },

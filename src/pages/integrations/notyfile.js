@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Notyfile"
-      description="Notyfile is a sales driven CRM platform that helps your organisation work better and faster together."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -131,7 +130,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Notyfile</title>
-          <meta name="description" content="Notyfile is a sales driven CRM platform that helps your organisation work better and faster together." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

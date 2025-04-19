@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Clanica"
-      description="Clanica is a robust email delivery service, equipped with an easy to use SMTP service and Email API, enabling you and your business to send all kinds of emails, from transactional to newsletter and marketing emails."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +56,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Clanica</title>
-          <meta name="description" content="Clanica is a robust email delivery service, equipped with an easy to use SMTP service and Email API, enabling you and your business to send all kinds of emails, from transactional to newsletter and marketing emails." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

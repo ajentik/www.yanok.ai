@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Cocosign"
-      description="CocoSign is an easy, affordable alternative to DocuSign, helping SMBs and professionals streamline eSignature workflows immensely and sign contracts 5x faster."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -96,7 +95,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Cocosign</title>
-          <meta name="description" content="CocoSign is an easy, affordable alternative to DocuSign, helping SMBs and professionals streamline eSignature workflows immensely and sign contracts 5x faster." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Assembla"
-      description="Assembla is the project management platform for developers and project managers where you can manage repos and tickets in one place."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -92,7 +91,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Assembla</title>
-          <meta name="description" content="Assembla is the project management platform for developers and project managers where you can manage repos and tickets in one place." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

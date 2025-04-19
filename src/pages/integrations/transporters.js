@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Transporters.io"
-      description="Transporters.io is a booking and business management solution for private hire transport operators."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -96,7 +95,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Transporters.io</title>
-          <meta name="description" content="Transporters.io is a booking and business management solution for private hire transport operators." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Transpose"
-      description="Transpose is the simplest platform for structuring data, enabling users to leverage enterprise-level technology in a user-friendly format."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +52,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Transpose</title>
-          <meta name="description" content="Transpose is the simplest platform for structuring data, enabling users to leverage enterprise-level technology in a user-friendly format." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

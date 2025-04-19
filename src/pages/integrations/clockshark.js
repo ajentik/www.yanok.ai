@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="ClockShark"
-      description="ClockShark is a powerful and easy to use mobile time tracking app."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -91,7 +90,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>ClockShark</title>
-          <meta name="description" content="ClockShark is a powerful and easy to use mobile time tracking app." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

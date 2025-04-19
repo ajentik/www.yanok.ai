@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Ganttic"
-      description="Ganttic is an online resource planning software, that you can use for managing project portfolios while planning resources with maximum efficiency. You can create clear and comprehensive visual plans that give you an instant overview of all your resources and projects."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -111,7 +110,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Ganttic</title>
-          <meta name="description" content="Ganttic is an online resource planning software, that you can use for managing project portfolios while planning resources with maximum efficiency. You can create clear and comprehensive visual plans that give you an instant overview of all your resources and projects." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

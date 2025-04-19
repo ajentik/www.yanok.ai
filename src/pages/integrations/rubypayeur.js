@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Rubypayeur"
-      description="Rubypayeur helps you make better decisions with accurate data about your customers and suppliers."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -66,7 +65,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Rubypayeur</title>
-          <meta name="description" content="Rubypayeur helps you make better decisions with accurate data about your customers and suppliers." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

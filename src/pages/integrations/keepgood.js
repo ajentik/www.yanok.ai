@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="KeepGood"
-      description="KeepGood helps you monitor all your infrastructure from a single place and improve service."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -106,7 +105,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>KeepGood</title>
-          <meta name="description" content="KeepGood helps you monitor all your infrastructure from a single place and improve service." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Approval by Zapier"
-      description="Add an Approval Step anywhere to your Zap to enable the manual reviewing or approval a task before it continues to completion. Share your Approval Inbox with any colleague, regardless of if they have a Zapier account or not."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +56,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Approval by Zapier</title>
-          <meta name="description" content="Add an Approval Step anywhere to your Zap to enable the manual reviewing or approval a task before it continues to completion. Share your Approval Inbox with any colleague, regardless of if they have a Zapier account or not." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

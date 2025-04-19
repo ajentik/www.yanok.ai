@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="LiquidPlanner Classic"
-      description="LiquidPlanner Classic, online project management with predictive scheduling that updates automatically when things change."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -241,7 +240,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>LiquidPlanner Classic</title>
-          <meta name="description" content="LiquidPlanner Classic, online project management with predictive scheduling that updates automatically when things change." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

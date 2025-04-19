@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Quora Lead Gen Forms"
-      description="Quora Lead Gen Forms help businesses and Quora users exchange valuable information with each other through pre-filled forms."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +56,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Quora Lead Gen Forms</title>
-          <meta name="description" content="Quora Lead Gen Forms help businesses and Quora users exchange valuable information with each other through pre-filled forms." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

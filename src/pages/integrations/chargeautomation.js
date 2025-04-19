@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="ChargeAutomation"
-      description="A globally-recognized leader in online check-in, payment automation, deposit collection and upsell. For hotels, B&B’s, vacation rentals, car rentals & hostels."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -67,7 +66,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>ChargeAutomation</title>
-          <meta name="description" content="A globally-recognized leader in online check-in, payment automation, deposit collection and upsell. For hotels, B&B’s, vacation rentals, car rentals & hostels." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

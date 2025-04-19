@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="CoPilot AI"
-      description="CoPilot AI is a contact management solution for building your sales pipeline and uncovering hidden revenue with social lead generation."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -62,7 +61,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>CoPilot AI</title>
-          <meta name="description" content="CoPilot AI is a contact management solution for building your sales pipeline and uncovering hidden revenue with social lead generation." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

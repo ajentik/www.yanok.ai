@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Pinpoint"
-      description="Pinpoint is talent acquisition software for in-house recruitment teams."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -72,7 +71,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Pinpoint</title>
-          <meta name="description" content="Pinpoint is talent acquisition software for in-house recruitment teams." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

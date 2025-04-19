@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Routee"
-      description="Routee is a platform that provides users with SMS sending functionality, enhancing communication between businesses and individuals."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -66,7 +65,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Routee</title>
-          <meta name="description" content="Routee is a platform that provides users with SMS sending functionality, enhancing communication between businesses and individuals." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

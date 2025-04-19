@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Phone Validator Fake Number Check"
-      description="Phone Validator Fake Number Check quickly detects fake phone numbers like 555-555-5555 and 123-456-7890. There is a 100% certainty that a number we have identified as fake cannot receive a call or text."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +56,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Phone Validator Fake Number Check</title>
-          <meta name="description" content="Phone Validator Fake Number Check quickly detects fake phone numbers like 555-555-5555 and 123-456-7890. There is a 100% certainty that a number we have identified as fake cannot receive a call or text." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

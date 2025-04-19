@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Maximizer CRM"
-      description="Maximizer has fully integrated sales, marketing and customer service modules making it easy to gain deep customer insight and drive retention and loyalty within a single, affordable CRM solution."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -256,7 +255,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Maximizer CRM</title>
-          <meta name="description" content="Maximizer has fully integrated sales, marketing and customer service modules making it easy to gain deep customer insight and drive retention and loyalty within a single, affordable CRM solution." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

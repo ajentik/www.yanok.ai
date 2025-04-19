@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Archie CRM"
-      description="Archie is a CRM software suite developed in the Netherlands."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -91,7 +90,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Archie CRM</title>
-          <meta name="description" content="Archie is a CRM software suite developed in the Netherlands." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

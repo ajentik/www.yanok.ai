@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Payhere"
-      description="Payhere gives services businesses an online storefront with integrated payments"
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -66,7 +65,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Payhere</title>
-          <meta name="description" content="Payhere gives services businesses an online storefront with integrated payments" />
+          <meta name="description" content={}/> />
         </>
       ),
     },

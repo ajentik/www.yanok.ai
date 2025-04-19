@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Map My Customers"
-      description="Map My Customers is the mobile sales CRM simplifying your team's day-to-day."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -151,7 +150,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Map My Customers</title>
-          <meta name="description" content="Map My Customers is the mobile sales CRM simplifying your team's day-to-day." />
+          <meta name="description" content={}/>s day-to-day.' />
         </>
       ),
     },

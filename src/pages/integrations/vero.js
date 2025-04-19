@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Vero"
-      description="Vero is an event-based messaging platform. Increase conversions and customer satisfaction by sending more targeted emails."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -141,7 +140,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Vero</title>
-          <meta name="description" content="Vero is an event-based messaging platform. Increase conversions and customer satisfaction by sending more targeted emails." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

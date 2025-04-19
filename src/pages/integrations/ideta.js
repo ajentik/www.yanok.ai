@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Ideta"
-      description="Ideta helps you automate conversations in livechats, chatbots and phone calls."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -61,7 +60,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Ideta</title>
-          <meta name="description" content="Ideta helps you automate conversations in livechats, chatbots and phone calls." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

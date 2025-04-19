@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="EzzyCRM"
-      description="EzzyCRM is a Customer Relationship Management software that helps companies to manage sales team, assign task and followup, track pipeline, and visualize deal stages for better ROI."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -101,7 +100,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>EzzyCRM</title>
-          <meta name="description" content="EzzyCRM is a Customer Relationship Management software that helps companies to manage sales team, assign task and followup, track pipeline, and visualize deal stages for better ROI." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

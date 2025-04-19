@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Chisel"
-      description="Chisel is a product management tool for roadmaps, team alignment and user research."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +56,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Chisel</title>
-          <meta name="description" content="Chisel is a product management tool for roadmaps, team alignment and user research." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Gleap"
-      description="Gleap is an All-in-one customer feedback tool for websites and apps."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -67,7 +66,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Gleap</title>
-          <meta name="description" content="Gleap is an All-in-one customer feedback tool for websites and apps." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

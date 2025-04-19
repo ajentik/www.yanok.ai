@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Badger Maps"
-      description="Badger Maps is a sales productivity and planning app for outside salespeople."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -96,7 +95,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Badger Maps</title>
-          <meta name="description" content="Badger Maps is a sales productivity and planning app for outside salespeople." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

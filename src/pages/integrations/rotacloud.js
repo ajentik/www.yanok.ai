@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="RotaCloud"
-      description="RotaCloud is an online rota solution which makes it easy to build and share your rotas, make changes and manage time off requests, all in one place."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +56,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>RotaCloud</title>
-          <meta name="description" content="RotaCloud is an online rota solution which makes it easy to build and share your rotas, make changes and manage time off requests, all in one place." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Joomag"
-      description="Joomag is the all-in-one platform offering a suite of integrated solutions for every content marketing, digital publishing, corporate communications, and sales engagement needs."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -76,7 +75,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Joomag</title>
-          <meta name="description" content="Joomag is the all-in-one platform offering a suite of integrated solutions for every content marketing, digital publishing, corporate communications, and sales engagement needs." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

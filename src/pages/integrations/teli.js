@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Teli"
-      description="Teli is an application used for messaging, VoIP, and fax."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -111,7 +110,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Teli</title>
-          <meta name="description" content="Teli is an application used for messaging, VoIP, and fax." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

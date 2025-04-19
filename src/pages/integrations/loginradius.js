@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="LoginRadius"
-      description="LoginRadius is a Customer Identity Management (cIAM) platform that allows you to easily manage your customer data."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -137,7 +136,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>LoginRadius</title>
-          <meta name="description" content="LoginRadius is a Customer Identity Management (cIAM) platform that allows you to easily manage your customer data." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

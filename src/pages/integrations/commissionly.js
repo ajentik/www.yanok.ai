@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Commissionly"
-      description="Commissionly is the cloud based sales commission software focused solely on the small to medium business sector."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -106,7 +105,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Commissionly</title>
-          <meta name="description" content="Commissionly is the cloud based sales commission software focused solely on the small to medium business sector." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

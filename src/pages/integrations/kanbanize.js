@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Kanbanize"
-      description="Kanbanize is a lean management platform for Portfolio Kanban implementation that helps teams achieve workflow transparency on a global level."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -146,7 +145,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Kanbanize</title>
-          <meta name="description" content="Kanbanize is a lean management platform for Portfolio Kanban implementation that helps teams achieve workflow transparency on a global level." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

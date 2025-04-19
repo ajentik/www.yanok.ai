@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="LearnUpon"
-      description="LearnUpon is an enterprise learning management system (LMS) that fuels business’s employee, partner, and customer success through training."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -101,7 +100,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>LearnUpon</title>
-          <meta name="description" content="LearnUpon is an enterprise learning management system (LMS) that fuels business’s employee, partner, and customer success through training." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

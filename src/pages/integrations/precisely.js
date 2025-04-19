@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Precisely"
-      description="Precisely provides contract automation, e-signatures, streamlined approvals, digital archiving and smart reminders for all your contracts, all in the cloud."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -126,7 +125,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Precisely</title>
-          <meta name="description" content="Precisely provides contract automation, e-signatures, streamlined approvals, digital archiving and smart reminders for all your contracts, all in the cloud." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

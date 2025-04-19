@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="AppSheet"
-      description="AppSheet is a no-code app development platform that lets you build desktop & mobile apps for your business from spreadsheet data."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -77,7 +76,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>AppSheet</title>
-          <meta name="description" content="AppSheet is a no-code app development platform that lets you build desktop & mobile apps for your business from spreadsheet data." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

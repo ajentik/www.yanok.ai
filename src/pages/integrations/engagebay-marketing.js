@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="EngageBay Marketing"
-      description="EngageBay is a simple, affordable all-in-one marketing and sales software built for small businesses."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -196,7 +195,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>EngageBay Marketing</title>
-          <meta name="description" content="EngageBay is a simple, affordable all-in-one marketing and sales software built for small businesses." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

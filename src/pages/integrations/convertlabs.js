@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Convertlabs"
-      description="Convertlabs is a powerful Booking & Marketing Software for your Maid Service and other Local Services"
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -71,7 +70,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Convertlabs</title>
-          <meta name="description" content="Convertlabs is a powerful Booking & Marketing Software for your Maid Service and other Local Services" />
+          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Playvox Customer AI"
-      description="Automatically analyze the sentiment and topics of your customer interactions."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -67,7 +66,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Playvox Customer AI</title>
-          <meta name="description" content="Automatically analyze the sentiment and topics of your customer interactions." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Pinpointe"
-      description="Pinpointe is a email marketing and contact management platform."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -116,7 +115,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Pinpointe</title>
-          <meta name="description" content="Pinpointe is a email marketing and contact management platform." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

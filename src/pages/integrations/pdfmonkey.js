@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="PDFMonkey"
-      description="PDFMonkey is an app that automates PDF generation, provides a dashboard to manage templates, and provides a simple API to generate documents."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -71,7 +70,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>PDFMonkey</title>
-          <meta name="description" content="PDFMonkey is an app that automates PDF generation, provides a dashboard to manage templates, and provides a simple API to generate documents." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

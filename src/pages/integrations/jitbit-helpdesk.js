@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Jitbit Helpdesk"
-      description="A great help desk app for small and medium sized companies. It has all the features you may need, while staying easy to use and very user friendly."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -86,7 +85,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Jitbit Helpdesk</title>
-          <meta name="description" content="A great help desk app for small and medium sized companies. It has all the features you may need, while staying easy to use and very user friendly." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

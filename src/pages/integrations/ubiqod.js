@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Ubiqod"
-      description="Ubiqod is a traceability platform for tracking field activities with IoT, static and dynamic QR codes."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +56,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Ubiqod</title>
-          <meta name="description" content="Ubiqod is a traceability platform for tracking field activities with IoT, static and dynamic QR codes." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

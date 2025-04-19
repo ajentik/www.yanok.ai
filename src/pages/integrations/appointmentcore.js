@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="AppointmentCore"
-      description="AppointmentCore's integration allows you to trigger actions in your trusted systems whenever prospects or customers book appointments with your AppointmentCore account!"
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -67,7 +66,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>AppointmentCore</title>
-          <meta name="description" content="AppointmentCore's integration allows you to trigger actions in your trusted systems whenever prospects or customers book appointments with your AppointmentCore account!" />
+          <meta name="description" content={}/>s integration allows you to trigger actions in your trusted systems whenever prospects or customers book appointments with your AppointmentCore account!' />
         </>
       ),
     },

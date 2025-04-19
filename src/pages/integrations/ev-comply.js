@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="EV-comply"
-      description="EV-comply has revolutionised the process of installing Electric Vehicle Charge Points for businesses throughout the UK & Europe."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -76,7 +75,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>EV-comply</title>
-          <meta name="description" content="EV-comply has revolutionised the process of installing Electric Vehicle Charge Points for businesses throughout the UK & Europe." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

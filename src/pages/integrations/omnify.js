@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Omnify"
-      description="Omnify is a scheduling & business management platform which enables you to sell various services from a single platform."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -121,7 +120,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Omnify</title>
-          <meta name="description" content="Omnify is a scheduling & business management platform which enables you to sell various services from a single platform." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

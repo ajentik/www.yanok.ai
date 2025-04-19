@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Benchmark Email"
-      description="Benchmark is an international, easy-to-use email marketing and event management tool. Affordable, friendly and stylish."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -106,7 +105,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Benchmark Email</title>
-          <meta name="description" content="Benchmark is an international, easy-to-use email marketing and event management tool. Affordable, friendly and stylish." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

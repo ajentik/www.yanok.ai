@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Siigo"
-      description="Siigo Nube is an Accounting and Administrative software for SMBs companies."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -67,7 +66,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Siigo</title>
-          <meta name="description" content="Siigo Nube is an Accounting and Administrative software for SMBs companies." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

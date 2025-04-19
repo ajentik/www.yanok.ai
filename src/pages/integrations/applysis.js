@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Applysis"
-      description="Applysis is a web platform that analyses the customer feedback in bulk with the help of AI."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +56,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Applysis</title>
-          <meta name="description" content="Applysis is a web platform that analyses the customer feedback in bulk with the help of AI." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

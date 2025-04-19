@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Answering Legal"
-      description="Answering Legal’s virtual receptionists can send your legal intakes, client inquiries, and all messages directly to your favorite CRM."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +56,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Answering Legal</title>
-          <meta name="description" content="Answering Legal’s virtual receptionists can send your legal intakes, client inquiries, and all messages directly to your favorite CRM." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="api.video"
-      description="API to encode on the go to facilitate immediate playback, enhancing viewer experiences across multiple devices and platforms."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -86,7 +85,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>api.video</title>
-          <meta name="description" content="API to encode on the go to facilitate immediate playback, enhancing viewer experiences across multiple devices and platforms." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

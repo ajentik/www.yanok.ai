@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Dr.Works"
-      description="Dr.Works is schedule adjustment service. Automatically complete the issuance of the Zoom conference URL and pre-sharing at the same time as adjusting."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -72,7 +71,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Dr.Works</title>
-          <meta name="description" content="Dr.Works is schedule adjustment service. Automatically complete the issuance of the Zoom conference URL and pre-sharing at the same time as adjusting." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

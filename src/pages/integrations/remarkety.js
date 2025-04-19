@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Remarkety"
-      description="Remarkety is an email marketing automation tool built only for eCommerce! Increase loyalty and LTV with data-driven, automated campaigns."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -76,7 +75,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Remarkety</title>
-          <meta name="description" content="Remarkety is an email marketing automation tool built only for eCommerce! Increase loyalty and LTV with data-driven, automated campaigns." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

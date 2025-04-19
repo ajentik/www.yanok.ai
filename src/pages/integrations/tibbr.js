@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Tibbr"
-      description="tibbr is the social network for work. We are a leading platform for enterprise-wide social networking to help connect people, discussions, apps, tasks, & content."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +52,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Tibbr</title>
-          <meta name="description" content="tibbr is the social network for work. We are a leading platform for enterprise-wide social networking to help connect people, discussions, apps, tasks, & content." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

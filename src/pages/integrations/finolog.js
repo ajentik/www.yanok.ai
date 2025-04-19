@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Finolog"
-      description="Finolog is a money accounting app for small and medium businesses. It shows all money flows in one safe place, predicts cash gaps and much more."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -126,7 +125,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Finolog</title>
-          <meta name="description" content="Finolog is a money accounting app for small and medium businesses. It shows all money flows in one safe place, predicts cash gaps and much more." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

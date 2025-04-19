@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="RowShare"
-      description="RowShare is an online Collaborative Table. Let each user see and edit just the relevant rows. Include pictures and attachments."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -81,7 +80,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>RowShare</title>
-          <meta name="description" content="RowShare is an online Collaborative Table. Let each user see and edit just the relevant rows. Include pictures and attachments." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

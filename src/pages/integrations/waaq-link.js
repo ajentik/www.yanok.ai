@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="waaq Link"
-      description="waaq Link is a powerful and simple scheduling tool for businesses."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -77,7 +76,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>waaq Link</title>
-          <meta name="description" content="waaq Link is a powerful and simple scheduling tool for businesses." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

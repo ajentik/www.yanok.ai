@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="DataScope Forms"
-      description="DataScope Forms is a mobile solution to automate your operation. Collect data offline, manage field teams and share business insights."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -81,7 +80,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>DataScope Forms</title>
-          <meta name="description" content="DataScope Forms is a mobile solution to automate your operation. Collect data offline, manage field teams and share business insights." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

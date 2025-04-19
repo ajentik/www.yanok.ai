@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="ProAbono"
-      description="Subscription Billing Made Easy. Subscription Billing As-a-Service, for the New Generation of Services."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -161,7 +160,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>ProAbono</title>
-          <meta name="description" content="Subscription Billing Made Easy. Subscription Billing As-a-Service, for the New Generation of Services." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Postscript"
-      description="Postscript is a platform for SMS marketing for Shopify stores."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -86,7 +85,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Postscript</title>
-          <meta name="description" content="Postscript is a platform for SMS marketing for Shopify stores." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

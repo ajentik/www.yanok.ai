@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Webpushr"
-      description="Webpushr is a web push notifications platform you can use to send push notifications to your site visitors across all web browsers."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +56,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Webpushr</title>
-          <meta name="description" content="Webpushr is a web push notifications platform you can use to send push notifications to your site visitors across all web browsers." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="MOBIDI"
-      description="MOBIDI is a mobile team management and data collection application. It allows capturing photos, audios, videos, notes in the field and generate reports based on the data."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -61,7 +60,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>MOBIDI</title>
-          <meta name="description" content="MOBIDI is a mobile team management and data collection application. It allows capturing photos, audios, videos, notes in the field and generate reports based on the data." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

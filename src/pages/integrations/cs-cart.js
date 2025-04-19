@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="CS-Cart"
-      description="Marketplace software trusted by 1300+ marketplaces."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -91,7 +90,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>CS-Cart</title>
-          <meta name="description" content="Marketplace software trusted by 1300+ marketplaces." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

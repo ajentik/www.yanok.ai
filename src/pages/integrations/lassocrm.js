@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="LassoCRM"
-      description="LassoCRM is a CRM that empowers home selling teams by taking the guess work out of reporting, sales and the marketing process."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -76,7 +75,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>LassoCRM</title>
-          <meta name="description" content="LassoCRM is a CRM that empowers home selling teams by taking the guess work out of reporting, sales and the marketing process." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

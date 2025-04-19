@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Rollbar"
-      description="Rollbar provides real-time error alerting & debugging tools for developers. Ruby, Python, PHP, Node.js, JavaScript, Android, iOS & more languages supported."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +52,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Rollbar</title>
-          <meta name="description" content="Rollbar provides real-time error alerting & debugging tools for developers. Ruby, Python, PHP, Node.js, JavaScript, Android, iOS & more languages supported." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="SightMill"
-      description="Gather customer feedback or employee feedback via email, on your website, by SMS, or at events with SightMill NPS (Net Promoter Score) survey software. Use NPS surveys to understand how to improve customer experience of your products and service."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -66,7 +65,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>SightMill</title>
-          <meta name="description" content="Gather customer feedback or employee feedback via email, on your website, by SMS, or at events with SightMill NPS (Net Promoter Score) survey software. Use NPS surveys to understand how to improve customer experience of your products and service." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

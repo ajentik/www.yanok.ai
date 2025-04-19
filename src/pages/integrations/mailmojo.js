@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Mailmojo"
-      description="Mailmojo is a Norwegian email marketing platform made especially with small businesses in mind."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -86,7 +85,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Mailmojo</title>
-          <meta name="description" content="Mailmojo is a Norwegian email marketing platform made especially with small businesses in mind." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

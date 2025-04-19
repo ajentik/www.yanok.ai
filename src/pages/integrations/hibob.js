@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Hibob"
-      description="Hibob was founded to modernize HR tech. Hibob's intuitive and data-driven platform, bob, was built for the way people work today: globally, remotely, and collaboratively. Use it for everything from onboarding and compensation management, to culture and people analytics."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -77,7 +76,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Hibob</title>
-          <meta name="description" content="Hibob was founded to modernize HR tech. Hibob's intuitive and data-driven platform, bob, was built for the way people work today: globally, remotely, and collaboratively. Use it for everything from onboarding and compensation management, to culture and people analytics." />
+          <meta name="description" content={}/>s intuitive and data-driven platform, bob, was built for the way people work today: globally, remotely, and collaboratively. Use it for everything from onboarding and compensation management, to culture and people analytics.' />
         </>
       ),
     },

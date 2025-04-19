@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Smartcat"
-      description="Smartcat is an all-in-one platform connecting businesses and translators into a continuous translation delivery loop by combining a collaborative workflow solution, a marketplace, and a network of translation professionals."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -66,7 +65,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Smartcat</title>
-          <meta name="description" content="Smartcat is an all-in-one platform connecting businesses and translators into a continuous translation delivery loop by combining a collaborative workflow solution, a marketplace, and a network of translation professionals." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

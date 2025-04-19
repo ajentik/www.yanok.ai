@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Gorilla CRM"
-      description="Gorilla CRM will help your Team to stay on track with all related connections and tasks. Bring your company to the next level."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +56,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Gorilla CRM</title>
-          <meta name="description" content="Gorilla CRM will help your Team to stay on track with all related connections and tasks. Bring your company to the next level." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

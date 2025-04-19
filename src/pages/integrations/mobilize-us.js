@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Mobilize US"
-      description="Mobilize US allows you to send text messages to your contacts, create and launch surveys, and target your communication to groups."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -72,7 +71,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Mobilize US</title>
-          <meta name="description" content="Mobilize US allows you to send text messages to your contacts, create and launch surveys, and target your communication to groups." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

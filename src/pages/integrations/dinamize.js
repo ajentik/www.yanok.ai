@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Dinamize"
-      description="Dinamize has email and inbound marketing solutions, where you can manage your contacts and perform various actions using different features."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +56,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Dinamize</title>
-          <meta name="description" content="Dinamize has email and inbound marketing solutions, where you can manage your contacts and perform various actions using different features." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

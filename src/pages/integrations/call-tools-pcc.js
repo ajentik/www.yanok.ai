@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Call Tools PCC"
-      description="Call Tools is a multi-channel cloud contact center and hosted pbx with a data centric focus."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -241,7 +240,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Call Tools PCC</title>
-          <meta name="description" content="Call Tools is a multi-channel cloud contact center and hosted pbx with a data centric focus." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

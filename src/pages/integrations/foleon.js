@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Foleon"
-      description="Foleon is a content creation platform that empowers business teams to create engaging and intelligent content experiences at scale."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +56,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Foleon</title>
-          <meta name="description" content="Foleon is a content creation platform that empowers business teams to create engaging and intelligent content experiences at scale." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

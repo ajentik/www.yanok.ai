@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="ahead"
-      description="Ahead is the intelligent information hub that drives engagement and communication."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +56,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>ahead</title>
-          <meta name="description" content="Ahead is the intelligent information hub that drives engagement and communication." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

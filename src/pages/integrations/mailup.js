@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="MailUp"
-      description="MailUp is your complete email delivery solution. Send newsletters, create blog digests from RSS feeds, send automated messages when certain conditions occur. Advanced email marketing tools made easy."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -121,7 +120,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>MailUp</title>
-          <meta name="description" content="MailUp is your complete email delivery solution. Send newsletters, create blog digests from RSS feeds, send automated messages when certain conditions occur. Advanced email marketing tools made easy." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

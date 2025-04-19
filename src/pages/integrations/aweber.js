@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="AWeber"
-      description="AWeber provides professional email marketing software and services. AWeber's easy signup forms and autoresponders make it easy for you to stay in touch with your customers."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -101,7 +100,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>AWeber</title>
-          <meta name="description" content="AWeber provides professional email marketing software and services. AWeber's easy signup forms and autoresponders make it easy for you to stay in touch with your customers." />
+          <meta name="description" content={}/>s easy signup forms and autoresponders make it easy for you to stay in touch with your customers.' />
         </>
       ),
     },

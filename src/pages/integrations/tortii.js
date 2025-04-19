@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Tortii"
-      description="It's turtles all the way down. “Turtle” by Zidney, from the Noun Project."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -62,7 +61,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Tortii</title>
-          <meta name="description" content="It's turtles all the way down. “Turtle” by Zidney, from the Noun Project." />
+          <meta name="description" content={}/>s turtles all the way down. “Turtle” by Zidney, from the Noun Project.' />
         </>
       ),
     },

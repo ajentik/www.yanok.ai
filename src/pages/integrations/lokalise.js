@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Lokalise"
-      description="Lokalise is a translation management tool that lets you structure and automate workflows while encouraging collaboration among all involved."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -96,7 +95,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Lokalise</title>
-          <meta name="description" content="Lokalise is a translation management tool that lets you structure and automate workflows while encouraging collaboration among all involved." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

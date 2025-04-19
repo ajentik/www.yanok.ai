@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="SuperPhone"
-      description="SuperPhone is a text marketing platform with broadcasts and 1-to-1 chat to help grow your text marketing channel."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -121,7 +120,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>SuperPhone</title>
-          <meta name="description" content="SuperPhone is a text marketing platform with broadcasts and 1-to-1 chat to help grow your text marketing channel." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

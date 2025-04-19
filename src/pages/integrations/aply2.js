@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Aply2"
-      description="Aply2 is a site that lets you connect with Applets"
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +56,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Aply2</title>
-          <meta name="description" content="Aply2 is a site that lets you connect with Applets" />
+          <meta name="description" content={}/> />
         </>
       ),
     },

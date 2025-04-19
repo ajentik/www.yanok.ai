@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Zendesk"
-      description="Zendesk is a web-based help desk support tool that makes it simple to provide great customer support."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -171,7 +170,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Zendesk</title>
-          <meta name="description" content="Zendesk is a web-based help desk support tool that makes it simple to provide great customer support." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

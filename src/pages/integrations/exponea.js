@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Exponea"
-      description="Exponea empowers B2C marketers to raise conversion rates, improve acquisition ROI, and maximize customer lifetime value."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +52,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Exponea</title>
-          <meta name="description" content="Exponea empowers B2C marketers to raise conversion rates, improve acquisition ROI, and maximize customer lifetime value." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

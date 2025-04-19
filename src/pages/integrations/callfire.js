@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="CallFire"
-      description="CallFire is a cloud telephony platform. Easily fire off an SMS or Call. You can trigger events when your phone number is called or texted as well."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -66,7 +65,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>CallFire</title>
-          <meta name="description" content="CallFire is a cloud telephony platform. Easily fire off an SMS or Call. You can trigger events when your phone number is called or texted as well." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Chargebee"
-      description="Chargebee is a subscription management and recurring billing solution used by businesses to customize subscription billing workflows."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -191,7 +190,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Chargebee</title>
-          <meta name="description" content="Chargebee is a subscription management and recurring billing solution used by businesses to customize subscription billing workflows." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

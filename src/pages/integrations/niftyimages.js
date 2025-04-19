@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="NiftyImages"
-      description="NiftyImages is an email marketing tool that lets you personalize and change images so each recipient sees the most relevant message."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -62,7 +61,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>NiftyImages</title>
-          <meta name="description" content="NiftyImages is an email marketing tool that lets you personalize and change images so each recipient sees the most relevant message." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

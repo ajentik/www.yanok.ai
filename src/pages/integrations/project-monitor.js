@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Project Monitor"
-      description="Project Monitor is a PPM software that aims to manage your portfolios for all kinds of projects/sectors. Control the entire lifecycle, from request management to project execution. Measure progress on your team's workload and save time with a data-driven dashboard."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -111,7 +110,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Project Monitor</title>
-          <meta name="description" content="Project Monitor is a PPM software that aims to manage your portfolios for all kinds of projects/sectors. Control the entire lifecycle, from request management to project execution. Measure progress on your team's workload and save time with a data-driven dashboard." />
+          <meta name="description" content={}/>s workload and save time with a data-driven dashboard.' />
         </>
       ),
     },

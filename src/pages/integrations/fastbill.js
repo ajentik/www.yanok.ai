@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="fastbill"
-      description="FastBill is a cloud app for German invoicing & accounting. Writing offers and invoices, paying your bills or preparing your tax return is easier than ever with FastBill."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -111,7 +110,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>fastbill</title>
-          <meta name="description" content="FastBill is a cloud app for German invoicing & accounting. Writing offers and invoices, paying your bills or preparing your tax return is easier than ever with FastBill." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

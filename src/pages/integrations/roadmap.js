@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Roadmap"
-      description="Roadmap helps you to plan, manage and track your teams work by just drag and drop."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -146,7 +145,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Roadmap</title>
-          <meta name="description" content="Roadmap helps you to plan, manage and track your teams work by just drag and drop." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

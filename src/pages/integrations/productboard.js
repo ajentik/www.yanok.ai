@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Productboard"
-      description="Productboard is beautiful, simple, and powerful product management. Product leaders can easily centralize user and market research, capture and organize feature ideas, prioritize against clear strategic objectives and keep everyone on the same page thanks to delightful, interactive roadmaps."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -71,7 +70,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Productboard</title>
-          <meta name="description" content="Productboard is beautiful, simple, and powerful product management. Product leaders can easily centralize user and market research, capture and organize feature ideas, prioritize against clear strategic objectives and keep everyone on the same page thanks to delightful, interactive roadmaps." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

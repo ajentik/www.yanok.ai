@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Novi AMS"
-      description="Novi AMS is association management software for organizations that use QuickBooks."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -106,7 +105,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Novi AMS</title>
-          <meta name="description" content="Novi AMS is association management software for organizations that use QuickBooks." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

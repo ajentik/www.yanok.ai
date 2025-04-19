@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Tumblr"
-      description="Tumblr is a microblogging platform and social networking website which allows users to post multimedia and other content to a short-form blog."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -101,7 +100,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Tumblr</title>
-          <meta name="description" content="Tumblr is a microblogging platform and social networking website which allows users to post multimedia and other content to a short-form blog." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

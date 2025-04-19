@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="TheGenie Marketing Hub"
-      description="TheGenie Marketing Hub is a Real Estate Marketing Platform."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +56,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>TheGenie Marketing Hub</title>
-          <meta name="description" content="TheGenie Marketing Hub is a Real Estate Marketing Platform." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

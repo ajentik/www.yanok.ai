@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Radius"
-      description="Radius is built specifically for Insurance Agents and Agencies, but every agency does their day to day differently which is why Radius allows for unique customization for each account."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +52,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Radius</title>
-          <meta name="description" content="Radius is built specifically for Insurance Agents and Agencies, but every agency does their day to day differently which is why Radius allows for unique customization for each account." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

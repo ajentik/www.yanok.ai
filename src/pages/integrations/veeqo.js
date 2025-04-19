@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Veeqo"
-      description="Veeqo is a complete solution for multichannel retailers; keep inventory levels accurate, streamline operations and ship orders on time."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -101,7 +100,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Veeqo</title>
-          <meta name="description" content="Veeqo is a complete solution for multichannel retailers; keep inventory levels accurate, streamline operations and ship orders on time." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

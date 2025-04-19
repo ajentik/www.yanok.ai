@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="WP All Export Pro"
-      description="WP All Export turns your WordPress data into a fully customizable CSV or XML file. Edit exported WordPress posts and re-import them with WP All Import, easily migrate WooCommerce products from one site to another, and send your WordPress CSV exports anywhere you like. WP All Export makes WordPress exports easy."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +56,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>WP All Export Pro</title>
-          <meta name="description" content="WP All Export turns your WordPress data into a fully customizable CSV or XML file. Edit exported WordPress posts and re-import them with WP All Import, easily migrate WooCommerce products from one site to another, and send your WordPress CSV exports anywhere you like. WP All Export makes WordPress exports easy." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

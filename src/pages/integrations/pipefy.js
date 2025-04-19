@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Pipefy"
-      description="The easy button for processes and workflows Easily organize and run all your processes in one place, leaving the inefficient patchwork of apps, forms, spreadsheets and e-mail threads forever in the past"
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -126,7 +125,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Pipefy</title>
-          <meta name="description" content="The easy button for processes and workflows Easily organize and run all your processes in one place, leaving the inefficient patchwork of apps, forms, spreadsheets and e-mail threads forever in the past" />
+          <meta name="description" content={}/> />
         </>
       ),
     },

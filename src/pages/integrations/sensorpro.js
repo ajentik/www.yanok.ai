@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Sensorpro"
-      description="Sensorpro is an EU-made email marketing platform."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +56,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Sensorpro</title>
-          <meta name="description" content="Sensorpro is an EU-made email marketing platform." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

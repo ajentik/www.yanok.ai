@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Bkper"
-      description="Keep track of earnings, expenses and account balances, in a centralized and collaborative way."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -66,7 +65,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Bkper</title>
-          <meta name="description" content="Keep track of earnings, expenses and account balances, in a centralized and collaborative way." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="PayPal"
-      description="PayPal is a fast, safe way to send money, make an online payment, receive money or set up a merchant account. With over 150 million active registered accounts, PayPal helps people and businesses receive and make payments in more than 100 currencies in 203 markets."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -72,7 +71,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>PayPal</title>
-          <meta name="description" content="PayPal is a fast, safe way to send money, make an online payment, receive money or set up a merchant account. With over 150 million active registered accounts, PayPal helps people and businesses receive and make payments in more than 100 currencies in 203 markets." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

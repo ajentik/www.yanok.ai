@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Runkeeper"
-      description="Runkeeper lets you track your runs and walks from your mobile device and share the activity with your friends, helping you stick to fitness goals with plans and an encouraging community."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -61,7 +60,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Runkeeper</title>
-          <meta name="description" content="Runkeeper lets you track your runs and walks from your mobile device and share the activity with your friends, helping you stick to fitness goals with plans and an encouraging community." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

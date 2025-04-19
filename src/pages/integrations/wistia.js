@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Wistia"
-      description="Wistia makes it easy to track and measure video engagement online. Upload your own videos to Wistia's professional video hosting services and let them take care of the rest."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -91,7 +90,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Wistia</title>
-          <meta name="description" content="Wistia makes it easy to track and measure video engagement online. Upload your own videos to Wistia's professional video hosting services and let them take care of the rest." />
+          <meta name="description" content={}/>s professional video hosting services and let them take care of the rest.' />
         </>
       ),
     },

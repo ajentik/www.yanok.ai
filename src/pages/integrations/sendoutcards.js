@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Sendoutcards"
-      description="An online greeting card and gift company with over 80 million cards sent, making us the largest first-class mailing company in the U.S."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +52,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Sendoutcards</title>
-          <meta name="description" content="An online greeting card and gift company with over 80 million cards sent, making us the largest first-class mailing company in the U.S." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

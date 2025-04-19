@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Octorate"
-      description="Octorate is a simple but powerful and affordable all-in-one solution for small structures which can be accessed from any mobile device"
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -71,7 +70,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Octorate</title>
-          <meta name="description" content="Octorate is a simple but powerful and affordable all-in-one solution for small structures which can be accessed from any mobile device" />
+          <meta name="description" content={}/> />
         </>
       ),
     },

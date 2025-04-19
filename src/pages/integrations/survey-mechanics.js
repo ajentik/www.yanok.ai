@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Survey Mechanics"
-      description="This is a test app built on behalf of Survey Mechanics to integrate the data captured through surveys in their platform to other APIs through Zaps."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -71,7 +70,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Survey Mechanics</title>
-          <meta name="description" content="This is a test app built on behalf of Survey Mechanics to integrate the data captured through surveys in their platform to other APIs through Zaps." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

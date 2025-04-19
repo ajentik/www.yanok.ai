@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Cognism Prospector"
-      description="Cognism Prospector is the number one solution for B2B salespeople looking to improve their data quality and generate better quality leads. Gain access to a global, GDPR compliant database of B2B leads drawn from any industry you can think of."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +56,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Cognism Prospector</title>
-          <meta name="description" content="Cognism Prospector is the number one solution for B2B salespeople looking to improve their data quality and generate better quality leads. Gain access to a global, GDPR compliant database of B2B leads drawn from any industry you can think of." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

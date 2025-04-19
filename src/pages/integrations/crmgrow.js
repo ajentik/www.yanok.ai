@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="crmgrow"
-      description="crmgrow is a CRM platform with various tracking abilities such as video, screen, and user activity tracking."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -97,7 +96,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>crmgrow</title>
-          <meta name="description" content="crmgrow is a CRM platform with various tracking abilities such as video, screen, and user activity tracking." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

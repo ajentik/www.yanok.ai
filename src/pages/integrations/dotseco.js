@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Dots.eco"
-      description="Seamless daily actions, major eco-impact. The Dots-Economy offers over 150 micro environmental incentives that boost your brand's conversion rate, engagement, retention, user acquisition, and improve the world, dot by dot."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -67,7 +66,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Dots.eco</title>
-          <meta name="description" content="Seamless daily actions, major eco-impact. The Dots-Economy offers over 150 micro environmental incentives that boost your brand's conversion rate, engagement, retention, user acquisition, and improve the world, dot by dot." />
+          <meta name="description" content={}/>s conversion rate, engagement, retention, user acquisition, and improve the world, dot by dot.' />
         </>
       ),
     },

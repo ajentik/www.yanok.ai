@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Blustream"
-      description="The Blustream App enables post sales experiences by coinciding contacts and product purchases with the Blustream platform."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +56,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Blustream</title>
-          <meta name="description" content="The Blustream App enables post sales experiences by coinciding contacts and product purchases with the Blustream platform." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="ShinyStat"
-      description="ShinyStat provides marketing automation and data management products."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +56,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>ShinyStat</title>
-          <meta name="description" content="ShinyStat provides marketing automation and data management products." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

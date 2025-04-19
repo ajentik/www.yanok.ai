@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Salsify"
-      description="Salsify's Product Experience Management (PXM) platform enables brands to deliver the product experiences consumers demand."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +52,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Salsify</title>
-          <meta name="description" content="Salsify's Product Experience Management (PXM) platform enables brands to deliver the product experiences consumers demand." />
+          <meta name="description" content={}/>s Product Experience Management (PXM) platform enables brands to deliver the product experiences consumers demand.' />
         </>
       ),
     },

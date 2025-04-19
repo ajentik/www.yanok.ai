@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Gripp"
-      description="Gripp is a team collaboration tool that lets you organize anything and everything to keep your projects on task."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -96,7 +95,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Gripp</title>
-          <meta name="description" content="Gripp is a team collaboration tool that lets you organize anything and everything to keep your projects on task." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Feature Upvote"
-      description="Feature Upvote is a product management tool to collect product ideas and identify development priorities."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -76,7 +75,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Feature Upvote</title>
-          <meta name="description" content="Feature Upvote is a product management tool to collect product ideas and identify development priorities." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

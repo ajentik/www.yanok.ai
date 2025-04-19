@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Model Match"
-      description="Model Match helps forward thinking mortgage lenders streamline the recruiting process and bring their team and pipeline into one central, collaborative space."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -116,7 +115,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Model Match</title>
-          <meta name="description" content="Model Match helps forward thinking mortgage lenders streamline the recruiting process and bring their team and pipeline into one central, collaborative space." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

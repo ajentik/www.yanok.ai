@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="PriceHubble"
-      description="PriceHubble is the leading provider of residential real estate valuation and analyses."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -87,7 +86,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>PriceHubble</title>
-          <meta name="description" content="PriceHubble is the leading provider of residential real estate valuation and analyses." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

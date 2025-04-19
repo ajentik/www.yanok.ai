@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="DeltaNet CRM"
-      description="DeltaNET CRM App is CRM and leads management tool for real estate agents."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -121,7 +120,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>DeltaNet CRM</title>
-          <meta name="description" content="DeltaNET CRM App is CRM and leads management tool for real estate agents." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="WhatsApp Messenger"
-      description="WhatsApp Messenger is a freeware and cross-platform messaging service. The application allows the sending of text messages and voice calls, as well as video calls, images and other files."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +52,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>WhatsApp Messenger</title>
-          <meta name="description" content="WhatsApp Messenger is a freeware and cross-platform messaging service. The application allows the sending of text messages and voice calls, as well as video calls, images and other files." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

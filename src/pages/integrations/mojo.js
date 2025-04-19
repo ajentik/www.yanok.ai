@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Mojo"
-      description="Mojo is a Real Estate prospecting solution which includes an easy to use CRM, Power Dialer and Real Estate lead service."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -106,7 +105,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Mojo</title>
-          <meta name="description" content="Mojo is a Real Estate prospecting solution which includes an easy to use CRM, Power Dialer and Real Estate lead service." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

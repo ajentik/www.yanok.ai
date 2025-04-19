@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="forms.app"
-      description="forms.app is a platform where you can build forms, share them and get responses. You can create sales order form and collect payment, too."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +56,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>forms.app</title>
-          <meta name="description" content="forms.app is a platform where you can build forms, share them and get responses. You can create sales order form and collect payment, too." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="timeghost"
-      description="timeghost is your project time tracking solution especially designed for Microsoft 365. No extra registration needed, all set with your Office/Microsoft 365 account."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -186,7 +185,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>timeghost</title>
-          <meta name="description" content="timeghost is your project time tracking solution especially designed for Microsoft 365. No extra registration needed, all set with your Office/Microsoft 365 account." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

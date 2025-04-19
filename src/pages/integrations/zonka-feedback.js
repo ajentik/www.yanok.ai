@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Zonka Feedback"
-      description="Zonka Feedback is a multi-channel customer feedback management and survey app on iPad & Android Tablets, Web, Emails & SMS."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -66,7 +65,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Zonka Feedback</title>
-          <meta name="description" content="Zonka Feedback is a multi-channel customer feedback management and survey app on iPad & Android Tablets, Web, Emails & SMS." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

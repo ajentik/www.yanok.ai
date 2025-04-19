@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Mailgun"
-      description="Mailgun is a tool with powerful APIs that allow you to send, receive, track and store email effortlessly. Except, with Zapier you don't have to write any code!"
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -101,7 +100,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Mailgun</title>
-          <meta name="description" content="Mailgun is a tool with powerful APIs that allow you to send, receive, track and store email effortlessly. Except, with Zapier you don't have to write any code!" />
+          <meta name="description" content={}/>t have to write any code!' />
         </>
       ),
     },

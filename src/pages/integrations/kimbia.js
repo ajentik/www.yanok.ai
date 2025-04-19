@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Kimbia"
-      description="Kimbia provides an online fundraising, crowdfunding, and event platform for nonprofits, higher education, and community foundations."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +52,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Kimbia</title>
-          <meta name="description" content="Kimbia provides an online fundraising, crowdfunding, and event platform for nonprofits, higher education, and community foundations." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Teamup Calendar"
-      description="Teamup is a calendar tool for groups and businesses. Teamup makes it easy to organize teams, schedule jobs, manage availability of people and resources, and share with any users with customizable access control."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -116,7 +115,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Teamup Calendar</title>
-          <meta name="description" content="Teamup is a calendar tool for groups and businesses. Teamup makes it easy to organize teams, schedule jobs, manage availability of people and resources, and share with any users with customizable access control." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

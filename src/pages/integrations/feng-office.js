@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Feng Office"
-      description="A collaborative Platform that includes Project Management and CRM. It integrates tasks, documents, emails, calendars, notes and web links."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +52,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Feng Office</title>
-          <meta name="description" content="A collaborative Platform that includes Project Management and CRM. It integrates tasks, documents, emails, calendars, notes and web links." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

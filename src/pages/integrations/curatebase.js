@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Curatebase"
-      description="Curatebase is a social selling and employee tool to help businesses amplify their content through their people."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -66,7 +65,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Curatebase</title>
-          <meta name="description" content="Curatebase is a social selling and employee tool to help businesses amplify their content through their people." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

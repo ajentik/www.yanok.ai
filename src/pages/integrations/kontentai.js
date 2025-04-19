@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Kontent.ai"
-      description="Kontent.ai is a Content-as-a-Service platform that gives you all the headless CMS benefits while empowering marketers at the same time."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -116,7 +115,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Kontent.ai</title>
-          <meta name="description" content="Kontent.ai is a Content-as-a-Service platform that gives you all the headless CMS benefits while empowering marketers at the same time." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Real Geeks"
-      description="Real Geeks is a real estate sales and marketing solution including all the tools you need - Lead Generation, Cultivation, IDX Website, CRM and marketing services."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -61,7 +60,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Real Geeks</title>
-          <meta name="description" content="Real Geeks is a real estate sales and marketing solution including all the tools you need - Lead Generation, Cultivation, IDX Website, CRM and marketing services." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

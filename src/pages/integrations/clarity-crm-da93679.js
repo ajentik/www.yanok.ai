@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Clarity CRM"
-      description="Clarity CRM is a customer relationship management tool that lets you to manage account, contacts and build invoices and orders."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -131,7 +130,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Clarity CRM</title>
-          <meta name="description" content="Clarity CRM is a customer relationship management tool that lets you to manage account, contacts and build invoices and orders." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

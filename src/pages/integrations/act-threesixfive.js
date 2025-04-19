@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Act! 365"
-      description="Act! 365 puts essential sales and marketing tools in your hands to close more deals, find new leads, and grow your business. The perfect Microsoft® Office 365 companion, stay productive from your inbox, the app—or wherever work takes you."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -61,7 +60,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Act! 365</title>
-          <meta name="description" content="Act! 365 puts essential sales and marketing tools in your hands to close more deals, find new leads, and grow your business. The perfect Microsoft® Office 365 companion, stay productive from your inbox, the app—or wherever work takes you." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

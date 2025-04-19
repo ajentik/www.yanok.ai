@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="FormDesigner"
-      description="FormDesigner - builder of web forms, surveys, quizzes and calculators"
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +56,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>FormDesigner</title>
-          <meta name="description" content="FormDesigner - builder of web forms, surveys, quizzes and calculators" />
+          <meta name="description" content={}/> />
         </>
       ),
     },

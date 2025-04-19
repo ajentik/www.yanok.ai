@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Formly"
-      description="Formly is a Form builder designed for lead generation online. It's the fastest form on your marketing roster"
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +56,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Formly</title>
-          <meta name="description" content="Formly is a Form builder designed for lead generation online. It's the fastest form on your marketing roster" />
+          <meta name="description" content={}/>s the fastest form on your marketing roster' />
         </>
       ),
     },

@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Zamzar"
-      description="Zamzar is a file conversion tool supporting over 1,200 different conversion types including all the popular formats (Document, Images, Audio, Video)."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -76,7 +75,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Zamzar</title>
-          <meta name="description" content="Zamzar is a file conversion tool supporting over 1,200 different conversion types including all the popular formats (Document, Images, Audio, Video)." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

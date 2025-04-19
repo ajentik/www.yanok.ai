@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Stonly"
-      description="Stonly is a tool for making interactive guides for customers and users. Deliver personalized, adaptive onboarding, product tours, surveys, and support and guidance throughout your app."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -87,7 +86,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Stonly</title>
-          <meta name="description" content="Stonly is a tool for making interactive guides for customers and users. Deliver personalized, adaptive onboarding, product tours, surveys, and support and guidance throughout your app." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

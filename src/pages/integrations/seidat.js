@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Seidat"
-      description="Seidat is a sales deck platform for business teams. It has tools for slide deck creation, presenting, sharing and analyzing."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -81,7 +80,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Seidat</title>
-          <meta name="description" content="Seidat is a sales deck platform for business teams. It has tools for slide deck creation, presenting, sharing and analyzing." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

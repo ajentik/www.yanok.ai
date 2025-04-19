@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Tars"
-      description="Tars is a chatbot and conversational landing page builder which helps marketers increase conversion rate in their paid ad campaigns."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +56,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Tars</title>
-          <meta name="description" content="Tars is a chatbot and conversational landing page builder which helps marketers increase conversion rate in their paid ad campaigns." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

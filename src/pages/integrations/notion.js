@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Notion"
-      description="A new tool that blends your everyday work apps into one. It's the all-in-one workspace for you and your team."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -86,7 +85,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Notion</title>
-          <meta name="description" content="A new tool that blends your everyday work apps into one. It's the all-in-one workspace for you and your team." />
+          <meta name="description" content={}/>s the all-in-one workspace for you and your team.' />
         </>
       ),
     },

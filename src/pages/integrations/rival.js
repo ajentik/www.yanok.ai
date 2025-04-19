@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Rival"
-      description="Rival is a mobile-first, insight community platform that market researchers use to uncover actionable insights fast and effectively."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -97,7 +96,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Rival</title>
-          <meta name="description" content="Rival is a mobile-first, insight community platform that market researchers use to uncover actionable insights fast and effectively." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

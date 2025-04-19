@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Tempokit"
-      description="Tempokit is a no-code fitness app creator for personal trainers, gyms, nutritionists to sell workout/nutrition programs on their own custom branded app."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -61,7 +60,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Tempokit</title>
-          <meta name="description" content="Tempokit is a no-code fitness app creator for personal trainers, gyms, nutritionists to sell workout/nutrition programs on their own custom branded app." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

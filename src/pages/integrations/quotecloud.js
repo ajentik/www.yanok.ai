@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="QuoteCloud"
-      description="QuoteCloud is a proposal building platform that guarantees your sales team are communicating in a: consistent, compliant, accurate and efficient way, ensuring respectively that marketing, legal, product and sales departments are happy !"
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -101,7 +100,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>QuoteCloud</title>
-          <meta name="description" content="QuoteCloud is a proposal building platform that guarantees your sales team are communicating in a: consistent, compliant, accurate and efficient way, ensuring respectively that marketing, legal, product and sales departments are happy !" />
+          <meta name="description" content={}/> />
         </>
       ),
     },

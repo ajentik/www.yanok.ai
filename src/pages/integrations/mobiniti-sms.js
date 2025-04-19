@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Mobiniti SMS"
-      description="Mobiniti SMS is a tool to integrate SMS with your business applications."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -76,7 +75,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Mobiniti SMS</title>
-          <meta name="description" content="Mobiniti SMS is a tool to integrate SMS with your business applications." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

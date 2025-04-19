@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Nusii Proposals"
-      description="Nusii is an online proposal tool that helps you create, track and manage proposals for your creative business."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -96,7 +95,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Nusii Proposals</title>
-          <meta name="description" content="Nusii is an online proposal tool that helps you create, track and manage proposals for your creative business." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

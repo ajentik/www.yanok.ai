@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="airfocus"
-      description="Use airfocus to prioritize your projects and features to build more effective roadmaps. Get everyone aligned and the right stuff done."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -86,7 +85,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>airfocus</title>
-          <meta name="description" content="Use airfocus to prioritize your projects and features to build more effective roadmaps. Get everyone aligned and the right stuff done." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

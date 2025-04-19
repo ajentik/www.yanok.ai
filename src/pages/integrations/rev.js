@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Rev"
-      description="Rev is an audio transcription service that uses human beings to transcribe English audio or video into text."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -86,7 +85,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Rev</title>
-          <meta name="description" content="Rev is an audio transcription service that uses human beings to transcribe English audio or video into text." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="AskNicely"
-      description="AskNicely is a simple way to measure and improve customer happiness using the Net Promoter Score® (NPS) framework."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -66,7 +65,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>AskNicely</title>
-          <meta name="description" content="AskNicely is a simple way to measure and improve customer happiness using the Net Promoter Score® (NPS) framework." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="mallabe Currencies"
-      description="mallabe is an automation toolchain that allows you to convert / exchange currencies on the fly. Take a look at other mallabe Integrations: - mallabe Image Processing - for image processing"
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -66,7 +65,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>mallabe Currencies</title>
-          <meta name="description" content="mallabe is an automation toolchain that allows you to convert / exchange currencies on the fly. Take a look at other mallabe Integrations: - mallabe Image Processing - for image processing" />
+          <meta name="description" content={}/> />
         </>
       ),
     },

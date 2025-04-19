@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Byteplant Phone Validator"
-      description="Byteplant Phone-Validator allows you to validate phone numbers (mobile & landline) from 240 countries world-wide in real-time."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +56,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Byteplant Phone Validator</title>
-          <meta name="description" content="Byteplant Phone-Validator allows you to validate phone numbers (mobile & landline) from 240 countries world-wide in real-time." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

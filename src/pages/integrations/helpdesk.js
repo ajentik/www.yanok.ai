@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="HelpDesk"
-      description="HelpDesk is a ticketing software for effortless customer support"
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -126,7 +125,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>HelpDesk</title>
-          <meta name="description" content="HelpDesk is a ticketing software for effortless customer support" />
+          <meta name="description" content={}/> />
         </>
       ),
     },

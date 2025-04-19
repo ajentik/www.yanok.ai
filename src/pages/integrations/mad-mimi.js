@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Mad Mimi"
-      description="Mad Mimi is the easiest and simplest way to create, send, share and track email newsletters."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -76,7 +75,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Mad Mimi</title>
-          <meta name="description" content="Mad Mimi is the easiest and simplest way to create, send, share and track email newsletters." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

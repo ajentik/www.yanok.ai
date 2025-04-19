@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Remo Conference"
-      description="Remo Conference is creating stronger impressions and higher engagement."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -66,7 +65,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Remo Conference</title>
-          <meta name="description" content="Remo Conference is creating stronger impressions and higher engagement." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

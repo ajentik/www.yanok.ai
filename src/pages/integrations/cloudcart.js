@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="CloudCart"
-      description="CloudCart is a professional all-in-one eCommerce platform with everything you need to Sell Online. An easy to use eCommerce platform that lets you start and grow your online business. It comes with free professional mobile optimized themes for high conversion rate."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -77,7 +76,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>CloudCart</title>
-          <meta name="description" content="CloudCart is a professional all-in-one eCommerce platform with everything you need to Sell Online. An easy to use eCommerce platform that lets you start and grow your online business. It comes with free professional mobile optimized themes for high conversion rate." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

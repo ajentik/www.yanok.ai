@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Betwext"
-      description="Betwext creates and manages web-based applications centered around providing various SMS marketing services to consumers and businesses."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +52,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Betwext</title>
-          <meta name="description" content="Betwext creates and manages web-based applications centered around providing various SMS marketing services to consumers and businesses." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

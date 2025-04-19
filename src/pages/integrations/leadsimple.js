@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="LeadSimple"
-      description="LeadSimple is the CRM that property management and real estate companies use to scale and grow."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -216,7 +215,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>LeadSimple</title>
-          <meta name="description" content="LeadSimple is the CRM that property management and real estate companies use to scale and grow." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

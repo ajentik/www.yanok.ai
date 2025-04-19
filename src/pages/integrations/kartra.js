@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Kartra"
-      description="Kartra is an all-in-one solution to manage your online business: checkout, automated email campaigns, site builder, membership portals, etc."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -291,7 +290,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Kartra</title>
-          <meta name="description" content="Kartra is an all-in-one solution to manage your online business: checkout, automated email campaigns, site builder, membership portals, etc." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

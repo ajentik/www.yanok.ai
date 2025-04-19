@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Zoho Social"
-      description="ZOHO Social is a smart tool that helps businesses grow their presence on the social media by reaching the right audience at the right time."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +52,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Zoho Social</title>
-          <meta name="description" content="ZOHO Social is a smart tool that helps businesses grow their presence on the social media by reaching the right audience at the right time." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

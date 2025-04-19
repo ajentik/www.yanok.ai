@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Dispatch"
-      description="Deliver exceptional customer experiences. Book, track and manage with the world's most powerful on-demand services platform."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -161,7 +160,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Dispatch</title>
-          <meta name="description" content="Deliver exceptional customer experiences. Book, track and manage with the world's most powerful on-demand services platform." />
+          <meta name="description" content={}/>s most powerful on-demand services platform.' />
         </>
       ),
     },

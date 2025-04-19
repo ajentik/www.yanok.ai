@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Investment Dominator"
-      description="Investment Dominator CRM is a complete real estate investment deal management and automation system for land, home, and note investors."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -71,7 +70,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Investment Dominator</title>
-          <meta name="description" content="Investment Dominator CRM is a complete real estate investment deal management and automation system for land, home, and note investors." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

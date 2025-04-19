@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="RedPodium"
-      description="RedPodium is a premier event management platform for making a registration page, tracking your registrants, and promoting athletic centric events."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +56,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>RedPodium</title>
-          <meta name="description" content="RedPodium is a premier event management platform for making a registration page, tracking your registrants, and promoting athletic centric events." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

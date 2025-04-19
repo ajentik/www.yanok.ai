@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Gumroad"
-      description="Gumroad allows all types of creators to sell their work (music, art, books, films, etc) directly to their audiences."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -72,7 +71,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Gumroad</title>
-          <meta name="description" content="Gumroad allows all types of creators to sell their work (music, art, books, films, etc) directly to their audiences." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Mailinator"
-      description="Mailinator is an email app that allows you to post messages into your private domain."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +56,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Mailinator</title>
-          <meta name="description" content="Mailinator is an email app that allows you to post messages into your private domain." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

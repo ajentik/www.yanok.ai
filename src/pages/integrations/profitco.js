@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Profit.co"
-      description="Profit is a comprehensive software solution to define Objectives & Key Results (OKRs) at every level of your organisation. Connect all of your apps with Profit.co. Profit integrates your OKRs with your favourite apps to update your tasks without any manual entry."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -81,7 +80,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Profit.co</title>
-          <meta name="description" content="Profit is a comprehensive software solution to define Objectives & Key Results (OKRs) at every level of your organisation. Connect all of your apps with Profit.co. Profit integrates your OKRs with your favourite apps to update your tasks without any manual entry." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

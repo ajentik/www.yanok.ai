@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="TRAFFIT"
-      description="Traffit is an ATS that lets you build talent pools and manage candidates, as well as boost collaboration with your team and Hiring Managers."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -131,7 +130,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>TRAFFIT</title>
-          <meta name="description" content="Traffit is an ATS that lets you build talent pools and manage candidates, as well as boost collaboration with your team and Hiring Managers." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

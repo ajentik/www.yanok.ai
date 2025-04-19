@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Spotify"
-      description="Spotify is a music streaming service that provides digital content from record labels and media companies."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -91,7 +90,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Spotify</title>
-          <meta name="description" content="Spotify is a music streaming service that provides digital content from record labels and media companies." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

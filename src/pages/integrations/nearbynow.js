@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Nearby Now"
-      description="Nearby Now's powerful marketing platform drives hyperlocal results for your own website by helping you secure more reviews and create rich local checkins."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -86,7 +85,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Nearby Now</title>
-          <meta name="description" content="Nearby Now's powerful marketing platform drives hyperlocal results for your own website by helping you secure more reviews and create rich local checkins." />
+          <meta name="description" content={}/>s powerful marketing platform drives hyperlocal results for your own website by helping you secure more reviews and create rich local checkins.' />
         </>
       ),
     },

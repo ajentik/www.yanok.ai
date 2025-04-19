@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Sisense"
-      description="Business Intelligence software by Sisense - easily prepare, analyze & explore growing data from multiple sources."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +52,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Sisense</title>
-          <meta name="description" content="Business Intelligence software by Sisense - easily prepare, analyze & explore growing data from multiple sources." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

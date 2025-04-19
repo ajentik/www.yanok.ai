@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Spark Hire"
-      description="Spark Hire is a video interviewing platform that helps you hire better candidates in a fraction of the time."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -66,7 +65,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Spark Hire</title>
-          <meta name="description" content="Spark Hire is a video interviewing platform that helps you hire better candidates in a fraction of the time." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

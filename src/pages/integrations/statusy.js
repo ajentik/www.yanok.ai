@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Statusy"
-      description="Statusy is a modern status page with all the features and integrations you could ever want. Provide incident updates to your customers during downtime and maintenance notifications during standard maintenance periods."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -61,7 +60,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Statusy</title>
-          <meta name="description" content="Statusy is a modern status page with all the features and integrations you could ever want. Provide incident updates to your customers during downtime and maintenance notifications during standard maintenance periods." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

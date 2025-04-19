@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Microsoft Dynamics 365 CRM"
-      description="Microsoft Dynamics is built for any device, anywhere. Built for you. For Dynamics Version 9 and Dynamics 365."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -156,7 +155,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Microsoft Dynamics 365 CRM</title>
-          <meta name="description" content="Microsoft Dynamics is built for any device, anywhere. Built for you. For Dynamics Version 9 and Dynamics 365." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

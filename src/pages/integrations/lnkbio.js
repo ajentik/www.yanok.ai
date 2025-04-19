@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Lnk.Bio"
-      description="Automate your Lnk.Bio experience by automatically publishing new links based on your existing triggers."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +56,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Lnk.Bio</title>
-          <meta name="description" content="Automate your Lnk.Bio experience by automatically publishing new links based on your existing triggers." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

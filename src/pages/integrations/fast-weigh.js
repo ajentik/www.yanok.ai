@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Fast-Weigh"
-      description="Fast-Weigh is a truck ticketing, dispatching, and order management platform."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +56,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Fast-Weigh</title>
-          <meta name="description" content="Fast-Weigh is a truck ticketing, dispatching, and order management platform." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="mallabe"
-      description="mallabe is an automation toolchain that allows you to process images and resize them on the fly."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -71,7 +70,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>mallabe</title>
-          <meta name="description" content="mallabe is an automation toolchain that allows you to process images and resize them on the fly." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

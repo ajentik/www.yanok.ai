@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Jottacloud"
-      description="Jottacloud is a European cloud storage service for individuals and businesses. GDPR compliant and green storage in Norway."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -71,7 +70,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Jottacloud</title>
-          <meta name="description" content="Jottacloud is a European cloud storage service for individuals and businesses. GDPR compliant and green storage in Norway." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

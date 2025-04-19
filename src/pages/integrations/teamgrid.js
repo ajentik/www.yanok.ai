@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="TeamGrid"
-      description="TeamGrid is a streamlined task & project management platform with integrated telephony and smart-office functions."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +52,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>TeamGrid</title>
-          <meta name="description" content="TeamGrid is a streamlined task & project management platform with integrated telephony and smart-office functions." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

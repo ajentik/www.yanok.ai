@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Endear"
-      description="Endear is a CRM, messaging, and sales tracking platform for driving retail sales."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +56,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Endear</title>
-          <meta name="description" content="Endear is a CRM, messaging, and sales tracking platform for driving retail sales." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

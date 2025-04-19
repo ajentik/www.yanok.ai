@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="TimeTap"
-      description="Online Appointment Scheduling Software, TimeTap makes online booking an easy process for small businesses & their clients."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +52,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>TimeTap</title>
-          <meta name="description" content="Online Appointment Scheduling Software, TimeTap makes online booking an easy process for small businesses & their clients." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

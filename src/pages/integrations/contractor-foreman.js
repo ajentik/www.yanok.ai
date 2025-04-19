@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Contractor Foreman"
-      description="Contractor Foreman is the most affordable all-in-one construction management software for contractors and is trusted by contractors in more than 75 countries. Recently named a Top App by DailyReporter.com, Capterra, SoftwareAdvice and ConstrucTECH."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -96,7 +95,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Contractor Foreman</title>
-          <meta name="description" content="Contractor Foreman is the most affordable all-in-one construction management software for contractors and is trusted by contractors in more than 75 countries. Recently named a Top App by DailyReporter.com, Capterra, SoftwareAdvice and ConstrucTECH." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

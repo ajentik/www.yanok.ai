@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="ALIS"
-      description="ALIS is a comprehensive suite of eHR tools purpose-built for assisted living communities."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -136,7 +135,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>ALIS</title>
-          <meta name="description" content="ALIS is a comprehensive suite of eHR tools purpose-built for assisted living communities." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Moskit"
-      description="Moskit CRM works hard for our customers to achieve new goals and have impactful results with contact management, deals and opportunities. O Moskit CRM trabalha duro para que os clientes conquistem novos objetivos e tenham um resultado de impacto com a gestão de contatos, empresas e oportunidades."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -381,7 +380,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Moskit</title>
-          <meta name="description" content="Moskit CRM works hard for our customers to achieve new goals and have impactful results with contact management, deals and opportunities. O Moskit CRM trabalha duro para que os clientes conquistem novos objetivos e tenham um resultado de impacto com a gestão de contatos, empresas e oportunidades." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

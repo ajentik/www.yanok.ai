@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Birdeye"
-      description="Birdeye is an all-in-one customer experience platform. Over 80,000 businesses use Birdeye every day to attract new leads with Listings, Reviews and Referrals, convert them into customers with Webchat and Payments, and delight those customers with Surveys, Ticketing, and Insights - all in one place."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -91,7 +90,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Birdeye</title>
-          <meta name="description" content="Birdeye is an all-in-one customer experience platform. Over 80,000 businesses use Birdeye every day to attract new leads with Listings, Reviews and Referrals, convert them into customers with Webchat and Payments, and delight those customers with Surveys, Ticketing, and Insights - all in one place." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

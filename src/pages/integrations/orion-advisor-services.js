@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Orion Advisor Services"
-      description="Orion was built by advisors, for advisors. Orion helps advisors experience integrated independence and enjoy their business again."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +52,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Orion Advisor Services</title>
-          <meta name="description" content="Orion was built by advisors, for advisors. Orion helps advisors experience integrated independence and enjoy their business again." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Vimeo"
-      description="Vimeo is a great tool for storing and distributing video content. It comes with powerful privacy and group features."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -76,7 +75,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Vimeo</title>
-          <meta name="description" content="Vimeo is a great tool for storing and distributing video content. It comes with powerful privacy and group features." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

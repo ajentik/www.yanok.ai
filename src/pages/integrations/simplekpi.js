@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="SimpleKPI"
-      description="SimpleKPI is KPI Software for companies of all sizes who track Key Performance Indicators and metrics - complete with easy to use tools for visualizing data on dashboards, building engaging reports and analyzing performance."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -62,7 +61,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>SimpleKPI</title>
-          <meta name="description" content="SimpleKPI is KPI Software for companies of all sizes who track Key Performance Indicators and metrics - complete with easy to use tools for visualizing data on dashboards, building engaging reports and analyzing performance." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

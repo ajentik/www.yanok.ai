@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="ParseHub"
-      description="ParseHub is a free web scraping tool. With our advanced web scraper, extracting data is as easy as clicking the data you need."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +52,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>ParseHub</title>
-          <meta name="description" content="ParseHub is a free web scraping tool. With our advanced web scraper, extracting data is as easy as clicking the data you need." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

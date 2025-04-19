@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Apptoto"
-      description="For appointment-based businesses, Apptoto offers automated SMS text, email or voice reminders and online scheduling"
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -121,7 +120,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Apptoto</title>
-          <meta name="description" content="For appointment-based businesses, Apptoto offers automated SMS text, email or voice reminders and online scheduling" />
+          <meta name="description" content={}/> />
         </>
       ),
     },

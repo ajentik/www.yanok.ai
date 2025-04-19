@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Sendpoint.io"
-      description="Sendpoint is a form submission endpoint that makes setting up forms and receiving submissions fast and simple."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -62,7 +61,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Sendpoint.io</title>
-          <meta name="description" content="Sendpoint is a form submission endpoint that makes setting up forms and receiving submissions fast and simple." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

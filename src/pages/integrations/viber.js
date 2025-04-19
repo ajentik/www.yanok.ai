@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Viber"
-      description="Viber allows people to connect through individual messaging, video calls, group chats or following brands and celebrities on Public Chats."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +52,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Viber</title>
-          <meta name="description" content="Viber allows people to connect through individual messaging, video calls, group chats or following brands and celebrities on Public Chats." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

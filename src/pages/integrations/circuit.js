@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Circuit"
-      description="Circuit is everything your teams need to communicate in a single app. It’s voice, video, screen share, chat, and file sharing. It’s collaboration made simple."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -136,7 +135,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Circuit</title>
-          <meta name="description" content="Circuit is everything your teams need to communicate in a single app. It’s voice, video, screen share, chat, and file sharing. It’s collaboration made simple." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

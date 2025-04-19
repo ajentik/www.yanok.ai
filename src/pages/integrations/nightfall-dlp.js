@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Nightfall DLP"
-      description="Data loss prevention & data classification for security & compliance."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +56,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Nightfall DLP</title>
-          <meta name="description" content="Data loss prevention & data classification for security & compliance." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

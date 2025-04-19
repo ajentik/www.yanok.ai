@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Distill"
-      description="Distill monitors websites and feeds to track changes. It can send notifications in form of sound, popup, email, sms and more!"
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +52,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Distill</title>
-          <meta name="description" content="Distill monitors websites and feeds to track changes. It can send notifications in form of sound, popup, email, sms and more!" />
+          <meta name="description" content={}/> />
         </>
       ),
     },

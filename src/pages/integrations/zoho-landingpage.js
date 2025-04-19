@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Zoho LandingPage"
-      description="Zoho LandingPage is a smart landing page builder that will help you create, customize, and launch alluring landing pages."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +56,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Zoho LandingPage</title>
-          <meta name="description" content="Zoho LandingPage is a smart landing page builder that will help you create, customize, and launch alluring landing pages." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

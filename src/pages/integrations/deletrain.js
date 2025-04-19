@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="DeleTrain"
-      description="DeleTrain enables new employees to train themselves with advanced text & screen recording training manuals."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +56,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>DeleTrain</title>
-          <meta name="description" content="DeleTrain enables new employees to train themselves with advanced text & screen recording training manuals." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

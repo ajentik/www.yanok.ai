@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="TikTok Lead Generation"
-      description="TikTok's Lead Generation enables businesses of all sizes to create seamless interactions to reach prospects in order to convert them into potential customers."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +56,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>TikTok Lead Generation</title>
-          <meta name="description" content="TikTok's Lead Generation enables businesses of all sizes to create seamless interactions to reach prospects in order to convert them into potential customers." />
+          <meta name="description" content={}/>s Lead Generation enables businesses of all sizes to create seamless interactions to reach prospects in order to convert them into potential customers.' />
         </>
       ),
     },

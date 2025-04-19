@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="GoodSeeker"
-      description="GoodSeeker is a tool to capture and share employee success stories and promote positive work culture."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -62,7 +61,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>GoodSeeker</title>
-          <meta name="description" content="GoodSeeker is a tool to capture and share employee success stories and promote positive work culture." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

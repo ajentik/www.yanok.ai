@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Cal.com"
-      description="Scheduling infrastructure for absolutely everyone."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -72,7 +71,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Cal.com</title>
-          <meta name="description" content="Scheduling infrastructure for absolutely everyone." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

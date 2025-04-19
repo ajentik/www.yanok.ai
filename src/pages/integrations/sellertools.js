@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Seller.Tools"
-      description="A full suite of Amazon FBA tools leveraging data through sources such as Seller Central to capture visibility and automate Amazon success."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -87,7 +86,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Seller.Tools</title>
-          <meta name="description" content="A full suite of Amazon FBA tools leveraging data through sources such as Seller Central to capture visibility and automate Amazon success." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

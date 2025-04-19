@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Pro Crew Schedule"
-      description="Pro Crew Schedule is an all-in-one construction scheduling software."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -76,7 +75,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Pro Crew Schedule</title>
-          <meta name="description" content="Pro Crew Schedule is an all-in-one construction scheduling software." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

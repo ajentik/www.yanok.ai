@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="RSS by Zapier"
-      description="RSS (really simple syndication) is pretty much the industry standard for feed readers. You'll find RSS feeds in almost every app imaginable."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -66,7 +65,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>RSS by Zapier</title>
-          <meta name="description" content="RSS (really simple syndication) is pretty much the industry standard for feed readers. You'll find RSS feeds in almost every app imaginable." />
+          <meta name="description" content={}/>ll find RSS feeds in almost every app imaginable.' />
         </>
       ),
     },

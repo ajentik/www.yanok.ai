@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="ShopKeep"
-      description="ShopKeep is a cloud-based iPad point of sale system used by more than 23,000 small businesses in the United States and Canada."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +52,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>ShopKeep</title>
-          <meta name="description" content="ShopKeep is a cloud-based iPad point of sale system used by more than 23,000 small businesses in the United States and Canada." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

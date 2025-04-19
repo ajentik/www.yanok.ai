@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Fintoc"
-      description="Fintoc is an API that lets you connect with bank accounts in LATAM"
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +56,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Fintoc</title>
-          <meta name="description" content="Fintoc is an API that lets you connect with bank accounts in LATAM" />
+          <meta name="description" content={}/> />
         </>
       ),
     },

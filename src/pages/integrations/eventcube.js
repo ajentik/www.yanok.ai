@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Eventcube"
-      description="Eventcube is a white label event platform for virtual and ticketed events."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -157,7 +156,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Eventcube</title>
-          <meta name="description" content="Eventcube is a white label event platform for virtual and ticketed events." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

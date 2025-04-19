@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="GoCardless"
-      description="GoCardless is a payments platform helping businesses collect payments directly from customer bank accounts."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -86,7 +85,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>GoCardless</title>
-          <meta name="description" content="GoCardless is a payments platform helping businesses collect payments directly from customer bank accounts." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

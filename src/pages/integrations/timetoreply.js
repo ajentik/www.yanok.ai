@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="timetoreply"
-      description="timetoreply is an email analytics and reply time tracking tool for company email. Perfect for customer-facing teams who need to track and improve their business email reply times."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -156,7 +155,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>timetoreply</title>
-          <meta name="description" content="timetoreply is an email analytics and reply time tracking tool for company email. Perfect for customer-facing teams who need to track and improve their business email reply times." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

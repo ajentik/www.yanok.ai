@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="ReachMail"
-      description="ReachMail is an Email Service Provider (ESP) that offers tools for managing and delivering marketing and transactional email messages."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -131,7 +130,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>ReachMail</title>
-          <meta name="description" content="ReachMail is an Email Service Provider (ESP) that offers tools for managing and delivering marketing and transactional email messages." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

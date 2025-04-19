@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="allGeo"
-      description="Field Service Automation with scheduling, time-clock, location tracking, geofencing, mobile forms and event monitoring"
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -87,7 +86,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>allGeo</title>
-          <meta name="description" content="Field Service Automation with scheduling, time-clock, location tracking, geofencing, mobile forms and event monitoring" />
+          <meta name="description" content={}/> />
         </>
       ),
     },

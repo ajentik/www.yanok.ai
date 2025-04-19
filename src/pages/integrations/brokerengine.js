@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="BrokerEngine"
-      description="BrokerEngine is the first and only mortgage broker software guaranteed to grow your revenue while working fewer hours, with push-button automation and workflows that free you up to focus on your highest-value activities."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -121,7 +120,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>BrokerEngine</title>
-          <meta name="description" content="BrokerEngine is the first and only mortgage broker software guaranteed to grow your revenue while working fewer hours, with push-button automation and workflows that free you up to focus on your highest-value activities." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

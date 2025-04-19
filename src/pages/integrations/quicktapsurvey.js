@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="QuickTapSurvey"
-      description="QuickTapSurvey lets you capture data in person using tablets and phones - no internet needed. The app is used for lead capture, feedback, research and more."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +56,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>QuickTapSurvey</title>
-          <meta name="description" content="QuickTapSurvey lets you capture data in person using tablets and phones - no internet needed. The app is used for lead capture, feedback, research and more." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

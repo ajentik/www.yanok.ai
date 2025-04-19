@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Proofo"
-      description="Proof is social proof platform that boosts conversions with live sales notifications, sales proof, photo reviews."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -67,7 +66,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Proofo</title>
-          <meta name="description" content="Proof is social proof platform that boosts conversions with live sales notifications, sales proof, photo reviews." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

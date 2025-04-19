@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Apotheo"
-      description="Apotheo is a client management tool for evidence based nutrition coaches."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -151,7 +150,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Apotheo</title>
-          <meta name="description" content="Apotheo is a client management tool for evidence based nutrition coaches." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

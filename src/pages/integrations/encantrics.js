@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Encantrics"
-      description="Transforme milhares de dados não estruturados em insights para a empresa. Transform raw data into insights for your business."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -61,7 +60,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Encantrics</title>
-          <meta name="description" content="Transforme milhares de dados não estruturados em insights para a empresa. Transform raw data into insights for your business." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

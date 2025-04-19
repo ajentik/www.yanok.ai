@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Heights Platform"
-      description="Heights Platform is online course building software that helps you host and build the most powerful online school to sell your courses and digital products."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -111,7 +110,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Heights Platform</title>
-          <meta name="description" content="Heights Platform is online course building software that helps you host and build the most powerful online school to sell your courses and digital products." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

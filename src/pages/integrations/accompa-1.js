@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Accompa"
-      description="Accompa is a leading cloud-based Requirements Management tool used by hundreds of companies."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -76,7 +75,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Accompa</title>
-          <meta name="description" content="Accompa is a leading cloud-based Requirements Management tool used by hundreds of companies." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="TrustRadius"
-      description="TrustRadius is the most trusted review site for business technology. We help vendors harness and scale the true voice of their customers."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -62,7 +61,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>TrustRadius</title>
-          <meta name="description" content="TrustRadius is the most trusted review site for business technology. We help vendors harness and scale the true voice of their customers." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

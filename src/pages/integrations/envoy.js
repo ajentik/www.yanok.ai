@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Envoy for Visitors"
-      description="Envoy for Visitors is a fully customizable iPad app that replaces your visitor sign-in book. We provide seamless visitor management, from pre-registration and host notifications, to NDA signing and secure cloud-based data storage."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -71,7 +70,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Envoy for Visitors</title>
-          <meta name="description" content="Envoy for Visitors is a fully customizable iPad app that replaces your visitor sign-in book. We provide seamless visitor management, from pre-registration and host notifications, to NDA signing and secure cloud-based data storage." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="SalesQL"
-      description="SalesQL allows you to enrich social network profiles with contact information, track leads, make notes and save prospects into projects."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +56,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>SalesQL</title>
-          <meta name="description" content="SalesQL allows you to enrich social network profiles with contact information, track leads, make notes and save prospects into projects." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

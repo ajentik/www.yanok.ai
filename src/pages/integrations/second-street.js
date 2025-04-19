@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Second Street"
-      description="Upland Second Street is a Saas audience engagement platform that allows its customers to create interactive promotions to engage and grow their audience."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -67,7 +66,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Second Street</title>
-          <meta name="description" content="Upland Second Street is a Saas audience engagement platform that allows its customers to create interactive promotions to engage and grow their audience." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

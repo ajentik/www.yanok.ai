@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Onurix"
-      description="Onurix es una plataforma de comunicaciones masivas de fácil integración a otros sistemas de información."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +56,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Onurix</title>
-          <meta name="description" content="Onurix es una plataforma de comunicaciones masivas de fácil integración a otros sistemas de información." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

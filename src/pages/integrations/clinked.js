@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Clinked"
-      description="Clinked is a white-label client portal for business. Clinked offers secure communication, collaboration & information sharing portal."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -226,7 +225,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Clinked</title>
-          <meta name="description" content="Clinked is a white-label client portal for business. Clinked offers secure communication, collaboration & information sharing portal." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

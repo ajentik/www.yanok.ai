@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Hexowatch"
-      description="Hexowatch is your AI sidekick to monitor any website for visual, content, source code or data changes."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +56,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Hexowatch</title>
-          <meta name="description" content="Hexowatch is your AI sidekick to monitor any website for visual, content, source code or data changes." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

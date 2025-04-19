@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Big Purple Dot"
-      description="Big Purple Dot is a Customer Relationship Management (CRM) solution for real estate agents and mortgage lenders."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +52,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Big Purple Dot</title>
-          <meta name="description" content="Big Purple Dot is a Customer Relationship Management (CRM) solution for real estate agents and mortgage lenders." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

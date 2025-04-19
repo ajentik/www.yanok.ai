@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="New Relic Insights"
-      description="New Relic Insights is a real-time analytics platform that collects metrics directly from your live production software and transforms them into actionable insights about your business, customers, and applications."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +56,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>New Relic Insights</title>
-          <meta name="description" content="New Relic Insights is a real-time analytics platform that collects metrics directly from your live production software and transforms them into actionable insights about your business, customers, and applications." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

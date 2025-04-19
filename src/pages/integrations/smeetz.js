@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Smeetz"
-      description="Smeetz grows your business, increases your ticket sales and engages with more customers by using our ticketing, marketing and smart pricing solution for events, tours and attractions."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +56,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Smeetz</title>
-          <meta name="description" content="Smeetz grows your business, increases your ticket sales and engages with more customers by using our ticketing, marketing and smart pricing solution for events, tours and attractions." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

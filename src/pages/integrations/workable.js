@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Workable"
-      description="Workable is a beautifully simple tool that helps you advertise jobs, screen candidates and accelerate your company's hiring process."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -91,7 +90,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Workable</title>
-          <meta name="description" content="Workable is a beautifully simple tool that helps you advertise jobs, screen candidates and accelerate your company's hiring process." />
+          <meta name="description" content={}/>s hiring process.' />
         </>
       ),
     },

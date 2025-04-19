@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="ClinchPad"
-      description="ClinchPad is a modern sales CRM built for small teams."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -61,7 +60,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>ClinchPad</title>
-          <meta name="description" content="ClinchPad is a modern sales CRM built for small teams." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

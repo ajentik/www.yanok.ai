@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Personalize"
-      description="Personalize is a tool to identify what each customer is most interested in at any given moment so you can promote the right product or service at the right time."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -72,7 +71,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Personalize</title>
-          <meta name="description" content="Personalize is a tool to identify what each customer is most interested in at any given moment so you can promote the right product or service at the right time." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

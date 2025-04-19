@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Basecamp Classic"
-      description="Basecamp Classic is a popular project management application. The classic version of Basecamp let's you keep track of multiple projects, milestones, todo items and more. An easy way to consolidate your work and keep your inbox clean."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -106,7 +105,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Basecamp Classic</title>
-          <meta name="description" content="Basecamp Classic is a popular project management application. The classic version of Basecamp let's you keep track of multiple projects, milestones, todo items and more. An easy way to consolidate your work and keep your inbox clean." />
+          <meta name="description" content={}/>s you keep track of multiple projects, milestones, todo items and more. An easy way to consolidate your work and keep your inbox clean.' />
         </>
       ),
     },

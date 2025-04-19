@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Sage Accounting"
-      description="Award winning accounting from the leader in financial accounting software. Manage invoicing, cash flow, tax, payments and more from any device through the cloud."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -291,7 +290,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Sage Accounting</title>
-          <meta name="description" content="Award winning accounting from the leader in financial accounting software. Manage invoicing, cash flow, tax, payments and more from any device through the cloud." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

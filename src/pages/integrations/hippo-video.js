@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Hippo Video"
-      description="Hippo Video is a cloud-based Video Marketing Platform (VMP) for marketing and sales teams to take ownership of their video marketing funnel."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -96,7 +95,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Hippo Video</title>
-          <meta name="description" content="Hippo Video is a cloud-based Video Marketing Platform (VMP) for marketing and sales teams to take ownership of their video marketing funnel." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

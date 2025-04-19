@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Auryc"
-      description="Auryc allows you to surface real-time insights with powerful visual context across all of your digital eCommerce journeys."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +56,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Auryc</title>
-          <meta name="description" content="Auryc allows you to surface real-time insights with powerful visual context across all of your digital eCommerce journeys." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

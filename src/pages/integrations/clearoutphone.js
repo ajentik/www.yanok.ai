@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="ClearoutPhone"
-      description="ClearoutPhone is a global phone validator covering 240+ countries with carrier and line type lookup."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -67,7 +66,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>ClearoutPhone</title>
-          <meta name="description" content="ClearoutPhone is a global phone validator covering 240+ countries with carrier and line type lookup." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Aurelius"
-      description="Aurelius is a user research and insights platform to tag, analyze, search and share all your UX research in one place."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -116,7 +115,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Aurelius</title>
-          <meta name="description" content="Aurelius is a user research and insights platform to tag, analyze, search and share all your UX research in one place." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

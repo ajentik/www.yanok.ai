@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Cronly"
-      description="Cronly helps you manage your cron jobs in the cloud with built-in monitoring."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +56,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Cronly</title>
-          <meta name="description" content="Cronly helps you manage your cron jobs in the cloud with built-in monitoring." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Status Hero"
-      description="Status Hero is a lightweight tool for replacing standups and tracking check-ins, goals, and activity from your team."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -81,7 +80,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Status Hero</title>
-          <meta name="description" content="Status Hero is a lightweight tool for replacing standups and tracking check-ins, goals, and activity from your team." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

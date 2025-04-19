@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Evolution Forms"
-      description="Evolution Forms is a form designer focused on lead generation and speed."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -62,7 +61,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Evolution Forms</title>
-          <meta name="description" content="Evolution Forms is a form designer focused on lead generation and speed." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

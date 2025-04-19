@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Flotiq"
-      description="Flotiq is an API-first CMS that takes care of hosting, securing and scaling to guarantee your content is always on."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -81,7 +80,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Flotiq</title>
-          <meta name="description" content="Flotiq is an API-first CMS that takes care of hosting, securing and scaling to guarantee your content is always on." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

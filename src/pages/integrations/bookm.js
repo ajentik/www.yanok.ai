@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="BOOKM"
-      description="BOOKM is an online scheduling tool that makes arranging meetings and booking services easy."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -61,7 +60,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>BOOKM</title>
-          <meta name="description" content="BOOKM is an online scheduling tool that makes arranging meetings and booking services easy." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

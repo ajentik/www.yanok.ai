@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="edoobox"
-      description="edoobox is a user-friendly online booking system for courses, seminars and events with a guided process from the announcement, booking / registration to the payment of the offer."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -166,7 +165,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>edoobox</title>
-          <meta name="description" content="edoobox is a user-friendly online booking system for courses, seminars and events with a guided process from the announcement, booking / registration to the payment of the offer." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

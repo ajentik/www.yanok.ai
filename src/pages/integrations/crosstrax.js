@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="CROSStrax"
-      description="CROSStrax is case management system for investigator to organize all investigation related stuff and more within single platform."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -91,7 +90,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>CROSStrax</title>
-          <meta name="description" content="CROSStrax is case management system for investigator to organize all investigation related stuff and more within single platform." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

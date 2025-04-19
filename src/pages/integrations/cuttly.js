@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Cutt.ly"
-      description="Cutt.ly is a URL shortener with advanced links tracking & API. Link Management Platform. Simplify, track & manage your links like a pro."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -96,7 +95,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Cutt.ly</title>
-          <meta name="description" content="Cutt.ly is a URL shortener with advanced links tracking & API. Link Management Platform. Simplify, track & manage your links like a pro." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

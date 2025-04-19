@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Nanonets OCR"
-      description="Nanonets OCR provides intelligent information extraction on any document or image"
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -86,7 +85,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Nanonets OCR</title>
-          <meta name="description" content="Nanonets OCR provides intelligent information extraction on any document or image" />
+          <meta name="description" content={}/> />
         </>
       ),
     },

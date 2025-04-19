@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Skubana"
-      description="Skubana is a cloud based, all-in-one operations software to handle and automate order management, inventory, analytics, POs, & accounting."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -86,7 +85,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Skubana</title>
-          <meta name="description" content="Skubana is a cloud based, all-in-one operations software to handle and automate order management, inventory, analytics, POs, & accounting." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

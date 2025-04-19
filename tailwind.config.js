@@ -4,12 +4,16 @@ module.exports = {
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/styles/globals.css",
   ],
   theme: {
+    fontFamily: {
+      jost: ['Jost', 'sans-serif'],
+      sans: ['ui-sans-serif', 'system-ui', 'sans-serif'],
+      serif: ['ui-serif', 'Georgia', 'serif'],
+      mono: ['ui-monospace', 'SFMono-Regular', 'monospace'],
+    },
     extend: {
-      fontFamily: {
-        jost: ['Jost', 'sans-serif'],
-      },
       colors: {
         darkerBlue: '#051b30',
         darkBlue: '#0a2540',

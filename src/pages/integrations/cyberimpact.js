@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Cyberimpact"
-      description="Cyberimpact is a CASL-Compliant email marketing service that makes it easy to create and send beautiful and efficient newsletter campaigns."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -96,7 +95,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Cyberimpact</title>
-          <meta name="description" content="Cyberimpact is a CASL-Compliant email marketing service that makes it easy to create and send beautiful and efficient newsletter campaigns." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

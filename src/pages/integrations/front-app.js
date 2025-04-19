@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Front"
-      description="Front is the shared inbox for teams that brings your email, communication channels, and apps into one platform for collaboration."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -186,7 +185,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Front</title>
-          <meta name="description" content="Front is the shared inbox for teams that brings your email, communication channels, and apps into one platform for collaboration." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

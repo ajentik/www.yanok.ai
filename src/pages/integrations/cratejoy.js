@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Cratejoy"
-      description="Cratejoy Inc. operates an online platform that enables users to build their own subscription business."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +52,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Cratejoy</title>
-          <meta name="description" content="Cratejoy Inc. operates an online platform that enables users to build their own subscription business." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

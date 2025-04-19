@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Unify"
-      description="Unify is one of the world’s leading communications software and services brands, providing integrated communications and collaboration solutions worldwide."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +52,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Unify</title>
-          <meta name="description" content="Unify is one of the world’s leading communications software and services brands, providing integrated communications and collaboration solutions worldwide." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

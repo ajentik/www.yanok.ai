@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="nTask"
-      description="NTask is a free task management platform smart teams rely on to get things done better and faster."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -201,7 +200,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>nTask</title>
-          <meta name="description" content="NTask is a free task management platform smart teams rely on to get things done better and faster." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

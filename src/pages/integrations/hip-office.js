@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Home Inspector Pro Office"
-      description="Home Inspector Pro Office is a tool to automate and streamline your home inspection business."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -92,7 +91,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Home Inspector Pro Office</title>
-          <meta name="description" content="Home Inspector Pro Office is a tool to automate and streamline your home inspection business." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

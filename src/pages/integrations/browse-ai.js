@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Browse AI"
-      description="Browse AI is a web automation tool that lets you extract and monitor data from any website with no code."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -66,7 +65,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Browse AI</title>
-          <meta name="description" content="Browse AI is a web automation tool that lets you extract and monitor data from any website with no code." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

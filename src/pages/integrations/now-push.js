@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Now Push"
-      description="Now Push bridges the gap between your phone, tablet and computer."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -67,7 +66,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Now Push</title>
-          <meta name="description" content="Now Push bridges the gap between your phone, tablet and computer." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

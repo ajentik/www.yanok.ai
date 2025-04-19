@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Toky"
-      description="Toky is a cloud telephony service that helps you to start your business call center, make and receive calls, send SMS and much more."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -81,7 +80,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Toky</title>
-          <meta name="description" content="Toky is a cloud telephony service that helps you to start your business call center, make and receive calls, send SMS and much more." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

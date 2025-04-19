@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="My Event Cafe"
-      description="My Event Café is a virtual online classroom where you can build courses intended for social learning."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -67,7 +66,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>My Event Cafe</title>
-          <meta name="description" content="My Event Café is a virtual online classroom where you can build courses intended for social learning." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

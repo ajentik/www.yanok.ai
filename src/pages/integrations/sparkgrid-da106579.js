@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Archie"
-      description="A seamless solution for coworking spaces & flexible offices.Archie provide all tools to manage a shared space from space management to community and events."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -82,7 +81,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Archie</title>
-          <meta name="description" content="A seamless solution for coworking spaces & flexible offices.Archie provide all tools to manage a shared space from space management to community and events." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

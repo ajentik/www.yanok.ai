@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Conflux"
-      description="Conflux is an online application that lets you collect feedback, organize it into ideas and communicate those ideas back to your customers so you can collect more feedback."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +52,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Conflux</title>
-          <meta name="description" content="Conflux is an online application that lets you collect feedback, organize it into ideas and communicate those ideas back to your customers so you can collect more feedback." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

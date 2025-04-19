@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="ProProfs Project"
-      description="ProProfs Project is an online project management tool that also lets you collaborate with your team on the go."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -111,7 +110,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>ProProfs Project</title>
-          <meta name="description" content="ProProfs Project is an online project management tool that also lets you collaborate with your team on the go." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

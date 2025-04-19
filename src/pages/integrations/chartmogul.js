@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="ChartMogul"
-      description="ChartMogul helps you measure, understand and grow your subscription business."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -157,7 +156,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>ChartMogul</title>
-          <meta name="description" content="ChartMogul helps you measure, understand and grow your subscription business." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

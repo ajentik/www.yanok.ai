@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Coveo"
-      description="Coveo is a complete AI-powered search & relevance service for unified & personalized search interactions."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -72,7 +71,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Coveo</title>
-          <meta name="description" content="Coveo is a complete AI-powered search & relevance service for unified & personalized search interactions." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

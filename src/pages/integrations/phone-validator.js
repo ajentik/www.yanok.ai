@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Phone Validator"
-      description="Use the official API of the popular phone line-type identification website, phonevalidator.com. Determine if any North American-based phone number is a landline, cell, VOIP or toll-free."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +56,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Phone Validator</title>
-          <meta name="description" content="Use the official API of the popular phone line-type identification website, phonevalidator.com. Determine if any North American-based phone number is a landline, cell, VOIP or toll-free." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

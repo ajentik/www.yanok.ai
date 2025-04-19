@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Vonage SMS API"
-      description="The Vonage SMS API platform (formerly Nexmo), allows you to send and receive SMS messages globally."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -66,7 +65,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Vonage SMS API</title>
-          <meta name="description" content="The Vonage SMS API platform (formerly Nexmo), allows you to send and receive SMS messages globally." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

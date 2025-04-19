@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="iZooto"
-      description="IZooto is a web push notification platform which enables website owners to re-engage and re-target visitors through web push notifications."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +56,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>iZooto</title>
-          <meta name="description" content="IZooto is a web push notification platform which enables website owners to re-engage and re-target visitors through web push notifications." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

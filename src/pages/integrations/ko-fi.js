@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Ko-fi"
-      description="Ko-fi helps creators fund their passions with support from people who love what they do."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +56,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Ko-fi</title>
-          <meta name="description" content="Ko-fi helps creators fund their passions with support from people who love what they do." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

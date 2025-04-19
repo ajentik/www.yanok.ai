@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Ezcater"
-      description="ezCater is an online catering marketplace that allows individuals to order food from local caterers in the U.S."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +52,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Ezcater</title>
-          <meta name="description" content="ezCater is an online catering marketplace that allows individuals to order food from local caterers in the U.S." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

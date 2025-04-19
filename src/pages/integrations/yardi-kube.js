@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Yardi Kube"
-      description="Yardi Kube is an all-in-one coworking management platform."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -261,7 +260,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Yardi Kube</title>
-          <meta name="description" content="Yardi Kube is an all-in-one coworking management platform." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

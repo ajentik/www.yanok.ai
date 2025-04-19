@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Design Pickle"
-      description="Design Pickle is an unlimited design service that lets you outsource your design needs for a flat monthly fee."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -91,7 +90,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Design Pickle</title>
-          <meta name="description" content="Design Pickle is an unlimited design service that lets you outsource your design needs for a flat monthly fee." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

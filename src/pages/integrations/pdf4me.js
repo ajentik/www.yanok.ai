@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="PDF4me"
-      description="PDF4me is a tool for pdf conversion, splitting, merging, make them PDF/A compliant, protect documents etc."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -261,7 +260,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>PDF4me</title>
-          <meta name="description" content="PDF4me is a tool for pdf conversion, splitting, merging, make them PDF/A compliant, protect documents etc." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

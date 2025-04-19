@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Zeplin"
-      description="Zeplin is an organized workspace to publish designs where the entire team can collaborate to ship beautiful products together."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -116,7 +115,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Zeplin</title>
-          <meta name="description" content="Zeplin is an organized workspace to publish designs where the entire team can collaborate to ship beautiful products together." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

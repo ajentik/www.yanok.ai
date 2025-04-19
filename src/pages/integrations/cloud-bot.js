@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Cloud BOT"
-      description="Cloud BOT is a freemium service for web browser automation. You can easily create your own robot and it can be run at any time in the cloud."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -71,7 +70,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Cloud BOT</title>
-          <meta name="description" content="Cloud BOT is a freemium service for web browser automation. You can easily create your own robot and it can be run at any time in the cloud." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

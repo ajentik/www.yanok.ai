@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="BotStar"
-      description="BotStar is a chatbot development platform that lets you design and build your chatbots with minimal development and a visual editor."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -77,7 +76,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>BotStar</title>
-          <meta name="description" content="BotStar is a chatbot development platform that lets you design and build your chatbots with minimal development and a visual editor." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Moodle"
-      description="Moodle is a free and open-source learning management system that allows educators, of any kind, to create a private space online, filled with tools that easily create courses and activities, all optimised for collaborative learning."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -66,7 +65,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Moodle</title>
-          <meta name="description" content="Moodle is a free and open-source learning management system that allows educators, of any kind, to create a private space online, filled with tools that easily create courses and activities, all optimised for collaborative learning." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

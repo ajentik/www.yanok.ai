@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Octopush SMS"
-      description="Octopush SMS allows you to automatically send SMS to over 200 countries."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -71,7 +70,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Octopush SMS</title>
-          <meta name="description" content="Octopush SMS allows you to automatically send SMS to over 200 countries." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

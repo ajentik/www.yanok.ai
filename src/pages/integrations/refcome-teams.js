@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Refcome Teams"
-      description="Refcome Teams is a recruiting and culture-building tool to the team."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -67,7 +66,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Refcome Teams</title>
-          <meta name="description" content="Refcome Teams is a recruiting and culture-building tool to the team." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

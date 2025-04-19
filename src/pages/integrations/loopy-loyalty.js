@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Loopy Loyalty"
-      description="Loopy Loyalty is a platform for businesses to create and manage digital loyalty stamp cards in Apple Wallet and Android Pay."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -116,7 +115,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Loopy Loyalty</title>
-          <meta name="description" content="Loopy Loyalty is a platform for businesses to create and manage digital loyalty stamp cards in Apple Wallet and Android Pay." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

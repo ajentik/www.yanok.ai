@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Weekday"
-      description="Weekday is a messaging & collaboration platform that brings your team together. For information on how to connect your Weekday channel, please see https://weekdayapp.com/zapier."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +56,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Weekday</title>
-          <meta name="description" content="Weekday is a messaging & collaboration platform that brings your team together. For information on how to connect your Weekday channel, please see https://weekdayapp.com/zapier." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

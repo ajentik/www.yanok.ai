@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Referral Factory"
-      description="The Easy Way To Build A Referral Program"
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -76,7 +75,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Referral Factory</title>
-          <meta name="description" content="The Easy Way To Build A Referral Program" />
+          <meta name="description" content={}/> />
         </>
       ),
     },

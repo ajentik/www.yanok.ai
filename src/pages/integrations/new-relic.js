@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="New Relic"
-      description="New Relic provides SaaS Application Performance Management for Ruby, PHP, .Net, Java, Python, Node.js, Android, and iOS Apps."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -61,7 +60,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>New Relic</title>
-          <meta name="description" content="New Relic provides SaaS Application Performance Management for Ruby, PHP, .Net, Java, Python, Node.js, Android, and iOS Apps." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

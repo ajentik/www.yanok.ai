@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Boltrends"
-      description="Boltrends is a bol.com analytics tool which helps sellers to grow their business."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +56,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Boltrends</title>
-          <meta name="description" content="Boltrends is a bol.com analytics tool which helps sellers to grow their business." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

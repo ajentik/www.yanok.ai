@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="EASY2"
-      description="EASY2 is an all-in-one software for your digital marketing. Whether funnel, e-mail marketing, online shop member area, etc. with EASY2 you have everything in ONE place."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -86,7 +85,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>EASY2</title>
-          <meta name="description" content="EASY2 is an all-in-one software for your digital marketing. Whether funnel, e-mail marketing, online shop member area, etc. with EASY2 you have everything in ONE place." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

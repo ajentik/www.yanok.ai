@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="QVALON"
-      description="QVALON is a cloud-based solution to manage, monitor and magnify your retail business."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -62,7 +61,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>QVALON</title>
-          <meta name="description" content="QVALON is a cloud-based solution to manage, monitor and magnify your retail business." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

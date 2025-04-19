@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="LetHub"
-      description="LetHub is an AI automation tool for modern property managers to automate their daily leasing tasks."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -72,7 +71,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>LetHub</title>
-          <meta name="description" content="LetHub is an AI automation tool for modern property managers to automate their daily leasing tasks." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

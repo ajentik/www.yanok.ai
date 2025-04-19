@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="PushEngage"
-      description="PushEngage is a leading platform for Browser Push Notifications. We enable push notifications Chrome and Firefox on Mobile and Desktop."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +52,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>PushEngage</title>
-          <meta name="description" content="PushEngage is a leading platform for Browser Push Notifications. We enable push notifications Chrome and Firefox on Mobile and Desktop." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

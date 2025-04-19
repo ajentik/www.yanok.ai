@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Amazon Honeycode"
-      description="Use Amazon Honeycode to build mobile & web apps that solve your team's business needs—without programming."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -91,7 +90,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Amazon Honeycode</title>
-          <meta name="description" content="Use Amazon Honeycode to build mobile & web apps that solve your team's business needs—without programming." />
+          <meta name="description" content={}/>s business needs—without programming.' />
         </>
       ),
     },

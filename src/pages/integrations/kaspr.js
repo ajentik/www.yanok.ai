@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Kaspr"
-      description="Kaspr helps you find emails and phone numbers through Linkedin. Create your own contact list with relevant contant information and boost your sales !"
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +56,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Kaspr</title>
-          <meta name="description" content="Kaspr helps you find emails and phone numbers through Linkedin. Create your own contact list with relevant contant information and boost your sales !" />
+          <meta name="description" content={}/> />
         </>
       ),
     },

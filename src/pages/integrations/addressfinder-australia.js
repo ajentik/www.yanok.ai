@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="AddressFinder Australia"
-      description="An easy tool to validate human-entered addresses and return a full verified address. Responses come with full meta data, including GPS coordinates."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +56,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>AddressFinder Australia</title>
-          <meta name="description" content="An easy tool to validate human-entered addresses and return a full verified address. Responses come with full meta data, including GPS coordinates." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

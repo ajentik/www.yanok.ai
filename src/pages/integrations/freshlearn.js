@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="FreshLearn"
-      description="FreshLearn is a learning platform that lets you build your own online schools to create and sell courses as well as LMS for your organizations."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -76,7 +75,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>FreshLearn</title>
-          <meta name="description" content="FreshLearn is a learning platform that lets you build your own online schools to create and sell courses as well as LMS for your organizations." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Canvas LMS"
-      description="Canvas is the trusted, open-source learning management system (LMS) that's revolutionizing the way we educate."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +52,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Canvas LMS</title>
-          <meta name="description" content="Canvas is the trusted, open-source learning management system (LMS) that's revolutionizing the way we educate." />
+          <meta name="description" content={}/>s revolutionizing the way we educate.' />
         </>
       ),
     },

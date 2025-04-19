@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Aimtell"
-      description="Aimtell is a platform that enables you to re-engage your website visitors with highly targeted browser push notifications."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -77,7 +76,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Aimtell</title>
-          <meta name="description" content="Aimtell is a platform that enables you to re-engage your website visitors with highly targeted browser push notifications." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

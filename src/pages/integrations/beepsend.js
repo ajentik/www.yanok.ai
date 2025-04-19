@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Beepsend SMS"
-      description="Beepsend SMS is an easy and reliable tool to integrate SMS with your business applications. Beepsend's SMS services lets you send and receive SMS from mobile phones all over the world."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -66,7 +65,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Beepsend SMS</title>
-          <meta name="description" content="Beepsend SMS is an easy and reliable tool to integrate SMS with your business applications. Beepsend's SMS services lets you send and receive SMS from mobile phones all over the world." />
+          <meta name="description" content={}/>s SMS services lets you send and receive SMS from mobile phones all over the world.' />
         </>
       ),
     },

@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Cayzu"
-      description="Cayzu is a cloud based help desk solution that will allow you to wow your customers with world-class support. Features include multi-channel support, ticket management, Facebook & Twitter integration, mobile apps, real-time reporting, instant notifications and ability to manage multiple brands from a single portal."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +56,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Cayzu</title>
-          <meta name="description" content="Cayzu is a cloud based help desk solution that will allow you to wow your customers with world-class support. Features include multi-channel support, ticket management, Facebook & Twitter integration, mobile apps, real-time reporting, instant notifications and ability to manage multiple brands from a single portal." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

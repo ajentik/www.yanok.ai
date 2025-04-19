@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Transistor.fm"
-      description="Transistor provides podcast hosting and analytics for thousands of organizations, brands, and creatives around the world."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -81,7 +80,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Transistor.fm</title>
-          <meta name="description" content="Transistor provides podcast hosting and analytics for thousands of organizations, brands, and creatives around the world." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

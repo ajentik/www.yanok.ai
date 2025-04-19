@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="MaintainX"
-      description="MaintainX helps you track your reactive maintenance, preventive maintenance, and control the daily operations of your business."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -96,7 +95,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>MaintainX</title>
-          <meta name="description" content="MaintainX helps you track your reactive maintenance, preventive maintenance, and control the daily operations of your business." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

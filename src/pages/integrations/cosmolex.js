@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="CosmoLex"
-      description="CosmoLex is law practice management software with built-in accounting, timekeeping, invoicing, document/email management, and matter workflows."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -131,7 +130,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>CosmoLex</title>
-          <meta name="description" content="CosmoLex is law practice management software with built-in accounting, timekeeping, invoicing, document/email management, and matter workflows." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

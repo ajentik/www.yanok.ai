@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Tactful UCX"
-      description="Tactful Unified Cognitive Customer Experience Platform is the next generation omnichannel customer experience technology that helps your business achieve the best results across touchpoints using AI and data centric approach."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -206,7 +205,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Tactful UCX</title>
-          <meta name="description" content="Tactful Unified Cognitive Customer Experience Platform is the next generation omnichannel customer experience technology that helps your business achieve the best results across touchpoints using AI and data centric approach." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Focuster"
-      description="Focuster is a focus management tool for professionals and entrepreneurs that turns your todo list into an actionable schedule in your calendar, gives you smart reminders when you have free time to work on your most important priorities, and moves work forward until you get it done."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -61,7 +60,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Focuster</title>
-          <meta name="description" content="Focuster is a focus management tool for professionals and entrepreneurs that turns your todo list into an actionable schedule in your calendar, gives you smart reminders when you have free time to work on your most important priorities, and moves work forward until you get it done." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

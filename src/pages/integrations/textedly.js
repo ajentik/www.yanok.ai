@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Textedly"
-      description="Textedly is a SMS and MMS text messaging platform serving thousands of companies. Textedly is the easiest way to instantly send 10 or 100,000 bulk SMS and MMS mobile text messages."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -76,7 +75,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Textedly</title>
-          <meta name="description" content="Textedly is a SMS and MMS text messaging platform serving thousands of companies. Textedly is the easiest way to instantly send 10 or 100,000 bulk SMS and MMS mobile text messages." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

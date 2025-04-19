@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Habitify"
-      description="Habitify is a habit tracker that helps you form habits that actually stick. It’s designed to motivate you every day and reward you with beautiful streaks."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -91,7 +90,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Habitify</title>
-          <meta name="description" content="Habitify is a habit tracker that helps you form habits that actually stick. It’s designed to motivate you every day and reward you with beautiful streaks." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

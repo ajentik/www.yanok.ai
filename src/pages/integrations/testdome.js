@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="TestDome"
-      description="TestDome is a service that helps you screen job candidates using automated work-sample tests."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -66,7 +65,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>TestDome</title>
-          <meta name="description" content="TestDome is a service that helps you screen job candidates using automated work-sample tests." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

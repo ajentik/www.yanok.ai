@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="VanillaSoft"
-      description="VanillaSoft is a CRM app that combines the best of CRM, Lead Management and Telemarketing applications into one of the most capable phone sales environments."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -61,7 +60,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>VanillaSoft</title>
-          <meta name="description" content="VanillaSoft is a CRM app that combines the best of CRM, Lead Management and Telemarketing applications into one of the most capable phone sales environments." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

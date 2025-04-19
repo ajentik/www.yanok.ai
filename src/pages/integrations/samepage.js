@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Samepage"
-      description="Samepage is a team collaboration platform that brings people together to get work done in one place. Discuss ideas, share files, assign tasks, and finish projects – all in real time, and all from one app."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -107,7 +106,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Samepage</title>
-          <meta name="description" content="Samepage is a team collaboration platform that brings people together to get work done in one place. Discuss ideas, share files, assign tasks, and finish projects – all in real time, and all from one app." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

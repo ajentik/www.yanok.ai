@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="iList by GryphTech"
-      description="iList is an enterprise listing and CRM platform for international real estate."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +56,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>iList by GryphTech</title>
-          <meta name="description" content="iList is an enterprise listing and CRM platform for international real estate." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

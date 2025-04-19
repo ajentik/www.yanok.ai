@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="EasyPost"
-      description="EasyPost provides a simple postage API that allows developers to quickly and painlessly integrate shipping into any e-commerce application."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +52,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>EasyPost</title>
-          <meta name="description" content="EasyPost provides a simple postage API that allows developers to quickly and painlessly integrate shipping into any e-commerce application." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="ChargeKeep"
-      description="ChargeKeep is lightweight, easy-to-use recurring payments software."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -62,7 +61,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>ChargeKeep</title>
-          <meta name="description" content="ChargeKeep is lightweight, easy-to-use recurring payments software." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Tokeet"
-      description="Tokeet allows you to easily manage your vacation rentals and manage all your reservations with our all-in-one solution."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +52,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Tokeet</title>
-          <meta name="description" content="Tokeet allows you to easily manage your vacation rentals and manage all your reservations with our all-in-one solution." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

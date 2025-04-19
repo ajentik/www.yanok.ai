@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="ReviewStudio"
-      description="ReviewStudio is online proofing software for marketing teams, ad agencies, creatives and production studios."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -126,7 +125,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>ReviewStudio</title>
-          <meta name="description" content="ReviewStudio is online proofing software for marketing teams, ad agencies, creatives and production studios." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

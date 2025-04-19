@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Formitable"
-      description="Create unique restaurant experiences, manage reservations easily and book a full house with Formitable."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -67,7 +66,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Formitable</title>
-          <meta name="description" content="Create unique restaurant experiences, manage reservations easily and book a full house with Formitable." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

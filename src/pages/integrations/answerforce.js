@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="AnswerForce"
-      description="AnswerForce is a live answering service that helps small businesses stay connected with customers during business and off-hours with solutions like customer support, lead capture, appointment setting and more. The AnswerForce app lets you view the transcript of your customer calls, organize internal messages and supports a wide range of integrations with various other business tools."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +56,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>AnswerForce</title>
-          <meta name="description" content="AnswerForce is a live answering service that helps small businesses stay connected with customers during business and off-hours with solutions like customer support, lead capture, appointment setting and more. The AnswerForce app lets you view the transcript of your customer calls, organize internal messages and supports a wide range of integrations with various other business tools." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

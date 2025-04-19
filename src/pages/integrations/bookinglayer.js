@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Bookinglayer"
-      description="Bookinglayer is an all-in-one reservation and workflow management software that helps businesses save time and increase revenue."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +52,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Bookinglayer</title>
-          <meta name="description" content="Bookinglayer is an all-in-one reservation and workflow management software that helps businesses save time and increase revenue." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

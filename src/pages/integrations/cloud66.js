@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Cloud 66"
-      description="Cloud 66 is a DevOps as a Service, built for application developers."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -71,7 +70,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Cloud 66</title>
-          <meta name="description" content="Cloud 66 is a DevOps as a Service, built for application developers." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Unstack"
-      description="Unstack digital engine provides teams with the tools to build, measure, and scale their web presence."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +56,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Unstack</title>
-          <meta name="description" content="Unstack digital engine provides teams with the tools to build, measure, and scale their web presence." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

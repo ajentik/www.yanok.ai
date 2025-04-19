@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Ignition"
-      description="Ignition makes it simple to engage clients, get paid and run your business on autopilot. From impressive online proposals to automated engagement letters and payments, we free you up to focus on what matters most."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -101,7 +100,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Ignition</title>
-          <meta name="description" content="Ignition makes it simple to engage clients, get paid and run your business on autopilot. From impressive online proposals to automated engagement letters and payments, we free you up to focus on what matters most." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="NoCodeForm"
-      description="NoCodeForm is a form backend service that enables you to create, store and automate form submissions."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +56,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>NoCodeForm</title>
-          <meta name="description" content="NoCodeForm is a form backend service that enables you to create, store and automate form submissions." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

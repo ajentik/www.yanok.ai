@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Social Champ"
-      description="Social Champ is the simplest and powerful social media management tool, allowing users to publish, engage, and analyze content."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +56,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Social Champ</title>
-          <meta name="description" content="Social Champ is the simplest and powerful social media management tool, allowing users to publish, engage, and analyze content." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

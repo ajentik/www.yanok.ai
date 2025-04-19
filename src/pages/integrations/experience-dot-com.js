@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Experience.com"
-      description="Experience.com is a customer experience platform that lets you collect, analyse, and act on customer feedback automatically at every meaningful moment in the customer journey. Our enterprise grade platform helps engage people and power businesses everywhere."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -77,7 +76,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Experience.com</title>
-          <meta name="description" content="Experience.com is a customer experience platform that lets you collect, analyse, and act on customer feedback automatically at every meaningful moment in the customer journey. Our enterprise grade platform helps engage people and power businesses everywhere." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

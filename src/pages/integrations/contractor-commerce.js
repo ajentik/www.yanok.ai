@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Contractor Commerce"
-      description="Contractor Commerce is an app that provides eCommerce functionality on your existing website."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -66,7 +65,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Contractor Commerce</title>
-          <meta name="description" content="Contractor Commerce is an app that provides eCommerce functionality on your existing website." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

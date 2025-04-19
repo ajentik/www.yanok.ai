@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Google My Business"
-      description="Google My Business launched as a way of giving business owners more control of what shows in the search results when someone searches a given business name."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -66,7 +65,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Google My Business</title>
-          <meta name="description" content="Google My Business launched as a way of giving business owners more control of what shows in the search results when someone searches a given business name." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

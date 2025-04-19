@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Alpaca"
-      description="Alpaca is an API for Commission Free stock trading."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -91,7 +90,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Alpaca</title>
-          <meta name="description" content="Alpaca is an API for Commission Free stock trading." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

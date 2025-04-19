@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Planning Center"
-      description="Planning Center is a church management system that helps manage people, services, donations, registrations, and more."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -77,7 +76,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Planning Center</title>
-          <meta name="description" content="Planning Center is a church management system that helps manage people, services, donations, registrations, and more." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

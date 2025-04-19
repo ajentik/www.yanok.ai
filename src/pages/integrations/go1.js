@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Go1"
-      description="Go1 is a leading edtech company with a mission to unlock positive potential through a love for learning. Find exactly what you're looking for with our comprehensive learning and development library featuring hundreds of thousands of resources from the world's best providers."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -126,7 +125,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Go1</title>
-          <meta name="description" content="Go1 is a leading edtech company with a mission to unlock positive potential through a love for learning. Find exactly what you're looking for with our comprehensive learning and development library featuring hundreds of thousands of resources from the world's best providers." />
+          <meta name="description" content={}/>re looking for with our comprehensive learning and development library featuring hundreds of thousands of resources from the world's best providers.' />
         </>
       ),
     },

@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="CATS"
-      description="CATS is an applicant tracking system. Manage the entire tracking process from posting jobs to leading job boards and social networks to generating customized reports. Collect applications with the hosted career portal and find the right candidates with searching capabilities."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -176,7 +175,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>CATS</title>
-          <meta name="description" content="CATS is an applicant tracking system. Manage the entire tracking process from posting jobs to leading job boards and social networks to generating customized reports. Collect applications with the hosted career portal and find the right candidates with searching capabilities." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

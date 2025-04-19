@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="GrassBlade LRS"
-      description="GrassBlade LRS is a Learning Record Store and eLearning Analytics platform used for handling Experience API (xAPI) data."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -61,7 +60,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>GrassBlade LRS</title>
-          <meta name="description" content="GrassBlade LRS is a Learning Record Store and eLearning Analytics platform used for handling Experience API (xAPI) data." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

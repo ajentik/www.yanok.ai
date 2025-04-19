@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="easyfeedback"
-      description="easyfeedback helps you create, share, and manage surveys to collect feedback from employees, customers, or anyone else to get answers to your questions."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +56,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>easyfeedback</title>
-          <meta name="description" content="easyfeedback helps you create, share, and manage surveys to collect feedback from employees, customers, or anyone else to get answers to your questions." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

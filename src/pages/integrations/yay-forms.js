@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Yay! Forms"
-      description="This integration allows users to receive responses from Yay! Forms and connect them to 5000+ apps."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +56,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Yay! Forms</title>
-          <meta name="description" content="This integration allows users to receive responses from Yay! Forms and connect them to 5000+ apps." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

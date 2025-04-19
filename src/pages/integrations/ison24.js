@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="IsOn24"
-      description="IsOn24 is a conversational AI voice assistant that answers your calls just like you, sends text messages, and automates your front office tasks including appointments and lead management."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -71,7 +70,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>IsOn24</title>
-          <meta name="description" content="IsOn24 is a conversational AI voice assistant that answers your calls just like you, sends text messages, and automates your front office tasks including appointments and lead management." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

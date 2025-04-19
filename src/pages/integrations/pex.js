@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="PEX"
-      description="PEX is the only spend management platform that combines a cloud-based application with a Visa prepaid card."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -86,7 +85,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>PEX</title>
-          <meta name="description" content="PEX is the only spend management platform that combines a cloud-based application with a Visa prepaid card." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

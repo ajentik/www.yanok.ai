@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Donately"
-      description="Donately makes online donations dead simple and provides a space for non-profits to manage their donors and online giving activity with ease."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -96,7 +95,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Donately</title>
-          <meta name="description" content="Donately makes online donations dead simple and provides a space for non-profits to manage their donors and online giving activity with ease." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Calendar"
-      description="Calendar is an all-in-one calendar application with personalized scheduling, team scheduling, availability time slots, and analytics. We make scheduling simple and eliminate the back-and-forth emails."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +56,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Calendar</title>
-          <meta name="description" content="Calendar is an all-in-one calendar application with personalized scheduling, team scheduling, availability time slots, and analytics. We make scheduling simple and eliminate the back-and-forth emails." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

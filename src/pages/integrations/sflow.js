@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Sflow"
-      description="Sflow is a project collaboration tool to organize tasks and keep projects on track."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -61,7 +60,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Sflow</title>
-          <meta name="description" content="Sflow is a project collaboration tool to organize tasks and keep projects on track." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Samsara"
-      description="Samsara is a cloud-connected sensor data platform for connected operations."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -86,7 +85,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Samsara</title>
-          <meta name="description" content="Samsara is a cloud-connected sensor data platform for connected operations." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

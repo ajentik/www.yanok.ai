@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="FreshBooks"
-      description="FreshBooks is a cloud accounting software designed exclusively for self-employed professionals and their teams. Send invoices, track expenses, manage your time, and collaborate on projects."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -221,7 +220,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>FreshBooks</title>
-          <meta name="description" content="FreshBooks is a cloud accounting software designed exclusively for self-employed professionals and their teams. Send invoices, track expenses, manage your time, and collaborate on projects." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

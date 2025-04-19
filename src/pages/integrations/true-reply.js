@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="True Reply"
-      description="Create & launch your voice apps to Amazon Alexa and Google Assistant in minutes with True Reply, no technical experience or coding required. Manage and analyze in real-time via your personal web dashboard."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +56,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>True Reply</title>
-          <meta name="description" content="Create & launch your voice apps to Amazon Alexa and Google Assistant in minutes with True Reply, no technical experience or coding required. Manage and analyze in real-time via your personal web dashboard." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

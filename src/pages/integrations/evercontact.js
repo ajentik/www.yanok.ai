@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Evercontact"
-      description="Evercontact turns email signatures into address book contacts, automatically adding new contacts for you and auto-updating existing ones."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +52,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Evercontact</title>
-          <meta name="description" content="Evercontact turns email signatures into address book contacts, automatically adding new contacts for you and auto-updating existing ones." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

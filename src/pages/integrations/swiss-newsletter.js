@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Swiss Newsletter"
-      description="Swiss Newsletter by mailXpert helps small organizations to design and send professional newsletters. Its infrastructure is based in Switzerland."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -91,7 +90,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Swiss Newsletter</title>
-          <meta name="description" content="Swiss Newsletter by mailXpert helps small organizations to design and send professional newsletters. Its infrastructure is based in Switzerland." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

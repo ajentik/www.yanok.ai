@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="bountyblok"
-      description="bountyblok is a gamification platform to integrate gaming mechanics in order to motivate and promote user engagement."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +56,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>bountyblok</title>
-          <meta name="description" content="bountyblok is a gamification platform to integrate gaming mechanics in order to motivate and promote user engagement." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Fing"
-      description="Fing helps you get more from your internet experience and smart home set-up. Connect with Fing Internet Outage Alerts and be in the know when your internet is down."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +56,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Fing</title>
-          <meta name="description" content="Fing helps you get more from your internet experience and smart home set-up. Connect with Fing Internet Outage Alerts and be in the know when your internet is down." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Arlo"
-      description="Arlo is a complete training management solution to promote, sell, and deliver courses and events."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -176,7 +175,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Arlo</title>
-          <meta name="description" content="Arlo is a complete training management solution to promote, sell, and deliver courses and events." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

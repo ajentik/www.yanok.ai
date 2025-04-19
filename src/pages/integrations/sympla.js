@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Sympla"
-      description="Sympla is a platform for events that provides solutions to manage each step of their lifetime."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -67,7 +66,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Sympla</title>
-          <meta name="description" content="Sympla is a platform for events that provides solutions to manage each step of their lifetime." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Gtmhub"
-      description="Gtmhub is a goal management platform with 150+ native data integrations and a great user experience."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -141,7 +140,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Gtmhub</title>
-          <meta name="description" content="Gtmhub is a goal management platform with 150+ native data integrations and a great user experience." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

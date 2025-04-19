@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Fireflies.ai"
-      description="Automatic notes from every meeting. Fireflies dials into your call to take notes. Automate actions by setting custom commands and alerts."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -76,7 +75,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Fireflies.ai</title>
-          <meta name="description" content="Automatic notes from every meeting. Fireflies dials into your call to take notes. Automate actions by setting custom commands and alerts." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

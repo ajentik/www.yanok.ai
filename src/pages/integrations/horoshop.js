@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Horoshop"
-      description="Horoshop is an E-commerce platform that lets you to create powerful Online shops within a week."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -62,7 +61,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Horoshop</title>
-          <meta name="description" content="Horoshop is an E-commerce platform that lets you to create powerful Online shops within a week." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

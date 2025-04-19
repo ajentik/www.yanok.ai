@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Airtable"
-      description="Organize anything with Airtable, a modern database created for everyone. Airtable is a fast and flexible way to create tables to keep track of anything, from sales leads to vacation planning to inventory management."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -96,7 +95,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Airtable</title>
-          <meta name="description" content="Organize anything with Airtable, a modern database created for everyone. Airtable is a fast and flexible way to create tables to keep track of anything, from sales leads to vacation planning to inventory management." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

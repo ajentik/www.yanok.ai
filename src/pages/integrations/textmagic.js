@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="TextMagic SMS"
-      description="TextMagic is a business text-messaging service for sending notifications, alerts, reminders, confirmations and SMS marketing campaigns."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -136,7 +135,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>TextMagic SMS</title>
-          <meta name="description" content="TextMagic is a business text-messaging service for sending notifications, alerts, reminders, confirmations and SMS marketing campaigns." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

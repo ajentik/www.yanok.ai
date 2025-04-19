@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="DeepCrawl"
-      description="DeepCrawl is a comprehensive auditor of website architecture. Run a deep crawl of your site to check hreflang, discover thin content, and pre-test all code releases."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -71,7 +70,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>DeepCrawl</title>
-          <meta name="description" content="DeepCrawl is a comprehensive auditor of website architecture. Run a deep crawl of your site to check hreflang, discover thin content, and pre-test all code releases." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Pipelyne"
-      description="Pipelyne allows you to create questionnaires that will provide your leads with instant estimates, allowing you to generate high quality leads for your business."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +56,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Pipelyne</title>
-          <meta name="description" content="Pipelyne allows you to create questionnaires that will provide your leads with instant estimates, allowing you to generate high quality leads for your business." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

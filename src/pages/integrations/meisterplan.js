@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Meisterplan"
-      description="Meisterplan is a project portfolio management tool that focuses on resource management at the portfolio level and helps you make plans that work."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -156,7 +155,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Meisterplan</title>
-          <meta name="description" content="Meisterplan is a project portfolio management tool that focuses on resource management at the portfolio level and helps you make plans that work." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

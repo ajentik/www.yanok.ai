@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Motimate"
-      description="Motimate is a SAAS-solution making internal communication and corporate training fun and easy."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -126,7 +125,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Motimate</title>
-          <meta name="description" content="Motimate is a SAAS-solution making internal communication and corporate training fun and easy." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Chanty"
-      description="Chanty is a simple AI-powered team chat to make your team super productive. Applets let you automate tasks, free time from switching between multiple apps, and accumulate collaborative efforts in a single place."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -81,7 +80,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Chanty</title>
-          <meta name="description" content="Chanty is a simple AI-powered team chat to make your team super productive. Applets let you automate tasks, free time from switching between multiple apps, and accumulate collaborative efforts in a single place." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="HelpSpot"
-      description="HelpSpot is a web based help desk software tool, making it easy for teams of all sizes to provide amazing customer support."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -76,7 +75,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>HelpSpot</title>
-          <meta name="description" content="HelpSpot is a web based help desk software tool, making it easy for teams of all sizes to provide amazing customer support." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

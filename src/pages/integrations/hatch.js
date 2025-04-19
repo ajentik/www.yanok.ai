@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Hatch"
-      description="Hatch is a conversation messaging platform that allows companies to send text, emails, and voicemails to their customers to set appointments and close more sales."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -71,7 +70,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Hatch</title>
-          <meta name="description" content="Hatch is a conversation messaging platform that allows companies to send text, emails, and voicemails to their customers to set appointments and close more sales." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

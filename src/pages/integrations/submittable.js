@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Submittable"
-      description="Submittable brings your team together so you can collect, collaborate, and manage any application and review process, exactly the way you want."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -92,7 +91,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Submittable</title>
-          <meta name="description" content="Submittable brings your team together so you can collect, collaborate, and manage any application and review process, exactly the way you want." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="ChatBeacon"
-      description="ChatBeacon is a live chat solution for your website, allowing you to monitor your website traffic in real-time, provide customer service and support or capture sale leads. ChatBeacon offers three chat channels: website, SMS and Facebook Chat."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -92,7 +91,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>ChatBeacon</title>
-          <meta name="description" content="ChatBeacon is a live chat solution for your website, allowing you to monitor your website traffic in real-time, provide customer service and support or capture sale leads. ChatBeacon offers three chat channels: website, SMS and Facebook Chat." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

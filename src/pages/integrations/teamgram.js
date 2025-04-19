@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="TeamGram"
-      description="TeamGram is a CRM and collaboration tool that helps businesses close more sales and get more done."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -171,7 +170,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>TeamGram</title>
-          <meta name="description" content="TeamGram is a CRM and collaboration tool that helps businesses close more sales and get more done." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

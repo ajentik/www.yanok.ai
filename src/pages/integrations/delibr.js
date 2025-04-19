@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Delibr"
-      description="End-to-end PM tool that supercharges discovery and validation"
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +56,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Delibr</title>
-          <meta name="description" content="End-to-end PM tool that supercharges discovery and validation" />
+          <meta name="description" content={}/> />
         </>
       ),
     },

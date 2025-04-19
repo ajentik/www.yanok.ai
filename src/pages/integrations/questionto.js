@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Question.to"
-      description="Collect ideas, compliments and issues with our uncomplicated website embed. Users can take video recordings with Loom, or write normal text. No Loom account or extension required."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -66,7 +65,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Question.to</title>
-          <meta name="description" content="Collect ideas, compliments and issues with our uncomplicated website embed. Users can take video recordings with Loom, or write normal text. No Loom account or extension required." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

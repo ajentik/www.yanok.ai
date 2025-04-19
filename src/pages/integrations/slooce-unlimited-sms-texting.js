@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Slooce - Unlimited SMS Texting"
-      description="Business Text Messaging Solutions: sloocetech.com | Unlimited SMS for a Flat Monthly Fee | Scalable | Reliable | Fully Automated"
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +56,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Slooce - Unlimited SMS Texting</title>
-          <meta name="description" content="Business Text Messaging Solutions: sloocetech.com | Unlimited SMS for a Flat Monthly Fee | Scalable | Reliable | Fully Automated" />
+          <meta name="description" content={}/> />
         </>
       ),
     },

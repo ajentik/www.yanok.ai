@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Document360"
-      description="Document360 is a cloud-based help desk solution that enables users in businesses across various industries to create, collaborate and publish self-service knowledge bases for their products."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -76,7 +75,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Document360</title>
-          <meta name="description" content="Document360 is a cloud-based help desk solution that enables users in businesses across various industries to create, collaborate and publish self-service knowledge bases for their products." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

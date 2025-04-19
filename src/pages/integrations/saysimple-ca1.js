@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Saysimple"
-      description="Saysimple is an omni-channel customer communications platform, built to leverage digital customer service from one single workspace."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -71,7 +70,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Saysimple</title>
-          <meta name="description" content="Saysimple is an omni-channel customer communications platform, built to leverage digital customer service from one single workspace." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

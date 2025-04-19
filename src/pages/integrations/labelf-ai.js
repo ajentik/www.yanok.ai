@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Labelf AI"
-      description="Labelf is an AI NLP platform which lets you train your own text classification models from scratch and deploy them in minutes."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -61,7 +60,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Labelf AI</title>
-          <meta name="description" content="Labelf is an AI NLP platform which lets you train your own text classification models from scratch and deploy them in minutes." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

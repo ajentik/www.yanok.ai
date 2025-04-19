@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="iCapture"
-      description="Application with business card capture, badge and bar/QR code scanning, kiosk capture, online/offline functionality, CSV data export, real-time reporting, branching, skip logic."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +52,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>iCapture</title>
-          <meta name="description" content="Application with business card capture, badge and bar/QR code scanning, kiosk capture, online/offline functionality, CSV data export, real-time reporting, branching, skip logic." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

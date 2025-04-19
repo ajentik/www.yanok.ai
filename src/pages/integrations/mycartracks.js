@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="MyCarTracks"
-      description="MyCarTracks is a reliable smartphone-based vehicle tracking service"
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -76,7 +75,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>MyCarTracks</title>
-          <meta name="description" content="MyCarTracks is a reliable smartphone-based vehicle tracking service" />
+          <meta name="description" content={}/> />
         </>
       ),
     },

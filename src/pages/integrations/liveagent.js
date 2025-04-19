@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="LiveAgent"
-      description="LiveAgent is the only customer support app you will ever need. Helpdesk, Ticketing, Automation, Live Chat, Call Center, FAQs, Support Portal, Facebook and Twitter monitoring... Plus, it works well with others like MailChimp, Highrise, AWeber, Google Analytics and 50+ more"
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -81,7 +80,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>LiveAgent</title>
-          <meta name="description" content="LiveAgent is the only customer support app you will ever need. Helpdesk, Ticketing, Automation, Live Chat, Call Center, FAQs, Support Portal, Facebook and Twitter monitoring... Plus, it works well with others like MailChimp, Highrise, AWeber, Google Analytics and 50+ more" />
+          <meta name="description" content={}/> />
         </>
       ),
     },

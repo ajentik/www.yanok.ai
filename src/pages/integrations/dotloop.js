@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Dotloop"
-      description="Dotloop is the complete real estate transaction management solution that empowers agents and brokers to get deals done."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -61,7 +60,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Dotloop</title>
-          <meta name="description" content="Dotloop is the complete real estate transaction management solution that empowers agents and brokers to get deals done." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

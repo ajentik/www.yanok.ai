@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="EvaluAgent"
-      description="EvaluAgent provides everything you need to evaluate, coach and engage agents. This app allows you to view zendesk tickets that have been evaluated inside evaluation and have instant access to the results"
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +56,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>EvaluAgent</title>
-          <meta name="description" content="EvaluAgent provides everything you need to evaluate, coach and engage agents. This app allows you to view zendesk tickets that have been evaluated inside evaluation and have instant access to the results" />
+          <meta name="description" content={}/> />
         </>
       ),
     },

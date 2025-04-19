@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="MiiTel"
-      description="MiiTel is an AI-powered IP phone. With MiiTel, you will be to accomplish the following: "Increase your sales", "Achieve self-coaching", and "Can make calls from home"."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -72,7 +71,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>MiiTel</title>
-          <meta name="description" content="MiiTel is an AI-powered IP phone. With MiiTel, you will be to accomplish the following: "Increase your sales", "Achieve self-coaching", and "Can make calls from home"." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

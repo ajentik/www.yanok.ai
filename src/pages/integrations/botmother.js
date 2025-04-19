@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Botmother"
-      description="Wordpress for chat bots. Botmother helps to collect useful business bots for 1 day for several instant messengers without programming in the visual editor."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +52,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Botmother</title>
-          <meta name="description" content="Wordpress for chat bots. Botmother helps to collect useful business bots for 1 day for several instant messengers without programming in the visual editor." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

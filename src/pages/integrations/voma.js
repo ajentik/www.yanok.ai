@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Voma"
-      description="Voma is a payment platform that enables creators to sell online courses, membership sites, digital products, paid email newsletters, or monthly subscriptions."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +56,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Voma</title>
-          <meta name="description" content="Voma is a payment platform that enables creators to sell online courses, membership sites, digital products, paid email newsletters, or monthly subscriptions." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

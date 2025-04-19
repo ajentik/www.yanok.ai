@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Foxit esign"
-      description="Foxit eSign is an end-to-end cloud-based esignature solution that is cost-effective, comprehensive, and legally binding with Templates, Bulk Signing, Online Forms, APIs. Foxit eSign also offers convenience of signing from within Foxit Desktop and Cloud PDF."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -86,7 +85,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Foxit esign</title>
-          <meta name="description" content="Foxit eSign is an end-to-end cloud-based esignature solution that is cost-effective, comprehensive, and legally binding with Templates, Bulk Signing, Online Forms, APIs. Foxit eSign also offers convenience of signing from within Foxit Desktop and Cloud PDF." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

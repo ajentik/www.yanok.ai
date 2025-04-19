@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="CivicEngage"
-      description="CivicEngage is a local-government website design and hosting platform. This platform is used by 2,500+ clients and 55,000+ local government users. CivicEngage is one product in the larger CivicPlus integrated technology platform for local government."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -71,7 +70,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>CivicEngage</title>
-          <meta name="description" content="CivicEngage is a local-government website design and hosting platform. This platform is used by 2,500+ clients and 55,000+ local government users. CivicEngage is one product in the larger CivicPlus integrated technology platform for local government." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Uplisting"
-      description="Uplisting is a platform for short-term rental property managers to optimise bookings and manage operations across multiple channels and multiple people."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -82,7 +81,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Uplisting</title>
-          <meta name="description" content="Uplisting is a platform for short-term rental property managers to optimise bookings and manage operations across multiple channels and multiple people." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

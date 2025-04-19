@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Gorgias.Io"
-      description="Helpdesk designed for Shopify stores. Provide multichannel customer service from a single app. Gain productivity with automated responses to common requests."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +52,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Gorgias.Io</title>
-          <meta name="description" content="Helpdesk designed for Shopify stores. Provide multichannel customer service from a single app. Gain productivity with automated responses to common requests." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

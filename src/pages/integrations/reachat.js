@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Reach.at"
-      description="Reach.at is a conversational landing page builder. Replace your traditional contact us web forms with a high converting reach.at/you page."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +56,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Reach.at</title>
-          <meta name="description" content="Reach.at is a conversational landing page builder. Replace your traditional contact us web forms with a high converting reach.at/you page." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

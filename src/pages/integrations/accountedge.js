@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="AccountEdge"
-      description="AccountEdge Connect is a web-companion tool for AccountEdge; Premium Mac and Windows accounting for small businesses in the US and Canada."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -116,7 +115,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>AccountEdge</title>
-          <meta name="description" content="AccountEdge Connect is a web-companion tool for AccountEdge; Premium Mac and Windows accounting for small businesses in the US and Canada." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

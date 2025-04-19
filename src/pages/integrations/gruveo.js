@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Gruveo"
-      description="Gruveo makes it possible to make video and voice calls right in your browser, without having to install software or register for an account."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +56,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Gruveo</title>
-          <meta name="description" content="Gruveo makes it possible to make video and voice calls right in your browser, without having to install software or register for an account." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

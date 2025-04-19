@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Pneumatic"
-      description="Pneumatic is first workflow service created especially for small teams."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -76,7 +75,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Pneumatic</title>
-          <meta name="description" content="Pneumatic is first workflow service created especially for small teams." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

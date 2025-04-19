@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Clio"
-      description="Clio is a practice management platform that helps lawyers work more efficiently by making it easy to do tasks like tracking time, managing matters, and generating invoices."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -246,7 +245,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Clio</title>
-          <meta name="description" content="Clio is a practice management platform that helps lawyers work more efficiently by making it easy to do tasks like tracking time, managing matters, and generating invoices." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

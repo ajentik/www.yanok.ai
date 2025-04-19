@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="VoiceMailTel Meet"
-      description="VoiceMailTel Meet is a video conferencing service that replicates your office environment with custom settings for quick conference creation."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -71,7 +70,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>VoiceMailTel Meet</title>
-          <meta name="description" content="VoiceMailTel Meet is a video conferencing service that replicates your office environment with custom settings for quick conference creation." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

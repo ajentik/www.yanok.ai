@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Buzz"
-      description="Powerful Deal-Closing Sales Engagement Software. Maximize your reach with our scalable, multi-channel engagement platform driven by real data, customized strategy, and full automation."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -77,7 +76,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Buzz</title>
-          <meta name="description" content="Powerful Deal-Closing Sales Engagement Software. Maximize your reach with our scalable, multi-channel engagement platform driven by real data, customized strategy, and full automation." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

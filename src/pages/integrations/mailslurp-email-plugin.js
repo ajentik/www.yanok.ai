@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="MailSlurp Email Plugin"
-      description="MailSlurp is an API to generate test email accounts for sending and receiving real emails in tests."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -86,7 +85,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>MailSlurp Email Plugin</title>
-          <meta name="description" content="MailSlurp is an API to generate test email accounts for sending and receiving real emails in tests." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

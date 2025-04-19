@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Hoopla"
-      description="Hoopla is a Sales Motivation Platform. Create an engaged culture with real-timegoal progress, friendly competition, news,and recognition."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +52,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Hoopla</title>
-          <meta name="description" content="Hoopla is a Sales Motivation Platform. Create an engaged culture with real-timegoal progress, friendly competition, news,and recognition." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="HelpdeskAdvanced"
-      description="HelpdeskAdvanced is an ITIL v3 compliant web- and mobile-based solution governing services across all organisational areas where Service Management is a key factor in the successful achievement of your company’s objectives."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -151,7 +150,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>HelpdeskAdvanced</title>
-          <meta name="description" content="HelpdeskAdvanced is an ITIL v3 compliant web- and mobile-based solution governing services across all organisational areas where Service Management is a key factor in the successful achievement of your company’s objectives." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

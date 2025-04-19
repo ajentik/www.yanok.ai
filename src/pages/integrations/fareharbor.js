@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="FareHarbor"
-      description="FareHarbor is the leading global online reservation platform for the tour and activity industry. FareHarbor empowers tour operators to better serve their customers while increasing online bookings and revenue."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -67,7 +66,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>FareHarbor</title>
-          <meta name="description" content="FareHarbor is the leading global online reservation platform for the tour and activity industry. FareHarbor empowers tour operators to better serve their customers while increasing online bookings and revenue." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="webinar.net (APAC)"
-      description="webinar.net is the first online presentation platform fully hosted in the cloud. This architecture allows our customers to reach very large audiences without capacity concerns."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -61,7 +60,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>webinar.net (APAC)</title>
-          <meta name="description" content="webinar.net is the first online presentation platform fully hosted in the cloud. This architecture allows our customers to reach very large audiences without capacity concerns." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

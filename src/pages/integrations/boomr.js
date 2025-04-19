@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Boomr"
-      description="Boomr's employee time tracking, timesheets, and time clock app makes it easy to accurately track & manage your workforce, payroll & more."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +52,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Boomr</title>
-          <meta name="description" content="Boomr's employee time tracking, timesheets, and time clock app makes it easy to accurately track & manage your workforce, payroll & more." />
+          <meta name="description" content={}/>s employee time tracking, timesheets, and time clock app makes it easy to accurately track & manage your workforce, payroll & more.' />
         </>
       ),
     },

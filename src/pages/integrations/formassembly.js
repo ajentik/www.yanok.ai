@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="FormAssembly"
-      description="FormAssembly is a web-based surveying platform that helps businesses create web forms and collect data."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +52,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>FormAssembly</title>
-          <meta name="description" content="FormAssembly is a web-based surveying platform that helps businesses create web forms and collect data." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

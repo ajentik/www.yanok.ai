@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Siteglide"
-      description="Siteglide is a Digital Experience Platform (DXP) that helps Agencies build & manage Websites, Portals, Marketplaces & Bespoke Applications."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -176,7 +175,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Siteglide</title>
-          <meta name="description" content="Siteglide is a Digital Experience Platform (DXP) that helps Agencies build & manage Websites, Portals, Marketplaces & Bespoke Applications." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

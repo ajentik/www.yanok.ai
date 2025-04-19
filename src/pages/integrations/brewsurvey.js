@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="BrewSurvey"
-      description="BrewSurvey is an online and offline data collection with weblinks and mobile survey app for collecting customer feedback, conducting market research & lead capture without internet connection anytime, anywhere."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +56,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>BrewSurvey</title>
-          <meta name="description" content="BrewSurvey is an online and offline data collection with weblinks and mobile survey app for collecting customer feedback, conducting market research & lead capture without internet connection anytime, anywhere." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

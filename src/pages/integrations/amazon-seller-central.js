@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Amazon Seller Central"
-      description="Amazon Seller Central enables both individuals and businesses to sell their products and inventory on Amazon.com (US accounts only)."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +56,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Amazon Seller Central</title>
-          <meta name="description" content="Amazon Seller Central enables both individuals and businesses to sell their products and inventory on Amazon.com (US accounts only)." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

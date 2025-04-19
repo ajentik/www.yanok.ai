@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="OnStrategy"
-      description="OnStrategy is a strategic performance software tool you can use to build your corporate strategy and manage and implement your plan."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +56,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>OnStrategy</title>
-          <meta name="description" content="OnStrategy is a strategic performance software tool you can use to build your corporate strategy and manage and implement your plan." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

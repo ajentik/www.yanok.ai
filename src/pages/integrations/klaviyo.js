@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Klaviyo"
-      description="Klaviyo is an email marketing platform. Powered by data, built for ecommerce and web businesses."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -86,7 +85,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Klaviyo</title>
-          <meta name="description" content="Klaviyo is an email marketing platform. Powered by data, built for ecommerce and web businesses." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

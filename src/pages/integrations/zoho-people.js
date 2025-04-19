@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Zoho People"
-      description="Zoho People is an online HR management software which helps you automate all your HR processes efficiently."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -91,7 +90,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Zoho People</title>
-          <meta name="description" content="Zoho People is an online HR management software which helps you automate all your HR processes efficiently." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

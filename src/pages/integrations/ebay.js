@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="eBay"
-      description="eBay is a premier auction site that allows anyone to buy and sell goods, from individuals to retailers."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -66,7 +65,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>eBay</title>
-          <meta name="description" content="eBay is a premier auction site that allows anyone to buy and sell goods, from individuals to retailers." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

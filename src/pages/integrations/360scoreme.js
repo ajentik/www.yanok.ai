@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="360Score.me"
-      description="360Score.me is a 360 degree review and company engagement survey system that empowers organizations to collect anonymous employee feedback."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +56,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>360Score.me</title>
-          <meta name="description" content="360Score.me is a 360 degree review and company engagement survey system that empowers organizations to collect anonymous employee feedback." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

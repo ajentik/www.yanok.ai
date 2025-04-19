@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Global IntelliSystems"
-      description="Global IntelliSystems is an email, mobile, and text marketing system."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -101,7 +100,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Global IntelliSystems</title>
-          <meta name="description" content="Global IntelliSystems is an email, mobile, and text marketing system." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

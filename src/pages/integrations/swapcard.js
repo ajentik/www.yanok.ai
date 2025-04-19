@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Swapcard"
-      description="Swapcard is an event platform for virtual, hybrid and in-person events."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -146,7 +145,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Swapcard</title>
-          <meta name="description" content="Swapcard is an event platform for virtual, hybrid and in-person events." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="TextMe"
-      description="Free unlimited texts, calling, and pic messaging to any phone in US, Canada and 40 countries in the World."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +52,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>TextMe</title>
-          <meta name="description" content="Free unlimited texts, calling, and pic messaging to any phone in US, Canada and 40 countries in the World." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

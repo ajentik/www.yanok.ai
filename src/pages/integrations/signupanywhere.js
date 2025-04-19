@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="SignUpAnywhere"
-      description="SignUpAnywhere allows you and your team to capture email addresses and leads even when you’re offline."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +56,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>SignUpAnywhere</title>
-          <meta name="description" content="SignUpAnywhere allows you and your team to capture email addresses and leads even when you’re offline." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="CMT Beta"
-      description="CMT Beta is the Facebook Business App store alpha test app to connect third-party data to Facebook events manager + CMT destination"
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -72,7 +71,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>CMT Beta</title>
-          <meta name="description" content="CMT Beta is the Facebook Business App store alpha test app to connect third-party data to Facebook events manager + CMT destination" />
+          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="hellonext"
-      description="Gather feedback from your users in one place and analyze the next thing to build. Listen not only to your guts but also to your user voices."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -101,7 +100,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>hellonext</title>
-          <meta name="description" content="Gather feedback from your users in one place and analyze the next thing to build. Listen not only to your guts but also to your user voices." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

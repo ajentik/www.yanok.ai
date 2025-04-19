@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="eSignAnyWhere"
-      description="eSignAnyWhere is a digital transaction management that helps users to sign digital documents"
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -66,7 +65,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>eSignAnyWhere</title>
-          <meta name="description" content="eSignAnyWhere is a digital transaction management that helps users to sign digital documents" />
+          <meta name="description" content={}/> />
         </>
       ),
     },

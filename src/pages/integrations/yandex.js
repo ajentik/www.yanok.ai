@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Yandex"
-      description="Yandex specializes in Internet-related products and services, including search and information services, eCommerce, transportation, navigation, mobile applications, and online advertising."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +52,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Yandex</title>
-          <meta name="description" content="Yandex specializes in Internet-related products and services, including search and information services, eCommerce, transportation, navigation, mobile applications, and online advertising." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

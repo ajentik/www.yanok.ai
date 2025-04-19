@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="PagePixels Screenshots"
-      description="PagePixels provides free, immediate screenshots, scheduled screenshots, and multi-step screenshots (complete forms, login to websites, etc)."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -76,7 +75,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>PagePixels Screenshots</title>
-          <meta name="description" content="PagePixels provides free, immediate screenshots, scheduled screenshots, and multi-step screenshots (complete forms, login to websites, etc)." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

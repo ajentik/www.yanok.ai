@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Formsquash"
-      description="Formsquash is a form processing service with a dead-simple API. You point your form to us, we notify you every time a form is filled."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +56,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Formsquash</title>
-          <meta name="description" content="Formsquash is a form processing service with a dead-simple API. You point your form to us, we notify you every time a form is filled." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

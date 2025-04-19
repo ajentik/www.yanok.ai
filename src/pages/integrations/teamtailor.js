@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Teamtailor"
-      description="Teamtailor's intuitive automation helps users manage candidates and the entire recruitment process, as well as schedule and keep track of activities, book interviews and make notes about candidates."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -101,7 +100,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Teamtailor</title>
-          <meta name="description" content="Teamtailor's intuitive automation helps users manage candidates and the entire recruitment process, as well as schedule and keep track of activities, book interviews and make notes about candidates." />
+          <meta name="description" content={}/>s intuitive automation helps users manage candidates and the entire recruitment process, as well as schedule and keep track of activities, book interviews and make notes about candidates.' />
         </>
       ),
     },

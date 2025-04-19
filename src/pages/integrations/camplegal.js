@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="CampLegal"
-      description="CampLegal is a practice management software for LawFirms."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +56,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>CampLegal</title>
-          <meta name="description" content="CampLegal is a practice management software for LawFirms." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

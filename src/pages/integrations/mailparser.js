@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Mailparser"
-      description="Send emails to Mailparser, get structured data in return. Leads, Contact Forms, eCommerce, Shipping Notes, Attachments, Customer Info & more."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +56,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Mailparser</title>
-          <meta name="description" content="Send emails to Mailparser, get structured data in return. Leads, Contact Forms, eCommerce, Shipping Notes, Attachments, Customer Info & more." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

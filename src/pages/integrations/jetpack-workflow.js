@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Jetpack Workflow"
-      description="Workflow Software Built To Help Your Growing Firm"
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -86,7 +85,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Jetpack Workflow</title>
-          <meta name="description" content="Workflow Software Built To Help Your Growing Firm" />
+          <meta name="description" content={}/> />
         </>
       ),
     },

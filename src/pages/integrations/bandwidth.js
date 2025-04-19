@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Bandwidth"
-      description="With a nationwide all-IP Voice network, Bandwidth powers leading brands that are changing the way people communicate, connect and do business."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +52,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Bandwidth</title>
-          <meta name="description" content="With a nationwide all-IP Voice network, Bandwidth powers leading brands that are changing the way people communicate, connect and do business." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

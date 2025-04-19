@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Dovetail"
-      description="Dovetail lets you organize user research data, analyze it together, and share insights with your team. Understand your customers with Dovetail and build better things."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -81,7 +80,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Dovetail</title>
-          <meta name="description" content="Dovetail lets you organize user research data, analyze it together, and share insights with your team. Understand your customers with Dovetail and build better things." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="slyText"
-      description="SlyText can send SMS messages to individual contacts or to a group of contacts."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +56,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>slyText</title>
-          <meta name="description" content="SlyText can send SMS messages to individual contacts or to a group of contacts." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

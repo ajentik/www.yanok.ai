@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="GoTo Training"
-      description="GoTo Training by LogMeIn is an online training software that enables enterprises and individuals to provide interactive training sessions to both employees and customers, regardless of location."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -66,7 +65,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>GoTo Training</title>
-          <meta name="description" content="GoTo Training by LogMeIn is an online training software that enables enterprises and individuals to provide interactive training sessions to both employees and customers, regardless of location." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

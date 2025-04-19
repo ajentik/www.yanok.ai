@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="GrowSurf"
-      description="GrowSurf is referral software for B2C and B2B tech companies."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -67,7 +66,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>GrowSurf</title>
-          <meta name="description" content="GrowSurf is referral software for B2C and B2B tech companies." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

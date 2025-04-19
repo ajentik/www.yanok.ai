@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Searchie"
-      description="Searchie transforms your video and audio content into a powerful search experience."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -136,7 +135,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Searchie</title>
-          <meta name="description" content="Searchie transforms your video and audio content into a powerful search experience." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

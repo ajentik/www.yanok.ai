@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="TeleRetro"
-      description="TeleRetro is remote collaboration tool to run Agile retrospectives to help teams evaluate and improve their ways of working."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +56,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>TeleRetro</title>
-          <meta name="description" content="TeleRetro is remote collaboration tool to run Agile retrospectives to help teams evaluate and improve their ways of working." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

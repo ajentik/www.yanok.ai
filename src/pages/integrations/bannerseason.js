@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="BannerSeason"
-      description="BannerSeason is a platform that enables you to Send gifts to WOW your customers with real personalized tangible cards and gifts in the mail."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +56,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>BannerSeason</title>
-          <meta name="description" content="BannerSeason is a platform that enables you to Send gifts to WOW your customers with real personalized tangible cards and gifts in the mail." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

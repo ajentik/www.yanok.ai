@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Sendlane"
-      description="Sendlane is an email automation platform that allows you to connect and communicate with your subscribers and customers."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -71,7 +70,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Sendlane</title>
-          <meta name="description" content="Sendlane is an email automation platform that allows you to connect and communicate with your subscribers and customers." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Nexkey"
-      description="Nexkey, enabling industry leading and cost effective access control."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -96,7 +95,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Nexkey</title>
-          <meta name="description" content="Nexkey, enabling industry leading and cost effective access control." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

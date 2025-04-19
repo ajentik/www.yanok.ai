@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Always On Time (AOT.plus)"
-      description="Always On Time is a powerful scheduling solution. Use AOT to manage online bookings, memberships, services, staff, coupons, multiple locations, and more."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -82,7 +81,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Always On Time (AOT.plus)</title>
-          <meta name="description" content="Always On Time is a powerful scheduling solution. Use AOT to manage online bookings, memberships, services, staff, coupons, multiple locations, and more." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

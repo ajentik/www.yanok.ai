@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="talkSpirit"
-      description="talkSpirit is a digital workplace for teams and organizations. Users can chat with anyone in their network, they can share information, photos, videos and files through open and private groups."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +56,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>talkSpirit</title>
-          <meta name="description" content="talkSpirit is a digital workplace for teams and organizations. Users can chat with anyone in their network, they can share information, photos, videos and files through open and private groups." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

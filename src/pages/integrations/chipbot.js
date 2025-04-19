@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="ChipBot"
-      description="ChipBot is a knowledge base bot for your website."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -72,7 +71,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>ChipBot</title>
-          <meta name="description" content="ChipBot is a knowledge base bot for your website." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

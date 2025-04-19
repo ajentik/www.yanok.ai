@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Vonigo"
-      description="Vonigo provides SaaS business management software for mobile services companies."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +52,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Vonigo</title>
-          <meta name="description" content="Vonigo provides SaaS business management software for mobile services companies." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

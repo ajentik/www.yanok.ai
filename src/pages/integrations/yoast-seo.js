@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Yoast SEO"
-      description="Yoast SEO is a plugin that improves your WordPress SEO: Write better content and have a fully optimized WordPress site. Connecting the Premium version of Yoast SEO means you can instantly share your published posts with 2000+ destinations such as Twitter, Facebook, and more."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +56,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Yoast SEO</title>
-          <meta name="description" content="Yoast SEO is a plugin that improves your WordPress SEO: Write better content and have a fully optimized WordPress site. Connecting the Premium version of Yoast SEO means you can instantly share your published posts with 2000+ destinations such as Twitter, Facebook, and more." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

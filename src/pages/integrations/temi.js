@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Temi"
-      description="Temi is an audio transcription service that uses computers to transcribe English audio or video into text. We also offer rich editing tools that you can use to annotate and edit your transcripts."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -61,7 +60,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Temi</title>
-          <meta name="description" content="Temi is an audio transcription service that uses computers to transcribe English audio or video into text. We also offer rich editing tools that you can use to annotate and edit your transcripts." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

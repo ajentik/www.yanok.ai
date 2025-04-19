@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="MailerSend"
-      description="MailerSend is a powerful transactional email system built for developers but designed so non-tech teams can contribute without coding."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -121,7 +120,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>MailerSend</title>
-          <meta name="description" content="MailerSend is a powerful transactional email system built for developers but designed so non-tech teams can contribute without coding." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

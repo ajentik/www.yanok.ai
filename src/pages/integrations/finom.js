@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="FINOM"
-      description="FINOM is a financial service that combines a banking business account, invoicing, and accounting software integration"
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -106,7 +105,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>FINOM</title>
-          <meta name="description" content="FINOM is a financial service that combines a banking business account, invoicing, and accounting software integration" />
+          <meta name="description" content={}/> />
         </>
       ),
     },

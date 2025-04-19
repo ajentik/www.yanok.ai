@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="X-Cart"
-      description="X-Cart is an all-in-one open source eCommerce solution that can be used to sell physical and digital goods, services, rentals, and subscriptions."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -101,7 +100,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>X-Cart</title>
-          <meta name="description" content="X-Cart is an all-in-one open source eCommerce solution that can be used to sell physical and digital goods, services, rentals, and subscriptions." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

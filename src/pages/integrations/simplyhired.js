@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="SimplyHired"
-      description="SimplyHired is a hiring service that find, matches, and delivers the best jobseekers on the market."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -62,7 +61,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>SimplyHired</title>
-          <meta name="description" content="SimplyHired is a hiring service that find, matches, and delivers the best jobseekers on the market." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

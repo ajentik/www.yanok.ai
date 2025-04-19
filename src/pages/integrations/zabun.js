@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Zabun"
-      description="Zabun is an online CRM for real-estate to maintain your properties, contacts, requests, tasks and other data and connections."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -141,7 +140,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Zabun</title>
-          <meta name="description" content="Zabun is an online CRM for real-estate to maintain your properties, contacts, requests, tasks and other data and connections." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

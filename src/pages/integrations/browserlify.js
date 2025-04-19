@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Browserlify"
-      description="Browserlify is Headless chrome service for PDF generation and web scraping."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +56,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Browserlify</title>
-          <meta name="description" content="Browserlify is Headless chrome service for PDF generation and web scraping." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Otixo"
-      description="Otixo is a platform for team collaboration: everything in one place, with instant messaging, file sharing, search function and cloud access."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -61,7 +60,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Otixo</title>
-          <meta name="description" content="Otixo is a platform for team collaboration: everything in one place, with instant messaging, file sharing, search function and cloud access." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

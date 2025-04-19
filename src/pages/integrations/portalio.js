@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Portal.io"
-      description="Portal is a service for professional installers. It aggregates industry product data and pricing, allowing pros to easily build proposals, collect customer payments and send purchase orders to suppliers."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -67,7 +66,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Portal.io</title>
-          <meta name="description" content="Portal is a service for professional installers. It aggregates industry product data and pricing, allowing pros to easily build proposals, collect customer payments and send purchase orders to suppliers." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

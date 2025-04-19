@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Zoho ShowTime"
-      description="Zoho ShowTime is a web-conferencing and an online virtual training tool that lets trainers engage with their attendees to drive self-improvement through feedback, and showcase their delivery skills on a secure cloud platform. It is available on the web and as a mobile app."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -81,7 +80,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Zoho ShowTime</title>
-          <meta name="description" content="Zoho ShowTime is a web-conferencing and an online virtual training tool that lets trainers engage with their attendees to drive self-improvement through feedback, and showcase their delivery skills on a secure cloud platform. It is available on the web and as a mobile app." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

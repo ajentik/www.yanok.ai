@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Agendize"
-      description="Agendize is a customer engagement platform that offers easy appointment booking, contact management, live chat and call-tracking."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -181,7 +180,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Agendize</title>
-          <meta name="description" content="Agendize is a customer engagement platform that offers easy appointment booking, contact management, live chat and call-tracking." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

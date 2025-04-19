@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Survicate"
-      description="Survicate is a customer feedback software that offers versatile survey solutions and a platform for cross-channel feedback management."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -66,7 +65,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Survicate</title>
-          <meta name="description" content="Survicate is a customer feedback software that offers versatile survey solutions and a platform for cross-channel feedback management." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

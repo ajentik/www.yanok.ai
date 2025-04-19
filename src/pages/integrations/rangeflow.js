@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="RangeFlow"
-      description="Automate your email outreach without stepping out of your favorite apps — Google Sheets and Gmail!"
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -111,7 +110,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>RangeFlow</title>
-          <meta name="description" content="Automate your email outreach without stepping out of your favorite apps — Google Sheets and Gmail!" />
+          <meta name="description" content={}/> />
         </>
       ),
     },

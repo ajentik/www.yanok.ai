@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="FreeScout"
-      description="FreeScout is the super lightweight free open source helpdesk and shared inbox built with PHP."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -61,7 +60,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>FreeScout</title>
-          <meta name="description" content="FreeScout is the super lightweight free open source helpdesk and shared inbox built with PHP." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Linkseller"
-      description="Linkseller helps teams manage leads and accelerate closure simply and intelligently. A Linkseller é um CRM focado em simplicidade e versatilidade para se ajustar a sua empresa. Ajudamos equipes de vendas a gerenciar leads e acelerar o fechamento dos negócios. E acompanhar a produtividade da sua equipe."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -101,7 +100,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Linkseller</title>
-          <meta name="description" content="Linkseller helps teams manage leads and accelerate closure simply and intelligently. A Linkseller é um CRM focado em simplicidade e versatilidade para se ajustar a sua empresa. Ajudamos equipes de vendas a gerenciar leads e acelerar o fechamento dos negócios. E acompanhar a produtividade da sua equipe." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

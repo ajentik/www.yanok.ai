@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Box"
-      description="Box lets you keep all your businesses files in one place for simple online collaboration."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -121,7 +120,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Box</title>
-          <meta name="description" content="Box lets you keep all your businesses files in one place for simple online collaboration." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

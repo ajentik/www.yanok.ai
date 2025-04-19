@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="FormBackend"
-      description="FormBackend is a tool to handle everything related to forms on your website."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +56,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>FormBackend</title>
-          <meta name="description" content="FormBackend is a tool to handle everything related to forms on your website." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

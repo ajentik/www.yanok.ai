@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Crexendo"
-      description="Crexendo is a full-service cloud solutions provider that delivers critical voice and data technology infrastructure services to Start-up, SMB and Enterprise markets."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -66,7 +65,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Crexendo</title>
-          <meta name="description" content="Crexendo is a full-service cloud solutions provider that delivers critical voice and data technology infrastructure services to Start-up, SMB and Enterprise markets." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

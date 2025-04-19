@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Mightycause"
-      description="Mightycause is a fundraising software for the modern nonprofit."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -82,7 +81,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Mightycause</title>
-          <meta name="description" content="Mightycause is a fundraising software for the modern nonprofit." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="BayEngage"
-      description="BayEngage is a customer engagement platform that helps businesses of all sizes and types scale and automate their marketing efforts."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -81,7 +80,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>BayEngage</title>
-          <meta name="description" content="BayEngage is a customer engagement platform that helps businesses of all sizes and types scale and automate their marketing efforts." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

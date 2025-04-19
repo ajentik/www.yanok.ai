@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Elfsquad Product Configurator"
-      description="Integrate your existing workflow with the Elfsquad Product Configurator."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -101,7 +100,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Elfsquad Product Configurator</title>
-          <meta name="description" content="Integrate your existing workflow with the Elfsquad Product Configurator." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

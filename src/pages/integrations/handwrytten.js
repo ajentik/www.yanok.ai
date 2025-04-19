@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Handwrytten"
-      description="Handwrytten is a way to automatically send real cards and notes written in pen and ink."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -101,7 +100,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Handwrytten</title>
-          <meta name="description" content="Handwrytten is a way to automatically send real cards and notes written in pen and ink." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

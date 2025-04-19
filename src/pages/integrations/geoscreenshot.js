@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="GeoScreenshot"
-      description="GeoScreenshot is a developer tool that lets you capture a screenshot of your website from many geo-locations around the world."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +56,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>GeoScreenshot</title>
-          <meta name="description" content="GeoScreenshot is a developer tool that lets you capture a screenshot of your website from many geo-locations around the world." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

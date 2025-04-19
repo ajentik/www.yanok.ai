@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="FunnelFLARE"
-      description="FunnelFLARE is a sales process automation platform that helps sales people sell faster by automating the common tasks that sap away profitable selling time."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -81,7 +80,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>FunnelFLARE</title>
-          <meta name="description" content="FunnelFLARE is a sales process automation platform that helps sales people sell faster by automating the common tasks that sap away profitable selling time." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

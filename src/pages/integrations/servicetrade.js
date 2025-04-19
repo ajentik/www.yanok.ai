@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="ServiceTrade"
-      description="ServiceTrade is a customer service and sales application for commercial service contractors. Convert more of your contract work into repair revenue. Educate customers about the work you did for them with media-rich online service reports. Manage your service operations and connect your customer service data with other business applications."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -306,7 +305,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>ServiceTrade</title>
-          <meta name="description" content="ServiceTrade is a customer service and sales application for commercial service contractors. Convert more of your contract work into repair revenue. Educate customers about the work you did for them with media-rich online service reports. Manage your service operations and connect your customer service data with other business applications." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Amazon SES"
-      description="Amazon Simple Email Service is a scalable and cost-effective email sending service tailored for both bulk and transactional for both businesses and developers."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -61,7 +60,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Amazon SES</title>
-          <meta name="description" content="Amazon Simple Email Service is a scalable and cost-effective email sending service tailored for both bulk and transactional for both businesses and developers." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="AccessAlly"
-      description="AccessAlly makes it easy to build courses, memberships, and digital products on Wordpress so you have the power and flexibility you need to sell more, teach better, and engage longer."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -72,7 +71,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>AccessAlly</title>
-          <meta name="description" content="AccessAlly makes it easy to build courses, memberships, and digital products on Wordpress so you have the power and flexibility you need to sell more, teach better, and engage longer." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

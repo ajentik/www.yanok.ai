@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="VROMO"
-      description="VROMO is a freemium delivery management software providing delivery providers a dashboard to view and manage their orders, and a driver's app."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -101,7 +100,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>VROMO</title>
-          <meta name="description" content="VROMO is a freemium delivery management software providing delivery providers a dashboard to view and manage their orders, and a driver's app." />
+          <meta name="description" content={}/>s app.' />
         </>
       ),
     },

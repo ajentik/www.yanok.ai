@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Zeda.io"
-      description="Zeda.io is a product management tool that helps product teams achieve maximum efficiency by helping them to define, manage, and collaborate better on their products."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -96,7 +95,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Zeda.io</title>
-          <meta name="description" content="Zeda.io is a product management tool that helps product teams achieve maximum efficiency by helping them to define, manage, and collaborate better on their products." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

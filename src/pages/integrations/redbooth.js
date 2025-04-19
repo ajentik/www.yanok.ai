@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Redbooth"
-      description="Redbooth is project management software for highly productive teams, including marketing departments, creative agencies, and more. Built for collaboration on complex projects, and optimized for doing great work."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -111,7 +110,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Redbooth</title>
-          <meta name="description" content="Redbooth is project management software for highly productive teams, including marketing departments, creative agencies, and more. Built for collaboration on complex projects, and optimized for doing great work." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

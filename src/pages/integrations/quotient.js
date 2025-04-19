@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Quotient"
-      description="Quotient is online quoting that enables your customer to pick-and-choose, ask a question, and ultimately accept your offer."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -86,7 +85,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Quotient</title>
-          <meta name="description" content="Quotient is online quoting that enables your customer to pick-and-choose, ask a question, and ultimately accept your offer." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

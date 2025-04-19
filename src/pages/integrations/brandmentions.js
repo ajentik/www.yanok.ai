@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="BrandMentions"
-      description="BrandMentions is a monitoring tool that helps you find every relevant mention about anyone or anything in a heartbeat."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +56,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>BrandMentions</title>
-          <meta name="description" content="BrandMentions is a monitoring tool that helps you find every relevant mention about anyone or anything in a heartbeat." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

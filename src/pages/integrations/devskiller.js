@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="DevSkiller"
-      description="DevSkiller is a developer screening and online interview platform powered by RealLifeTesting™ methodology. The tool helps you find developers with the right skill set, shortening significantly your time to hire."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -81,7 +80,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>DevSkiller</title>
-          <meta name="description" content="DevSkiller is a developer screening and online interview platform powered by RealLifeTesting™ methodology. The tool helps you find developers with the right skill set, shortening significantly your time to hire." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

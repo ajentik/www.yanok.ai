@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Capssion"
-      description="Capssion is a marketplace connecting brands to content creators to run campaigns on social media."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -62,7 +61,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Capssion</title>
-          <meta name="description" content="Capssion is a marketplace connecting brands to content creators to run campaigns on social media." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

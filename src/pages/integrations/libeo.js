@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Libeo"
-      description="Libeo is the first platform to manage and pay supplier invoices in one-click for SMBs and chartered accountants in Europe."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +56,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Libeo</title>
-          <meta name="description" content="Libeo is the first platform to manage and pay supplier invoices in one-click for SMBs and chartered accountants in Europe." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Tilkee"
-      description="Use Tilkee's latest API to track how your contacts read your documents."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -101,7 +100,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Tilkee</title>
-          <meta name="description" content="Use Tilkee's latest API to track how your contacts read your documents." />
+          <meta name="description" content={}/>s latest API to track how your contacts read your documents.' />
         </>
       ),
     },

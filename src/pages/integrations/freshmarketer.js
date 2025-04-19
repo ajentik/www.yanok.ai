@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Freshmarketer"
-      description="Freshmarketer is a marketing automation suite. It helps your marketing teams run powerful engagement campaigns, drip automation, sync with CRM, capture leads via forms and much more. The tools also help you to track & optimise your website with Heatmaps, A/B testing, Session replay, Polls & Feeback, Form analytics."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -101,7 +100,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Freshmarketer</title>
-          <meta name="description" content="Freshmarketer is a marketing automation suite. It helps your marketing teams run powerful engagement campaigns, drip automation, sync with CRM, capture leads via forms and much more. The tools also help you to track & optimise your website with Heatmaps, A/B testing, Session replay, Polls & Feeback, Form analytics." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="ZenDirect"
-      description="Build better relationships with your clients, employees and prospects. Our service lets you easily personalize, print and send "handwritten" cards, physical mailers and gifts."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -62,7 +61,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>ZenDirect</title>
-          <meta name="description" content="Build better relationships with your clients, employees and prospects. Our service lets you easily personalize, print and send "handwritten" cards, physical mailers and gifts." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Answering Service Care"
-      description="24/7 Answering Service: Never Miss Another Call. Family Owned and Operated Since 1974."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +56,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Answering Service Care</title>
-          <meta name="description" content="24/7 Answering Service: Never Miss Another Call. Family Owned and Operated Since 1974." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

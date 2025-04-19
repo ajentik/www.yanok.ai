@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="AgencyZoom"
-      description="AgencyZoom is a sales and automation software specifically made for P&C insurance agents."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -101,7 +100,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>AgencyZoom</title>
-          <meta name="description" content="AgencyZoom is a sales and automation software specifically made for P&C insurance agents." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

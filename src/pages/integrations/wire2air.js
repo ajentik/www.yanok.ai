@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Wire2Air"
-      description="Wire2Air offer a mobile engagement platform and SMS Mobile Messaging services to collect contacts, send a text and MMS message to individuals or a group."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -91,7 +90,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Wire2Air</title>
-          <meta name="description" content="Wire2Air offer a mobile engagement platform and SMS Mobile Messaging services to collect contacts, send a text and MMS message to individuals or a group." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

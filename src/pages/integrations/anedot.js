@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Anedot"
-      description="Better tools for better fundraising. Anedot empowers ministry, education, and politics to raise more money with less effort."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -67,7 +66,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Anedot</title>
-          <meta name="description" content="Better tools for better fundraising. Anedot empowers ministry, education, and politics to raise more money with less effort." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

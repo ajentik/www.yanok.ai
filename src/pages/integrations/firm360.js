@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Firm360"
-      description="Firm360 is an all-in-one practice management system for accounting firms."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -121,7 +120,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Firm360</title>
-          <meta name="description" content="Firm360 is an all-in-one practice management system for accounting firms." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

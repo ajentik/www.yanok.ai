@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="LOX24 SMS Gateway"
-      description="LOX24 SMS Gateway is a paid service which let's you send text messages (SMS) to individual phone numbers or groups of phone numbers. It is also possible to receive SMS. Various inbound numbers are available for this purpose."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -61,7 +60,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>LOX24 SMS Gateway</title>
-          <meta name="description" content="LOX24 SMS Gateway is a paid service which let's you send text messages (SMS) to individual phone numbers or groups of phone numbers. It is also possible to receive SMS. Various inbound numbers are available for this purpose." />
+          <meta name="description" content={}/>s you send text messages (SMS) to individual phone numbers or groups of phone numbers. It is also possible to receive SMS. Various inbound numbers are available for this purpose.' />
         </>
       ),
     },

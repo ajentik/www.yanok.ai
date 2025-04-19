@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="vcita"
-      description="vCita is a client engagement solution for small businesses, including lead generation, online scheduling, document sharing, online payments and contact management. vCita is available on desktop, tablet and mobile, easily integrating with any website and online platform."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -106,7 +105,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>vcita</title>
-          <meta name="description" content="vCita is a client engagement solution for small businesses, including lead generation, online scheduling, document sharing, online payments and contact management. vCita is available on desktop, tablet and mobile, easily integrating with any website and online platform." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

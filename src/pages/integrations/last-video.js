@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Last Video"
-      description="Last Video allows you to feature your latest YouTube video on your website with absolutely no code updates."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -67,7 +66,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Last Video</title>
-          <meta name="description" content="Last Video allows you to feature your latest YouTube video on your website with absolutely no code updates." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

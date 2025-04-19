@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Fig Booking Software"
-      description="Fig is an online booking platform for service businesses, helping manage and book clients, process payments, and more!"
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -122,7 +121,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Fig Booking Software</title>
-          <meta name="description" content="Fig is an online booking platform for service businesses, helping manage and book clients, process payments, and more!" />
+          <meta name="description" content={}/> />
         </>
       ),
     },

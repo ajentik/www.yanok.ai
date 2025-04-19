@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Trevor.io"
-      description="Trevor.io is a data playground connecting directly to your database to empower your team to query live data, build reports, and power dashboards with or without any coding."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +56,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Trevor.io</title>
-          <meta name="description" content="Trevor.io is a data playground connecting directly to your database to empower your team to query live data, build reports, and power dashboards with or without any coding." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

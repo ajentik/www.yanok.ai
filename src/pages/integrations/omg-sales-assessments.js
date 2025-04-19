@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="OMG Sales Assessments"
-      description="Objective Management Group's (OMG) Sales Candidate Assessment is a sales-specific screening tool that provides an analysis of a candidate's skills, strengths and capabilities, and recommends whether to move forward with an interview."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -61,7 +60,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>OMG Sales Assessments</title>
-          <meta name="description" content="Objective Management Group's (OMG) Sales Candidate Assessment is a sales-specific screening tool that provides an analysis of a candidate's skills, strengths and capabilities, and recommends whether to move forward with an interview." />
+          <meta name="description" content={}/>s (OMG) Sales Candidate Assessment is a sales-specific screening tool that provides an analysis of a candidate's skills, strengths and capabilities, and recommends whether to move forward with an interview.' />
         </>
       ),
     },

@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Echosign"
-      description="Adobe's EchoSign offers a secure and trusted electronic signature software online. With Echosign you can send, e-sign, track, and file documents and contracts very simply!"
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +52,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Echosign</title>
-          <meta name="description" content="Adobe's EchoSign offers a secure and trusted electronic signature software online. With Echosign you can send, e-sign, track, and file documents and contracts very simply!" />
+          <meta name="description" content={}/>s EchoSign offers a secure and trusted electronic signature software online. With Echosign you can send, e-sign, track, and file documents and contracts very simply!' />
         </>
       ),
     },

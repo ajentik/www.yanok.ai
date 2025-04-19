@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Timetrade"
-      description="Intelligent online appointment scheduling by TimeTrade. Join the 500+ enterprises and 30k+ business that schedule appointments every day."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +52,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Timetrade</title>
-          <meta name="description" content="Intelligent online appointment scheduling by TimeTrade. Join the 500+ enterprises and 30k+ business that schedule appointments every day." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Google Assistant"
-      description="Google Assistant is an artificial intelligence-powered virtual assistant developed by Google. You can use this Google Assistant integration to manage information in other apps using simple voice commands."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +56,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Google Assistant</title>
-          <meta name="description" content="Google Assistant is an artificial intelligence-powered virtual assistant developed by Google. You can use this Google Assistant integration to manage information in other apps using simple voice commands." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

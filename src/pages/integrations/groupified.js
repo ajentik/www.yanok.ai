@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Groupified"
-      description="Groupified is a platform for connecting with your Facebook group members through other platforms and campaigns."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +56,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Groupified</title>
-          <meta name="description" content="Groupified is a platform for connecting with your Facebook group members through other platforms and campaigns." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

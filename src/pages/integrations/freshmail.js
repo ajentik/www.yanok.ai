@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="FreshMail"
-      description="FreshMail is a great email marketing service. Manage and update your subscribers lists easily. Create, send and track email marketing campaigns that work and get advanced reports in real time."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -96,7 +95,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>FreshMail</title>
-          <meta name="description" content="FreshMail is a great email marketing service. Manage and update your subscribers lists easily. Create, send and track email marketing campaigns that work and get advanced reports in real time." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

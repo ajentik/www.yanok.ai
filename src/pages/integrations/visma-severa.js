@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Visma Severa"
-      description="Visma Severa is a modern and visual professional services automation (PSA) tool that brings together CRM, work hour entries, projects and invoicing."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -126,7 +125,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Visma Severa</title>
-          <meta name="description" content="Visma Severa is a modern and visual professional services automation (PSA) tool that brings together CRM, work hour entries, projects and invoicing." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Amazon SQS"
-      description="Amazon Simple Queue Service is a simple but powerful services for generating and consuming messages. It can help decouple systems for improved scalability and robustness."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -81,7 +80,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Amazon SQS</title>
-          <meta name="description" content="Amazon Simple Queue Service is a simple but powerful services for generating and consuming messages. It can help decouple systems for improved scalability and robustness." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

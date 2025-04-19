@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Occasion"
-      description="Occasion is a marketing and scheduling platform that allows group experience providers to acquire and re-engage customers."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +56,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Occasion</title>
-          <meta name="description" content="Occasion is a marketing and scheduling platform that allows group experience providers to acquire and re-engage customers." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

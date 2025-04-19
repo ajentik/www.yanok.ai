@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Floify"
-      description="Floify's mortgage automation and point-of-sale software solution streamlines and organizes the loan origination process for lenders and borrowers alike."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +52,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Floify</title>
-          <meta name="description" content="Floify's mortgage automation and point-of-sale software solution streamlines and organizes the loan origination process for lenders and borrowers alike." />
+          <meta name="description" content={}/>s mortgage automation and point-of-sale software solution streamlines and organizes the loan origination process for lenders and borrowers alike.' />
         </>
       ),
     },

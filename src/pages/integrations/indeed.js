@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Indeed"
-      description="Indeed is an American worldwide employment-related search engine for job listings launched in November 2004."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +52,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Indeed</title>
-          <meta name="description" content="Indeed is an American worldwide employment-related search engine for job listings launched in November 2004." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

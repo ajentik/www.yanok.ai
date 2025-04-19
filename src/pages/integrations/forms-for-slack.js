@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Forms for Slack"
-      description="Forms for Slack lets you manage and submit forms within Slack."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +56,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Forms for Slack</title>
-          <meta name="description" content="Forms for Slack lets you manage and submit forms within Slack." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

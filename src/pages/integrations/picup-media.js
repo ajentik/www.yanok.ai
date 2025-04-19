@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Picup Media"
-      description="Picup Media is a platform for jewelry media management."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +56,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Picup Media</title>
-          <meta name="description" content="Picup Media is a platform for jewelry media management." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Vetrina Live"
-      description="Vetrina Live is an e-commerce platform that allows you to easily create your online store and sell online."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -106,7 +105,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Vetrina Live</title>
-          <meta name="description" content="Vetrina Live is an e-commerce platform that allows you to easily create your online store and sell online." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

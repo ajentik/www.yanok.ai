@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="My Hours"
-      description="My Hours is a simple and free time tracker, with insightful reports and invoicing features. Unlimited projects, tasks and team members."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -131,7 +130,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>My Hours</title>
-          <meta name="description" content="My Hours is a simple and free time tracker, with insightful reports and invoicing features. Unlimited projects, tasks and team members." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

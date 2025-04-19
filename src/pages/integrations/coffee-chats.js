@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Coffee Chats"
-      description="Coffee Chats is a website manager, scheduling, and payment platform all-in-one app perfect for coaches and mentors."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +56,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Coffee Chats</title>
-          <meta name="description" content="Coffee Chats is a website manager, scheduling, and payment platform all-in-one app perfect for coaches and mentors." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

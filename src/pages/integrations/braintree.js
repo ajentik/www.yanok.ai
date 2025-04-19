@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Braintree"
-      description="With a first class API, great rates and instant approval, Braintree is the easiest way to accept payments anywhere online and via a mobile app."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -66,7 +65,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Braintree</title>
-          <meta name="description" content="With a first class API, great rates and instant approval, Braintree is the easiest way to accept payments anywhere online and via a mobile app." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

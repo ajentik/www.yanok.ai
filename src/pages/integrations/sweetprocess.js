@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="SweetProcess"
-      description="SweetProcess is a process management tool for on-boarding your employees and to document your business procedures, processes and policies."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -81,7 +80,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>SweetProcess</title>
-          <meta name="description" content="SweetProcess is a process management tool for on-boarding your employees and to document your business procedures, processes and policies." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

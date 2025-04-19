@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="i-Reserve"
-      description="I-Reserve is an online booking system, allowing companies to receive bookings from their clients. Several steps in the workflow can be automated, amongst which the email communication."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -86,7 +85,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>i-Reserve</title>
-          <meta name="description" content="I-Reserve is an online booking system, allowing companies to receive bookings from their clients. Several steps in the workflow can be automated, amongst which the email communication." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

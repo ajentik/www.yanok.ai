@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Locale"
-      description="Locale is a tool that helps make your source code compatible and translate your content."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -61,7 +60,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Locale</title>
-          <meta name="description" content="Locale is a tool that helps make your source code compatible and translate your content." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

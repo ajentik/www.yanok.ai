@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Vooplayer"
-      description="vooPlayer is a professional video hosting solution with a sophisticated suite of video marketing tools that helps businesses grow with video."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +52,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Vooplayer</title>
-          <meta name="description" content="vooPlayer is a professional video hosting solution with a sophisticated suite of video marketing tools that helps businesses grow with video." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Coreo"
-      description="Coreo is a platform that enables you to build your own data collection apps, without getting bamboozled by technical… stuff."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -66,7 +65,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Coreo</title>
-          <meta name="description" content="Coreo is a platform that enables you to build your own data collection apps, without getting bamboozled by technical… stuff." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

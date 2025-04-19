@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="The Web Console"
-      description="The Web Console is a single toolbox for businesses to manage all their online marketing, including their website, database marketing and their CRM."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -76,7 +75,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>The Web Console</title>
-          <meta name="description" content="The Web Console is a single toolbox for businesses to manage all their online marketing, including their website, database marketing and their CRM." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

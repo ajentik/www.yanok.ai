@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Rindle"
-      description="Rindle is a task and project management automation application for business that easily tracks projects and tasks in software your team will want to use."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +52,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Rindle</title>
-          <meta name="description" content="Rindle is a task and project management automation application for business that easily tracks projects and tasks in software your team will want to use." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Sawyer Tools"
-      description="Sawyer is a children's activity booking platform that makes running your business super easy"
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -67,7 +66,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Sawyer Tools</title>
-          <meta name="description" content="Sawyer is a children's activity booking platform that makes running your business super easy" />
+          <meta name="description" content={}/>s activity booking platform that makes running your business super easy' />
         </>
       ),
     },

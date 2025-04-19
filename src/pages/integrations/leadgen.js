@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="LeadGen App"
-      description="LeadGen App helps you build high-converting online forms for website and landing pages without any coding skills. Create engaging forms that help you attract more quality leads and gather valuable data."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +56,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>LeadGen App</title>
-          <meta name="description" content="LeadGen App helps you build high-converting online forms for website and landing pages without any coding skills. Create engaging forms that help you attract more quality leads and gather valuable data." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

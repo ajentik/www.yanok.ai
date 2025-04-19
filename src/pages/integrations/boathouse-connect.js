@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Boathouse Connect"
-      description="Manage your rowing organization from one place. From practice lineups to equipment to communication, Boathouse Connect can do it all"
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -106,7 +105,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Boathouse Connect</title>
-          <meta name="description" content="Manage your rowing organization from one place. From practice lineups to equipment to communication, Boathouse Connect can do it all" />
+          <meta name="description" content={}/> />
         </>
       ),
     },

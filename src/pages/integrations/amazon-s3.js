@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Amazon S3"
-      description="Amazon Simple Storage Service is a fully redundant data storage system. It makes it easy to store and retrieve any amount of data, anytime, from anywhere."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -76,7 +75,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Amazon S3</title>
-          <meta name="description" content="Amazon Simple Storage Service is a fully redundant data storage system. It makes it easy to store and retrieve any amount of data, anytime, from anywhere." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

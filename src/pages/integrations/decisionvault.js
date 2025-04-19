@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="DecisionVault"
-      description="The DecisionVault portal makes intake effortless for law firms"
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -71,7 +70,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>DecisionVault</title>
-          <meta name="description" content="The DecisionVault portal makes intake effortless for law firms" />
+          <meta name="description" content={}/> />
         </>
       ),
     },

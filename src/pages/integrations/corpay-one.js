@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Corpay One"
-      description="Corpay One is the leading bill pay solution for small-and-medium-sized businesses. Automate your accounts payable tasks like payments, approvals, document scanning and reconciliation with one easy to use solution."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -102,7 +101,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Corpay One</title>
-          <meta name="description" content="Corpay One is the leading bill pay solution for small-and-medium-sized businesses. Automate your accounts payable tasks like payments, approvals, document scanning and reconciliation with one easy to use solution." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

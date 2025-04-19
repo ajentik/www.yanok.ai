@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Engage by Cell"
-      description="GuidebyCell SMS is text message service to send text to one phone number."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -62,7 +61,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Engage by Cell</title>
-          <meta name="description" content="GuidebyCell SMS is text message service to send text to one phone number." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

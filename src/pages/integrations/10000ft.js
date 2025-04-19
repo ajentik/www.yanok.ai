@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="10,000ft"
-      description="10,000ft Plans is a resource management and project planning tool to help companies manage their business, teams, and projects."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -156,7 +155,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>10,000ft</title>
-          <meta name="description" content="10,000ft Plans is a resource management and project planning tool to help companies manage their business, teams, and projects." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

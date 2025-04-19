@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Hiver bot"
-      description="Hiver is a conversational chat bot and forms service."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +56,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Hiver bot</title>
-          <meta name="description" content="Hiver is a conversational chat bot and forms service." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="xMatters"
-      description="xMatters industry-leading Digital Service Availability platform helps enterprises prevent, manage and resolve technology IT incidents."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -66,7 +65,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>xMatters</title>
-          <meta name="description" content="xMatters industry-leading Digital Service Availability platform helps enterprises prevent, manage and resolve technology IT incidents." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

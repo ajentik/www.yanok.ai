@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Kanban Tool"
-      description="Kanban Tool is a smart visual project management application with real-time collaboration that allows teams to get work done faster. Kanban Tool helps companies visualize workflow, analyze and improve business processes and reduce waste."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -176,7 +175,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Kanban Tool</title>
-          <meta name="description" content="Kanban Tool is a smart visual project management application with real-time collaboration that allows teams to get work done faster. Kanban Tool helps companies visualize workflow, analyze and improve business processes and reduce waste." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

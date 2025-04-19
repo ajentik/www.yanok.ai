@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Hiflow"
-      description="Hiflow allows you to manage your projects, encode your services, create your invoices and analyse your activity online."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -71,7 +70,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Hiflow</title>
-          <meta name="description" content="Hiflow allows you to manage your projects, encode your services, create your invoices and analyse your activity online." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

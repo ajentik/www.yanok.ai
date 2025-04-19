@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Fiskl"
-      description="Fiskl is a mobile-first business management tool for the business owner which helps you invoice in 60 languages, get paid faster, manage expenses, time, mileage, products & services and much more."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -81,7 +80,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Fiskl</title>
-          <meta name="description" content="Fiskl is a mobile-first business management tool for the business owner which helps you invoice in 60 languages, get paid faster, manage expenses, time, mileage, products & services and much more." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

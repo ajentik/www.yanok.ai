@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Brillium"
-      description="A powerful assessment platform for creating and delivering exams, quizzes, certifications, and surveys across desktop and mobile platforms. Easy-to-use authoring, detailed reporting, and built-in integration with leading learning and talent management platforms."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -71,7 +70,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Brillium</title>
-          <meta name="description" content="A powerful assessment platform for creating and delivering exams, quizzes, certifications, and surveys across desktop and mobile platforms. Easy-to-use authoring, detailed reporting, and built-in integration with leading learning and talent management platforms." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

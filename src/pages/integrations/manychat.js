@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Manychat"
-      description="Manychat is an all-in-one Messenger Marketing platform. Create your Facebook Messenger bot for marketing, sales and support with our simple drag'n'drop builder. Effectively promote with built-in tools for growing audience. Start today – it's easy and free."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -141,7 +140,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Manychat</title>
-          <meta name="description" content="Manychat is an all-in-one Messenger Marketing platform. Create your Facebook Messenger bot for marketing, sales and support with our simple drag'n'drop builder. Effectively promote with built-in tools for growing audience. Start today – it's easy and free." />
+          <meta name="description" content={}/>n'drop builder. Effectively promote with built-in tools for growing audience. Start today – it's easy and free.' />
         </>
       ),
     },

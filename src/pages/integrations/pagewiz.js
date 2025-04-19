@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Pagewiz"
-      description="Pagewiz was designed to enable professional marketers, business owners and affiliates launch landing page campaigns from scratch."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +52,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Pagewiz</title>
-          <meta name="description" content="Pagewiz was designed to enable professional marketers, business owners and affiliates launch landing page campaigns from scratch." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Doppler"
-      description="Doppler is an email marketing tool that allows you to reach your clients in a simple, fast and effective way."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -77,7 +76,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Doppler</title>
-          <meta name="description" content="Doppler is an email marketing tool that allows you to reach your clients in a simple, fast and effective way." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

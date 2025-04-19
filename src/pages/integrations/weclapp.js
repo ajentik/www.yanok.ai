@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Weclapp"
-      description="Small and middle-sized companies are using weclapp successfully to manage their customers, projects, orders, invoices, accounting, etc. in one software."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +52,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Weclapp</title>
-          <meta name="description" content="Small and middle-sized companies are using weclapp successfully to manage their customers, projects, orders, invoices, accounting, etc. in one software." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="GEVME Virtual"
-      description="GEVME Virtual is a virtual event platform used by event professionals to build, operate and monetize their virtual events"
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -181,7 +180,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>GEVME Virtual</title>
-          <meta name="description" content="GEVME Virtual is a virtual event platform used by event professionals to build, operate and monetize their virtual events" />
+          <meta name="description" content={}/> />
         </>
       ),
     },

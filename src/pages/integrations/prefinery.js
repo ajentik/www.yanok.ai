@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Prefinery"
-      description="More than just a landing page, Prefinery is a complete beta management launch platform that encourages social sharing and helps you learn from your users."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -131,7 +130,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Prefinery</title>
-          <meta name="description" content="More than just a landing page, Prefinery is a complete beta management launch platform that encourages social sharing and helps you learn from your users." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

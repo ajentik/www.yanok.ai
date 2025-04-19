@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="DocSend"
-      description="DocSend tells you how prospects engage with your sales material after you send it. Know when to follow up, who to follow up with, and what to focus on, enabling you to do business faster."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -72,7 +71,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>DocSend</title>
-          <meta name="description" content="DocSend tells you how prospects engage with your sales material after you send it. Know when to follow up, who to follow up with, and what to focus on, enabling you to do business faster." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Clientary"
-      description="Online invoicing and time tracking for small businesses and freelancers. Clientary helps you get paid quicker and painlessly helps you manage your staff and projects."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -131,7 +130,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Clientary</title>
-          <meta name="description" content="Online invoicing and time tracking for small businesses and freelancers. Clientary helps you get paid quicker and painlessly helps you manage your staff and projects." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

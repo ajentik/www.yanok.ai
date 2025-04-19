@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Verizon Media Native Ads"
-      description="Verizon Media Native Ads combines the power of content, scale and data to create smarter marketing solutions that build stronger relationships with consumers."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +56,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Verizon Media Native Ads</title>
-          <meta name="description" content="Verizon Media Native Ads combines the power of content, scale and data to create smarter marketing solutions that build stronger relationships with consumers." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

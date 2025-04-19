@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Ujoin.co"
-      description="Send Twitter, Email, Click to Call, and Video messages to city/county councilors, state/federal legislators, department heads, and other decision-makers for U.S. and Canada. Track legislative bills and display them on your own website."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +56,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Ujoin.co</title>
-          <meta name="description" content="Send Twitter, Email, Click to Call, and Video messages to city/county councilors, state/federal legislators, department heads, and other decision-makers for U.S. and Canada. Track legislative bills and display them on your own website." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

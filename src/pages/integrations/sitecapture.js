@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="SiteCapture"
-      description="SiteCapture is a field reporting tool to collect photos and data from a job site. SiteCapture is used in home service industries such as solar to improve time and accuracy of site survey and system installations. Take photos and sync in real time for the most advanced technology in field services."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -96,7 +95,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>SiteCapture</title>
-          <meta name="description" content="SiteCapture is a field reporting tool to collect photos and data from a job site. SiteCapture is used in home service industries such as solar to improve time and accuracy of site survey and system installations. Take photos and sync in real time for the most advanced technology in field services." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

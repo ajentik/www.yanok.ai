@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Poodll NET"
-      description="Poodll NET is a Moodle based LMS platform for language schools. It is used to deliver online language courses and assessments."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -136,7 +135,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Poodll NET</title>
-          <meta name="description" content="Poodll NET is a Moodle based LMS platform for language schools. It is used to deliver online language courses and assessments." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

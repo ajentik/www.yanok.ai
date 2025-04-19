@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Engati"
-      description="Engati is a chatbot platform that allows you to build, manage, integrate, train, analyse and publish your personalized bot in a matter of minutes."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +52,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Engati</title>
-          <meta name="description" content="Engati is a chatbot platform that allows you to build, manage, integrate, train, analyse and publish your personalized bot in a matter of minutes." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

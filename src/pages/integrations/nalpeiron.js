@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Nalpeiron"
-      description="Nalpeiron is a tool that allows companies to manage their customers software subscriptions and licensing."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -62,7 +61,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Nalpeiron</title>
-          <meta name="description" content="Nalpeiron is a tool that allows companies to manage their customers software subscriptions and licensing." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

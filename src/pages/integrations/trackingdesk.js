@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Trackingdesk"
-      description="The most advanced traffic management platform for affiliate marketers and media buyers. Reach positive ROI faster with better tracking and control over your marketing campaigns."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +52,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Trackingdesk</title>
-          <meta name="description" content="The most advanced traffic management platform for affiliate marketers and media buyers. Reach positive ROI faster with better tracking and control over your marketing campaigns." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

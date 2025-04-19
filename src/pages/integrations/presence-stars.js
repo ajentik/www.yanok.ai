@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Presence Stars"
-      description="Presence Stars is a Whitelabel Website Manager platform for marketers and agencies."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +56,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Presence Stars</title>
-          <meta name="description" content="Presence Stars is a Whitelabel Website Manager platform for marketers and agencies." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Project.co"
-      description="Project.co is a project management software tool for service businesses. Collaborate with your clients and team so all your project information is in one place."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -171,7 +170,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Project.co</title>
-          <meta name="description" content="Project.co is a project management software tool for service businesses. Collaborate with your clients and team so all your project information is in one place." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

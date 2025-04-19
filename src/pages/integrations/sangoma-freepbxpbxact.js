@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Sangoma"
-      description="Sangoma is a leading voice and Unified Communications (UC) solution provider."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -71,7 +70,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Sangoma</title>
-          <meta name="description" content="Sangoma is a leading voice and Unified Communications (UC) solution provider." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

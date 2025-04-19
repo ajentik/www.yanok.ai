@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Nodezap"
-      description="Nodezap allows you to build internal tools, admin panels, dashboards, backends, automate processes, and run scheduled tasks — all without coding."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -76,7 +75,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Nodezap</title>
-          <meta name="description" content="Nodezap allows you to build internal tools, admin panels, dashboards, backends, automate processes, and run scheduled tasks — all without coding." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

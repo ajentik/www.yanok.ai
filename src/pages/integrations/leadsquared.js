@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="LeadSquared"
-      description="LeadSquared is a marketing automation and CRM solution that helps small to medium-sized businesses drive revenue by aligning their marketing and sales activities. Some key features include: Lead Capture Automation, Landing Pages, Email and Drip Campaigns, Lead & List Management, Tasks & Reminders, API & Connectors and Marketing, Sales and Revenue Analytics."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -116,7 +115,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>LeadSquared</title>
-          <meta name="description" content="LeadSquared is a marketing automation and CRM solution that helps small to medium-sized businesses drive revenue by aligning their marketing and sales activities. Some key features include: Lead Capture Automation, Landing Pages, Email and Drip Campaigns, Lead & List Management, Tasks & Reminders, API & Connectors and Marketing, Sales and Revenue Analytics." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

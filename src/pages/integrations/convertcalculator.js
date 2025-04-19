@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="ConvertCalculator"
-      description="ConvertCalculator is the versatile calculator builder for your website that boosts sales and reduces hassle. Let your users calculate a price quote, savings, ROI, mortgage payments or anything else that needs calculation."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -62,7 +61,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>ConvertCalculator</title>
-          <meta name="description" content="ConvertCalculator is the versatile calculator builder for your website that boosts sales and reduces hassle. Let your users calculate a price quote, savings, ROI, mortgage payments or anything else that needs calculation." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

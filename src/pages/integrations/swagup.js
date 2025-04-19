@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="SwagUp"
-      description="SwagUp makes it simple to create high quality branded swag for companies to give as gifts to employees and/or clients. This app is meant to automate operations using SwagUp API."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -121,7 +120,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>SwagUp</title>
-          <meta name="description" content="SwagUp makes it simple to create high quality branded swag for companies to give as gifts to employees and/or clients. This app is meant to automate operations using SwagUp API." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

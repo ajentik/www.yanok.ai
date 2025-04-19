@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Retamo"
-      description="Retamo is an online review and reputation management software designed to help businesses generate, monitor, and analyze customer ratings or feedback."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -62,7 +61,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Retamo</title>
-          <meta name="description" content="Retamo is an online review and reputation management software designed to help businesses generate, monitor, and analyze customer ratings or feedback." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

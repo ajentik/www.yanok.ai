@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Ubivox"
-      description="Ubivox is a tool for designing, writing and sending newsletters for companies and organisations."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +52,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Ubivox</title>
-          <meta name="description" content="Ubivox is a tool for designing, writing and sending newsletters for companies and organisations." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

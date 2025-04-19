@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Files.com"
-      description="Files.com is Smart Cloud Storage for modern teams. With Files.com, your team can collaborate, automate, and get things done -- without compromising security."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -86,7 +85,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Files.com</title>
-          <meta name="description" content="Files.com is Smart Cloud Storage for modern teams. With Files.com, your team can collaborate, automate, and get things done -- without compromising security." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="CDK Global"
-      description="CDK Global provides auto dealer software as well as solutions for truck, motorcycle, marine and RV dealers throughout North America and beyond."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +52,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>CDK Global</title>
-          <meta name="description" content="CDK Global provides auto dealer software as well as solutions for truck, motorcycle, marine and RV dealers throughout North America and beyond." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

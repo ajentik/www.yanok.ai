@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="PlaintiffHQ Dev"
-      description="PlaintiffHQ Dev is the QA site website of PlaintiffHQ, a marketing service for lawyers, that is only used by developers"
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +56,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>PlaintiffHQ Dev</title>
-          <meta name="description" content="PlaintiffHQ Dev is the QA site website of PlaintiffHQ, a marketing service for lawyers, that is only used by developers" />
+          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Flow"
-      description="Flow is a task management solution that offers an online web application, iOS mobile app, and a native Mac OS X application for users."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -71,7 +70,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Flow</title>
-          <meta name="description" content="Flow is a task management solution that offers an online web application, iOS mobile app, and a native Mac OS X application for users." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Ontraport"
-      description="An all-in-one business and marketing platform designed for information marketers, experts, and coaches."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -86,7 +85,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Ontraport</title>
-          <meta name="description" content="An all-in-one business and marketing platform designed for information marketers, experts, and coaches." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

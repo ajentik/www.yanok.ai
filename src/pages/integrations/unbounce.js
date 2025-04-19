@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Unbounce"
-      description="Unbounce is a landing page platform that helps you convert more visitors into leads, sales, and customers. Unbounce Conversion Intelligence™ is AI powered-functionality that works with your marketing intuition to ensure the best campaign performance every time."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +56,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Unbounce</title>
-          <meta name="description" content="Unbounce is a landing page platform that helps you convert more visitors into leads, sales, and customers. Unbounce Conversion Intelligence™ is AI powered-functionality that works with your marketing intuition to ensure the best campaign performance every time." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

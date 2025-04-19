@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="DashNex PowerTech Store Builder"
-      description="A powerful store builder platform to launch and host a high converting eCommerce store in minutes without prior know-how or skills."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -76,7 +75,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>DashNex PowerTech Store Builder</title>
-          <meta name="description" content="A powerful store builder platform to launch and host a high converting eCommerce store in minutes without prior know-how or skills." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="OneBill"
-      description="OneBill is a billing and subscription management platform for businesses offering a range of products/services based around subscription."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -101,7 +100,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>OneBill</title>
-          <meta name="description" content="OneBill is a billing and subscription management platform for businesses offering a range of products/services based around subscription." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="csvbox.io"
-      description="csvbox.io is a no-code tool that helps web apps and SaaS companies to add a production-ready spreadsheet import feature to their application in a few minutes."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +56,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>csvbox.io</title>
-          <meta name="description" content="csvbox.io is a no-code tool that helps web apps and SaaS companies to add a production-ready spreadsheet import feature to their application in a few minutes." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

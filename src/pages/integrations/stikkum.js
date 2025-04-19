@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Stikkum"
-      description="Stikkum is a platform for the mortgage industry with retention alerts and automation that continuously monitors a mortgage broker’s client base."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -76,7 +75,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Stikkum</title>
-          <meta name="description" content="Stikkum is a platform for the mortgage industry with retention alerts and automation that continuously monitors a mortgage broker’s client base." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

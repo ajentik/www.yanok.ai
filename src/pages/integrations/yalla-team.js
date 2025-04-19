@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Yalla Team"
-      description="Yalla is a team collaboration tool made for teams and agencies."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -86,7 +85,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Yalla Team</title>
-          <meta name="description" content="Yalla is a team collaboration tool made for teams and agencies." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

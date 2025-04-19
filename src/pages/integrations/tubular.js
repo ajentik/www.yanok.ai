@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Tubular"
-      description="Tubular is a simple sales pipeline software, built for teams, that lets you convert more leads, close more sales, and track your deal flow."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -72,7 +71,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Tubular</title>
-          <meta name="description" content="Tubular is a simple sales pipeline software, built for teams, that lets you convert more leads, close more sales, and track your deal flow." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

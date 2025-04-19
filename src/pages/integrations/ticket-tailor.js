@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Ticket Tailor"
-      description="Ticket Tailor is an easy way to sell tickets online for events and attractions. We don't charge any per-ticket fees, and we let you integrate the booking process in to your website."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -62,7 +61,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Ticket Tailor</title>
-          <meta name="description" content="Ticket Tailor is an easy way to sell tickets online for events and attractions. We don't charge any per-ticket fees, and we let you integrate the booking process in to your website." />
+          <meta name="description" content={}/>t charge any per-ticket fees, and we let you integrate the booking process in to your website.' />
         </>
       ),
     },

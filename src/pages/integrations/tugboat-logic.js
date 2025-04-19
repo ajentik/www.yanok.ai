@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Tugboat Logic"
-      description="The Tugboat Logic Security Assurance - Custom Integrations App is a service that is set up for third-party integrations to automate the collection of any piece of evidence in your Infosec Program."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +56,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Tugboat Logic</title>
-          <meta name="description" content="The Tugboat Logic Security Assurance - Custom Integrations App is a service that is set up for third-party integrations to automate the collection of any piece of evidence in your Infosec Program." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

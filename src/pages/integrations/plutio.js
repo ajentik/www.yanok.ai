@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Plutio"
-      description="Plutio allows you to manage projects and tasks, create proposals and contracts, send invoices and get paid online, collaborate with your clients and team, plus so much more."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -186,7 +185,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Plutio</title>
-          <meta name="description" content="Plutio allows you to manage projects and tasks, create proposals and contracts, send invoices and get paid online, collaborate with your clients and team, plus so much more." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

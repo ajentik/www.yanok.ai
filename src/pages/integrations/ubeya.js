@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Ubeya"
-      description="Ubeya is an automated solution for staffing and management. Instantly schedule, track, hire and pay staff."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -71,7 +70,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Ubeya</title>
-          <meta name="description" content="Ubeya is an automated solution for staffing and management. Instantly schedule, track, hire and pay staff." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

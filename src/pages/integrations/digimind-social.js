@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Digimind Social"
-      description="Digimind is a web and social media listening platform that helps you track consumer insights, competitors, and market trends."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -66,7 +65,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Digimind Social</title>
-          <meta name="description" content="Digimind is a web and social media listening platform that helps you track consumer insights, competitors, and market trends." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

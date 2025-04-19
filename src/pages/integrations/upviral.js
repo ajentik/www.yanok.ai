@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="UpViral"
-      description="UpViral is a referral platform to run viral giveaways and sweepstakes."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -76,7 +75,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>UpViral</title>
-          <meta name="description" content="UpViral is a referral platform to run viral giveaways and sweepstakes." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

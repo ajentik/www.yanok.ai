@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Ultracart"
-      description="UltraCart is a full-featured e-commerce site builder that allows you to integrate ecommerce storeping features into your website or blog in multiple ways."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +52,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Ultracart</title>
-          <meta name="description" content="UltraCart is a full-featured e-commerce site builder that allows you to integrate ecommerce storeping features into your website or blog in multiple ways." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

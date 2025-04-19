@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Loomly"
-      description="Loomly is the Brand Success Platform that empowers marketing teams to grow successful brands online through collaboration, publishing & analytics features."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -121,7 +120,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Loomly</title>
-          <meta name="description" content="Loomly is the Brand Success Platform that empowers marketing teams to grow successful brands online through collaboration, publishing & analytics features." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

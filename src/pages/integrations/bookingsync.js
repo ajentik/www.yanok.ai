@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="BookingSync"
-      description="BookingSync is a property management system for vacation and short terms rentals: centralize everything in one place to save time and book more."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -111,7 +110,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>BookingSync</title>
-          <meta name="description" content="BookingSync is a property management system for vacation and short terms rentals: centralize everything in one place to save time and book more." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

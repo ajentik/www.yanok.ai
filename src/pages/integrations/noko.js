@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Noko"
-      description="Noko helps you manage your time and see the big picture: which days have you been working? How much, and on what? Is all that time billable time? What are your teammates and employees doing?"
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -156,7 +155,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Noko</title>
-          <meta name="description" content="Noko helps you manage your time and see the big picture: which days have you been working? How much, and on what? Is all that time billable time? What are your teammates and employees doing?" />
+          <meta name="description" content={}/> />
         </>
       ),
     },

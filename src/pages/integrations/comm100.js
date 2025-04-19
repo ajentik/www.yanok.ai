@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Comm100"
-      description="Comm100 is a live chat support software that enables businesses or organizations to communicate with their website visitors in real-time so as to improve conversions, sales, and customer satisfaction."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -82,7 +81,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Comm100</title>
-          <meta name="description" content="Comm100 is a live chat support software that enables businesses or organizations to communicate with their website visitors in real-time so as to improve conversions, sales, and customer satisfaction." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

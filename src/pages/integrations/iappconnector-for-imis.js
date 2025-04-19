@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="iAppConnector for iMIS"
-      description="iAppConnector creates a seamless connection between iMIS and other applications. Utilize the iMIS database contact and event manager tools with thousands of applications."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -121,7 +120,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>iAppConnector for iMIS</title>
-          <meta name="description" content="iAppConnector creates a seamless connection between iMIS and other applications. Utilize the iMIS database contact and event manager tools with thousands of applications." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="AimFox"
-      description="Reach a wider audience with a powerful LinkedIn automation tool. AimFox is made for sales, marketing, HR teams and everyone else who wishes to make automated LinkedIn connections."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +52,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>AimFox</title>
-          <meta name="description" content="Reach a wider audience with a powerful LinkedIn automation tool. AimFox is made for sales, marketing, HR teams and everyone else who wishes to make automated LinkedIn connections." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

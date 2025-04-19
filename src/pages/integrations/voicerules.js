@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="VoiceRules"
-      description="VoiceRules is any device, anytime, anywhere phone system for your sales and support teams. It takes seconds to get phone numbers in 100+ regions and start making or receiving calls."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -71,7 +70,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>VoiceRules</title>
-          <meta name="description" content="VoiceRules is any device, anytime, anywhere phone system for your sales and support teams. It takes seconds to get phone numbers in 100+ regions and start making or receiving calls." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

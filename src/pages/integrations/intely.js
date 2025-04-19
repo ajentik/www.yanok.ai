@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Intely"
-      description="The ultimate no-code data integrator, custom form builder, and workflow automation platform."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +56,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Intely</title>
-          <meta name="description" content="The ultimate no-code data integrator, custom form builder, and workflow automation platform." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="BDX Leads"
-      description="The BDX Leads app allows BDX listings clients to automatically port their BDX leads into any number of popular CRM systems without any coding. This setup can be completed in as little as 30 minutes."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +56,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>BDX Leads</title>
-          <meta name="description" content="The BDX Leads app allows BDX listings clients to automatically port their BDX leads into any number of popular CRM systems without any coding. This setup can be completed in as little as 30 minutes." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

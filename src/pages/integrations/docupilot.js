@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Docupilot"
-      description="Docupilot is a document automation tool to generate PDFs, DOCX files, contracts, invoices and more with data from online services."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +56,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Docupilot</title>
-          <meta name="description" content="Docupilot is a document automation tool to generate PDFs, DOCX files, contracts, invoices and more with data from online services." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

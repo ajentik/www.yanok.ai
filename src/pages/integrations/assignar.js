@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Assignar"
-      description="Assignar is a workforce and asset management platform for construction sub contractor and self-perform general contractors."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -491,7 +490,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Assignar</title>
-          <meta name="description" content="Assignar is a workforce and asset management platform for construction sub contractor and self-perform general contractors." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

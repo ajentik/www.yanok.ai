@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Cloudinary"
-      description="Cloudinary makes it easy to upload, store, manage, manipulate and deliver images and videos efficiently and effectively."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -91,7 +90,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Cloudinary</title>
-          <meta name="description" content="Cloudinary makes it easy to upload, store, manage, manipulate and deliver images and videos efficiently and effectively." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

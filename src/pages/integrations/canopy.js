@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Canopy"
-      description="Canopy provides a practice efficiency suite that simplifies your practice so you can help more clients. Each of our products automates busywork and connects your entire practice so you can focus on what’s important."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -111,7 +110,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Canopy</title>
-          <meta name="description" content="Canopy provides a practice efficiency suite that simplifies your practice so you can help more clients. Each of our products automates busywork and connects your entire practice so you can focus on what’s important." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

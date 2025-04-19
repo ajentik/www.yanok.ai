@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Sinch"
-      description="Send and receive messages over SMS, WhatsApp, Facebook, Instagram, Telegram, Viber, and more using Sinch — a single app, all the messaging channels you need!"
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -86,7 +85,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Sinch</title>
-          <meta name="description" content="Send and receive messages over SMS, WhatsApp, Facebook, Instagram, Telegram, Viber, and more using Sinch — a single app, all the messaging channels you need!" />
+          <meta name="description" content={}/> />
         </>
       ),
     },

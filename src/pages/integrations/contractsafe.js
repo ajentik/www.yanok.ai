@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="ContractSafe"
-      description="ContractSafe easily organizes and manages your contracts"
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +56,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>ContractSafe</title>
-          <meta name="description" content="ContractSafe easily organizes and manages your contracts" />
+          <meta name="description" content={}/> />
         </>
       ),
     },

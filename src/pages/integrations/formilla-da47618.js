@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Formilla"
-      description="Formilla.com is a leading provider of customer messaging software using a combination of Live Chat, Email, and In-app messaging tools in one powerful platform."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -67,7 +66,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Formilla</title>
-          <meta name="description" content="Formilla.com is a leading provider of customer messaging software using a combination of Live Chat, Email, and In-app messaging tools in one powerful platform." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

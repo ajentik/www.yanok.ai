@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="CamCard"
-      description="CamCard is the easiest app to manage and exchange business cards, the perfect fit for sales people, entrepreneurs, business developers or marketing experts."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +52,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>CamCard</title>
-          <meta name="description" content="CamCard is the easiest app to manage and exchange business cards, the perfect fit for sales people, entrepreneurs, business developers or marketing experts." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

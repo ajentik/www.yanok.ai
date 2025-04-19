@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="ShowingTime"
-      description="ShowingTime is the real estate industry's leading showing management and market stats technology provider."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +52,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>ShowingTime</title>
-          <meta name="description" content="ShowingTime is the real estate industry's leading showing management and market stats technology provider." />
+          <meta name="description" content={}/>s leading showing management and market stats technology provider.' />
         </>
       ),
     },

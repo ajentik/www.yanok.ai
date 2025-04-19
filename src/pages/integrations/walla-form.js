@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Walla Form"
-      description="Walla is an all-in-one form tool to create, share, deploy and analyze online forms."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -62,7 +61,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Walla Form</title>
-          <meta name="description" content="Walla is an all-in-one form tool to create, share, deploy and analyze online forms." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

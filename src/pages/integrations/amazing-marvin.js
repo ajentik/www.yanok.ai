@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Amazing Marvin"
-      description="Amazing Marvin is a customizable task manager that is designed using behavioral psychology to help you get more done while feeling less stressed."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +56,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Amazing Marvin</title>
-          <meta name="description" content="Amazing Marvin is a customizable task manager that is designed using behavioral psychology to help you get more done while feeling less stressed." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

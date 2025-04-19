@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Productive.io"
-      description="Productive is a project management tool that includes everything you need to run a profitable agency."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -216,7 +215,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Productive.io</title>
-          <meta name="description" content="Productive is a project management tool that includes everything you need to run a profitable agency." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

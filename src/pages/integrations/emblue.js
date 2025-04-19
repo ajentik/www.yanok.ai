@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="emBlue"
-      description="emBlue omnichannel platform. Email + SMS + Webhooks + Widgets hub. Send the right message at the right time."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +56,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>emBlue</title>
-          <meta name="description" content="emBlue omnichannel platform. Email + SMS + Webhooks + Widgets hub. Send the right message at the right time." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

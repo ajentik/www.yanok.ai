@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Brafton"
-      description="Brafton is a team collaboration tool to manage your projects."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -81,7 +80,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Brafton</title>
-          <meta name="description" content="Brafton is a team collaboration tool to manage your projects." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

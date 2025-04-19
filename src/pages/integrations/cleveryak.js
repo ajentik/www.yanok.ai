@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="CleverYak"
-      description="CleverYak is an HR solution that helps you interview candidates effortlessly online and meet the strongest candidates before your competitors do. With clever features that make online interviewing work for you."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +56,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>CleverYak</title>
-          <meta name="description" content="CleverYak is an HR solution that helps you interview candidates effortlessly online and meet the strongest candidates before your competitors do. With clever features that make online interviewing work for you." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

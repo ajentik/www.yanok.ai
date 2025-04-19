@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="FacilityBot"
-      description="Allow staff to book desks, report faults, make service requests, book rooms, invite visitors and get automated FAQ responses (chatbot) through a single channel."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -86,7 +85,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>FacilityBot</title>
-          <meta name="description" content="Allow staff to book desks, report faults, make service requests, book rooms, invite visitors and get automated FAQ responses (chatbot) through a single channel." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

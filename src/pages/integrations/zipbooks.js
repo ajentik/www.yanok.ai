@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Zipbooks"
-      description="ZipBooks is free accounting software that sends invoices, tracks time and expenses, integrates with your bank & lets you process credit cards."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +52,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Zipbooks</title>
-          <meta name="description" content="ZipBooks is free accounting software that sends invoices, tracks time and expenses, integrates with your bank & lets you process credit cards." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="BatchLeads"
-      description="BatchLeads is a All-In-One platform for real estate professionals"
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -136,7 +135,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>BatchLeads</title>
-          <meta name="description" content="BatchLeads is a All-In-One platform for real estate professionals" />
+          <meta name="description" content={}/> />
         </>
       ),
     },

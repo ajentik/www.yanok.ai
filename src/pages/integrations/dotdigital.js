@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="dotdigital"
-      description="dotdigital (formerly dotmailer) Engagement Cloud is an engagement platform that helps businesses engage customers across all touchpoints. Users can leverage data, surface powerful insights, and automate the customer journey using email, SMS, and more."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -96,7 +95,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>dotdigital</title>
-          <meta name="description" content="dotdigital (formerly dotmailer) Engagement Cloud is an engagement platform that helps businesses engage customers across all touchpoints. Users can leverage data, surface powerful insights, and automate the customer journey using email, SMS, and more." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Contlo"
-      description="Contlo is a commerce Data and Marketing Platform for Ecommerce and D2C brands that enables e-commerce stores to increase their sales, and drive customer loyalty and retention using omnichannel customer engagement."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -71,7 +70,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Contlo</title>
-          <meta name="description" content="Contlo is a commerce Data and Marketing Platform for Ecommerce and D2C brands that enables e-commerce stores to increase their sales, and drive customer loyalty and retention using omnichannel customer engagement." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

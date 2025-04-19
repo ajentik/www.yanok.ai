@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Tallyfy"
-      description="Tallyfy is a workflow platform that eliminates chaos from your repeatable processes - freeing up your time."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -92,7 +91,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Tallyfy</title>
-          <meta name="description" content="Tallyfy is a workflow platform that eliminates chaos from your repeatable processes - freeing up your time." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

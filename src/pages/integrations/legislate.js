@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Legislate"
-      description="Legislate is a contract management platform built for non-lawyers. Create and electronically sign all your agreements from one place."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -77,7 +76,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Legislate</title>
-          <meta name="description" content="Legislate is a contract management platform built for non-lawyers. Create and electronically sign all your agreements from one place." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

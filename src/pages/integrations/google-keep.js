@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Google Keep"
-      description="Keep offers a variety of tools for taking notes, including text, lists, images, and audio."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +52,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Google Keep</title>
-          <meta name="description" content="Keep offers a variety of tools for taking notes, including text, lists, images, and audio." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

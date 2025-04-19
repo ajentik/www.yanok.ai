@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Placester"
-      description="Placester is a real estate platform which enables real estate agents and brokers to easily create personalized websites, as well as manage leads and their activities."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -97,7 +96,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Placester</title>
-          <meta name="description" content="Placester is a real estate platform which enables real estate agents and brokers to easily create personalized websites, as well as manage leads and their activities." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

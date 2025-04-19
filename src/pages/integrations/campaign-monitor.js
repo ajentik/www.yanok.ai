@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Campaign Monitor"
-      description="Campaign Monitor is an email marketing tool built for designers. Campaign Monitor makes it easy to send beautiful emails, manage lists and subscribers, and track the results of your campaigns."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -121,7 +120,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Campaign Monitor</title>
-          <meta name="description" content="Campaign Monitor is an email marketing tool built for designers. Campaign Monitor makes it easy to send beautiful emails, manage lists and subscribers, and track the results of your campaigns." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

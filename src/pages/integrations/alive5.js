@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Alive5"
-      description="Alive5 is a lead generation tool that engages people on your website, phone line, and real-world marketing materials to help generate more business opportunities."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -71,7 +70,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Alive5</title>
-          <meta name="description" content="Alive5 is a lead generation tool that engages people on your website, phone line, and real-world marketing materials to help generate more business opportunities." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

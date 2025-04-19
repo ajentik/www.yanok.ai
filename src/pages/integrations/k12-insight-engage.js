@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="K12 Insight Engage"
-      description="K12 Insight Engage allows users to create, distribute, and analyze professional surveys, polls, and assessments."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -61,7 +60,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>K12 Insight Engage</title>
-          <meta name="description" content="K12 Insight Engage allows users to create, distribute, and analyze professional surveys, polls, and assessments." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

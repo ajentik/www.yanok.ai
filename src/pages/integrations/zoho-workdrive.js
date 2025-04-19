@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Zoho WorkDrive"
-      description="Zoho WorkDrive is an online team file manager. It gives you a secure, shared workspace, new ways to share files, and simplifies team management."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -111,7 +110,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Zoho WorkDrive</title>
-          <meta name="description" content="Zoho WorkDrive is an online team file manager. It gives you a secure, shared workspace, new ways to share files, and simplifies team management." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

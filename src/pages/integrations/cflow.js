@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Cflow"
-      description="Cflow is a cloud-based workflow software that provides a way to create business applications that help increase productivity and reduce costs."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -71,7 +70,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Cflow</title>
-          <meta name="description" content="Cflow is a cloud-based workflow software that provides a way to create business applications that help increase productivity and reduce costs." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

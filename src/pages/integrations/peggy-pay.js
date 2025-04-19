@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Peggy Pay"
-      description="Peggy Pay offers an amazingly comprehensive payment page builder to build very effective and beautiful payment pages, surveys or any kind of webform you need."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -62,7 +61,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Peggy Pay</title>
-          <meta name="description" content="Peggy Pay offers an amazingly comprehensive payment page builder to build very effective and beautiful payment pages, surveys or any kind of webform you need." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

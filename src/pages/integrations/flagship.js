@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Flagship"
-      description="Flagship is a feature flagging platform that eliminates the risk of new feature releases."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +56,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Flagship</title>
-          <meta name="description" content="Flagship is a feature flagging platform that eliminates the risk of new feature releases." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

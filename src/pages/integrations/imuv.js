@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="iMuv"
-      description="iMuv is a complete work management solution. iMuv provides all the tools needed to manage the business."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +56,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>iMuv</title>
-          <meta name="description" content="iMuv is a complete work management solution. iMuv provides all the tools needed to manage the business." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

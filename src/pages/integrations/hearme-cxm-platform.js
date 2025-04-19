@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Hearme CXM platform"
-      description="Hearme is a software solution which helps enterprises collect responses from customers after they bought a product or service."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -61,7 +60,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Hearme CXM platform</title>
-          <meta name="description" content="Hearme is a software solution which helps enterprises collect responses from customers after they bought a product or service." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="DueDil"
-      description="DueDil provides instant access to intelligence on UK and Ireland companies, helping to empower decision making and accelerate growth."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -92,7 +91,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>DueDil</title>
-          <meta name="description" content="DueDil provides instant access to intelligence on UK and Ireland companies, helping to empower decision making and accelerate growth." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

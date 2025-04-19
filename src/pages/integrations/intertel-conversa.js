@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Intertel Conversa"
-      description="We put together social media channels in a cloud application, improving customer experience, boost sales and measure user base productivity."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -71,7 +70,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Intertel Conversa</title>
-          <meta name="description" content="We put together social media channels in a cloud application, improving customer experience, boost sales and measure user base productivity." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

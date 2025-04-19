@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="AliExpress"
-      description="Launched in 2010, AliExpress is made up of small businesses in China and other locations, such as Singapore, that offer products to international online buyers."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +52,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>AliExpress</title>
-          <meta name="description" content="Launched in 2010, AliExpress is made up of small businesses in China and other locations, such as Singapore, that offer products to international online buyers." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

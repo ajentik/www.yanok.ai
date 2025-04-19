@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Sonix"
-      description="Sonix is an automated transcription service. We quickly and accurately convert audio and video files to text. We also provide rich editing tools so you can easily edit, annotate, and export your transcripts."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -61,7 +60,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Sonix</title>
-          <meta name="description" content="Sonix is an automated transcription service. We quickly and accurately convert audio and video files to text. We also provide rich editing tools so you can easily edit, annotate, and export your transcripts." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

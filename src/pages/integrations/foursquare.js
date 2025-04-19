@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Foursquare"
-      description="Swarm by Foursquare is a popular geographical location-based social network that incorporates gaming elements."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +52,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Foursquare</title>
-          <meta name="description" content="Swarm by Foursquare is a popular geographical location-based social network that incorporates gaming elements." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

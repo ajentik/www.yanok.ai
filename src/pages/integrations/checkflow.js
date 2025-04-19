@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="CheckFlow"
-      description="CheckFlow is a SaaS platform that allows you to create and manage your team's recurring checklists and procedures in real-time."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -86,7 +85,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>CheckFlow</title>
-          <meta name="description" content="CheckFlow is a SaaS platform that allows you to create and manage your team's recurring checklists and procedures in real-time." />
+          <meta name="description" content={}/>s recurring checklists and procedures in real-time.' />
         </>
       ),
     },

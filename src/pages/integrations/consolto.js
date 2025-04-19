@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Consolto"
-      description="Consolto is a video chat CRM that helps businesses meet clients online -- video-conferencing, scheduling, persistent messaging, invoicing and analytics."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +56,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Consolto</title>
-          <meta name="description" content="Consolto is a video chat CRM that helps businesses meet clients online -- video-conferencing, scheduling, persistent messaging, invoicing and analytics." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

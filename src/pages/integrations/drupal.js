@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Drupal"
-      description="Drupal is an open source content management platform powering millions of websites and applications."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -61,7 +60,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Drupal</title>
-          <meta name="description" content="Drupal is an open source content management platform powering millions of websites and applications." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

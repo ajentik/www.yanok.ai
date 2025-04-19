@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="TimelinesAI"
-      description="TimelinesAI allows you to share access to your personal or business Whatsapp account, integrate it with other applications and build automations for your business and marketing flows."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -116,7 +115,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>TimelinesAI</title>
-          <meta name="description" content="TimelinesAI allows you to share access to your personal or business Whatsapp account, integrate it with other applications and build automations for your business and marketing flows." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

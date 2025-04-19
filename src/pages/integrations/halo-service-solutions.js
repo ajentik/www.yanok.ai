@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Halo Service Solutions"
-      description="Halo Service Solutions is a UK based company, which provides Service Desk, ITSM and PSA software solutions."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -81,7 +80,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Halo Service Solutions</title>
-          <meta name="description" content="Halo Service Solutions is a UK based company, which provides Service Desk, ITSM and PSA software solutions." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

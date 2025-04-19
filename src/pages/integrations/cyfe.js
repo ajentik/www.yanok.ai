@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Cyfe"
-      description="Cyfe is an all-in-one business dashboard app that helps you easily monitor all your business data from one place (e.g. social media, analytics, marketing, sales, support, infrastructure, etc)."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +56,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Cyfe</title>
-          <meta name="description" content="Cyfe is an all-in-one business dashboard app that helps you easily monitor all your business data from one place (e.g. social media, analytics, marketing, sales, support, infrastructure, etc)." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

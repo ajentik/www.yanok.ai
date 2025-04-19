@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Hypersay Events"
-      description="Hypersay Events is a digital events platform hosting live and recorded content to socially-engaged and inclusive audiences."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -66,7 +65,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Hypersay Events</title>
-          <meta name="description" content="Hypersay Events is a digital events platform hosting live and recorded content to socially-engaged and inclusive audiences." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="hauzd"
-      description="Hauzd is a 3D Sales Solution for Real Estate Developers & Brokers."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -61,7 +60,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>hauzd</title>
-          <meta name="description" content="Hauzd is a 3D Sales Solution for Real Estate Developers & Brokers." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

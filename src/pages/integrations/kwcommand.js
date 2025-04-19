@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Keller Williams Command"
-      description="Keller Williams Command is a dashboard that allows you to optimize, manage, and run your business with simplicity and insight."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +56,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Keller Williams Command</title>
-          <meta name="description" content="Keller Williams Command is a dashboard that allows you to optimize, manage, and run your business with simplicity and insight." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

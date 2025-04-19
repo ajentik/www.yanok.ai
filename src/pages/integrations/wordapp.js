@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Wordapp"
-      description="Wordapp is a word-processing platform for e-commerce that lets you manage & control your content creation with a crowd of writers & editors."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +56,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Wordapp</title>
-          <meta name="description" content="Wordapp is a word-processing platform for e-commerce that lets you manage & control your content creation with a crowd of writers & editors." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

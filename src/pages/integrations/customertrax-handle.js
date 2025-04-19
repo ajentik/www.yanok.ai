@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="CustomerTrax Handle"
-      description="Handle 2.0™ is a configurable CRM that shrinks the complexity of your processes"
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +56,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>CustomerTrax Handle</title>
-          <meta name="description" content="Handle 2.0™ is a configurable CRM that shrinks the complexity of your processes" />
+          <meta name="description" content={}/> />
         </>
       ),
     },

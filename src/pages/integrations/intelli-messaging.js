@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Intelli Messaging"
-      description="Intelli Messaging lets you send SMS Messages worldwide."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -76,7 +75,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Intelli Messaging</title>
-          <meta name="description" content="Intelli Messaging lets you send SMS Messages worldwide." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

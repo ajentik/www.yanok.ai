@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="T2M URL Shortener"
-      description="T2M URL Shortener is a link management platform mainly built for Individual Creators, Businesses, Universities & Survey Agencies."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -72,7 +71,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>T2M URL Shortener</title>
-          <meta name="description" content="T2M URL Shortener is a link management platform mainly built for Individual Creators, Businesses, Universities & Survey Agencies." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

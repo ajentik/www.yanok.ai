@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="LogSpace"
-      description="LogSpace is a time and expense tracking system enhanced with automatic invoicing."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -76,7 +75,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>LogSpace</title>
-          <meta name="description" content="LogSpace is a time and expense tracking system enhanced with automatic invoicing." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

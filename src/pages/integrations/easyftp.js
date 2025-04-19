@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="EasyFTP"
-      description="EasyFTP enables you to upload files in a FTP or SFTP server."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -76,7 +75,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>EasyFTP</title>
-          <meta name="description" content="EasyFTP enables you to upload files in a FTP or SFTP server." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

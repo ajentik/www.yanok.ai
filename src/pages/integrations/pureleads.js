@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Pure Leads"
-      description="Pureleads helps capture, track, distribute and manage your leads with ease. Grow faster with our scalable lead generation software ."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -66,7 +65,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Pure Leads</title>
-          <meta name="description" content="Pureleads helps capture, track, distribute and manage your leads with ease. Grow faster with our scalable lead generation software ." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

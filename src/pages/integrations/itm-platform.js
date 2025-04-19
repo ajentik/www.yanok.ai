@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="ITM Platform"
-      description="ITM Platform is a project, program, and portfolio management solution with no onboarding hassle."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +56,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>ITM Platform</title>
-          <meta name="description" content="ITM Platform is a project, program, and portfolio management solution with no onboarding hassle." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Wealthbox CRM"
-      description="Wealthbox is a web-based CRM solution that allows financial advisors to manage their client relationships with ease."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -156,7 +155,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Wealthbox CRM</title>
-          <meta name="description" content="Wealthbox is a web-based CRM solution that allows financial advisors to manage their client relationships with ease." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

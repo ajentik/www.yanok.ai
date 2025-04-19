@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Realeflow"
-      description="Realeflow is a real estate investor CRM + marketing automation tools, all-in-one platform."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -71,7 +70,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Realeflow</title>
-          <meta name="description" content="Realeflow is a real estate investor CRM + marketing automation tools, all-in-one platform." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

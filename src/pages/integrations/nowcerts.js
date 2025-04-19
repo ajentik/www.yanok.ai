@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Nowcerts"
-      description="The best and most affordable insurance agency management system software."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +52,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Nowcerts</title>
-          <meta name="description" content="The best and most affordable insurance agency management system software." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Spreadsheet.com"
-      description="Spreadsheet.com is the all-in-one spreadsheet for teams"
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -96,7 +95,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Spreadsheet.com</title>
-          <meta name="description" content="Spreadsheet.com is the all-in-one spreadsheet for teams" />
+          <meta name="description" content={}/> />
         </>
       ),
     },

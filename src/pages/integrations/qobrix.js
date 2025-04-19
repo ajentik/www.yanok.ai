@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Qobrix"
-      description="Qobrix is a powerful platform that helps real estate professionals to build long-term customer & partner relationships, simplify sales & marketing activities, and better manage their property listings."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -76,7 +75,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Qobrix</title>
-          <meta name="description" content="Qobrix is a powerful platform that helps real estate professionals to build long-term customer & partner relationships, simplify sales & marketing activities, and better manage their property listings." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

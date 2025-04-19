@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="YoPrint"
-      description="YoPrint is an all-in-one print shop management software that helps you keep track of your sales, inventory and production."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -76,7 +75,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>YoPrint</title>
-          <meta name="description" content="YoPrint is an all-in-one print shop management software that helps you keep track of your sales, inventory and production." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

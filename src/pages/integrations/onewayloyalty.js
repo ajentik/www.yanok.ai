@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="OneWayLoyalty"
-      description="Customer Digital Loyalty Platform. Convert new customers into returning customers. Our platform helps you make more sales by turning one-off transactions into relationships and retaining customers using memberships and digital rewards."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +56,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>OneWayLoyalty</title>
-          <meta name="description" content="Customer Digital Loyalty Platform. Convert new customers into returning customers. Our platform helps you make more sales by turning one-off transactions into relationships and retaining customers using memberships and digital rewards." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

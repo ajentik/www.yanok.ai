@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Palzin Feedback"
-      description="Palzin Feedback Platform is a simple yet powerful tool to collect customer feedback and build better products."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -81,7 +80,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Palzin Feedback</title>
-          <meta name="description" content="Palzin Feedback Platform is a simple yet powerful tool to collect customer feedback and build better products." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

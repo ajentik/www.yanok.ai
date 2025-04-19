@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Parashift"
-      description="A fundamentally different approach to Intelligent Document Processing"
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -91,7 +90,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Parashift</title>
-          <meta name="description" content="A fundamentally different approach to Intelligent Document Processing" />
+          <meta name="description" content={}/> />
         </>
       ),
     },

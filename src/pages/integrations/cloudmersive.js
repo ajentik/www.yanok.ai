@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Cloudmersive"
-      description="Cloudmersive is a platform for converting documents, screenshotting websites, validating email addresses, and automating other key business actions."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -67,7 +66,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Cloudmersive</title>
-          <meta name="description" content="Cloudmersive is a platform for converting documents, screenshotting websites, validating email addresses, and automating other key business actions." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

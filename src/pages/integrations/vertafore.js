@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Vertafore"
-      description="Vertafore provides insurance software solutions for independent agencies and brokers, MGAs, and carriers, helping them better manage their businesses."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +52,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Vertafore</title>
-          <meta name="description" content="Vertafore provides insurance software solutions for independent agencies and brokers, MGAs, and carriers, helping them better manage their businesses." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

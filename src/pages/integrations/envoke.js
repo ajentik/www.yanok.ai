@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Envoke"
-      description="Envoke is a broadcast email platform for compliance-conscious organizations sending opt-in and mandatory content with an emphasis on data security and subscription management."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -81,7 +80,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Envoke</title>
-          <meta name="description" content="Envoke is a broadcast email platform for compliance-conscious organizations sending opt-in and mandatory content with an emphasis on data security and subscription management." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

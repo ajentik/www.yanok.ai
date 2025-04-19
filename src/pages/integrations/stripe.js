@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Stripe"
-      description="Stripe is a developer-friendly way to accept payments online and in mobile apps. Stripe's suite of APIs powers commerce for thousands of companies of all sizes, processing billions of dollars for businesses each year."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -176,7 +175,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Stripe</title>
-          <meta name="description" content="Stripe is a developer-friendly way to accept payments online and in mobile apps. Stripe's suite of APIs powers commerce for thousands of companies of all sizes, processing billions of dollars for businesses each year." />
+          <meta name="description" content={}/>s suite of APIs powers commerce for thousands of companies of all sizes, processing billions of dollars for businesses each year.' />
         </>
       ),
     },

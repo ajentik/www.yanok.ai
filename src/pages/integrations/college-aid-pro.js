@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="College Aid Pro"
-      description="College Aid Pro is a college planning software for financial advisors to assist college-bound families."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -61,7 +60,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>College Aid Pro</title>
-          <meta name="description" content="College Aid Pro is a college planning software for financial advisors to assist college-bound families." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Hot Prospector"
-      description="Hot Prospector is ideal for anyone who has an existing database of past customers or is looking to bring in a rush of brand new prospects."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -101,7 +100,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Hot Prospector</title>
-          <meta name="description" content="Hot Prospector is ideal for anyone who has an existing database of past customers or is looking to bring in a rush of brand new prospects." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

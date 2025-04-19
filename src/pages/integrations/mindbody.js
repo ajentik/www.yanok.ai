@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="MINDBODY"
-      description="MINDBODY is a powerful business management software that combines your scheduling, task automation, reporting tools and more into a single online platform."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +52,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>MINDBODY</title>
-          <meta name="description" content="MINDBODY is a powerful business management software that combines your scheduling, task automation, reporting tools and more into a single online platform." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

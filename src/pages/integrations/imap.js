@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="IMAP by Zapier"
-      description="IMAP stands for Internet message access protocol, which is a widely used protocol for e-mail retrieval available in Microsoft, Google and Yahoo! products among millions of mail servers worldwide. Check our SMTP service as well!"
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -62,7 +61,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>IMAP by Zapier</title>
-          <meta name="description" content="IMAP stands for Internet message access protocol, which is a widely used protocol for e-mail retrieval available in Microsoft, Google and Yahoo! products among millions of mail servers worldwide. Check our SMTP service as well!" />
+          <meta name="description" content={}/> />
         </>
       ),
     },

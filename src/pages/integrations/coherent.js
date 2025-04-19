@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Coherent"
-      description="Coherent is a web application specifically designed to manage coworking and shared workspaces and to connect their communities."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -82,7 +81,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Coherent</title>
-          <meta name="description" content="Coherent is a web application specifically designed to manage coworking and shared workspaces and to connect their communities." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

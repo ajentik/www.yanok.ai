@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Bonusly"
-      description="Bonusly is a fun, personal recognition and rewards program that enriches your company culture, improves employee engagement, and celebrates your core values. With Bonusly, everyone in your organization can publicly recognize everyone else by giving small bonuses that add up to meaningful rewards."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -76,7 +75,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Bonusly</title>
-          <meta name="description" content="Bonusly is a fun, personal recognition and rewards program that enriches your company culture, improves employee engagement, and celebrates your core values. With Bonusly, everyone in your organization can publicly recognize everyone else by giving small bonuses that add up to meaningful rewards." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

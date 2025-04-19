@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="We Want You"
-      description="We Want You is an offer letter tool for HR teams to create, send, and track job offers for candidates. Onboard faster with benefits packages and electronic signatures."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -76,7 +75,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>We Want You</title>
-          <meta name="description" content="We Want You is an offer letter tool for HR teams to create, send, and track job offers for candidates. Onboard faster with benefits packages and electronic signatures." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

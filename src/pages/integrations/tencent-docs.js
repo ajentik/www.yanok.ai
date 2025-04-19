@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Tencent Docs"
-      description="Tencent Docs is an online document that can be coordinated by many people. It can edit Word, Excel and PPT documents at the same time and save them in real time in the cloud."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +56,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Tencent Docs</title>
-          <meta name="description" content="Tencent Docs is an online document that can be coordinated by many people. It can edit Word, Excel and PPT documents at the same time and save them in real time in the cloud." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

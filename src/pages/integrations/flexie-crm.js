@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Flexie CRM"
-      description="Flexie CRM solution is built to help sales teams stay organized, nurture leads, close more deals, and improve overall productivity."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -206,7 +205,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Flexie CRM</title>
-          <meta name="description" content="Flexie CRM solution is built to help sales teams stay organized, nurture leads, close more deals, and improve overall productivity." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

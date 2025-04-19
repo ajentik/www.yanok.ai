@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Intervals"
-      description="Intervals is cloud-based time tracking and task management with powerful reporting. Designed for the unique needs of small business."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +52,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Intervals</title>
-          <meta name="description" content="Intervals is cloud-based time tracking and task management with powerful reporting. Designed for the unique needs of small business." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

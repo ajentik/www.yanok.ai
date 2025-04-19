@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Gatekeeper"
-      description="Gatekeeper is a powerful, flexible and intuitive Supplier and Contract Management solution."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -121,7 +120,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Gatekeeper</title>
-          <meta name="description" content="Gatekeeper is a powerful, flexible and intuitive Supplier and Contract Management solution." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

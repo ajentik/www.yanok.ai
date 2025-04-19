@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Jumppl"
-      description="Jumppl is a project management platform with features including separate client portals, staff monitoring, task monitoring, invoicing, team chat and file storage."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -62,7 +61,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Jumppl</title>
-          <meta name="description" content="Jumppl is a project management platform with features including separate client portals, staff monitoring, task monitoring, invoicing, team chat and file storage." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

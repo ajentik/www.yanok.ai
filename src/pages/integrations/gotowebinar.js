@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="GoTo Webinar"
-      description="GoTo Webinar by LogMeIn makes it easy to set up and deliver an online video and audio conference. Conduct do-it-yourself webinars with up to 1000 people – all for one flat rate. Extend your reach, expand your audience, increase your influence. Webinars work."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -91,7 +90,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>GoTo Webinar</title>
-          <meta name="description" content="GoTo Webinar by LogMeIn makes it easy to set up and deliver an online video and audio conference. Conduct do-it-yourself webinars with up to 1000 people – all for one flat rate. Extend your reach, expand your audience, increase your influence. Webinars work." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

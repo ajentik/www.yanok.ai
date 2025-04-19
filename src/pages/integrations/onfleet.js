@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Onfleet"
-      description="Onfleet transforms cumbersome last-mile logistics into delightful delivery management. Intuitive smartphone apps, powerful web dashboard and automatic customer notifications handle the heavy lifting so you can focus on your customer."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -136,7 +135,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Onfleet</title>
-          <meta name="description" content="Onfleet transforms cumbersome last-mile logistics into delightful delivery management. Intuitive smartphone apps, powerful web dashboard and automatic customer notifications handle the heavy lifting so you can focus on your customer." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

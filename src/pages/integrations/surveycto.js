@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="SurveyCTO"
-      description="SurveyCTO is a platform for digital data collection, optimized for ease-of-use, data security, and use in offline (field) settings."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +56,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>SurveyCTO</title>
-          <meta name="description" content="SurveyCTO is a platform for digital data collection, optimized for ease-of-use, data security, and use in offline (field) settings." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

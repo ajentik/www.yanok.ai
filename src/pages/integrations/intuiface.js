@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Intuiface"
-      description="Intuiface is a platform for creating, deploying and managing interactive experiences without writing one line of code."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +56,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Intuiface</title>
-          <meta name="description" content="Intuiface is a platform for creating, deploying and managing interactive experiences without writing one line of code." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

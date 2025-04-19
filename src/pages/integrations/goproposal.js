@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="GoProposal"
-      description="GoProposal enables accountants to price consistently & eliminate scope creep."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -67,7 +66,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>GoProposal</title>
-          <meta name="description" content="GoProposal enables accountants to price consistently & eliminate scope creep." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

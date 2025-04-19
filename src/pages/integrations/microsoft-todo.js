@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Microsoft To Do"
-      description="Microsoft To Do is an intelligent task management app that makes it easy to plan and manage your day. With its intelligent Suggestions, To Do removes all the clutter and empowers you to focus on what's important, when it's important."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -96,7 +95,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Microsoft To Do</title>
-          <meta name="description" content="Microsoft To Do is an intelligent task management app that makes it easy to plan and manage your day. With its intelligent Suggestions, To Do removes all the clutter and empowers you to focus on what's important, when it's important." />
+          <meta name="description" content={}/>s important, when it's important.' />
         </>
       ),
     },

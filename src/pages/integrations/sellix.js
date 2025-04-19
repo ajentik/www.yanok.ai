@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Sellix"
-      description="Sellix is a powerful e-commerce solution that lets you create a custom store in just a couple of clicks. Enable 20+ triggers such as invoices paid, products out of stock or subscriptions created."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -172,7 +171,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Sellix</title>
-          <meta name="description" content="Sellix is a powerful e-commerce solution that lets you create a custom store in just a couple of clicks. Enable 20+ triggers such as invoices paid, products out of stock or subscriptions created." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

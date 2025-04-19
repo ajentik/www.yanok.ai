@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Passbase"
-      description="Passbase enables developers to integrate bank level identity verification into their App or website. You can easily capture identity documents, liveness detection and facial biometrics with a few lines of code."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -66,7 +65,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Passbase</title>
-          <meta name="description" content="Passbase enables developers to integrate bank level identity verification into their App or website. You can easily capture identity documents, liveness detection and facial biometrics with a few lines of code." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

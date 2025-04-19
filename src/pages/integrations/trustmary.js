@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Trustmary"
-      description="Trustmary helps you gather social proof and use it on your website to generate more leads. Collect NPS, video and text reviews from your customers. Use the social proof you have gathered in different ways on your website."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -71,7 +70,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Trustmary</title>
-          <meta name="description" content="Trustmary helps you gather social proof and use it on your website to generate more leads. Collect NPS, video and text reviews from your customers. Use the social proof you have gathered in different ways on your website." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

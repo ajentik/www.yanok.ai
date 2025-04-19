@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="LeadBooker"
-      description="LeadBooker is an advanced version of 30 years of lead managing knowledge."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -61,7 +60,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>LeadBooker</title>
-          <meta name="description" content="LeadBooker is an advanced version of 30 years of lead managing knowledge." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

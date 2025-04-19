@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Demand IQ"
-      description="Stella by Demand IQ is a lead generation tool that helps solar companies convert clicks into sales opportunities."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +56,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Demand IQ</title>
-          <meta name="description" content="Stella by Demand IQ is a lead generation tool that helps solar companies convert clicks into sales opportunities." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

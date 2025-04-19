@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Hyperia"
-      description="Hyperia is an AI Assistant that highlights the moments that matter from your calls and meetings so your team can focus on what’s most important"
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +56,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Hyperia</title>
-          <meta name="description" content="Hyperia is an AI Assistant that highlights the moments that matter from your calls and meetings so your team can focus on what’s most important" />
+          <meta name="description" content={}/> />
         </>
       ),
     },

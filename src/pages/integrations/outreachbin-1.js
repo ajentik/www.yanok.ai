@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="OutReachBin"
-      description="Outreachbin is a cold email outreach tool, that helps users warm up and send emails to inbox."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -96,7 +95,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>OutReachBin</title>
-          <meta name="description" content="Outreachbin is a cold email outreach tool, that helps users warm up and send emails to inbox." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

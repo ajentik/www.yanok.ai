@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Tave"
-      description="Táve is a studio management tool designed to organize and automate creative businesses."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -91,7 +90,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Tave</title>
-          <meta name="description" content="Táve is a studio management tool designed to organize and automate creative businesses." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

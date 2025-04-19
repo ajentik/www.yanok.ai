@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Superpeer"
-      description="Superpeer is an all-in-one video platform that gives you the tools you need to engage with your audience through video and connect in a more authentic way."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -122,7 +121,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Superpeer</title>
-          <meta name="description" content="Superpeer is an all-in-one video platform that gives you the tools you need to engage with your audience through video and connect in a more authentic way." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

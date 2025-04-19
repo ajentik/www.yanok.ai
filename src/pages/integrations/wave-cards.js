@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Wave Cards"
-      description="Share your contact details, a landing page, or social media accounts with a single Wave of your NFC business card."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +56,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Wave Cards</title>
-          <meta name="description" content="Share your contact details, a landing page, or social media accounts with a single Wave of your NFC business card." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

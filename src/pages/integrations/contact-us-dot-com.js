@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="ContactUs.com"
-      description="ContactUs.com increases the amount of website visitors that become contacts by using behavioral triggers, helps you start the conversation with those visitors with a basic CRM, tells you where your leads come from and what they do in your website."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +56,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>ContactUs.com</title>
-          <meta name="description" content="ContactUs.com increases the amount of website visitors that become contacts by using behavioral triggers, helps you start the conversation with those visitors with a basic CRM, tells you where your leads come from and what they do in your website." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

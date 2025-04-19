@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="SolarWinds Service Desk"
-      description="Modern IT management. Cloud-based IT service desk and asset management solution you'll love to use."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -146,7 +145,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>SolarWinds Service Desk</title>
-          <meta name="description" content="Modern IT management. Cloud-based IT service desk and asset management solution you'll love to use." />
+          <meta name="description" content={}/>ll love to use.' />
         </>
       ),
     },

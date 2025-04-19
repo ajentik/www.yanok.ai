@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="zInspector"
-      description="Complete property inspection software and apps for Android and iOS users. For real estate professionals including contractors, agents, and property managers."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +52,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>zInspector</title>
-          <meta name="description" content="Complete property inspection software and apps for Android and iOS users. For real estate professionals including contractors, agents, and property managers." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

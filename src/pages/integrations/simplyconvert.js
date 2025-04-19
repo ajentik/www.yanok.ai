@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="SimplyConvert"
-      description="SimplyConvert is an automated intake case-qualification platform powered by an “all-knowing” AI chatbot."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -81,7 +80,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>SimplyConvert</title>
-          <meta name="description" content="SimplyConvert is an automated intake case-qualification platform powered by an “all-knowing” AI chatbot." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

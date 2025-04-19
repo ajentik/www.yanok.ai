@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Eworks Manager"
-      description="Eworks Manager is an award-winning Job Management software that allows your business to manage jobs and projects from Quote through to invoice"
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -381,7 +380,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Eworks Manager</title>
-          <meta name="description" content="Eworks Manager is an award-winning Job Management software that allows your business to manage jobs and projects from Quote through to invoice" />
+          <meta name="description" content={}/> />
         </>
       ),
     },

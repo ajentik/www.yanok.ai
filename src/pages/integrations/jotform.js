@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Jotform"
-      description="The newly redesigned Jotform lets you build forms faster than ever, with powerful widgets and a responsive editor that works offline—without even needing to sign up for an account."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -76,7 +75,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Jotform</title>
-          <meta name="description" content="The newly redesigned Jotform lets you build forms faster than ever, with powerful widgets and a responsive editor that works offline—without even needing to sign up for an account." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

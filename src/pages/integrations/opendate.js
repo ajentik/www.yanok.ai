@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Opendate"
-      description="Opendate is the data driven operating system for your venue. Transform how you discover, analyze, and book the best talent for your venue through our industry-leading software and events platform for venues."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -166,7 +165,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Opendate</title>
-          <meta name="description" content="Opendate is the data driven operating system for your venue. Transform how you discover, analyze, and book the best talent for your venue through our industry-leading software and events platform for venues." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Okta"
-      description="Okta helps companies manage and secure user authentication into modern applications, and for developers to build identity controls into applications, website web services and into devices."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -61,7 +60,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Okta</title>
-          <meta name="description" content="Okta helps companies manage and secure user authentication into modern applications, and for developers to build identity controls into applications, website web services and into devices." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

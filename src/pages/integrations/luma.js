@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Luma"
-      description="Luma is an event management app that gives you the tools to host delightful Zoom events."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -86,7 +85,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Luma</title>
-          <meta name="description" content="Luma is an event management app that gives you the tools to host delightful Zoom events." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="HubSpot"
-      description="HubSpot is your all-in-one stop for all of your marketing software needs."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -436,7 +435,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>HubSpot</title>
-          <meta name="description" content="HubSpot is your all-in-one stop for all of your marketing software needs." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

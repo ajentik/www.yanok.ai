@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Jenkins"
-      description="jenkins is a continuous integration server that monitors executions of repeated jobs, such as building a software project or jobs run by cron."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +56,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Jenkins</title>
-          <meta name="description" content="jenkins is a continuous integration server that monitors executions of repeated jobs, such as building a software project or jobs run by cron." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

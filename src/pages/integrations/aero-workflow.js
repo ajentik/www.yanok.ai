@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Aero Workflow"
-      description="Aero Workflow is a workflow application for accountants by accountants."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -96,7 +95,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Aero Workflow</title>
-          <meta name="description" content="Aero Workflow is a workflow application for accountants by accountants." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

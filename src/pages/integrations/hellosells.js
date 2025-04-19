@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="HelloSells"
-      description="HelloSells is a lead response and qualification service. We respond to calls and chats to capture the qualifying information and pass it to our clients so that they can focus only on the right prospects."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +56,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>HelloSells</title>
-          <meta name="description" content="HelloSells is a lead response and qualification service. We respond to calls and chats to capture the qualifying information and pass it to our clients so that they can focus only on the right prospects." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

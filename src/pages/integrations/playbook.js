@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Playbook"
-      description="Playbook will be a software application that will allow customers to gain more control over their businesses. They will be able to better build and track their company’s tasks and processes."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +56,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Playbook</title>
-          <meta name="description" content="Playbook will be a software application that will allow customers to gain more control over their businesses. They will be able to better build and track their company’s tasks and processes." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

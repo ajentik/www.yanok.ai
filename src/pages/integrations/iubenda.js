@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="iubenda"
-      description="With the iubenda Consent Solution you can record and manage GDPR consent and privacy preferences for each of your users, integrating your consent collection forms, your legal documents and includes a user-friendly dashboard for reviewing consent records of your activities."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -72,7 +71,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>iubenda</title>
-          <meta name="description" content="With the iubenda Consent Solution you can record and manage GDPR consent and privacy preferences for each of your users, integrating your consent collection forms, your legal documents and includes a user-friendly dashboard for reviewing consent records of your activities." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

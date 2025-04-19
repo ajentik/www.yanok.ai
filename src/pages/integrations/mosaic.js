@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Mosaic"
-      description="Mosaic maximizes companies' efficiency and profitability by automating the planning, management, and tracking of time"
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -81,7 +80,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Mosaic</title>
-          <meta name="description" content="Mosaic maximizes companies' efficiency and profitability by automating the planning, management, and tracking of time" />
+          <meta name="description" content={}/> efficiency and profitability by automating the planning, management, and tracking of time' />
         </>
       ),
     },

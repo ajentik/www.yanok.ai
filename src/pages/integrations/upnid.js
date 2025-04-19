@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Upnid"
-      description="Upnid is a payment platform that simplify online payment processing in Brazil."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -62,7 +61,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Upnid</title>
-          <meta name="description" content="Upnid is a payment platform that simplify online payment processing in Brazil." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

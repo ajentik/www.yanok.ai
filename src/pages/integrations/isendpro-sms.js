@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="iSendPro SMS"
-      description="Send SMS easily using yout isendpro telecom account"
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +56,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>iSendPro SMS</title>
-          <meta name="description" content="Send SMS easily using yout isendpro telecom account" />
+          <meta name="description" content={}/> />
         </>
       ),
     },

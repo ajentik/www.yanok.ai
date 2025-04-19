@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Amazon SNS"
-      description="Amazon Simple Notification Service is a flexible, and fast messaging service which is fully managed. SNS is a simple and cost-effective method to message both distributed services and human recipients."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -86,7 +85,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Amazon SNS</title>
-          <meta name="description" content="Amazon Simple Notification Service is a flexible, and fast messaging service which is fully managed. SNS is a simple and cost-effective method to message both distributed services and human recipients." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

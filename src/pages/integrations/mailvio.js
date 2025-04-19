@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Mailvio"
-      description="Mailvio is an advanced email marketing and automation platform you can use to send newsletter emails, manage your transactional emails, and send SMS."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -86,7 +85,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Mailvio</title>
-          <meta name="description" content="Mailvio is an advanced email marketing and automation platform you can use to send newsletter emails, manage your transactional emails, and send SMS." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

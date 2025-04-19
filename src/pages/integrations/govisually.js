@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="GoVisually"
-      description="GoVisually is the simplest online proofing solution to get visual feedback directly on Designs, PDFs & Video content."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -86,7 +85,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>GoVisually</title>
-          <meta name="description" content="GoVisually is the simplest online proofing solution to get visual feedback directly on Designs, PDFs & Video content." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

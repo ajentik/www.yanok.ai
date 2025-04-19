@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Spondyr"
-      description="Spondyr is a templated document & correspondence platform, enabling you to effortlessly deliver template-driven content to your recipients."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -61,7 +60,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Spondyr</title>
-          <meta name="description" content="Spondyr is a templated document & correspondence platform, enabling you to effortlessly deliver template-driven content to your recipients." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

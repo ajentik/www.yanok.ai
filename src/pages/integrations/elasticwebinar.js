@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="ElasticWebinar"
-      description="ElasticWebinar is a webinar app that lets you create modern automated webinars."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -67,7 +66,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>ElasticWebinar</title>
-          <meta name="description" content="ElasticWebinar is a webinar app that lets you create modern automated webinars." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

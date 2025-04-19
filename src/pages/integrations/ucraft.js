@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Ucraft"
-      description="Ucraft is a drag and drop Website Builder that provides web designers, freelancers, marketers or entrepreneurs a set of web design tools to start their next project."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +56,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Ucraft</title>
-          <meta name="description" content="Ucraft is a drag and drop Website Builder that provides web designers, freelancers, marketers or entrepreneurs a set of web design tools to start their next project." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

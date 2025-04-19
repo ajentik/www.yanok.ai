@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Deputy"
-      description="Deputy is an all-in-one employee scheduling, timesheets, tasking and communication platform. Used by thousands of businesses around the world it will improve profitability, staff culture and operational accountability."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -171,7 +170,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Deputy</title>
-          <meta name="description" content="Deputy is an all-in-one employee scheduling, timesheets, tasking and communication platform. Used by thousands of businesses around the world it will improve profitability, staff culture and operational accountability." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

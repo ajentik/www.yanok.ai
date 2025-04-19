@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Quipu"
-      description="Quipu is an accounting app that makes accounting for small businesses and freelancers easier, automated and paperless."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -67,7 +66,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Quipu</title>
-          <meta name="description" content="Quipu is an accounting app that makes accounting for small businesses and freelancers easier, automated and paperless." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="TextP2P"
-      description="TextP2P is a SMS & MMS text marketing system that enables you to cultivate better relationships with customers and streamline follow-ups."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -86,7 +85,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>TextP2P</title>
-          <meta name="description" content="TextP2P is a SMS & MMS text marketing system that enables you to cultivate better relationships with customers and streamline follow-ups." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Vybit Notifications"
-      description="Vybit sends distinct, personalized sound notifications that you create by recording your own sounds or choosing from thousands of available sounds. With Vybit, you can create the sounds you like so you know exactly what each notification means to you."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +56,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Vybit Notifications</title>
-          <meta name="description" content="Vybit sends distinct, personalized sound notifications that you create by recording your own sounds or choosing from thousands of available sounds. With Vybit, you can create the sounds you like so you know exactly what each notification means to you." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

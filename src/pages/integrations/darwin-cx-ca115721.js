@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Darwin CX"
-      description="DarwinCX is an end-to-end SaaS customer data platform for magazine publishers and membership organizations."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -91,7 +90,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Darwin CX</title>
-          <meta name="description" content="DarwinCX is an end-to-end SaaS customer data platform for magazine publishers and membership organizations." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

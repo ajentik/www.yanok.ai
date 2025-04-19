@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="CloudShare"
-      description="CloudShare provides secure, specialized virtual IT labs for training, sales, sandboxing, and support."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +52,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>CloudShare</title>
-          <meta name="description" content="CloudShare provides secure, specialized virtual IT labs for training, sales, sandboxing, and support." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="SendGrid"
-      description="SendGrid's cloud-based email infrastructure relieves businesses of the cost and complexity of maintaining custom email systems"
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +56,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>SendGrid</title>
-          <meta name="description" content="SendGrid's cloud-based email infrastructure relieves businesses of the cost and complexity of maintaining custom email systems" />
+          <meta name="description" content={}/>s cloud-based email infrastructure relieves businesses of the cost and complexity of maintaining custom email systems' />
         </>
       ),
     },

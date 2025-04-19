@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Zoho Inventory"
-      description="Zoho Inventory is inventory management software for growing businesses to increase the sales and keep track of every unit with powerful stock management, order fulfillment, and inventory control."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -91,7 +90,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Zoho Inventory</title>
-          <meta name="description" content="Zoho Inventory is inventory management software for growing businesses to increase the sales and keep track of every unit with powerful stock management, order fulfillment, and inventory control." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

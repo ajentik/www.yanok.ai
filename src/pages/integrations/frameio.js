@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Frame.io"
-      description="Frame.io is a video review and collaboration platform. Share video projects with your team and clients for fast feedback and approval."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -136,7 +135,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Frame.io</title>
-          <meta name="description" content="Frame.io is a video review and collaboration platform. Share video projects with your team and clients for fast feedback and approval." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

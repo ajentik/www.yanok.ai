@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="AutoRemote"
-      description="Control your phone remotely with Tasker and AutoRemote."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -66,7 +65,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>AutoRemote</title>
-          <meta name="description" content="Control your phone remotely with Tasker and AutoRemote." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

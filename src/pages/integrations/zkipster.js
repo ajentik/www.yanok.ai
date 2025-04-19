@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="zkipster"
-      description="Event management software for the world’s best events. Trusted by global brands and organizations for custom online invitations, guest check-in, and more."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -111,7 +110,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>zkipster</title>
-          <meta name="description" content="Event management software for the world’s best events. Trusted by global brands and organizations for custom online invitations, guest check-in, and more." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

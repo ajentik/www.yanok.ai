@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Subbly"
-      description="Subbly is an all-in-one subscription eCommerce solution that provides vendors with everything they need to set up a subscription box business on one simple platform."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +52,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Subbly</title>
-          <meta name="description" content="Subbly is an all-in-one subscription eCommerce solution that provides vendors with everything they need to set up a subscription box business on one simple platform." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

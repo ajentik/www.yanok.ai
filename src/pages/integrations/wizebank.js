@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Wizebank"
-      description="Wizebank gives your customers the freedom to pay over time while you get paid upfront. It’s a win-win."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -72,7 +71,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Wizebank</title>
-          <meta name="description" content="Wizebank gives your customers the freedom to pay over time while you get paid upfront. It’s a win-win." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

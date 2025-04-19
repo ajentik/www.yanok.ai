@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="CloudKii"
-      description="CloudKii empowers you to take control over your extension business."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -102,7 +101,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>CloudKii</title>
-          <meta name="description" content="CloudKii empowers you to take control over your extension business." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

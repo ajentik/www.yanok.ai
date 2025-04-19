@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Linkedin Sales Navigator"
-      description="LinkedIn Sales Navigator is an advanced sales tool that aids sales teams, organizations, and individuals to build and nurture customer relationships on the network."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +52,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Linkedin Sales Navigator</title>
-          <meta name="description" content="LinkedIn Sales Navigator is an advanced sales tool that aids sales teams, organizations, and individuals to build and nurture customer relationships on the network." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

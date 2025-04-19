@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Makesbridge"
-      description="Makesbridge is a sales and marketing automation tool that grows contact lists, nurtures prospects, sends mass emails, and generates sales."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -81,7 +80,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Makesbridge</title>
-          <meta name="description" content="Makesbridge is a sales and marketing automation tool that grows contact lists, nurtures prospects, sends mass emails, and generates sales." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="WotNot"
-      description="It's easy to build bots, but hard to get the desired results. This is where WotNot steps in, providing a done-for-you service. We build a pipeline of qualified leads, automate your support, without increasing headcount with our no-code chatbot platform."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +56,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>WotNot</title>
-          <meta name="description" content="It's easy to build bots, but hard to get the desired results. This is where WotNot steps in, providing a done-for-you service. We build a pipeline of qualified leads, automate your support, without increasing headcount with our no-code chatbot platform." />
+          <meta name="description" content={}/>s easy to build bots, but hard to get the desired results. This is where WotNot steps in, providing a done-for-you service. We build a pipeline of qualified leads, automate your support, without increasing headcount with our no-code chatbot platform.' />
         </>
       ),
     },

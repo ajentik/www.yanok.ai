@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Space Invoices / Apollo"
-      description="Space Invoices is an advanced, multi-tenant invoicing API that helps companies across the world to easily issue invoices and other documents automatically from their software. Comes with Apollo (https://getapollo.io), an intuitive UI for managing all business data."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -66,7 +65,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Space Invoices / Apollo</title>
-          <meta name="description" content="Space Invoices is an advanced, multi-tenant invoicing API that helps companies across the world to easily issue invoices and other documents automatically from their software. Comes with Apollo (https://getapollo.io), an intuitive UI for managing all business data." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

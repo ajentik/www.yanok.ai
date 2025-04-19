@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="HL Pro Tools"
-      description="HL Pro Tools helps you take full advantage of HighLevel with advanced automations to make your life and agency easier."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -156,7 +155,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>HL Pro Tools</title>
-          <meta name="description" content="HL Pro Tools helps you take full advantage of HighLevel with advanced automations to make your life and agency easier." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

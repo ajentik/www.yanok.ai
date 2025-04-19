@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="businesscards.io"
-      description="Minimalist digital business cards that integrate seamlessly with your Apple wallet."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +56,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>businesscards.io</title>
-          <meta name="description" content="Minimalist digital business cards that integrate seamlessly with your Apple wallet." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

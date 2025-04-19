@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Citima"
-      description="Citima is a new, indispensable customer relation manager (crm) for real estate advisors."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -126,7 +125,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Citima</title>
-          <meta name="description" content="Citima is a new, indispensable customer relation manager (crm) for real estate advisors." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Certifier"
-      description="Professional Certificate Maker - create and send certificates"
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +56,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Certifier</title>
-          <meta name="description" content="Professional Certificate Maker - create and send certificates" />
+          <meta name="description" content={}/> />
         </>
       ),
     },

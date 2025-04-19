@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Wise Pelican"
-      description="Wise Pelican is a post card mailing service."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -61,7 +60,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Wise Pelican</title>
-          <meta name="description" content="Wise Pelican is a post card mailing service." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

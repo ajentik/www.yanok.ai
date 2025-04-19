@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="TimeCamp"
-      description="TimeCamp helps you and your team to track time. Automatic time-tracking software that tracks websites and applications usage, projects and helps you understand how your time is spent."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -81,7 +80,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>TimeCamp</title>
-          <meta name="description" content="TimeCamp helps you and your team to track time. Automatic time-tracking software that tracks websites and applications usage, projects and helps you understand how your time is spent." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

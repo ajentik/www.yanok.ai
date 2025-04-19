@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Kissflow Coral"
-      description="Kissflow Digital Workplace is a powerful work management solution that helps organisations optimize, manage, and track every type of work."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +56,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Kissflow Coral</title>
-          <meta name="description" content="Kissflow Digital Workplace is a powerful work management solution that helps organisations optimize, manage, and track every type of work." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

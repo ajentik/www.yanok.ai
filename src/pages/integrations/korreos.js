@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Korreos"
-      description="Korreos is an email marketing tool that helps you send personalized newsletters, drip email sequences and transactional email with automated followups."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +56,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Korreos</title>
-          <meta name="description" content="Korreos is an email marketing tool that helps you send personalized newsletters, drip email sequences and transactional email with automated followups." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

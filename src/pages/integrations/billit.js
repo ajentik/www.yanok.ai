@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Billit"
-      description="Billit is an accounting app for entrepreneurs, with the support of the accountants."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -97,7 +96,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Billit</title>
-          <meta name="description" content="Billit is an accounting app for entrepreneurs, with the support of the accountants." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

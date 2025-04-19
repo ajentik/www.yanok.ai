@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Whispir"
-      description="Bring together your SMS, voice messaging, email, social and more to communicate with your audiences from a single platform."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +52,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Whispir</title>
-          <meta name="description" content="Bring together your SMS, voice messaging, email, social and more to communicate with your audiences from a single platform." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Seamless AI"
-      description="Seamless AI is a real-time B2B Sales search engine to find leads using the power of AI."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -72,7 +71,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Seamless AI</title>
-          <meta name="description" content="Seamless AI is a real-time B2B Sales search engine to find leads using the power of AI." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

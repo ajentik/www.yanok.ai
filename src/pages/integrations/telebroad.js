@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Telebroad"
-      description="Telebroad provides business scalable & feature rich communication solutions for an office phone system, SMS and eEax – In addition to call analytics & online Switchboard for real-time phone management"
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -66,7 +65,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Telebroad</title>
-          <meta name="description" content="Telebroad provides business scalable & feature rich communication solutions for an office phone system, SMS and eEax – In addition to call analytics & online Switchboard for real-time phone management" />
+          <meta name="description" content={}/> />
         </>
       ),
     },

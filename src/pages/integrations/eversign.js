@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="eversign"
-      description="eversign is a tool used to sign legally binding documents online on any device"
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -76,7 +75,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>eversign</title>
-          <meta name="description" content="eversign is a tool used to sign legally binding documents online on any device" />
+          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Article Video Robot"
-      description="Article To Video Maker. Turn any article into a live talking video with animation, graphics and voice-over and upload it to Youtube - 100% automatically."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +56,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Article Video Robot</title>
-          <meta name="description" content="Article To Video Maker. Turn any article into a live talking video with animation, graphics and voice-over and upload it to Youtube - 100% automatically." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

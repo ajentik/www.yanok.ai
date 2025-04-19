@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Shippo"
-      description="Shippo provides a multi-carrier API and dashboard to help merchants and platforms get real-time rates, print labels, automate international paperwork, track packages and facilitate returns. Shippo provides the platform to help businesses succeed through shipping."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -76,7 +75,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Shippo</title>
-          <meta name="description" content="Shippo provides a multi-carrier API and dashboard to help merchants and platforms get real-time rates, print labels, automate international paperwork, track packages and facilitate returns. Shippo provides the platform to help businesses succeed through shipping." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

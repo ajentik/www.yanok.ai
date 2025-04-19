@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="DevCycle"
-      description="DevCycle is a feature flagging platform that's easy to use, scalable and lightning fast."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -61,7 +60,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>DevCycle</title>
-          <meta name="description" content="DevCycle is a feature flagging platform that's easy to use, scalable and lightning fast." />
+          <meta name="description" content={}/>s easy to use, scalable and lightning fast.' />
         </>
       ),
     },

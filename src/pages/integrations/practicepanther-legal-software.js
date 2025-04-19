@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="PracticePanther Legal Software"
-      description="PracticePanther is a practice management software used by numerous legal practitioners worldwide to automate their firms."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -216,7 +215,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>PracticePanther Legal Software</title>
-          <meta name="description" content="PracticePanther is a practice management software used by numerous legal practitioners worldwide to automate their firms." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

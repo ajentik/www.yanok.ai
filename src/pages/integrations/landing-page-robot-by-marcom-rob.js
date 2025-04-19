@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Landing Page Robot by Marcom Robot"
-      description="Landing Page Robot is a landing page builder designed for teams creating landing pages at scale."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +56,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Landing Page Robot by Marcom Robot</title>
-          <meta name="description" content="Landing Page Robot is a landing page builder designed for teams creating landing pages at scale." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

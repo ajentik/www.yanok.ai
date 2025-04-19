@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Phraseanet"
-      description="Phraseanet is an Open Source Digital Asset Management solution dedicated to professionals who need a complete system to manage, publish and share their digital media resources (pictures, videos, audio, PDF, Office documents…)."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -77,7 +76,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Phraseanet</title>
-          <meta name="description" content="Phraseanet is an Open Source Digital Asset Management solution dedicated to professionals who need a complete system to manage, publish and share their digital media resources (pictures, videos, audio, PDF, Office documents…)." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

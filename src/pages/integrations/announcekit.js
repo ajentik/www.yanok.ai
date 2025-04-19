@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="AnnounceKit"
-      description="AnnounceKit is an app that allows you to create beautiful newsfeeds and widgets for your website."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -76,7 +75,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>AnnounceKit</title>
-          <meta name="description" content="AnnounceKit is an app that allows you to create beautiful newsfeeds and widgets for your website." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

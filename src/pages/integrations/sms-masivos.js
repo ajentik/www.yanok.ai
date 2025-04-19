@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="SMS Masivos"
-      description="SMS Masivos is a leading platform for sending bulk SMS messages towards all Latin American countries."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -91,7 +90,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>SMS Masivos</title>
-          <meta name="description" content="SMS Masivos is a leading platform for sending bulk SMS messages towards all Latin American countries." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

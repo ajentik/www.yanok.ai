@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="ContactLink"
-      description="ContactLink puts all your communication options at one link: video call, video message, calendar, call, text, email."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +56,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>ContactLink</title>
-          <meta name="description" content="ContactLink puts all your communication options at one link: video call, video message, calendar, call, text, email." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

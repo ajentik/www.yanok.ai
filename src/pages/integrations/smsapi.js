@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="SMSAPI"
-      description="SMSAPI allows you to send text messages automatically. Messages can be fully personalized. You can set a custom sender name up to 11 characters long."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -71,7 +70,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>SMSAPI</title>
-          <meta name="description" content="SMSAPI allows you to send text messages automatically. Messages can be fully personalized. You can set a custom sender name up to 11 characters long." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

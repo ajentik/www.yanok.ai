@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Dropbox Sign"
-      description="Dropbox Sign is a brand new way to collect signatures and send important documents from an easy web interface. Just upload a PDF or Word Document and make your templates, and send them to anyone!"
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -76,7 +75,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Dropbox Sign</title>
-          <meta name="description" content="Dropbox Sign is a brand new way to collect signatures and send important documents from an easy web interface. Just upload a PDF or Word Document and make your templates, and send them to anyone!" />
+          <meta name="description" content={}/> />
         </>
       ),
     },

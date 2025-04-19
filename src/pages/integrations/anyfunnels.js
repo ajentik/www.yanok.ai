@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="AnyFunnels"
-      description="AnyFunnels is a Marketing Automation Solution, helps to capture new leads, track behaviour, and target each customer with tailored messages."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -66,7 +65,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>AnyFunnels</title>
-          <meta name="description" content="AnyFunnels is a Marketing Automation Solution, helps to capture new leads, track behaviour, and target each customer with tailored messages." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

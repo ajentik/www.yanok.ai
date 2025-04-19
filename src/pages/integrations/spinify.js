@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Spinify"
-      description="Spinify is a leaderboard solution that will engage your staff and provide an uplift in productivity and an improved culture."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -82,7 +81,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Spinify</title>
-          <meta name="description" content="Spinify is a leaderboard solution that will engage your staff and provide an uplift in productivity and an improved culture." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

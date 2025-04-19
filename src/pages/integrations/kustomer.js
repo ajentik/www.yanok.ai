@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Kustomer"
-      description="Kustomer is a powerful omnichannel customer service solution."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -141,7 +140,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Kustomer</title>
-          <meta name="description" content="Kustomer is a powerful omnichannel customer service solution." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Interact"
-      description="Create quizzes to generate leads with Interact. Send those leads directly into your marketing automation or CRM platform."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +56,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Interact</title>
-          <meta name="description" content="Create quizzes to generate leads with Interact. Send those leads directly into your marketing automation or CRM platform." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

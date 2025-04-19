@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Kazm"
-      description="Kazm is the data-driven CRM for Web3. We plug into every community touchpoint to create unified customer profiles, then apply machine learning and other methods to label, segment, and help personalize experiences for users."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -87,7 +86,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Kazm</title>
-          <meta name="description" content="Kazm is the data-driven CRM for Web3. We plug into every community touchpoint to create unified customer profiles, then apply machine learning and other methods to label, segment, and help personalize experiences for users." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

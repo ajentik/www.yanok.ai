@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Flowdock"
-      description="Flowdock is your team's inbox, but with chat. Get updates from all the apps you use, but then easily have discussions around those items."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -81,7 +80,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Flowdock</title>
-          <meta name="description" content="Flowdock is your team's inbox, but with chat. Get updates from all the apps you use, but then easily have discussions around those items." />
+          <meta name="description" content={}/>s inbox, but with chat. Get updates from all the apps you use, but then easily have discussions around those items.' />
         </>
       ),
     },

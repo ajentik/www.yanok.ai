@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="eboov"
-      description="Video hosting platform with in-video conversion technology. Generate more leads and sales with single video funnels."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -67,7 +66,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>eboov</title>
-          <meta name="description" content="Video hosting platform with in-video conversion technology. Generate more leads and sales with single video funnels." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

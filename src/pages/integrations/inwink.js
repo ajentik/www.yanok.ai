@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="inwink"
-      description="inwink is an event intelligence platform that helps event organizers to manage the complete event life-cycle and addresses the needs of all stakeholders : manage event data, build event website, deliver amazing attendee experience, enable efficient collaboration with partners and maximize event ROI."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -176,7 +175,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>inwink</title>
-          <meta name="description" content="inwink is an event intelligence platform that helps event organizers to manage the complete event life-cycle and addresses the needs of all stakeholders : manage event data, build event website, deliver amazing attendee experience, enable efficient collaboration with partners and maximize event ROI." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

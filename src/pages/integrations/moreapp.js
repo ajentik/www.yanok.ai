@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="MoreApp"
-      description="MoreApp is a tool to automate work processes. Save time with Digital Work Orders, Inspections, Reports, and more!"
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -66,7 +65,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>MoreApp</title>
-          <meta name="description" content="MoreApp is a tool to automate work processes. Save time with Digital Work Orders, Inspections, Reports, and more!" />
+          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="360dialog"
-      description="360dialog provides connection to the official WhatsApp Business API to send and receive WhatsApp messages"
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -71,7 +70,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>360dialog</title>
-          <meta name="description" content="360dialog provides connection to the official WhatsApp Business API to send and receive WhatsApp messages" />
+          <meta name="description" content={}/> />
         </>
       ),
     },

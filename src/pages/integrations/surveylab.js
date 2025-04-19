@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="SurveyLab"
-      description="SurveyLab is a customer feedback software that will help you to build surveys, questionnaires, forms or tests. SurveyLab allows you to collect, analyze data and react in real-time."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -61,7 +60,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>SurveyLab</title>
-          <meta name="description" content="SurveyLab is a customer feedback software that will help you to build surveys, questionnaires, forms or tests. SurveyLab allows you to collect, analyze data and react in real-time." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

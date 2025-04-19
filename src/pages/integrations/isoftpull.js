@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="iSoftpull"
-      description="Instantly view your customer's Equifax and TransUnion credit reports and FICO Scores with soft credit check technology."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -71,7 +70,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>iSoftpull</title>
-          <meta name="description" content="Instantly view your customer's Equifax and TransUnion credit reports and FICO Scores with soft credit check technology." />
+          <meta name="description" content={}/>s Equifax and TransUnion credit reports and FICO Scores with soft credit check technology.' />
         </>
       ),
     },

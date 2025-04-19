@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Namely"
-      description="Namely is an easy-to-use Human Resources software platform that integrates personnel info, payroll and benefits administration, and goal-setting/performance management into an intuitive user interface."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -76,7 +75,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Namely</title>
-          <meta name="description" content="Namely is an easy-to-use Human Resources software platform that integrates personnel info, payroll and benefits administration, and goal-setting/performance management into an intuitive user interface." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

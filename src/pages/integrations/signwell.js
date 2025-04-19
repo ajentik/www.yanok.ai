@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="SignWell"
-      description="SignWell is an electronic signature tool for legally binding e-signatures and faster document signing."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -71,7 +70,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>SignWell</title>
-          <meta name="description" content="SignWell is an electronic signature tool for legally binding e-signatures and faster document signing." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Agillic"
-      description="Agillic is a native customer marketing platform enabling brands to connect with audiences across channels through data-driven communication at scale. With Agillic you can take advantage of personalisation, automation, AI and omnichannel marketing capabilities from a single interface to create and retain valuable relationships throughout the customer lifecycle."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -67,7 +66,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Agillic</title>
-          <meta name="description" content="Agillic is a native customer marketing platform enabling brands to connect with audiences across channels through data-driven communication at scale. With Agillic you can take advantage of personalisation, automation, AI and omnichannel marketing capabilities from a single interface to create and retain valuable relationships throughout the customer lifecycle." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

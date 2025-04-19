@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Cobiro"
-      description="Cobiro is a platform which provides all the e-commerce and marketing tools you need to build and grow your business online."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -72,7 +71,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Cobiro</title>
-          <meta name="description" content="Cobiro is a platform which provides all the e-commerce and marketing tools you need to build and grow your business online." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Zenkit"
-      description="Zenkit is a flexible workspace you can use to organize the things you care about, in the way that suits you best."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -106,7 +105,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Zenkit</title>
-          <meta name="description" content="Zenkit is a flexible workspace you can use to organize the things you care about, in the way that suits you best." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

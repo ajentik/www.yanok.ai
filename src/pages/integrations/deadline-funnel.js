@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Deadline Funnel"
-      description="Gives your prospects a unique, authentic deadline so they have a reason to buy now"
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -81,7 +80,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Deadline Funnel</title>
-          <meta name="description" content="Gives your prospects a unique, authentic deadline so they have a reason to buy now" />
+          <meta name="description" content={}/> />
         </>
       ),
     },

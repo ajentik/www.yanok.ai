@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="AntEater"
-      description="AntEater helps teams on Gmail, Outlook and Slack keep track of activity with prospects, customers, vendors & partners with AI."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -61,7 +60,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>AntEater</title>
-          <meta name="description" content="AntEater helps teams on Gmail, Outlook and Slack keep track of activity with prospects, customers, vendors & partners with AI." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

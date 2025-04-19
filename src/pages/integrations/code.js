@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Code by Zapier"
-      description="Write custom Python or Javascript code in response to any data from any service! Transform, mutate, customize or even do custom HTTP in a native and familiar environment."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -71,7 +70,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Code by Zapier</title>
-          <meta name="description" content="Write custom Python or Javascript code in response to any data from any service! Transform, mutate, customize or even do custom HTTP in a native and familiar environment." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

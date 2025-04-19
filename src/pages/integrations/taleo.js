@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Taleo"
-      description="Taleo Corporation is a provider of cloud-based talent management solutions, enabling businesses to recruit eligible candidates."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +52,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Taleo</title>
-          <meta name="description" content="Taleo Corporation is a provider of cloud-based talent management solutions, enabling businesses to recruit eligible candidates." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

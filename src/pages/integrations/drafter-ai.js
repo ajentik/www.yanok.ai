@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Drafter AI"
-      description="Drafter AI enables marketing teams to scale AI-powered tasks like content generation, data acquisition and analytics."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -66,7 +65,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Drafter AI</title>
-          <meta name="description" content="Drafter AI enables marketing teams to scale AI-powered tasks like content generation, data acquisition and analytics." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

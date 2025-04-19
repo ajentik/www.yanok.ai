@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Internal.io"
-      description="Build internal tools incredibly fast on top of your databases, APIs, spreadsheets, and business apps."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +56,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Internal.io</title>
-          <meta name="description" content="Build internal tools incredibly fast on top of your databases, APIs, spreadsheets, and business apps." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

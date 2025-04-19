@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="elmah.io"
-      description="Cloud logging for .NET web applications using ELMAH. Powerful search, custom rules, integration with issue trackers, API and much more."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +56,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>elmah.io</title>
-          <meta name="description" content="Cloud logging for .NET web applications using ELMAH. Powerful search, custom rules, integration with issue trackers, API and much more." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

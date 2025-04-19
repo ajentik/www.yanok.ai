@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="PHC GO"
-      description="PHC GO is more than just online management software. It is the perfect ally for your day-to-day: zero initial investment, cloud management, continuous updating and high-speed transformation. Sales, purchases, treasury, legal obligations and much more."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -186,7 +185,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>PHC GO</title>
-          <meta name="description" content="PHC GO is more than just online management software. It is the perfect ally for your day-to-day: zero initial investment, cloud management, continuous updating and high-speed transformation. Sales, purchases, treasury, legal obligations and much more." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

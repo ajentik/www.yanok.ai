@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="SmartTouch NexGen CRM"
-      description="SmartTouch® NexGen is a CRM that allows for management of home buyer and broker engagement to sell more homes faster."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -66,7 +65,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>SmartTouch NexGen CRM</title>
-          <meta name="description" content="SmartTouch® NexGen is a CRM that allows for management of home buyer and broker engagement to sell more homes faster." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

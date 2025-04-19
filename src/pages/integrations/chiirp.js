@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Chiirp"
-      description="Chiirp helps you Capture, Connect & Close easier and faster using automated text messaging."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -76,7 +75,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Chiirp</title>
-          <meta name="description" content="Chiirp helps you Capture, Connect & Close easier and faster using automated text messaging." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

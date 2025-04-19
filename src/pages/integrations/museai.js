@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="muse.ai"
-      description="muse.ai is a complete video hosting and streaming platform with a clean interface, sharing, embedding, and advanced video search."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -61,7 +60,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>muse.ai</title>
-          <meta name="description" content="muse.ai is a complete video hosting and streaming platform with a clean interface, sharing, embedding, and advanced video search." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

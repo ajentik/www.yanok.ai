@@ -1,31 +1,44 @@
-@import 'tailwindcss/base';
-@import 'tailwindcss/components';
-@import 'tailwindcss/utilities';
+@tailwind base;
+@tailwind components;
 
 /* Import Jost font */
 @import url('https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700&display=swap');
 
 @layer base {
   body {
-    @apply font-jost antialiased text-white bg-gradient-to-br from-darkerBlue to-darkBlue;
+    font-family: 'Jost', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background: linear-gradient(to bottom right, #051b30, #0a2540);
+    color: white;
   }
 }
 
 @layer components {
   .site-gutter {
-    @apply px-4 md:px-8;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  @screen md {
+    .site-gutter {
+      padding-left: 2rem;
+      padding-right: 2rem;
+    }
   }
   
   .btn {
-    @apply inline-block rounded px-4 py-2 transition-colors;
+    @apply inline-block rounded transition-colors;
+    padding: 0.5rem 1rem;
   }
   
   .btn-cta {
-    @apply bg-gradient-to-r from-teal to-blue text-white hover:from-blue hover:to-teal;
+    @apply bg-gradient-to-r from-teal to-blue hover:from-blue hover:to-teal;
+    color: white;
   }
 
   .hero-badge {
-    @apply bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full flex items-center mb-6 border border-white/20;
+    @apply bg-white/10 backdrop-blur-sm rounded-full flex items-center mb-6 border border-white/20;
+    padding: 0.5rem 1rem;
   }
 
   .gradient-text {
@@ -44,3 +57,5 @@
     @apply bg-gradient-to-br from-blue to-teal w-12 h-12 rounded-xl flex items-center justify-center mb-4;
   }
 }
+
+@tailwind utilities;

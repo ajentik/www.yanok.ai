@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Base64.ai"
-      description="Base64.ai can extract text, photos, and signatures from all document types"
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -62,7 +61,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Base64.ai</title>
-          <meta name="description" content="Base64.ai can extract text, photos, and signatures from all document types" />
+          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Honeycommb"
-      description="Launch a social network you own & control with the most complete white-label social network platform in the world"
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -142,7 +141,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Honeycommb</title>
-          <meta name="description" content="Launch a social network you own & control with the most complete white-label social network platform in the world" />
+          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Centz CRM"
-      description="Centz is the online Customer Relation Management software to manage your customers, referrals, reviews, emails, products and more."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -101,7 +100,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Centz CRM</title>
-          <meta name="description" content="Centz is the online Customer Relation Management software to manage your customers, referrals, reviews, emails, products and more." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

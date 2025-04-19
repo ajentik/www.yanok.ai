@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Upzelo"
-      description="Upzelo is subscription retention software to help you spend more time retaining customers with automated retention offers."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -82,7 +81,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Upzelo</title>
-          <meta name="description" content="Upzelo is subscription retention software to help you spend more time retaining customers with automated retention offers." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

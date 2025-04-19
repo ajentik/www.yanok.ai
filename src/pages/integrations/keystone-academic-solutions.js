@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Keystone Academic Solutions"
-      description="Keystone Academic Solutions is a platform for higher education marketing and student enrollment."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -61,7 +60,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Keystone Academic Solutions</title>
-          <meta name="description" content="Keystone Academic Solutions is a platform for higher education marketing and student enrollment." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

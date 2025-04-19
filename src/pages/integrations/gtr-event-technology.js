@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="GTR Event Technology"
-      description="GTR™ provides event technology & end-to-end support to help planners execute unforgettable conferences, tradeshows, meetings, and events. Connect with your existing workflow and put your event data where you need it with our all-in-one event management platform."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -61,7 +60,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>GTR Event Technology</title>
-          <meta name="description" content="GTR™ provides event technology & end-to-end support to help planners execute unforgettable conferences, tradeshows, meetings, and events. Connect with your existing workflow and put your event data where you need it with our all-in-one event management platform." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

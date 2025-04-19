@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Typefully"
-      description="Typefully is the app for Twitter creators to write, schedule, publish, and analyze threads."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -76,7 +75,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Typefully</title>
-          <meta name="description" content="Typefully is the app for Twitter creators to write, schedule, publish, and analyze threads." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

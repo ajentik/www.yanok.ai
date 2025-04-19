@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Anduin Fund Subscription"
-      description="Anduin Fund Subscription lets you track investor engagement through actionable insights and streamline the subscription process from start to finish"
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -62,7 +61,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Anduin Fund Subscription</title>
-          <meta name="description" content="Anduin Fund Subscription lets you track investor engagement through actionable insights and streamline the subscription process from start to finish" />
+          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="lemlist"
-      description="lemlist is an outreach email platform with personalized images and videos."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -131,7 +130,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>lemlist</title>
-          <meta name="description" content="lemlist is an outreach email platform with personalized images and videos." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

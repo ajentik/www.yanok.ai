@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Lodgify"
-      description="Lodgify is a vacation rental software that allows vacation rental managers to create their own website and accept online bookings."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -87,7 +86,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Lodgify</title>
-          <meta name="description" content="Lodgify is a vacation rental software that allows vacation rental managers to create their own website and accept online bookings." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

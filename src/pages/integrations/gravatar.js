@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Gravatar"
-      description="Your Gravatar is an image that follows you from site to site appearing beside your name when you do things like comment or post on a blog."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +52,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Gravatar</title>
-          <meta name="description" content="Your Gravatar is an image that follows you from site to site appearing beside your name when you do things like comment or post on a blog." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

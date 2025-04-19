@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Promoter.io"
-      description="Promoter.io is the easiest and most effective way to measure and track customer loyalty using the Net Promoter System®."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -106,7 +105,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Promoter.io</title>
-          <meta name="description" content="Promoter.io is the easiest and most effective way to measure and track customer loyalty using the Net Promoter System®." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

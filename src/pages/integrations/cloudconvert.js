@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="CloudConvert"
-      description="CloudConvert converts files between more than 200 supported formats: documents, image, spreadsheet, presentation, audio, video and more!"
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -96,7 +95,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>CloudConvert</title>
-          <meta name="description" content="CloudConvert converts files between more than 200 supported formats: documents, image, spreadsheet, presentation, audio, video and more!" />
+          <meta name="description" content={}/> />
         </>
       ),
     },

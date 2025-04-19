@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="DocMerger"
-      description="Merge and Create PDF and Word Documents on the fly using templates."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +56,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>DocMerger</title>
-          <meta name="description" content="Merge and Create PDF and Word Documents on the fly using templates." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

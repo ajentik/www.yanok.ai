@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Tokko Broker"
-      description="Tokko Broker is a real estate app that lets you sync your listings on real estate portals and your website automatically. You can also receive and follow up on your leads."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +56,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Tokko Broker</title>
-          <meta name="description" content="Tokko Broker is a real estate app that lets you sync your listings on real estate portals and your website automatically. You can also receive and follow up on your leads." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

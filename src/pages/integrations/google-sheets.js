@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Google Sheets"
-      description="Create, edit, and share spreadsheets wherever you are with Google Sheets, and get automated insights from your data."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -161,7 +160,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Google Sheets</title>
-          <meta name="description" content="Create, edit, and share spreadsheets wherever you are with Google Sheets, and get automated insights from your data." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

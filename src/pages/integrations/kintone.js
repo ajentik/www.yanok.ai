@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Kintone"
-      description="kintone is a fully integrated social collaboration and customizable business application cloud platform that allows internal and external teams to solve business process inefficiencies through database and work flow-driven custom apps, communication and collaboration. kintone can be used for custom CRM, Project Mangement, SCM and much more."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -81,7 +80,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Kintone</title>
-          <meta name="description" content="kintone is a fully integrated social collaboration and customizable business application cloud platform that allows internal and external teams to solve business process inefficiencies through database and work flow-driven custom apps, communication and collaboration. kintone can be used for custom CRM, Project Mangement, SCM and much more." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

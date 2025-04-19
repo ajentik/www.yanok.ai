@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Referral Rock"
-      description="Referral Rock helps businesses to design, track and manage referral programs."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -131,7 +130,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Referral Rock</title>
-          <meta name="description" content="Referral Rock helps businesses to design, track and manage referral programs." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="PreciseFP"
-      description="PreciseFP is a data management platform that helps with your data-gathering process and automates your administrative work."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -121,7 +120,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>PreciseFP</title>
-          <meta name="description" content="PreciseFP is a data management platform that helps with your data-gathering process and automates your administrative work." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

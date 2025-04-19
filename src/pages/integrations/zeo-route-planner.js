@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Zeo Route Planner"
-      description="Zeo Route Planner helps courier drivers optimise their routes and save on time, distance, and fuel."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +56,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Zeo Route Planner</title>
-          <meta name="description" content="Zeo Route Planner helps courier drivers optimise their routes and save on time, distance, and fuel." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

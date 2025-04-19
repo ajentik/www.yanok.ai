@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Solve CRM"
-      description="Solve is a productivity CRM for teams to manage customer workflows. Simplify all record keeping, scheduling, communication and information sharing - especially when mobile."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -91,7 +90,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Solve CRM</title>
-          <meta name="description" content="Solve is a productivity CRM for teams to manage customer workflows. Simplify all record keeping, scheduling, communication and information sharing - especially when mobile." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

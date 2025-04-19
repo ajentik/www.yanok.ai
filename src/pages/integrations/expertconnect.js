@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="ExpertConnect"
-      description="ExpertConnect is a customer service platform for John Deere dealers."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -231,7 +230,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>ExpertConnect</title>
-          <meta name="description" content="ExpertConnect is a customer service platform for John Deere dealers." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

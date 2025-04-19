@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Introist"
-      description="Introist is a tool to create onboarding workflows to communicate and automate the checklists and busy work in employee onboarding."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -61,7 +60,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Introist</title>
-          <meta name="description" content="Introist is a tool to create onboarding workflows to communicate and automate the checklists and busy work in employee onboarding." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

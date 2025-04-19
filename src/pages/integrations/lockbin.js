@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Lockbin"
-      description="Lockbin is a HIPAA compliant messaging service. Professionals use Lockbin to communicate easily with their their customers, patients and clients."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -67,7 +66,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Lockbin</title>
-          <meta name="description" content="Lockbin is a HIPAA compliant messaging service. Professionals use Lockbin to communicate easily with their their customers, patients and clients." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

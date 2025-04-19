@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="HiDeliver"
-      description="Schedule local Same-Day and 2 Hour Package Deliveries"
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +56,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>HiDeliver</title>
-          <meta name="description" content="Schedule local Same-Day and 2 Hour Package Deliveries" />
+          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="CallOnTheGo"
-      description="CallOnTheGo is a mobile application that auto speed dials lists of numbers for sales and provides detailed analytics and tracking results online."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -91,7 +90,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>CallOnTheGo</title>
-          <meta name="description" content="CallOnTheGo is a mobile application that auto speed dials lists of numbers for sales and provides detailed analytics and tracking results online." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

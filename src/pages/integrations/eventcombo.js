@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Eventcombo"
-      description="Eventcombo is a platform to organize any online virtual event, meeting or webinar."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -77,7 +76,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Eventcombo</title>
-          <meta name="description" content="Eventcombo is a platform to organize any online virtual event, meeting or webinar." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

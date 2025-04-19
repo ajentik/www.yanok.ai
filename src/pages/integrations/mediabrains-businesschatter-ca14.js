@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="MediaBrains BusinessChatter"
-      description="BusinessChatter is a reputation management platform that helps organizations be in control of how their customers are talking about them across the web."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -61,7 +60,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>MediaBrains BusinessChatter</title>
-          <meta name="description" content="BusinessChatter is a reputation management platform that helps organizations be in control of how their customers are talking about them across the web." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

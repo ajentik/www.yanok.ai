@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="GatherContent"
-      description="GatherContent is a Content Operations Platform that brings people, process & content together—to save businesses time & improve content quality."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -171,7 +170,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>GatherContent</title>
-          <meta name="description" content="GatherContent is a Content Operations Platform that brings people, process & content together—to save businesses time & improve content quality." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

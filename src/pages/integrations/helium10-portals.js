@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Portals by Helium10"
-      description="Portals allows you to create your own custom landing pages to capture leads, increase sales, and grow your Amazon business."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -61,7 +60,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Portals by Helium10</title>
-          <meta name="description" content="Portals allows you to create your own custom landing pages to capture leads, increase sales, and grow your Amazon business." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

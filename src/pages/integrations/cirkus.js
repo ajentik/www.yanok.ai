@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Cirkus"
-      description="Cirkus is a task management software for any business that relies on collaboration to get work done. With powerful project management features for free, Cirkus is simple in design and capable of adapting to your most complicated work processes."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -121,7 +120,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Cirkus</title>
-          <meta name="description" content="Cirkus is a task management software for any business that relies on collaboration to get work done. With powerful project management features for free, Cirkus is simple in design and capable of adapting to your most complicated work processes." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

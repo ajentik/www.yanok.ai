@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Fettle"
-      description="Fettle is your all-in-one virtual studio. Create a subscription service for your videos, add value with live-streams, build a loyal membership , and collect payment direct. Fettle is the super-simple way to move your fitness or wellness business online."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +56,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Fettle</title>
-          <meta name="description" content="Fettle is your all-in-one virtual studio. Create a subscription service for your videos, add value with live-streams, build a loyal membership , and collect payment direct. Fettle is the super-simple way to move your fitness or wellness business online." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

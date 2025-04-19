@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Urlooker"
-      description="Urlooker is a tool for monitoring changes on web pages. Just select a page area, and you'll receive notifications about changed content."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -62,7 +61,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Urlooker</title>
-          <meta name="description" content="Urlooker is a tool for monitoring changes on web pages. Just select a page area, and you'll receive notifications about changed content." />
+          <meta name="description" content={}/>ll receive notifications about changed content.' />
         </>
       ),
     },

@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Pushbullet"
-      description="Pushbullet makes it easy to push notifications to your smartphone and computer from the web. These notifications are smart too: if you receive a notification with a link, tapping on the notification will take you right to it!"
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -62,7 +61,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Pushbullet</title>
-          <meta name="description" content="Pushbullet makes it easy to push notifications to your smartphone and computer from the web. These notifications are smart too: if you receive a notification with a link, tapping on the notification will take you right to it!" />
+          <meta name="description" content={}/> />
         </>
       ),
     },

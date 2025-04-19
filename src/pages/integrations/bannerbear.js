@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Bannerbear"
-      description="Bannerbear is a service that automatically generates variations of graphic templates."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -146,7 +145,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Bannerbear</title>
-          <meta name="description" content="Bannerbear is a service that automatically generates variations of graphic templates." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Civalgo"
-      description="Civalgo is a platform to operate your construction company which goal is to enhance productivity in the field with a powerful Operational Project Management Platform that links schedule to daily logs to provide an optimal workflow and past cost data."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -131,7 +130,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Civalgo</title>
-          <meta name="description" content="Civalgo is a platform to operate your construction company which goal is to enhance productivity in the field with a powerful Operational Project Management Platform that links schedule to daily logs to provide an optimal workflow and past cost data." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

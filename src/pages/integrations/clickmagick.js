@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="ClickMagick"
-      description="Bulletproof tracking and conversion attribution, plus Audience Optimization which allows your ad networks to find you better and cheaper customers. We obsess over tracking, so you don't have to."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -92,7 +91,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>ClickMagick</title>
-          <meta name="description" content="Bulletproof tracking and conversion attribution, plus Audience Optimization which allows your ad networks to find you better and cheaper customers. We obsess over tracking, so you don't have to." />
+          <meta name="description" content={}/>t have to.' />
         </>
       ),
     },

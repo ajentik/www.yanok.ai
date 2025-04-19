@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Vxt"
-      description="Vxt is a smart voicemail driven assistant that converts your voicemails to text and provides you with tools which save time and money by automating administrative tasks."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -61,7 +60,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Vxt</title>
-          <meta name="description" content="Vxt is a smart voicemail driven assistant that converts your voicemails to text and provides you with tools which save time and money by automating administrative tasks." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Zoho Desk"
-      description="Zoho Desk is web-based customer service software designed to help you focus more on creating customer happiness every day."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -146,7 +145,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Zoho Desk</title>
-          <meta name="description" content="Zoho Desk is web-based customer service software designed to help you focus more on creating customer happiness every day." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

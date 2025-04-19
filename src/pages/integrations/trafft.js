@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Trafft"
-      description="Trafft is a booking software made for businesses and individuals for scheduling appointments, managing staff, and their calendars."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -77,7 +76,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Trafft</title>
-          <meta name="description" content="Trafft is a booking software made for businesses and individuals for scheduling appointments, managing staff, and their calendars." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

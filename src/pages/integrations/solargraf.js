@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Solargraf"
-      description="Solargraf is the #1 tool for solar panel installers. Enter any address, draw and send a professional estimate under 1 minute. Easy to use on all devices."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -61,7 +60,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Solargraf</title>
-          <meta name="description" content="Solargraf is the #1 tool for solar panel installers. Enter any address, draw and send a professional estimate under 1 minute. Easy to use on all devices." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Unifyy CRM"
-      description="Unifyy is a sales CRM with a built-in dialer that unifies your sales communication, automates email and SMS followup, and much more!"
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +56,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Unifyy CRM</title>
-          <meta name="description" content="Unifyy is a sales CRM with a built-in dialer that unifies your sales communication, automates email and SMS followup, and much more!" />
+          <meta name="description" content={}/> />
         </>
       ),
     },

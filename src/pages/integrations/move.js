@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Move"
-      description="Move, Inc. is a real estate listing company based in Santa Clara, California."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +52,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Move</title>
-          <meta name="description" content="Move, Inc. is a real estate listing company based in Santa Clara, California." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="XintelWeb"
-      description="Keep track of the contacts that come in from different media in the Xintelweb CRM."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +56,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>XintelWeb</title>
-          <meta name="description" content="Keep track of the contacts that come in from different media in the Xintelweb CRM." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

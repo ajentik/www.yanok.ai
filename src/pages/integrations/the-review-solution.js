@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="The Review Solution"
-      description="The Review Solution is an online business reviews platform that offers email, text-based and a SaaS-based platform to address your needs."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -62,7 +61,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>The Review Solution</title>
-          <meta name="description" content="The Review Solution is an online business reviews platform that offers email, text-based and a SaaS-based platform to address your needs." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

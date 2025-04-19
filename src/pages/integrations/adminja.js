@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Adminja"
-      description="Adminja is a tool to help Virtual Assistants manage their clients and their business."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -111,7 +110,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Adminja</title>
-          <meta name="description" content="Adminja is a tool to help Virtual Assistants manage their clients and their business." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

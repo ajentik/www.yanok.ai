@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Pushpad"
-      description="Pushpad is an easy-to-use service for sending web push notifications."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +56,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Pushpad</title>
-          <meta name="description" content="Pushpad is an easy-to-use service for sending web push notifications." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

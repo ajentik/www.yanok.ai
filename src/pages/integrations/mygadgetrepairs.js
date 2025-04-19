@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="MyGadgetRepairs"
-      description="MyGadgetRepairs gives you tracking, inventory management, invoicing, point of sale and much more. Trusted by hundreds of users across the globe."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -621,7 +620,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>MyGadgetRepairs</title>
-          <meta name="description" content="MyGadgetRepairs gives you tracking, inventory management, invoicing, point of sale and much more. Trusted by hundreds of users across the globe." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

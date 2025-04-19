@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="DripJobs"
-      description="DripJobs is a Customer Resource Management system designed to help funnel Leads through a strategic process to gain more Jobs and increase revenue."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +56,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>DripJobs</title>
-          <meta name="description" content="DripJobs is a Customer Resource Management system designed to help funnel Leads through a strategic process to gain more Jobs and increase revenue." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

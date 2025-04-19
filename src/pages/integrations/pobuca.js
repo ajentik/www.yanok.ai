@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Pobuca Connect"
-      description="Pobuca Connect is an AI digital assistant that optimizes the way your business stores and communicates with business contacts."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -91,7 +90,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Pobuca Connect</title>
-          <meta name="description" content="Pobuca Connect is an AI digital assistant that optimizes the way your business stores and communicates with business contacts." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

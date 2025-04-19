@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Prodsmart"
-      description="Prodsmart is your real-time information system. Get clear and actual data about your factory’s performance, reduce waste and increase efficiency. Prodsmart means better production and order management."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -87,7 +86,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Prodsmart</title>
-          <meta name="description" content="Prodsmart is your real-time information system. Get clear and actual data about your factory’s performance, reduce waste and increase efficiency. Prodsmart means better production and order management." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

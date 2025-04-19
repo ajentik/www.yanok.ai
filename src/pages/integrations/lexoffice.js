@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="lexoffice"
-      description="lexoffice is a cloud app for german accounting. Writing offers or invoices, paying your bills or preparing your tax return is easier than ever with lexoffice."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +56,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>lexoffice</title>
-          <meta name="description" content="lexoffice is a cloud app for german accounting. Writing offers or invoices, paying your bills or preparing your tax return is easier than ever with lexoffice." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

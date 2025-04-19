@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="CoSchedule"
-      description="CoSchedule is mission control for your entire marketing strategy."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -106,7 +105,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>CoSchedule</title>
-          <meta name="description" content="CoSchedule is mission control for your entire marketing strategy." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

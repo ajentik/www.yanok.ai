@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Club Management 4 U"
-      description="Club Management 4 U is a Club Management Application to help you manage the full customer journey of all of your leads and customers no matter what type of sports club you run."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +56,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Club Management 4 U</title>
-          <meta name="description" content="Club Management 4 U is a Club Management Application to help you manage the full customer journey of all of your leads and customers no matter what type of sports club you run." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

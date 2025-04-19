@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="TapRight"
-      description="Create native mobile App easily and quickly with existing/new content like Videos, PDFs, Web pages, and more."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -71,7 +70,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>TapRight</title>
-          <meta name="description" content="Create native mobile App easily and quickly with existing/new content like Videos, PDFs, Web pages, and more." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

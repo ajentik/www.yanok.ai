@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="KEA"
-      description="Kea is a digital legal workspace that helps individual lawyers and entire legal teams to create and deliver better legal services, together."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -72,7 +71,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>KEA</title>
-          <meta name="description" content="Kea is a digital legal workspace that helps individual lawyers and entire legal teams to create and deliver better legal services, together." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

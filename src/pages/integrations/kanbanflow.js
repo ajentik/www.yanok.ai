@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="KanbanFlow"
-      description="KanbanFlow is a Lean project management tool for you and your team. Its intuitive user interface will get you up and running in a few minutes. It has a built-in task timer with support for the Pomodoro technique."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -66,7 +65,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>KanbanFlow</title>
-          <meta name="description" content="KanbanFlow is a Lean project management tool for you and your team. Its intuitive user interface will get you up and running in a few minutes. It has a built-in task timer with support for the Pomodoro technique." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

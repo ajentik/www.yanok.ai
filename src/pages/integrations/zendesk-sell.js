@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Zendesk Sell"
-      description="Zendesk Sell (formerly Base) is a sales automation tool to enhance productivity, processes, and pipeline visibility for sales teams."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -251,7 +250,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Zendesk Sell</title>
-          <meta name="description" content="Zendesk Sell (formerly Base) is a sales automation tool to enhance productivity, processes, and pipeline visibility for sales teams." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

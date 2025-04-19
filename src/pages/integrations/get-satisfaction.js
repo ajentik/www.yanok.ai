@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Get Satisfaction"
-      description="Get Satisfaction is a simple way add support forums to your site. Get Satisfaction lets you create a forum for users to give feedback, make suggestions on new features, and lets you update users on development."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +52,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Get Satisfaction</title>
-          <meta name="description" content="Get Satisfaction is a simple way add support forums to your site. Get Satisfaction lets you create a forum for users to give feedback, make suggestions on new features, and lets you update users on development." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

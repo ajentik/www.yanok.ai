@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Intellect"
-      description="Intellect is a leader in Enterprise SaaS software providing an electronic Quality Management System (eQMS) and Business Process Management (BPM) product suite."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +52,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Intellect</title>
-          <meta name="description" content="Intellect is a leader in Enterprise SaaS software providing an electronic Quality Management System (eQMS) and Business Process Management (BPM) product suite." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

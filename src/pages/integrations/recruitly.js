@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Recruitly"
-      description="Recruitly is a cloud-based recruitment platform for agency and independent recruiters, featuring customisable pipelines, built-in job posting and out-of-the-box integrations with the tools you already use and love."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -281,7 +280,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Recruitly</title>
-          <meta name="description" content="Recruitly is a cloud-based recruitment platform for agency and independent recruiters, featuring customisable pipelines, built-in job posting and out-of-the-box integrations with the tools you already use and love." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

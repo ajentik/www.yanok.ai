@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Bizzabo"
-      description="Bizzabo is an event success platform that helps organizers create successful events by empowering them to build amazing websites, sell tickets, grow communities, go mobile and maximize their events experiences and results."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -77,7 +76,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Bizzabo</title>
-          <meta name="description" content="Bizzabo is an event success platform that helps organizers create successful events by empowering them to build amazing websites, sell tickets, grow communities, go mobile and maximize their events experiences and results." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="DeBounce"
-      description="DeBounce email verification service allows you to validate your email addresses quickly and remove bounce, spam-trap, disposable and deactivated emails from your database."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +56,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>DeBounce</title>
-          <meta name="description" content="DeBounce email verification service allows you to validate your email addresses quickly and remove bounce, spam-trap, disposable and deactivated emails from your database." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

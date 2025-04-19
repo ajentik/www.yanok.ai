@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="SeeBotRun - Link"
-      description="SeeBotRun - Link is one of SeeBotRun products that provides shorten URLs, branded domains, QR codes, and platform tracking all from one simple link."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -72,7 +71,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>SeeBotRun - Link</title>
-          <meta name="description" content="SeeBotRun - Link is one of SeeBotRun products that provides shorten URLs, branded domains, QR codes, and platform tracking all from one simple link." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

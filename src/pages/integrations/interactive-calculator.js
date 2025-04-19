@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Interactive Calculator"
-      description="Interactive Calculator is a calculator form builder you can embed on your website"
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -62,7 +61,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Interactive Calculator</title>
-          <meta name="description" content="Interactive Calculator is a calculator form builder you can embed on your website" />
+          <meta name="description" content={}/> />
         </>
       ),
     },

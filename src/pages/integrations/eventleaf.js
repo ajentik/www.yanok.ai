@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Eventleaf"
-      description="Eventleaf is a simple, modern and affordable online event management platform with online event registration and mobile event apps for supporting in-person, hybrid and virtual events."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -66,7 +65,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Eventleaf</title>
-          <meta name="description" content="Eventleaf is a simple, modern and affordable online event management platform with online event registration and mobile event apps for supporting in-person, hybrid and virtual events." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

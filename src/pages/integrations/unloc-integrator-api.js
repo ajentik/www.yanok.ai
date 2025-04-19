@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Unloc"
-      description="Unloc allows managing keys across multiple lock systems."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -71,7 +70,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Unloc</title>
-          <meta name="description" content="Unloc allows managing keys across multiple lock systems." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

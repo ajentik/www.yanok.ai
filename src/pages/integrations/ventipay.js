@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="VentiPay"
-      description="VentiPay is a payment platform that accepts online and physical payments via debit, prepaid, and credit cards, and handles subscriptions."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -152,7 +151,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>VentiPay</title>
-          <meta name="description" content="VentiPay is a payment platform that accepts online and physical payments via debit, prepaid, and credit cards, and handles subscriptions." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

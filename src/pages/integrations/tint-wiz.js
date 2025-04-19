@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Tint Wiz"
-      description="Tint Wiz is an all-in-one CRM app for window tinters"
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -81,7 +80,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Tint Wiz</title>
-          <meta name="description" content="Tint Wiz is an all-in-one CRM app for window tinters" />
+          <meta name="description" content={}/> />
         </>
       ),
     },

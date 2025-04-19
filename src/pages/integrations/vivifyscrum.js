@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="VivifyScrum"
-      description="VivifyScrum is a web-based project management tool for small agile teams and large organizations alike. Handle all your projects in one place - from top to bottom."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -91,7 +90,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>VivifyScrum</title>
-          <meta name="description" content="VivifyScrum is a web-based project management tool for small agile teams and large organizations alike. Handle all your projects in one place - from top to bottom." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

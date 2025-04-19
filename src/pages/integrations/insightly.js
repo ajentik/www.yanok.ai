@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Insightly"
-      description="Insightly is a CRM and project management app that helps small to medium businesses manage contacts, track relationships, monitor sales pipeline, organize projects and more. It keeps all your critical business info on all your devices, so your company sells more and satisfies customers better."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -86,7 +85,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Insightly</title>
-          <meta name="description" content="Insightly is a CRM and project management app that helps small to medium businesses manage contacts, track relationships, monitor sales pipeline, organize projects and more. It keeps all your critical business info on all your devices, so your company sells more and satisfies customers better." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

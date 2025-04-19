@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Sprout Invoices"
-      description="Sprout Invoices is a WordPress plugin that allows you to take full control of your invoicing. It's fully customizable with no limits and features you can't get anywhere else."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +52,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Sprout Invoices</title>
-          <meta name="description" content="Sprout Invoices is a WordPress plugin that allows you to take full control of your invoicing. It's fully customizable with no limits and features you can't get anywhere else." />
+          <meta name="description" content={}/>s fully customizable with no limits and features you can't get anywhere else.' />
         </>
       ),
     },

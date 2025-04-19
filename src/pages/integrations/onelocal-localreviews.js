@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="OneLocal LocalReviews"
-      description="LocalReviews by OneLocal provides a fully customizable survey & review generation tool for businesses so they can request feedback from their customers by text message or email & improve their online reputation."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -66,7 +65,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>OneLocal LocalReviews</title>
-          <meta name="description" content="LocalReviews by OneLocal provides a fully customizable survey & review generation tool for businesses so they can request feedback from their customers by text message or email & improve their online reputation." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

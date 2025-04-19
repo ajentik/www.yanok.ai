@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="SpewHub Unlimited SMS API"
-      description="The SpewHub SMS API Platform allows for UNLIMITED SMS to be SENT and RECEIVED GLOBALLY, to and from your application or website."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -62,7 +61,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>SpewHub Unlimited SMS API</title>
-          <meta name="description" content="The SpewHub SMS API Platform allows for UNLIMITED SMS to be SENT and RECEIVED GLOBALLY, to and from your application or website." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

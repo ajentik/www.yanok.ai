@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Radius Agent"
-      description="Radius Agent qualifies leads using the assist program to help you close deals."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -81,7 +80,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Radius Agent</title>
-          <meta name="description" content="Radius Agent qualifies leads using the assist program to help you close deals." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

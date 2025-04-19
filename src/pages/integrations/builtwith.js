@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Builtwith"
-      description="BuiltWith is a website profiling, lead generation, competitive analysis and BI tool providing technology adoption and usage analytics."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +52,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Builtwith</title>
-          <meta name="description" content="BuiltWith is a website profiling, lead generation, competitive analysis and BI tool providing technology adoption and usage analytics." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="JustClick"
-      description="JustClick is a platform for selling digital products & courses online."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -101,7 +100,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>JustClick</title>
-          <meta name="description" content="JustClick is a platform for selling digital products & courses online." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

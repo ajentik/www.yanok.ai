@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="ServiceTitan"
-      description="ServiceTitan is a mobile, cloud-based software platform that helps home services companies streamline operations, improve customer service, and increase sales."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -256,7 +255,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>ServiceTitan</title>
-          <meta name="description" content="ServiceTitan is a mobile, cloud-based software platform that helps home services companies streamline operations, improve customer service, and increase sales." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

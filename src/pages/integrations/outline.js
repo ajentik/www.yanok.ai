@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Outline"
-      description="Outline is the fastest knowledge base and wiki for growing teams."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -61,7 +60,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Outline</title>
-          <meta name="description" content="Outline is the fastest knowledge base and wiki for growing teams." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="EVO Appraisal Management Software"
-      description="EVO Appraisal Management Software is a workflow management tool for streamlining the real estate appraisal process."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -182,7 +181,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>EVO Appraisal Management Software</title>
-          <meta name="description" content="EVO Appraisal Management Software is a workflow management tool for streamlining the real estate appraisal process." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

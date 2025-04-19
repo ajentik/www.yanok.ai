@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="NeverBounce"
-      description="NeverBounce is an email verification service that improves deliverability and helps businesses adhere to strict deliverability guidelines."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +56,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>NeverBounce</title>
-          <meta name="description" content="NeverBounce is an email verification service that improves deliverability and helps businesses adhere to strict deliverability guidelines." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

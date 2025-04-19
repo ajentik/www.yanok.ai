@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Virtuous CRM"
-      description="Virtuous CRM is a nonprofit CRM & marketing automation platform helping build better donor relationships."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -111,7 +110,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Virtuous CRM</title>
-          <meta name="description" content="Virtuous CRM is a nonprofit CRM & marketing automation platform helping build better donor relationships." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

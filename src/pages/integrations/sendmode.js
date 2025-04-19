@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Sendmode"
-      description="Sendmode is an SMS messaging application with fast secure delivery. Send alerts and notifications worldwide as SMS via our website, email, or API integration. Receive incoming SMS replies to virtual numbers and shotcodes as trigger events."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -76,7 +75,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Sendmode</title>
-          <meta name="description" content="Sendmode is an SMS messaging application with fast secure delivery. Send alerts and notifications worldwide as SMS via our website, email, or API integration. Receive incoming SMS replies to virtual numbers and shotcodes as trigger events." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

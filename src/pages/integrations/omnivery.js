@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Omnivery"
-      description="Omnivery is a message delivery platform focused on deliverability and compliance"
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -106,7 +105,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Omnivery</title>
-          <meta name="description" content="Omnivery is a message delivery platform focused on deliverability and compliance" />
+          <meta name="description" content={}/> />
         </>
       ),
     },

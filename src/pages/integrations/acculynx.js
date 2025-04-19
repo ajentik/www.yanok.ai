@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="AccuLynx"
-      description="AccuLynx is a cloud based roofing software application designed to help contractors manage and grow their business."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -61,7 +60,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>AccuLynx</title>
-          <meta name="description" content="AccuLynx is a cloud based roofing software application designed to help contractors manage and grow their business." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

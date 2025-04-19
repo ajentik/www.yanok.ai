@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Thankster"
-      description="Creates and mails cards and notes with authentic handwriting, requiring only address information and message text. Great for CRM, marketing automation, lead gen, and more."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -61,7 +60,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Thankster</title>
-          <meta name="description" content="Creates and mails cards and notes with authentic handwriting, requiring only address information and message text. Great for CRM, marketing automation, lead gen, and more." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

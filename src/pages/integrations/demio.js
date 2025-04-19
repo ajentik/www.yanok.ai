@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Demio"
-      description="A smart webinar platform built for inbound marketing and sales."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -76,7 +75,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Demio</title>
-          <meta name="description" content="A smart webinar platform built for inbound marketing and sales." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

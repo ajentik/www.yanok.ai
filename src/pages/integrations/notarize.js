@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Notarize"
-      description="Notarize is an on-demand remote electronic notary service that allows anyone to legally notarize a document from their iPhone 24x7."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +52,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Notarize</title>
-          <meta name="description" content="Notarize is an on-demand remote electronic notary service that allows anyone to legally notarize a document from their iPhone 24x7." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

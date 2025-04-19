@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="ExactTarget"
-      description="ExactTarget is a suite of marketing tools that helps marketers deliver email marketing, mobile marketing, and social media marketing in realtime across multiple channels to drive customer engagement, automate marketing, increase sales, and improve return on marketing investment."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +52,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>ExactTarget</title>
-          <meta name="description" content="ExactTarget is a suite of marketing tools that helps marketers deliver email marketing, mobile marketing, and social media marketing in realtime across multiple channels to drive customer engagement, automate marketing, increase sales, and improve return on marketing investment." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

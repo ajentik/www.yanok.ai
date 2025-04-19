@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Contact Reach"
-      description="Contact Reach is a sms marketing application to manage leads."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -81,7 +80,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Contact Reach</title>
-          <meta name="description" content="Contact Reach is a sms marketing application to manage leads." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

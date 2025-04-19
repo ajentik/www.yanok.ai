@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Schedule by Zapier"
-      description="Schedule is a native Zapier app you can use for recurring tasks. Trigger an action every day of the month, every day of the week or every single day. You can also select the hour of the day. If you're a developer, this is similar to a crontab, cronjob or cron."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -72,7 +71,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Schedule by Zapier</title>
-          <meta name="description" content="Schedule is a native Zapier app you can use for recurring tasks. Trigger an action every day of the month, every day of the week or every single day. You can also select the hour of the day. If you're a developer, this is similar to a crontab, cronjob or cron." />
+          <meta name="description" content={}/>re a developer, this is similar to a crontab, cronjob or cron.' />
         </>
       ),
     },

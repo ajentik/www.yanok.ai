@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Plusthis"
-      description="PlusThis is a library of 50+ add-ons and integrations for Infusionsoft, Drip and Ontraport."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +52,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Plusthis</title>
-          <meta name="description" content="PlusThis is a library of 50+ add-ons and integrations for Infusionsoft, Drip and Ontraport." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

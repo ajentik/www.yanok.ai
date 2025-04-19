@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Follow Up Boss"
-      description="Simple lead management software for real estate agents and brokers. Follow Up Boss takes all your leads and puts them in one simple system automatically. Helps you to respond fast and convert more leads into closings."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -146,7 +145,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Follow Up Boss</title>
-          <meta name="description" content="Simple lead management software for real estate agents and brokers. Follow Up Boss takes all your leads and puts them in one simple system automatically. Helps you to respond fast and convert more leads into closings." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

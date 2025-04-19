@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Life Mib"
-      description="Life Mib connects agents and customers to a single platform that is reducing the insurance buying process from hours to minutes."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -71,7 +70,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Life Mib</title>
-          <meta name="description" content="Life Mib connects agents and customers to a single platform that is reducing the insurance buying process from hours to minutes." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

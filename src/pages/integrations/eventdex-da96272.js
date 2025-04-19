@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Eventdex"
-      description="At Eventdex we provide a cloud platform and mobile apps for Business to Business events."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -86,7 +85,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Eventdex</title>
-          <meta name="description" content="At Eventdex we provide a cloud platform and mobile apps for Business to Business events." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

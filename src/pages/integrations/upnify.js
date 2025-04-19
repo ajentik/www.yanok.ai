@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Upnify"
-      description="Upnify is a CRM platform designed for sales teams that provides email templates, sales reports, automated lead assignment, and more."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -81,7 +80,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Upnify</title>
-          <meta name="description" content="Upnify is a CRM platform designed for sales teams that provides email templates, sales reports, automated lead assignment, and more." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

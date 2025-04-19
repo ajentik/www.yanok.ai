@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="smsadvert.io"
-      description="Connect your phone(s) and use it as a gateway to send SMS messages or send them directly over the smsadvert.io network."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -62,7 +61,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>smsadvert.io</title>
-          <meta name="description" content="Connect your phone(s) and use it as a gateway to send SMS messages or send them directly over the smsadvert.io network." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

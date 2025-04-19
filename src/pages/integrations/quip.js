@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Quip"
-      description="Quip is a modern productivity suite that enables you and your team to collaborate on any device. It works across iPhone, iPad, Android phones and tablets, and the desktop web. Quip has a simple and elegant interface that combines documents and messages into a single chat-like “thread” of updates, making collaboration immediate and easy. You can share documents, tables, checklists, and more so multiple people can edit and discuss together in a single, shared workspace."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -76,7 +75,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Quip</title>
-          <meta name="description" content="Quip is a modern productivity suite that enables you and your team to collaborate on any device. It works across iPhone, iPad, Android phones and tablets, and the desktop web. Quip has a simple and elegant interface that combines documents and messages into a single chat-like “thread” of updates, making collaboration immediate and easy. You can share documents, tables, checklists, and more so multiple people can edit and discuss together in a single, shared workspace." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

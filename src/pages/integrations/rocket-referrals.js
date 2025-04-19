@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Rocket Referrals"
-      description="Rocket Referrals is designed to get clients to stay longer, buy more and refer their friends. You'll see results in under 48 hours."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -76,7 +75,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Rocket Referrals</title>
-          <meta name="description" content="Rocket Referrals is designed to get clients to stay longer, buy more and refer their friends. You'll see results in under 48 hours." />
+          <meta name="description" content={}/>ll see results in under 48 hours.' />
         </>
       ),
     },

@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Maileon"
-      description="Maileon is an email marketing and automation solution that allows you to send targeted email campaigns and develop custom marketing automations."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -81,7 +80,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Maileon</title>
-          <meta name="description" content="Maileon is an email marketing and automation solution that allows you to send targeted email campaigns and develop custom marketing automations." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

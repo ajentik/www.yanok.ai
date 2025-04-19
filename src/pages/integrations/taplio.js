@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Taplio"
-      description="Drive more business from LinkedIn. In 10min a day."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -62,7 +61,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Taplio</title>
-          <meta name="description" content="Drive more business from LinkedIn. In 10min a day." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

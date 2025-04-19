@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Reddit"
-      description="Reddit, stylized as reddit, is a social news and entertainment website where registered users submit content in the form of links or text posts."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -71,7 +70,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Reddit</title>
-          <meta name="description" content="Reddit, stylized as reddit, is a social news and entertainment website where registered users submit content in the form of links or text posts." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

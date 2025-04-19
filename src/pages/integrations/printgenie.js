@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="PRINTgenie"
-      description="PRINTgenie is an automated system for running Multi-Touch drip campaigns. You can Select or Build Your Own Direct Mail, Text & eMail Sequences. Simply Add a Contact, Set it and Forget it."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -62,7 +61,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>PRINTgenie</title>
-          <meta name="description" content="PRINTgenie is an automated system for running Multi-Touch drip campaigns. You can Select or Build Your Own Direct Mail, Text & eMail Sequences. Simply Add a Contact, Set it and Forget it." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

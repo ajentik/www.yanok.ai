@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Scale Cloud"
-      description="ScaleCloud is KPI Management Tool to achieve business scale-up."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -62,7 +61,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Scale Cloud</title>
-          <meta name="description" content="ScaleCloud is KPI Management Tool to achieve business scale-up." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

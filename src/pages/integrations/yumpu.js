@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Yumpu"
-      description="Yumpu is a powerful publishing application that makes it easy to convert, share and embed all kinds of documents. Yumpu is an E-paper technology with marketing tools which is also available for mobile platforms and devices."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -61,7 +60,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Yumpu</title>
-          <meta name="description" content="Yumpu is a powerful publishing application that makes it easy to convert, share and embed all kinds of documents. Yumpu is an E-paper technology with marketing tools which is also available for mobile platforms and devices." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

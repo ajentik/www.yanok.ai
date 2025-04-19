@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="ClickDesk"
-      description="ClickDesk is a combo of Live Chat, Voice and Video Chat and Helpdesk Software For Online Businesses. It is currently helping over 150,000 online businesses to better engage their web visitors."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -67,7 +66,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>ClickDesk</title>
-          <meta name="description" content="ClickDesk is a combo of Live Chat, Voice and Video Chat and Helpdesk Software For Online Businesses. It is currently helping over 150,000 online businesses to better engage their web visitors." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

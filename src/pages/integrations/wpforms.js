@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="WPForms"
-      description="WPForms is a drag and drop online form builder for WordPress that allows you to easily create contact forms, email subscription forms, billing forms, donation forms, online order forms, and more."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +56,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>WPForms</title>
-          <meta name="description" content="WPForms is a drag and drop online form builder for WordPress that allows you to easily create contact forms, email subscription forms, billing forms, donation forms, online order forms, and more." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

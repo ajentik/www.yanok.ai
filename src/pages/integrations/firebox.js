@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="FireBox"
-      description="FireBox is a WordPress Popup Builder Plugin that helps you convert your visitors into subscribers and customers with eye-catching popups."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +56,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>FireBox</title>
-          <meta name="description" content="FireBox is a WordPress Popup Builder Plugin that helps you convert your visitors into subscribers and customers with eye-catching popups." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

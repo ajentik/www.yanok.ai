@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Compta"
-      description="Compta.com is a french accounting and invoicing software. Compta.com est un logiciel de comptabilité, gestion et facturation."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -72,7 +71,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Compta</title>
-          <meta name="description" content="Compta.com is a french accounting and invoicing software. Compta.com est un logiciel de comptabilité, gestion et facturation." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

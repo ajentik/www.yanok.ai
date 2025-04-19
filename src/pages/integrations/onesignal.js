@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="OneSignal"
-      description="OneSignal is a simple and smart service that send push notifications across all platforms. OneSignal features reliable delivery of millions of notifications, segmentation and targeting, automated delivery, localization, support for all major app development tools, and real time analytics."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -66,7 +65,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>OneSignal</title>
-          <meta name="description" content="OneSignal is a simple and smart service that send push notifications across all platforms. OneSignal features reliable delivery of millions of notifications, segmentation and targeting, automated delivery, localization, support for all major app development tools, and real time analytics." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

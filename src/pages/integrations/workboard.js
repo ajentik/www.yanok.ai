@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Workboard"
-      description="Workboard is the team performance app managers choose for themselves: goals, priorities, actions, reports and feedback aligned in one easy app."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -101,7 +100,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Workboard</title>
-          <meta name="description" content="Workboard is the team performance app managers choose for themselves: goals, priorities, actions, reports and feedback aligned in one easy app." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

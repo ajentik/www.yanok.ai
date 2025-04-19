@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="My Print Cloud"
-      description="MyPRINTCloud is a web based software solution provider specifically for the print and graphics arts community worldwide. With focus on printing technology and addressing the growing needs in digital print and media industry."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -62,7 +61,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>My Print Cloud</title>
-          <meta name="description" content="MyPRINTCloud is a web based software solution provider specifically for the print and graphics arts community worldwide. With focus on printing technology and addressing the growing needs in digital print and media industry." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

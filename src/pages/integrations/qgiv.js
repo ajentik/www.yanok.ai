@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Qgiv"
-      description="Qgiv is an online fundraising platform offering donation forms, event registrations, peer-to-peer events, text fundraising, and auctions."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +56,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Qgiv</title>
-          <meta name="description" content="Qgiv is an online fundraising platform offering donation forms, event registrations, peer-to-peer events, text fundraising, and auctions." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

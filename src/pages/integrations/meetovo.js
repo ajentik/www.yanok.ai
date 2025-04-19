@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="MEETOVO"
-      description="MEETOVO makes it very easy to create funnels to receive requests and applicants."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +56,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>MEETOVO</title>
-          <meta name="description" content="MEETOVO makes it very easy to create funnels to receive requests and applicants." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

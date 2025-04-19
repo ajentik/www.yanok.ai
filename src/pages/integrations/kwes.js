@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="KwesForms"
-      description="KwesForms is a complete form service for developers. Comes with form building components, validation, spam protection, and emails."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +56,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>KwesForms</title>
-          <meta name="description" content="KwesForms is a complete form service for developers. Comes with form building components, validation, spam protection, and emails." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

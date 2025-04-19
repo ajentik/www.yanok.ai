@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Malartu"
-      description="Malartu automates business advisory reports. Understand where the business has been, where it’s going, and how that compares to peers."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +52,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Malartu</title>
-          <meta name="description" content="Malartu automates business advisory reports. Understand where the business has been, where it’s going, and how that compares to peers." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

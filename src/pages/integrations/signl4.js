@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="SIGNL4"
-      description="SIGNL4 is a mobile alert notification app with tracking and escalation to reliably inform teams about alerts and incidents."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -62,7 +61,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>SIGNL4</title>
-          <meta name="description" content="SIGNL4 is a mobile alert notification app with tracking and escalation to reliably inform teams about alerts and incidents." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

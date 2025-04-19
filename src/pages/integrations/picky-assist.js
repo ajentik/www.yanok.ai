@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Picky Assist"
-      description="Picky Assist helps to connect your existing android mobile phone as a gateway to automate SMS & WhatsApp or Business can connect Official WhatsApp Business Account to interconnect with other apps"
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -61,7 +60,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Picky Assist</title>
-          <meta name="description" content="Picky Assist helps to connect your existing android mobile phone as a gateway to automate SMS & WhatsApp or Business can connect Official WhatsApp Business Account to interconnect with other apps" />
+          <meta name="description" content={}/> />
         </>
       ),
     },

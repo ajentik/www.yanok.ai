@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Reloadify"
-      description="Send personal e-mails and transform one-time-buyers into lifelong customers. Communicate on a large scale, but talk with customers at the personal level. Raise your revenue by using marketing automation. Are you ready to double your conversion rates?"
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +56,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Reloadify</title>
-          <meta name="description" content="Send personal e-mails and transform one-time-buyers into lifelong customers. Communicate on a large scale, but talk with customers at the personal level. Raise your revenue by using marketing automation. Are you ready to double your conversion rates?" />
+          <meta name="description" content={}/> />
         </>
       ),
     },

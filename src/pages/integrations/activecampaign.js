@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="ActiveCampaign"
-      description="ActiveCampaign is a customer experience automation (CXA) platform that helps businesses meaningfully engage customers. Access pre-built automations that combine transactional email and email marketing, marketing automation, ecommerce marketing, and CRM for powerful segmentation and personalization across social, email, messaging, chat, and text."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -276,7 +275,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>ActiveCampaign</title>
-          <meta name="description" content="ActiveCampaign is a customer experience automation (CXA) platform that helps businesses meaningfully engage customers. Access pre-built automations that combine transactional email and email marketing, marketing automation, ecommerce marketing, and CRM for powerful segmentation and personalization across social, email, messaging, chat, and text." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Better Uptime"
-      description="Better Uptime is a tool to provide reliable uptime monitoring with voice calls and beautiful on-call scheduling. Configure everything in just 3 minutes, free plan included!"
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -91,7 +90,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Better Uptime</title>
-          <meta name="description" content="Better Uptime is a tool to provide reliable uptime monitoring with voice calls and beautiful on-call scheduling. Configure everything in just 3 minutes, free plan included!" />
+          <meta name="description" content={}/> />
         </>
       ),
     },

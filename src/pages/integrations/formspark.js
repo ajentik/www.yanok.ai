@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Formspark"
-      description="Formspark is a simple & powerful form solution for developers."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +56,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Formspark</title>
-          <meta name="description" content="Formspark is a simple & powerful form solution for developers." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

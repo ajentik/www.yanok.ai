@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="VocalIP"
-      description="Vocal IP provides a full range of managed data and cloud network and access services combined with advanced unified communications and application integration services."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -71,7 +70,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>VocalIP</title>
-          <meta name="description" content="Vocal IP provides a full range of managed data and cloud network and access services combined with advanced unified communications and application integration services." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

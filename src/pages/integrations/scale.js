@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Scale"
-      description="Scale accelerates the development of AI applications by helping computer vision teams generate high-quality ground truth data."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +52,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Scale</title>
-          <meta name="description" content="Scale accelerates the development of AI applications by helping computer vision teams generate high-quality ground truth data." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

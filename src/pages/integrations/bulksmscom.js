@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="BulkSMS.com"
-      description="BulkSMS.com is a leading SMS messaging service provider offering two-way SMS communication services straight from your internet enabled computer."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -71,7 +70,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>BulkSMS.com</title>
-          <meta name="description" content="BulkSMS.com is a leading SMS messaging service provider offering two-way SMS communication services straight from your internet enabled computer." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Featurebase"
-      description="Featurebase is a feedback management tool that helps you prioritize user feedback and make correct product decisions."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -76,7 +75,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Featurebase</title>
-          <meta name="description" content="Featurebase is a feedback management tool that helps you prioritize user feedback and make correct product decisions." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

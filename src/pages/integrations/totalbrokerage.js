@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="TotalBrokerage"
-      description="The only complete Real Estate Brokerage software solution from contact through closing."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -301,7 +300,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>TotalBrokerage</title>
-          <meta name="description" content="The only complete Real Estate Brokerage software solution from contact through closing." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

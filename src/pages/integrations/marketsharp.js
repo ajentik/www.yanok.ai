@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="MarketSharp"
-      description="MarketSharp is a CRM program for contractors, remodelers, and home improvement professionals. It helps companies organize their leads, customers, and jobs, as well as automate their business processes."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +56,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>MarketSharp</title>
-          <meta name="description" content="MarketSharp is a CRM program for contractors, remodelers, and home improvement professionals. It helps companies organize their leads, customers, and jobs, as well as automate their business processes." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

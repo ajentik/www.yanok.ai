@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Viqeo"
-      description="Viqeo is an interactive video platform to create, automate and distribute videos."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -77,7 +76,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Viqeo</title>
-          <meta name="description" content="Viqeo is an interactive video platform to create, automate and distribute videos." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

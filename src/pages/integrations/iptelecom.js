@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Iptelecom"
-      description="Iptelecom is a VOIP service provider. Allows you to receive detailed information about calls made, call center events, receive recording of your calls and other features."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -156,7 +155,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Iptelecom</title>
-          <meta name="description" content="Iptelecom is a VOIP service provider. Allows you to receive detailed information about calls made, call center events, receive recording of your calls and other features." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

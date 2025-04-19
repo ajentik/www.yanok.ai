@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Cincopa"
-      description="Cincopa is multimedia solution allowing to handle all aspects of hosting, managing, publishing, and sharing multiple types of media content."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -91,7 +90,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Cincopa</title>
-          <meta name="description" content="Cincopa is multimedia solution allowing to handle all aspects of hosting, managing, publishing, and sharing multiple types of media content." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

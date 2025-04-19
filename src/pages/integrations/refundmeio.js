@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Refundme.io"
-      description="Refundme.io's standardised technology and processes increase speed, volume, security and efficiency of refunds and payments."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -76,7 +75,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Refundme.io</title>
-          <meta name="description" content="Refundme.io's standardised technology and processes increase speed, volume, security and efficiency of refunds and payments." />
+          <meta name="description" content={}/>s standardised technology and processes increase speed, volume, security and efficiency of refunds and payments.' />
         </>
       ),
     },

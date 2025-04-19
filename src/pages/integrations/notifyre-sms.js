@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Notifyre SMS"
-      description="Notifyre’s powerful SMS toolkit is designed to send targeted text messages directly to your audience, receive and manage replies and more."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -61,7 +60,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Notifyre SMS</title>
-          <meta name="description" content="Notifyre’s powerful SMS toolkit is designed to send targeted text messages directly to your audience, receive and manage replies and more." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Filestage"
-      description="Share, review and approve all your files in one place and enjoy a faster, more productive approval process"
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -101,7 +100,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Filestage</title>
-          <meta name="description" content="Share, review and approve all your files in one place and enjoy a faster, more productive approval process" />
+          <meta name="description" content={}/> />
         </>
       ),
     },

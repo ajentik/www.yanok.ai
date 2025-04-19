@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="OneHash"
-      description="OneHash is a cloud-based, robust, scalable, agile, affordable, and fully featured FaaS solution with top-notch AI-automated Customer Assistance, CRM, ERP, HCM, Project Management, Helpdesk, and other SaaS that your business may need."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -76,7 +75,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>OneHash</title>
-          <meta name="description" content="OneHash is a cloud-based, robust, scalable, agile, affordable, and fully featured FaaS solution with top-notch AI-automated Customer Assistance, CRM, ERP, HCM, Project Management, Helpdesk, and other SaaS that your business may need." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

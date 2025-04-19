@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="TrackVia"
-      description="TrackVia is a low-code, mobile workflow management platform that can be quickly customized to digitize and streamline your enterprise operations, processes and data."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -71,7 +70,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>TrackVia</title>
-          <meta name="description" content="TrackVia is a low-code, mobile workflow management platform that can be quickly customized to digitize and streamline your enterprise operations, processes and data." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

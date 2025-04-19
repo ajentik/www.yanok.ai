@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="ProWorkflow"
-      description="Interact with Companies, Contacts, Projects, Tasks, Time, Quotes & Invoices. Take full control of integrating with ProWorkflow to build a better team."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -581,7 +580,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>ProWorkflow</title>
-          <meta name="description" content="Interact with Companies, Contacts, Projects, Tasks, Time, Quotes & Invoices. Take full control of integrating with ProWorkflow to build a better team." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

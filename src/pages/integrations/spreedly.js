@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Spreedly"
-      description="Spreedly is cloud-based payments infrastructure that allows businesses to work with multiple payment gateways simultaneously."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +52,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Spreedly</title>
-          <meta name="description" content="Spreedly is cloud-based payments infrastructure that allows businesses to work with multiple payment gateways simultaneously." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

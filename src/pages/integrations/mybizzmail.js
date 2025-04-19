@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="MyBizzMail"
-      description="Mybizzmail is an email marketing service provider. With it's great drag and drop editor you can easily make newsletters, magazines and forms. MyBizzMail also gives you a report of who has visited which pages on your site via the email."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -71,7 +70,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>MyBizzMail</title>
-          <meta name="description" content="Mybizzmail is an email marketing service provider. With it's great drag and drop editor you can easily make newsletters, magazines and forms. MyBizzMail also gives you a report of who has visited which pages on your site via the email." />
+          <meta name="description" content={}/>s great drag and drop editor you can easily make newsletters, magazines and forms. MyBizzMail also gives you a report of who has visited which pages on your site via the email.' />
         </>
       ),
     },

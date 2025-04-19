@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Meetaway"
-      description="Meetaway is a virtual networking software for companies and organizations"
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -62,7 +61,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Meetaway</title>
-          <meta name="description" content="Meetaway is a virtual networking software for companies and organizations" />
+          <meta name="description" content={}/> />
         </>
       ),
     },

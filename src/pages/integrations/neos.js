@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Neos"
-      description="Neos is a cloud-based platform that helps law firms resolve more cases and improve overall efficiency."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +56,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Neos</title>
-          <meta name="description" content="Neos is a cloud-based platform that helps law firms resolve more cases and improve overall efficiency." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Mention"
-      description="Monitor any keyword in real-time and receive filtered, organized and prioritized information"
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -71,7 +70,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Mention</title>
-          <meta name="description" content="Monitor any keyword in real-time and receive filtered, organized and prioritized information" />
+          <meta name="description" content={}/> />
         </>
       ),
     },

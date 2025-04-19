@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Feathr"
-      description="Feathr is an all-in-one digital marketing and advertising tool that gives organizations everything they need to grow their missions."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -66,7 +65,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Feathr</title>
-          <meta name="description" content="Feathr is an all-in-one digital marketing and advertising tool that gives organizations everything they need to grow their missions." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Fusion Elements"
-      description="Fusion Elements is a practice management tool helping and Advisors streamline and automate their business."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -71,7 +70,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Fusion Elements</title>
-          <meta name="description" content="Fusion Elements is a practice management tool helping and Advisors streamline and automate their business." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

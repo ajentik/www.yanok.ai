@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Buffer"
-      description="Manage your social media marketing together with Buffer's tools to schedule posts, analyze performance, and publish to a half-dozen social networks from one app."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -71,7 +70,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Buffer</title>
-          <meta name="description" content="Manage your social media marketing together with Buffer's tools to schedule posts, analyze performance, and publish to a half-dozen social networks from one app." />
+          <meta name="description" content={}/>s tools to schedule posts, analyze performance, and publish to a half-dozen social networks from one app.' />
         </>
       ),
     },

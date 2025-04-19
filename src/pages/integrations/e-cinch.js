@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="E-Cinch"
-      description="E-Cinch is an eCommerce platform that enables, both retail and service businesses, to suggestively sell bundles & party packages online."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -62,7 +61,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>E-Cinch</title>
-          <meta name="description" content="E-Cinch is an eCommerce platform that enables, both retail and service businesses, to suggestively sell bundles & party packages online." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

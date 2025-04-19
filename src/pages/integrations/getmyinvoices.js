@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="GetMyInvoices"
-      description="GetMyInvoices is a digital invoice management software that simplifies and speeds up preparatory accounting. The solution automatically retrieves invoices and other documents from thousands of sources (10,000 online portals, email postboxes, invoicing tools etc.)"
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +56,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>GetMyInvoices</title>
-          <meta name="description" content="GetMyInvoices is a digital invoice management software that simplifies and speeds up preparatory accounting. The solution automatically retrieves invoices and other documents from thousands of sources (10,000 online portals, email postboxes, invoicing tools etc.)" />
+          <meta name="description" content={}/> />
         </>
       ),
     },

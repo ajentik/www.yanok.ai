@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="BHuman"
-      description="BHuman allows you to send AI generated personalized videos at a scale that look and feel completely real."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -62,7 +61,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>BHuman</title>
-          <meta name="description" content="BHuman allows you to send AI generated personalized videos at a scale that look and feel completely real." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

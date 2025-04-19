@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Kapost"
-      description="Kapost provides content marketing software that enables companies to manage their content marketing as a structured business process."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +52,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Kapost</title>
-          <meta name="description" content="Kapost provides content marketing software that enables companies to manage their content marketing as a structured business process." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

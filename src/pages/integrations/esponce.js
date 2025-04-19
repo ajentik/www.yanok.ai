@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Esponce"
-      description="Esponce lets you create, integrate and track QR Codes. Promote your real-world campaigns with rich & mobile optimized content to attract new fans and customers."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -71,7 +70,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Esponce</title>
-          <meta name="description" content="Esponce lets you create, integrate and track QR Codes. Promote your real-world campaigns with rich & mobile optimized content to attract new fans and customers." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

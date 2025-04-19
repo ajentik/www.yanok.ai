@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Yext"
-      description="Yext is a data management tool that is designed to keep track of your business' location-related information on multiple directories."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +52,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Yext</title>
-          <meta name="description" content="Yext is a data management tool that is designed to keep track of your business' location-related information on multiple directories." />
+          <meta name="description" content={}/> location-related information on multiple directories.' />
         </>
       ),
     },

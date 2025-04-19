@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="SailPoint"
-      description="SailPoint provides enterprise identity governance solutions with on-premises and cloud-based identity management software for the most complex challenges."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -116,7 +115,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>SailPoint</title>
-          <meta name="description" content="SailPoint provides enterprise identity governance solutions with on-premises and cloud-based identity management software for the most complex challenges." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

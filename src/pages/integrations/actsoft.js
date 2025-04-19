@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Actsoft"
-      description="Actsoft is the leading provider of mobile applications for businesses with workers in the field. Scalable and Affordable, with Award Winning Customer Care!"
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +52,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Actsoft</title>
-          <meta name="description" content="Actsoft is the leading provider of mobile applications for businesses with workers in the field. Scalable and Affordable, with Award Winning Customer Care!" />
+          <meta name="description" content={}/> />
         </>
       ),
     },

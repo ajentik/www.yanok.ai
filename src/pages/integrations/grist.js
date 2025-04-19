@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Grist"
-      description="Grist combines the flexibility of a spreadsheet with the robustness of a database to organize your data, your way."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -96,7 +95,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Grist</title>
-          <meta name="description" content="Grist combines the flexibility of a spreadsheet with the robustness of a database to organize your data, your way." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

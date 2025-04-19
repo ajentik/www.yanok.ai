@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Wodify Core"
-      description="Wodify Core software helps athletes track performance while allowing box owners to manage memberships, sell gear, and build community in their affiliate box."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -106,7 +105,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Wodify Core</title>
-          <meta name="description" content="Wodify Core software helps athletes track performance while allowing box owners to manage memberships, sell gear, and build community in their affiliate box." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

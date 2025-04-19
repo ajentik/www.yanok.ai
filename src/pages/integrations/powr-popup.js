@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="POWR Popup"
-      description="POWR Popup is the easy way to collect email subscribers, reduce cart abandonment and boost sales on any website."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +56,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>POWR Popup</title>
-          <meta name="description" content="POWR Popup is the easy way to collect email subscribers, reduce cart abandonment and boost sales on any website." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

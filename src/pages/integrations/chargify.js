@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Chargify"
-      description="Chargify is a Recurring Billing and Subscription Management tool platform that's designed to remove billing bottlenecks and give teams the speed and flexibility to grow faster."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -136,7 +135,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Chargify</title>
-          <meta name="description" content="Chargify is a Recurring Billing and Subscription Management tool platform that's designed to remove billing bottlenecks and give teams the speed and flexibility to grow faster." />
+          <meta name="description" content={}/>s designed to remove billing bottlenecks and give teams the speed and flexibility to grow faster.' />
         </>
       ),
     },

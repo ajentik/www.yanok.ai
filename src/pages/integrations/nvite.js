@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Nvite"
-      description="nvite is an attendee-focused, online event ticketing and registration platform that helps easily organize and manage events."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +52,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Nvite</title>
-          <meta name="description" content="nvite is an attendee-focused, online event ticketing and registration platform that helps easily organize and manage events." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

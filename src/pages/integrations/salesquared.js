@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Salesquared"
-      description="Salesquared is a leading email validation service. We provide APIs with complete SDKs and integrations, so you can seamlessly automate your email collection process. Validating email addresses in real-time is easier than ever."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +56,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Salesquared</title>
-          <meta name="description" content="Salesquared is a leading email validation service. We provide APIs with complete SDKs and integrations, so you can seamlessly automate your email collection process. Validating email addresses in real-time is easier than ever." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

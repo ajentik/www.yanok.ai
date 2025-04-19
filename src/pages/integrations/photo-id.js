@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="PHOTO iD by U Scope"
-      description="PHOTO iD is a photo management documentation platform that labels & organizes inspection images into detailed photo reports instantly."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -81,7 +80,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>PHOTO iD by U Scope</title>
-          <meta name="description" content="PHOTO iD is a photo management documentation platform that labels & organizes inspection images into detailed photo reports instantly." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

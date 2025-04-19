@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Topia"
-      description="Topia is an always-on metaverse platform to gather in real-time with colleagues or friends for virtual events, conferences and more!"
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -172,7 +171,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Topia</title>
-          <meta name="description" content="Topia is an always-on metaverse platform to gather in real-time with colleagues or friends for virtual events, conferences and more!" />
+          <meta name="description" content={}/> />
         </>
       ),
     },

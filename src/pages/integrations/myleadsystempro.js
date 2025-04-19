@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="MyLeadSystemPro"
-      description="MLSP is a trusted solution to help you attract fresh leads daily, get sales and sign-ups, and grow your business by leveraging the power of the internet."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +52,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>MyLeadSystemPro</title>
-          <meta name="description" content="MLSP is a trusted solution to help you attract fresh leads daily, get sales and sign-ups, and grow your business by leveraging the power of the internet." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

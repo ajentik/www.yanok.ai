@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="VocalCola"
-      description="VocalCola is a Call Tracking Service. Track and record your phone calls from all forms of marketing. Pick unique local and toll free numbers to use on different advertisements, and chart your most effective lead sources."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -121,7 +120,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>VocalCola</title>
-          <meta name="description" content="VocalCola is a Call Tracking Service. Track and record your phone calls from all forms of marketing. Pick unique local and toll free numbers to use on different advertisements, and chart your most effective lead sources." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

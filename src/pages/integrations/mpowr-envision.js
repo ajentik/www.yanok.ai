@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="MPOWR Envision"
-      description="MPOWR Envision is a place to easily create and share company values and goals, as well as track key performance indicators necessary to accomplishing those goals."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -91,7 +90,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>MPOWR Envision</title>
-          <meta name="description" content="MPOWR Envision is a place to easily create and share company values and goals, as well as track key performance indicators necessary to accomplishing those goals." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

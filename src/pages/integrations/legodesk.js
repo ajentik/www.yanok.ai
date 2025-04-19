@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="legodesk"
-      description="Legodesk enables lawyers and law firms to work faster and more efficiently. We streamline workflows, boost profits, and increase client satisfaction with our technology. We make practicing law effortless and swift."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -71,7 +70,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>legodesk</title>
-          <meta name="description" content="Legodesk enables lawyers and law firms to work faster and more efficiently. We streamline workflows, boost profits, and increase client satisfaction with our technology. We make practicing law effortless and swift." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

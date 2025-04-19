@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Quanto"
-      description="Quanto Link enables users to share their financial data in exchange for better financial products"
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -102,7 +101,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Quanto</title>
-          <meta name="description" content="Quanto Link enables users to share their financial data in exchange for better financial products" />
+          <meta name="description" content={}/> />
         </>
       ),
     },

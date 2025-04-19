@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Kafkai"
-      description="Kafkai is an AI article writer that uses machine-learning algorithms to write articles from scratch."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +56,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Kafkai</title>
-          <meta name="description" content="Kafkai is an AI article writer that uses machine-learning algorithms to write articles from scratch." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

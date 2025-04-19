@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Edisen"
-      description="Edisen is a platform that allows marketing teams to store and create new assets and plans."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -66,7 +65,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Edisen</title>
-          <meta name="description" content="Edisen is a platform that allows marketing teams to store and create new assets and plans." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

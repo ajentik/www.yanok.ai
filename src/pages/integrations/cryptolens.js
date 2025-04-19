@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Cryptolens"
-      description="Cryptolens helps you to keep track of all instances of your software and enforce a wide range of licensing models."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -76,7 +75,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Cryptolens</title>
-          <meta name="description" content="Cryptolens helps you to keep track of all instances of your software and enforce a wide range of licensing models." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

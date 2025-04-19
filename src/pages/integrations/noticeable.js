@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Noticeable"
-      description="Noticeable is an all-in-one solution to update your users effectively. Use it to engage your customers or your team with regular updates, get powerful feedback, and measure satisfaction."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -111,7 +110,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Noticeable</title>
-          <meta name="description" content="Noticeable is an all-in-one solution to update your users effectively. Use it to engage your customers or your team with regular updates, get powerful feedback, and measure satisfaction." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

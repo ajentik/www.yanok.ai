@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Smart Job Board"
-      description="The easiest job board software on the market."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -111,7 +110,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Smart Job Board</title>
-          <meta name="description" content="The easiest job board software on the market." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

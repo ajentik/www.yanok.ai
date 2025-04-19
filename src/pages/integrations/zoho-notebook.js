@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Zoho Notebook"
-      description="Notebook is a beautifuly simple note taking app. Take notes, make lists, record audio, capture moments and sync your notes across devices."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -111,7 +110,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Zoho Notebook</title>
-          <meta name="description" content="Notebook is a beautifuly simple note taking app. Take notes, make lists, record audio, capture moments and sync your notes across devices." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

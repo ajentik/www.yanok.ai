@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Vitally"
-      description="Vitally is a customer success platform for high-growth B2B SaaS teams."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -256,7 +255,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Vitally</title>
-          <meta name="description" content="Vitally is a customer success platform for high-growth B2B SaaS teams." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

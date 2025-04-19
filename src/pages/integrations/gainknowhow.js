@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="GainKnowHow"
-      description="GainKnowHow is an employee onboarding and skill training platform. It's like "An org-chart for your skills"."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -81,7 +80,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>GainKnowHow</title>
-          <meta name="description" content="GainKnowHow is an employee onboarding and skill training platform. It's like "An org-chart for your skills"." />
+          <meta name="description" content={}/>s like "An org-chart for your skills".' />
         </>
       ),
     },

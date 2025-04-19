@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Cardz"
-      description="The most advanced Digital Business Cards that get results and tools for your business."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -67,7 +66,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Cardz</title>
-          <meta name="description" content="The most advanced Digital Business Cards that get results and tools for your business." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

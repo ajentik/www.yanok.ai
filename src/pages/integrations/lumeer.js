@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Lumeer"
-      description="Lumeer gives you a super easy visual project management so that all the team members are on the same page and the communication is streamlined like never before."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -76,7 +75,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Lumeer</title>
-          <meta name="description" content="Lumeer gives you a super easy visual project management so that all the team members are on the same page and the communication is streamlined like never before." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

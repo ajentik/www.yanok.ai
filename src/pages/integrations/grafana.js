@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Grafana"
-      description="Grafana offers application analytics visualization services and features graphing, styling, template variables, panels, and themes."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +52,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Grafana</title>
-          <meta name="description" content="Grafana offers application analytics visualization services and features graphing, styling, template variables, panels, and themes." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

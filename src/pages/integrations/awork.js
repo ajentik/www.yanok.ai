@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="awork"
-      description="Intelligent projects, tasks and time tracking for your project business."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -101,7 +100,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>awork</title>
-          <meta name="description" content="Intelligent projects, tasks and time tracking for your project business." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

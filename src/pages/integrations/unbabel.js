@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Unbabel"
-      description="Unbabel’s “Translation as a Service” platform allows modern enterprises to understand and be understood by their customers in dozens of languages."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +52,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Unbabel</title>
-          <meta name="description" content="Unbabel’s “Translation as a Service” platform allows modern enterprises to understand and be understood by their customers in dozens of languages." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

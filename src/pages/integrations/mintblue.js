@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="mintBlue"
-      description="mintBlue connects organizations to the blockchain to make them future-proof."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -71,7 +70,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>mintBlue</title>
-          <meta name="description" content="mintBlue connects organizations to the blockchain to make them future-proof." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

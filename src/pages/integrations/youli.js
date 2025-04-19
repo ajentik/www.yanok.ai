@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="YouLi"
-      description="YouLi is a group travel management platform that combines itinerary management, room inventory management, deck plans, “no-code” website + booking pages to ensure everyone involved in your group trip or retreat is on the same page. Manage registrations, collect payments, collect legal forms, assign tasks and share documents all in one place."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -86,7 +85,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>YouLi</title>
-          <meta name="description" content="YouLi is a group travel management platform that combines itinerary management, room inventory management, deck plans, “no-code” website + booking pages to ensure everyone involved in your group trip or retreat is on the same page. Manage registrations, collect payments, collect legal forms, assign tasks and share documents all in one place." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

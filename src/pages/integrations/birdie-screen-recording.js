@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Birdie Screen Recording"
-      description="With Birdie Screen Recording, users can record their screen and voice and instantly share their feedback in less time than it would take to take screenshots, annotate them and type an email."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +56,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Birdie Screen Recording</title>
-          <meta name="description" content="With Birdie Screen Recording, users can record their screen and voice and instantly share their feedback in less time than it would take to take screenshots, annotate them and type an email." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

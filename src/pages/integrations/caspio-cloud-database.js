@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Caspio Cloud Database"
-      description="Caspio is a cloud platform for creating custom database applications fast and without coding."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -71,7 +70,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Caspio Cloud Database</title>
-          <meta name="description" content="Caspio is a cloud platform for creating custom database applications fast and without coding." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

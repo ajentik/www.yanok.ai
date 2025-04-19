@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="BlinkSwag"
-      description="BlinkSwag is your all-in one swag platform. Shop, store, and ship the highest quality swag around the world with the click of a button."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +56,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>BlinkSwag</title>
-          <meta name="description" content="BlinkSwag is your all-in one swag platform. Shop, store, and ship the highest quality swag around the world with the click of a button." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

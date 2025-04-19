@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="iFactFind"
-      description="iFactFind is the new standard in client data collection and management. The digital online fact find for financial advisers and their clients."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +56,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>iFactFind</title>
-          <meta name="description" content="iFactFind is the new standard in client data collection and management. The digital online fact find for financial advisers and their clients." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

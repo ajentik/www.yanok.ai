@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Clarizen One"
-      description="Clarizen is the leader in enterprise-class work collaboration and project management solutions that harness the power of the cloud to get work done efficiently, effectively and with better results."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -76,7 +75,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Clarizen One</title>
-          <meta name="description" content="Clarizen is the leader in enterprise-class work collaboration and project management solutions that harness the power of the cloud to get work done efficiently, effectively and with better results." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

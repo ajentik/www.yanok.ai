@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="RenderForm"
-      description="RenderForm is an image generation tool for repetitive design creation."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -76,7 +75,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>RenderForm</title>
-          <meta name="description" content="RenderForm is an image generation tool for repetitive design creation." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

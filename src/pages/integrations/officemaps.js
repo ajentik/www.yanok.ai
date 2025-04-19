@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="OfficeMaps"
-      description="OfficeMaps giving employees better flexibility and control over their working environments with desk, room, and asset booking management."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -72,7 +71,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>OfficeMaps</title>
-          <meta name="description" content="OfficeMaps giving employees better flexibility and control over their working environments with desk, room, and asset booking management." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

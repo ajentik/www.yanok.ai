@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="nandbox"
-      description="Nandbox Messenger is a free messaging app built for personal and professional use. With multiple profiles and versatile messaging options, nandbox Messenger helps you keep your chats organized and private — all in a single app. That's plus interactive channels of unlimited subscribers, you can join or create yourself. You can also have groups of up to 10,000 members. And - at any time - you can recall or edit your wrong-sent messages."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -61,7 +60,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>nandbox</title>
-          <meta name="description" content="Nandbox Messenger is a free messaging app built for personal and professional use. With multiple profiles and versatile messaging options, nandbox Messenger helps you keep your chats organized and private — all in a single app. That's plus interactive channels of unlimited subscribers, you can join or create yourself. You can also have groups of up to 10,000 members. And - at any time - you can recall or edit your wrong-sent messages." />
+          <meta name="description" content={}/>s plus interactive channels of unlimited subscribers, you can join or create yourself. You can also have groups of up to 10,000 members. And - at any time - you can recall or edit your wrong-sent messages.' />
         </>
       ),
     },

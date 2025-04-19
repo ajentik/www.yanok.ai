@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Serviceaide"
-      description="ServiceAide Cloud Service Management is an online, Cloud based IT Service Management system."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -111,7 +110,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Serviceaide</title>
-          <meta name="description" content="ServiceAide Cloud Service Management is an online, Cloud based IT Service Management system." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

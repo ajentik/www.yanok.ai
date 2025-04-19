@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Akkroo"
-      description="A universal, customisable lead capture solution that helps businesses maximise their return on exhibiting at events."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +52,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Akkroo</title>
-          <meta name="description" content="A universal, customisable lead capture solution that helps businesses maximise their return on exhibiting at events." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

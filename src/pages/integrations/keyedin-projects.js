@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="KeyedIn Projects"
-      description="KeyedIn Projects is an enterprise-class Project Portfolio Management software designed for PMO's, IT Teams and Professional Services."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -76,7 +75,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>KeyedIn Projects</title>
-          <meta name="description" content="KeyedIn Projects is an enterprise-class Project Portfolio Management software designed for PMO's, IT Teams and Professional Services." />
+          <meta name="description" content={}/>s, IT Teams and Professional Services.' />
         </>
       ),
     },

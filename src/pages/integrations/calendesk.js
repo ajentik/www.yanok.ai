@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Calendesk"
-      description="Calendesk helps to accept bookings from customers, handle their payments, contact them and generate a landing page for them."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -127,7 +126,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Calendesk</title>
-          <meta name="description" content="Calendesk helps to accept bookings from customers, handle their payments, contact them and generate a landing page for them." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="SendMails"
-      description="SendMails.io is an all-in-one platform to send emails, manage contacts, capture leads and automate your marketing."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -67,7 +66,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>SendMails</title>
-          <meta name="description" content="SendMails.io is an all-in-one platform to send emails, manage contacts, capture leads and automate your marketing." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="bCast"
-      description="bCast is a podcast hosting, distribution, and analytics platform designed to transform listeners into leads."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -76,7 +75,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>bCast</title>
-          <meta name="description" content="bCast is a podcast hosting, distribution, and analytics platform designed to transform listeners into leads." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

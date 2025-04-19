@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Instagram for Business"
-      description="Instagram for Business allows you to gain insights on your followers. Instagram keeps rolling out tools to help business owners succeed on the photo-sharing social media platform."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -66,7 +65,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Instagram for Business</title>
-          <meta name="description" content="Instagram for Business allows you to gain insights on your followers. Instagram keeps rolling out tools to help business owners succeed on the photo-sharing social media platform." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

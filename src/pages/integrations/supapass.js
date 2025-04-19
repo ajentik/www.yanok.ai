@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="SupaPass"
-      description="Easily create a website & mobile app for all your content, community & paywall, with no-code."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -92,7 +91,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>SupaPass</title>
-          <meta name="description" content="Easily create a website & mobile app for all your content, community & paywall, with no-code." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

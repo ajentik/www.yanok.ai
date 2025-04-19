@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Watershed LRS"
-      description="Watershed LRS is a learning analytics platform that provides actionable insights from your training and performance data."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -61,7 +60,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Watershed LRS</title>
-          <meta name="description" content="Watershed LRS is a learning analytics platform that provides actionable insights from your training and performance data." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

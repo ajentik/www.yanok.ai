@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Fieldnotes"
-      description="Fieldnotes is a minimalistic self-learning CRM platform that updates contacts, manages transaction deadlines, and handles data entry."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -106,7 +105,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Fieldnotes</title>
-          <meta name="description" content="Fieldnotes is a minimalistic self-learning CRM platform that updates contacts, manages transaction deadlines, and handles data entry." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

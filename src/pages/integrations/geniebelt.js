@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="GenieBelt"
-      description="GenieBelt is online construction project management software that helps you to run projects with ease and save budget."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +56,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>GenieBelt</title>
-          <meta name="description" content="GenieBelt is online construction project management software that helps you to run projects with ease and save budget." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

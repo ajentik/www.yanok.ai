@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Forms On Fire"
-      description="Forms On Fire is an enterprise-grade mobile forms platform. Capture rich data on a mobile device including pictures, GPS, audio/video, signatures and more to submit to a secure data storage vault and integrate with hundreds of external systems."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -91,7 +90,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Forms On Fire</title>
-          <meta name="description" content="Forms On Fire is an enterprise-grade mobile forms platform. Capture rich data on a mobile device including pictures, GPS, audio/video, signatures and more to submit to a secure data storage vault and integrate with hundreds of external systems." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

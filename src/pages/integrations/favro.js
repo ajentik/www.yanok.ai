@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Favro"
-      description="Plan a wedding, build an award winning video game or even send a rocket into space. Favro helps you manage everything from the smallest task, to the most advanced project."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +56,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Favro</title>
-          <meta name="description" content="Plan a wedding, build an award winning video game or even send a rocket into space. Favro helps you manage everything from the smallest task, to the most advanced project." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Chime"
-      description="Chime is a product of the technology company Chime Technologies, which offers a complete tech solution for real estate agents."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -81,7 +80,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Chime</title>
-          <meta name="description" content="Chime is a product of the technology company Chime Technologies, which offers a complete tech solution for real estate agents." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

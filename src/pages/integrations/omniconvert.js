@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Omniconvert"
-      description="Omniconvert is a conversion rate optimization platform. This app will enable the full power of Omniconvert on your store: A/B testing, user surveys, popup banners, advanced segmentation & more."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -62,7 +61,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Omniconvert</title>
-          <meta name="description" content="Omniconvert is a conversion rate optimization platform. This app will enable the full power of Omniconvert on your store: A/B testing, user surveys, popup banners, advanced segmentation & more." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

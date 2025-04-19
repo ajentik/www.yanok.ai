@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Keygen"
-      description="Keygen is a key generation service that makes it easy for businesses to license and distribute their software."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -191,7 +190,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Keygen</title>
-          <meta name="description" content="Keygen is a key generation service that makes it easy for businesses to license and distribute their software." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="fieldd"
-      description="Fieldd enables companies to take control of their operations with our leading field service management software."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -77,7 +76,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>fieldd</title>
-          <meta name="description" content="Fieldd enables companies to take control of their operations with our leading field service management software." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

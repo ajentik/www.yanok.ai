@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Ardary-Sms"
-      description="Ardary-Sms is a collaboration tool that you can use to Send SMS messages immediately to any number in the world."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -61,7 +60,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Ardary-Sms</title>
-          <meta name="description" content="Ardary-Sms is a collaboration tool that you can use to Send SMS messages immediately to any number in the world." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

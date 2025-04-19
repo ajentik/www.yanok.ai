@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Index.co"
-      description="Index is a platform for startups, corporate brands and investors. We harness data on hundreds of thousands of companies to fuel growth and innovation around the globe."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -71,7 +70,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Index.co</title>
-          <meta name="description" content="Index is a platform for startups, corporate brands and investors. We harness data on hundreds of thousands of companies to fuel growth and innovation around the globe." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

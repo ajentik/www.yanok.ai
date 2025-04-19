@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Colligso WalletIn"
-      description="Colligso's WalletIn app helps merchants to remarket their product/services directly to customers using a Pass in Apple Pay and Google Pay wallets."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +56,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Colligso WalletIn</title>
-          <meta name="description" content="Colligso's WalletIn app helps merchants to remarket their product/services directly to customers using a Pass in Apple Pay and Google Pay wallets." />
+          <meta name="description" content={}/>s WalletIn app helps merchants to remarket their product/services directly to customers using a Pass in Apple Pay and Google Pay wallets.' />
         </>
       ),
     },

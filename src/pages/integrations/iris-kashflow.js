@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="IRIS KashFlow"
-      description="IRIS KashFlow is an easy-to-use accounting and bookkeeping software allowing you to run your business from anywhere at any time whilst staying compliant."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -86,7 +85,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>IRIS KashFlow</title>
-          <meta name="description" content="IRIS KashFlow is an easy-to-use accounting and bookkeeping software allowing you to run your business from anywhere at any time whilst staying compliant." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

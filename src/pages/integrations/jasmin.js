@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Jasmin"
-      description="Jasmin is a Cloud Management Software by PRIMAVERA BSS that allows you to track your business any time and anywhere. Jasmin allows you to manage sales, payments, stocks, receipts, orders, etc., offering you KPIs and tips for your business."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -121,7 +120,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Jasmin</title>
-          <meta name="description" content="Jasmin is a Cloud Management Software by PRIMAVERA BSS that allows you to track your business any time and anywhere. Jasmin allows you to manage sales, payments, stocks, receipts, orders, etc., offering you KPIs and tips for your business." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

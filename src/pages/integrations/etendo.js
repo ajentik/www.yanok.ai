@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Etendo"
-      description="Etendo is a team collaboration tool to organize tasks and keep projects on track."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -61,7 +60,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Etendo</title>
-          <meta name="description" content="Etendo is a team collaboration tool to organize tasks and keep projects on track." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

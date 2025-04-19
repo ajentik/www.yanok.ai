@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Azendoo"
-      description="Azendoo groups all your teamwork in one place so that you can plan, share and get organized, together."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -86,7 +85,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Azendoo</title>
-          <meta name="description" content="Azendoo groups all your teamwork in one place so that you can plan, share and get organized, together." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

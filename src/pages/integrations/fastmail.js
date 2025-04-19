@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="FastMail"
-      description="FastMail is an email service offering paid email accounts for individuals and organisations. It is provided in 36 languages to customers worldwide."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +52,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>FastMail</title>
-          <meta name="description" content="FastMail is an email service offering paid email accounts for individuals and organisations. It is provided in 36 languages to customers worldwide." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="karmaCRM"
-      description="KarmaCRM is a simple CRM that helps you nurture personalized relationships at scale by connecting your email, calendar and team to bring all your data into a single place."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -111,7 +110,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>karmaCRM</title>
-          <meta name="description" content="KarmaCRM is a simple CRM that helps you nurture personalized relationships at scale by connecting your email, calendar and team to bring all your data into a single place." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

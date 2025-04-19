@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="RoboAuditor"
-      description="RoboAuditor is an embeddable white label SEO audit tool."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +56,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>RoboAuditor</title>
-          <meta name="description" content="RoboAuditor is an embeddable white label SEO audit tool." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

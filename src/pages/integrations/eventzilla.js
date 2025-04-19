@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Eventzilla"
-      description="Eventzilla is a do-it-yourself event ticketing and marketing platform that helps event organizers to sell tickets online, process credit card payments and promote events across social media channels."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -82,7 +81,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Eventzilla</title>
-          <meta name="description" content="Eventzilla is a do-it-yourself event ticketing and marketing platform that helps event organizers to sell tickets online, process credit card payments and promote events across social media channels." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

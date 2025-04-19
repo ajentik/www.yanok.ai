@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Easy Digital Downloads"
-      description="Easy Digital Downloads is a complete eCommerce solution for WordPress. Use it right out of the box or tailor it to your business with add-ons."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +52,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Easy Digital Downloads</title>
-          <meta name="description" content="Easy Digital Downloads is a complete eCommerce solution for WordPress. Use it right out of the box or tailor it to your business with add-ons." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

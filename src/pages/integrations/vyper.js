@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Vyper"
-      description="VYPER is a viral marketing software created to help business, organizations, sales and marketing teams to harness the power viral contests."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +52,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Vyper</title>
-          <meta name="description" content="VYPER is a viral marketing software created to help business, organizations, sales and marketing teams to harness the power viral contests." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

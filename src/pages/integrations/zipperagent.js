@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="ZipperAgent"
-      description="ZipperAgent is all-in-one Solution for Real Estate Professionals. It is a platform designed exclusively for Real Estate Offices, Brokers and Agents, to run their marketing, sales, and transactions easily from a single cloud based application and smartphones."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -61,7 +60,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>ZipperAgent</title>
-          <meta name="description" content="ZipperAgent is all-in-one Solution for Real Estate Professionals. It is a platform designed exclusively for Real Estate Offices, Brokers and Agents, to run their marketing, sales, and transactions easily from a single cloud based application and smartphones." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

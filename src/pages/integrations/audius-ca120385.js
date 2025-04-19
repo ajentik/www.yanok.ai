@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Audius"
-      description="Audius is a brand-new streaming platform built for all musicians, not just those signed to labels. Build a fanbase, share your works in progress, and then publish your completed tracks for all the world to hear."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -62,7 +61,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Audius</title>
-          <meta name="description" content="Audius is a brand-new streaming platform built for all musicians, not just those signed to labels. Build a fanbase, share your works in progress, and then publish your completed tracks for all the world to hear." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="ServGrow"
-      description="Servgrow is an all-in-one solution for service pros that handles everything from CRM, to scheduling, estimates, job tracking, invoicing, payments, and so much more."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -76,7 +75,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>ServGrow</title>
-          <meta name="description" content="Servgrow is an all-in-one solution for service pros that handles everything from CRM, to scheduling, estimates, job tracking, invoicing, payments, and so much more." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

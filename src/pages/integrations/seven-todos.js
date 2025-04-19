@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="7todos"
-      description="7todos is a task board for people working on multiple projects. Get an overview of all your tasks across projects, at once."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +56,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>7todos</title>
-          <meta name="description" content="7todos is a task board for people working on multiple projects. Get an overview of all your tasks across projects, at once." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

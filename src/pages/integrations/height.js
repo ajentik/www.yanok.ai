@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Height"
-      description="Height is a project management software for teams to collaborate faster with tasks, chat, and flexible workflows."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -116,7 +115,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Height</title>
-          <meta name="description" content="Height is a project management software for teams to collaborate faster with tasks, chat, and flexible workflows." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

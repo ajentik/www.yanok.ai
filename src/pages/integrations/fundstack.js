@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Fundstack"
-      description="A complete pipeline and contact management software package enhanced with proprietary data enrichment and communication analysis algorithms."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +52,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Fundstack</title>
-          <meta name="description" content="A complete pipeline and contact management software package enhanced with proprietary data enrichment and communication analysis algorithms." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

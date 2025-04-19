@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="WinSMS"
-      description="WinSMS is a bulk SMS gateway providing two way communication for SMS messaging."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -61,7 +60,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>WinSMS</title>
-          <meta name="description" content="WinSMS is a bulk SMS gateway providing two way communication for SMS messaging." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

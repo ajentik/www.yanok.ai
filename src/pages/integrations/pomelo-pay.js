@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Pomelo Pay"
-      description="Pomelo Pay is a hardware-free mobile payment service provider offering a secure, simple and hassle-free way to take payments in an instant."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -196,7 +195,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Pomelo Pay</title>
-          <meta name="description" content="Pomelo Pay is a hardware-free mobile payment service provider offering a secure, simple and hassle-free way to take payments in an instant." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

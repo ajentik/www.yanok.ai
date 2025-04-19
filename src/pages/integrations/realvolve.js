@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Realvolve"
-      description="The real estate CRM that works the way you do. Manage people, listings, transactions and activities with powerful workflows."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -61,7 +60,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Realvolve</title>
-          <meta name="description" content="The real estate CRM that works the way you do. Manage people, listings, transactions and activities with powerful workflows." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

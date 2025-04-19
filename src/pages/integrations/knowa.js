@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Knowa"
-      description="Knowa is a board governance tool to meet, collaborate and access board information in one place"
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -116,7 +115,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Knowa</title>
-          <meta name="description" content="Knowa is a board governance tool to meet, collaborate and access board information in one place" />
+          <meta name="description" content={}/> />
         </>
       ),
     },

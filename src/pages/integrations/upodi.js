@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Upodi"
-      description="Upodi is a subscription and billing management platform."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -191,7 +190,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Upodi</title>
-          <meta name="description" content="Upodi is a subscription and billing management platform." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

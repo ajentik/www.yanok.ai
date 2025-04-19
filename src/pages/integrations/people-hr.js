@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="People HR"
-      description="People delivers an HR administration solution for HR professionals working in small and mid-sized companies. People HR constructs insightful graphic reports, offers expert “follow me” guidance, and engages people on missions through high-impact tasks."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -62,7 +61,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>People HR</title>
-          <meta name="description" content="People delivers an HR administration solution for HR professionals working in small and mid-sized companies. People HR constructs insightful graphic reports, offers expert “follow me” guidance, and engages people on missions through high-impact tasks." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="AlgoDocs"
-      description="AlgoDocs extracts data from PDF, Word and image files by converting them into structured data in a format you need. With AlgoDocs you can extract specific fields (e.g. Account Number, Date, Order Number, etc.) or data from tables of any complexity from your documents."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -66,7 +65,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>AlgoDocs</title>
-          <meta name="description" content="AlgoDocs extracts data from PDF, Word and image files by converting them into structured data in a format you need. With AlgoDocs you can extract specific fields (e.g. Account Number, Date, Order Number, etc.) or data from tables of any complexity from your documents." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="IntelFinder"
-      description="IntelFinder is a fully automated service for customer-specific and actionable threat intelligence."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -61,7 +60,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>IntelFinder</title>
-          <meta name="description" content="IntelFinder is a fully automated service for customer-specific and actionable threat intelligence." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

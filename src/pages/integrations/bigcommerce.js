@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="BigCommerce"
-      description="BigCommerce is an e-commerce platform that provides an all-encompassing solution for a business' online store. If you're trying to sell physical goods online, you'll want to check out Bigcommerce."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -76,7 +75,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>BigCommerce</title>
-          <meta name="description" content="BigCommerce is an e-commerce platform that provides an all-encompassing solution for a business' online store. If you're trying to sell physical goods online, you'll want to check out Bigcommerce." />
+          <meta name="description" content={}/> online store. If you're trying to sell physical goods online, you'll want to check out Bigcommerce.' />
         </>
       ),
     },

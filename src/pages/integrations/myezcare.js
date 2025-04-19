@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="myEZcare"
-      description="myEZcare is a complete one-stop solution for Home Health care, Adult Daycare , Residential Assisted living and other businesses providing senior care and working with Medicaid and Medicare."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +56,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>myEZcare</title>
-          <meta name="description" content="myEZcare is a complete one-stop solution for Home Health care, Adult Daycare , Residential Assisted living and other businesses providing senior care and working with Medicaid and Medicare." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

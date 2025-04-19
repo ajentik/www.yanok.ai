@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="GetLandy"
-      description="GetLandy makes your marketing team able to easily create customized landing pages at a bigger scale."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +56,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>GetLandy</title>
-          <meta name="description" content="GetLandy makes your marketing team able to easily create customized landing pages at a bigger scale." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

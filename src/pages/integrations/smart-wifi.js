@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Smart WiFi"
-      description="Smart WiFi is a marketing CRM which helps HoReCa clients build a database of their guests and interact with them via marketing widgets."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -87,7 +86,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Smart WiFi</title>
-          <meta name="description" content="Smart WiFi is a marketing CRM which helps HoReCa clients build a database of their guests and interact with them via marketing widgets." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

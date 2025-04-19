@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="SocialWeaver"
-      description="SocialWeaver is a social media management platform that makes it easy to schedule and publish categorized content, and engage with followers on any network all in one convenient place."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -66,7 +65,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>SocialWeaver</title>
-          <meta name="description" content="SocialWeaver is a social media management platform that makes it easy to schedule and publish categorized content, and engage with followers on any network all in one convenient place." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

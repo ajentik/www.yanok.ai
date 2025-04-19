@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="ClickMeeting"
-      description="Video conferencing software for product demos, training sessions, online courses, business meetings and webinars."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -81,7 +80,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>ClickMeeting</title>
-          <meta name="description" content="Video conferencing software for product demos, training sessions, online courses, business meetings and webinars." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

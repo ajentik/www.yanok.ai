@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="SmartSender.io"
-      description="Capture and act on customer experience insights in one place."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -107,7 +106,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>SmartSender.io</title>
-          <meta name="description" content="Capture and act on customer experience insights in one place." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Podio"
-      description="Podio is a collaborative work platform that's perfect for managing projects, teams, and anything else in your business that needs flexible apps that work the way you do."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -121,7 +120,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Podio</title>
-          <meta name="description" content="Podio is a collaborative work platform that's perfect for managing projects, teams, and anything else in your business that needs flexible apps that work the way you do." />
+          <meta name="description" content={}/>s perfect for managing projects, teams, and anything else in your business that needs flexible apps that work the way you do.' />
         </>
       ),
     },

@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Onereach"
-      description="OneReach is an award-winning cloud communication platform where companies can create custom voice and text solutions."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +52,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Onereach</title>
-          <meta name="description" content="OneReach is an award-winning cloud communication platform where companies can create custom voice and text solutions." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

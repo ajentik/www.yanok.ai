@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="CrewDriver"
-      description="CrewDriver is an automated employee shift fulfillment system for use alongside your workforce management software or as a stand-alone."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -91,7 +90,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>CrewDriver</title>
-          <meta name="description" content="CrewDriver is an automated employee shift fulfillment system for use alongside your workforce management software or as a stand-alone." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

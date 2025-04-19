@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="JobAdder"
-      description="JobAdder is a global recruitment platform built for agency and in-house recruiters. JobAdder creates a massive competitive advantage for recruiters by allowing them to spend less time using technology, and more time building face-to-face relationships."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -276,7 +275,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>JobAdder</title>
-          <meta name="description" content="JobAdder is a global recruitment platform built for agency and in-house recruiters. JobAdder creates a massive competitive advantage for recruiters by allowing them to spend less time using technology, and more time building face-to-face relationships." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

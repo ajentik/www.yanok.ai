@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="HappyFox"
-      description="HappyFox is a customer support, ticket support software that ensures lowest response time for all your customers queries. A really simple help desk!"
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -61,7 +60,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>HappyFox</title>
-          <meta name="description" content="HappyFox is a customer support, ticket support software that ensures lowest response time for all your customers queries. A really simple help desk!" />
+          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="preezie"
-      description="preezie is a guided conversion and product discovery platform designed to help you bring the in-store experience online"
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +56,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>preezie</title>
-          <meta name="description" content="preezie is a guided conversion and product discovery platform designed to help you bring the in-store experience online" />
+          <meta name="description" content={}/> />
         </>
       ),
     },

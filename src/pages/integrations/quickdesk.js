@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="QuickDesk"
-      description="QuickDesk is a simplified CRM software optimised for sales teams and professionals. Convert leads and close prospects easier than ever."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -96,7 +95,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>QuickDesk</title>
-          <meta name="description" content="QuickDesk is a simplified CRM software optimised for sales teams and professionals. Convert leads and close prospects easier than ever." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

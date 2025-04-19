@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="PostHog"
-      description="PostHog is robust, open-source product analytics letting you keep your data at bay."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -61,7 +60,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>PostHog</title>
-          <meta name="description" content="PostHog is robust, open-source product analytics letting you keep your data at bay." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

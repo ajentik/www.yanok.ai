@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Barricade"
-      description="Barricade works like an early warning system against any attempts at breaching the security of servers. It can also identify any security threats"
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +52,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Barricade</title>
-          <meta name="description" content="Barricade works like an early warning system against any attempts at breaching the security of servers. It can also identify any security threats" />
+          <meta name="description" content={}/> />
         </>
       ),
     },

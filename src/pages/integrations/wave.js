@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Wave"
-      description="Wave's invoicing and accounting software is completely free, and has no usage limits or restrictions. Optional Payment Processing and Payroll services are fully integrated to create a seamless platform for your business finances."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -96,7 +95,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Wave</title>
-          <meta name="description" content="Wave's invoicing and accounting software is completely free, and has no usage limits or restrictions. Optional Payment Processing and Payroll services are fully integrated to create a seamless platform for your business finances." />
+          <meta name="description" content={}/>s invoicing and accounting software is completely free, and has no usage limits or restrictions. Optional Payment Processing and Payroll services are fully integrated to create a seamless platform for your business finances.' />
         </>
       ),
     },

@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="SMMware"
-      description="SMMware helps small to medium businesses with part time employees, with scheduling plus time entry, invoicing, tasks, files and more."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -96,7 +95,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>SMMware</title>
-          <meta name="description" content="SMMware helps small to medium businesses with part time employees, with scheduling plus time entry, invoicing, tasks, files and more." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Easydoc"
-      description="Send document for E Signature and Receive back a signed copy"
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -91,7 +90,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Easydoc</title>
-          <meta name="description" content="Send document for E Signature and Receive back a signed copy" />
+          <meta name="description" content={}/> />
         </>
       ),
     },

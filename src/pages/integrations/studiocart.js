@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Studiocart"
-      description="Easily create beautiful, customizable checkout pages and automated sales flows from your own WordPress site."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -87,7 +86,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Studiocart</title>
-          <meta name="description" content="Easily create beautiful, customizable checkout pages and automated sales flows from your own WordPress site." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

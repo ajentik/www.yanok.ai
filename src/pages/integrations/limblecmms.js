@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="LimbleCMMS"
-      description="Limble CMMS is a cloud-based computerized maintenance management system (CMMS) suitable for small to midsize businesses in a variety of industries."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -81,7 +80,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>LimbleCMMS</title>
-          <meta name="description" content="Limble CMMS is a cloud-based computerized maintenance management system (CMMS) suitable for small to midsize businesses in a variety of industries." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

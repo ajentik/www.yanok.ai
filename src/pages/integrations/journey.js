@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Journey"
-      description="Journey is a multi-platform journal app that keeps your private memories forever."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +56,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Journey</title>
-          <meta name="description" content="Journey is a multi-platform journal app that keeps your private memories forever." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

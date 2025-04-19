@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="SharePoint"
-      description="SharePoint is business collaboration software that helps simplify content management, search, business intelligence. It also has a strong component around sharing for intranet and internet sites."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +52,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>SharePoint</title>
-          <meta name="description" content="SharePoint is business collaboration software that helps simplify content management, search, business intelligence. It also has a strong component around sharing for intranet and internet sites." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

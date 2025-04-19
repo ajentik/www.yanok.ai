@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="MoonClerk"
-      description="MoonClerk lets anyone accept recurring payments and one-time payments quickly and easily without any coding."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -72,7 +71,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>MoonClerk</title>
-          <meta name="description" content="MoonClerk lets anyone accept recurring payments and one-time payments quickly and easily without any coding." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

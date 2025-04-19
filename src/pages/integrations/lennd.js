@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Lennd"
-      description="Lennd is festival and live event management platform that helps facilitate requests and approvals around passes, meals, inventory and more."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -72,7 +71,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Lennd</title>
-          <meta name="description" content="Lennd is festival and live event management platform that helps facilitate requests and approvals around passes, meals, inventory and more." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Desku.io"
-      description="With Desku.io you can automate your customer support day to day operations and have more time for what matters most — no code required."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -111,7 +110,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Desku.io</title>
-          <meta name="description" content="With Desku.io you can automate your customer support day to day operations and have more time for what matters most — no code required." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

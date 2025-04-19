@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Axelor"
-      description="Axelor is a service provider that manage online accounting and product sale."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -66,7 +65,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Axelor</title>
-          <meta name="description" content="Axelor is a service provider that manage online accounting and product sale." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

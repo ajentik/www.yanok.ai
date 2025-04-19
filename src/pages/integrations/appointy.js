@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Appointy"
-      description="Appointy is an online scheduling system that automates booking, payments and reminders. It allows customers to view real time availability, book instantly, and pay easily for their next appointment, class or event."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -76,7 +75,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Appointy</title>
-          <meta name="description" content="Appointy is an online scheduling system that automates booking, payments and reminders. It allows customers to view real time availability, book instantly, and pay easily for their next appointment, class or event." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Text to Speech PRO"
-      description="Convert multi-language text into natural-sounding speech."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +56,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Text to Speech PRO</title>
-          <meta name="description" content="Convert multi-language text into natural-sounding speech." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

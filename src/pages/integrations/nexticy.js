@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Nexticy"
-      description="Nexticy is the most innovative form builder that helps you create paper-like forms and documents. With Nexticy you can make your work paperless and become more productive with just an iPad."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +56,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Nexticy</title>
-          <meta name="description" content="Nexticy is the most innovative form builder that helps you create paper-like forms and documents. With Nexticy you can make your work paperless and become more productive with just an iPad." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

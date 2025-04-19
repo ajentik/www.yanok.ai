@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Rétine"
-      description="Rétine is a SaaS platform allowing you to create, diffuse and analyse state of the art polls."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +56,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Rétine</title>
-          <meta name="description" content="Rétine is a SaaS platform allowing you to create, diffuse and analyse state of the art polls." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

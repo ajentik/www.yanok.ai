@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="EZLynx"
-      description="EZLynx provides innovative insurance software that helps streamline your agency’s workflow."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -166,7 +165,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>EZLynx</title>
-          <meta name="description" content="EZLynx provides innovative insurance software that helps streamline your agency’s workflow." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

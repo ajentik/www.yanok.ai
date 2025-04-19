@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Predictive Sales AI"
-      description="Predictive Sales AI is a lead generation and communication tool to help contractors generate more leads and sales."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +56,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Predictive Sales AI</title>
-          <meta name="description" content="Predictive Sales AI is a lead generation and communication tool to help contractors generate more leads and sales." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

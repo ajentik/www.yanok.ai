@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Adafruit IO"
-      description="Adafruit IO is a cloud service used primarily for storing and retrieving data but does much more."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -61,7 +60,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Adafruit IO</title>
-          <meta name="description" content="Adafruit IO is a cloud service used primarily for storing and retrieving data but does much more." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

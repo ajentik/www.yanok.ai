@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="CheckMarket"
-      description="CheckMarket is an enterprise web-based survey tool. There are many low cost (free) survey tools out there. What makes CheckMarket different is its focus on enterprise users and their special needs."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -81,7 +80,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>CheckMarket</title>
-          <meta name="description" content="CheckMarket is an enterprise web-based survey tool. There are many low cost (free) survey tools out there. What makes CheckMarket different is its focus on enterprise users and their special needs." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Chatra"
-      description="Chatra is a live chat software that helps to increase revenue and collect feedback providing an easy way for website owners to talk to visitors in real time."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -67,7 +66,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Chatra</title>
-          <meta name="description" content="Chatra is a live chat software that helps to increase revenue and collect feedback providing an easy way for website owners to talk to visitors in real time." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

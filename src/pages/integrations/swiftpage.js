@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Swiftpage"
-      description="Swiftpage is a leader in the small business market, helping to drive customer acquisition and retention using innovative, purpose built software solutions."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +52,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Swiftpage</title>
-          <meta name="description" content="Swiftpage is a leader in the small business market, helping to drive customer acquisition and retention using innovative, purpose built software solutions." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

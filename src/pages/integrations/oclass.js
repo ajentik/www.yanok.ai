@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="OClass"
-      description="OClass is a all-in-one class management software system made for dance studios, tuition centers and health clubs of all sizes."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -77,7 +76,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>OClass</title>
-          <meta name="description" content="OClass is a all-in-one class management software system made for dance studios, tuition centers and health clubs of all sizes." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Bear"
-      description="Bear is a focused, flexible writing app used by everyone from bloggers and web developers to aspiring authors and students."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +52,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Bear</title>
-          <meta name="description" content="Bear is a focused, flexible writing app used by everyone from bloggers and web developers to aspiring authors and students." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

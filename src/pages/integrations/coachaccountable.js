@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="CoachAccountable"
-      description="CoachAccountable is a platform to support and structure coaching relationships between coaches and their clients."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -116,7 +115,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>CoachAccountable</title>
-          <meta name="description" content="CoachAccountable is a platform to support and structure coaching relationships between coaches and their clients." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

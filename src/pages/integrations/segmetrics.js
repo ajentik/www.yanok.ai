@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="SegMetrics"
-      description="SegMetrics gives you clarity on where your leads come from, how they act, and how much your marketing is really worth."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -87,7 +86,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>SegMetrics</title>
-          <meta name="description" content="SegMetrics gives you clarity on where your leads come from, how they act, and how much your marketing is really worth." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

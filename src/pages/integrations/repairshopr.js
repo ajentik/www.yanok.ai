@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="RepairShopr"
-      description="RepairShopr is a platform to manage a service or repair business with job tracking (ticketing) and an emphasis on great communication."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -116,7 +115,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>RepairShopr</title>
-          <meta name="description" content="RepairShopr is a platform to manage a service or repair business with job tracking (ticketing) and an emphasis on great communication." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

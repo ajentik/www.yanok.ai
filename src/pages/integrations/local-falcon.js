@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Local Falcon"
-      description="Enrich and visualize your Local SEO performance reports with ranking information about your Google Business Profile on Google Maps and Google Search."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -91,7 +90,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Local Falcon</title>
-          <meta name="description" content="Enrich and visualize your Local SEO performance reports with ranking information about your Google Business Profile on Google Maps and Google Search." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

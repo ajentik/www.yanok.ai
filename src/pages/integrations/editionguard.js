@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="EditionGuard"
-      description="EditionGuard provides you freedom with eBook selling tools that are easy to use and customize, built on top of an industry standard DRM system for security. Now you can sell eBooks the way that makes you happy, without having to give up on your profits."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -76,7 +75,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>EditionGuard</title>
-          <meta name="description" content="EditionGuard provides you freedom with eBook selling tools that are easy to use and customize, built on top of an industry standard DRM system for security. Now you can sell eBooks the way that makes you happy, without having to give up on your profits." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

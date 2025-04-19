@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Smarty Accounting"
-      description="Smarty Accounting is a comprehensive accounting and invoicing software for SMEs. The platform can monitor your ban account and remind clients about overdue payments, minimising the amount of accounting work you do."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -86,7 +85,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Smarty Accounting</title>
-          <meta name="description" content="Smarty Accounting is a comprehensive accounting and invoicing software for SMEs. The platform can monitor your ban account and remind clients about overdue payments, minimising the amount of accounting work you do." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

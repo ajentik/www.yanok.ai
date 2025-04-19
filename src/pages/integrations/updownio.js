@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Updown.io"
-      description="updown.io is an online service that checks your website's status by periodically sending an HTTP request. It then notifies you by Slack, Telegram, email or SMS when your website is not responding correctly, your SSL certificate is invalid or about to expire, and more."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -97,7 +96,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Updown.io</title>
-          <meta name="description" content="updown.io is an online service that checks your website's status by periodically sending an HTTP request. It then notifies you by Slack, Telegram, email or SMS when your website is not responding correctly, your SSL certificate is invalid or about to expire, and more." />
+          <meta name="description" content={}/>s status by periodically sending an HTTP request. It then notifies you by Slack, Telegram, email or SMS when your website is not responding correctly, your SSL certificate is invalid or about to expire, and more.' />
         </>
       ),
     },

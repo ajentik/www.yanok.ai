@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Learnistic"
-      description="Learnistic allows you to create and sell your courses with your own professionally created & prestigiously branded quality mobile app."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -72,7 +71,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Learnistic</title>
-          <meta name="description" content="Learnistic allows you to create and sell your courses with your own professionally created & prestigiously branded quality mobile app." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

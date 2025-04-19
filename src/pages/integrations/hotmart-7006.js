@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Hotmart"
-      description="Hotmart is an All-in-One solution to take your online business global."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -72,7 +71,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Hotmart</title>
-          <meta name="description" content="Hotmart is an All-in-One solution to take your online business global." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

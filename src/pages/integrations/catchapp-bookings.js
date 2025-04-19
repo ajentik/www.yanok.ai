@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="CatchApp Bookings"
-      description="CatchApp is an online booking system that lets your client self-book appointments and pay for them."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -67,7 +66,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>CatchApp Bookings</title>
-          <meta name="description" content="CatchApp is an online booking system that lets your client self-book appointments and pay for them." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

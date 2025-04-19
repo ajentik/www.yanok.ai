@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="SignNow"
-      description="SignNow provides a secure and easy electronic signature solution that enables you to sign, send and manage documents anywhere while using any device."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -101,7 +100,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>SignNow</title>
-          <meta name="description" content="SignNow provides a secure and easy electronic signature solution that enables you to sign, send and manage documents anywhere while using any device." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

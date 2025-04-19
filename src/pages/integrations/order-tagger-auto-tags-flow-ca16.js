@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Order Tagger by Shop Circle"
-      description="Order Tagger ‑ Auto Tags Flow by Shop Circle allows you to create automated workflows to add tags based on criteria you specify."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +56,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Order Tagger by Shop Circle</title>
-          <meta name="description" content="Order Tagger ‑ Auto Tags Flow by Shop Circle allows you to create automated workflows to add tags based on criteria you specify." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

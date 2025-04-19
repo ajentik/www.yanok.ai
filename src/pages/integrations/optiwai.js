@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="OptiwAI"
-      description="OptiwAI SaaS solution uses the power of AI algorithms to efficiently improve the quality of your images without any effort from your side."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -61,7 +60,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>OptiwAI</title>
-          <meta name="description" content="OptiwAI SaaS solution uses the power of AI algorithms to efficiently improve the quality of your images without any effort from your side." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

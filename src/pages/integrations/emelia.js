@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Emelia"
-      description="Emilia is the only platform dedicated to Growth Marketing teams and B2B automation companies that has 3 e-mail addresses for cold-emailing."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -86,7 +85,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Emelia</title>
-          <meta name="description" content="Emilia is the only platform dedicated to Growth Marketing teams and B2B automation companies that has 3 e-mail addresses for cold-emailing." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

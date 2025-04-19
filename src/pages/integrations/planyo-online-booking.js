@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Planyo Online Booking"
-      description="Planyo is an online reservation system which can be used by any business taking bookings. It's used, amongst others, by businesses offering vacation properties, car rentals, hotels, driving schools, yacht charters, doctors and therapists, conference rooms, tennis courts, car parks, event tickets or any other bookings you could imagine."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -151,7 +150,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Planyo Online Booking</title>
-          <meta name="description" content="Planyo is an online reservation system which can be used by any business taking bookings. It's used, amongst others, by businesses offering vacation properties, car rentals, hotels, driving schools, yacht charters, doctors and therapists, conference rooms, tennis courts, car parks, event tickets or any other bookings you could imagine." />
+          <meta name="description" content={}/>s used, amongst others, by businesses offering vacation properties, car rentals, hotels, driving schools, yacht charters, doctors and therapists, conference rooms, tennis courts, car parks, event tickets or any other bookings you could imagine.' />
         </>
       ),
     },

@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Drive Chat"
-      description="Drive Chat allows your leads to be integrated with your chosen CRM"
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +56,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Drive Chat</title>
-          <meta name="description" content="Drive Chat allows your leads to be integrated with your chosen CRM" />
+          <meta name="description" content={}/> />
         </>
       ),
     },

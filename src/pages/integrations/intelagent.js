@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Intelagent"
-      description="Intelligent automation, powered by conversational AI"
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +56,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Intelagent</title>
-          <meta name="description" content="Intelligent automation, powered by conversational AI" />
+          <meta name="description" content={}/> />
         </>
       ),
     },

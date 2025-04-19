@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="SmartSurvey"
-      description="SmartSurvey provides powerful, advanced online survey software. Built to let individuals and teams create any type of questionnaire or form to get answers fast."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -66,7 +65,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>SmartSurvey</title>
-          <meta name="description" content="SmartSurvey provides powerful, advanced online survey software. Built to let individuals and teams create any type of questionnaire or form to get answers fast." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

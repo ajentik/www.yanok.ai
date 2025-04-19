@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Futureworks"
-      description="Futureworks’ OKR integration makes it easy for employees in the company to know what the goal of the company is and how we can achieve it."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -81,7 +80,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Futureworks</title>
-          <meta name="description" content="Futureworks’ OKR integration makes it easy for employees in the company to know what the goal of the company is and how we can achieve it." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

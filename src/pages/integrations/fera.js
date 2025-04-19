@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Fera"
-      description="Fera is a customer reviews app that allows you to automate review requests, display reviews on your site and moderate customer submissions."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -62,7 +61,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Fera</title>
-          <meta name="description" content="Fera is a customer reviews app that allows you to automate review requests, display reviews on your site and moderate customer submissions." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

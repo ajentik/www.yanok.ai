@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="SuperOffice CRM"
-      description="SuperOffice CRM software helps businesses collaborate internally and improve their sales, marketing and service processes."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -241,7 +240,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>SuperOffice CRM</title>
-          <meta name="description" content="SuperOffice CRM software helps businesses collaborate internally and improve their sales, marketing and service processes." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

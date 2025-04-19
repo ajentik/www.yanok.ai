@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="RollWorks"
-      description="RollWorks combines lead generation with marketing and sales automation. They work with B2B companies to help them acquire new clients."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -81,7 +80,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>RollWorks</title>
-          <meta name="description" content="RollWorks combines lead generation with marketing and sales automation. They work with B2B companies to help them acquire new clients." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

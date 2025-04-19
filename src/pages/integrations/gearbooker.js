@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Gearbooker"
-      description="Gearbooker is a peer-to-peer rental platform for creators to rent (out) photo, video and audio equipment."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -77,7 +76,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Gearbooker</title>
-          <meta name="description" content="Gearbooker is a peer-to-peer rental platform for creators to rent (out) photo, video and audio equipment." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

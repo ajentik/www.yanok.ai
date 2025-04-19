@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Dialpad"
-      description="Dialpad is a business communications platform that's built to grow with your team, no matter where in the world they are. Offering voice, messaging, video, and more, Dialpad helps teams stay connected across all their existing devices."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -62,7 +61,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Dialpad</title>
-          <meta name="description" content="Dialpad is a business communications platform that's built to grow with your team, no matter where in the world they are. Offering voice, messaging, video, and more, Dialpad helps teams stay connected across all their existing devices." />
+          <meta name="description" content={}/>s built to grow with your team, no matter where in the world they are. Offering voice, messaging, video, and more, Dialpad helps teams stay connected across all their existing devices.' />
         </>
       ),
     },

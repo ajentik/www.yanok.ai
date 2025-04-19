@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Replug"
-      description="Shorten, track and optimize your links with catchy call-to-actions, retargeting pixels, custom domains, and powerful analytics. Get the most return from your links"
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -81,7 +80,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Replug</title>
-          <meta name="description" content="Shorten, track and optimize your links with catchy call-to-actions, retargeting pixels, custom domains, and powerful analytics. Get the most return from your links" />
+          <meta name="description" content={}/> />
         </>
       ),
     },

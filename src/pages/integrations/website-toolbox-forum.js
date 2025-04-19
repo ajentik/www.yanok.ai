@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Website Toolbox Forum"
-      description="Website Toolbox is the easiest way to create a forum. No coding, software, or servers required."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -191,7 +190,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Website Toolbox Forum</title>
-          <meta name="description" content="Website Toolbox is the easiest way to create a forum. No coding, software, or servers required." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

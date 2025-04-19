@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Squarespace"
-      description="Squarespace is a website builder, blogging platform, hosting service, commerce platform, and domain name registrar."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +56,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Squarespace</title>
-          <meta name="description" content="Squarespace is a website builder, blogging platform, hosting service, commerce platform, and domain name registrar." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

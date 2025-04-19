@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Payfunnels"
-      description="Payfunnels is a payment processing platform accepting recurring and one-time online payments, and even setting up payment plans to expire after a certain number of payments."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -82,7 +81,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Payfunnels</title>
-          <meta name="description" content="Payfunnels is a payment processing platform accepting recurring and one-time online payments, and even setting up payment plans to expire after a certain number of payments." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

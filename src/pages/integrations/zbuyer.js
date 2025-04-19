@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="zBuyer.com"
-      description="zBuyer.com Provides Home Buyer and Seller Leads to Real Estate Professionals."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +56,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>zBuyer.com</title>
-          <meta name="description" content="zBuyer.com Provides Home Buyer and Seller Leads to Real Estate Professionals." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Sarbacane"
-      description="Sarbacane is a solution for managing, creating and sending email and SMS campaigns, as well as setting up intelligent, automated marketing workflows."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -76,7 +75,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Sarbacane</title>
-          <meta name="description" content="Sarbacane is a solution for managing, creating and sending email and SMS campaigns, as well as setting up intelligent, automated marketing workflows." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

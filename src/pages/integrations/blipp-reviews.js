@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Blipp Reviews"
-      description="Blipp Reviews helps local businesses stand out from the crowd by gathering valuable customer feedback and online reviews."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -66,7 +65,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Blipp Reviews</title>
-          <meta name="description" content="Blipp Reviews helps local businesses stand out from the crowd by gathering valuable customer feedback and online reviews." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

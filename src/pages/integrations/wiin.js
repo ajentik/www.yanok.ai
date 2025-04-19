@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="wiin"
-      description="WIIN is a collaborative portal to dematerialize all your information collection process"
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -82,7 +81,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>wiin</title>
-          <meta name="description" content="WIIN is a collaborative portal to dematerialize all your information collection process" />
+          <meta name="description" content={}/> />
         </>
       ),
     },

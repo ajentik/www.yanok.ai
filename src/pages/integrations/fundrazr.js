@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="FundRazr"
-      description="FundRazr is a Canadian crowdfunding site and Facebook app first released in 2009."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +52,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>FundRazr</title>
-          <meta name="description" content="FundRazr is a Canadian crowdfunding site and Facebook app first released in 2009." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

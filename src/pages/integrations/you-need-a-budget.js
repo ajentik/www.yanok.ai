@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="You Need A Budget"
-      description="You Need A Budget is a tool to help you gain total control of your money, living paycheck to paycheck, get out of debt, and save more money."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -141,7 +140,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>You Need A Budget</title>
-          <meta name="description" content="You Need A Budget is a tool to help you gain total control of your money, living paycheck to paycheck, get out of debt, and save more money." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

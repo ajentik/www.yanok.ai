@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Agent Legend"
-      description="Agent Legend is an automated, multi-channel marketing tool."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -81,7 +80,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Agent Legend</title>
-          <meta name="description" content="Agent Legend is an automated, multi-channel marketing tool." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

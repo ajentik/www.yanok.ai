@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Moon Invoice"
-      description="Moon Invoice is invoicing app providing invoice functionality to users."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -216,7 +215,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Moon Invoice</title>
-          <meta name="description" content="Moon Invoice is invoicing app providing invoice functionality to users." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

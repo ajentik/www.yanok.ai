@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Scarlett Network"
-      description="Scarlett is a broker in a box software as a service solution tailored for mortgage brokers and lenders. Some its features include; point of sale, Compliance and Payroll"
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -72,7 +71,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Scarlett Network</title>
-          <meta name="description" content="Scarlett is a broker in a box software as a service solution tailored for mortgage brokers and lenders. Some its features include; point of sale, Compliance and Payroll" />
+          <meta name="description" content={}/> />
         </>
       ),
     },

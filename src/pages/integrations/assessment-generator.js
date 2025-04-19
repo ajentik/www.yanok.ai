@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Assessment Generator"
-      description="Easily create assessments, questionnaires, and quizzes that you can add to any website to engage users."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -61,7 +60,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Assessment Generator</title>
-          <meta name="description" content="Easily create assessments, questionnaires, and quizzes that you can add to any website to engage users." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

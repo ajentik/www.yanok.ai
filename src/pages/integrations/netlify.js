@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Netlify"
-      description="Netlify is an all-in-one workflow to build, deploy, and manage modern web projects."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -76,7 +75,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Netlify</title>
-          <meta name="description" content="Netlify is an all-in-one workflow to build, deploy, and manage modern web projects." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

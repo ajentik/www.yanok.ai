@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="TaxJar"
-      description="TaxJar’s award-winning solution makes it easy to automate sales tax management, reporting and filing. We obsessively leverage technology and exceptional customer service to help you focus on what matters most — growing your business."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -152,7 +151,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>TaxJar</title>
-          <meta name="description" content="TaxJar’s award-winning solution makes it easy to automate sales tax management, reporting and filing. We obsessively leverage technology and exceptional customer service to help you focus on what matters most — growing your business." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

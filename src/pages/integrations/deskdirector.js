@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="DeskDirector"
-      description="DeskDirector provides top customer success platform for MSPs that provides customizable client and tech portals, centralized communication, smart tickets, automations and more."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -136,7 +135,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>DeskDirector</title>
-          <meta name="description" content="DeskDirector provides top customer success platform for MSPs that provides customizable client and tech portals, centralized communication, smart tickets, automations and more." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

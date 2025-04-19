@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Calendly"
-      description="Calendly is an elegant and simple scheduling tool for businesses that eliminates email back and forth. It helps save time so that businesses can provide great service and increase sales."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -62,7 +61,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Calendly</title>
-          <meta name="description" content="Calendly is an elegant and simple scheduling tool for businesses that eliminates email back and forth. It helps save time so that businesses can provide great service and increase sales." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

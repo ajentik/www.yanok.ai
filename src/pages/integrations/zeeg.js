@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Zeeg"
-      description="Zeeg is a smart scheduling assistant that enables everyone to connect and meet at the best time by creating a secure, simple, and beautiful scheduling experience."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -62,7 +61,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Zeeg</title>
-          <meta name="description" content="Zeeg is a smart scheduling assistant that enables everyone to connect and meet at the best time by creating a secure, simple, and beautiful scheduling experience." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

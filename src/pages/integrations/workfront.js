@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Workfront"
-      description="Workfront is a software company that develops web-based work management and project management software that features enterprise work management, issue tracking, document management time tracking and portfolio management."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +52,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Workfront</title>
-          <meta name="description" content="Workfront is a software company that develops web-based work management and project management software that features enterprise work management, issue tracking, document management time tracking and portfolio management." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

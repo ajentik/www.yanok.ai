@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Pledge It for Charities"
-      description="Pledge It creates online fundraising tools for nonprofits that power the world's best peer-to-peer and virtual fitness event campaigns."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -67,7 +66,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Pledge It for Charities</title>
-          <meta name="description" content="Pledge It creates online fundraising tools for nonprofits that power the world's best peer-to-peer and virtual fitness event campaigns." />
+          <meta name="description" content={}/>s best peer-to-peer and virtual fitness event campaigns.' />
         </>
       ),
     },

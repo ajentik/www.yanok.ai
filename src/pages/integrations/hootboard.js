@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="HootBoard"
-      description="HootBoard is an information kiosk & a bulletin board platform for organizations to engage their employees, visitors or students on premises."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -71,7 +70,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>HootBoard</title>
-          <meta name="description" content="HootBoard is an information kiosk & a bulletin board platform for organizations to engage their employees, visitors or students on premises." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

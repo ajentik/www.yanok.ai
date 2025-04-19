@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Citrix ShareFile"
-      description="Citrix ShareFile is an enterprise "follow-me" data solution that makes it easy for users to store, sync and share data securely from any device, anywhere!"
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -86,7 +85,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Citrix ShareFile</title>
-          <meta name="description" content="Citrix ShareFile is an enterprise "follow-me" data solution that makes it easy for users to store, sync and share data securely from any device, anywhere!" />
+          <meta name="description" content={}/> />
         </>
       ),
     },

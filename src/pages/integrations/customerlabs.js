@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="CustomerLabs"
-      description="CustomerLabs Action Recorder helps you track website without writing code and unify customer data across all marketing tools."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -61,7 +60,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>CustomerLabs</title>
-          <meta name="description" content="CustomerLabs Action Recorder helps you track website without writing code and unify customer data across all marketing tools." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

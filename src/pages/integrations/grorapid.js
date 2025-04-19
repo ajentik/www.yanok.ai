@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Grorapid"
-      description="Grorapid is a B2B SAAS platform that helps businesses in marketing and growth using pre-made recipes and automation."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -61,7 +60,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Grorapid</title>
-          <meta name="description" content="Grorapid is a B2B SAAS platform that helps businesses in marketing and growth using pre-made recipes and automation." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

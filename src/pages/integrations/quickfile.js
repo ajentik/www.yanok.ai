@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="QuickFile"
-      description="UK based cloud accounting software. Manage your accounts and bookkeeping in the cloud. QuickFile is simple to use, fast and free!"
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -76,7 +75,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>QuickFile</title>
-          <meta name="description" content="UK based cloud accounting software. Manage your accounts and bookkeeping in the cloud. QuickFile is simple to use, fast and free!" />
+          <meta name="description" content={}/> />
         </>
       ),
     },

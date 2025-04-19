@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="OfficeGuy/SUMIT"
-      description="OfficeGuy is a comprehensive system for planning, management and execution for the self-employed, non-profit organizations and business organizations."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -91,7 +90,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>OfficeGuy/SUMIT</title>
-          <meta name="description" content="OfficeGuy is a comprehensive system for planning, management and execution for the self-employed, non-profit organizations and business organizations." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

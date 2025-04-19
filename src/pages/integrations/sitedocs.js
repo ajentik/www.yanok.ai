@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="SiteDocs"
-      description="SiteDocs is a digital safety management system that allows you to move your entire safety program from paper, clipboards and filing cabinets to the iPad and web."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +52,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>SiteDocs</title>
-          <meta name="description" content="SiteDocs is a digital safety management system that allows you to move your entire safety program from paper, clipboards and filing cabinets to the iPad and web." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

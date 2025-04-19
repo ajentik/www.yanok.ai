@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="The Weather"
-      description="Trigger off weather conditions in your local area. (Powered by https://openweathermap.org)"
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -86,7 +85,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>The Weather</title>
-          <meta name="description" content="Trigger off weather conditions in your local area. (Powered by https://openweathermap.org)" />
+          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="OnlineFundraising"
-      description="OnlineFundraising is a integration tool between payment methods and onboarding activities, based in Denmark."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +56,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>OnlineFundraising</title>
-          <meta name="description" content="OnlineFundraising is a integration tool between payment methods and onboarding activities, based in Denmark." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

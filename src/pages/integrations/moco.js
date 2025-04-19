@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="MOCO"
-      description="MOCO (MObile COmpany) is a lean cloud software made for small medium-sized agency and service businesses. Including time tracking, billing, resource planning, sales-funnel and CRM."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -361,7 +360,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>MOCO</title>
-          <meta name="description" content="MOCO (MObile COmpany) is a lean cloud software made for small medium-sized agency and service businesses. Including time tracking, billing, resource planning, sales-funnel and CRM." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

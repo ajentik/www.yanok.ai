@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="PPM Express"
-      description="PPM Express is Product Portfolio Management platform to easily integrate and orchestrate your existing projects in Microsoft Planner, Azure DevOps, Jira Software, Monday.com, and Microsoft Project Online to get a big picture view of your projects and product portfolio."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -176,7 +175,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>PPM Express</title>
-          <meta name="description" content="PPM Express is Product Portfolio Management platform to easily integrate and orchestrate your existing projects in Microsoft Planner, Azure DevOps, Jira Software, Monday.com, and Microsoft Project Online to get a big picture view of your projects and product portfolio." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

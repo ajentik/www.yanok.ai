@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Wherefour"
-      description="Wherefour is a traceability/ERP software platform for modern manufacturers."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -136,7 +135,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Wherefour</title>
-          <meta name="description" content="Wherefour is a traceability/ERP software platform for modern manufacturers." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

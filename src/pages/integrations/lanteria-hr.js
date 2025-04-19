@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Lanteria HR"
-      description="Lanteria HR is a solution for managing HR processes, including time & attendance, recruiting, learning, compensation, and performance."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -71,7 +70,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Lanteria HR</title>
-          <meta name="description" content="Lanteria HR is a solution for managing HR processes, including time & attendance, recruiting, learning, compensation, and performance." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

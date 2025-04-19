@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Limo Anywhere"
-      description="Limo Anywhere is a mobile app platform in the limousine and livery industry, with over 4,000 happy customers across the globe."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -121,7 +120,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Limo Anywhere</title>
-          <meta name="description" content="Limo Anywhere is a mobile app platform in the limousine and livery industry, with over 4,000 happy customers across the globe." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

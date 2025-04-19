@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="RingCentral"
-      description="RingCentral provides cloud-based communication system to modern businesses of all sizes. The system enables companies with voice, SMS, video, Fax, and team collaboration services on all major desktop and mobile platforms. All devices, services, and users can be managed through our PBX and administrative capability designed for Enterprise IT."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -101,7 +100,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>RingCentral</title>
-          <meta name="description" content="RingCentral provides cloud-based communication system to modern businesses of all sizes. The system enables companies with voice, SMS, video, Fax, and team collaboration services on all major desktop and mobile platforms. All devices, services, and users can be managed through our PBX and administrative capability designed for Enterprise IT." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

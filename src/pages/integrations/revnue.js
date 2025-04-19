@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Revnue"
-      description="Revnue is a digital contract management platform that provides insights across all your contracts, suppliers, customers, assets, and services."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -116,7 +115,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Revnue</title>
-          <meta name="description" content="Revnue is a digital contract management platform that provides insights across all your contracts, suppliers, customers, assets, and services." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

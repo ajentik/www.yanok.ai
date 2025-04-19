@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="CloudContactAI"
-      description="CloudContactAI is a platform enabling you to send SMS, MMS, and email messages."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -66,7 +65,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>CloudContactAI</title>
-          <meta name="description" content="CloudContactAI is a platform enabling you to send SMS, MMS, and email messages." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

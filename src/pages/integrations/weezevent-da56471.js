@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Weezevent"
-      description="Weezevent provides more than 200,000 event organisers and leisure venues with innovative technological solutions for ticketing and cashless payment."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -66,7 +65,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Weezevent</title>
-          <meta name="description" content="Weezevent provides more than 200,000 event organisers and leisure venues with innovative technological solutions for ticketing and cashless payment." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

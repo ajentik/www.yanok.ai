@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Avrio"
-      description="Avrio is the new way to capture and share data analysis, user research, and learnings directly in context, with your team."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -61,7 +60,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Avrio</title>
-          <meta name="description" content="Avrio is the new way to capture and share data analysis, user research, and learnings directly in context, with your team." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Detectify"
-      description="Detectify continuously analyzes your web application from a hacker’s perspective and reports back to you with security issues and descriptive reports. We monitor your security, so that you can focus on building great products."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -77,7 +76,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Detectify</title>
-          <meta name="description" content="Detectify continuously analyzes your web application from a hacker’s perspective and reports back to you with security issues and descriptive reports. We monitor your security, so that you can focus on building great products." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

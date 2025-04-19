@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Burst SMS"
-      description="Burst SMS is an online text messaging application. Use our API to integrate text message alerts into your work flows. Great for CRM automation systems, notifications and authentication."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -126,7 +125,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Burst SMS</title>
-          <meta name="description" content="Burst SMS is an online text messaging application. Use our API to integrate text message alerts into your work flows. Great for CRM automation systems, notifications and authentication." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Perfex CRM"
-      description="Perfex CRM is a Customer Relationship Management software designed for small businesses and freelancers."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -106,7 +105,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Perfex CRM</title>
-          <meta name="description" content="Perfex CRM is a Customer Relationship Management software designed for small businesses and freelancers." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

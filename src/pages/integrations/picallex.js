@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="PicallEx"
-      description="This integration allow to our users create orders via API Integration into PicallEx CRM."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -62,7 +61,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>PicallEx</title>
-          <meta name="description" content="This integration allow to our users create orders via API Integration into PicallEx CRM." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

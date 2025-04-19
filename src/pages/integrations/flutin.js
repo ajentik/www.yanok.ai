@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Flutin"
-      description="Flutin is the best way to monetize and broadcast your real time and pre recorded video live streams to Instagram, Youtbe, Facebook, lnkdn and other platforms. Whether your profession/interest lies with music, dance, comedy, business, fitness, or any other niche in the world."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -67,7 +66,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Flutin</title>
-          <meta name="description" content="Flutin is the best way to monetize and broadcast your real time and pre recorded video live streams to Instagram, Youtbe, Facebook, lnkdn and other platforms. Whether your profession/interest lies with music, dance, comedy, business, fitness, or any other niche in the world." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="SphereMail"
-      description="SphereMail's is a virtual office platform that makes it easier for mail administrators and customers to access, view and manage mail online or from a mobile device."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -62,7 +61,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>SphereMail</title>
-          <meta name="description" content="SphereMail's is a virtual office platform that makes it easier for mail administrators and customers to access, view and manage mail online or from a mobile device." />
+          <meta name="description" content={}/>s is a virtual office platform that makes it easier for mail administrators and customers to access, view and manage mail online or from a mobile device.' />
         </>
       ),
     },

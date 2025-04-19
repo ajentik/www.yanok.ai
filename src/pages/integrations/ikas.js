@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="ikas"
-      description="ikas is a headless e-commerce platform for SME's."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -72,7 +71,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>ikas</title>
-          <meta name="description" content="ikas is a headless e-commerce platform for SME's." />
+          <meta name="description" content={}/>s.' />
         </>
       ),
     },

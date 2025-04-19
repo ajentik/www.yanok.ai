@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Deskera"
-      description="Deskera is all you need to manage your organization's business and financial requirements."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -136,7 +135,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Deskera</title>
-          <meta name="description" content="Deskera is all you need to manage your organization's business and financial requirements." />
+          <meta name="description" content={}/>s business and financial requirements.' />
         </>
       ),
     },

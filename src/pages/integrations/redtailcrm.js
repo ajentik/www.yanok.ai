@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Redtail CRM"
-      description="Redtail CRM is cost-effective, easy to use, cloud based solution for today’s financial professional. Packed with powerful features for activity management, office automation, and more."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -136,7 +135,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Redtail CRM</title>
-          <meta name="description" content="Redtail CRM is cost-effective, easy to use, cloud based solution for today’s financial professional. Packed with powerful features for activity management, office automation, and more." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

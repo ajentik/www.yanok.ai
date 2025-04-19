@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="MemberSuite"
-      description="MemberSuite provides a CRM platform to keep the contact information of all your valuable members, donors, and prospects in one place. MemberSuite makes it easy to keep track of the people that allow your organization to shine."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +56,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>MemberSuite</title>
-          <meta name="description" content="MemberSuite provides a CRM platform to keep the contact information of all your valuable members, donors, and prospects in one place. MemberSuite makes it easy to keep track of the people that allow your organization to shine." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

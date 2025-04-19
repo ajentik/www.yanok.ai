@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Tally"
-      description="The simplest way to create beautiful forms & surveys, for free."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +56,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Tally</title>
-          <meta name="description" content="The simplest way to create beautiful forms & surveys, for free." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

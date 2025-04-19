@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Formidable Forms"
-      description="Formidable Forms is a WordPress plugin that helps you create beautiful drag and drop forms with custom styling. You and your visitors can submit and edit entries and posts from the front-end of your site. When you have data, display it with graphs and custom views."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -62,7 +61,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Formidable Forms</title>
-          <meta name="description" content="Formidable Forms is a WordPress plugin that helps you create beautiful drag and drop forms with custom styling. You and your visitors can submit and edit entries and posts from the front-end of your site. When you have data, display it with graphs and custom views." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

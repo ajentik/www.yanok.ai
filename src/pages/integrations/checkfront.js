@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Checkfront"
-      description="Checkfront is the leading online booking management platform for tour and activity, rental, and accommodation operators worldwide."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -72,7 +71,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Checkfront</title>
-          <meta name="description" content="Checkfront is the leading online booking management platform for tour and activity, rental, and accommodation operators worldwide." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

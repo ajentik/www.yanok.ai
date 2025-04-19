@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Paperless Pipeline"
-      description="Paperless Pipeline is a real estate transaction and commission management system for agents & brokers."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +56,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Paperless Pipeline</title>
-          <meta name="description" content="Paperless Pipeline is a real estate transaction and commission management system for agents & brokers." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="SatisMeter"
-      description="SatisMeter is a customer feedback tool that measures customer satisfaction (NPS) and monitors your product performance."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +56,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>SatisMeter</title>
-          <meta name="description" content="SatisMeter is a customer feedback tool that measures customer satisfaction (NPS) and monitors your product performance." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="B2BBricks"
-      description="Real Estate Software for individual and enterprise level realtors which will help you to provide real estate services in more efficiently and effectively than ever before"
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +56,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>B2BBricks</title>
-          <meta name="description" content="Real Estate Software for individual and enterprise level realtors which will help you to provide real estate services in more efficiently and effectively than ever before" />
+          <meta name="description" content={}/> />
         </>
       ),
     },

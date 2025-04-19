@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Captisa Forms"
-      description="Captisa Forms is an online form builder with cloud database storage."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -71,7 +70,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Captisa Forms</title>
-          <meta name="description" content="Captisa Forms is an online form builder with cloud database storage." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

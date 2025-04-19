@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Moosend"
-      description="Moosend is an email marketing & automations platform that helps you ease the burden of sending your email campaigns and managing your mailing lists."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -91,7 +90,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Moosend</title>
-          <meta name="description" content="Moosend is an email marketing & automations platform that helps you ease the burden of sending your email campaigns and managing your mailing lists." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

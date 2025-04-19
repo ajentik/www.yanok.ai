@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="cloudlayer.io"
-      description="cloudlayer.io is a service that lets you generate dynamic PDF documents or Images from a URL or HTML templates."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -82,7 +81,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>cloudlayer.io</title>
-          <meta name="description" content="cloudlayer.io is a service that lets you generate dynamic PDF documents or Images from a URL or HTML templates." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

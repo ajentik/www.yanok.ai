@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Ryver"
-      description="Ryver organizes all your collaboration in one app with team chat, task management, and voice and video calls."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -96,7 +95,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Ryver</title>
-          <meta name="description" content="Ryver organizes all your collaboration in one app with team chat, task management, and voice and video calls." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

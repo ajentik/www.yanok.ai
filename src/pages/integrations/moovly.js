@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Moovly"
-      description="Moovly is a cloud-based multimedia creation platform that allows you to make both videos and video templates."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +56,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Moovly</title>
-          <meta name="description" content="Moovly is a cloud-based multimedia creation platform that allows you to make both videos and video templates." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

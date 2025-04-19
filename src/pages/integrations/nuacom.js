@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="NUACOM"
-      description="NUACOM is a unified communication platform and phone system to automate your call process."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -81,7 +80,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>NUACOM</title>
-          <meta name="description" content="NUACOM is a unified communication platform and phone system to automate your call process." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

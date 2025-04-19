@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="byDesign Workspace"
-      description="Instantly 10x your marketing output with on-demand designers and marketing specialists, powered by a fixed-rate monthly subscription."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -76,7 +75,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>byDesign Workspace</title>
-          <meta name="description" content="Instantly 10x your marketing output with on-demand designers and marketing specialists, powered by a fixed-rate monthly subscription." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

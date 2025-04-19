@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="TRIGGERcmd"
-      description="TRIGGERcmd allows you to run commands on your computers remotely."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +56,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>TRIGGERcmd</title>
-          <meta name="description" content="TRIGGERcmd allows you to run commands on your computers remotely." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

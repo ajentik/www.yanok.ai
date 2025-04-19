@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Chatwork"
-      description="Keep your team focused and working together with Chatwork's team chat, tasks, video chats, and more in one place."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -67,7 +66,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Chatwork</title>
-          <meta name="description" content="Keep your team focused and working together with Chatwork's team chat, tasks, video chats, and more in one place." />
+          <meta name="description" content={}/>s team chat, tasks, video chats, and more in one place.' />
         </>
       ),
     },

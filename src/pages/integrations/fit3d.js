@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Fit3D"
-      description="Fit3D designs, manufacturers, and distributes 3D body scanners to business within the wellness, fitness, medical, and apparel retail industries on 5 continents."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +52,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Fit3D</title>
-          <meta name="description" content="Fit3D designs, manufacturers, and distributes 3D body scanners to business within the wellness, fitness, medical, and apparel retail industries on 5 continents." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

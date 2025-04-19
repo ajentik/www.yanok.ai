@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Boost Note"
-      description="Boost Note is a knowledge sharing tool for your dev team."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -76,7 +75,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Boost Note</title>
-          <meta name="description" content="Boost Note is a knowledge sharing tool for your dev team." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

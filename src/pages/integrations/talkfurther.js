@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="TalkFurther"
-      description="We are a lead engagement and qualification platform that uses automated conversations and actionable insights to help give you the best chance at converting leads to move-ins"
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +56,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>TalkFurther</title>
-          <meta name="description" content="We are a lead engagement and qualification platform that uses automated conversations and actionable insights to help give you the best chance at converting leads to move-ins" />
+          <meta name="description" content={}/> />
         </>
       ),
     },

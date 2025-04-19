@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="AeroLeads"
-      description="AeroLeads is a prospect generation software used by thousands of businesses all over the world including SMBs, startups and Enterprise customers. It find emails and phone numbers of prospects and businesses and is perfect tool to start your sales."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -62,7 +61,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>AeroLeads</title>
-          <meta name="description" content="AeroLeads is a prospect generation software used by thousands of businesses all over the world including SMBs, startups and Enterprise customers. It find emails and phone numbers of prospects and businesses and is perfect tool to start your sales." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

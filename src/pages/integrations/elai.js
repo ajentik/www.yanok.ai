@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Elai"
-      description="Elai.io is a leading text-to-video platform that allows anyone to build customized AI videos with a presenter using only text. A few moments is all it takes to generate a video with 69 languages available for translation."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -66,7 +65,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Elai</title>
-          <meta name="description" content="Elai.io is a leading text-to-video platform that allows anyone to build customized AI videos with a presenter using only text. A few moments is all it takes to generate a video with 69 languages available for translation." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Case Status"
-      description="Case Status is a client management platform that allows firms to communicate with the clients via text, app, or web through a single platform."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -91,7 +90,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Case Status</title>
-          <meta name="description" content="Case Status is a client management platform that allows firms to communicate with the clients via text, app, or web through a single platform." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

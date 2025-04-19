@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Memegen.link"
-      description="The free and open source API to generate memes."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -86,7 +85,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Memegen.link</title>
-          <meta name="description" content="The free and open source API to generate memes." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

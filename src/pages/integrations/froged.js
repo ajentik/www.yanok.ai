@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Froged"
-      description="Froged is a messaging platform that combines modern live chat, in-app messenger, knowledge base, user behavior tracking, and email automation."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -96,7 +95,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Froged</title>
-          <meta name="description" content="Froged is a messaging platform that combines modern live chat, in-app messenger, knowledge base, user behavior tracking, and email automation." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

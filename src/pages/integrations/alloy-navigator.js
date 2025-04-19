@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Alloy Navigator"
-      description="Alloy Navigator is an IT Service Management and Asset Management solution."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -106,7 +105,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Alloy Navigator</title>
-          <meta name="description" content="Alloy Navigator is an IT Service Management and Asset Management solution." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

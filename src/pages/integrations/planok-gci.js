@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="PlanOK GCI"
-      description="GCI is a real estate CRM to manage the complete sales cycle of real estate projects."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -136,7 +135,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>PlanOK GCI</title>
-          <meta name="description" content="GCI is a real estate CRM to manage the complete sales cycle of real estate projects." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

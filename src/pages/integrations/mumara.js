@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Mumara"
-      description="Mumara Campaigns is a collection of core features to help you leverage data-driven email marketing. Setup a correct workflow and send the right email at the right time to the right person with the right CTA (call to action) to get the maximum engagements... Just with Mumara Campaigns!"
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -61,7 +60,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Mumara</title>
-          <meta name="description" content="Mumara Campaigns is a collection of core features to help you leverage data-driven email marketing. Setup a correct workflow and send the right email at the right time to the right person with the right CTA (call to action) to get the maximum engagements... Just with Mumara Campaigns!" />
+          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Kanbanery"
-      description="Kanbanery is an easy to use but full-featured online visual project management tool for personal or team use. Just create task cards and move them through columns as work is completed. A fully-functional free plan is available for personal use."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -71,7 +70,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Kanbanery</title>
-          <meta name="description" content="Kanbanery is an easy to use but full-featured online visual project management tool for personal or team use. Just create task cards and move them through columns as work is completed. A fully-functional free plan is available for personal use." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Bowimi"
-      description="Simple, powerful tools which drive real business growth at leading FMCG brands. Bowimi helps you prospect, plan routes, capture data and manage field sales teams more effectively."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -82,7 +81,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Bowimi</title>
-          <meta name="description" content="Simple, powerful tools which drive real business growth at leading FMCG brands. Bowimi helps you prospect, plan routes, capture data and manage field sales teams more effectively." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

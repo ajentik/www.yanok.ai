@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="SMSINDIAHUB (India)"
-      description="SMSINDIAHUB India is an SMS Service that allows you to send SMS messages. Suitable for users in India - if not, please use SMSINDIAHUB (International)."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +56,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>SMSINDIAHUB (India)</title>
-          <meta name="description" content="SMSINDIAHUB India is an SMS Service that allows you to send SMS messages. Suitable for users in India - if not, please use SMSINDIAHUB (International)." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

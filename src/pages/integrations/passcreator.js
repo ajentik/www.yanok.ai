@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Passcreator"
-      description="Create digital Wallet passes using our visual editor. Distribute store cards, coupons, event tickets and membership cards to your customers."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -96,7 +95,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Passcreator</title>
-          <meta name="description" content="Create digital Wallet passes using our visual editor. Distribute store cards, coupons, event tickets and membership cards to your customers." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

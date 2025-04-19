@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Design Shifu"
-      description="Design Shifu offers flat rate, subscription-based graphic design services for high-growth start-ups, marketing teams and digital agencies"
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -61,7 +60,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Design Shifu</title>
-          <meta name="description" content="Design Shifu offers flat rate, subscription-based graphic design services for high-growth start-ups, marketing teams and digital agencies" />
+          <meta name="description" content={}/> />
         </>
       ),
     },

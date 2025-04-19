@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Refersion"
-      description="Refersion is a tracking platform helping merchants start, manage, and grow affiliate networks. This integration is for merchant accounts."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -81,7 +80,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Refersion</title>
-          <meta name="description" content="Refersion is a tracking platform helping merchants start, manage, and grow affiliate networks. This integration is for merchant accounts." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

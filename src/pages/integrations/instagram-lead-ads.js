@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Instagram Lead Ads"
-      description="Instagram lead ads make signing up for business information easy for people and more valuable for businesses. The Instagram lead ads app is useful for marketers who want to automate actions on their leads."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +56,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Instagram Lead Ads</title>
-          <meta name="description" content="Instagram lead ads make signing up for business information easy for people and more valuable for businesses. The Instagram lead ads app is useful for marketers who want to automate actions on their leads." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

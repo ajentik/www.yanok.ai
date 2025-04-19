@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="PagerDuty"
-      description="In an always-on world, teams trust PagerDuty to help them deliver a perfect digital experience to their customers, every time. PagerDuty is the central nervous system for a company's digital operations. PagerDuty identifies issues and opportunities in real time and brings together the right people to respond to problems faster and prevent them in the future. From digital disruptors to Fortune 500 companies, over 12,000 businesses rely on PagerDuty to help them continually improve their digital operations-so their teams can spend less time reacting to incidents and more time building for the future."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -76,7 +75,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>PagerDuty</title>
-          <meta name="description" content="In an always-on world, teams trust PagerDuty to help them deliver a perfect digital experience to their customers, every time. PagerDuty is the central nervous system for a company's digital operations. PagerDuty identifies issues and opportunities in real time and brings together the right people to respond to problems faster and prevent them in the future. From digital disruptors to Fortune 500 companies, over 12,000 businesses rely on PagerDuty to help them continually improve their digital operations-so their teams can spend less time reacting to incidents and more time building for the future." />
+          <meta name="description" content={}/>s digital operations. PagerDuty identifies issues and opportunities in real time and brings together the right people to respond to problems faster and prevent them in the future. From digital disruptors to Fortune 500 companies, over 12,000 businesses rely on PagerDuty to help them continually improve their digital operations-so their teams can spend less time reacting to incidents and more time building for the future.' />
         </>
       ),
     },

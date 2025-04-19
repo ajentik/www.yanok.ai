@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Twona AMS - NeXT"
-      description="Twona AMS is an intuitive Workflow, Design, Communication & Version Management Software that maximizes productivity for teams of any size. Centralize workflows, proof packaging, automate processes, request internal/external approvals, make your Artwork Management foolproof."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -62,7 +61,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Twona AMS - NeXT</title>
-          <meta name="description" content="Twona AMS is an intuitive Workflow, Design, Communication & Version Management Software that maximizes productivity for teams of any size. Centralize workflows, proof packaging, automate processes, request internal/external approvals, make your Artwork Management foolproof." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

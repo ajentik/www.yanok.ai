@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Ora"
-      description="Ora is an agile task management and team collaboration software."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -116,7 +115,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Ora</title>
-          <meta name="description" content="Ora is an agile task management and team collaboration software." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

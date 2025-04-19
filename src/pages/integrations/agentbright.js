@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="AgentBright"
-      description="AgentBright is a relationship marketing platform for real estate agents."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +56,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>AgentBright</title>
-          <meta name="description" content="AgentBright is a relationship marketing platform for real estate agents." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Parallel"
-      description="Parallel is a collaborative process management software for back-office and sales teams."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -86,7 +85,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Parallel</title>
-          <meta name="description" content="Parallel is a collaborative process management software for back-office and sales teams." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

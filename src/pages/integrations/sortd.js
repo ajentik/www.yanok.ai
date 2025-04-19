@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Sortd for Gmail"
-      description="Sortd allows you to organise email & teamwork in Gmail. Collaborate around Tasks, Emails, Meetings and Projects is made easy with customised boards and workflows"
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -91,7 +90,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Sortd for Gmail</title>
-          <meta name="description" content="Sortd allows you to organise email & teamwork in Gmail. Collaborate around Tasks, Emails, Meetings and Projects is made easy with customised boards and workflows" />
+          <meta name="description" content={}/> />
         </>
       ),
     },

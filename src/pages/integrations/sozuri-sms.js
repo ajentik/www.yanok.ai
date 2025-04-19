@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Sozuri (Kenya) SMS"
-      description="Sozuri is an innovative and affordable Omnichannel (SMS and WhatsApp) platform in Kenya suited for businesses and individuals to connect with customers."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +56,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Sozuri (Kenya) SMS</title>
-          <meta name="description" content="Sozuri is an innovative and affordable Omnichannel (SMS and WhatsApp) platform in Kenya suited for businesses and individuals to connect with customers." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Attio"
-      description="Attio is the CRM of the future: data-driven, completely customizable and intuitively collaborative."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -96,7 +95,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Attio</title>
-          <meta name="description" content="Attio is the CRM of the future: data-driven, completely customizable and intuitively collaborative." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

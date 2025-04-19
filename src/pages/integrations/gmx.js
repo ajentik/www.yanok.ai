@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Gmx"
-      description="Advanced, Savvy, Different. With 13 million customers strong, GMX is the ideal email solution for you."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +52,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Gmx</title>
-          <meta name="description" content="Advanced, Savvy, Different. With 13 million customers strong, GMX is the ideal email solution for you." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

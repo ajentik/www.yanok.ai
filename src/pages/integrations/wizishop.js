@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Wizishop"
-      description="WiziShop is an all-in-one e-commerce platform with cloud-based solutions to gain visibility and sell products and services online by harnessing the power of SEO."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -76,7 +75,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Wizishop</title>
-          <meta name="description" content="WiziShop is an all-in-one e-commerce platform with cloud-based solutions to gain visibility and sell products and services online by harnessing the power of SEO." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

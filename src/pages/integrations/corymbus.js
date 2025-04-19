@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Corymbus"
-      description="Corymbus is a CRM platform devoted to small businesses and freelances. It focuses on an extremely straightforward user experience. It covers the needs of both sales and marketing."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -81,7 +80,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Corymbus</title>
-          <meta name="description" content="Corymbus is a CRM platform devoted to small businesses and freelances. It focuses on an extremely straightforward user experience. It covers the needs of both sales and marketing." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

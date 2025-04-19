@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Storenvy"
-      description="Storenvy helps you discover goods you'll love from brands that inspire. It is also the easiest way to open your own store online."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -72,7 +71,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Storenvy</title>
-          <meta name="description" content="Storenvy helps you discover goods you'll love from brands that inspire. It is also the easiest way to open your own store online." />
+          <meta name="description" content={}/>ll love from brands that inspire. It is also the easiest way to open your own store online.' />
         </>
       ),
     },

@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="PractiTest"
-      description="PractiTest QA and test management solution helps users to manage the development and testing process, with an end-to-end approach starting from requirements, creating and running tests, tracking bugs and reporting them to all relevant stakeholders. PractiTest integrates with all leading testing tools such bug tracking (JIRA and others), CI/CD , automation and collaboration tools ."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -71,7 +70,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>PractiTest</title>
-          <meta name="description" content="PractiTest QA and test management solution helps users to manage the development and testing process, with an end-to-end approach starting from requirements, creating and running tests, tracking bugs and reporting them to all relevant stakeholders. PractiTest integrates with all leading testing tools such bug tracking (JIRA and others), CI/CD , automation and collaboration tools ." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Zapla"
-      description="Accept bookings directly on your website with the Zapla embeddable booking widget. Installs with one line of code on any site."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +52,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Zapla</title>
-          <meta name="description" content="Accept bookings directly on your website with the Zapla embeddable booking widget. Installs with one line of code on any site." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

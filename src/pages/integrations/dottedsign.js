@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="DottedSign"
-      description="DottedSign is an E-Signature service that enables you to sign documents, assign signing tasks to multiple signers, and track signing status directly on your smartphone, tablet, and web browser."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -62,7 +61,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>DottedSign</title>
-          <meta name="description" content="DottedSign is an E-Signature service that enables you to sign documents, assign signing tasks to multiple signers, and track signing status directly on your smartphone, tablet, and web browser." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

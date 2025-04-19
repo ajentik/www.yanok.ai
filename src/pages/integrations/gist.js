@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Gist"
-      description="Gist is an all-in-one email marketing automation, live chat & help desk platform."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -116,7 +115,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Gist</title>
-          <meta name="description" content="Gist is an all-in-one email marketing automation, live chat & help desk platform." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

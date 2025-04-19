@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Releventful"
-      description="Releventful is customer relationship management solution built for the event industry. Connect with your customers, automate your workflows, and have clear insight into your operations."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -77,7 +76,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Releventful</title>
-          <meta name="description" content="Releventful is customer relationship management solution built for the event industry. Connect with your customers, automate your workflows, and have clear insight into your operations." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

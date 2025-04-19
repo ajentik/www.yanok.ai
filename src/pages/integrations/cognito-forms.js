@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Cognito Forms"
-      description="Cognito Forms is an easy-to-use form builder that allows users to quickly build a form, include it on their website, and start capturing entries without having to do any development."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -101,7 +100,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Cognito Forms</title>
-          <meta name="description" content="Cognito Forms is an easy-to-use form builder that allows users to quickly build a form, include it on their website, and start capturing entries without having to do any development." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

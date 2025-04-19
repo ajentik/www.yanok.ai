@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Parse"
-      description="Parse makes it easy to add a backend to mobile apps and much, much more. It talks simple JSON but is extremely powerful and therefore very flexible."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +52,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Parse</title>
-          <meta name="description" content="Parse makes it easy to add a backend to mobile apps and much, much more. It talks simple JSON but is extremely powerful and therefore very flexible." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

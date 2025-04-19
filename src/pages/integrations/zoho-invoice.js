@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Zoho Invoice"
-      description="Zoho Invoice is an easy invoice software meant for small businesses and freelancers. Accept payments online, automate payment reminders and recurring billing."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -111,7 +110,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Zoho Invoice</title>
-          <meta name="description" content="Zoho Invoice is an easy invoice software meant for small businesses and freelancers. Accept payments online, automate payment reminders and recurring billing." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

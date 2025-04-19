@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Spotilla"
-      description="Spotilla is a maintenance and asset management solution for all businesses."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -121,7 +120,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Spotilla</title>
-          <meta name="description" content="Spotilla is a maintenance and asset management solution for all businesses." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

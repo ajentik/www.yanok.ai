@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="MOBIT"
-      description="MOBIT is a mobile marketing automation platform. Create SMS and MMS campaigns with dynamic and intelligent mobile pages."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -61,7 +60,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>MOBIT</title>
-          <meta name="description" content="MOBIT is a mobile marketing automation platform. Create SMS and MMS campaigns with dynamic and intelligent mobile pages." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

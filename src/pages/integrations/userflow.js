@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Userflow"
-      description="Userflow is a user onboarding platform, which lets your whole team build customized in-app tours, checklists and surveys, without code."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -156,7 +155,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Userflow</title>
-          <meta name="description" content="Userflow is a user onboarding platform, which lets your whole team build customized in-app tours, checklists and surveys, without code." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

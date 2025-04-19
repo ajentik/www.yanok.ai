@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="DisputeBee"
-      description="DisputeBee is a professional credit repair software platform."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +56,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>DisputeBee</title>
-          <meta name="description" content="DisputeBee is a professional credit repair software platform." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

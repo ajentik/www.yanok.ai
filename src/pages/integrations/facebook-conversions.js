@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Facebook Conversions"
-      description="Facebook’s Conversions lets you send information about important customer events to Facebook Server-Side API directly from your website’s server, CRM or other customer information databases. This information is useful to create powerful ads that yield better conversions."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -72,7 +71,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Facebook Conversions</title>
-          <meta name="description" content="Facebook’s Conversions lets you send information about important customer events to Facebook Server-Side API directly from your website’s server, CRM or other customer information databases. This information is useful to create powerful ads that yield better conversions." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

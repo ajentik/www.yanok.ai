@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Epos Now"
-      description="Grow and manage your business in the cloud with the Epos Now point-of-sale platform. Harness powerful reporting, inventory management and customer loyalty. Easy setup and ongoing support. Access from anywhere on any device."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -96,7 +95,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Epos Now</title>
-          <meta name="description" content="Grow and manage your business in the cloud with the Epos Now point-of-sale platform. Harness powerful reporting, inventory management and customer loyalty. Easy setup and ongoing support. Access from anywhere on any device." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Printavo"
-      description="Printavo is a simple tool for print, embroidery, promotional, digital, large format and sign shops to manage their business."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -191,7 +190,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Printavo</title>
-          <meta name="description" content="Printavo is a simple tool for print, embroidery, promotional, digital, large format and sign shops to manage their business." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

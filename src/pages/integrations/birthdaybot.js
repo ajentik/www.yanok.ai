@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="BirthdayBot"
-      description="BirthdayBot is the app to keep track of office birthdays and anniversaries. BirthdayBot keeps everyone informed about upcoming birthdays. It also ensures all the members of your team get a proper b-day celebration whether they are working in the office or remote!"
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -61,7 +60,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>BirthdayBot</title>
-          <meta name="description" content="BirthdayBot is the app to keep track of office birthdays and anniversaries. BirthdayBot keeps everyone informed about upcoming birthdays. It also ensures all the members of your team get a proper b-day celebration whether they are working in the office or remote!" />
+          <meta name="description" content={}/> />
         </>
       ),
     },

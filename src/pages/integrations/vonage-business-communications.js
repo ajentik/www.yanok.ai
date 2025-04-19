@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Vonage Business Communications"
-      description="The Vonage Business Communications desktop and mobile applications are flexible cloud solutions that offer advanced features like click-to-call and call recording to help businesses of any size stay connected, productive, and compliant."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -71,7 +70,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Vonage Business Communications</title>
-          <meta name="description" content="The Vonage Business Communications desktop and mobile applications are flexible cloud solutions that offer advanced features like click-to-call and call recording to help businesses of any size stay connected, productive, and compliant." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

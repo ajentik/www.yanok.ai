@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Way We Do"
-      description="Way We Do is an Active Standard Operating Procedures software, enabling your team to follow repeatable process within their daily workflow."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -141,7 +140,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Way We Do</title>
-          <meta name="description" content="Way We Do is an Active Standard Operating Procedures software, enabling your team to follow repeatable process within their daily workflow." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Yodel.io Phone System"
-      description="Yodel.io is a new kind of business phone. Get a number and start answering calls or automatically respond with our voice bot functionality."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -86,7 +85,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Yodel.io Phone System</title>
-          <meta name="description" content="Yodel.io is a new kind of business phone. Get a number and start answering calls or automatically respond with our voice bot functionality." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="RumbleUp"
-      description="RumbleUp is a P2P texting platform to quickly engage any size audience via SMS, MMS or Video Text."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -66,7 +65,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>RumbleUp</title>
-          <meta name="description" content="RumbleUp is a P2P texting platform to quickly engage any size audience via SMS, MMS or Video Text." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

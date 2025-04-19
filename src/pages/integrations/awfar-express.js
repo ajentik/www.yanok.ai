@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Awfar Express"
-      description="Awfar Express "A Saudi company licensed by the Communications Authority, working to deliver shipments and orders within the Kingdom of Saudi Arabia.""
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -72,7 +71,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Awfar Express</title>
-          <meta name="description" content="Awfar Express "A Saudi company licensed by the Communications Authority, working to deliver shipments and orders within the Kingdom of Saudi Arabia."" />
+          <meta name="description" content={}/> />
         </>
       ),
     },

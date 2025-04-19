@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="APITemplate.io"
-      description="APITemplate.io automates Image generation and PDF generation by using Image editor, WYSIWYG, Markdown or HTML template"
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -77,7 +76,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>APITemplate.io</title>
-          <meta name="description" content="APITemplate.io automates Image generation and PDF generation by using Image editor, WYSIWYG, Markdown or HTML template" />
+          <meta name="description" content={}/> />
         </>
       ),
     },

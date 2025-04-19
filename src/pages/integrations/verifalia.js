@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Verifalia"
-      description="Verifalia is a fast and accurate email verification service which identifies deliverable, invalid, or otherwise risky email addresses in real-time: it stops bad and low-quality emails getting into your systems, reduces bounce rates and keeps your campaigns deliverable."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -72,7 +71,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Verifalia</title>
-          <meta name="description" content="Verifalia is a fast and accurate email verification service which identifies deliverable, invalid, or otherwise risky email addresses in real-time: it stops bad and low-quality emails getting into your systems, reduces bounce rates and keeps your campaigns deliverable." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

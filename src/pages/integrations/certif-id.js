@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Certif-ID"
-      description="Certif-ID is a blockchain-based credentialing platform, enabling organisations to securely issue, track and verify digital credentials and digital badges."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -67,7 +66,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Certif-ID</title>
-          <meta name="description" content="Certif-ID is a blockchain-based credentialing platform, enabling organisations to securely issue, track and verify digital credentials and digital badges." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

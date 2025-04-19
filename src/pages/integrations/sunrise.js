@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Sunrise"
-      description="Sunrise is an invoicing and bookkeeping platform built for business owners. Easy and intuitive, keep track of your invoices and expenses while more accurately predicting your cashflow."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -126,7 +125,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Sunrise</title>
-          <meta name="description" content="Sunrise is an invoicing and bookkeeping platform built for business owners. Easy and intuitive, keep track of your invoices and expenses while more accurately predicting your cashflow." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

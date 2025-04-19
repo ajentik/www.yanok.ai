@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="validTo"
-      description="You may validate your emails and remove spam from your email database by using validTo email verification service."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +56,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>validTo</title>
-          <meta name="description" content="You may validate your emails and remove spam from your email database by using validTo email verification service." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

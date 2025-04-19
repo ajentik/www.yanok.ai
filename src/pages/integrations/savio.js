@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Savio"
-      description="Savio tracks feature requests from survey and NPS tools, help desks, CRMs, or from any customer-facing tool where you receive them."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +56,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Savio</title>
-          <meta name="description" content="Savio tracks feature requests from survey and NPS tools, help desks, CRMs, or from any customer-facing tool where you receive them." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="iLert"
-      description="iLert is an incident and on-call management platform for DevOps teams. iLert helps you to respond to incidents faster by adding on-call schedules, SMS, and voice alerts to your existing monitoring tools."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -76,7 +75,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>iLert</title>
-          <meta name="description" content="iLert is an incident and on-call management platform for DevOps teams. iLert helps you to respond to incidents faster by adding on-call schedules, SMS, and voice alerts to your existing monitoring tools." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

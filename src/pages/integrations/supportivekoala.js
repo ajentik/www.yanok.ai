@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="supportivekoala"
-      description="Supportivekoala is a tool for automating marketing. It allows you to autogenerate images by your input."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +56,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>supportivekoala</title>
-          <meta name="description" content="Supportivekoala is a tool for automating marketing. It allows you to autogenerate images by your input." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

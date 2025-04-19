@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="VoIPstudio"
-      description="VoIPstudio is a VoIP phone service that offers businesses of all sizes a scalable communication solution. Our business phone systems are inexpensive, reliable, easy-to-use, offers a full suite of PBX features and is fully integrated for CRM."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -131,7 +130,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>VoIPstudio</title>
-          <meta name="description" content="VoIPstudio is a VoIP phone service that offers businesses of all sizes a scalable communication solution. Our business phone systems are inexpensive, reliable, easy-to-use, offers a full suite of PBX features and is fully integrated for CRM." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

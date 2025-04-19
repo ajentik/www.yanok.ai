@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Radius CRM"
-      description="Lead Management & CRM Software for Insurance Agents to Market to Leads, Speak to Clients, and Track Commissions, all with automation."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -62,7 +61,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Radius CRM</title>
-          <meta name="description" content="Lead Management & CRM Software for Insurance Agents to Market to Leads, Speak to Clients, and Track Commissions, all with automation." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

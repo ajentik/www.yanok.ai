@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="elopage"
-      description="Elopage is a SaaS-Platform for managing, selling and scaling digital products, online courses, membership plans and e-tickets."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -116,7 +115,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>elopage</title>
-          <meta name="description" content="Elopage is a SaaS-Platform for managing, selling and scaling digital products, online courses, membership plans and e-tickets." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

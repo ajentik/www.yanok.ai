@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Infraspeak"
-      description="Infraspeak is a mobile and cloud-based platform that helps maintenance/facility managers and technicians track and manage assets, buildings and locations. Highly customisable, Infraspeak centralises stock, reduces costs, manages corrective and preventive maintenance."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -131,7 +130,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Infraspeak</title>
-          <meta name="description" content="Infraspeak is a mobile and cloud-based platform that helps maintenance/facility managers and technicians track and manage assets, buildings and locations. Highly customisable, Infraspeak centralises stock, reduces costs, manages corrective and preventive maintenance." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Judge.me"
-      description="Judge.me helps you collect and display product reviews, site reviews and Q&A in your e-commerce store (Shopify, WooCommerce and BigCommerce)."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +56,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Judge.me</title>
-          <meta name="description" content="Judge.me helps you collect and display product reviews, site reviews and Q&A in your e-commerce store (Shopify, WooCommerce and BigCommerce)." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

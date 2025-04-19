@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="AlertManager"
-      description="Alert Manager is a service that parses letters, extracts and proceeds data, notifies users, and provides different ways to integrate parsed data."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +56,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>AlertManager</title>
-          <meta name="description" content="Alert Manager is a service that parses letters, extracts and proceeds data, notifies users, and provides different ways to integrate parsed data." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

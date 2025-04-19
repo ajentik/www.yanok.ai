@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Clinicminds"
-      description="Clinicminds is the leading practice and patient management software for private healthcare clinics."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -96,7 +95,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Clinicminds</title>
-          <meta name="description" content="Clinicminds is the leading practice and patient management software for private healthcare clinics." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

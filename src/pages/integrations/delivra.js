@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Delivra"
-      description="Delivra is a robust multi-channel marketing automation platform used to keep your prospects informed through their customer journey. With intuitive data management and easy personalization tools, we make it easy to acquire, manage, and nurture leads through that other crucial period – after they’re your customer!"
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -151,7 +150,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Delivra</title>
-          <meta name="description" content="Delivra is a robust multi-channel marketing automation platform used to keep your prospects informed through their customer journey. With intuitive data management and easy personalization tools, we make it easy to acquire, manage, and nurture leads through that other crucial period – after they’re your customer!" />
+          <meta name="description" content={}/> />
         </>
       ),
     },

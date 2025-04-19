@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Fountain"
-      description="Fountain brings hiring into one place so you can hire faster, whether your company is gig economy, franchise, or a small business."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +52,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Fountain</title>
-          <meta name="description" content="Fountain brings hiring into one place so you can hire faster, whether your company is gig economy, franchise, or a small business." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

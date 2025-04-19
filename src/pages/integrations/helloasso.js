@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="HelloAsso"
-      description="HelloAsso is a web platform that lets French non-profit organisations manage their campaigns and collect funds. It offers various tools to manage memberships, fundraisings, crowdfundings, e-shops, events & ticketing, all free of charge."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -67,7 +66,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>HelloAsso</title>
-          <meta name="description" content="HelloAsso is a web platform that lets French non-profit organisations manage their campaigns and collect funds. It offers various tools to manage memberships, fundraisings, crowdfundings, e-shops, events & ticketing, all free of charge." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

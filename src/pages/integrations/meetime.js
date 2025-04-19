@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Meetime"
-      description="Meetime Inside Sales Platform. With Meetime you can create Workflows for sales prospects. Meetime organizes the activities of your sales development representatives based on the cadences you set up, according to the type of clients you want to reach. We also integrate with your CRM to keep your data always on sync."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -81,7 +80,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Meetime</title>
-          <meta name="description" content="Meetime Inside Sales Platform. With Meetime you can create Workflows for sales prospects. Meetime organizes the activities of your sales development representatives based on the cadences you set up, according to the type of clients you want to reach. We also integrate with your CRM to keep your data always on sync." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

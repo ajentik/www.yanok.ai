@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="ScoreCEO"
-      description="ScoreCEO is a Credit Repair Business CRM SAAS that helps Credit Repair companies start, run, and grow their business."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -121,7 +120,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>ScoreCEO</title>
-          <meta name="description" content="ScoreCEO is a Credit Repair Business CRM SAAS that helps Credit Repair companies start, run, and grow their business." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

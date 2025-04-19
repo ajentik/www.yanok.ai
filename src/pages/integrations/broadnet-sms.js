@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="BroadNet SMS"
-      description="Best SMS tool for developers to send SMS in a fast, secure and most reliable channel"
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +56,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>BroadNet SMS</title>
-          <meta name="description" content="Best SMS tool for developers to send SMS in a fast, secure and most reliable channel" />
+          <meta name="description" content={}/> />
         </>
       ),
     },

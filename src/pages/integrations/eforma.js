@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="eForma"
-      description="Global E-learning solution covering the course of learners from commercial management to the training itself thanks to off-the-shelf content."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -61,7 +60,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>eForma</title>
-          <meta name="description" content="Global E-learning solution covering the course of learners from commercial management to the training itself thanks to off-the-shelf content." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

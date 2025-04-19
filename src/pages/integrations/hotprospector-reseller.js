@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Hotprospector Reseller"
-      description="Hotprospector Reseller is a private App use only for Reseller user to manager Manager and Members users."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -101,7 +100,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Hotprospector Reseller</title>
-          <meta name="description" content="Hotprospector Reseller is a private App use only for Reseller user to manager Manager and Members users." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

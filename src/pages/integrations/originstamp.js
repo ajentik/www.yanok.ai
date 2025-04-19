@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="OriginStamp"
-      description="OriginStamp allows to create digital timestamps that are shared within a huge network world-wide which makes them tamper-proof."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -66,7 +65,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>OriginStamp</title>
-          <meta name="description" content="OriginStamp allows to create digital timestamps that are shared within a huge network world-wide which makes them tamper-proof." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

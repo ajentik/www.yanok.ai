@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="OptinMonster"
-      description="Powerful lead generation software that converts abandoning visitors into subscribers with dynamic marketing tools and Exit Intent® technology."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +56,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>OptinMonster</title>
-          <meta name="description" content="Powerful lead generation software that converts abandoning visitors into subscribers with dynamic marketing tools and Exit Intent® technology." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

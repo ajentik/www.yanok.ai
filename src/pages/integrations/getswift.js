@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="GetSwift"
-      description="GetSwift is Simple software that streamlines your whole delivery business. Dispatch like Uber, track like Domino's and route like FedEx."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +56,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>GetSwift</title>
-          <meta name="description" content="GetSwift is Simple software that streamlines your whole delivery business. Dispatch like Uber, track like Domino's and route like FedEx." />
+          <meta name="description" content={}/>s and route like FedEx.' />
         </>
       ),
     },

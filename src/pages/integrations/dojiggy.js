@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="DoJiggy"
-      description="Donor-Friendly Fundraising Platform for Nonprofits and Schools that Empowers Organizations to Raise More for Less."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -132,7 +131,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>DoJiggy</title>
-          <meta name="description" content="Donor-Friendly Fundraising Platform for Nonprofits and Schools that Empowers Organizations to Raise More for Less." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

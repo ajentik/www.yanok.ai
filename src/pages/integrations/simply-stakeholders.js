@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Simply Stakeholders"
-      description="Simply Stakeholders is a simple and easy to use Stakeholder Management tool to manage your stakeholders and your interactions with them."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -131,7 +130,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Simply Stakeholders</title>
-          <meta name="description" content="Simply Stakeholders is a simple and easy to use Stakeholder Management tool to manage your stakeholders and your interactions with them." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

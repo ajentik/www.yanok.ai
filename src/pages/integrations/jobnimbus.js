@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="JobNimbus"
-      description="JobNimbus CRM + Project Management for the service industry."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -101,7 +100,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>JobNimbus</title>
-          <meta name="description" content="JobNimbus CRM + Project Management for the service industry." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

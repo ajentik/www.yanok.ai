@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Sametrica Forms"
-      description="Sametrica forms is a tool that allows users to connect their data to existing forms in Sametrica"
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +56,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Sametrica Forms</title>
-          <meta name="description" content="Sametrica forms is a tool that allows users to connect their data to existing forms in Sametrica" />
+          <meta name="description" content={}/> />
         </>
       ),
     },

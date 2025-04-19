@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Evessio"
-      description="Evessio is an events management platform for Awards, Conferences and Exhibitions"
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -87,7 +86,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Evessio</title>
-          <meta name="description" content="Evessio is an events management platform for Awards, Conferences and Exhibitions" />
+          <meta name="description" content={}/> />
         </>
       ),
     },

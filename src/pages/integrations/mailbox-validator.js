@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="MailboxValidator"
-      description="Easy to use email list cleaning service to improve delivery success rate."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +56,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>MailboxValidator</title>
-          <meta name="description" content="Easy to use email list cleaning service to improve delivery success rate." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

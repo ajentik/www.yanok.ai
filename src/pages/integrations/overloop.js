@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Overloop"
-      description="Conversations are the blood of your growth. Our CRM is designed to help you start more conversations and close more deals."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -206,7 +205,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Overloop</title>
-          <meta name="description" content="Conversations are the blood of your growth. Our CRM is designed to help you start more conversations and close more deals." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

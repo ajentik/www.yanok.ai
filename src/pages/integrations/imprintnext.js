@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="ImprintNext"
-      description="This app generates data for events in the ImprintNext designer studio including custom order creation and custom quote generation."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +56,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>ImprintNext</title>
-          <meta name="description" content="This app generates data for events in the ImprintNext designer studio including custom order creation and custom quote generation." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

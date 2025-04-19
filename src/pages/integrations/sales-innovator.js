@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Sales Innovator"
-      description="Sales innovator is the platform, where you can create campaigns by using sales robot to send email. All types of email analytics are available on sales innovator."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -62,7 +61,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Sales Innovator</title>
-          <meta name="description" content="Sales innovator is the platform, where you can create campaigns by using sales robot to send email. All types of email analytics are available on sales innovator." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

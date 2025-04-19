@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Concord CLM"
-      description="Concord is a full contract lifecycle management platform with drafting, approvals, e-signature and storage - all in one place."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -76,7 +75,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Concord CLM</title>
-          <meta name="description" content="Concord is a full contract lifecycle management platform with drafting, approvals, e-signature and storage - all in one place." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

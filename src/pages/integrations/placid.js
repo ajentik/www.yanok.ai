@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Placid"
-      description="Placid lets you automatically create images from templates"
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -76,7 +75,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Placid</title>
-          <meta name="description" content="Placid lets you automatically create images from templates" />
+          <meta name="description" content={}/> />
         </>
       ),
     },

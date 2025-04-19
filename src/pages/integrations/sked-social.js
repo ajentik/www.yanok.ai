@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Sked Social"
-      description="Sked Social is the complete social media management platform, for managing your social media presence on Instagram, Facebook and Twitter."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +56,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Sked Social</title>
-          <meta name="description" content="Sked Social is the complete social media management platform, for managing your social media presence on Instagram, Facebook and Twitter." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

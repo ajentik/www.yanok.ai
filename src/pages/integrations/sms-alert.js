@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="SMS Alert"
-      description="SMS Alert is a enterprise grade transactional and promotional SMS platform."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -67,7 +66,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>SMS Alert</title>
-          <meta name="description" content="SMS Alert is a enterprise grade transactional and promotional SMS platform." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

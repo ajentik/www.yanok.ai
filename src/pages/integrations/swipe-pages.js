@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Swipe Pages"
-      description="Swipe Pages helps you create & publish landing pages without code."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -62,7 +61,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Swipe Pages</title>
-          <meta name="description" content="Swipe Pages helps you create & publish landing pages without code." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

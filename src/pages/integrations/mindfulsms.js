@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="MindfulSMS"
-      description="MindfulSMS is an easy to use text message marketing software to help you and your business connect with customers 1-on-1 through SMS reminders, confirmations and broadcast marketing campaigns."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -81,7 +80,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>MindfulSMS</title>
-          <meta name="description" content="MindfulSMS is an easy to use text message marketing software to help you and your business connect with customers 1-on-1 through SMS reminders, confirmations and broadcast marketing campaigns." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

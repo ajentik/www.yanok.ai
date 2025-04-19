@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="ZeroBounce"
-      description="ZeroBounce is an email validation service. By removing bounces and spam traps, we help businesses across the globe reach humans, not bots."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +56,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>ZeroBounce</title>
-          <meta name="description" content="ZeroBounce is an email validation service. By removing bounces and spam traps, we help businesses across the globe reach humans, not bots." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

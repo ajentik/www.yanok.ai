@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="iPost"
-      description="iPost is an advanced Email Service Provider (ESP) built for the Digital Marketer’s growing demands for data and hyper-personalization."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -91,7 +90,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>iPost</title>
-          <meta name="description" content="iPost is an advanced Email Service Provider (ESP) built for the Digital Marketer’s growing demands for data and hyper-personalization." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

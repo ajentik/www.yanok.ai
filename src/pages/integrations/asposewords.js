@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Aspose"
-      description="Aspose is a document automation and reporting service (Word, PDF, OpenOffice, HTML, etc). Create, edit, convert, compare, merge, split & perform other documentation tasks with ease."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -117,7 +116,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Aspose</title>
-          <meta name="description" content="Aspose is a document automation and reporting service (Word, PDF, OpenOffice, HTML, etc). Create, edit, convert, compare, merge, split & perform other documentation tasks with ease." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

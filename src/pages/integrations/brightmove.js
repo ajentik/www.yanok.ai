@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="BrightMove"
-      description="BrightMove is an enterprise ready applicant tracking system (ATS) for any staffing, recruiting, RPO or HR team."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -117,7 +116,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>BrightMove</title>
-          <meta name="description" content="BrightMove is an enterprise ready applicant tracking system (ATS) for any staffing, recruiting, RPO or HR team." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

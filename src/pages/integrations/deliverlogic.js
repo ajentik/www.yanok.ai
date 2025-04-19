@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="DeliverLogic"
-      description="DeliverLogic is an industry leading logistics platforms designed to support Restaurant Delivery services, local restaurants, and other logistics and delivery services."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +56,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>DeliverLogic</title>
-          <meta name="description" content="DeliverLogic is an industry leading logistics platforms designed to support Restaurant Delivery services, local restaurants, and other logistics and delivery services." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

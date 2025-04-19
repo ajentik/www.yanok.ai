@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="FireHawkCRM"
-      description="FireHawkCRM is great for small business. We help you look after your customers, so they’ll tell the world how good you are! Quotes, Invoices, Email and File sharing all in one neat little package."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -111,7 +110,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>FireHawkCRM</title>
-          <meta name="description" content="FireHawkCRM is great for small business. We help you look after your customers, so they’ll tell the world how good you are! Quotes, Invoices, Email and File sharing all in one neat little package." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

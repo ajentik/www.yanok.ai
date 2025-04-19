@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Typebot"
-      description="Convert 4x more with beautiful conversational forms. Embed them directly in your applications without a line of code."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +56,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Typebot</title>
-          <meta name="description" content="Convert 4x more with beautiful conversational forms. Embed them directly in your applications without a line of code." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

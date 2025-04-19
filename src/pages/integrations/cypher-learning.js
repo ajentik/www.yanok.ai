@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="CYPHER LEARNING"
-      description="CYPHER LEARNING is a leading provider of intelligent learning platforms (ILP) for schools, universities, organizations, and entrepreneurs around the world."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -141,7 +140,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>CYPHER LEARNING</title>
-          <meta name="description" content="CYPHER LEARNING is a leading provider of intelligent learning platforms (ILP) for schools, universities, organizations, and entrepreneurs around the world." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

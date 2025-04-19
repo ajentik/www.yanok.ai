@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="SimpleFunnel"
-      description="SimpleFunnel is an embeddable payments widget you can install on any website as a no-code solution that allows you to collect payments from customers."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +56,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>SimpleFunnel</title>
-          <meta name="description" content="SimpleFunnel is an embeddable payments widget you can install on any website as a no-code solution that allows you to collect payments from customers." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="SATORI"
-      description="SATORI is a marketing automation tool which helps marketers who want to increase their sales with more efficient processes."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +52,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>SATORI</title>
-          <meta name="description" content="SATORI is a marketing automation tool which helps marketers who want to increase their sales with more efficient processes." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

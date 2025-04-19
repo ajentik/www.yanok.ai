@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Lighthouse By Cloudify"
-      description="Lighthouse is a real-time monitoring tool for all automated and manual business processes."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -71,7 +70,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Lighthouse By Cloudify</title>
-          <meta name="description" content="Lighthouse is a real-time monitoring tool for all automated and manual business processes." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

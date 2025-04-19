@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Urable"
-      description="Urable is an application designed for automotive businesses that specialize in detailing, paint protection film, vinyl wrapping, tinting, and ceramic coating. As a cloud-based application with dedicated mobile apps, it allows you to run your business from multiple devices in real-time."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -86,7 +85,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Urable</title>
-          <meta name="description" content="Urable is an application designed for automotive businesses that specialize in detailing, paint protection film, vinyl wrapping, tinting, and ceramic coating. As a cloud-based application with dedicated mobile apps, it allows you to run your business from multiple devices in real-time." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

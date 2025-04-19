@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Surf for Brands"
-      description="Surf for Brands provides the ability to collect, segment, and activate your first-party audience data"
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +56,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Surf for Brands</title>
-          <meta name="description" content="Surf for Brands provides the ability to collect, segment, and activate your first-party audience data" />
+          <meta name="description" content={}/> />
         </>
       ),
     },

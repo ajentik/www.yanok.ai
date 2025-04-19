@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Harness"
-      description="Harness is a fundraising platform for nonprofits with a focus on recurring donations. Build a subscription program to better acquire, gratify and upgrade recurring donors."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -87,7 +86,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Harness</title>
-          <meta name="description" content="Harness is a fundraising platform for nonprofits with a focus on recurring donations. Build a subscription program to better acquire, gratify and upgrade recurring donors." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

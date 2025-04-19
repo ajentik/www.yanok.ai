@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Qualtrics"
-      description="Qualtrics is a research and experience platform making sophisticated research simple and empowering users to capture customer, product, brand & employee experience insights in one place."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -66,7 +65,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Qualtrics</title>
-          <meta name="description" content="Qualtrics is a research and experience platform making sophisticated research simple and empowering users to capture customer, product, brand & employee experience insights in one place." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

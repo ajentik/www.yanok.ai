@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="FacturaDirecta"
-      description="FacturaDirecta is an easy accounting software for small business and freelancers."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -71,7 +70,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>FacturaDirecta</title>
-          <meta name="description" content="FacturaDirecta is an easy accounting software for small business and freelancers." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

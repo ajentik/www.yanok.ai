@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="InputKit"
-      description="InputKit is a customer feedback software that helps B2B and B2C companies around the world streamline their customer satisfaction follow-up process. InputKit offers multiple tools to help businesses grow: Customer Feedback Surveys, Net Promoter Score, Online Reviews, Cross-Sales and more."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -76,7 +75,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>InputKit</title>
-          <meta name="description" content="InputKit is a customer feedback software that helps B2B and B2C companies around the world streamline their customer satisfaction follow-up process. InputKit offers multiple tools to help businesses grow: Customer Feedback Surveys, Net Promoter Score, Online Reviews, Cross-Sales and more." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

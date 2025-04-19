@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="InvestorFuse"
-      description="InvestorFuse is a lead conversion system for Real Estate Investors."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +56,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>InvestorFuse</title>
-          <meta name="description" content="InvestorFuse is a lead conversion system for Real Estate Investors." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

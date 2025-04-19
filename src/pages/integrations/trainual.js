@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Trainual"
-      description="Trainual is a simple tool for building the how-to guide for your business."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -111,7 +110,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Trainual</title>
-          <meta name="description" content="Trainual is a simple tool for building the how-to guide for your business." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

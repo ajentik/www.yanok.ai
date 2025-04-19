@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Freshping"
-      description="Freshping is an uptime monitoring and status pages tool. You can monitor 50 URLs at 1-minute intervals and get alerts via email, Slack, or SMS when it is down. You'll also get 5 public status pages, multi-user logins (up to 30 users), global latency, and Apdex reporting."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +56,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Freshping</title>
-          <meta name="description" content="Freshping is an uptime monitoring and status pages tool. You can monitor 50 URLs at 1-minute intervals and get alerts via email, Slack, or SMS when it is down. You'll also get 5 public status pages, multi-user logins (up to 30 users), global latency, and Apdex reporting." />
+          <meta name="description" content={}/>ll also get 5 public status pages, multi-user logins (up to 30 users), global latency, and Apdex reporting.' />
         </>
       ),
     },

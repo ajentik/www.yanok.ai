@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="BRIKER"
-      description="BRIKER is a CRM for building companies is an easy tool to commercially manage construction project sales."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -62,7 +61,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>BRIKER</title>
-          <meta name="description" content="BRIKER is a CRM for building companies is an easy tool to commercially manage construction project sales." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

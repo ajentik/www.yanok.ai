@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Back In Stock - Restock Alerts"
-      description="'Back In Stock - Restock Alert's is a plugin for e-commerce store owners to notify their users when a product comes back in stock."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +56,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Back In Stock - Restock Alerts</title>
-          <meta name="description" content="'Back In Stock - Restock Alert's is a plugin for e-commerce store owners to notify their users when a product comes back in stock." />
+          <meta name="description" content={}/>Back In Stock - Restock Alert's is a plugin for e-commerce store owners to notify their users when a product comes back in stock.' />
         </>
       ),
     },

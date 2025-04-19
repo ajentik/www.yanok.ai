@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Fieldfolio"
-      description="Fieldfolio is an Australian wholesale marketplace for B2B ecommerce."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -61,7 +60,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Fieldfolio</title>
-          <meta name="description" content="Fieldfolio is an Australian wholesale marketplace for B2B ecommerce." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

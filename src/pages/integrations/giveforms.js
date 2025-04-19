@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="GiveForms"
-      description="Best in Class Donation Forms for Your Website"
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -72,7 +71,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>GiveForms</title>
-          <meta name="description" content="Best in Class Donation Forms for Your Website" />
+          <meta name="description" content={}/> />
         </>
       ),
     },

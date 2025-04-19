@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Practifi"
-      description="Practifi empowers financial advisors by providing a business management platform that connects all the tools and information they need to grow."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -92,7 +91,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Practifi</title>
-          <meta name="description" content="Practifi empowers financial advisors by providing a business management platform that connects all the tools and information they need to grow." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

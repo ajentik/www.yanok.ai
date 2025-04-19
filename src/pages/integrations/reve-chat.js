@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="REVE Chat"
-      description="REVE Chat is an AI enabled omnichannel customer engagement platform that provides real time sales and support assistance."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -62,7 +61,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>REVE Chat</title>
-          <meta name="description" content="REVE Chat is an AI enabled omnichannel customer engagement platform that provides real time sales and support assistance." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

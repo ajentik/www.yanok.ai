@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="SignHero"
-      description="SignHero is fast and free eSigning for the lazy. Send & sign PDFs, track processes, remind signers, access audit trail, work in teams, and archive signed documents."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -61,7 +60,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>SignHero</title>
-          <meta name="description" content="SignHero is fast and free eSigning for the lazy. Send & sign PDFs, track processes, remind signers, access audit trail, work in teams, and archive signed documents." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

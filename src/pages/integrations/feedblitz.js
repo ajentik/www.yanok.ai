@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="FeedBlitz"
-      description="FeedBlitz is an all-in-one service combining email marketing, blog newsletter subscriptions, and RSS feed management."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -96,7 +95,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>FeedBlitz</title>
-          <meta name="description" content="FeedBlitz is an all-in-one service combining email marketing, blog newsletter subscriptions, and RSS feed management." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

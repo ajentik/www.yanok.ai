@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="LeagueApps"
-      description="LeagueApps equips sports organizers, coaches, parents, and athletes with the tools they need to make sports happen. Our sports management software takes the headache out of everything from registration to schedule management, giving organizers the freedom to focus on what matters."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -87,7 +86,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>LeagueApps</title>
-          <meta name="description" content="LeagueApps equips sports organizers, coaches, parents, and athletes with the tools they need to make sports happen. Our sports management software takes the headache out of everything from registration to schedule management, giving organizers the freedom to focus on what matters." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

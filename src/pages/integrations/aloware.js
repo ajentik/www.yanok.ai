@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Aloware"
-      description="Aloware is a Cloud-based contact center software that offers call, text, and workflow automation and is fit for any team."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -121,7 +120,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Aloware</title>
-          <meta name="description" content="Aloware is a Cloud-based contact center software that offers call, text, and workflow automation and is fit for any team." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

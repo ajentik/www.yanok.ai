@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="SalesScreen"
-      description="SalesScreen is a sales performance management tool that helps teams to be more focused, motivated and productive."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -72,7 +71,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>SalesScreen</title>
-          <meta name="description" content="SalesScreen is a sales performance management tool that helps teams to be more focused, motivated and productive." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Instantly"
-      description="Instantly is an email automation platform that helps scale outreach campaigns."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -71,7 +70,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Instantly</title>
-          <meta name="description" content="Instantly is an email automation platform that helps scale outreach campaigns." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

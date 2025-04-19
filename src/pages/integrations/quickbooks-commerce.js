@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="QuickBooks Commerce"
-      description="Manage your multi-channel and wholesale business in one place with QuickBooks Commerce. Increase operational efficiency with supply chain, reporting, and accounting automation."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -136,7 +135,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>QuickBooks Commerce</title>
-          <meta name="description" content="Manage your multi-channel and wholesale business in one place with QuickBooks Commerce. Increase operational efficiency with supply chain, reporting, and accounting automation." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

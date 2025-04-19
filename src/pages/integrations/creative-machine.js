@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Creative Machine"
-      description="Creative Machine lets you automate image generation from templates."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -62,7 +61,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Creative Machine</title>
-          <meta name="description" content="Creative Machine lets you automate image generation from templates." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

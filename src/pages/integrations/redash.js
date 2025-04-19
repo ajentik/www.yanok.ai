@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Redash"
-      description="Redash is an open source SaaS application to query your data sources, visualize the results, build dashboards and share data with your team."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +52,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Redash</title>
-          <meta name="description" content="Redash is an open source SaaS application to query your data sources, visualize the results, build dashboards and share data with your team." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

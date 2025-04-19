@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Shape"
-      description="Shape is a CRM, sales, and marketing automation platform to enhance productivity and streamline your sales process."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -72,7 +71,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Shape</title>
-          <meta name="description" content="Shape is a CRM, sales, and marketing automation platform to enhance productivity and streamline your sales process." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

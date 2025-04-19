@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Ducalis.io"
-      description="Ducalis is the prioritization tool to help your team make the most impactful things"
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +56,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Ducalis.io</title>
-          <meta name="description" content="Ducalis is the prioritization tool to help your team make the most impactful things" />
+          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Retently"
-      description="Retently helps you measure customer satisfaction via NPS, CSAT, and CES surveys. Collect, analyze, and act on valuable customer feedback."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -111,7 +110,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Retently</title>
-          <meta name="description" content="Retently helps you measure customer satisfaction via NPS, CSAT, and CES surveys. Collect, analyze, and act on valuable customer feedback." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

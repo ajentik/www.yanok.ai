@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Tovuti LMS"
-      description="Tovuti is an all-in-one, cloud-based learning management system. Tovuti gives you all the tools you need to create, deliver and track the effectiveness of your eLearning programs."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -221,7 +220,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Tovuti LMS</title>
-          <meta name="description" content="Tovuti is an all-in-one, cloud-based learning management system. Tovuti gives you all the tools you need to create, deliver and track the effectiveness of your eLearning programs." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

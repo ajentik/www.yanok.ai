@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Flic"
-      description="Flic is a smart button that acts like a shortcut for your everyday life."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +56,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Flic</title>
-          <meta name="description" content="Flic is a smart button that acts like a shortcut for your everyday life." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

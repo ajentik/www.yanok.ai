@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Check Cherry"
-      description="Check Cherry is the all-in-one platform to manage your Photobooth, Photography Studio, Mobile DJ business and more. Includes online booking, beautiful proposals, and a customer portal."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -116,7 +115,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Check Cherry</title>
-          <meta name="description" content="Check Cherry is the all-in-one platform to manage your Photobooth, Photography Studio, Mobile DJ business and more. Includes online booking, beautiful proposals, and a customer portal." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

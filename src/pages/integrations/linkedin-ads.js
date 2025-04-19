@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="LinkedIn Ads"
-      description="LinkedIn Ads allows marketers to collect even more quality leads from their ads and events on LinkedIn with seamless pre-filled forms."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -76,7 +75,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>LinkedIn Ads</title>
-          <meta name="description" content="LinkedIn Ads allows marketers to collect even more quality leads from their ads and events on LinkedIn with seamless pre-filled forms." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

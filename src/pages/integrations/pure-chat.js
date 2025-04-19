@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Pure Chat"
-      description="Generate more leads and drive sales with Pure Chat. Add live chat software to your website to engage visitors and customers! Get started in 3 mins today for free!"
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -67,7 +66,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Pure Chat</title>
-          <meta name="description" content="Generate more leads and drive sales with Pure Chat. Add live chat software to your website to engage visitors and customers! Get started in 3 mins today for free!" />
+          <meta name="description" content={}/> />
         </>
       ),
     },

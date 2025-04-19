@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Offorte Proposals"
-      description="Offorte helps you win more deals by letting you share beautiful business proposals in a smart automated way."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -146,7 +145,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Offorte Proposals</title>
-          <meta name="description" content="Offorte helps you win more deals by letting you share beautiful business proposals in a smart automated way." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

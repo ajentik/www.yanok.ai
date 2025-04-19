@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="HeadlessForms"
-      description="HeadlessForms is a service that receives submissions from a form on your website - without requiring you to write a single line of backend code. Perfect for WordPress, Netlify, Github Pages or any static website."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +56,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>HeadlessForms</title>
-          <meta name="description" content="HeadlessForms is a service that receives submissions from a form on your website - without requiring you to write a single line of backend code. Perfect for WordPress, Netlify, Github Pages or any static website." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

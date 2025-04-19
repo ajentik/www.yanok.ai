@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Ponto"
-      description="Ponto lets companies automate their finances by offering an API on top of 150+ European banks. Ponto is an Isabel Group product licensed in Belgium."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -66,7 +65,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Ponto</title>
-          <meta name="description" content="Ponto lets companies automate their finances by offering an API on top of 150+ European banks. Ponto is an Isabel Group product licensed in Belgium." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

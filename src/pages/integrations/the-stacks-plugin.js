@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="The Stacks Plugin"
-      description="Stacks Plugin is a no-code blockchain tool that allows you to connect the Stacks Network to your integrations."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +56,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>The Stacks Plugin</title>
-          <meta name="description" content="Stacks Plugin is a no-code blockchain tool that allows you to connect the Stacks Network to your integrations." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

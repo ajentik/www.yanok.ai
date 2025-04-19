@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Zoho Campaigns"
-      description="Zoho Campaigns lets you send email and social media campaigns to your subscribers."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -111,7 +110,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Zoho Campaigns</title>
-          <meta name="description" content="Zoho Campaigns lets you send email and social media campaigns to your subscribers." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

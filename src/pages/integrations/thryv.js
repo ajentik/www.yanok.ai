@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Thryv"
-      description="Thryv is an all-in-one management software built for small business. It integrates essential business functions like payments, marketing, and CRM."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -96,7 +95,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Thryv</title>
-          <meta name="description" content="Thryv is an all-in-one management software built for small business. It integrates essential business functions like payments, marketing, and CRM." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

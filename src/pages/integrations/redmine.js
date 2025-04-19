@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Redmine"
-      description="Redmine is a flexible project management web application built with Ruby on Rails."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -96,7 +95,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Redmine</title>
-          <meta name="description" content="Redmine is a flexible project management web application built with Ruby on Rails." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Anvil"
-      description="Anvil lets you automate your paperwork and business processes: Data-capture, PDF preparation, and e-sign working seamlessly together."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -71,7 +70,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Anvil</title>
-          <meta name="description" content="Anvil lets you automate your paperwork and business processes: Data-capture, PDF preparation, and e-sign working seamlessly together." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

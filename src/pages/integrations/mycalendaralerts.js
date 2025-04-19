@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="MyCalendarAlerts"
-      description="MyCalendarAlerts is a calendar add-on system that lets you create extremely simple yet powerful rules to trigger actions for all your calendar events."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +56,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>MyCalendarAlerts</title>
-          <meta name="description" content="MyCalendarAlerts is a calendar add-on system that lets you create extremely simple yet powerful rules to trigger actions for all your calendar events." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

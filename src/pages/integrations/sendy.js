@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Sendy"
-      description="Sendy is a self hosted email newsletter application that lets you send newsletters via Amazon Simple Email Service (SES)."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -81,7 +80,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Sendy</title>
-          <meta name="description" content="Sendy is a self hosted email newsletter application that lets you send newsletters via Amazon Simple Email Service (SES)." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

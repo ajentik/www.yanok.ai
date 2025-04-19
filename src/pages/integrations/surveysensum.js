@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="SurveySensum"
-      description="SurveySensum offers an end to end Customer Experience Platform that measures and improves your CX metrics with CES, NPS, and CSAT surveys. It lets you gather customer feedback at all touchpoints and turn them into actionable insights. After receiving feedback it enables you to prioritize actions to improve products or services and proactively reduce churn and drive growth. Also, its Conversation Analysis platform allows you to discover new trends and insights with real-time text and sentiment analysis on qualitative voice of the customer data from sources like Chat bot conversations, app store reviews, social media etc and save hours of manual data processing with automated feedback tagging."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -71,7 +70,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>SurveySensum</title>
-          <meta name="description" content="SurveySensum offers an end to end Customer Experience Platform that measures and improves your CX metrics with CES, NPS, and CSAT surveys. It lets you gather customer feedback at all touchpoints and turn them into actionable insights. After receiving feedback it enables you to prioritize actions to improve products or services and proactively reduce churn and drive growth. Also, its Conversation Analysis platform allows you to discover new trends and insights with real-time text and sentiment analysis on qualitative voice of the customer data from sources like Chat bot conversations, app store reviews, social media etc and save hours of manual data processing with automated feedback tagging." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

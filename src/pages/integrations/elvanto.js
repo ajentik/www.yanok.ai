@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Elvanto"
-      description="Experience all-inclusive, church management software that includes full worship planning."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +52,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Elvanto</title>
-          <meta name="description" content="Experience all-inclusive, church management software that includes full worship planning." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

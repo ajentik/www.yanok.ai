@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Agiled"
-      description="Agiled is an all in one business management platform designed to help you manage employees, projects , tasks, track your time, create professional contracts, track expenses and send professional invoices that get you paid faster."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -321,7 +320,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Agiled</title>
-          <meta name="description" content="Agiled is an all in one business management platform designed to help you manage employees, projects , tasks, track your time, create professional contracts, track expenses and send professional invoices that get you paid faster." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

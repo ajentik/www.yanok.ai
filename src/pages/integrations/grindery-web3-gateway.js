@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Grindery Web3 Gateway"
-      description="Connect to your favorite Web3 dApps, protocols, and smart contracts across many chains, such as automated minting of NFTs from a Typeform."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -61,7 +60,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Grindery Web3 Gateway</title>
-          <meta name="description" content="Connect to your favorite Web3 dApps, protocols, and smart contracts across many chains, such as automated minting of NFTs from a Typeform." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

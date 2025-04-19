@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Crowdin"
-      description="Crowdin is a cloud-based solution that streamlines localization management for your team. It's the perfect place to effectively manage all of your multilingual content."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -256,7 +255,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Crowdin</title>
-          <meta name="description" content="Crowdin is a cloud-based solution that streamlines localization management for your team. It's the perfect place to effectively manage all of your multilingual content." />
+          <meta name="description" content={}/>s the perfect place to effectively manage all of your multilingual content.' />
         </>
       ),
     },

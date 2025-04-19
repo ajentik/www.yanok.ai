@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Ohmylead"
-      description="Use Ohmylead to follow up faster with ALL your leads in one platform before sending them to your favorite CRM & ESP"
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -61,7 +60,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Ohmylead</title>
-          <meta name="description" content="Use Ohmylead to follow up faster with ALL your leads in one platform before sending them to your favorite CRM & ESP" />
+          <meta name="description" content={}/> />
         </>
       ),
     },

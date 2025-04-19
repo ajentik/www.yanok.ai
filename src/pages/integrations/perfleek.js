@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Perfleek"
-      description="Perfleek is a CRM for real estate agent and brokers."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +56,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Perfleek</title>
-          <meta name="description" content="Perfleek is a CRM for real estate agent and brokers." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

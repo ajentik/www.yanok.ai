@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="FileMaker"
-      description="FileMaker integrates a database engine with a graphical user interface (GUI) and security features, allowing users to modify the database by dragging new elements into layouts, screens, or forms."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +52,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>FileMaker</title>
-          <meta name="description" content="FileMaker integrates a database engine with a graphical user interface (GUI) and security features, allowing users to modify the database by dragging new elements into layouts, screens, or forms." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

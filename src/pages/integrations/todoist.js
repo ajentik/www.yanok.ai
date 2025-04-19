@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Todoist"
-      description="Managing millions of tasks, Todoist is an online task management app and todo list. It has Web, iPhone, Android, Chrome, Firefox, Outlook flavors (and more!)."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -131,7 +130,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Todoist</title>
-          <meta name="description" content="Managing millions of tasks, Todoist is an online task management app and todo list. It has Web, iPhone, Android, Chrome, Firefox, Outlook flavors (and more!)." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="OpenAsset"
-      description="OpenAsset is a cloud Digital Asset Management (DAM) solution tailored to Architecture, Engineering, Construction (AEC) and Real Estate."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -121,7 +120,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>OpenAsset</title>
-          <meta name="description" content="OpenAsset is a cloud Digital Asset Management (DAM) solution tailored to Architecture, Engineering, Construction (AEC) and Real Estate." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

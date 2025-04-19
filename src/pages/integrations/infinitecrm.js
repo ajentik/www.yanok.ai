@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="InfiniteCRM"
-      description="InfiniteCRM is a CRM platform designed to meet the needs of different business areas, from sales force to marketing, customer care to call centre. InfiniteCRM boosts your business by creating winning, enduring relationships with leads, prospects, customers and partners."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -151,7 +150,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>InfiniteCRM</title>
-          <meta name="description" content="InfiniteCRM is a CRM platform designed to meet the needs of different business areas, from sales force to marketing, customer care to call centre. InfiniteCRM boosts your business by creating winning, enduring relationships with leads, prospects, customers and partners." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

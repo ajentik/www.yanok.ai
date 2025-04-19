@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Endless Fairs"
-      description="Endless Fairs is a platform which offers tailor-made solutions for expectations. Organize online creative activities to bring together visitors and participants from all over the world."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +56,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Endless Fairs</title>
-          <meta name="description" content="Endless Fairs is a platform which offers tailor-made solutions for expectations. Organize online creative activities to bring together visitors and participants from all over the world." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

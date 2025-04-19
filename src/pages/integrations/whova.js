@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Whova"
-      description="Whova is an all-in-one event management solution that makes events modern and trendy, attracts and engages attendees effectively, and helps event organizers save time when managing event logistics."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -66,7 +65,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Whova</title>
-          <meta name="description" content="Whova is an all-in-one event management solution that makes events modern and trendy, attracts and engages attendees effectively, and helps event organizers save time when managing event logistics." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

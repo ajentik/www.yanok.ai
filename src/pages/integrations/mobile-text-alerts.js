@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Mobile Text Alerts"
-      description="Mobile Text Alerts allows you send mass SMS text messages to your group."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -96,7 +95,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Mobile Text Alerts</title>
-          <meta name="description" content="Mobile Text Alerts allows you send mass SMS text messages to your group." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

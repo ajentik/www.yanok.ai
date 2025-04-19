@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Deezer"
-      description="Deezer is the world’s most diverse, dynamic and personal global music streaming company and includes a unique personalisation model, Flow."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +52,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Deezer</title>
-          <meta name="description" content="Deezer is the world’s most diverse, dynamic and personal global music streaming company and includes a unique personalisation model, Flow." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

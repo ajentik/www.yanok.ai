@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Invision Community"
-      description="Invision Community is an independent community platform."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -301,7 +300,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Invision Community</title>
-          <meta name="description" content="Invision Community is an independent community platform." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

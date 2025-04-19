@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Bugfender"
-      description="Bugfender is a cloud storage for application logs. Get fast remote access to your applications’ log files on users’ devices."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +56,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Bugfender</title>
-          <meta name="description" content="Bugfender is a cloud storage for application logs. Get fast remote access to your applications’ log files on users’ devices." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

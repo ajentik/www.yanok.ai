@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="SMSLink"
-      description="SMSLink is a SMS provider that provides integrated services such as SMS Marketing, SMS Gateway, Mail to SMS and SMS Alerts."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +56,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>SMSLink</title>
-          <meta name="description" content="SMSLink is a SMS provider that provides integrated services such as SMS Marketing, SMS Gateway, Mail to SMS and SMS Alerts." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

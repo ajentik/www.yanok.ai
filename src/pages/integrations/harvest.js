@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Harvest"
-      description="Simple time tracking software and powerful reporting that helps your team thrive."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -171,7 +170,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Harvest</title>
-          <meta name="description" content="Simple time tracking software and powerful reporting that helps your team thrive." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Symphony"
-      description="Symphony is a communications platform that securely connects markets and individuals, promoting collaboration and increasing productivity while maintaining organizational compliance."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +56,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Symphony</title>
-          <meta name="description" content="Symphony is a communications platform that securely connects markets and individuals, promoting collaboration and increasing productivity while maintaining organizational compliance." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

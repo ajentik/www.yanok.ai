@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Lightspeed"
-      description="Lightspeed is a point-of-sale and e-commerce software providing small and medium sized retail and restaurant businesses with point of sale solutions."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +52,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Lightspeed</title>
-          <meta name="description" content="Lightspeed is a point-of-sale and e-commerce software providing small and medium sized retail and restaurant businesses with point of sale solutions." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

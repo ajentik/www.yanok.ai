@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Websand"
-      description="Websand makes the data management of your marketing easy, so you can create email marketing that really delivers."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -72,7 +71,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Websand</title>
-          <meta name="description" content="Websand makes the data management of your marketing easy, so you can create email marketing that really delivers." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

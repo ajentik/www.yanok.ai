@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Zipzappo"
-      description="ZipZappo allows you to send personalized emails, SMS messages, or calls to your prospects."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +56,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Zipzappo</title>
-          <meta name="description" content="ZipZappo allows you to send personalized emails, SMS messages, or calls to your prospects." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

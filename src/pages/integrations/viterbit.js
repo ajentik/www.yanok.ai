@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Viterbit"
-      description="Viterbit is a technology start-up that offers a Recruitment and Selection Software (ATS). Just what your company needs to go one step further with the talent it hires."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +56,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Viterbit</title>
-          <meta name="description" content="Viterbit is a technology start-up that offers a Recruitment and Selection Software (ATS). Just what your company needs to go one step further with the talent it hires." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

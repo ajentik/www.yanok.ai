@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="shipcloud"
-      description="Shipcloud is a shipping service provider for creating shipping labels as well as tracking shipments."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -71,7 +70,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>shipcloud</title>
-          <meta name="description" content="Shipcloud is a shipping service provider for creating shipping labels as well as tracking shipments." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

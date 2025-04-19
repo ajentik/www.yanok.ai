@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Contact Gorilla"
-      description="Contact Gorilla is a completely automated follow-up system, meaning you will never miss a lead again."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +56,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Contact Gorilla</title>
-          <meta name="description" content="Contact Gorilla is a completely automated follow-up system, meaning you will never miss a lead again." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

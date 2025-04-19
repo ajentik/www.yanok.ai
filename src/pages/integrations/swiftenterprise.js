@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="SwiftEnterprise"
-      description="SwiftEnterprise is the next generation AI-driven Enterprise Agility platform focused on helping you plan, manage, and deliver your Digital Transformation initiatives."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -92,7 +91,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>SwiftEnterprise</title>
-          <meta name="description" content="SwiftEnterprise is the next generation AI-driven Enterprise Agility platform focused on helping you plan, manage, and deliver your Digital Transformation initiatives." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

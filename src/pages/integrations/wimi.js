@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Wimi"
-      description="Wimi is a team collaboration platform for businesses who want to boost teamwork and manage projects efficiently."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -71,7 +70,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Wimi</title>
-          <meta name="description" content="Wimi is a team collaboration platform for businesses who want to boost teamwork and manage projects efficiently." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

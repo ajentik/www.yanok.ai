@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="SMTP.com"
-      description="SMTP is a trusted and powerful transactional and email relay provider that allows you to send and track high volume emails effortlessly."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -86,7 +85,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>SMTP.com</title>
-          <meta name="description" content="SMTP is a trusted and powerful transactional and email relay provider that allows you to send and track high volume emails effortlessly." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

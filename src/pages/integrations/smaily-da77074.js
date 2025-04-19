@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Smaily"
-      description="Smaily is an intentionally simple tool made to create and send out beautiful email newsletters. We’ll help you increase the quality and results of your email marketing, while reducing preparation time and resources."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -66,7 +65,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Smaily</title>
-          <meta name="description" content="Smaily is an intentionally simple tool made to create and send out beautiful email newsletters. We’ll help you increase the quality and results of your email marketing, while reducing preparation time and resources." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

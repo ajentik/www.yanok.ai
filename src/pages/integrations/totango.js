@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Totango"
-      description="Totango is a Customer Engagement Management platform."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -76,7 +75,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Totango</title>
-          <meta name="description" content="Totango is a Customer Engagement Management platform." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

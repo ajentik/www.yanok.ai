@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="TalentCards"
-      description="TalentCards is a mobile learning solution that lets you deliver fast and efficient training on the go."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -71,7 +70,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>TalentCards</title>
-          <meta name="description" content="TalentCards is a mobile learning solution that lets you deliver fast and efficient training on the go." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

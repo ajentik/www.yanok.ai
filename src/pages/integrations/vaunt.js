@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Vaunt"
-      description="Vaunt® is a real estate ERP designed for developers and agencies."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +56,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Vaunt</title>
-          <meta name="description" content="Vaunt® is a real estate ERP designed for developers and agencies." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

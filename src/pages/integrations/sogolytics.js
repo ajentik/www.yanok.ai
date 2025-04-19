@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Sogolytics"
-      description="Our powerful and easy-to-use research platform allows users to create, distribute, and analyze professional surveys, polls, and assessments."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -61,7 +60,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Sogolytics</title>
-          <meta name="description" content="Our powerful and easy-to-use research platform allows users to create, distribute, and analyze professional surveys, polls, and assessments." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

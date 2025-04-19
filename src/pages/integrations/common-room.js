@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Common Room"
-      description="Common Room is the intelligent community growth platform that helps you deepen relationships, build better products, and drive business impact."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -101,7 +100,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Common Room</title>
-          <meta name="description" content="Common Room is the intelligent community growth platform that helps you deepen relationships, build better products, and drive business impact." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

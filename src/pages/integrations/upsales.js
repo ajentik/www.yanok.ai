@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Upsales"
-      description="The revenue engine for fast-growing businesses. You need to move fast and sell more. You need a revenue engine with CRM and Marketing Automation that can handle it. Unite sales and marketing with one platform for the whole customer journey."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -136,7 +135,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Upsales</title>
-          <meta name="description" content="The revenue engine for fast-growing businesses. You need to move fast and sell more. You need a revenue engine with CRM and Marketing Automation that can handle it. Unite sales and marketing with one platform for the whole customer journey." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

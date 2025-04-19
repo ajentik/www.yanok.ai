@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Bokun"
-      description="Bokun is creating the largest global B2B marketplace for tours and activity products."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +52,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Bokun</title>
-          <meta name="description" content="Bokun is creating the largest global B2B marketplace for tours and activity products." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

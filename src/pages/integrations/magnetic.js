@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Magnetic"
-      description="Magnetic is a cloud based business management app that allows you to manage your whole business. We have modules focused on CRM, Project Management, Accounts and HR."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -101,7 +100,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Magnetic</title>
-          <meta name="description" content="Magnetic is a cloud based business management app that allows you to manage your whole business. We have modules focused on CRM, Project Management, Accounts and HR." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

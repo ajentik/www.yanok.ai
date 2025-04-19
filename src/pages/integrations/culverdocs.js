@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Culverdocs"
-      description="Culverdocs is a fully configurable, no-code platform that allows you to convert your existing paper-based documents into digital forms to transform how you collect, process and manage business data."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +56,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Culverdocs</title>
-          <meta name="description" content="Culverdocs is a fully configurable, no-code platform that allows you to convert your existing paper-based documents into digital forms to transform how you collect, process and manage business data." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Avalara"
-      description="Avalara is software for automated tax compliance. Whether you are selling online, starting a new business, or need help filing internationally Avalara can help."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +52,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Avalara</title>
-          <meta name="description" content="Avalara is software for automated tax compliance. Whether you are selling online, starting a new business, or need help filing internationally Avalara can help." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

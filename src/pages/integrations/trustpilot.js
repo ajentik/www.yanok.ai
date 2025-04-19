@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Trustpilot"
-      description="Trustpilot is the world's most powerful review platform, helping your business collect and easily manage customer reviews. Trustpilot gives people a place to share and discover reviews of businesses, while giving every business the tools to turn consumer feedback into business results."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +56,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Trustpilot</title>
-          <meta name="description" content="Trustpilot is the world's most powerful review platform, helping your business collect and easily manage customer reviews. Trustpilot gives people a place to share and discover reviews of businesses, while giving every business the tools to turn consumer feedback into business results." />
+          <meta name="description" content={}/>s most powerful review platform, helping your business collect and easily manage customer reviews. Trustpilot gives people a place to share and discover reviews of businesses, while giving every business the tools to turn consumer feedback into business results.' />
         </>
       ),
     },

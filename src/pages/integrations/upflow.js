@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Upflow"
-      description="Manage your invoices, from creation to payment, to collect 100% of your turnover."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -87,7 +86,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Upflow</title>
-          <meta name="description" content="Manage your invoices, from creation to payment, to collect 100% of your turnover." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

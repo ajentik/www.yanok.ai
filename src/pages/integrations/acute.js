@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Acute"
-      description="Acute is a customer feedback management tool that helps businesses better understand their users needs, prioritize feedback, and keep customers in the loop."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -91,7 +90,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Acute</title>
-          <meta name="description" content="Acute is a customer feedback management tool that helps businesses better understand their users needs, prioritize feedback, and keep customers in the loop." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Pusher"
-      description="Pusher is an evented pub/sub platform that lets you push real-time messages to web, mobile and IoT applications."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +52,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Pusher</title>
-          <meta name="description" content="Pusher is an evented pub/sub platform that lets you push real-time messages to web, mobile and IoT applications." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

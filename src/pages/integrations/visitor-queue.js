@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Visitor Queue"
-      description="Visitor Queue is a B2B lead generation software that allows you to identify the businesses that have visited your website."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +56,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Visitor Queue</title>
-          <meta name="description" content="Visitor Queue is a B2B lead generation software that allows you to identify the businesses that have visited your website." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

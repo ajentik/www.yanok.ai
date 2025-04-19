@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="DoubleLoop"
-      description="DoubleLoop is a modern product changelog. Create a system-of-record for your product iterations. Send the right notifications to the right people."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -62,7 +61,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>DoubleLoop</title>
-          <meta name="description" content="DoubleLoop is a modern product changelog. Create a system-of-record for your product iterations. Send the right notifications to the right people." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

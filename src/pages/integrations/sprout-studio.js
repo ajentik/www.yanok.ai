@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Sprout Studio"
-      description="Sprout Studio is a studio management suite for professional wedding and portrait photographers."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -91,7 +90,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Sprout Studio</title>
-          <meta name="description" content="Sprout Studio is a studio management suite for professional wedding and portrait photographers." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

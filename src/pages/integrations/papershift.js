@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Papershift"
-      description="Looking for an online tool for easy and fast service planning? Roster creation, vacation planning and time tracking - all in one application and in real time."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +52,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Papershift</title>
-          <meta name="description" content="Looking for an online tool for easy and fast service planning? Roster creation, vacation planning and time tracking - all in one application and in real time." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

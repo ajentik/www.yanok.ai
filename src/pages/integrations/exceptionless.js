@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Exceptionless"
-      description="Exceptionless provides real-time error reporting for your apps. It organizes the gathered information into simple actionable data that will help your app become exceptionless!"
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -81,7 +80,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Exceptionless</title>
-          <meta name="description" content="Exceptionless provides real-time error reporting for your apps. It organizes the gathered information into simple actionable data that will help your app become exceptionless!" />
+          <meta name="description" content={}/> />
         </>
       ),
     },

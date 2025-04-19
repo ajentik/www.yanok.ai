@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="VOMO"
-      description="VOMO is a volunteer engagement platform that helps organizations recruit, manage, and reward their volunteers."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -96,7 +95,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>VOMO</title>
-          <meta name="description" content="VOMO is a volunteer engagement platform that helps organizations recruit, manage, and reward their volunteers." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Andpay"
-      description="The first pure payment service provider that makes payments fast and simple, fully leveraging the Algorand blockchain."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -71,7 +70,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Andpay</title>
-          <meta name="description" content="The first pure payment service provider that makes payments fast and simple, fully leveraging the Algorand blockchain." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

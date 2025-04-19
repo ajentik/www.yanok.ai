@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Callbell"
-      description="Callbell is a centralized inbox which allows teams to collaborate and reply to customers using WhatsApp, Instagram, Facebook Messenger and Telegram."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -66,7 +65,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Callbell</title>
-          <meta name="description" content="Callbell is a centralized inbox which allows teams to collaborate and reply to customers using WhatsApp, Instagram, Facebook Messenger and Telegram." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

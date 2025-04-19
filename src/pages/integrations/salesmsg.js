@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Salesmsg"
-      description="Salesmsg is a two-way text messaging software to allows you to send and receive text messages online from real local phone numbers."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -141,7 +140,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Salesmsg</title>
-          <meta name="description" content="Salesmsg is a two-way text messaging software to allows you to send and receive text messages online from real local phone numbers." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Gravity Forms"
-      description="Gravity Forms is a premier WordPress plugin that makes it easy to create powerful forms on the fly."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -66,7 +65,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Gravity Forms</title>
-          <meta name="description" content="Gravity Forms is a premier WordPress plugin that makes it easy to create powerful forms on the fly." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

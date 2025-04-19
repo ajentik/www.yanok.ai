@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Jazz"
-      description="Optimize your hiring process with JazzHR's award winning recruiting software and applicant tracking system."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +52,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Jazz</title>
-          <meta name="description" content="Optimize your hiring process with JazzHR's award winning recruiting software and applicant tracking system." />
+          <meta name="description" content={}/>s award winning recruiting software and applicant tracking system.' />
         </>
       ),
     },

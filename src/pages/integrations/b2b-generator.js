@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="B2B Generator"
-      description="B2B Generator instantly repurposes product data into multiple digital sales and marketing channels while maximizing reseller interconnection"
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -81,7 +80,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>B2B Generator</title>
-          <meta name="description" content="B2B Generator instantly repurposes product data into multiple digital sales and marketing channels while maximizing reseller interconnection" />
+          <meta name="description" content={}/> />
         </>
       ),
     },

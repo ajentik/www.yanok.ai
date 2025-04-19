@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Collaborate Space"
-      description="COLLABORATE Space (by ClearOne) is a cloud video collaboration app that connects hundreds of users joining from any device, anytime, and anywhere for messaging, calling, and meetings."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -101,7 +100,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Collaborate Space</title>
-          <meta name="description" content="COLLABORATE Space (by ClearOne) is a cloud video collaboration app that connects hundreds of users joining from any device, anytime, and anywhere for messaging, calling, and meetings." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

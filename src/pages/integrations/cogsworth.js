@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Cogsworth"
-      description="Cogsworth is an appointment and meeting scheduling app that allows people to book in time with you and your business when you are available. Cogsworth syncs with your calendar and pulls out your availability and also pushes your bookings back to your calendar."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -72,7 +71,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Cogsworth</title>
-          <meta name="description" content="Cogsworth is an appointment and meeting scheduling app that allows people to book in time with you and your business when you are available. Cogsworth syncs with your calendar and pulls out your availability and also pushes your bookings back to your calendar." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

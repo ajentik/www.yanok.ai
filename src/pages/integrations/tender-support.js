@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Tender Support"
-      description="Tender Support is an elegant help desk that organizes your customer care so you can focus on delivering the best service possible."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -67,7 +66,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Tender Support</title>
-          <meta name="description" content="Tender Support is an elegant help desk that organizes your customer care so you can focus on delivering the best service possible." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

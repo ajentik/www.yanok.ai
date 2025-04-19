@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Faithlife"
-      description="Faithlife Corporation publishes and creates electronic tools and resources for Bible study."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +52,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Faithlife</title>
-          <meta name="description" content="Faithlife Corporation publishes and creates electronic tools and resources for Bible study." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

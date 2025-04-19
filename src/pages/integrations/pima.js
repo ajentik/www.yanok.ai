@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Pima"
-      description="Pima helps businesses ingest incoming requests for security documents, sign NDAs with prospects, and share watermarked reports on demand."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -87,7 +86,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Pima</title>
-          <meta name="description" content="Pima helps businesses ingest incoming requests for security documents, sign NDAs with prospects, and share watermarked reports on demand." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

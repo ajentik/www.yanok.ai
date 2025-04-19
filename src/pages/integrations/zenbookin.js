@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Zenbookin"
-      description="Zenbookin is a scheduling and booking platform to help businesses/institutions/organizations spend less time on scheduling and tracking appointments."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -71,7 +70,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Zenbookin</title>
-          <meta name="description" content="Zenbookin is a scheduling and booking platform to help businesses/institutions/organizations spend less time on scheduling and tracking appointments." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

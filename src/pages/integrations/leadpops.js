@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="leadPops (Legacy)"
-      description="leadPops develops lead generation technology and marketing solutions for mortgage, real estate, and insurance pros."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +56,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>leadPops (Legacy)</title>
-          <meta name="description" content="leadPops develops lead generation technology and marketing solutions for mortgage, real estate, and insurance pros." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

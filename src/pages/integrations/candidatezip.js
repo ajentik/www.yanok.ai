@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="CandidateZip Resume/Job Parser"
-      description="CandidateZip is cloud based resume/CV or Job Parser which converts resumes/CV and jobs to standard fields. This extract contact/location, experience, education, salary, skills, and others fields from resumes/CV."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -72,7 +71,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>CandidateZip Resume/Job Parser</title>
-          <meta name="description" content="CandidateZip is cloud based resume/CV or Job Parser which converts resumes/CV and jobs to standard fields. This extract contact/location, experience, education, salary, skills, and others fields from resumes/CV." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

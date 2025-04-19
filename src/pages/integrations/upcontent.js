@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="UpContent"
-      description="UpContent is a content curation solution to help you discover, discuss, and distribute articles that inform, engage, and stimulate action amongst your audience."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -61,7 +60,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>UpContent</title>
-          <meta name="description" content="UpContent is a content curation solution to help you discover, discuss, and distribute articles that inform, engage, and stimulate action amongst your audience." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

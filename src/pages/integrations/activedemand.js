@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="ActiveDEMAND"
-      description="ActiveDEMAND is an integrated marketing platform that helps companies drive demand, improve conversion velocity, and demonstrate value delivered."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -81,7 +80,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>ActiveDEMAND</title>
-          <meta name="description" content="ActiveDEMAND is an integrated marketing platform that helps companies drive demand, improve conversion velocity, and demonstrate value delivered." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

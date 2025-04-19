@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Manatal"
-      description="Manatal is a recruitment software designed for HR, Talent Acquisition, recruiting and headhunting teams."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -72,7 +71,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Manatal</title>
-          <meta name="description" content="Manatal is a recruitment software designed for HR, Talent Acquisition, recruiting and headhunting teams." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

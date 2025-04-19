@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="LegitFit"
-      description="LegitFit is a Fitness and Wellness Business Management Software that focuses on the 20% your business needs"
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -72,7 +71,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>LegitFit</title>
-          <meta name="description" content="LegitFit is a Fitness and Wellness Business Management Software that focuses on the 20% your business needs" />
+          <meta name="description" content={}/> />
         </>
       ),
     },

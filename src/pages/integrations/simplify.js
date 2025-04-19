@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Simplify"
-      description="Simplify is a service management solution, a seamless end-to-end solution with all the capabilities you need to help your customers."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -81,7 +80,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Simplify</title>
-          <meta name="description" content="Simplify is a service management solution, a seamless end-to-end solution with all the capabilities you need to help your customers." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

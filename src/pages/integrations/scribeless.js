@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Scribeless"
-      description="Handwritten notes feel special. Our technology helps brands automate handwritten marketing and deliver delightful customer experiences."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -62,7 +61,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Scribeless</title>
-          <meta name="description" content="Handwritten notes feel special. Our technology helps brands automate handwritten marketing and deliver delightful customer experiences." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

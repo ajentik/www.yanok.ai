@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Iterate"
-      description="Iterate is a survey tool that helps you get answers to everything you need to build better products and make better decisions."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -62,7 +61,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Iterate</title>
-          <meta name="description" content="Iterate is a survey tool that helps you get answers to everything you need to build better products and make better decisions." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

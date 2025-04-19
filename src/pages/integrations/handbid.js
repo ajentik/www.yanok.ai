@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Handbid"
-      description="Handbid is an online mobile bidding and fundraising platform for charity and commercial auctions and events. Setup an auction or fundraiser in Handbid and allow users to bid or donate through the Handbid apps for iPhone, Android, and web."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -206,7 +205,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Handbid</title>
-          <meta name="description" content="Handbid is an online mobile bidding and fundraising platform for charity and commercial auctions and events. Setup an auction or fundraiser in Handbid and allow users to bid or donate through the Handbid apps for iPhone, Android, and web." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

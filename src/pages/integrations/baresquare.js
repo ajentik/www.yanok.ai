@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Baresquare"
-      description="Baresquare connects with your current analytics platform to make sense of the trends in your data, surfacing micro insights that could lead to major opportunities. In a sea of data, get your bearings with Baresquare’s action-driven analytics."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -61,7 +60,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Baresquare</title>
-          <meta name="description" content="Baresquare connects with your current analytics platform to make sense of the trends in your data, surfacing micro insights that could lead to major opportunities. In a sea of data, get your bearings with Baresquare’s action-driven analytics." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

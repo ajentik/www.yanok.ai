@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Momentifi"
-      description="Momentifi Integration with the Momentifi, Relationship Planner or CMPS applications"
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -72,7 +71,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Momentifi</title>
-          <meta name="description" content="Momentifi Integration with the Momentifi, Relationship Planner or CMPS applications" />
+          <meta name="description" content={}/> />
         </>
       ),
     },

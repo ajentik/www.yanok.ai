@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Taskade"
-      description="Taskade is a collaboration platform for remote teams to organize and manage projects."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -61,7 +60,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Taskade</title>
-          <meta name="description" content="Taskade is a collaboration platform for remote teams to organize and manage projects." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

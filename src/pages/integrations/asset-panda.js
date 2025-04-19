@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Asset Panda"
-      description="Asset Panda tracks and manages assets with reporting, alerts, workflows, and iOS/Android/desktop apps to track anything, anywhere, anytime."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -66,7 +65,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Asset Panda</title>
-          <meta name="description" content="Asset Panda tracks and manages assets with reporting, alerts, workflows, and iOS/Android/desktop apps to track anything, anywhere, anytime." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

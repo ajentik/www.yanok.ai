@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Consent Kit"
-      description="Consent Kit is an all-in-one research governance platform."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -86,7 +85,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Consent Kit</title>
-          <meta name="description" content="Consent Kit is an all-in-one research governance platform." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

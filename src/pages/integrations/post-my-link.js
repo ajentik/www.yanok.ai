@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Post My Link"
-      description="Post My Link is an advanced URL short-link service for individuals and collaborative teams."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +56,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Post My Link</title>
-          <meta name="description" content="Post My Link is an advanced URL short-link service for individuals and collaborative teams." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

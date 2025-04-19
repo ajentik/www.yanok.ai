@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="OneDesk"
-      description="OneDesk combines helpdesk, product management, and project management software into one platform. OneDesk offers a web-app, mobile app, and website portal to connect your customers, employees, and partners."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -131,7 +130,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>OneDesk</title>
-          <meta name="description" content="OneDesk combines helpdesk, product management, and project management software into one platform. OneDesk offers a web-app, mobile app, and website portal to connect your customers, employees, and partners." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

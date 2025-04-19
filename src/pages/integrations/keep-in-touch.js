@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Keep In Touch"
-      description="Keep In Touch is a cloud based CRM system for Builders looking to improve their sales process and follow up enquiries automatically using software that can be learnt in under 60 minutes… guaranteed."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -121,7 +120,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Keep In Touch</title>
-          <meta name="description" content="Keep In Touch is a cloud based CRM system for Builders looking to improve their sales process and follow up enquiries automatically using software that can be learnt in under 60 minutes… guaranteed." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

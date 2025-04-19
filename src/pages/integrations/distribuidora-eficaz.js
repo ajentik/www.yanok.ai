@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Distribuidora Eficaz"
-      description="Distribuidora Eficaz is a specialist ERP system for order and inventory management."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -72,7 +71,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Distribuidora Eficaz</title>
-          <meta name="description" content="Distribuidora Eficaz is a specialist ERP system for order and inventory management." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

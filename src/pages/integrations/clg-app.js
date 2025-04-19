@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="CLG App"
-      description="CLG App is a cloud-based software and CRM for the credit repair industry designed for credit consultants and starting a credit repair business."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -126,7 +125,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>CLG App</title>
-          <meta name="description" content="CLG App is a cloud-based software and CRM for the credit repair industry designed for credit consultants and starting a credit repair business." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

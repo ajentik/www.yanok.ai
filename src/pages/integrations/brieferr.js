@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Brieferr"
-      description="Brieferr is a form analysis tool that gives insights about your users with various types of forms"
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +56,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Brieferr</title>
-          <meta name="description" content="Brieferr is a form analysis tool that gives insights about your users with various types of forms" />
+          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="SupportBee"
-      description="SupportBee is the easiest way to manage customer support emails. It helps your team collaborate & deliver friendly customer service."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -76,7 +75,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>SupportBee</title>
-          <meta name="description" content="SupportBee is the easiest way to manage customer support emails. It helps your team collaborate & deliver friendly customer service." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

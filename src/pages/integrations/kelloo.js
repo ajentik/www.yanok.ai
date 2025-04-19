@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Kelloo"
-      description="Kelloo is a resource planning and portfolio management platform. Plan, forecast and deliver smarter. We help you get the most from your projects and people."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -157,7 +156,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Kelloo</title>
-          <meta name="description" content="Kelloo is a resource planning and portfolio management platform. Plan, forecast and deliver smarter. We help you get the most from your projects and people." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

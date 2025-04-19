@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="COR"
-      description="COR is the all-in-one management solution for creative agencies that automate timesheets, through AI, to predict profitability, reduce work overload and improve client engagements."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -196,7 +195,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>COR</title>
-          <meta name="description" content="COR is the all-in-one management solution for creative agencies that automate timesheets, through AI, to predict profitability, reduce work overload and improve client engagements." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

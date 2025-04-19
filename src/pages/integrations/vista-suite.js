@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Vista Suite"
-      description="Vista Suite is a Business Management Cloud ERP Software"
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -101,7 +100,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Vista Suite</title>
-          <meta name="description" content="Vista Suite is a Business Management Cloud ERP Software" />
+          <meta name="description" content={}/> />
         </>
       ),
     },

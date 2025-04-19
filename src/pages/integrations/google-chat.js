@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Google Chat"
-      description="Google Chat is a communication software developed by Google built for teams that provides direct messages and team chat rooms, along with a group messaging function that allows Google Drive content sharing."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +56,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Google Chat</title>
-          <meta name="description" content="Google Chat is a communication software developed by Google built for teams that provides direct messages and team chat rooms, along with a group messaging function that allows Google Drive content sharing." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

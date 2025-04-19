@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Rali"
-      description="Rali is an application that drives engagement around video content, thereby building community, brand awareness, and insights into your content."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -82,7 +81,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Rali</title>
-          <meta name="description" content="Rali is an application that drives engagement around video content, thereby building community, brand awareness, and insights into your content." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

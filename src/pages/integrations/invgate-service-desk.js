@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="InvGate Service Desk"
-      description="InvGate Service Desk is a ticketing solution with ITIL-ready functionalities to organize work based on priority, SLA & urgency, create automated workflows, integrate with CMDB and more."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -121,7 +120,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>InvGate Service Desk</title>
-          <meta name="description" content="InvGate Service Desk is a ticketing solution with ITIL-ready functionalities to organize work based on priority, SLA & urgency, create automated workflows, integrate with CMDB and more." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

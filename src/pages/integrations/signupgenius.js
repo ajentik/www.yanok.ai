@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="SignUpGenius"
-      description="SignUpGenius is an organizational tool that takes away the hassle of coordinating groups so your organization can focus on its impact on your community."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -86,7 +85,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>SignUpGenius</title>
-          <meta name="description" content="SignUpGenius is an organizational tool that takes away the hassle of coordinating groups so your organization can focus on its impact on your community." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

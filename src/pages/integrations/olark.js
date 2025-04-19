@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Olark"
-      description="Olark makes it easy to add live chat to your website and provide instantaneous support to your users and get valuable feedback from them about your site."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -62,7 +61,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Olark</title>
-          <meta name="description" content="Olark makes it easy to add live chat to your website and provide instantaneous support to your users and get valuable feedback from them about your site." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="STACKLY"
-      description="Stackly is a content experience platform that helps businesses convert more of their website visitors into leads."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +56,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>STACKLY</title>
-          <meta name="description" content="Stackly is a content experience platform that helps businesses convert more of their website visitors into leads." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

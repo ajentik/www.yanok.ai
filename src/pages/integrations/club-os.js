@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Club OS"
-      description="The gym and studio management software you need to sell more memberships and keep more members."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -92,7 +91,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Club OS</title>
-          <meta name="description" content="The gym and studio management software you need to sell more memberships and keep more members." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

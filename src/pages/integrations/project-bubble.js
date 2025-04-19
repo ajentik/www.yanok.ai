@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Project Bubble"
-      description="The simple and easy way to manage your projects. Spend less time learning a project management system, and more time being productive. Manage your projects online, track time, set deadlines, stay on budget, share files, be productive!"
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -111,7 +110,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Project Bubble</title>
-          <meta name="description" content="The simple and easy way to manage your projects. Spend less time learning a project management system, and more time being productive. Manage your projects online, track time, set deadlines, stay on budget, share files, be productive!" />
+          <meta name="description" content={}/> />
         </>
       ),
     },

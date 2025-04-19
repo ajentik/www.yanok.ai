@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="EFC Aquila"
-      description="EFC Aquila is a fully featured CRM and Billing platform for Martial Arts schools, Leisure clubs and more."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -131,7 +130,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>EFC Aquila</title>
-          <meta name="description" content="EFC Aquila is a fully featured CRM and Billing platform for Martial Arts schools, Leisure clubs and more." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

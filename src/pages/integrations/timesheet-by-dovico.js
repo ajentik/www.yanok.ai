@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Timesheet by Dovico"
-      description="The best employee timesheet software for simple project time tracking. Track and approve hours worked on projects and tasks for billing and reporting."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -121,7 +120,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Timesheet by Dovico</title>
-          <meta name="description" content="The best employee timesheet software for simple project time tracking. Track and approve hours worked on projects and tasks for billing and reporting." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

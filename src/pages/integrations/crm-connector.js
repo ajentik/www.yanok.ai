@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="CRM Connector"
-      description="CRM Connector is a cloud based CRM and marketing automation platform offering robust automation and sales tools for small to medium sized businesses worldwide."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -136,7 +135,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>CRM Connector</title>
-          <meta name="description" content="CRM Connector is a cloud based CRM and marketing automation platform offering robust automation and sales tools for small to medium sized businesses worldwide." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

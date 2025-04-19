@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Polly"
-      description="Trigger automated feedback directly in Slack with Polly."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +56,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Polly</title>
-          <meta name="description" content="Trigger automated feedback directly in Slack with Polly." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

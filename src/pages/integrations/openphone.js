@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="OpenPhone"
-      description="OpenPhone is a new phone for business. It comes with powerful calling, messaging, and a lightweight CRM."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -86,7 +85,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>OpenPhone</title>
-          <meta name="description" content="OpenPhone is a new phone for business. It comes with powerful calling, messaging, and a lightweight CRM." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

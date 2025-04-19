@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Gmelius"
-      description="Gmelius is a team collaboration platform to share emails, manage projects, and automate daily workflows right from Gmail and your other favorite apps."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -116,7 +115,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Gmelius</title>
-          <meta name="description" content="Gmelius is a team collaboration platform to share emails, manage projects, and automate daily workflows right from Gmail and your other favorite apps." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

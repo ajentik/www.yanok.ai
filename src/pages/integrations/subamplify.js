@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Subamplify"
-      description="Subamplify is a subscription model driven ecommerce solution for businesses looking to sell their products online."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -77,7 +76,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Subamplify</title>
-          <meta name="description" content="Subamplify is a subscription model driven ecommerce solution for businesses looking to sell their products online." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

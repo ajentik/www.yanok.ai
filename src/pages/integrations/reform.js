@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Reform"
-      description="Reform is a forms app providing clean-looking, on-brand forms. No code required."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +56,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Reform</title>
-          <meta name="description" content="Reform is a forms app providing clean-looking, on-brand forms. No code required." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

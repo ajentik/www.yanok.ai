@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Socrata"
-      description="Socrata delivers data-as-a-service solutions to accelerate digital transformation in government and foster the open data ecosystem."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +52,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Socrata</title>
-          <meta name="description" content="Socrata delivers data-as-a-service solutions to accelerate digital transformation in government and foster the open data ecosystem." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

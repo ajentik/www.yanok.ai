@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Loanzify"
-      description="Loanzify Digital POS platform is a fully customizable loan and client management tool."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -61,7 +60,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Loanzify</title>
-          <meta name="description" content="Loanzify Digital POS platform is a fully customizable loan and client management tool." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

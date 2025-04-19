@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Gingr"
-      description="Gingr is easy-to-learn software for dog daycare, pet boarding kennel management, and dog grooming business."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +52,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Gingr</title>
-          <meta name="description" content="Gingr is easy-to-learn software for dog daycare, pet boarding kennel management, and dog grooming business." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Quickeast"
-      description="Tools to better manage advertisements in China. Optimize ads, analyze data and leads CRM for multiple channels like WeChat and Douyin together in one place."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +56,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Quickeast</title>
-          <meta name="description" content="Tools to better manage advertisements in China. Optimize ads, analyze data and leads CRM for multiple channels like WeChat and Douyin together in one place." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

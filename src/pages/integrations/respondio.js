@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="respond.io"
-      description="respond.io unifies customer communication across instant messaging, web chat, and email for organizations that market, sell, and support."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -201,7 +200,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>respond.io</title>
-          <meta name="description" content="respond.io unifies customer communication across instant messaging, web chat, and email for organizations that market, sell, and support." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

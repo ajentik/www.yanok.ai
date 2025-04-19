@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Corsizio"
-      description="Corsizio is a platform that enables you to facilitate and manage attendee online registrations and payments for your classes, courses, workshops, training, and similar events."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -82,7 +81,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Corsizio</title>
-          <meta name="description" content="Corsizio is a platform that enables you to facilitate and manage attendee online registrations and payments for your classes, courses, workshops, training, and similar events." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

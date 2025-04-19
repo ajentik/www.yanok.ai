@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Inmobalia CRM"
-      description="Inmobalia CRM is the online real estate software and secure property MLS network servicing the most recognized real estate agencies on the Costa del Sol, probably one of the most competitive real estate markets in Spain and the whole Europe"
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -146,7 +145,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Inmobalia CRM</title>
-          <meta name="description" content="Inmobalia CRM is the online real estate software and secure property MLS network servicing the most recognized real estate agencies on the Costa del Sol, probably one of the most competitive real estate markets in Spain and the whole Europe" />
+          <meta name="description" content={}/> />
         </>
       ),
     },

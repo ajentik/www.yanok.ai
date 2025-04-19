@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="SharpSpring"
-      description="Powerful, affordable marketing tools for marketing agencies and SMBs. Features include email automation, lead capture, and a built in CRM system."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -96,7 +95,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>SharpSpring</title>
-          <meta name="description" content="Powerful, affordable marketing tools for marketing agencies and SMBs. Features include email automation, lead capture, and a built in CRM system." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

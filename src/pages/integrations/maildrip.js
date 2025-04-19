@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Maildrip"
-      description="Maildrip is a marketing tool that helps you handle drip mails easily."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -71,7 +70,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Maildrip</title>
-          <meta name="description" content="Maildrip is a marketing tool that helps you handle drip mails easily." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

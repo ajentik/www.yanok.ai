@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Surveybot"
-      description="Surveybot enables you to create chatbot surveys and distribute them on Facebook, Facebook Messenger and Workplace by Facebook."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +56,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Surveybot</title>
-          <meta name="description" content="Surveybot enables you to create chatbot surveys and distribute them on Facebook, Facebook Messenger and Workplace by Facebook." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

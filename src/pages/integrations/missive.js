@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Missive"
-      description="Email, group chat and tasks for productive teams. One app for all your internal and external communication."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -106,7 +105,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Missive</title>
-          <meta name="description" content="Email, group chat and tasks for productive teams. One app for all your internal and external communication." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

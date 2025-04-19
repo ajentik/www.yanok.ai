@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="MobilePages"
-      description="MobilePages is a landing page builder to create mobile landing pages in minutes."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +56,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>MobilePages</title>
-          <meta name="description" content="MobilePages is a landing page builder to create mobile landing pages in minutes." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Kapta"
-      description="Kapta is a CRM that is the tool your Account Management team needs to drive growth and retention with your existing clients."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -67,7 +66,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Kapta</title>
-          <meta name="description" content="Kapta is a CRM that is the tool your Account Management team needs to drive growth and retention with your existing clients." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

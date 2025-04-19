@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="INTAGENT Leads"
-      description="Intagent provides real estate web design and CRM lead management for agents, brokers, and companies."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +56,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>INTAGENT Leads</title>
-          <meta name="description" content="Intagent provides real estate web design and CRM lead management for agents, brokers, and companies." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

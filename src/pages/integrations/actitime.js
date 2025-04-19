@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="actiTIME"
-      description="actiTIME is a time tracking & scope management tool."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -156,7 +155,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>actiTIME</title>
-          <meta name="description" content="actiTIME is a time tracking & scope management tool." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

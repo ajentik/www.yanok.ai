@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Quicksearch"
-      description="Quicksearch is an enterprise Customer Experience (CX) and Employee Experience (EX) platform"
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +56,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Quicksearch</title>
-          <meta name="description" content="Quicksearch is an enterprise Customer Experience (CX) and Employee Experience (EX) platform" />
+          <meta name="description" content={}/> />
         </>
       ),
     },

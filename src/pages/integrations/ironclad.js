@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Ironclad"
-      description="Ironclad is a contract lifecycle management platform used by companies to handle every type of contract workflow."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -116,7 +115,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Ironclad</title>
-          <meta name="description" content="Ironclad is a contract lifecycle management platform used by companies to handle every type of contract workflow." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

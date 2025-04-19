@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Teambook"
-      description="Teambook is the tool you need to level-up your project management game. Get the big picture of your consultants’ workload thanks to the visual team board(s) and see who’s available or not, in the snap of a finger."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -62,7 +61,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Teambook</title>
-          <meta name="description" content="Teambook is the tool you need to level-up your project management game. Get the big picture of your consultants’ workload thanks to the visual team board(s) and see who’s available or not, in the snap of a finger." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

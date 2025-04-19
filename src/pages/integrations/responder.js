@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Responder (רב מסר)"
-      description="Responder (רב מסר) is a leading Israeli email autoresponder platform, and is only in Hebrew. Capture leads, segment them to lists based on interest and action - and keep in touch with them via newsletters and segmented offers."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -96,7 +95,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Responder (רב מסר)</title>
-          <meta name="description" content="Responder (רב מסר) is a leading Israeli email autoresponder platform, and is only in Hebrew. Capture leads, segment them to lists based on interest and action - and keep in touch with them via newsletters and segmented offers." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

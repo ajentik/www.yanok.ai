@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Goliath Systemer"
-      description="Manage your hours, tasks, projects and forms on one platform."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -67,7 +66,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Goliath Systemer</title>
-          <meta name="description" content="Manage your hours, tasks, projects and forms on one platform." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

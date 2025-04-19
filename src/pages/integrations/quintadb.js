@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="QuintaDB"
-      description="QuintaDB is a relational online database, CRM and Web-form Builder. It's an easy web-based application with drag and drop interface."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -111,7 +110,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>QuintaDB</title>
-          <meta name="description" content="QuintaDB is a relational online database, CRM and Web-form Builder. It's an easy web-based application with drag and drop interface." />
+          <meta name="description" content={}/>s an easy web-based application with drag and drop interface.' />
         </>
       ),
     },

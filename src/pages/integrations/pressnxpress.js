@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Press'nXPress"
-      description="Press'nXPress is a multi-channel customer feedback management collects feedback on Web, Email, SMS, QR code and generates actionable insights in real-time."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -67,7 +66,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Press'nXPress</title>
-          <meta name="description" content="Press'nXPress is a multi-channel customer feedback management collects feedback on Web, Email, SMS, QR code and generates actionable insights in real-time." />
+          <meta name="description" content={}/>nXPress is a multi-channel customer feedback management collects feedback on Web, Email, SMS, QR code and generates actionable insights in real-time.' />
         </>
       ),
     },

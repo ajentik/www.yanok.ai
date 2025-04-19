@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Watermelon"
-      description="With Watermelon you create chatbots, manage conversations and collaborate with your team to deliver an unforgettable customer service experience."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -106,7 +105,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Watermelon</title>
-          <meta name="description" content="With Watermelon you create chatbots, manage conversations and collaborate with your team to deliver an unforgettable customer service experience." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Platform.ly"
-      description="Platformly is your marketing automation platform that empowers you to engage your audience at every step of their journey."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -96,7 +95,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Platform.ly</title>
-          <meta name="description" content="Platformly is your marketing automation platform that empowers you to engage your audience at every step of their journey." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

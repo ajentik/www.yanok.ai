@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Teachable"
-      description="Teachable allows you to create and sell online courses without any technical knowledge from your own website."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -146,7 +145,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Teachable</title>
-          <meta name="description" content="Teachable allows you to create and sell online courses without any technical knowledge from your own website." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

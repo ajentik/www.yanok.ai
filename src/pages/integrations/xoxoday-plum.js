@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Xoxoday Plum"
-      description="Xoxoday plum provides a wide catalog of rewarding options from across the globe and for various use cases"
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +56,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Xoxoday Plum</title>
-          <meta name="description" content="Xoxoday plum provides a wide catalog of rewarding options from across the globe and for various use cases" />
+          <meta name="description" content={}/> />
         </>
       ),
     },

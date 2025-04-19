@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Sendmunk"
-      description="Sendmunk is an All-In-One Marketing Automation platform which includes: Email, Push & SMS."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -81,7 +80,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Sendmunk</title>
-          <meta name="description" content="Sendmunk is an All-In-One Marketing Automation platform which includes: Email, Push & SMS." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

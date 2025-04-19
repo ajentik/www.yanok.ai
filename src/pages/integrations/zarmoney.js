@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="ZarMoney"
-      description="ZarMoney is a complete cloud accounting platform that offers invoicing, billing, income, and expense tracking, financial reporting, inventory management, and much more."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -211,7 +210,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>ZarMoney</title>
-          <meta name="description" content="ZarMoney is a complete cloud accounting platform that offers invoicing, billing, income, and expense tracking, financial reporting, inventory management, and much more." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

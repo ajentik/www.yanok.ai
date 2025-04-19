@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Bronto"
-      description="Bronto Software provides a cloud-based marketing platform that enables retailers to drive revenue via email, mobile and social campaigns."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +52,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Bronto</title>
-          <meta name="description" content="Bronto Software provides a cloud-based marketing platform that enables retailers to drive revenue via email, mobile and social campaigns." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Persio"
-      description="Persio exists to help businesses unify and mesh all their customer data in a single source of truth platform and auto-qualify their leads."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -66,7 +65,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Persio</title>
-          <meta name="description" content="Persio exists to help businesses unify and mesh all their customer data in a single source of truth platform and auto-qualify their leads." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

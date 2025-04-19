@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Convertri"
-      description="Convertri is a complete sales funnel and website builder, focused on building the fastest pages you’ve ever seen."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -92,7 +91,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Convertri</title>
-          <meta name="description" content="Convertri is a complete sales funnel and website builder, focused on building the fastest pages you’ve ever seen." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="GoodDay.work"
-      description="GoodDay is a modern work management platform that brings together the best tools for high-level planning, project and product management, task organization and productivity growth based on transparency, agility, and motivation."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -76,7 +75,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>GoodDay.work</title>
-          <meta name="description" content="GoodDay is a modern work management platform that brings together the best tools for high-level planning, project and product management, task organization and productivity growth based on transparency, agility, and motivation." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

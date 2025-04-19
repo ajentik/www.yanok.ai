@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Zoho Projects"
-      description="Zoho Projects is an online project management app that helps you plan your work and keep track of your progress. It also lets the people in the project communicate easily, discuss ideas, and stay updated. This lets you deliver quality results on time."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -131,7 +130,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Zoho Projects</title>
-          <meta name="description" content="Zoho Projects is an online project management app that helps you plan your work and keep track of your progress. It also lets the people in the project communicate easily, discuss ideas, and stay updated. This lets you deliver quality results on time." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="RTILA"
-      description="Automate the most complex tasks & processes in your web or intranet Apps & release your teams for more productive work."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -62,7 +61,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>RTILA</title>
-          <meta name="description" content="Automate the most complex tasks & processes in your web or intranet Apps & release your teams for more productive work." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

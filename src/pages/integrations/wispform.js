@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Wispform"
-      description="Wispform helps anyone in the world to create beautiful, conversational forms and surveys. Wispform is the perfect solution for contact forms, registration forms, interactive quizzes, and much more."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +56,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Wispform</title>
-          <meta name="description" content="Wispform helps anyone in the world to create beautiful, conversational forms and surveys. Wispform is the perfect solution for contact forms, registration forms, interactive quizzes, and much more." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

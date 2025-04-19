@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="SurveyNuts"
-      description="SurveyNuts is an online survey software. Create surveys, forms and quizzes quickly, share them and analyze the responses."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +56,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>SurveyNuts</title>
-          <meta name="description" content="SurveyNuts is an online survey software. Create surveys, forms and quizzes quickly, share them and analyze the responses." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

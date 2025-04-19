@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Deltek"
-      description="Deltek Vision is a cloud-based project-based solution for professional services firms that is available for cloud or on-premise deployment."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +52,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Deltek</title>
-          <meta name="description" content="Deltek Vision is a cloud-based project-based solution for professional services firms that is available for cloud or on-premise deployment." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

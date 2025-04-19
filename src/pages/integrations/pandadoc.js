@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="PandaDoc"
-      description="PandaDoc is an all-in-one software that streamlines your sales workflows. Create, send, track, and eSign client-facing documents designed to win more business."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -106,7 +105,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>PandaDoc</title>
-          <meta name="description" content="PandaDoc is an all-in-one software that streamlines your sales workflows. Create, send, track, and eSign client-facing documents designed to win more business." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Amberscript"
-      description="Our services allow you to create text and subtitles from audio or video, either automatically and perfected by you or made by our language experts and professional subtitlers. Simply upload your file and start."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -61,7 +60,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Amberscript</title>
-          <meta name="description" content="Our services allow you to create text and subtitles from audio or video, either automatically and perfected by you or made by our language experts and professional subtitlers. Simply upload your file and start." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

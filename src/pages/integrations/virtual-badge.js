@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Virtual Badge"
-      description="For organizations who need better ways to identify and authenticate their people, Virtual Badge is the simplest identity management platform available."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -72,7 +71,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Virtual Badge</title>
-          <meta name="description" content="For organizations who need better ways to identify and authenticate their people, Virtual Badge is the simplest identity management platform available." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

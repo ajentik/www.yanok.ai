@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="BackNine Insurance"
-      description="BackNine is a tech enabled general agency geared towards selling life insurance that enables its users with a free to use CRM and online quoting software."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -62,7 +61,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>BackNine Insurance</title>
-          <meta name="description" content="BackNine is a tech enabled general agency geared towards selling life insurance that enables its users with a free to use CRM and online quoting software." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Product List Genie"
-      description="Product List Genie is a Leads integration to connect on a vast library of connected apps to automate workflow."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +56,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Product List Genie</title>
-          <meta name="description" content="Product List Genie is a Leads integration to connect on a vast library of connected apps to automate workflow." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

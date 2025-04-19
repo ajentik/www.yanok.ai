@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="FireText"
-      description="FireText makes effective SMS marketing easy indeed - whether you're brand new to text message marketing or a seasoned hand."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -71,7 +70,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>FireText</title>
-          <meta name="description" content="FireText makes effective SMS marketing easy indeed - whether you're brand new to text message marketing or a seasoned hand." />
+          <meta name="description" content={}/>re brand new to text message marketing or a seasoned hand.' />
         </>
       ),
     },

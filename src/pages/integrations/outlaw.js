@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Outlaw"
-      description="Outlaw is a modern contract management solution that streamlines the contract lifecycle for organisations."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -86,7 +85,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Outlaw</title>
-          <meta name="description" content="Outlaw is a modern contract management solution that streamlines the contract lifecycle for organisations." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

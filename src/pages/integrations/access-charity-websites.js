@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Access Charity Websites"
-      description="Access Charity Websites is a digital, scalable solution for fundraising, donor engagement and data collection activities"
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -111,7 +110,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Access Charity Websites</title>
-          <meta name="description" content="Access Charity Websites is a digital, scalable solution for fundraising, donor engagement and data collection activities" />
+          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Spacio"
-      description="Spacio is a solution which replaces clipboards and unreadable handwriting with a professional sign-in system tailored for open houses."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +56,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Spacio</title>
-          <meta name="description" content="Spacio is a solution which replaces clipboards and unreadable handwriting with a professional sign-in system tailored for open houses." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

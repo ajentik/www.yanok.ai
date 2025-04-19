@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="24sessions"
-      description="24sessions helps you to connect with customers via video-chat effortlessly. We make this work by combining scheduling, video-chat and reviews all in a white labeled platform."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -82,7 +81,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>24sessions</title>
-          <meta name="description" content="24sessions helps you to connect with customers via video-chat effortlessly. We make this work by combining scheduling, video-chat and reviews all in a white labeled platform." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

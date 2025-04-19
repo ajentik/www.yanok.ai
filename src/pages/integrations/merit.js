@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Merit"
-      description="Merit is a verified identity platform that allows organizations to issue verifiable digital credentials."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -72,7 +71,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Merit</title>
-          <meta name="description" content="Merit is a verified identity platform that allows organizations to issue verifiable digital credentials." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Active Collab"
-      description="Active Collab is a popular, all-in-one tool for project management, team collaboration and billing. Available both in cloud and self hosted versions."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -131,7 +130,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Active Collab</title>
-          <meta name="description" content="Active Collab is a popular, all-in-one tool for project management, team collaboration and billing. Available both in cloud and self hosted versions." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

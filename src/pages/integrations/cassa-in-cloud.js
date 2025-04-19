@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Cassa in Cloud"
-      description="Cassa in Cloud is both a cash register and management system."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -141,7 +140,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Cassa in Cloud</title>
-          <meta name="description" content="Cassa in Cloud is both a cash register and management system." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

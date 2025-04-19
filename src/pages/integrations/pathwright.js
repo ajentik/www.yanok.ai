@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Pathwright"
-      description="Design step-by-step learning paths for anyone. With Pathwright you can create learning paths that guide students, employees, or anyone in the world to a new level of skill."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -111,7 +110,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Pathwright</title>
-          <meta name="description" content="Design step-by-step learning paths for anyone. With Pathwright you can create learning paths that guide students, employees, or anyone in the world to a new level of skill." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

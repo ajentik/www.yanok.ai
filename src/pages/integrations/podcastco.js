@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Podcast.co"
-      description="Podcast.co is an all-in-one platform designed to make podcasting as simple as possible for businesses and content creators. Launch, distribute, and grow your podcast with ease."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -91,7 +90,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Podcast.co</title>
-          <meta name="description" content="Podcast.co is an all-in-one platform designed to make podcasting as simple as possible for businesses and content creators. Launch, distribute, and grow your podcast with ease." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

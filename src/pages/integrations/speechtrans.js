@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="SpeechTrans"
-      description="Convert Speech to Text (Transcribe audio or video files) through Automatic Speech Recognition (ASR) 44 languages, Convert Text to Speech (TTS). Translate text from one language to another."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -211,7 +210,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>SpeechTrans</title>
-          <meta name="description" content="Convert Speech to Text (Transcribe audio or video files) through Automatic Speech Recognition (ASR) 44 languages, Convert Text to Speech (TTS). Translate text from one language to another." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

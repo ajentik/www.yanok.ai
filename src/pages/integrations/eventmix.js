@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Eventmix"
-      description="Eventmix is a whitelabel platform for virtual & hybrid events."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -66,7 +65,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Eventmix</title>
-          <meta name="description" content="Eventmix is a whitelabel platform for virtual & hybrid events." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Datananas"
-      description="Datananas is a Lead Relationship Management SaaS-based platform to send targeted, personalized and automatized emails scenarios to your Leads."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -156,7 +155,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Datananas</title>
-          <meta name="description" content="Datananas is a Lead Relationship Management SaaS-based platform to send targeted, personalized and automatized emails scenarios to your Leads." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

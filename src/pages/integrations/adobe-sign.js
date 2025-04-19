@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Adobe Sign"
-      description="Adobe Sign, an Adobe Document Cloud solution is a cloud-based, enterprise-class e-signature service that lets you replace paper and ink signature processes with fully automated electronic signature workflows."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +52,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Adobe Sign</title>
-          <meta name="description" content="Adobe Sign, an Adobe Document Cloud solution is a cloud-based, enterprise-class e-signature service that lets you replace paper and ink signature processes with fully automated electronic signature workflows." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Woodpecker.co"
-      description="Woodpecker.co helps B2B companies directly contact prospective clients by automated sending of personalized sales emails and follow-ups. Send emails and follow-up sequences automatically from your mailbox and have all the replies detected. Grow your business within the Predictable Revenue methodology by Aaron Ross in outbound, and nurture your inbound leads more personally to build valuable B2B relations."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -171,7 +170,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Woodpecker.co</title>
-          <meta name="description" content="Woodpecker.co helps B2B companies directly contact prospective clients by automated sending of personalized sales emails and follow-ups. Send emails and follow-up sequences automatically from your mailbox and have all the replies detected. Grow your business within the Predictable Revenue methodology by Aaron Ross in outbound, and nurture your inbound leads more personally to build valuable B2B relations." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

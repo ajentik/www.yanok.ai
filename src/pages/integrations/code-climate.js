@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Code Climate"
-      description="Code Climate consolidates the results from a suite of static analysis tools into a single, real-time report, giving your team the information it needs."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +52,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Code Climate</title>
-          <meta name="description" content="Code Climate consolidates the results from a suite of static analysis tools into a single, real-time report, giving your team the information it needs." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

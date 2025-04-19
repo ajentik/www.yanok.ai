@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="VirtualPostMail"
-      description="VirtualPostMail gives you a permanent U.S. business address to help take your business remote. Read your postal mail online, deposit checks, open business bank/merchant accounts, and more."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +56,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>VirtualPostMail</title>
-          <meta name="description" content="VirtualPostMail gives you a permanent U.S. business address to help take your business remote. Read your postal mail online, deposit checks, open business bank/merchant accounts, and more." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

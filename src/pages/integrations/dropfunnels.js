@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="DropFunnels"
-      description="DropFunnels application allows an authenticated user to transfer their data regarding leads, memberships, and orders from DropFunnels to any other platform."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -151,7 +150,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>DropFunnels</title>
-          <meta name="description" content="DropFunnels application allows an authenticated user to transfer their data regarding leads, memberships, and orders from DropFunnels to any other platform." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

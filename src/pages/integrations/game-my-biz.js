@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Game My Biz"
-      description="Game My Biz is a business-to-game converter platform that provides Key Actionable Insights to improve business operations through a game board genre of your choice."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -66,7 +65,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Game My Biz</title>
-          <meta name="description" content="Game My Biz is a business-to-game converter platform that provides Key Actionable Insights to improve business operations through a game board genre of your choice." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

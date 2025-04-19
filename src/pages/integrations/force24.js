@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Force24"
-      description="Force24 is a UK-based provider of enterprise-level marketing automation. We help to move prospects through their lifecycle, automating their journey. It means speaking to the right person, at the right time, using the right marketing channel."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -101,7 +100,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Force24</title>
-          <meta name="description" content="Force24 is a UK-based provider of enterprise-level marketing automation. We help to move prospects through their lifecycle, automating their journey. It means speaking to the right person, at the right time, using the right marketing channel." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

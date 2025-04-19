@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Givebutter"
-      description="Givebutter is a fundraising platform that helps you raise money online with donation forms, team fundraising campaigns, and ticketing."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -76,7 +75,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Givebutter</title>
-          <meta name="description" content="Givebutter is a fundraising platform that helps you raise money online with donation forms, team fundraising campaigns, and ticketing." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

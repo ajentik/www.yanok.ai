@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Kissmetrics"
-      description="Kissmetrics is a person-based analytics package that makes it insanely easy to track events and funnels online helping you focus on the important bits of your online business."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +56,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Kissmetrics</title>
-          <meta name="description" content="Kissmetrics is a person-based analytics package that makes it insanely easy to track events and funnels online helping you focus on the important bits of your online business." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

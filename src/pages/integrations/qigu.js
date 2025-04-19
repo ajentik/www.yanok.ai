@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Qigu"
-      description="With Qigu, give your training a boost with digital technology to gain in efficiency and design your best digital learning experiences"
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -67,7 +66,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Qigu</title>
-          <meta name="description" content="With Qigu, give your training a boost with digital technology to gain in efficiency and design your best digital learning experiences" />
+          <meta name="description" content={}/> />
         </>
       ),
     },

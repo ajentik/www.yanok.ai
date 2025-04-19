@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Passslot"
-      description="PassSlot helps you build your own mobile wallet using Apple Wallet (Passbook), Android Pay (Google Wallet) and HTML5 to distribute mobile passes to all major platforms."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +52,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Passslot</title>
-          <meta name="description" content="PassSlot helps you build your own mobile wallet using Apple Wallet (Passbook), Android Pay (Google Wallet) and HTML5 to distribute mobile passes to all major platforms." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

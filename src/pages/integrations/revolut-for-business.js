@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Revolut Business"
-      description="Revolut Business is a business account platform with free international payments, prepaid business cards, open API, and apps marketplace."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -61,7 +60,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Revolut Business</title>
-          <meta name="description" content="Revolut Business is a business account platform with free international payments, prepaid business cards, open API, and apps marketplace." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

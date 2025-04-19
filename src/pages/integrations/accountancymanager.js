@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="AccountancyManager"
-      description="AccountancyManager is a practice management software designed by accountants and used by accountants, bookkeepers, and payroll businesses across the UK."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -106,7 +105,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>AccountancyManager</title>
-          <meta name="description" content="AccountancyManager is a practice management software designed by accountants and used by accountants, bookkeepers, and payroll businesses across the UK." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

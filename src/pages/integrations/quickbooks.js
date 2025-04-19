@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="QuickBooks Online"
-      description="QuickBooks Online is the web version of the popular accounting packages QuickBooks. Use any Zapier integration to connect QuickBooks Online to hundreds of other apps."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -251,7 +250,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>QuickBooks Online</title>
-          <meta name="description" content="QuickBooks Online is the web version of the popular accounting packages QuickBooks. Use any Zapier integration to connect QuickBooks Online to hundreds of other apps." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

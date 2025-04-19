@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Good Grants"
-      description="Good Grants is a tool for managing the entire grant life cycle from submission to review to the allocation of funds."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -121,7 +120,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Good Grants</title>
-          <meta name="description" content="Good Grants is a tool for managing the entire grant life cycle from submission to review to the allocation of funds." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

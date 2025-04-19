@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Simple CRM"
-      description="Simple CRM is a team collaboration tool to unite company data in one place"
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -111,7 +110,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Simple CRM</title>
-          <meta name="description" content="Simple CRM is a team collaboration tool to unite company data in one place" />
+          <meta name="description" content={}/> />
         </>
       ),
     },

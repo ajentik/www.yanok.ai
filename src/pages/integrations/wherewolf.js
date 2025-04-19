@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Wherewolf"
-      description="Wherewolf is a digital waiver and guest management system, with powerful marketing analytics and follow-up review generation tools."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +56,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Wherewolf</title>
-          <meta name="description" content="Wherewolf is a digital waiver and guest management system, with powerful marketing analytics and follow-up review generation tools." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

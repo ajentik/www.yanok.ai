@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Chirply.io"
-      description="Chirply.io is an app which allows you to easily manage text message, pre-recorded, and live phone calls from your browser."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -131,7 +130,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Chirply.io</title>
-          <meta name="description" content="Chirply.io is an app which allows you to easily manage text message, pre-recorded, and live phone calls from your browser." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

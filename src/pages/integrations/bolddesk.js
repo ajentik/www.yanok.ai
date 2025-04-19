@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="BoldDesk"
-      description="BoldDesk is a help desk software for managing your support email, automating repetitive tasks, and improving your customer’s experience."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -146,7 +145,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>BoldDesk</title>
-          <meta name="description" content="BoldDesk is a help desk software for managing your support email, automating repetitive tasks, and improving your customer’s experience." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

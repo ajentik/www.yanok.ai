@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Funnelforms"
-      description="Funnelforms is a form builder tool that lets you create innovative forms and optimize your lead generation, recruiting process, price calculation, appointment booking and product configuration."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +56,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Funnelforms</title>
-          <meta name="description" content="Funnelforms is a form builder tool that lets you create innovative forms and optimize your lead generation, recruiting process, price calculation, appointment booking and product configuration." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

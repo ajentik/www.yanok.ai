@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="ServicePRO"
-      description="ServicePRO is a powerful Collaborative Workflow and Service Management System that delivers Return on Investment. Requires 14.2.16.50 or above version of ServicePRO."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -72,7 +71,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>ServicePRO</title>
-          <meta name="description" content="ServicePRO is a powerful Collaborative Workflow and Service Management System that delivers Return on Investment. Requires 14.2.16.50 or above version of ServicePRO." />
+          <meta name="description" content={}/> />
         </>
       ),
     },

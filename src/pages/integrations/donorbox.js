@@ -4,7 +4,6 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Donorbox"
-      description="Donorbox is a powerful fundraising platform powering 50000+ organizations, it is simple to setup and attracts more recurring donors."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -72,7 +71,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Donorbox</title>
-          <meta name="description" content="Donorbox is a powerful fundraising platform powering 50000+ organizations, it is simple to setup and attracts more recurring donors." />
+          <meta name="description" content={}/> />
         </>
       ),
     },
