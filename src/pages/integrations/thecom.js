@@ -56,7 +56,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>The.com</title>
-          <meta name="description" content={}/>s where you share your work with others. It's where the next generation of creators are rebuilding the internet.' />
         </>
       ),
     },

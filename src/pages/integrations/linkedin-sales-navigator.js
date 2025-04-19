@@ -52,7 +52,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Linkedin Sales Navigator</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -56,7 +56,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Coach Catalyst</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

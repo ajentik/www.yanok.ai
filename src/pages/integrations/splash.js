@@ -85,7 +85,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Splash</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

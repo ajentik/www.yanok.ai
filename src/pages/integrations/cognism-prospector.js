@@ -56,7 +56,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Cognism Prospector</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

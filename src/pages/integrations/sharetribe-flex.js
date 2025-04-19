@@ -80,7 +80,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Sharetribe Flex</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -56,7 +56,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Gravitec.net</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

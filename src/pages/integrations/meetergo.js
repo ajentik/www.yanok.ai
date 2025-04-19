@@ -70,7 +70,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>meetergo</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -91,7 +91,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Arthur Online</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

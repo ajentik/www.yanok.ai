@@ -56,7 +56,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Tall Bob</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

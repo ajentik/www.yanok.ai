@@ -56,7 +56,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Bouncify</title>
-          <meta name="description" content={}/>ll be able to validate your emails and get rid of unwanted emails from your email database.' />
         </>
       ),
     },

@@ -80,7 +80,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Paycove</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

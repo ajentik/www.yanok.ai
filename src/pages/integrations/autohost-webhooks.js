@@ -90,7 +90,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Autohost</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -70,7 +70,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Swordfish.ai</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

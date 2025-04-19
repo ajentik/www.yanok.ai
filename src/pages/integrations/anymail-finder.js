@@ -65,7 +65,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Anymail finder</title>
-          <meta name="description" content={}/>s email address.' />
         </>
       ),
     },

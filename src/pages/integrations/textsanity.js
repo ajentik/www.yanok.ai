@@ -85,7 +85,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>TextSanity</title>
-          <meta name="description" content={}/>s the easiest way to automate your text marketing.' />
         </>
       ),
     },

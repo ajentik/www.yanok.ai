@@ -80,7 +80,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Zoho ShowTime</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -190,7 +190,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Keygen</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

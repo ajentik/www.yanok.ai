@@ -75,7 +75,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>towio</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

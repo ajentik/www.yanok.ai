@@ -110,7 +110,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Zoho Campaigns</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -190,7 +190,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Teamwork CRM</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

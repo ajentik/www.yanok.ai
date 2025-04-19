@@ -181,7 +181,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>EVO Appraisal Management Software</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

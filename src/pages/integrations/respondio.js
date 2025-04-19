@@ -200,7 +200,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>respond.io</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

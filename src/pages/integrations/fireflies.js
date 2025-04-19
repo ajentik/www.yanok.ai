@@ -75,7 +75,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Fireflies.ai</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

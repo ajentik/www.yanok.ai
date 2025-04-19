@@ -105,7 +105,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Content Snare</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

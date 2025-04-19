@@ -60,7 +60,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Assessment Generator</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

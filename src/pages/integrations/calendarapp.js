@@ -61,7 +61,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>CalendarApp</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

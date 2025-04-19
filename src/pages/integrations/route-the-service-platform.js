@@ -90,7 +90,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Route the Service Platform</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

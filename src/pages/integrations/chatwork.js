@@ -66,7 +66,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Chatwork</title>
-          <meta name="description" content={}/>s team chat, tasks, video chats, and more in one place.' />
         </>
       ),
     },

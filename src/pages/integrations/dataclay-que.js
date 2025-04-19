@@ -90,7 +90,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Dataclay QUE</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

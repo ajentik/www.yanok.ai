@@ -75,7 +75,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Vidyard</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

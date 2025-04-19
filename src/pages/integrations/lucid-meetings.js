@@ -80,7 +80,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Lucid Meetings</title>
-          <meta name="description" content={}/>s success.' />
         </>
       ),
     },

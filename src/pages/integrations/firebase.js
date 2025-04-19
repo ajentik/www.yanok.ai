@@ -80,7 +80,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Firebase / Firestore</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

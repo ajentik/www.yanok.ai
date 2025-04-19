@@ -80,7 +80,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>DailyBot</title>
-          <meta name="description" content={}/>s daily assistant. Put your stand-up meetings, status reports and check-ins on cruise control, save time and increase productivity.' />
         </>
       ),
     },

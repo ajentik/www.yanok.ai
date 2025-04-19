@@ -71,7 +71,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Omega Estimating</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -95,7 +95,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Tick</title>
-          <meta name="description" content={}/>s time tracking worth everyone's time.' />
         </>
       ),
     },

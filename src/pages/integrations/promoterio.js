@@ -105,7 +105,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Promoter.io</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

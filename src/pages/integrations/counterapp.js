@@ -66,7 +66,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Counter.app</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

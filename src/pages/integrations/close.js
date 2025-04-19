@@ -425,7 +425,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Close</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

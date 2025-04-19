@@ -75,7 +75,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Black Magic</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

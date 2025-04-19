@@ -76,7 +76,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Detectify</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

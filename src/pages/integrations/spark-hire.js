@@ -65,7 +65,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Spark Hire</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

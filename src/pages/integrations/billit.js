@@ -96,7 +96,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Billit</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

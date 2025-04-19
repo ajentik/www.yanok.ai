@@ -85,7 +85,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Recruiters*Unite</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

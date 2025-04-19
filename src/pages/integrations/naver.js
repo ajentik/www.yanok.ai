@@ -52,7 +52,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Naver</title>
-          <meta name="description" content={}/>s #1 search engine and offers a large variety of online services for Asian users.' />
         </>
       ),
     },

@@ -80,7 +80,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Call Assist</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

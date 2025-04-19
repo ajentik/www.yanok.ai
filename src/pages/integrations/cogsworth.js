@@ -71,7 +71,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Cogsworth</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

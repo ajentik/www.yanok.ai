@@ -105,7 +105,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Vetrina Live</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

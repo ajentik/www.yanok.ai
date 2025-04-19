@@ -120,7 +120,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>TrackMage</title>
-          <meta name="description" content={}/>s with a comprehensive post-purchase experience.' />
         </>
       ),
     },

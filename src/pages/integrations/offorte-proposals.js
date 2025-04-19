@@ -145,7 +145,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Offorte Proposals</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -60,7 +60,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Plumsail Documents</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

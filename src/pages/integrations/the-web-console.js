@@ -75,7 +75,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>The Web Console</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

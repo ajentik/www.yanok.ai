@@ -170,7 +170,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Lawcus</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

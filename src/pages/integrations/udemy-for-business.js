@@ -61,7 +61,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Udemy for Business</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

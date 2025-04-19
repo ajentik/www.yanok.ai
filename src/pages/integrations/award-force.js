@@ -170,7 +170,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Award Force</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

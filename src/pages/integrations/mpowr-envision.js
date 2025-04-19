@@ -90,7 +90,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>MPOWR Envision</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

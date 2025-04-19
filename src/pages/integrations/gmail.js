@@ -130,7 +130,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Gmail</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

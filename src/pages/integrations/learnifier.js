@@ -196,7 +196,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Learnifier</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

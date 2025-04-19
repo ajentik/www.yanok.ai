@@ -56,7 +56,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Hyperstack Certificates</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

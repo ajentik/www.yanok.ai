@@ -56,7 +56,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Pipes.ai</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -95,7 +95,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Framework360</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

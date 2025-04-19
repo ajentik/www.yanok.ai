@@ -245,7 +245,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>DEAR Inventory</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

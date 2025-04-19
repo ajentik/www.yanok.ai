@@ -60,7 +60,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Crescendo Lab</title>
-          <meta name="description" content={}/>s marketing platform - MAAC' />
         </>
       ),
     },

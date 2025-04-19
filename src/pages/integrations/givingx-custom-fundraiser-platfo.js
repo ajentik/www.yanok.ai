@@ -56,7 +56,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>GivingX Custom Fundraiser Platform</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

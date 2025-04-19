@@ -61,7 +61,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Yeti Snow</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

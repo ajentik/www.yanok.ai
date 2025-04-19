@@ -75,7 +75,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>E-Sign</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

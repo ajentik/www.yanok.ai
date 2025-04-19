@@ -75,7 +75,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Shippo</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

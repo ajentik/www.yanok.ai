@@ -110,7 +110,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>ActiveTrail</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

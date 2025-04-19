@@ -70,7 +70,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Jottacloud</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

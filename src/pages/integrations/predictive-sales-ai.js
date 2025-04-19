@@ -56,7 +56,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Predictive Sales AI</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

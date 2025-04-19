@@ -60,7 +60,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Google BigQuery</title>
-          <meta name="description" content={}/>s serverless and highly scalable enterprise data warehouse, designed to make all your data analysts productive.' />
         </>
       ),
     },

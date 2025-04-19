@@ -56,7 +56,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Launch Control</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

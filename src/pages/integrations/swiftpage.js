@@ -52,7 +52,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Swiftpage</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

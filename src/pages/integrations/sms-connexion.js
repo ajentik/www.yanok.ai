@@ -76,7 +76,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>SMS Connexion</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

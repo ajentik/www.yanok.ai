@@ -120,7 +120,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Mailshake</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

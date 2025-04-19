@@ -71,7 +71,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Mothernode CRM</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

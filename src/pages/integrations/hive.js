@@ -90,7 +90,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Hive</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

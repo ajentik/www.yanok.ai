@@ -75,7 +75,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Boost Note</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

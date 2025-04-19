@@ -56,7 +56,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>MillionVerifier</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -95,7 +95,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Nusii Proposals</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

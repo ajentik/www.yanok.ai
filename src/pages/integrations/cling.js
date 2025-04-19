@@ -90,7 +90,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Cling</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

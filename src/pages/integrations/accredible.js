@@ -90,7 +90,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Accredible Certificates</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

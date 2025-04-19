@@ -85,7 +85,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>i-Reserve</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

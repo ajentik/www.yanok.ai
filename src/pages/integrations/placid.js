@@ -75,7 +75,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Placid</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

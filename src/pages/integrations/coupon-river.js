@@ -66,7 +66,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Coupon River</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

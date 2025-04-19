@@ -66,7 +66,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Gender-API.com</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

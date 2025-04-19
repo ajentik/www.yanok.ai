@@ -180,7 +180,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>JetBrains Space</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -76,7 +76,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Clicfans</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

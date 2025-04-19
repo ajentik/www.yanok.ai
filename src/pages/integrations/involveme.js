@@ -56,7 +56,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>involve.me</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -80,7 +80,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Tint Wiz</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

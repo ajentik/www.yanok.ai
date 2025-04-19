@@ -56,7 +56,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Hiver bot</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

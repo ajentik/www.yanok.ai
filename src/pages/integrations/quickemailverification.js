@@ -56,7 +56,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>QuickEmailVerification</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

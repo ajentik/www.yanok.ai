@@ -105,7 +105,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Magento 2.X</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

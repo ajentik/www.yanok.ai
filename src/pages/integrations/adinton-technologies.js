@@ -56,7 +56,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Adinton-Technologies</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

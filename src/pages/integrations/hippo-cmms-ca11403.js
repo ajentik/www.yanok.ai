@@ -60,7 +60,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Hippo CMMS</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

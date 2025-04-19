@@ -56,7 +56,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>CallCabinet Atmos</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

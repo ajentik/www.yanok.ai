@@ -60,7 +60,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Reshape API</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

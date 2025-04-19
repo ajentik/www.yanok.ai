@@ -85,7 +85,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Notion</title>
-          <meta name="description" content={}/>s the all-in-one workspace for you and your team.' />
         </>
       ),
     },

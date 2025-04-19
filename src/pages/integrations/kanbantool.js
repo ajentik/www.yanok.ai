@@ -175,7 +175,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Kanban Tool</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

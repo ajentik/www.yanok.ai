@@ -81,7 +81,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Action Network</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

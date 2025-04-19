@@ -56,7 +56,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Webbymize</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

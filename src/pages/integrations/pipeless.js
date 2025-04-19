@@ -101,7 +101,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Pipeless Recommendations</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

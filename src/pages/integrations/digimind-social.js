@@ -65,7 +65,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Digimind Social</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

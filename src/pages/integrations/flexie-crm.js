@@ -205,7 +205,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Flexie CRM</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -61,7 +61,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Engage by Cell</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

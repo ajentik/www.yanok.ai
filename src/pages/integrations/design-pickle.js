@@ -90,7 +90,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Design Pickle</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

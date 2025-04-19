@@ -61,7 +61,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Leadmonk</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

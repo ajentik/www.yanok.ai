@@ -61,7 +61,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Jostle</title>
-          <meta name="description" content={}/>re an employee success platform that's replacing intranets.' />
         </>
       ),
     },

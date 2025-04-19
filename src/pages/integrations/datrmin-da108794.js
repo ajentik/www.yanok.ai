@@ -56,7 +56,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Datrm.in</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

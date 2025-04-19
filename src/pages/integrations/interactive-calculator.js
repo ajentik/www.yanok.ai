@@ -61,7 +61,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Interactive Calculator</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

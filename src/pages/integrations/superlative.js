@@ -56,7 +56,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Superlative</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

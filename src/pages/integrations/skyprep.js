@@ -80,7 +80,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>SkyPrep</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

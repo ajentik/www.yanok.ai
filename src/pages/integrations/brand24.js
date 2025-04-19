@@ -52,7 +52,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Brand24</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

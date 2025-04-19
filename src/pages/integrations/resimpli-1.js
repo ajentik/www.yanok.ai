@@ -61,7 +61,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>RESimpli 2.0</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

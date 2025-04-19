@@ -61,7 +61,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Social WiFi</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

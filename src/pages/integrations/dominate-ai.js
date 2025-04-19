@@ -90,7 +90,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Dominate Ai</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

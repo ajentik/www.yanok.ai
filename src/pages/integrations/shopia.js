@@ -90,7 +90,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Shopia</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

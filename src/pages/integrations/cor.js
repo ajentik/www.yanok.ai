@@ -195,7 +195,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>COR</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

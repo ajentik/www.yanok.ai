@@ -80,7 +80,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Image Relay</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -85,7 +85,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Zoom</title>
-          <meta name="description" content={}/>s reliable, video-first unified communications platform provides video meetings, voice, webinars, and chat across desktops, phones, mobile devices, and conference systems' />
         </>
       ),
     },

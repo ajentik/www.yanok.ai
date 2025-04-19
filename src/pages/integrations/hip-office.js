@@ -91,7 +91,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Home Inspector Pro Office</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

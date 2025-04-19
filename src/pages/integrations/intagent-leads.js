@@ -56,7 +56,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>INTAGENT Leads</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

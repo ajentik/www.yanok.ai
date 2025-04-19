@@ -65,7 +65,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Instagram for Business</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

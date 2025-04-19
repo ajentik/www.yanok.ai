@@ -71,7 +71,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>360 Application Service</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

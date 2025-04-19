@@ -85,7 +85,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Tabidoo</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

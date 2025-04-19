@@ -56,7 +56,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Nightfall DLP</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

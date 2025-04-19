@@ -141,7 +141,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Honeycommb</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

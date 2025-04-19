@@ -71,7 +71,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>CSG Forte Payments</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

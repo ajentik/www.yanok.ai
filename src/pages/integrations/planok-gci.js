@@ -135,7 +135,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>PlanOK GCI</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

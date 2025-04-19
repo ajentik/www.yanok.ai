@@ -90,7 +90,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>QApp</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

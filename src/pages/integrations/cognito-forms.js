@@ -100,7 +100,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Cognito Forms</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

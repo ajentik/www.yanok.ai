@@ -105,7 +105,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Uptics</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

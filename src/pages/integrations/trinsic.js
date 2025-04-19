@@ -85,7 +85,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Trinsic</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

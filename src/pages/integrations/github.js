@@ -225,7 +225,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>GitHub</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

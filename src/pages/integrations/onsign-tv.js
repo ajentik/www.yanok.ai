@@ -95,7 +95,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>OnSign TV</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

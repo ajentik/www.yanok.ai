@@ -52,7 +52,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Fit3D</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

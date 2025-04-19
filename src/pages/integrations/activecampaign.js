@@ -275,7 +275,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>ActiveCampaign</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

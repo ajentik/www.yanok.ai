@@ -61,7 +61,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Nomisma</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

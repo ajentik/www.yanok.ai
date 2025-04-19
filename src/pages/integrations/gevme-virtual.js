@@ -180,7 +180,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>GEVME Virtual</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

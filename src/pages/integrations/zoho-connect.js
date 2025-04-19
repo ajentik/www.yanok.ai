@@ -115,7 +115,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Zoho Connect</title>
-          <meta name="description" content={}/>s private social network that redefines the way your employees and teams share information and collaborate with each other.' />
         </>
       ),
     },

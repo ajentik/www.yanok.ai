@@ -70,7 +70,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Lighthouse By Cloudify</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

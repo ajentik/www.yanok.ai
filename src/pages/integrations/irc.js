@@ -52,7 +52,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>IRC</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

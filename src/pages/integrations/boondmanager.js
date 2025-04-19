@@ -235,7 +235,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>BoondManager</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

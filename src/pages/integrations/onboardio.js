@@ -165,7 +165,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Onboard.io</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

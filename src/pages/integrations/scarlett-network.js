@@ -71,7 +71,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Scarlett Network</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

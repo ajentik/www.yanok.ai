@@ -75,7 +75,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Quentn</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

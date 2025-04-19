@@ -61,7 +61,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Databox</title>
-          <meta name="description" content={}/>s going on with your business and keep KPIs from cloud services, spreadsheets, databases in one place.' />
         </>
       ),
     },

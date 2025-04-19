@@ -56,7 +56,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Doclift PDF</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

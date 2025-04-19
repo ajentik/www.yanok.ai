@@ -80,7 +80,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Mosaic</title>
-          <meta name="description" content={}/> efficiency and profitability by automating the planning, management, and tracking of time' />
         </>
       ),
     },

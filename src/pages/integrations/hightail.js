@@ -95,7 +95,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Hightail</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

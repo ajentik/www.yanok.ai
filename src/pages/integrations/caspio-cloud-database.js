@@ -70,7 +70,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Caspio Cloud Database</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

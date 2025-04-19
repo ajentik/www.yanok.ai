@@ -255,7 +255,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Crowdin</title>
-          <meta name="description" content={}/>s the perfect place to effectively manage all of your multilingual content.' />
         </>
       ),
     },

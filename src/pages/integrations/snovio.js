@@ -120,7 +120,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Snov.io</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

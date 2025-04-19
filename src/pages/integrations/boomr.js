@@ -52,7 +52,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Boomr</title>
-          <meta name="description" content={}/>s employee time tracking, timesheets, and time clock app makes it easy to accurately track & manage your workforce, payroll & more.' />
         </>
       ),
     },

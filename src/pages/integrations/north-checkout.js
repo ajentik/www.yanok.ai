@@ -61,7 +61,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Divi Checkout</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

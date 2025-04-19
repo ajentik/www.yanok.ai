@@ -66,7 +66,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Goliath Systemer</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

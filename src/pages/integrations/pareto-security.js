@@ -66,7 +66,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Pareto Security</title>
-          <meta name="description" content={}/>s security configuration. It helps you take care of 20% of security tasks that prevent 80% of problems.' />
         </>
       ),
     },

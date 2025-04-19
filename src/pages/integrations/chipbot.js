@@ -71,7 +71,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>ChipBot</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

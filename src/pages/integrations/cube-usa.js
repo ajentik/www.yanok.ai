@@ -75,7 +75,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>cube-usa</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

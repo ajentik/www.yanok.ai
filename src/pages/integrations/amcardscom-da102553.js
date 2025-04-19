@@ -61,7 +61,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>AMcards.com</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

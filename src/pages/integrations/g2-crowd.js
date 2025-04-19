@@ -71,7 +71,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>G2 Crowd</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

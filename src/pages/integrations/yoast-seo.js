@@ -56,7 +56,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Yoast SEO</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

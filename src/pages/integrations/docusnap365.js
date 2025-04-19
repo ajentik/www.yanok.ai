@@ -121,7 +121,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Docusnap365</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -80,7 +80,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>sticky.io</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

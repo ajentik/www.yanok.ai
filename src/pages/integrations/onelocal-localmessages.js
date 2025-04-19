@@ -110,7 +110,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>OneLocal LocalMessages</title>
-          <meta name="description" content={}/>s full product suite.' />
         </>
       ),
     },

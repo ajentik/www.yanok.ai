@@ -75,7 +75,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>SigParser</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

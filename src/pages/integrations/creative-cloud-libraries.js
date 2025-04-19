@@ -85,7 +85,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Adobe Creative Cloud Libraries</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

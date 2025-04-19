@@ -90,7 +90,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Intruder</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

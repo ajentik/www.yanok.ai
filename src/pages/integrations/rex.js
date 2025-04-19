@@ -225,7 +225,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Rex</title>
-          <meta name="description" content={}/>s cloud and mobile real estate platform.' />
         </>
       ),
     },

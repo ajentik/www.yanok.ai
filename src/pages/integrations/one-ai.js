@@ -66,7 +66,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>One AI</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

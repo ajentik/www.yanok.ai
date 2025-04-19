@@ -80,7 +80,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>LLN-Robot</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -56,7 +56,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>V8 Media</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

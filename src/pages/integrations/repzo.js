@@ -160,7 +160,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Repzo</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

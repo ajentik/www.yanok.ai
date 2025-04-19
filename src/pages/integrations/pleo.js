@@ -90,7 +90,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Pleo</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

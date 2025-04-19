@@ -165,7 +165,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Dropmatix</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

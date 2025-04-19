@@ -280,7 +280,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>vivenu</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

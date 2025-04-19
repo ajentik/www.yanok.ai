@@ -60,7 +60,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Philips SpeechLive</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -52,7 +52,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Sprout Social</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -65,7 +65,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Disparo PRO</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

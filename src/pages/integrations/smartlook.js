@@ -70,7 +70,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Smartlook</title>
-          <meta name="description" content={}/>s going on in your app and website.' />
         </>
       ),
     },

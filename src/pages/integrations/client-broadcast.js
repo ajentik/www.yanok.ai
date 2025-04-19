@@ -60,7 +60,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Client Broadcast</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

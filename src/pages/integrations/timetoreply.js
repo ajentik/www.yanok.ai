@@ -155,7 +155,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>timetoreply</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

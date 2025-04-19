@@ -52,7 +52,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Yext</title>
-          <meta name="description" content={}/> location-related information on multiple directories.' />
         </>
       ),
     },

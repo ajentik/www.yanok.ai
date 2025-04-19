@@ -70,7 +70,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>YouCanBook.Me</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

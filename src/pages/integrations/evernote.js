@@ -115,7 +115,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Evernote</title>
-          <meta name="description" content={}/>s work together in one digital workspace—available on all major mobile platforms and devices. Using Evernote for work? See Evernote Business.' />
         </>
       ),
     },

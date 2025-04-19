@@ -70,7 +70,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>FireText</title>
-          <meta name="description" content={}/>re brand new to text message marketing or a seasoned hand.' />
         </>
       ),
     },

@@ -52,7 +52,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>SKILL-LYNC Sales CRM</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -66,7 +66,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Landingi</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

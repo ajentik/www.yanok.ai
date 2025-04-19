@@ -360,7 +360,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>MOCO</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

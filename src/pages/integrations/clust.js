@@ -90,7 +90,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Clust</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

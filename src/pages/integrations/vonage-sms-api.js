@@ -65,7 +65,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Vonage SMS API</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

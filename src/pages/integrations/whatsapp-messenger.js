@@ -52,7 +52,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>WhatsApp Messenger</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

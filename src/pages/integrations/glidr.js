@@ -80,7 +80,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Glidr</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

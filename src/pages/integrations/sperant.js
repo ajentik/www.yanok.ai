@@ -65,7 +65,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Sperant</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

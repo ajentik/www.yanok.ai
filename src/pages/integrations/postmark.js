@@ -75,7 +75,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>ActiveCampaign Postmark</title>
-          <meta name="description" content={}/>s emails to the inbox, fast. Instantly send and receive emails with zero maintenance. Our infrastructure combined with proper content and delivery practices means higher response rates from your customers.' />
         </>
       ),
     },

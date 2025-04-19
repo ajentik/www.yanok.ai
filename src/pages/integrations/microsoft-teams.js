@@ -95,7 +95,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Microsoft Teams</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

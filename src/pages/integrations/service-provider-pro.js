@@ -110,7 +110,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Service Provider Pro</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

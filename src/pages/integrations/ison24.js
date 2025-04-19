@@ -70,7 +70,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>IsOn24</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

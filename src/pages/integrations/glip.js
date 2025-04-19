@@ -56,7 +56,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Glip</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

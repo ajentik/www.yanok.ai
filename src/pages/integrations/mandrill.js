@@ -65,7 +65,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Mailchimp Transactional</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

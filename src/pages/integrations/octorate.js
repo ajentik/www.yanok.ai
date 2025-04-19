@@ -70,7 +70,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Octorate</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

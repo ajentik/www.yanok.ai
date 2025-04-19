@@ -75,7 +75,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Reward Sciences</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

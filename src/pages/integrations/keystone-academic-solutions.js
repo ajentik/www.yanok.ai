@@ -60,7 +60,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Keystone Academic Solutions</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -56,7 +56,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>POWR My Contacts</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

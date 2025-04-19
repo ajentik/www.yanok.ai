@@ -60,7 +60,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>IMMO CRM 360</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

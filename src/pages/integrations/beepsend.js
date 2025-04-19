@@ -65,7 +65,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Beepsend SMS</title>
-          <meta name="description" content={}/>s SMS services lets you send and receive SMS from mobile phones all over the world.' />
         </>
       ),
     },

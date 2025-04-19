@@ -71,7 +71,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Product Hunt</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

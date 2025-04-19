@@ -60,7 +60,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Cognitive Invoice</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

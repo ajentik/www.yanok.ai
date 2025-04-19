@@ -135,7 +135,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Process Plan</title>
-          <meta name="description" content={}/>t have to worry about making sure things are done correctly. Make your business run like a well-oiled machine while you sit back and relax!' />
         </>
       ),
     },

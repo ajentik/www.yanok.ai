@@ -70,7 +70,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>BulkSMS.com</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

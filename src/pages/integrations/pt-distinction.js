@@ -90,7 +90,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>PT Distinction</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

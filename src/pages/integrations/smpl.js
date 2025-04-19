@@ -76,7 +76,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>smpl</title>
-          <meta name="description" content={}/>re running a coworking business, a makerspace, or a gallery, smpl seamlessly automates your member billing and invoicing, meeting room reservations, and communication in one place. Get started with smpl and be up and running within minutes.' />
         </>
       ),
     },

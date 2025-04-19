@@ -90,7 +90,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Viral Loops</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

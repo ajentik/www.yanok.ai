@@ -60,7 +60,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>once.to</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

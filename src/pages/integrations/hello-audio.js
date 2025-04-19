@@ -75,7 +75,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Hello Audio</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

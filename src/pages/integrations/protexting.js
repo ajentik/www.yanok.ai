@@ -90,7 +90,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Protexting</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

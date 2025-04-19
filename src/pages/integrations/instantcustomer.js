@@ -70,7 +70,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>TPNI Engage</title>
-          <meta name="description" content={}/>s first completely integrated multi-channel lead capture, follow up, sales and marketing system.' />
         </>
       ),
     },

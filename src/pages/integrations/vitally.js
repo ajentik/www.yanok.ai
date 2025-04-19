@@ -255,7 +255,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Vitally</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

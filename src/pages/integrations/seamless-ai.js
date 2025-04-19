@@ -71,7 +71,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Seamless AI</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

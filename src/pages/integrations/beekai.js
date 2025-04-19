@@ -56,7 +56,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>BEEKAI</title>
-          <meta name="description" content={}/>s workflow.' />
         </>
       ),
     },

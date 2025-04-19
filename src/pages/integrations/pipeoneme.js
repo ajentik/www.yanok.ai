@@ -80,7 +80,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>PipeOne.me</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

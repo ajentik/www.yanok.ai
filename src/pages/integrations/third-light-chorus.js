@@ -80,7 +80,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Third Light Chorus</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

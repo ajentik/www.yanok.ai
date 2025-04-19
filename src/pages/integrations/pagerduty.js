@@ -75,7 +75,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>PagerDuty</title>
-          <meta name="description" content={}/>s digital operations. PagerDuty identifies issues and opportunities in real time and brings together the right people to respond to problems faster and prevent them in the future. From digital disruptors to Fortune 500 companies, over 12,000 businesses rely on PagerDuty to help them continually improve their digital operations-so their teams can spend less time reacting to incidents and more time building for the future.' />
         </>
       ),
     },

@@ -71,7 +71,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Carma Marketing Hub</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

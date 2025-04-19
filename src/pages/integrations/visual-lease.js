@@ -120,7 +120,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Visual Lease</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

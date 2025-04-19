@@ -70,7 +70,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Jestor</title>
-          <meta name="description" content={}/>s a relational database powered by analytics, low-code and no-code automations.' />
         </>
       ),
     },

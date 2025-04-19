@@ -80,7 +80,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>GainKnowHow</title>
-          <meta name="description" content={}/>s like "An org-chart for your skills".' />
         </>
       ),
     },

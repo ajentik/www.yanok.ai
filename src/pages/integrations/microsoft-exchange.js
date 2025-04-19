@@ -110,7 +110,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Microsoft Exchange</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -70,7 +70,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>360dialog</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

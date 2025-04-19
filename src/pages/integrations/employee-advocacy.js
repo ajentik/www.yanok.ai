@@ -65,7 +65,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Employee Advocacy by Sprout Social</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

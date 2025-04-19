@@ -160,7 +160,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Néo Sphère</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

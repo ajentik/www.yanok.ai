@@ -135,7 +135,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Chargify</title>
-          <meta name="description" content={}/>s designed to remove billing bottlenecks and give teams the speed and flexibility to grow faster.' />
         </>
       ),
     },

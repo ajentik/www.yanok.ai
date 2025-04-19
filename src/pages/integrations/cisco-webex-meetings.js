@@ -56,7 +56,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Cisco Webex Meetings</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -56,7 +56,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>CViewSurvey</title>
-          <meta name="description" content={}/>s as well as employee's loyalty.' />
         </>
       ),
     },

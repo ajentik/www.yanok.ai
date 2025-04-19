@@ -52,7 +52,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Parse.ly</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -56,7 +56,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Blue Social</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

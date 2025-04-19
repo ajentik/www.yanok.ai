@@ -125,7 +125,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Go1</title>
-          <meta name="description" content={}/>re looking for with our comprehensive learning and development library featuring hundreds of thousands of resources from the world's best providers.' />
         </>
       ),
     },

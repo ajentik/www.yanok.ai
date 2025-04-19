@@ -60,7 +60,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>nandbox</title>
-          <meta name="description" content={}/>s plus interactive channels of unlimited subscribers, you can join or create yourself. You can also have groups of up to 10,000 members. And - at any time - you can recall or edit your wrong-sent messages.' />
         </>
       ),
     },

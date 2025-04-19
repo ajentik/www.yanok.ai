@@ -80,7 +80,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Super Dispatch</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -85,7 +85,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Memegen.link</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

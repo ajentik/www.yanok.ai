@@ -80,7 +80,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Humanitix</title>
-          <meta name="description" content={}/>s choice.' />
         </>
       ),
     },

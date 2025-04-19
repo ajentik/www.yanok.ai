@@ -56,7 +56,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>iList by GryphTech</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

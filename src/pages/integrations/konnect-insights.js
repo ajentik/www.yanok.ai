@@ -90,7 +90,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Konnect Insights</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

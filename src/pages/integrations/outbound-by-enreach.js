@@ -60,7 +60,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Outbound by Enreach</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

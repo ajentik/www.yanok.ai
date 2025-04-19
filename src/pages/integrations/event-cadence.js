@@ -56,7 +56,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Event Cadence</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -61,7 +61,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>E-Cinch</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

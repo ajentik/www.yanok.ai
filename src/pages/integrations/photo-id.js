@@ -80,7 +80,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>PHOTO iD by U Scope</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

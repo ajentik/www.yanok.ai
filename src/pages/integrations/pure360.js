@@ -80,7 +80,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Pure360</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -56,7 +56,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>ArtiBot.ai</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

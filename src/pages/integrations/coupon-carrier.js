@@ -90,7 +90,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Coupon Carrier</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

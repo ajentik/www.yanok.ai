@@ -105,7 +105,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>E-goi</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

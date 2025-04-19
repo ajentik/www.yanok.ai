@@ -66,7 +66,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>AppointmentCore</title>
-          <meta name="description" content={}/>s integration allows you to trigger actions in your trusted systems whenever prospects or customers book appointments with your AppointmentCore account!' />
         </>
       ),
     },

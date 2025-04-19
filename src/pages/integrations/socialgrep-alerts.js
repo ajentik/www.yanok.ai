@@ -61,7 +61,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>SocialGrep Alerts</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

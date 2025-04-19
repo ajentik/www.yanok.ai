@@ -105,7 +105,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Novi AMS</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

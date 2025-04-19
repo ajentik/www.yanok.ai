@@ -85,7 +85,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Scale Fast</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -76,7 +76,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>PDF Blocks</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

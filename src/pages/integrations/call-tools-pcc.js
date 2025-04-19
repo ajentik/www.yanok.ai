@@ -240,7 +240,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Call Tools PCC</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

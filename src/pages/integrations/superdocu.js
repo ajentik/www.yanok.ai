@@ -80,7 +80,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Superdocu</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

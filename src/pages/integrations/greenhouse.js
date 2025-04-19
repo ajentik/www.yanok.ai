@@ -105,7 +105,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Greenhouse</title>
-          <meta name="description" content={}/> hiring needs.' />
         </>
       ),
     },

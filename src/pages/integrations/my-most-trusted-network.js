@@ -71,7 +71,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>My Most Trusted Network</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -135,7 +135,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Upsales</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

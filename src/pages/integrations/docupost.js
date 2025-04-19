@@ -61,7 +61,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>DocuPost Postal Mail</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

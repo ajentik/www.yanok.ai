@@ -60,7 +60,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Drag'n Survey</title>
-          <meta name="description" content={}/>n Survey make it easy to build powerful surveys to get and analyze the information you need.' />
         </>
       ),
     },

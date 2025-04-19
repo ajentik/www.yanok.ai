@@ -160,7 +160,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Drip</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

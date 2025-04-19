@@ -95,7 +95,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Learn Amp</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

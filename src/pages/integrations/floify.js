@@ -52,7 +52,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Floify</title>
-          <meta name="description" content={}/>s mortgage automation and point-of-sale software solution streamlines and organizes the loan origination process for lenders and borrowers alike.' />
         </>
       ),
     },

@@ -56,7 +56,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Fresh KDS</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

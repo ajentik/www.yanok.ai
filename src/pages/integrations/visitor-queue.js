@@ -56,7 +56,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Visitor Queue</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

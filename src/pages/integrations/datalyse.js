@@ -105,7 +105,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Datalyse</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

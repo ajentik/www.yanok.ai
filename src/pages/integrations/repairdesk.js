@@ -130,7 +130,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>RepairDesk</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

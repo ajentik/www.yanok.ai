@@ -65,7 +65,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Gravity Forms</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

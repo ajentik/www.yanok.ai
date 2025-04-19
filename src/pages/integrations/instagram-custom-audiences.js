@@ -61,7 +61,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Instagram Custom Audiences</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

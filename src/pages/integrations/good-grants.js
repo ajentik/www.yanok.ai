@@ -120,7 +120,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Good Grants</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

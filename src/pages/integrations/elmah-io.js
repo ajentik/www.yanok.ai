@@ -56,7 +56,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>elmah.io</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

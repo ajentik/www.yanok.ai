@@ -76,7 +76,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>QuickChart</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

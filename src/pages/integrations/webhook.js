@@ -85,7 +85,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Webhooks by Zapier</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

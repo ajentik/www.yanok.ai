@@ -71,7 +71,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Relay Construction Solutions</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

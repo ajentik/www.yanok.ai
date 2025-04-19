@@ -90,7 +90,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>SMS Masivos</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

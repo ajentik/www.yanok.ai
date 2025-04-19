@@ -56,7 +56,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>remove.bg</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

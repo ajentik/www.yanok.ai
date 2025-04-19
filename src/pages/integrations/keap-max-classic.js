@@ -190,7 +190,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Keap Max Classic</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

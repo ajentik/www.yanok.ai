@@ -65,7 +65,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>K Factors</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

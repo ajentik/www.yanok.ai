@@ -90,7 +90,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Fuze</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

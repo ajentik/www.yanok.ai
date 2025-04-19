@@ -52,7 +52,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>CDK Global</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

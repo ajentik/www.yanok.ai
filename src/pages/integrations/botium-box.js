@@ -61,7 +61,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Botium Box</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

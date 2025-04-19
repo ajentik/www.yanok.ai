@@ -110,7 +110,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Vervoe</title>
-          <meta name="description" content={}/>s AI-powered skill testing platform automatically recommends the strongest candidates to employers based purely on their performance in 'Talent Trials,' saving time and letting top candidates shine through sooner.' />
         </>
       ),
     },

@@ -145,7 +145,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>SolarWinds Service Desk</title>
-          <meta name="description" content={}/>ll love to use.' />
         </>
       ),
     },

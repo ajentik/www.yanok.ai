@@ -150,7 +150,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Planyo Online Booking</title>
-          <meta name="description" content={}/>s used, amongst others, by businesses offering vacation properties, car rentals, hotels, driving schools, yacht charters, doctors and therapists, conference rooms, tennis courts, car parks, event tickets or any other bookings you could imagine.' />
         </>
       ),
     },

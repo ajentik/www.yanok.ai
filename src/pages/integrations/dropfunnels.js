@@ -150,7 +150,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>DropFunnels</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

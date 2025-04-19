@@ -66,7 +66,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Fattura24</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

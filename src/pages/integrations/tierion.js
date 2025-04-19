@@ -52,7 +52,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Tierion</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

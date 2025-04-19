@@ -52,7 +52,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Amazon Drive</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

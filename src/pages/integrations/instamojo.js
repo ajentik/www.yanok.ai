@@ -61,7 +61,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Instamojo</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

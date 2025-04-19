@@ -75,7 +75,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Referral Factory</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

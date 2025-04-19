@@ -91,7 +91,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Versium REACH</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

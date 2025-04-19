@@ -80,7 +80,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>WMS-Lite</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

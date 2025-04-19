@@ -52,7 +52,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Active Directory</title>
-          <meta name="description" content={}/>s Active Directory is a directory service often bundled with Microsoft Windows Server operating systems or as a part of Azure hosting. It is an interface for user authentication and identity as well as a device (like computers or printers) registration.' />
         </>
       ),
     },

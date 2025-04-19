@@ -90,7 +90,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Flutterwave</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

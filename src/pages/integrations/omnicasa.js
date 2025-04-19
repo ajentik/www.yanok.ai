@@ -90,7 +90,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Omnicasa</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

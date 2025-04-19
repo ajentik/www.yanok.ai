@@ -320,7 +320,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Agiled</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

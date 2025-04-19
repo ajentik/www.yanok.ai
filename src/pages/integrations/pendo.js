@@ -66,7 +66,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Pendo Feedback</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

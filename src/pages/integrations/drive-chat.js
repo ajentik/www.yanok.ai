@@ -56,7 +56,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Drive Chat</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

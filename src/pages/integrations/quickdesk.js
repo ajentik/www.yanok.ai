@@ -95,7 +95,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>QuickDesk</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

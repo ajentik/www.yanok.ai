@@ -95,7 +95,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Direct Mail</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

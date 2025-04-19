@@ -135,7 +135,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Sierra Interactive</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

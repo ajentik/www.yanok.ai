@@ -60,7 +60,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Labelf AI</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

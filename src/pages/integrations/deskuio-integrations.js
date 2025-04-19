@@ -110,7 +110,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Desku.io</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

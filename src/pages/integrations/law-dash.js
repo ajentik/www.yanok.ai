@@ -60,7 +60,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Law Dash</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

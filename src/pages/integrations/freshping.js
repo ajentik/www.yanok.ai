@@ -56,7 +56,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Freshping</title>
-          <meta name="description" content={}/>ll also get 5 public status pages, multi-user logins (up to 30 users), global latency, and Apdex reporting.' />
         </>
       ),
     },

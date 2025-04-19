@@ -60,7 +60,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Confluence Server</title>
-          <meta name="description" content={}/>Confluence Cloud' app for server-hosted instances.' />
         </>
       ),
     },

@@ -52,7 +52,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Salesforce Marketing Cloud</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -81,7 +81,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Swell</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

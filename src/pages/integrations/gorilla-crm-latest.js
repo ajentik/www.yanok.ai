@@ -56,7 +56,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Gorilla CRM</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -95,7 +95,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Feature Watch</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

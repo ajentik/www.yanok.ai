@@ -105,7 +105,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Basecamp Classic</title>
-          <meta name="description" content={}/>s you keep track of multiple projects, milestones, todo items and more. An easy way to consolidate your work and keep your inbox clean.' />
         </>
       ),
     },

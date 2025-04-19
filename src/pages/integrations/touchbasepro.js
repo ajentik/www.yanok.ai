@@ -90,7 +90,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>TouchBasePro</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

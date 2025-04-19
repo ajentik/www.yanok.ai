@@ -56,7 +56,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>CalorieLeads</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

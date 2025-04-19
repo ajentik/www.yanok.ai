@@ -81,7 +81,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>SimplyBook.me</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

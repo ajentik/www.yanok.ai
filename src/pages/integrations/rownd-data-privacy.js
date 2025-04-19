@@ -75,7 +75,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Rownd Data Privacy</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

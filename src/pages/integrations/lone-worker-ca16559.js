@@ -76,7 +76,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Lone Worker by Ok Alone</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

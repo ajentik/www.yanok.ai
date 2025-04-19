@@ -80,7 +80,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Radius Agent</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

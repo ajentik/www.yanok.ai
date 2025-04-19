@@ -71,7 +71,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Stannp</title>
-          <meta name="description" content={}/> mail boxes, anywhere in the world.' />
         </>
       ),
     },

@@ -70,7 +70,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Joonto</title>
-          <meta name="description" content={}/>s call activities from their mobile phone including call stats, optional call recording, call logs, and call monitoring.' />
         </>
       ),
     },

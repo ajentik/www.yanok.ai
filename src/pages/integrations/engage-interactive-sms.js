@@ -56,7 +56,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Engage Interactive - SMS</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

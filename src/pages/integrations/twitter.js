@@ -110,7 +110,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Twitter</title>
-          <meta name="description" content={}/>s happening around the world in real time. Share your ideas in Tweets, follow hashtags to keep up with trends, and join in the global conversation.' />
         </>
       ),
     },

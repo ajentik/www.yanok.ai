@@ -135,7 +135,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>SproutVideo</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

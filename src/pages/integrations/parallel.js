@@ -85,7 +85,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Parallel</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

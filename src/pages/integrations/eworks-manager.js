@@ -380,7 +380,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Eworks Manager</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

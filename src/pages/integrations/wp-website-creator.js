@@ -75,7 +75,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>WordPress Website Creator</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

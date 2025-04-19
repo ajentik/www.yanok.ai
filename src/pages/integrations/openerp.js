@@ -140,7 +140,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Odoo ERP Self Hosted</title>
-          <meta name="description" content={}/>s products. It works with instances that are self-hosted.' />
         </>
       ),
     },

@@ -60,7 +60,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>REMARKETER</title>
-          <meta name="description" content={}/>s specifically designed for Real Estate Professionals!' />
         </>
       ),
     },

@@ -56,7 +56,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Curb Hero</title>
-          <meta name="description" content={}/>s proven to save time and get better quality lead data. Using Curb Hero subscription-free app, Realtors can quickly create a digital open house sign-in that is a showcase for their brand. Their logo, photos, color palette, lead questions, and follow-up messaging are all customizable. Curb Hero's Zapier integration can be used to unlock infinite possibilities with the data collected at open houses or in property marketing!' />
         </>
       ),
     },

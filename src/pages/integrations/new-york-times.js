@@ -56,7 +56,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>New York Times</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

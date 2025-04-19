@@ -101,7 +101,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>CauseVox</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

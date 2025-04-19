@@ -101,7 +101,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Writesonic Bulk</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

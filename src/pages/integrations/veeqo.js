@@ -100,7 +100,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Veeqo</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

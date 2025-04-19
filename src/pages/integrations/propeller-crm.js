@@ -52,7 +52,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Propeller CRM</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

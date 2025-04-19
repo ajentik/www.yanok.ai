@@ -56,7 +56,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Parceldoo</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

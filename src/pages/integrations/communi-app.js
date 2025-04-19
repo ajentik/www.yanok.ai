@@ -120,7 +120,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Communi App</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

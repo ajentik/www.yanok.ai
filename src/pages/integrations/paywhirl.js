@@ -91,7 +91,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>PayWhirl</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

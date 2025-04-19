@@ -90,7 +90,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Elite Funnels</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

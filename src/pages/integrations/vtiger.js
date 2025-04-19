@@ -170,7 +170,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Vtiger CRM</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

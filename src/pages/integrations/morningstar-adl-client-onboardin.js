@@ -160,7 +160,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>AdviserLogic Fact Finder</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

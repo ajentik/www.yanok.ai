@@ -220,7 +220,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Maropost Commerce Cloud</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

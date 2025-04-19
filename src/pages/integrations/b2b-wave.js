@@ -145,7 +145,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>B2B Wave</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

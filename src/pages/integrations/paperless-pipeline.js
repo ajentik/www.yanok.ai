@@ -56,7 +56,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Paperless Pipeline</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

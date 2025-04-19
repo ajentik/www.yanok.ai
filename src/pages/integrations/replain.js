@@ -61,7 +61,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Re:plain</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

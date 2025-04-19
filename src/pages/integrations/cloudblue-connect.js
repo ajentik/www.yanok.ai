@@ -380,7 +380,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>CloudBlue Connect</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

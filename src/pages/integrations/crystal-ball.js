@@ -65,7 +65,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Crystal Ball</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

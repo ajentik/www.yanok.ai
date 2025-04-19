@@ -56,7 +56,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>ManicTime Cloud</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -71,7 +71,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>PieMatrix Pie</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

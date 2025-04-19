@@ -75,7 +75,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Clarizen One</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

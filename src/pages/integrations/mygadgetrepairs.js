@@ -620,7 +620,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>MyGadgetRepairs</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

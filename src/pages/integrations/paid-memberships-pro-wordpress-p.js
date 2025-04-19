@@ -75,7 +75,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Paid Memberships Pro</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

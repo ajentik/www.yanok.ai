@@ -105,7 +105,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>TriSys Recruitment Software</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

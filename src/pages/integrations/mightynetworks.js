@@ -100,7 +100,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Mighty Networks</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -95,7 +95,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>atSpoke</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

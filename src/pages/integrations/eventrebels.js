@@ -52,7 +52,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Eventrebels</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

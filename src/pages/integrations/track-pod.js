@@ -115,7 +115,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Track-POD</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

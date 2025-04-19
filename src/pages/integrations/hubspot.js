@@ -435,7 +435,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>HubSpot</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

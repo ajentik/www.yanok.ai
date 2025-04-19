@@ -121,7 +121,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Fig Booking Software</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

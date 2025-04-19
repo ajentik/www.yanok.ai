@@ -66,7 +66,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Customer.io</title>
-          <meta name="description" content={}/>t do in your app.' />
         </>
       ),
     },

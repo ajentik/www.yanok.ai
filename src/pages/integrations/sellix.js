@@ -171,7 +171,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Sellix</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -80,7 +80,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Evenium</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

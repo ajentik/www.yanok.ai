@@ -65,7 +65,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>PassKit Coupons</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

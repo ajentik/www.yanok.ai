@@ -115,7 +115,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>SwiftKanban</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -100,7 +100,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Toodledo</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

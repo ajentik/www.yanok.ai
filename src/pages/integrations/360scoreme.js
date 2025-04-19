@@ -56,7 +56,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>360Score.me</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

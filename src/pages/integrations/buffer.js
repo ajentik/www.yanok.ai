@@ -70,7 +70,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Buffer</title>
-          <meta name="description" content={}/>s tools to schedule posts, analyze performance, and publish to a half-dozen social networks from one app.' />
         </>
       ),
     },

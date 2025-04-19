@@ -56,7 +56,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Facebook Lead Ads</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

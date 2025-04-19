@@ -135,7 +135,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Deskera</title>
-          <meta name="description" content={}/>s business and financial requirements.' />
         </>
       ),
     },

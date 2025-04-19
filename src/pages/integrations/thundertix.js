@@ -101,7 +101,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>ThunderTix</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

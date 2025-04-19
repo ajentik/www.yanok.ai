@@ -80,7 +80,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Amazon SQS</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

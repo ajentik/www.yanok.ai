@@ -90,7 +90,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>RoboRecruiter Application</title>
-          <meta name="description" content={}/>s of thousands of your candidates instantly' />
         </>
       ),
     },

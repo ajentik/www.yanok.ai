@@ -60,7 +60,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Barbuck</title>
-          <meta name="description" content={}/>s TalkingForms is a way of automating phone calls to leads via a webform or an application.' />
         </>
       ),
     },

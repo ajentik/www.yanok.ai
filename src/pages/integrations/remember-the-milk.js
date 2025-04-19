@@ -120,7 +120,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Remember The Milk</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

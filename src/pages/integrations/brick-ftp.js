@@ -85,7 +85,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Brick FTP</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

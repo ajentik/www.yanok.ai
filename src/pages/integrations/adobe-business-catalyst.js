@@ -52,7 +52,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Adobe Business Catalyst</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

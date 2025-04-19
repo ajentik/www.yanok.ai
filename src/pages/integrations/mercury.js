@@ -135,7 +135,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Mercury Connect</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

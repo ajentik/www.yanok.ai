@@ -52,7 +52,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Canvas LMS</title>
-          <meta name="description" content={}/>s revolutionizing the way we educate.' />
         </>
       ),
     },

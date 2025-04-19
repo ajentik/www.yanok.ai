@@ -61,7 +61,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>My Print Cloud</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

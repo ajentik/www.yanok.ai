@@ -110,7 +110,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Rocket.Chat (Legacy)</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -110,7 +110,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Salesforce Essentials</title>
-          <meta name="description" content={}/>s the fastest and easiest way to get started with CRM.' />
         </>
       ),
     },

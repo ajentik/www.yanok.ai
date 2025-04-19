@@ -66,7 +66,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Scrape-It.Cloud</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

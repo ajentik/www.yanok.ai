@@ -85,7 +85,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Postscript</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

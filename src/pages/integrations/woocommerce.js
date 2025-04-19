@@ -185,7 +185,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>WooCommerce</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

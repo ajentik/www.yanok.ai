@@ -75,7 +75,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Advantage Anywhere</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

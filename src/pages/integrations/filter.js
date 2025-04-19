@@ -56,7 +56,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Filter by Zapier</title>
-          <meta name="description" content={}/>re sending a text message when you receive a new email, you could use a Filter that only sends a text message when the email received is from a certain address.' />
         </>
       ),
     },

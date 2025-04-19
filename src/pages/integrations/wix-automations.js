@@ -56,7 +56,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Wix Automations</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -95,7 +95,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Order Desk</title>
-          <meta name="description" content={}/>s order management software allows you to customize your order management workflow.' />
         </>
       ),
     },

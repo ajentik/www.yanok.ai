@@ -66,7 +66,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Book Like A Boss</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

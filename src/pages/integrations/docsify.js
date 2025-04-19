@@ -76,7 +76,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Docsify</title>
-          <meta name="description" content={}/>s engagement with anything you emailed them' />
         </>
       ),
     },

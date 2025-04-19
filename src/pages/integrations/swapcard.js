@@ -145,7 +145,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Swapcard</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

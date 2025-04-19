@@ -290,7 +290,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Kartra</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -185,7 +185,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>PHC GO</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

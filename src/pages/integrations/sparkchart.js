@@ -75,7 +75,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Spark Chart</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

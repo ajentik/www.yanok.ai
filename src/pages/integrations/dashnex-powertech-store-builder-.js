@@ -75,7 +75,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>DashNex PowerTech Store Builder</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

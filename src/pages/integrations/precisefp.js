@@ -120,7 +120,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>PreciseFP</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -76,7 +76,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Z Workforce</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -56,7 +56,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Xoxoday Plum</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

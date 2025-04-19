@@ -160,7 +160,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Humanity</title>
-          <meta name="description" content={}/>s dynamic scheduling tool, Humanity, simplifies day-to-day employee management processes. With Humanity Scheduling, your organization can easily and accurately create error-free, dynamic schedules for your staff by location, department, position, and/or skills—with real-time availability conflict checking.' />
         </>
       ),
     },

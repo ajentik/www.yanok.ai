@@ -140,7 +140,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>VoIP.ms</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

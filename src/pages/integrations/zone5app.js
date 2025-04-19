@@ -61,7 +61,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>zone5app</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

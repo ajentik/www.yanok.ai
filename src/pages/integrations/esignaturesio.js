@@ -80,7 +80,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>eSignatures.io</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

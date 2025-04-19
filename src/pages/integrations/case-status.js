@@ -90,7 +90,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Case Status</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

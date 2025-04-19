@@ -70,7 +70,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Pinterest</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

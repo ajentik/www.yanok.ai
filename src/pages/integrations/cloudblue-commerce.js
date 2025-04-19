@@ -175,7 +175,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>CloudBlue Commerce</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

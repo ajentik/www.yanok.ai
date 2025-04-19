@@ -81,7 +81,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Spinify</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

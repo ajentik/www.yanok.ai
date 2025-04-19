@@ -91,7 +91,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>ClickMagick</title>
-          <meta name="description" content={}/>t have to.' />
         </>
       ),
     },

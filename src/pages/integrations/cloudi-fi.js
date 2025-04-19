@@ -56,7 +56,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Cloudi-Fi</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

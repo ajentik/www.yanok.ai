@@ -52,7 +52,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Pro Scheduler</title>
-          <meta name="description" content={}/>Best Time' to post.' />
         </>
       ),
     },

@@ -61,7 +61,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Invoice2go</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

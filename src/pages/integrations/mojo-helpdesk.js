@@ -80,7 +80,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Mojo Helpdesk</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

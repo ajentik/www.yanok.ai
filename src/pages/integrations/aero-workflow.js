@@ -95,7 +95,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Aero Workflow</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

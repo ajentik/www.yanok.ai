@@ -110,7 +110,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>QuintaDB</title>
-          <meta name="description" content={}/>s an easy web-based application with drag and drop interface.' />
         </>
       ),
     },

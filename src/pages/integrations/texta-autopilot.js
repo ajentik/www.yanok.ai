@@ -71,7 +71,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Texta Autopilot</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -90,7 +90,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Novocall</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

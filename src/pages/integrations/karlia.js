@@ -720,7 +720,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Karlia</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

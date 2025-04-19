@@ -190,7 +190,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>monday.com</title>
-          <meta name="description" content={}/>s been done on a task—and what needs finished right now.' />
         </>
       ),
     },

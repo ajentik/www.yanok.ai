@@ -141,7 +141,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Dashiverse</title>
-          <meta name="description" content={}/>s you track important KPIs from multiple data sources in visually appealing dashboards.' />
         </>
       ),
     },

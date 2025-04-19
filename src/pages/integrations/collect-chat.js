@@ -56,7 +56,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Collect.chat</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

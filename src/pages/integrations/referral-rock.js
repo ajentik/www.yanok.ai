@@ -130,7 +130,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Referral Rock</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

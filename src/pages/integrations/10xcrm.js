@@ -56,7 +56,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>10xCRM</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

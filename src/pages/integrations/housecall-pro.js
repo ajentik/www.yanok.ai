@@ -65,7 +65,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Housecall Pro</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -85,7 +85,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>10to8 Online Booking</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

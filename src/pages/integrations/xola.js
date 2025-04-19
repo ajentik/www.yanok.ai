@@ -76,7 +76,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Xola</title>
-          <meta name="description" content={}/>s cart abandonment recovery, automated guest communication, gifts, and more.' />
         </>
       ),
     },

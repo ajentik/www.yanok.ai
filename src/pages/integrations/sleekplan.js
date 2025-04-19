@@ -135,7 +135,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Sleekplan</title>
-          <meta name="description" content={}/> s easy to share a roadmap and keep a changelog.' />
         </>
       ),
     },

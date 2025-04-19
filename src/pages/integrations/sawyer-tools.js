@@ -66,7 +66,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Sawyer Tools</title>
-          <meta name="description" content={}/>s activity booking platform that makes running your business super easy' />
         </>
       ),
     },

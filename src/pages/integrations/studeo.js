@@ -61,7 +61,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Studeo</title>
-          <meta name="description" content={}/>s first interactive storytelling platform for real estate.' />
         </>
       ),
     },

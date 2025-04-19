@@ -56,7 +56,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Jarja Media</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

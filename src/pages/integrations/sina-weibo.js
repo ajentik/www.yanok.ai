@@ -52,7 +52,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Sina Weibo</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

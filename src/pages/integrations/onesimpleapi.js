@@ -116,7 +116,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>OneSimpleApi</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -52,7 +52,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Kalo</title>
-          <meta name="description" content={}/>s Freelance Management System enables the world's biggest companies to organize, onboard, manage, and pay their freelance workforce.' />
         </>
       ),
     },

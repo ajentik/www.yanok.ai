@@ -70,7 +70,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>mallabe</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

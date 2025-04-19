@@ -56,7 +56,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Slooce - Unlimited SMS Texting</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

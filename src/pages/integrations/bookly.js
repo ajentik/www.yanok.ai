@@ -71,7 +71,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Bookly</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

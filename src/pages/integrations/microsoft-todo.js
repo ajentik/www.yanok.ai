@@ -95,7 +95,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Microsoft To Do</title>
-          <meta name="description" content={}/>s important, when it's important.' />
         </>
       ),
     },

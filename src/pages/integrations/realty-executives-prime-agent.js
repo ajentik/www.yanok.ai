@@ -56,7 +56,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Realty Executives Prime Agent</title>
-          <meta name="description" content={}/> proprietary intranet dashboard that provides quick access to business tools, marketing collateral, news, and resources in one ecosystem.' />
         </>
       ),
     },

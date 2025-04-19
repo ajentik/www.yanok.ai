@@ -90,7 +90,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Wistia</title>
-          <meta name="description" content={}/>s professional video hosting services and let them take care of the rest.' />
         </>
       ),
     },

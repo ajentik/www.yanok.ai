@@ -75,7 +75,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Text Request</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

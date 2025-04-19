@@ -71,7 +71,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Clever Elements</title>
-          <meta name="description" content={}/>ve built the road to email marketing. Email marketing cloud since 2003.' />
         </>
       ),
     },

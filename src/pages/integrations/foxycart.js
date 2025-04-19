@@ -52,7 +52,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Foxycart</title>
-          <meta name="description" content={}/>s hosted cart & payment page allow you to sell anything, using your existing website or platform.' />
         </>
       ),
     },

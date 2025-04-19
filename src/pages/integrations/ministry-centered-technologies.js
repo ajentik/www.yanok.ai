@@ -52,7 +52,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Ministry Centered Technologies</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

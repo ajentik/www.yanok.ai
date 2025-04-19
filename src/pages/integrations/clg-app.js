@@ -125,7 +125,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>CLG App</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

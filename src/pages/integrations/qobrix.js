@@ -75,7 +75,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Qobrix</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

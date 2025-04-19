@@ -70,7 +70,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Packlink PRO</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

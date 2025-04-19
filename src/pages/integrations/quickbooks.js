@@ -250,7 +250,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>QuickBooks Online</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

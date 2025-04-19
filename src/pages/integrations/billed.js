@@ -330,7 +330,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Billed</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

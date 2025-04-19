@@ -136,7 +136,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Sinao</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

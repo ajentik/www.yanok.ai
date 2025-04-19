@@ -260,7 +260,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Pixifi</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

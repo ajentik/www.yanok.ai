@@ -66,7 +66,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>CatchApp Bookings</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

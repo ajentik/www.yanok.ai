@@ -71,7 +71,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Churn Buster</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -60,7 +60,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>MediaBrains BusinessChatter</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

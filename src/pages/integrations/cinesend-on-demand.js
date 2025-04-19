@@ -61,7 +61,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>CineSend On Demand</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

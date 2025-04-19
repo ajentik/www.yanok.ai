@@ -52,7 +52,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Genesis Digital</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

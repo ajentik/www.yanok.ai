@@ -75,7 +75,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>EZ Texting</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

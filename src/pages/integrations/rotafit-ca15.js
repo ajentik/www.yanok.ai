@@ -180,7 +180,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Rota.fit Connect</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -95,7 +95,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Ministry Sync</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

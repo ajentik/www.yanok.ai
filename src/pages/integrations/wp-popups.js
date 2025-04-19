@@ -56,7 +56,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>WP Popups</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

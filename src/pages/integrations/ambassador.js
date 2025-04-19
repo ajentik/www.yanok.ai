@@ -115,7 +115,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Ambassador</title>
-          <meta name="description" content={}/>s as simple as pasting a javascript snippet or can be seamlessly integrated via API.' />
         </>
       ),
     },

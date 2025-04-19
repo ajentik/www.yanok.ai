@@ -56,7 +56,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Bluejeans Meetings</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

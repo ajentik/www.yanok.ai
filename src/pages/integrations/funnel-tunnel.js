@@ -105,7 +105,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Funnel-Tunnel</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

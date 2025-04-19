@@ -56,7 +56,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Picup Media</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

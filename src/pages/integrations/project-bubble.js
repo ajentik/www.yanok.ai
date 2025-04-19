@@ -110,7 +110,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Project Bubble</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

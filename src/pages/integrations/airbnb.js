@@ -52,7 +52,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Airbnb</title>
-          <meta name="description" content={}/>s Email Parser to take confirmation emails and send them to hundreds of different SaaS apps!' />
         </>
       ),
     },

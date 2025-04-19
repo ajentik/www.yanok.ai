@@ -52,7 +52,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Iugu</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

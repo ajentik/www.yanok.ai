@@ -56,7 +56,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Omnitrack by VinciWorks</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -56,7 +56,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Doctastic Leads</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -61,7 +61,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Service Objects</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

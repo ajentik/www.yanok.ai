@@ -180,7 +180,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>essensys Operate</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

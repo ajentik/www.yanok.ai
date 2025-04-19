@@ -220,7 +220,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Autotask</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

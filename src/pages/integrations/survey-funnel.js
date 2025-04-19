@@ -56,7 +56,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Survey Funnel</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

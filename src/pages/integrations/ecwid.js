@@ -135,7 +135,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Ecwid by Lightspeed</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

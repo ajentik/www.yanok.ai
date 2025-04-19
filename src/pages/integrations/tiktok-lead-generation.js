@@ -56,7 +56,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>TikTok Lead Generation</title>
-          <meta name="description" content={}/>s Lead Generation enables businesses of all sizes to create seamless interactions to reach prospects in order to convert them into potential customers.' />
         </>
       ),
     },

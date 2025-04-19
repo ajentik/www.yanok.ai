@@ -125,7 +125,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>The Customer Factor</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

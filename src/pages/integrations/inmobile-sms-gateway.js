@@ -76,7 +76,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>inMobile - SMS gateway</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

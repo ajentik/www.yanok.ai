@@ -100,7 +100,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Sweap</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

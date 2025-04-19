@@ -80,7 +80,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Setmore Appointments</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

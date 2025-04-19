@@ -125,7 +125,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Dux-Soup</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

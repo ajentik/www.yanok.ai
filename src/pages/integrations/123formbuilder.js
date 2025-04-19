@@ -61,7 +61,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>123FormBuilder</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

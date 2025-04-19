@@ -56,7 +56,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>SMS Gateway Hub</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

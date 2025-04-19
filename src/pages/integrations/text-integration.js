@@ -60,7 +60,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Text Integration</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

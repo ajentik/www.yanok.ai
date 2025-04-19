@@ -56,7 +56,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Hatch Apps</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

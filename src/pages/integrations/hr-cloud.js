@@ -110,7 +110,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>HR Cloud</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

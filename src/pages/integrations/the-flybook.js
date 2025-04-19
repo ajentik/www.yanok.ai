@@ -76,7 +76,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>The Flybook</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

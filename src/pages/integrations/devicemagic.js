@@ -60,7 +60,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Device Magic</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

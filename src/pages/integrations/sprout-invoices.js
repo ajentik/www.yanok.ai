@@ -52,7 +52,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Sprout Invoices</title>
-          <meta name="description" content={}/>s fully customizable with no limits and features you can't get anywhere else.' />
         </>
       ),
     },

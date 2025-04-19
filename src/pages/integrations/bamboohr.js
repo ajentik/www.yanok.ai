@@ -105,7 +105,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>BambooHR</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

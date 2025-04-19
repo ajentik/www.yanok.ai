@@ -80,7 +80,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>AgentHub</title>
-          <meta name="description" content={}/>s follow up, two-way texting, pipeline, scheduling, and so much more. Built for Real Estate Professionals, By Real Estate Professionals.' />
         </>
       ),
     },

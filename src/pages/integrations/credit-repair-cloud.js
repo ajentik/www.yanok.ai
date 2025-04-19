@@ -115,7 +115,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Credit Repair Cloud</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

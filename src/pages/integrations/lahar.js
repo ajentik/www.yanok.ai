@@ -75,7 +75,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>LAHAR</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

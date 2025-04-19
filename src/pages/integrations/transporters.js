@@ -95,7 +95,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Transporters.io</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

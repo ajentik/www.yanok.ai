@@ -75,7 +75,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Leave Dates</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

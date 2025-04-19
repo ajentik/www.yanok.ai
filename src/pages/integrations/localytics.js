@@ -52,7 +52,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Localytics</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

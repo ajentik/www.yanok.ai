@@ -52,7 +52,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Signable</title>
-          <meta name="description" content={}/>s electronic signature software sends documents straight to your clients’ inbox in seconds. Sign legally binding & secure documents on any device.' />
         </>
       ),
     },

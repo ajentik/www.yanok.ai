@@ -80,7 +80,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>LeadCenter.AI</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

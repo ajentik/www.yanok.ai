@@ -52,7 +52,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Big Purple Dot</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

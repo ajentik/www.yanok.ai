@@ -65,7 +65,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Woodpecker</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

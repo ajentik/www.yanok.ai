@@ -200,7 +200,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Teamgate</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

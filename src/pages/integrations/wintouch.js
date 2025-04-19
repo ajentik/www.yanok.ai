@@ -90,7 +90,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Wintouch 7</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

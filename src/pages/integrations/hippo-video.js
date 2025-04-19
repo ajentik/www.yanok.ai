@@ -95,7 +95,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Hippo Video</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

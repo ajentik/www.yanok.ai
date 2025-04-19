@@ -95,7 +95,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>SQL Server</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

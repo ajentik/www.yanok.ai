@@ -61,7 +61,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Base64.ai</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -65,7 +65,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Browse AI</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -56,7 +56,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>WP All Export Pro</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

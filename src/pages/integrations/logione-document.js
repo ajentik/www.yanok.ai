@@ -85,7 +85,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>LogiONE Document</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

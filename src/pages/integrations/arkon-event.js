@@ -60,7 +60,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Arkon Event</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

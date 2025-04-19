@@ -61,7 +61,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Jumppl</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

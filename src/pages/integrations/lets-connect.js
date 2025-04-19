@@ -70,7 +70,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Let's Connect</title>
-          <meta name="description" content={}/>s Connect widget to catch your customers when their interest is at it’s peak! Using live communication makes converting them into new customers super easy.' />
         </>
       ),
     },

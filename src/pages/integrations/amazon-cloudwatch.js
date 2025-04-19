@@ -75,7 +75,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Amazon CloudWatch</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

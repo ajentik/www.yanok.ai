@@ -60,7 +60,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>DevCycle</title>
-          <meta name="description" content={}/>s easy to use, scalable and lightning fast.' />
         </>
       ),
     },

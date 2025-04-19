@@ -56,7 +56,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Gloss.fm</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

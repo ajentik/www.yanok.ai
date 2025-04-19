@@ -110,7 +110,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Phone.com</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

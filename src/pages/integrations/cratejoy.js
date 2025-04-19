@@ -52,7 +52,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Cratejoy</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

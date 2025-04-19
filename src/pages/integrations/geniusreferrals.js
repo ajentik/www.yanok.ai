@@ -160,7 +160,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>GeniusReferrals</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

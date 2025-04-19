@@ -90,7 +90,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Easydoc</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

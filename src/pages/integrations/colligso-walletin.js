@@ -56,7 +56,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Colligso WalletIn</title>
-          <meta name="description" content={}/>s WalletIn app helps merchants to remarket their product/services directly to customers using a Pass in Apple Pay and Google Pay wallets.' />
         </>
       ),
     },

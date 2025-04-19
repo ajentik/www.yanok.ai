@@ -66,7 +66,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>REI Pebble</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

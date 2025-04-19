@@ -105,7 +105,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>SendFox</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

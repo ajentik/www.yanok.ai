@@ -56,7 +56,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>IP2Location</title>
-          <meta name="description" content={}/>s geographical location.' />
         </>
       ),
     },

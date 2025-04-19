@@ -66,7 +66,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>tawk.to</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

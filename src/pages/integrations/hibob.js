@@ -76,7 +76,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Hibob</title>
-          <meta name="description" content={}/>s intuitive and data-driven platform, bob, was built for the way people work today: globally, remotely, and collaboratively. Use it for everything from onboarding and compensation management, to culture and people analytics.' />
         </>
       ),
     },

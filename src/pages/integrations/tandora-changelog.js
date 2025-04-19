@@ -60,7 +60,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Tandora Changelog</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -75,7 +75,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Reftab</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

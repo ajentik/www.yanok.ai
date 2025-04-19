@@ -52,7 +52,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Nextgen Healthcare</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -56,7 +56,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>OCR Car Plates</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

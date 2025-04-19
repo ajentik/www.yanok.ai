@@ -70,7 +70,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>CASEpeer</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

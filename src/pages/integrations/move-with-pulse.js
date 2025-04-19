@@ -56,7 +56,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Move With Pulse</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

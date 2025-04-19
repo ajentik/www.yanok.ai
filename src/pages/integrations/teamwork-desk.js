@@ -150,7 +150,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Teamwork Desk</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

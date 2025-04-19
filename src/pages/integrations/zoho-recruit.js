@@ -95,7 +95,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Zoho Recruit</title>
-          <meta name="description" content={}/>s website and the most popular job boards to increase exposure and start sourcing top talent.' />
         </>
       ),
     },

@@ -115,7 +115,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Zeplin</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

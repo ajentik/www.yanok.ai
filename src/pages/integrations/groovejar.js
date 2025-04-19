@@ -52,7 +52,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>GrooveJar</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

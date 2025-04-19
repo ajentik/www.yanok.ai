@@ -105,7 +105,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Google Ads</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

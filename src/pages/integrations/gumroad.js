@@ -71,7 +71,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Gumroad</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

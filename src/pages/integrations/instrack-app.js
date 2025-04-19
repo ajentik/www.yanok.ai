@@ -86,7 +86,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>InsTrack</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

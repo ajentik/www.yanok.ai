@@ -80,7 +80,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Hiro.fm</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

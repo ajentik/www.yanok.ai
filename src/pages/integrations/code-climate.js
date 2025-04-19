@@ -52,7 +52,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Code Climate</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

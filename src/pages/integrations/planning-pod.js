@@ -125,7 +125,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Planning Pod</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

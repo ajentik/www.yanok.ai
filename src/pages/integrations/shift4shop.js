@@ -140,7 +140,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Shift4Shop</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -61,7 +61,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Tortii</title>
-          <meta name="description" content={}/>s turtles all the way down. “Turtle” by Zidney, from the Noun Project.' />
         </>
       ),
     },

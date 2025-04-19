@@ -56,7 +56,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>BroadNet SMS</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

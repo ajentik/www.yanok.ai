@@ -65,7 +65,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Daily AI Mortgage</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

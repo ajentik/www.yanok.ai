@@ -71,7 +71,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>T2M URL Shortener</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

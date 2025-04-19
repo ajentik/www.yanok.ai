@@ -52,7 +52,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Google Data Studio</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

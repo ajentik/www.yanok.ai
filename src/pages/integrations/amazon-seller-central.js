@@ -56,7 +56,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Amazon Seller Central</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

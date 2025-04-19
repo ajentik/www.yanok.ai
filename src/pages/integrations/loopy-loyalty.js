@@ -115,7 +115,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Loopy Loyalty</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

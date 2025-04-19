@@ -52,7 +52,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Atera</title>
-          <meta name="description" content={}/>s first RMM software, built with PSA and Remote Access capabilities, specifically designed for MSPs in all shapes and sizes.' />
         </>
       ),
     },

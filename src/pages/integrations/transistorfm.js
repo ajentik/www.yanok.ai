@@ -80,7 +80,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Transistor.fm</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

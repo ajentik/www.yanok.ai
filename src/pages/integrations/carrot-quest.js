@@ -65,7 +65,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Carrot quest</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

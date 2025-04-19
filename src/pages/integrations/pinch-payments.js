@@ -90,7 +90,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Pinch Payments</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

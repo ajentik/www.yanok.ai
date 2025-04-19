@@ -126,7 +126,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>NGP VAN</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

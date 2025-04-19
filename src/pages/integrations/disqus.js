@@ -66,7 +66,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Disqus</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

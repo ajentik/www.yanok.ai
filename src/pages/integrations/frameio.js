@@ -135,7 +135,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Frame.io</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

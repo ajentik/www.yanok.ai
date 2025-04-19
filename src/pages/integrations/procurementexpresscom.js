@@ -95,7 +95,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>ProcurementExpress.com</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

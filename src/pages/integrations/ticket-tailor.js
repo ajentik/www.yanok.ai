@@ -61,7 +61,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Ticket Tailor</title>
-          <meta name="description" content={}/>t charge any per-ticket fees, and we let you integrate the booking process in to your website.' />
         </>
       ),
     },

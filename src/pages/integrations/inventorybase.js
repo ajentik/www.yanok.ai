@@ -270,7 +270,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>InventoryBase</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

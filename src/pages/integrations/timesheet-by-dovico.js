@@ -120,7 +120,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Timesheet by Dovico</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

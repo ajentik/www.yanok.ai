@@ -65,7 +65,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Web Shop Manager</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

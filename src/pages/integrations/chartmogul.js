@@ -156,7 +156,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>ChartMogul</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -85,7 +85,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Smarty Accounting</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

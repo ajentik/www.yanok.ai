@@ -56,7 +56,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>neetoChat</title>
-          <meta name="description" content={}/>re looking for.' />
         </>
       ),
     },

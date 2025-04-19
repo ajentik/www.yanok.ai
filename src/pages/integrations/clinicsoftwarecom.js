@@ -75,7 +75,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>ClinicSoftware.com</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

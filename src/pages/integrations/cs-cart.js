@@ -90,7 +90,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>CS-Cart</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

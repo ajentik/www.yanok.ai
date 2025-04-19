@@ -120,7 +120,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>FuseDesk</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

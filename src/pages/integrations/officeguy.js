@@ -90,7 +90,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>OfficeGuy/SUMIT</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

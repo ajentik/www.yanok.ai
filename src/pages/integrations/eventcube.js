@@ -156,7 +156,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Eventcube</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

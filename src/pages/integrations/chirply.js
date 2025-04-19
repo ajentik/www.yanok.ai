@@ -130,7 +130,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Chirply.io</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

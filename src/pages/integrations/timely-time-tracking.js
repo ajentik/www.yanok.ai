@@ -115,7 +115,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Timely Time Tracking</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

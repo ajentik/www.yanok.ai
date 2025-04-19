@@ -141,7 +141,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>PayKickstart</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

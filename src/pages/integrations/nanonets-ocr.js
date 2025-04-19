@@ -85,7 +85,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Nanonets OCR</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

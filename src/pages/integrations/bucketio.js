@@ -61,7 +61,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Bucket.io</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

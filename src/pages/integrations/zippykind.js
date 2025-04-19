@@ -52,7 +52,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Zippykind</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

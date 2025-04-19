@@ -56,7 +56,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Custom Gateway OMS</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

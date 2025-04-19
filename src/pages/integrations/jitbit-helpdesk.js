@@ -85,7 +85,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Jitbit Helpdesk</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

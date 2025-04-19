@@ -195,7 +195,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>noCRM.io</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

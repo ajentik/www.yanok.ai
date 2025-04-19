@@ -80,7 +80,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>DataScope Forms</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

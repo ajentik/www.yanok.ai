@@ -80,7 +80,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>rasa.io</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

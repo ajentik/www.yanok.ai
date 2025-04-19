@@ -56,7 +56,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>PaySolution Asia</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

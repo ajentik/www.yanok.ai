@@ -125,7 +125,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Edusign</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

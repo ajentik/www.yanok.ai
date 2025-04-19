@@ -81,7 +81,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Brilliant Directories</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

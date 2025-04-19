@@ -56,7 +56,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Scheduling Suite</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

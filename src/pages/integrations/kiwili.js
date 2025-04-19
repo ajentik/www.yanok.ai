@@ -515,7 +515,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Kiwili</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

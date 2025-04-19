@@ -70,7 +70,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Google Slides</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

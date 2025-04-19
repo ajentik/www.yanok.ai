@@ -160,7 +160,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Dispatch</title>
-          <meta name="description" content={}/>s most powerful on-demand services platform.' />
         </>
       ),
     },

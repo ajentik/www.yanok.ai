@@ -61,7 +61,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Sendpoint.io</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

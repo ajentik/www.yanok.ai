@@ -56,7 +56,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Customer Tags & Segments by Shop Circle</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

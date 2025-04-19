@@ -75,7 +75,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Google Analytics</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

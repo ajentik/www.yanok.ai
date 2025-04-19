@@ -110,7 +110,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Adversus Dialer</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

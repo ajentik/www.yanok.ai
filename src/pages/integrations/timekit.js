@@ -106,7 +106,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Timekit</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

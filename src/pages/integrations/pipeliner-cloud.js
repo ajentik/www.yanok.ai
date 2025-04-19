@@ -235,7 +235,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Pipeliner Cloud</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

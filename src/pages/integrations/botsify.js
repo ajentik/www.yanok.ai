@@ -90,7 +90,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Botsify</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

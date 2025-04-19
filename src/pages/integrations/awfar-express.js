@@ -71,7 +71,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Awfar Express</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

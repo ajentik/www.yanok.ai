@@ -90,7 +90,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Yobi</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

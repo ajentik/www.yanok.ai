@@ -71,7 +71,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Expiration Reminder</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

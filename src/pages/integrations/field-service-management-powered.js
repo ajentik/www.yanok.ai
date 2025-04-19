@@ -66,7 +66,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Field Service Management | Powered by GPS Insight</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

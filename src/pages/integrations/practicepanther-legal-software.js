@@ -215,7 +215,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>PracticePanther Legal Software</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

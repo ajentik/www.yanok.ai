@@ -230,7 +230,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Tarvent</title>
-          <meta name="description" content={}/>s experience.' />
         </>
       ),
     },

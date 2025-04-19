@@ -200,7 +200,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>nTask</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

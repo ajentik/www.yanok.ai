@@ -125,7 +125,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>LightSpeed VT</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

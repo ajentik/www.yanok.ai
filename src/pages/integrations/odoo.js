@@ -60,7 +60,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Odoo CRM</title>
-          <meta name="description" content={}/>s CRM product to other apps. This integration works with instances that are cloud hosted at "odoo.com."' />
         </>
       ),
     },

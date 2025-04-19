@@ -61,7 +61,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>CoPilot AI</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

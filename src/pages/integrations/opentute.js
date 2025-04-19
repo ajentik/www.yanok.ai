@@ -195,7 +195,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Opentute</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -81,7 +81,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Mercury Integrations</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

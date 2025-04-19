@@ -70,7 +70,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>NPS.Today</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

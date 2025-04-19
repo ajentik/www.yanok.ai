@@ -60,7 +60,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>webinar.net</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

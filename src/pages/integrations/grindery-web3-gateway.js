@@ -60,7 +60,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Grindery Web3 Gateway</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

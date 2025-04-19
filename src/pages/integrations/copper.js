@@ -290,7 +290,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Copper</title>
-          <meta name="description" content={}/>s designed to do all your busywork, so you can focus on building long-lasting business relationships' />
         </>
       ),
     },

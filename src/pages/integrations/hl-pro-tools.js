@@ -155,7 +155,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>HL Pro Tools</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

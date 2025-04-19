@@ -70,7 +70,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Bloobirds</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -130,7 +130,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Custify</title>
-          <meta name="description" content={}/> needs, reducing churn and increasing lifetime value.' />
         </>
       ),
     },

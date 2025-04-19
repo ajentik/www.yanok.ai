@@ -90,7 +90,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Spot-Hit</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

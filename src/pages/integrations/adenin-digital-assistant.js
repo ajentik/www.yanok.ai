@@ -56,7 +56,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Adaptive Card Maker by adenin</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

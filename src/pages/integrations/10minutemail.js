@@ -52,7 +52,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>10Minutemail</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -60,7 +60,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Speak2Leads</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

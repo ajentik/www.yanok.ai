@@ -100,7 +100,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>SkedPal</title>
-          <meta name="description" content={}/>s based on your commitments and preferences.' />
         </>
       ),
     },

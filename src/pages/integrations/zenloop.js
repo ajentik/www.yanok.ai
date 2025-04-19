@@ -60,7 +60,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>zenloop</title>
-          <meta name="description" content={}/>s SaaS platform collects quantitative and qualitative feedback through various channels (link, email, website or each embedded). Our smart label technology analyzes the feedback and automatically identifies all relevant insights and trends.' />
         </>
       ),
     },

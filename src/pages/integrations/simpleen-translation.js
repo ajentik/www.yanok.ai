@@ -56,7 +56,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Simpleen Translation</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -81,7 +81,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>cloudlayer.io</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

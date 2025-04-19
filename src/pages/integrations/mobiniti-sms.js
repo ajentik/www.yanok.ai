@@ -75,7 +75,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Mobiniti SMS</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

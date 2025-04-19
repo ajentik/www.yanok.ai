@@ -205,7 +205,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Bettermode</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

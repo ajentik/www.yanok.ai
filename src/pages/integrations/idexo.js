@@ -126,7 +126,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>idexo</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

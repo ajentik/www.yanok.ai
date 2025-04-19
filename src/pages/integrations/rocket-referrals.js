@@ -75,7 +75,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Rocket Referrals</title>
-          <meta name="description" content={}/>ll see results in under 48 hours.' />
         </>
       ),
     },

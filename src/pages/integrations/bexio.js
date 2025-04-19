@@ -225,7 +225,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>bexio</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

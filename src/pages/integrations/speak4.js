@@ -76,7 +76,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Speak4</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

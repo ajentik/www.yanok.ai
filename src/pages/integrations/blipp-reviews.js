@@ -65,7 +65,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Blipp Reviews</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -115,7 +115,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Knowa</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -90,7 +90,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>viewneo</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

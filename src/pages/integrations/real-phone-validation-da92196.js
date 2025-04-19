@@ -91,7 +91,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Real Phone Validation</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

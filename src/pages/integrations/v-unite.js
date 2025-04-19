@@ -80,7 +80,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>V-Unite</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

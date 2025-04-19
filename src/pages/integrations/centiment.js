@@ -56,7 +56,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Centiment</title>
-          <meta name="description" content={}/>s Audience Panel.' />
         </>
       ),
     },

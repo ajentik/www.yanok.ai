@@ -86,7 +86,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Pappers</title>
-          <meta name="description" content={}/>information des entreprises Gratuite, intelligente, complète' />
         </>
       ),
     },

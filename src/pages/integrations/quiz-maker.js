@@ -56,7 +56,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Quiz Maker</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

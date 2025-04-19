@@ -300,7 +300,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Invision Community</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

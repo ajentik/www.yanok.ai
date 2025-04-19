@@ -52,7 +52,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>ShowingTime</title>
-          <meta name="description" content={}/>s leading showing management and market stats technology provider.' />
         </>
       ),
     },

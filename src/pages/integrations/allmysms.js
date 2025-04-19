@@ -61,7 +61,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>allmysms</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

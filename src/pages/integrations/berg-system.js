@@ -75,7 +75,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Berg System</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

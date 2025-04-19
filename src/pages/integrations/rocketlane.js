@@ -140,7 +140,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Rocketlane</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

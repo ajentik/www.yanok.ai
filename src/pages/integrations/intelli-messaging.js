@@ -75,7 +75,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Intelli Messaging</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -61,7 +61,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>People Data Labs</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -101,7 +101,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>StoryPrompt</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

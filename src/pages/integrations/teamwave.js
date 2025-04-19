@@ -225,7 +225,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>TeamWave</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

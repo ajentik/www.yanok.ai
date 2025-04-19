@@ -56,7 +56,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>New Relic Insights</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

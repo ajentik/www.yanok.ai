@@ -105,7 +105,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>MobileMonkey</title>
-          <meta name="description" content={}/>s presence where your customers communicate: on Facebook Messenger and other leading chat platforms.' />
         </>
       ),
     },

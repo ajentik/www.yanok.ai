@@ -52,7 +52,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Jazz</title>
-          <meta name="description" content={}/>s award winning recruiting software and applicant tracking system.' />
         </>
       ),
     },

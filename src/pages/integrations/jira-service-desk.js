@@ -65,7 +65,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Jira Service Management</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

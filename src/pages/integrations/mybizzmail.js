@@ -70,7 +70,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>MyBizzMail</title>
-          <meta name="description" content={}/>s great drag and drop editor you can easily make newsletters, magazines and forms. MyBizzMail also gives you a report of who has visited which pages on your site via the email.' />
         </>
       ),
     },

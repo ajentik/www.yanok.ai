@@ -156,7 +156,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>PDF.co</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

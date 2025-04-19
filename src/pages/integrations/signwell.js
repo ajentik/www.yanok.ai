@@ -70,7 +70,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>SignWell</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

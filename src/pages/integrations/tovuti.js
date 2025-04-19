@@ -220,7 +220,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Tovuti LMS</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

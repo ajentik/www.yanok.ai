@@ -70,7 +70,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Grit Seed</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

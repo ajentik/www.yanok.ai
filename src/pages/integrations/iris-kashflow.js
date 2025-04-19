@@ -85,7 +85,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>IRIS KashFlow</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

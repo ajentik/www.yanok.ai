@@ -76,7 +76,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>SalesNexus</title>
-          <meta name="description" content={}/>s simple to set up and use.' />
         </>
       ),
     },

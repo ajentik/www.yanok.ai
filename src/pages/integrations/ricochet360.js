@@ -70,7 +70,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Ricochet - Speed to Contact</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

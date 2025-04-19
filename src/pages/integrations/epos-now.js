@@ -95,7 +95,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Epos Now</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

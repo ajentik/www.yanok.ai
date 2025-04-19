@@ -110,7 +110,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Bitrix24 CRM</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

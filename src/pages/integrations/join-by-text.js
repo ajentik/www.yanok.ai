@@ -56,7 +56,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Join By Text</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -95,7 +95,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Elastic Email</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

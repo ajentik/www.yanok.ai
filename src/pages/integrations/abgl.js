@@ -60,7 +60,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>AB.GL</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

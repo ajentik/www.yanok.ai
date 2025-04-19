@@ -65,7 +65,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>CallHippo</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

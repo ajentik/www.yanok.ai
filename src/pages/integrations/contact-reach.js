@@ -80,7 +80,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Contact Reach</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

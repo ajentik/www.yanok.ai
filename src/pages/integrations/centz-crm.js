@@ -100,7 +100,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Centz CRM</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

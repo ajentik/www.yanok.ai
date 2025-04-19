@@ -61,7 +61,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>SimpleCert</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -85,7 +85,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Facebook Pages</title>
-          <meta name="description" content={}/>s largest social network. Share relevant content to engage people who Like your page, create events to build and grow your community, and run a Facebook ad campaign by targeting location, age and more.' />
         </>
       ),
     },

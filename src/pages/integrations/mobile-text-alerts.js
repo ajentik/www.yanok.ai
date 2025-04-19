@@ -95,7 +95,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Mobile Text Alerts</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -85,7 +85,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>My Web Audit</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

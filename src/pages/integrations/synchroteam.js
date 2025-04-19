@@ -155,7 +155,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Synchroteam</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

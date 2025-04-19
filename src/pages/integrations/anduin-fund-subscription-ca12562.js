@@ -61,7 +61,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Anduin Fund Subscription</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

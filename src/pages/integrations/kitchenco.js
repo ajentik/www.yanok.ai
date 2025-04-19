@@ -80,7 +80,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Kitchen.co</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

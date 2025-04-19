@@ -61,7 +61,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Creative Machine</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

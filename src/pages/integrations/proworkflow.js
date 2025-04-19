@@ -580,7 +580,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>ProWorkflow</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -52,7 +52,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>ADP</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -66,7 +66,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Dotcom Monitor</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

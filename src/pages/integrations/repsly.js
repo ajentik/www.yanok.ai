@@ -120,7 +120,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Repsly</title>
-          <meta name="description" content={}/>s retail execution platform provides data-driven merchandising, field sales, and promotion execution solutions to help CPG brands and merchandisers maximize the impact of their field teams.' />
         </>
       ),
     },

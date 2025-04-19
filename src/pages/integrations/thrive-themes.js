@@ -61,7 +61,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Thrive Themes</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

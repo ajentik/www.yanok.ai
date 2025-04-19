@@ -85,7 +85,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Intermedia AnyMeeting</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

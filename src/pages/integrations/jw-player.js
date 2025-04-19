@@ -75,7 +75,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>JW Player</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

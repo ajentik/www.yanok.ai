@@ -75,7 +75,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Act-On</title>
-          <meta name="description" content={}/>s growth marketing platform enables marketers to grow their business, deliver exceptional brand experiences, and drive customer engagement with their offerings across the customer life cycle-for every customer, every time.' />
         </>
       ),
     },

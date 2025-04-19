@@ -66,7 +66,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Shuffle by Elify</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -60,7 +60,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>MindManager</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

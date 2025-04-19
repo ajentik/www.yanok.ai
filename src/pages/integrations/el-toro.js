@@ -52,7 +52,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>El Toro</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

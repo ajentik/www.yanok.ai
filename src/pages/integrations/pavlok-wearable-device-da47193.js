@@ -71,7 +71,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Pavlok Wearable Device</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

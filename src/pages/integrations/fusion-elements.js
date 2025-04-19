@@ -70,7 +70,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Fusion Elements</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -80,7 +80,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>ClearPoint Strategy</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

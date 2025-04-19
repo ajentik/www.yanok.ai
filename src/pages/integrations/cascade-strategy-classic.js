@@ -125,7 +125,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Cascade Strategy Classic</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -71,7 +71,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Beacon</title>
-          <meta name="description" content={}/>s easy to use, cloud-based, and flexible enough for anything.' />
         </>
       ),
     },

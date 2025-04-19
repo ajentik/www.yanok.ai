@@ -120,7 +120,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Reckon One</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

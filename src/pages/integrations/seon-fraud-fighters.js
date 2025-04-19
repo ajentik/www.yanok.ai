@@ -85,7 +85,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>SEON. Fraud Fighters</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -125,7 +125,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Visma Severa</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

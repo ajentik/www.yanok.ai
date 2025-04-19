@@ -56,7 +56,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Birdie Screen Recording</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

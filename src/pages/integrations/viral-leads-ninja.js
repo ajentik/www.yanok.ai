@@ -56,7 +56,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Viral Leads Ninja</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

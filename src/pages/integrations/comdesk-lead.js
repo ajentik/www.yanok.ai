@@ -66,7 +66,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Comdesk Lead</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

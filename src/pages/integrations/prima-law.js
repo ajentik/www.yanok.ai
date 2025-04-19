@@ -320,7 +320,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Prima.Law</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

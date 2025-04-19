@@ -61,7 +61,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Chili Piper</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

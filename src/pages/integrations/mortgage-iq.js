@@ -56,7 +56,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Mortgage iQ</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

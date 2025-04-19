@@ -61,7 +61,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Sprintful</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

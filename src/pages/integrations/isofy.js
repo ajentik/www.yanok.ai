@@ -65,7 +65,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Isofy</title>
-          <meta name="description" content={}/>s network infrastructure.' />
         </>
       ),
     },

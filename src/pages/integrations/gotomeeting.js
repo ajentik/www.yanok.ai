@@ -60,7 +60,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>GoTo Meeting</title>
-          <meta name="description" content={}/>t in the same room.' />
         </>
       ),
     },

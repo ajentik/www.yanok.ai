@@ -121,7 +121,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>AccountingSuite</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

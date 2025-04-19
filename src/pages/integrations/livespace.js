@@ -170,7 +170,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Livespace</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

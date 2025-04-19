@@ -65,7 +65,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Eoovi Consult</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

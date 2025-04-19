@@ -56,7 +56,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Zoe Financial</title>
-          <meta name="description" content={}/>s network are all independent fiduciaries who work on a commission-free model, meaning your advisor won’t try to sell you products to make a profit.' />
         </>
       ),
     },

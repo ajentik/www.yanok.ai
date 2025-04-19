@@ -91,7 +91,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Clearout</title>
-          <meta name="description" content={}/>s reputation.' />
         </>
       ),
     },

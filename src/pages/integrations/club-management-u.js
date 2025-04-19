@@ -56,7 +56,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Club Management 4 U</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

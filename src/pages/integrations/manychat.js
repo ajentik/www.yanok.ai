@@ -140,7 +140,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Manychat</title>
-          <meta name="description" content={}/>n'drop builder. Effectively promote with built-in tools for growing audience. Start today – it's easy and free.' />
         </>
       ),
     },

@@ -90,7 +90,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Darwin CX</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

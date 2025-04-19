@@ -110,7 +110,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Access Charity Websites</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

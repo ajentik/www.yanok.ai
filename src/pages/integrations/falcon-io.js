@@ -52,7 +52,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Falcon.Io</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

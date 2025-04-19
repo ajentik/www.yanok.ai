@@ -61,7 +61,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>OwlStat</title>
-          <meta name="description" content={}/> insights and statistics' />
         </>
       ),
     },

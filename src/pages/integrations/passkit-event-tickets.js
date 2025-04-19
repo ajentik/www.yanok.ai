@@ -70,7 +70,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>PassKit Event Tickets</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

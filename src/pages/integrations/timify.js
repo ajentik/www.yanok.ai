@@ -135,7 +135,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>TIMIFY</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

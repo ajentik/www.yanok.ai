@@ -61,7 +61,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>New User Approve</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

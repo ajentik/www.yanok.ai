@@ -110,7 +110,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Workflow by GrowthHackers</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

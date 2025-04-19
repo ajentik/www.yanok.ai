@@ -91,7 +91,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>iconpractice</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

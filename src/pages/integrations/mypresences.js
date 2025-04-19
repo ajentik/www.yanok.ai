@@ -56,7 +56,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>myPresences</title>
-          <meta name="description" content={}/>s online presence and reputation everywhere online. Get more reviews and showcase them on your website or on social media.' />
         </>
       ),
     },

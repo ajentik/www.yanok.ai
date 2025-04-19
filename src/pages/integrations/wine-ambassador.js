@@ -61,7 +61,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Wine Ambassador</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

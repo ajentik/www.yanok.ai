@@ -315,7 +315,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Eshopbox</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

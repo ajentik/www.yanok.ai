@@ -80,7 +80,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>8x8</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

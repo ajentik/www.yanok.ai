@@ -66,7 +66,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Playvox Customer AI</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

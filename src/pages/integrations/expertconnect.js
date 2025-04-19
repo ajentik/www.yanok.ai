@@ -230,7 +230,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>ExpertConnect</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

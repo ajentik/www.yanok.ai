@@ -60,7 +60,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Adafruit IO</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

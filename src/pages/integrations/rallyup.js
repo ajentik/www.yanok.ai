@@ -151,7 +151,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>RallyUp</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

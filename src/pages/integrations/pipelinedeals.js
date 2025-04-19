@@ -160,7 +160,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Pipeline CRM</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

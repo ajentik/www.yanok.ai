@@ -145,7 +145,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>CompanyHub</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

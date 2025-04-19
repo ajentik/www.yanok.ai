@@ -76,7 +76,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>waaq Link</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

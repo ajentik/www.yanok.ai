@@ -61,7 +61,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Lingoes.ai</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

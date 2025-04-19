@@ -155,7 +155,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>BuzzBoard Insights</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

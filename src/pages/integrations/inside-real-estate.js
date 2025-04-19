@@ -52,7 +52,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Inside Real Estate</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

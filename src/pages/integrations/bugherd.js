@@ -100,7 +100,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>BugHerd</title>
-          <meta name="description" content={}/>s like using sticky-notes to pin client feedback and track bugs directly on a page.' />
         </>
       ),
     },

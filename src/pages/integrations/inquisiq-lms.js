@@ -100,7 +100,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Inquisiq LMS</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -150,7 +150,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Agile CRM</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

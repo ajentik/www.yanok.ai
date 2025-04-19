@@ -75,7 +75,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>PagePixels Screenshots</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

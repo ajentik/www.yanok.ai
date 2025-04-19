@@ -106,7 +106,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>SmartSender.io</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

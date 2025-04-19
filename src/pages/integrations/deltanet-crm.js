@@ -120,7 +120,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>DeltaNet CRM</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -75,7 +75,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Dropbox Sign</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

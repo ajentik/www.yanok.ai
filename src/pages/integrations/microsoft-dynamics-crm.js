@@ -155,7 +155,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Microsoft Dynamics 365 CRM</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

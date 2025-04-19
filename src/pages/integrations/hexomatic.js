@@ -56,7 +56,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Hexomatic</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

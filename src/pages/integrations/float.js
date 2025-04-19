@@ -175,7 +175,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Float</title>
-          <meta name="description" content={}/>s working on what and when.' />
         </>
       ),
     },

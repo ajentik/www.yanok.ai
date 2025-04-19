@@ -85,7 +85,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Demand Metric</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

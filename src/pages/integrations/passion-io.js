@@ -95,7 +95,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Passion.io</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -70,7 +70,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Manifestly Checklists</title>
-          <meta name="description" content={}/>s recurring processes.' />
         </>
       ),
     },

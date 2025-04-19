@@ -61,7 +61,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Azure Web Apps</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

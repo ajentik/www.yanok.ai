@@ -61,7 +61,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Aesthetic Record EMR</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

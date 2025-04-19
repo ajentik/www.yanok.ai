@@ -60,7 +60,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>K12 Insight Engage</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

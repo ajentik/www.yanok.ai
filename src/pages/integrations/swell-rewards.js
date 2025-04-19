@@ -52,7 +52,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Swell Rewards</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

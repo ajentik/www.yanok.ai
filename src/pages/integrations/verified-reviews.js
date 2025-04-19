@@ -75,7 +75,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Verified Reviews</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

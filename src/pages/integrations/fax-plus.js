@@ -60,7 +60,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>FAX.PLUS</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

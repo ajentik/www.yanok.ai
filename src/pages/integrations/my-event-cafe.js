@@ -66,7 +66,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>My Event Cafe</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

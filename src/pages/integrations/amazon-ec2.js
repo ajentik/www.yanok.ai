@@ -70,7 +70,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Amazon EC2</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

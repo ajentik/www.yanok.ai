@@ -81,7 +81,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Modern Events Calendar (MEC)</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

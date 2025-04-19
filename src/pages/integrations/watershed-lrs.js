@@ -60,7 +60,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Watershed LRS</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

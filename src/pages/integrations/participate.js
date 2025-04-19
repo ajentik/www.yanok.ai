@@ -100,7 +100,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Participate</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

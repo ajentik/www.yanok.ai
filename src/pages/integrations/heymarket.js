@@ -100,7 +100,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Heymarket SMS</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

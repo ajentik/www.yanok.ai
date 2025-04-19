@@ -95,7 +95,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Contractor Foreman</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

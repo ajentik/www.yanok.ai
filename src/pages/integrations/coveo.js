@@ -71,7 +71,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Coveo</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

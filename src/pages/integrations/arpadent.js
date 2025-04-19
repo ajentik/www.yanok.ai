@@ -56,7 +56,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>ARPADENT</title>
-          <meta name="description" content={}/>s best friend.' />
         </>
       ),
     },

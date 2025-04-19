@@ -56,7 +56,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Google Assistant</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

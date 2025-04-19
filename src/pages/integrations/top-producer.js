@@ -56,7 +56,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Top Producer</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

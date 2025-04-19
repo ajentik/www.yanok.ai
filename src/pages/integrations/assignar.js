@@ -490,7 +490,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Assignar</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

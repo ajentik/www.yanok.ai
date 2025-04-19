@@ -76,7 +76,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>LeadLander</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

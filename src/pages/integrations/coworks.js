@@ -125,7 +125,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Coworks</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -61,7 +61,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Contact Boss</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

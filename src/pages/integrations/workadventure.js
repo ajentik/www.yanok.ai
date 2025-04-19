@@ -76,7 +76,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>WorkAdventure</title>
-          <meta name="description" content={}/>s think outside the box and imagine a place where you can gather with your teammates wherever you are!' />
         </>
       ),
     },

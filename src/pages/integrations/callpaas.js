@@ -226,7 +226,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>CallPaaS</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

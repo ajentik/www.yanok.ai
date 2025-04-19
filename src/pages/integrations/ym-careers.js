@@ -61,7 +61,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>YM Careers</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

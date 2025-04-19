@@ -70,7 +70,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>BenchmarkONE</title>
-          <meta name="description" content={}/>s simple CRM.' />
         </>
       ),
     },

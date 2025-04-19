@@ -240,7 +240,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>LiquidPlanner Classic</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

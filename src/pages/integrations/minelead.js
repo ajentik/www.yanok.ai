@@ -56,7 +56,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Minelead</title>
-          <meta name="description" content={}/>s a free unlimited lead generation solution to find email addresses and company contact information.' />
         </>
       ),
     },

@@ -60,7 +60,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Dola</title>
-          <meta name="description" content={}/>s a digital wallet and 1-click checkout.' />
         </>
       ),
     },

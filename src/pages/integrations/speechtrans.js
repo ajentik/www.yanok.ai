@@ -210,7 +210,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>SpeechTrans</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -56,7 +56,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>ITM Platform</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

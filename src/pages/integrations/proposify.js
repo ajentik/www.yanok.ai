@@ -105,7 +105,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Proposify</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

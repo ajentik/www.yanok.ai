@@ -70,7 +70,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Hubilo</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

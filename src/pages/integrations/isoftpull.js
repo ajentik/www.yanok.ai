@@ -70,7 +70,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>iSoftpull</title>
-          <meta name="description" content={}/>s Equifax and TransUnion credit reports and FICO Scores with soft credit check technology.' />
         </>
       ),
     },

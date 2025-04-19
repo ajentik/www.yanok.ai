@@ -56,7 +56,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>SendGrid</title>
-          <meta name="description" content={}/>s cloud-based email infrastructure relieves businesses of the cost and complexity of maintaining custom email systems' />
         </>
       ),
     },

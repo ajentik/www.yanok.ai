@@ -65,7 +65,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Mobivate BulkSMS</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -630,7 +630,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Megaventory</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

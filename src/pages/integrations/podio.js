@@ -120,7 +120,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Podio</title>
-          <meta name="description" content={}/>s perfect for managing projects, teams, and anything else in your business that needs flexible apps that work the way you do.' />
         </>
       ),
     },

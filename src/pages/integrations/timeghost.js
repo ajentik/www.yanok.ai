@@ -185,7 +185,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>timeghost</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

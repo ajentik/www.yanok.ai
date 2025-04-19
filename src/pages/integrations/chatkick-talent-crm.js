@@ -56,7 +56,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Chatkick Talent CRM</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -56,7 +56,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Nobel SMS</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

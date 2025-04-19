@@ -65,7 +65,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Surveypal</title>
-          <meta name="description" content={}/>s real-time analytics and intelligent alerts.' />
         </>
       ),
     },

@@ -56,7 +56,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>SuperCat 360</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

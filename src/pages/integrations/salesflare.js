@@ -190,7 +190,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Salesflare</title>
-          <meta name="description" content={}/>s a zero-input sales pipeline tool that thinks and works for its user, not the other way around.' />
         </>
       ),
     },

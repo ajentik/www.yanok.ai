@@ -70,7 +70,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Formaloo</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

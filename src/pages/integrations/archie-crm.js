@@ -90,7 +90,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Archie CRM</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

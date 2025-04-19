@@ -65,7 +65,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Live Data Technologies</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

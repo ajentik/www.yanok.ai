@@ -75,7 +75,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Samm (APE Mobile)</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

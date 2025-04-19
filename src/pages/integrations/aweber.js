@@ -100,7 +100,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>AWeber</title>
-          <meta name="description" content={}/>s easy signup forms and autoresponders make it easy for you to stay in touch with your customers.' />
         </>
       ),
     },

@@ -56,7 +56,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>POWR Form Builder</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

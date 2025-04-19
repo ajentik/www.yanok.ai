@@ -71,7 +71,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>MyWiFi Networks</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

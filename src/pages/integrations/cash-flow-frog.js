@@ -56,7 +56,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Cash Flow Frog</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

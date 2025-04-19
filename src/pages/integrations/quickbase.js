@@ -85,7 +85,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Quick Base</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

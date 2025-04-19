@@ -60,7 +60,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>LOX24 SMS Gateway</title>
-          <meta name="description" content={}/>s you send text messages (SMS) to individual phone numbers or groups of phone numbers. It is also possible to receive SMS. Various inbound numbers are available for this purpose.' />
         </>
       ),
     },

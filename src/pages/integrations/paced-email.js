@@ -70,7 +70,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Paced Email</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

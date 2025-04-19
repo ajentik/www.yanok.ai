@@ -61,7 +61,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Switchy.io</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

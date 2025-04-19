@@ -66,7 +66,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>GetBusy</title>
-          <meta name="description" content={}/>s simply a better way to work with your team and your clients.' />
         </>
       ),
     },

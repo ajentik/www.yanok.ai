@@ -90,7 +90,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Forms On Fire</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

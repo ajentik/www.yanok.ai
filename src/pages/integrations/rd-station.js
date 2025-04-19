@@ -75,7 +75,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>RD Station</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

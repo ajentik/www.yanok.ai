@@ -70,7 +70,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Rally Corp</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -75,7 +75,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>On2Air</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

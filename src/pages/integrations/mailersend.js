@@ -120,7 +120,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>MailerSend</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

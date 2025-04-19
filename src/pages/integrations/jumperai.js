@@ -66,7 +66,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Jumper.ai</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -56,7 +56,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Grab Your Reviews</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

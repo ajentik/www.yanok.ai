@@ -60,7 +60,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>I Done This</title>
-          <meta name="description" content={}/>s end and ask, "What'd you get done today?" Just reply. The next morning, you'll get a digest that shows your team's accomplishments from yesterday. Start a conversation and share your thanks.' />
         </>
       ),
     },

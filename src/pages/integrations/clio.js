@@ -245,7 +245,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Clio</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

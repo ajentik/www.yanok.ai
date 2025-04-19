@@ -90,7 +90,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>CallOnTheGo</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

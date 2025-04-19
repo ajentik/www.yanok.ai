@@ -61,7 +61,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>SphereMail</title>
-          <meta name="description" content={}/>s is a virtual office platform that makes it easier for mail administrators and customers to access, view and manage mail online or from a mobile device.' />
         </>
       ),
     },

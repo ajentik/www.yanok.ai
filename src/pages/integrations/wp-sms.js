@@ -70,7 +70,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>WP SMS</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

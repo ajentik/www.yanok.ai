@@ -70,7 +70,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Survey Mechanics</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

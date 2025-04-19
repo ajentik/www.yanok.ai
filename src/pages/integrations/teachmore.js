@@ -130,7 +130,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Teachmore</title>
-          <meta name="description" content={}/>t miss out on sales for not having mobile apps!' />
         </>
       ),
     },

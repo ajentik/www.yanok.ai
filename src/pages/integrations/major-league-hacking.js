@@ -52,7 +52,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Major League Hacking</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

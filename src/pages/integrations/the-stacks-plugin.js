@@ -56,7 +56,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>The Stacks Plugin</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

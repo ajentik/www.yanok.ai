@@ -116,7 +116,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>OKAST</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

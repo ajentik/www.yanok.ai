@@ -70,7 +70,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Great AEP</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

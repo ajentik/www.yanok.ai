@@ -225,7 +225,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Clinked</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

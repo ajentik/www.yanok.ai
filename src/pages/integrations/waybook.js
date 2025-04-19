@@ -95,7 +95,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Waybook</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

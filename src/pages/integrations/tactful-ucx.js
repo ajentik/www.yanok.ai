@@ -205,7 +205,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Tactful UCX</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

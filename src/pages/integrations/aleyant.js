@@ -52,7 +52,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Aleyant</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

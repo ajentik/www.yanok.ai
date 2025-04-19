@@ -56,7 +56,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>TAP NFC Management</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

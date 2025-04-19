@@ -65,7 +65,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>AWS Lambda</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

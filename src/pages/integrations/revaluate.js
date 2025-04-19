@@ -70,7 +70,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Revaluate</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -70,7 +70,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>EmbedSocial</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

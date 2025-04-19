@@ -95,7 +95,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>VOMO</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

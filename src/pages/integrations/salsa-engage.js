@@ -71,7 +71,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Salsa Engage</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -116,7 +116,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>eWay-CRM</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

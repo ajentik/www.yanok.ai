@@ -280,7 +280,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Recruitly</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

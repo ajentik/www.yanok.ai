@@ -170,7 +170,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Planbox Innovation Central</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

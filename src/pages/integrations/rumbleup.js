@@ -65,7 +65,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>RumbleUp</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

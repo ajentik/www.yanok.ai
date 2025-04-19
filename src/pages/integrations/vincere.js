@@ -125,7 +125,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Vincere</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

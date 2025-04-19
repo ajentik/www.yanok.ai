@@ -75,7 +75,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>BigCommerce</title>
-          <meta name="description" content={}/> online store. If you're trying to sell physical goods online, you'll want to check out Bigcommerce.' />
         </>
       ),
     },

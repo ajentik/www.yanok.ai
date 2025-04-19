@@ -105,7 +105,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Alloy Navigator Express</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

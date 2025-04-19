@@ -101,7 +101,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Learner Community</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

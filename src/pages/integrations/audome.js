@@ -56,7 +56,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Audome</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

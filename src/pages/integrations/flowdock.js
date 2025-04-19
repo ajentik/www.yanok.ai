@@ -80,7 +80,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Flowdock</title>
-          <meta name="description" content={}/>s inbox, but with chat. Get updates from all the apps you use, but then easily have discussions around those items.' />
         </>
       ),
     },

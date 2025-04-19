@@ -130,7 +130,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>IRIS CRM</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

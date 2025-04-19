@@ -125,7 +125,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>OnceHub</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

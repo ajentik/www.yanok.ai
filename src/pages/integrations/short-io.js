@@ -85,7 +85,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Short.io</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

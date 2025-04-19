@@ -130,7 +130,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Active Collab</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

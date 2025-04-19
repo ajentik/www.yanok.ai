@@ -85,7 +85,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>ViewPoint VISUM</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -95,7 +95,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>ConvertFlow</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -95,7 +95,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Fiverr Workspace</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

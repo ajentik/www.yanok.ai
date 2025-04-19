@@ -86,7 +86,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>HeySpace</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

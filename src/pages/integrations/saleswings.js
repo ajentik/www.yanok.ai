@@ -52,7 +52,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>SalesWings</title>
-          <meta name="description" content={}/> interest, priorities, and profile.' />
         </>
       ),
     },

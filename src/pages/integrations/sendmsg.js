@@ -90,7 +90,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Sendmsg (שלח מסר)</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

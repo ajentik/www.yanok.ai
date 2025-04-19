@@ -75,7 +75,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>100Hires</title>
-          <meta name="description" content={}/>s hiring process.' />
         </>
       ),
     },

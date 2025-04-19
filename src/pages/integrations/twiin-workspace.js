@@ -61,7 +61,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Twiin Workspace</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

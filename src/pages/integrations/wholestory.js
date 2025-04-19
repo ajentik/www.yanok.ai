@@ -56,7 +56,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>WholeStory</title>
-          <meta name="description" content={}/>s pivotal life experiences into the screening and interview process. This uncovers critical soft skills not revealed in the resume and interview.' />
         </>
       ),
     },

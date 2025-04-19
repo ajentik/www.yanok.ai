@@ -95,7 +95,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>MemberVault</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

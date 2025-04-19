@@ -76,7 +76,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>CustomerGauge</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

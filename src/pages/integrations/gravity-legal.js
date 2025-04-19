@@ -70,7 +70,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Gravity Legal</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

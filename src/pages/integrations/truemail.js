@@ -56,7 +56,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>TrueMail</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

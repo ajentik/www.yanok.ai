@@ -56,7 +56,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Woobox</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

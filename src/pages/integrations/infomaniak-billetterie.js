@@ -80,7 +80,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Infomaniak Billetterie</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

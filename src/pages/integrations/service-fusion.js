@@ -95,7 +95,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Service Fusion</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

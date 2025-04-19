@@ -65,7 +65,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>MessengerPeople.dev</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

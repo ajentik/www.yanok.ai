@@ -96,7 +96,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>crmgrow</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

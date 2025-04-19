@@ -111,7 +111,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>plugnpaid</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

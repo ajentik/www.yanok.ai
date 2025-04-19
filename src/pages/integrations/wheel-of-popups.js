@@ -61,7 +61,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Wheel of Popups</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

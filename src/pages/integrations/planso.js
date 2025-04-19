@@ -56,7 +56,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>PlanSo Forms for WordPress</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

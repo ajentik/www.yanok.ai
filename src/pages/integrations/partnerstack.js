@@ -175,7 +175,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>PartnerStack</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

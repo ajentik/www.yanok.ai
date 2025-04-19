@@ -85,7 +85,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>TextP2P</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

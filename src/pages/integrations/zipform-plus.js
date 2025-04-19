@@ -60,7 +60,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>zipForm Plus</title>
-          <meta name="description" content={}/>s real estate forms software and the exclusive and official forms software for NAR — has been the real estate industry's technology foundation. zipLogix offers products that support more than 640,000 users, and delivers innovative products and web applications that significantly improve the productivity and efficiency and address the specific needs of REALTORS®.' />
         </>
       ),
     },

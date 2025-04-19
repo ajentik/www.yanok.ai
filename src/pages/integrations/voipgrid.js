@@ -56,7 +56,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>VoIPGRID</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

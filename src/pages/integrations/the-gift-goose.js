@@ -60,7 +60,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>The Gift Goose</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

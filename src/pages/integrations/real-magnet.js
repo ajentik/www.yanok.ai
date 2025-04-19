@@ -90,7 +90,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Real Magnet</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

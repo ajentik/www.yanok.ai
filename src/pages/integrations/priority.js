@@ -150,7 +150,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Priority</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

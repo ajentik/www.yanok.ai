@@ -110,7 +110,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Zoho WorkDrive</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

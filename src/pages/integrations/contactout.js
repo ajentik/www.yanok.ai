@@ -56,7 +56,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Contactout</title>
-          <meta name="description" content={}/>s personal email & phone number. Hire talent 10x faster with the most powerful sourcing platform available' />
         </>
       ),
     },

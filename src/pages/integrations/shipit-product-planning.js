@@ -61,7 +61,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>shipit Product Planning</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

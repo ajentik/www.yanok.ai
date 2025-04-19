@@ -160,7 +160,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Visma eAccounting</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

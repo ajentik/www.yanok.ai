@@ -145,7 +145,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Huddo Boards</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

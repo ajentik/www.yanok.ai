@@ -100,7 +100,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Agency Elephant</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

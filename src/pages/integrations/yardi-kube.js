@@ -260,7 +260,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Yardi Kube</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -70,7 +70,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>KiSSFLOW</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

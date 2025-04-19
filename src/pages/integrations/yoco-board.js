@@ -65,7 +65,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>YoCo Board</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -175,7 +175,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Slack</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

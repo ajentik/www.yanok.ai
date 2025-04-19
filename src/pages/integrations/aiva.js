@@ -81,7 +81,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Aiva</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -65,7 +65,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>BL.INK</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

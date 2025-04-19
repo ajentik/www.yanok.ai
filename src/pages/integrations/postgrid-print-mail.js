@@ -85,7 +85,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>PostGrid Print & Mail</title>
-          <meta name="description" content={}/>s Print & Mail REST API allows you to send personalized letters, checks, or postcards on demand and at scale.' />
         </>
       ),
     },

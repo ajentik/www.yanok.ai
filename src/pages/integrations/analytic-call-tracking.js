@@ -110,7 +110,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Analytic Call Tracking</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

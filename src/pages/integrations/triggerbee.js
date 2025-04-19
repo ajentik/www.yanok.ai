@@ -52,7 +52,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Triggerbee</title>
-          <meta name="description" content={}/>s software will help you turn clicks, pageviews and digital footprints on your website into profit.' />
         </>
       ),
     },

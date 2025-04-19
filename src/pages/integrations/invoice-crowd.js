@@ -75,7 +75,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Invoice Crowd</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -56,7 +56,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Back In Stock - Restock Alerts</title>
-          <meta name="description" content={}/>Back In Stock - Restock Alert's is a plugin for e-commerce store owners to notify their users when a product comes back in stock.' />
         </>
       ),
     },

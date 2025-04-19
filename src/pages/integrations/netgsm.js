@@ -90,7 +90,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Netgsm</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

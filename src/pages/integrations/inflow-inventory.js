@@ -95,7 +95,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>inFlow Inventory</title>
-          <meta name="description" content={}/>s.' />
         </>
       ),
     },

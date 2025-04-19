@@ -81,7 +81,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Always On Time (AOT.plus)</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -95,7 +95,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Eventable</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

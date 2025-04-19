@@ -315,7 +315,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Procore</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

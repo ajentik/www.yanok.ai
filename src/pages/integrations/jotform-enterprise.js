@@ -70,7 +70,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Jotform Enterprise</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

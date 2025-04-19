@@ -70,7 +70,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Connect4</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

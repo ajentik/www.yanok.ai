@@ -76,7 +76,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Eventcombo</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

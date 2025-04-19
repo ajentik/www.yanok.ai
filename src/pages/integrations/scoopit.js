@@ -65,7 +65,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Scoop.it</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

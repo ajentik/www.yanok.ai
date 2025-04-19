@@ -56,7 +56,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Formly</title>
-          <meta name="description" content={}/>s the fastest form on your marketing roster' />
         </>
       ),
     },

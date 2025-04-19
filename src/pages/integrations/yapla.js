@@ -71,7 +71,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Yapla</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

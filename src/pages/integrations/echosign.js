@@ -52,7 +52,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Echosign</title>
-          <meta name="description" content={}/>s EchoSign offers a secure and trusted electronic signature software online. With Echosign you can send, e-sign, track, and file documents and contracts very simply!' />
         </>
       ),
     },

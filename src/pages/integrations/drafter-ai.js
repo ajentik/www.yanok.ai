@@ -65,7 +65,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Drafter AI</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

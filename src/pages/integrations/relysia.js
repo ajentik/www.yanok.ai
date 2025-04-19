@@ -136,7 +136,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Relysia</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

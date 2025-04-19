@@ -100,7 +100,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Week Plan</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

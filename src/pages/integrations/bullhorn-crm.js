@@ -155,7 +155,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Bullhorn CRM</title>
-          <meta name="description" content={}/> fingertips to give them everything they need to win customers and keep them happy.' />
         </>
       ),
     },

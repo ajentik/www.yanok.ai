@@ -70,7 +70,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>shipcloud</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

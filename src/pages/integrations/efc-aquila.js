@@ -130,7 +130,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>EFC Aquila</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

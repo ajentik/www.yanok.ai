@@ -60,7 +60,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Mirabel's Marketing Manager</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

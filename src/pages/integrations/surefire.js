@@ -56,7 +56,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Surefire CRM</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

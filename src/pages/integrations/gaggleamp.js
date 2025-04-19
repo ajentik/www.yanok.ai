@@ -75,7 +75,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>GaggleAMP</title>
-          <meta name="description" content={}/> social networks.' />
         </>
       ),
     },

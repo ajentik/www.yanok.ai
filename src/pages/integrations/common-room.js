@@ -100,7 +100,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Common Room</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

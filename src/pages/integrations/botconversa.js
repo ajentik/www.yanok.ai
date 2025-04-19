@@ -125,7 +125,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>BotConversa</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

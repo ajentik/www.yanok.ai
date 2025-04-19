@@ -195,7 +195,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Pomelo Pay</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

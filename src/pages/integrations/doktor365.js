@@ -56,7 +56,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Doktor365</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

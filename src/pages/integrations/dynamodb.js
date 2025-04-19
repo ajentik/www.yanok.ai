@@ -65,7 +65,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Amazon DynamoDB</title>
-          <meta name="description" content={}/>s DynamoDB is a fast NoSQL database service. It is fully managed, simple and cost-effective. It can store and retrieve any amount of data and serve any level of request traffic.' />
         </>
       ),
     },

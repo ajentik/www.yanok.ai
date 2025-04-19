@@ -85,7 +85,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Ontraport</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

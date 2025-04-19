@@ -90,7 +90,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Connect 365</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

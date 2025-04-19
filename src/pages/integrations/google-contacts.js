@@ -95,7 +95,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Google Contacts</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

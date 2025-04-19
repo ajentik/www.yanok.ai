@@ -52,7 +52,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Orion Advisor Services</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

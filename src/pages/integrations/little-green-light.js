@@ -56,7 +56,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Little Green Light</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

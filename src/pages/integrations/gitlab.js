@@ -110,7 +110,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>GitLab</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

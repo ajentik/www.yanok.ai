@@ -90,7 +90,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Duply</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

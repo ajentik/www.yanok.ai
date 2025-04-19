@@ -265,7 +265,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Pipedrive</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -75,7 +75,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Instabot: Chatbot Platform</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -65,7 +65,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Grade.us</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

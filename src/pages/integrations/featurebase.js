@@ -75,7 +75,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Featurebase</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

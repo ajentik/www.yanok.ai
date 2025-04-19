@@ -80,7 +80,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Conversion Tools</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

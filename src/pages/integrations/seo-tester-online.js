@@ -56,7 +56,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>SEO Tester Online</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

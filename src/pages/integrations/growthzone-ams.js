@@ -65,7 +65,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>GrowthZone AMS</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

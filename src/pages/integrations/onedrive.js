@@ -95,7 +95,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>OneDrive</title>
-          <meta name="description" content={}/>s file sync app formerly known as SkyDrive, lets you store your files online, edit Office documents in the free Office Web Apps, and easily access your online files from your PC.' />
         </>
       ),
     },

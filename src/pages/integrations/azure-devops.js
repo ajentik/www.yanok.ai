@@ -95,7 +95,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Azure DevOps</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

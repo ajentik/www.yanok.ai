@@ -56,7 +56,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>M360</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

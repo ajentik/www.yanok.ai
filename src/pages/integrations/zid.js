@@ -110,7 +110,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Zid</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

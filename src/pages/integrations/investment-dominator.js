@@ -70,7 +70,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Investment Dominator</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

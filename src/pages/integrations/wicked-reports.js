@@ -66,7 +66,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Wicked Reports</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

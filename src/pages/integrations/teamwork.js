@@ -505,7 +505,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Teamwork</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

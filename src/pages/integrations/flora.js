@@ -71,7 +71,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Flora</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

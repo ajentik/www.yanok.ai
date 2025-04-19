@@ -75,7 +75,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Concord CLM</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

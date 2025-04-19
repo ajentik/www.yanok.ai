@@ -90,7 +90,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Ediware</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -56,7 +56,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>WPForms</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -71,7 +71,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Mobilize US</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

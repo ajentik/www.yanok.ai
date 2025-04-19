@@ -80,7 +80,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>WebWork Time Tracker</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

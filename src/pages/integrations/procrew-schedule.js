@@ -75,7 +75,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Pro Crew Schedule</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

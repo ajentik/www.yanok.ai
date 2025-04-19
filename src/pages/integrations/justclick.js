@@ -100,7 +100,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>JustClick</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -80,7 +80,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Interseller</title>
-          <meta name="description" content={}/> email addresses, send them messages and push them into any CRM or ATS with one-click.' />
         </>
       ),
     },

@@ -65,7 +65,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Contractors Cloud</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

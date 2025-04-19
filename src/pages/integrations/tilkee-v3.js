@@ -100,7 +100,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Tilkee</title>
-          <meta name="description" content={}/>s latest API to track how your contacts read your documents.' />
         </>
       ),
     },

@@ -56,7 +56,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Earth Class Mail</title>
-          <meta name="description" content={}/>ll scan your mail items, make them digital so you can take action.' />
         </>
       ),
     },

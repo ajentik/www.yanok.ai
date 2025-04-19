@@ -56,7 +56,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Lnk.Bio</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

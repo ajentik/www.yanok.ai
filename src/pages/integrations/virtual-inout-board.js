@@ -60,7 +60,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Virtual In/Out</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

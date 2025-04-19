@@ -66,7 +66,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Pledge It for Charities</title>
-          <meta name="description" content={}/>s best peer-to-peer and virtual fitness event campaigns.' />
         </>
       ),
     },

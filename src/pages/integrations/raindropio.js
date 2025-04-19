@@ -75,7 +75,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Raindrop.io</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

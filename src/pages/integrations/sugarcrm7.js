@@ -80,7 +80,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>SugarCRM 7+</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

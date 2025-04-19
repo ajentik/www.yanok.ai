@@ -160,7 +160,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>e-shot</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

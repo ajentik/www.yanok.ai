@@ -110,7 +110,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Project Monitor</title>
-          <meta name="description" content={}/>s workload and save time with a data-driven dashboard.' />
         </>
       ),
     },

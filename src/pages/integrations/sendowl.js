@@ -71,7 +71,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>SendOwl</title>
-          <meta name="description" content={}/>s mission is to increase digital product sales globally. Sell your digital products how and where you want.' />
         </>
       ),
     },

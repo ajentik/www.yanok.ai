@@ -200,7 +200,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>simPRO</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

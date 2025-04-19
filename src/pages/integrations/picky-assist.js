@@ -60,7 +60,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Picky Assist</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

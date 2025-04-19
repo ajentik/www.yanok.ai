@@ -150,7 +150,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Map My Customers</title>
-          <meta name="description" content={}/>s day-to-day.' />
         </>
       ),
     },

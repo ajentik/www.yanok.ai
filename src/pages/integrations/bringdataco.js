@@ -61,7 +61,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>BringData.co</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

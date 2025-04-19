@@ -130,7 +130,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Membrain</title>
-          <meta name="description" content={}/>s software and services make it easy for sales teams to execute a sales strategy to consistently reach sales targets.' />
         </>
       ),
     },

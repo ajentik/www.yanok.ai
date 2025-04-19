@@ -56,7 +56,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>POWR Popup</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -60,7 +60,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>SAI360 GRC</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

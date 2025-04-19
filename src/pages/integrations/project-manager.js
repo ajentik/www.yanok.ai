@@ -90,7 +90,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Project Manager</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

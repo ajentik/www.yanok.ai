@@ -56,7 +56,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Scan2Lead</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

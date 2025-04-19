@@ -200,7 +200,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Planview AgilePlace</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

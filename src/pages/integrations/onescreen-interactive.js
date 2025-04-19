@@ -56,7 +56,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>OneScreen Interactive</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

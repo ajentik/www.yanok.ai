@@ -60,7 +60,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Spike.sh</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

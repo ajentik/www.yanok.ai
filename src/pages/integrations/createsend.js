@@ -90,7 +90,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Createsend</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

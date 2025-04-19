@@ -115,7 +115,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>QuickMail.io</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

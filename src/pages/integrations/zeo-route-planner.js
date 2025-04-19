@@ -56,7 +56,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Zeo Route Planner</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

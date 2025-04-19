@@ -115,7 +115,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Xplor Studio</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -66,7 +66,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>MARCOM Robot</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

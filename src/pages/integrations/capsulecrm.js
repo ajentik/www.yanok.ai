@@ -140,7 +140,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Capsule CRM</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

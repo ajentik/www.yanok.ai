@@ -70,7 +70,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Kanban Zone</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

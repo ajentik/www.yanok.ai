@@ -56,7 +56,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>AddressFinder Australia</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

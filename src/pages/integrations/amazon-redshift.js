@@ -56,7 +56,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Amazon Redshift</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

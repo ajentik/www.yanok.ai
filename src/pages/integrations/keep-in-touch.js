@@ -120,7 +120,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Keep In Touch</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -61,7 +61,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Flock</title>
-          <meta name="description" content={}/>s polished-to-perfection!' />
         </>
       ),
     },

@@ -125,7 +125,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>ClickSend SMS</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

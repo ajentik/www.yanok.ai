@@ -115,7 +115,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Kameleoon</title>
-          <meta name="description" content={}/>s powerful and easy-to-use A/B testing, full stack, and AI-powered personalization solutions help marketers, product owners, and developers maximize customer engagement and conversion - all from a single platform.' />
         </>
       ),
     },

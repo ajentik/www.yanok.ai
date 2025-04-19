@@ -190,7 +190,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Website Toolbox Forum</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -61,7 +61,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>SpewHub Unlimited SMS API</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

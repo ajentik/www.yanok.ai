@@ -175,7 +175,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Basecamp 2</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

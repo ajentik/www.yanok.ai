@@ -56,7 +56,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Presence Stars</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

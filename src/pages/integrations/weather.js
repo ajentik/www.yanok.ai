@@ -70,7 +70,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Weather by Zapier</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

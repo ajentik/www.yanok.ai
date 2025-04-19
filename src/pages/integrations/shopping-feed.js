@@ -100,7 +100,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Shopping Feed</title>
-          <meta name="description" content={}/>s largest marketplaces, adspaces, affiliate channels and shopping engines.' />
         </>
       ),
     },

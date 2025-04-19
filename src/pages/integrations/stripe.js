@@ -175,7 +175,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Stripe</title>
-          <meta name="description" content={}/>s suite of APIs powers commerce for thousands of companies of all sizes, processing billions of dollars for businesses each year.' />
         </>
       ),
     },

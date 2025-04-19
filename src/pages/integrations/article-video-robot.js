@@ -56,7 +56,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Article Video Robot</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -56,7 +56,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Loket.com</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

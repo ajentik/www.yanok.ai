@@ -150,7 +150,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>FireDrum Email Marketing</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -100,7 +100,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Hot Prospector</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

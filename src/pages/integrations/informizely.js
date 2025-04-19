@@ -56,7 +56,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Informizely</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

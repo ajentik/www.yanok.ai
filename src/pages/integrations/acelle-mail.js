@@ -56,7 +56,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Acelle Mail</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

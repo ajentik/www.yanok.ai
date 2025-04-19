@@ -56,7 +56,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Knowledge Anywhere LMS</title>
-          <meta name="description" content={}/>s LMS helps connect your learners to Just in Time Training.' />
         </>
       ),
     },

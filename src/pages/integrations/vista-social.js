@@ -90,7 +90,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Vista Social</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -205,7 +205,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Wingmate</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

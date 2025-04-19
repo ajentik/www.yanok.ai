@@ -61,7 +61,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>CubApp</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

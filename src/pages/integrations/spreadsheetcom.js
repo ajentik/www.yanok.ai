@@ -95,7 +95,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Spreadsheet.com</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -260,7 +260,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Kobana (previously Boleto Simples)</title>
-          <meta name="description" content={}/>s or your users' internal systems through a unique API interface that automates billing, updates statements, makes payments at more than 30 Brazilian banks in a scalable and secure way.' />
         </>
       ),
     },

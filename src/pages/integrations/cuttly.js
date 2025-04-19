@@ -95,7 +95,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Cutt.ly</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

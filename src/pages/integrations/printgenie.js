@@ -61,7 +61,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>PRINTgenie</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

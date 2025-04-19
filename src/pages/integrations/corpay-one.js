@@ -101,7 +101,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Corpay One</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

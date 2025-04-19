@@ -60,7 +60,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Wisernotify</title>
-          <meta name="description" content={}/> actions into social proof notifications on your website that build trust and increase conversions rate.' />
         </>
       ),
     },

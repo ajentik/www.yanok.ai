@@ -56,7 +56,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Kendo Email</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

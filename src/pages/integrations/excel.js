@@ -100,7 +100,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Microsoft Excel</title>
-          <meta name="description" content={}/>s Excel is a spreadsheet application used by millions of users across the world. It is part of the Office ecosystem and is considered the industry standard for spreadsheets. Only files on OneDrive for Business (available with Office 365 and Sharepoint server) are supported at this time with Zapier.' />
         </>
       ),
     },

@@ -52,7 +52,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Mojo Dialer</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

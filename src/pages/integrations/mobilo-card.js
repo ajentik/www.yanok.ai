@@ -66,7 +66,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Mobilo Card</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

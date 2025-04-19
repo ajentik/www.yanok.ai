@@ -80,7 +80,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Eva Gifting Assistant (EvaBot)</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

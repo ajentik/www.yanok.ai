@@ -215,7 +215,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Axonaut</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

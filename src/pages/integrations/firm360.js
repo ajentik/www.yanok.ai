@@ -120,7 +120,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Firm360</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

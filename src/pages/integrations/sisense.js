@@ -52,7 +52,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Sisense</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

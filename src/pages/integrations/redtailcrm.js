@@ -135,7 +135,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Redtail CRM</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

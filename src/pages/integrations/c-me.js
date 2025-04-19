@@ -61,7 +61,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>C-Me</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

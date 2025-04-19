@@ -70,7 +70,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Intertel Conversa</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

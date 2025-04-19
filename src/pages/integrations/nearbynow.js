@@ -85,7 +85,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Nearby Now</title>
-          <meta name="description" content={}/>s powerful marketing platform drives hyperlocal results for your own website by helping you secure more reviews and create rich local checkins.' />
         </>
       ),
     },

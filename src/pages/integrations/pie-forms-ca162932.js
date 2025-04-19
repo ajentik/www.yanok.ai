@@ -60,7 +60,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Pie Forms</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

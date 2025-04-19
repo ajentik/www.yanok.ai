@@ -66,7 +66,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Social Intents</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

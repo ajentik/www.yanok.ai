@@ -155,7 +155,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Wealthbox CRM</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -52,7 +52,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Webconnex</title>
-          <meta name="description" content={}/>s biggest and most trusted brands use Webconnex products for their fundraising and events.' />
         </>
       ),
     },

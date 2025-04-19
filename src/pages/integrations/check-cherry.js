@@ -115,7 +115,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Check Cherry</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

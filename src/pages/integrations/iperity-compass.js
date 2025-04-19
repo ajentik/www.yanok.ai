@@ -56,7 +56,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>IPerity Compass</title>
-          <meta name="description" content={}/>s Compass is a PBX foundation software with its accompanying building blocks.' />
         </>
       ),
     },

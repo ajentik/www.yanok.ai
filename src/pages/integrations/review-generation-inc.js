@@ -56,7 +56,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Review Generation Inc.</title>
-          <meta name="description" content={}/>s online reputation healthy.' />
         </>
       ),
     },

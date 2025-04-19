@@ -90,7 +90,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Amazon Honeycode</title>
-          <meta name="description" content={}/>s business needs—without programming.' />
         </>
       ),
     },

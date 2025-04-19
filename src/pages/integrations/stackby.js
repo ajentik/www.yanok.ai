@@ -85,7 +85,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Stackby</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

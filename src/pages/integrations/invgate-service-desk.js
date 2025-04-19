@@ -120,7 +120,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>InvGate Service Desk</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -56,7 +56,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Insurance Website Builder</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

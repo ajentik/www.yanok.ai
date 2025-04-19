@@ -56,7 +56,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Fast-Weigh</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

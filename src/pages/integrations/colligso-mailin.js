@@ -56,7 +56,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Colligso MailIn</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

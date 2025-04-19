@@ -71,7 +71,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Loyalty Gator</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

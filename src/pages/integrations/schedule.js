@@ -71,7 +71,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Schedule by Zapier</title>
-          <meta name="description" content={}/>re a developer, this is similar to a crontab, cronjob or cron.' />
         </>
       ),
     },

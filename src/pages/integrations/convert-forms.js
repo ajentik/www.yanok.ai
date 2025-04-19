@@ -56,7 +56,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Convert Forms</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

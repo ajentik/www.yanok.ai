@@ -71,7 +71,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>ikas</title>
-          <meta name="description" content={}/>s.' />
         </>
       ),
     },

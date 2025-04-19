@@ -52,7 +52,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Critical Impact</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

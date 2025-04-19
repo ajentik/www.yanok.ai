@@ -76,7 +76,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Nomics Crypto</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

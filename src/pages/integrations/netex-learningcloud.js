@@ -110,7 +110,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Netex learningCloud</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

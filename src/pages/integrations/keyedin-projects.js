@@ -75,7 +75,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>KeyedIn Projects</title>
-          <meta name="description" content={}/>s, IT Teams and Professional Services.' />
         </>
       ),
     },

@@ -85,7 +85,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Ivanti Service Manager</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

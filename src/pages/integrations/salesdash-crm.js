@@ -100,7 +100,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Salesdash CRM</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

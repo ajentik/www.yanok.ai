@@ -52,7 +52,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Stamped.io</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

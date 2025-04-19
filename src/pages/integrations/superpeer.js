@@ -121,7 +121,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Superpeer</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

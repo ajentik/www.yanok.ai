@@ -70,7 +70,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Convertlabs</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

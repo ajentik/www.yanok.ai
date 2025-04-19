@@ -52,7 +52,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Salsify</title>
-          <meta name="description" content={}/>s Product Experience Management (PXM) platform enables brands to deliver the product experiences consumers demand.' />
         </>
       ),
     },

@@ -115,7 +115,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Evernote Business</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

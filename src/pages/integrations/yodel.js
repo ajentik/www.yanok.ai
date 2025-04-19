@@ -85,7 +85,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Yodel.io Phone System</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

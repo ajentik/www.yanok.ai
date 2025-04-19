@@ -76,7 +76,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>BotStar</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

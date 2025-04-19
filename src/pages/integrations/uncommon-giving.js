@@ -56,7 +56,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Uncommon Giving</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

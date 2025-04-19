@@ -56,7 +56,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>B2BBricks</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

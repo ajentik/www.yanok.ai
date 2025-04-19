@@ -61,7 +61,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Scale Cloud</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

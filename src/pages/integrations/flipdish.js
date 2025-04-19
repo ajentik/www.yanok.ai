@@ -270,7 +270,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Flipdish</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -100,7 +100,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Collaborate Space</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

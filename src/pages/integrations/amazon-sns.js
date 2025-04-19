@@ -85,7 +85,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Amazon SNS</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

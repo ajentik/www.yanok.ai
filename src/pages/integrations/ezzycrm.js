@@ -100,7 +100,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>EzzyCRM</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

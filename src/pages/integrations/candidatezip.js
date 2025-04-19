@@ -71,7 +71,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>CandidateZip Resume/Job Parser</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

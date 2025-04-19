@@ -100,7 +100,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Teamtailor</title>
-          <meta name="description" content={}/>s intuitive automation helps users manage candidates and the entire recruitment process, as well as schedule and keep track of activities, book interviews and make notes about candidates.' />
         </>
       ),
     },

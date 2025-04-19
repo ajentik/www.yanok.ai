@@ -60,7 +60,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Zinc</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

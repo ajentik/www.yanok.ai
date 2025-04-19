@@ -145,7 +145,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>BoldDesk</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

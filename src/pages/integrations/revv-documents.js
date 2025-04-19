@@ -105,7 +105,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Revv Documents</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

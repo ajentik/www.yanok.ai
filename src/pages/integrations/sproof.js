@@ -56,7 +56,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>sproof</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

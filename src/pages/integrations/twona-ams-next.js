@@ -61,7 +61,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Twona AMS - NeXT</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

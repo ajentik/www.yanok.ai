@@ -60,7 +60,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>WinSMS International</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

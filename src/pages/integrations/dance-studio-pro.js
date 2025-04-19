@@ -116,7 +116,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Dance Studio Pro</title>
-          <meta name="description" content={}/>s best dance studio software' />
         </>
       ),
     },

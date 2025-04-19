@@ -56,7 +56,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>GRID.is</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

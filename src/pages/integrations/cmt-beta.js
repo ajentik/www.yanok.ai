@@ -71,7 +71,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>CMT Beta</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

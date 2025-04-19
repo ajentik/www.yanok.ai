@@ -130,7 +130,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Hub Planner</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

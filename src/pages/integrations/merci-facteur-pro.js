@@ -141,7 +141,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Merci facteur Pro</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

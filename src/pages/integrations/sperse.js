@@ -70,7 +70,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Sperse</title>
-          <meta name="description" content={}/>s smart, sleek and customizable CRM software is simple and designed to help you maximize your customer relationships and grow your business.' />
         </>
       ),
     },

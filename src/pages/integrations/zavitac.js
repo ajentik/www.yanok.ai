@@ -180,7 +180,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Zavitac</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

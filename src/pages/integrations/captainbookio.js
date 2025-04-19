@@ -76,7 +76,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>CaptainBook.io</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

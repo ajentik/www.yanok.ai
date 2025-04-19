@@ -95,7 +95,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Zeda.io</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

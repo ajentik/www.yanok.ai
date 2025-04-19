@@ -61,7 +61,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Evolution Forms</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

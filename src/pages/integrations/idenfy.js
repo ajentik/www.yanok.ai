@@ -75,7 +75,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>iDenfy</title>
-          <meta name="description" content={}/> data quickly and securely.' />
         </>
       ),
     },

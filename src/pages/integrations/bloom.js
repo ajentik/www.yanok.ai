@@ -91,7 +91,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Bloom</title>
-          <meta name="description" content={}/>s marketing CRM + project management software makes managing your business 10x easier.' />
         </>
       ),
     },

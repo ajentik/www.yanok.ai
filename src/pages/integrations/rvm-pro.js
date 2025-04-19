@@ -90,7 +90,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>RVM Pro</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

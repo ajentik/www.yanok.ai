@@ -135,7 +135,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>TextMagic SMS</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

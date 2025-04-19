@@ -90,7 +90,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>CleverReach</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

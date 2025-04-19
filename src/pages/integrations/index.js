@@ -70,7 +70,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Index.co</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -66,7 +66,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Dots.eco</title>
-          <meta name="description" content={}/>s conversion rate, engagement, retention, user acquisition, and improve the world, dot by dot.' />
         </>
       ),
     },

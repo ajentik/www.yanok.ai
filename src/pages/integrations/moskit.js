@@ -380,7 +380,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Moskit</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

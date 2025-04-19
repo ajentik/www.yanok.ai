@@ -110,7 +110,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Moneybird</title>
-          <meta name="description" content={}/>s in Holland.' />
         </>
       ),
     },

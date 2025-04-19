@@ -91,7 +91,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>ChatBeacon</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

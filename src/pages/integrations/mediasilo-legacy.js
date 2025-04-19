@@ -120,7 +120,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>MediaSilo Legacy</title>
-          <meta name="description" content={}/>s plug-and-play video management platform sits in the middle of your production process, working with your existing tools and workflows to keep your team connected, your assets secure and all your bases covered.' />
         </>
       ),
     },

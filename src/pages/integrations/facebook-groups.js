@@ -80,7 +80,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Facebook Groups</title>
-          <meta name="description" content={}/>s privacy settings depending on who you want to be able to join and see the group.' />
         </>
       ),
     },

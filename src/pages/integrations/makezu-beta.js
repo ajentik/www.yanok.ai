@@ -80,7 +80,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Makezu Beta</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

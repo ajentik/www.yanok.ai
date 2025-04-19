@@ -52,7 +52,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Google Keep</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

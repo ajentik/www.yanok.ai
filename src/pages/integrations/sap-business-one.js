@@ -52,7 +52,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>SAP Business One</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

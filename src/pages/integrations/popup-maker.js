@@ -61,7 +61,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Popup Maker</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

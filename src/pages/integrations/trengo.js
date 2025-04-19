@@ -120,7 +120,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Trengo</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

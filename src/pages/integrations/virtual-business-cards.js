@@ -56,7 +56,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Virtual Business Cards</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

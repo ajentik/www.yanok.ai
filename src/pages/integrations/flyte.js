@@ -61,7 +61,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Flyte</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

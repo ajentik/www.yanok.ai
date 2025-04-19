@@ -65,7 +65,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>iNCOM USA</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -125,7 +125,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Finaeo</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

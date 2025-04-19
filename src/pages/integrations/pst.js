@@ -201,7 +201,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>PST</title>
-          <meta name="description" content={}/>s Toolbox (PST) provides a complete set of power tools for process serving companies, their Clients, and their servers in the field - all designed to streamline service of process.' />
         </>
       ),
     },

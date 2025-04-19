@@ -71,7 +71,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Cal.com</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

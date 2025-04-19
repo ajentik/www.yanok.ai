@@ -60,7 +60,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>DPLYR</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

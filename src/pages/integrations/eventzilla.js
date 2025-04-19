@@ -81,7 +81,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Eventzilla</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

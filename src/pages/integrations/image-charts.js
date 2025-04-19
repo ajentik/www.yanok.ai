@@ -101,7 +101,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Image-Charts</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

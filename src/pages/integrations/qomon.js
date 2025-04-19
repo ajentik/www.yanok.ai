@@ -70,7 +70,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Qomon</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

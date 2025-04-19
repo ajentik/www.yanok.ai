@@ -130,7 +130,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Zenvia Conversion</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

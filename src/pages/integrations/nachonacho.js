@@ -56,7 +56,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>NachoNacho</title>
-          <meta name="description" content={}/>s mission is to be the marketplace for SaaS - a single destination where businesses buy SaaS products, and vendors find their best customers.' />
         </>
       ),
     },

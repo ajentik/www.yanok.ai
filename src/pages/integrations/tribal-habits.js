@@ -95,7 +95,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Tribal Habits LMS</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

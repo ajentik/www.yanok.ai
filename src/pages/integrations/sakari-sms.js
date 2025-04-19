@@ -90,7 +90,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Sakari SMS</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

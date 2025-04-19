@@ -56,7 +56,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Internal.io</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

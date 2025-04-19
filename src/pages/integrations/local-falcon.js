@@ -90,7 +90,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Local Falcon</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

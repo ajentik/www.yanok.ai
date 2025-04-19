@@ -61,7 +61,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Blaze</title>
-          <meta name="description" content={}/>ve all been waiting for! We give you everything you need to create apps and internal tools that supercharge your team's processes.' />
         </>
       ),
     },

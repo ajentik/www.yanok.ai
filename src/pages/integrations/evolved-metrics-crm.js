@@ -70,7 +70,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Evolved Metrics CRM</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

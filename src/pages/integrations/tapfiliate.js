@@ -185,7 +185,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Tapfiliate</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

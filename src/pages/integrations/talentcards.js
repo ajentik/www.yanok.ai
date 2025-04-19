@@ -70,7 +70,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>TalentCards</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

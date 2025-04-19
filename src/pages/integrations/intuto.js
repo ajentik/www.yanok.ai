@@ -70,7 +70,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Intuto</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

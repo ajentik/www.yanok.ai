@@ -220,7 +220,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Kommo</title>
-          <meta name="description" content={}/>s a versatile, cloud-based sales automation tool that enables you to manage leads and monitor your sales pipeline in only a few clicks.' />
         </>
       ),
     },

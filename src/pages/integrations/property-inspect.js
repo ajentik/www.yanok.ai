@@ -270,7 +270,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Property Inspect</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -61,7 +61,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Dialpad</title>
-          <meta name="description" content={}/>s built to grow with your team, no matter where in the world they are. Offering voice, messaging, video, and more, Dialpad helps teams stay connected across all their existing devices.' />
         </>
       ),
     },

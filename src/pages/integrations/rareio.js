@@ -66,7 +66,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Rare.io</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

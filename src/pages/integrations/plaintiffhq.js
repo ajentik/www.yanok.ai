@@ -56,7 +56,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>PlaintiffHQ</title>
-          <meta name="description" content={}/>Create Landing Page', 'Create Campaign Websites', 'Broadcast Email Campaigns', 'Create Email Sequence'...etc.' />
         </>
       ),
     },

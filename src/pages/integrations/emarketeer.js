@@ -52,7 +52,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>eMarketeer</title>
-          <meta name="description" content={}/>s All-in-One Online Marketing Software helps small businesses and marketing agencies to deliver relevant marketing material to their customers.' />
         </>
       ),
     },

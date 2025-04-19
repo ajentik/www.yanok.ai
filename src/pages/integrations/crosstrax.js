@@ -90,7 +90,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>CROSStrax</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

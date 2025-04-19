@@ -71,7 +71,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Distribuidora Eficaz</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -91,7 +91,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>ThoughtTrace</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

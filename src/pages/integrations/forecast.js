@@ -71,7 +71,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Forecast</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -56,7 +56,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Agent Fixup</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

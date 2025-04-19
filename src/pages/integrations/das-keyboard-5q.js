@@ -56,7 +56,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Das Keyboard 5Q</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

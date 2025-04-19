@@ -66,7 +66,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>EZOfficeInventory</title>
-          <meta name="description" content={}/>s always available and lasts longer.' />
         </>
       ),
     },

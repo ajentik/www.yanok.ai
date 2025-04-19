@@ -56,7 +56,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>WriteWith.AI</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

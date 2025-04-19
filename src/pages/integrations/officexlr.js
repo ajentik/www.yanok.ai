@@ -60,7 +60,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Officexlr</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -105,7 +105,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Qualified.io</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

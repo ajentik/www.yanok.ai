@@ -455,7 +455,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Ezekia</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

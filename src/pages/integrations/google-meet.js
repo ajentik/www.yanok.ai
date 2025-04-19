@@ -56,7 +56,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Google Meet</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

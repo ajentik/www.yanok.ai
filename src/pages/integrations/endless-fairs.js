@@ -56,7 +56,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Endless Fairs</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

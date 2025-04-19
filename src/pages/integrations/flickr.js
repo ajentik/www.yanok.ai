@@ -71,7 +71,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Flickr</title>
-          <meta name="description" content={}/> images.' />
         </>
       ),
     },

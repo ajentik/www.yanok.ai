@@ -80,7 +80,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>SMS.to</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

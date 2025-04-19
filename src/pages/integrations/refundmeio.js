@@ -75,7 +75,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Refundme.io</title>
-          <meta name="description" content={}/>s standardised technology and processes increase speed, volume, security and efficiency of refunds and payments.' />
         </>
       ),
     },

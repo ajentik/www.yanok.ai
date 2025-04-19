@@ -56,7 +56,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Reach.at</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

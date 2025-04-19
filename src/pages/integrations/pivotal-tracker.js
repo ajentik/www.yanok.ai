@@ -85,7 +85,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Pivotal Tracker</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

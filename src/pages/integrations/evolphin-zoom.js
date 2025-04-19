@@ -60,7 +60,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Evolphin Zoom</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

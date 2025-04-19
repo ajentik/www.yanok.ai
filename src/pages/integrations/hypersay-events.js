@@ -65,7 +65,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Hypersay Events</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

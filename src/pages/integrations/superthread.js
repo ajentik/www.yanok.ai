@@ -60,7 +60,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Superthread</title>
-          <meta name="description" content={}/>s fastest issue tracker with tasks and docs in one tool.' />
         </>
       ),
     },

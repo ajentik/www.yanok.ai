@@ -75,7 +75,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>OneLocal LocalContacts</title>
-          <meta name="description" content={}/>s LocalReviews & LocalReferrals.' />
         </>
       ),
     },

@@ -61,7 +61,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Universe</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

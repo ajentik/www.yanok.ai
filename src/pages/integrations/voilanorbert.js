@@ -75,7 +75,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>VoilaNorbert</title>
-          <meta name="description" content={}/>s email address and reach out to them.' />
         </>
       ),
     },

@@ -125,7 +125,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>VBOUT</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

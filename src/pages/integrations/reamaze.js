@@ -90,7 +90,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Reamaze</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

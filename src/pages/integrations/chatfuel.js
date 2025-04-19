@@ -110,7 +110,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Chatfuel</title>
-          <meta name="description" content={}/>ll be able to automatically update content in your bot.' />
         </>
       ),
     },

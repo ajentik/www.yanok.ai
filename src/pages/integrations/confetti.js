@@ -111,7 +111,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Confetti</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

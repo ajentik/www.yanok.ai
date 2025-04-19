@@ -185,7 +185,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Intercom</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

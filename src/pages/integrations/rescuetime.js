@@ -95,7 +95,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>RescueTime</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

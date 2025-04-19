@@ -56,7 +56,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Trustpilot</title>
-          <meta name="description" content={}/>s most powerful review platform, helping your business collect and easily manage customer reviews. Trustpilot gives people a place to share and discover reviews of businesses, while giving every business the tools to turn consumer feedback into business results.' />
         </>
       ),
     },

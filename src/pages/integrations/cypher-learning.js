@@ -140,7 +140,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>CYPHER LEARNING</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -95,7 +95,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Rootly</title>
-          <meta name="description" content={}/>s of users around the world trust Rootly daily to create a simple, consistent, and delightful incident management process.' />
         </>
       ),
     },

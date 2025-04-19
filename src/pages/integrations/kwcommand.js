@@ -56,7 +56,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Keller Williams Command</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

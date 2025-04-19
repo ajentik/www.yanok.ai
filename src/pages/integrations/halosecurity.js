@@ -66,7 +66,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Halo Security</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

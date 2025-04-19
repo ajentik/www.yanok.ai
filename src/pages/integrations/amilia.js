@@ -115,7 +115,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Amilia</title>
-          <meta name="description" content={}/>re just starting out or looking to scale, Amilia's Recreation Management Software helps you sell, manage, & grow your business.' />
         </>
       ),
     },

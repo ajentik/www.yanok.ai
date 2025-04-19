@@ -160,7 +160,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Mobili Stotelė</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

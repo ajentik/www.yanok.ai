@@ -116,7 +116,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Perfit</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

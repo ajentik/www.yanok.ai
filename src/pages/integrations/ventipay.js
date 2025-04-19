@@ -151,7 +151,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>VentiPay</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

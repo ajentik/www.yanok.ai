@@ -56,7 +56,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Intely</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

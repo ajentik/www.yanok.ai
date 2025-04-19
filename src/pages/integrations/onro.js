@@ -61,7 +61,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Onro</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

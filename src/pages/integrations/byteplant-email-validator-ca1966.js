@@ -56,7 +56,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Byteplant Email Validator</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -85,7 +85,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Jetpack Workflow</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

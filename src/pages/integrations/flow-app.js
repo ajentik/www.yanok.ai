@@ -75,7 +75,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Flow App</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

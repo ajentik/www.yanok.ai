@@ -56,7 +56,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Switchboard Canvas</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

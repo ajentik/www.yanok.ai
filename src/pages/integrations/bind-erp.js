@@ -90,7 +90,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Bind ERP</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -56,7 +56,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>IP2Proxy</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

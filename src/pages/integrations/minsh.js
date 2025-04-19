@@ -70,7 +70,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Minsh</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

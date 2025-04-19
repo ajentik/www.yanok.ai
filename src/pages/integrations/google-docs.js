@@ -90,7 +90,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Google Docs</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

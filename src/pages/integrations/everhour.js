@@ -155,7 +155,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Everhour</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

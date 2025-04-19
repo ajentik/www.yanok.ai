@@ -52,7 +52,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Xref</title>
-          <meta name="description" content={}/>s online reference checking platform to gather valuable candidate insights quickly and with ease.' />
         </>
       ),
     },

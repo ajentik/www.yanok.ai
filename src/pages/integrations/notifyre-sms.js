@@ -60,7 +60,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Notifyre SMS</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

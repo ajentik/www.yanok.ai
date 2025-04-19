@@ -65,7 +65,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Question.to</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

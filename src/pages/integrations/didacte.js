@@ -96,7 +96,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Didacte</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

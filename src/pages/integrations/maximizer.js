@@ -255,7 +255,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Maximizer CRM</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

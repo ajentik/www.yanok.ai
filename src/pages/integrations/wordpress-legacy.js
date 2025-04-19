@@ -115,7 +115,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>WordPress (Legacy)</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

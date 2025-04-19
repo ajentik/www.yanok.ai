@@ -60,7 +60,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>4Dem.it</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

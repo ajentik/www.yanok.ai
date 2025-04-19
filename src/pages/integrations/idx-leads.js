@@ -60,7 +60,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>IDX Leads</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

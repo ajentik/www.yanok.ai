@@ -180,7 +180,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Hectic</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

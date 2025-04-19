@@ -65,7 +65,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Zoho Checkout</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

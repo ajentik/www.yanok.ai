@@ -56,7 +56,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>BP Pay</title>
-          <meta name="description" content={}/>s USDC.' />
         </>
       ),
     },

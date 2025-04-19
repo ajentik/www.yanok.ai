@@ -66,7 +66,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Press'nXPress</title>
-          <meta name="description" content={}/>nXPress is a multi-channel customer feedback management collects feedback on Web, Email, SMS, QR code and generates actionable insights in real-time.' />
         </>
       ),
     },

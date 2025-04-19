@@ -395,7 +395,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Daylite</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

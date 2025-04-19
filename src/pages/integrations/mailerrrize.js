@@ -56,7 +56,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Mailerrrize</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

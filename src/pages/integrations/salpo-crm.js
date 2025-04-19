@@ -200,7 +200,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Salpo CRM</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -66,7 +66,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>LinkedIn Matched Audiences</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

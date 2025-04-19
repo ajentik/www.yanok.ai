@@ -61,7 +61,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Translate by Zapier</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

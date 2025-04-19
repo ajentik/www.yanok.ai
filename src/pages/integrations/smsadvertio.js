@@ -61,7 +61,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>smsadvert.io</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

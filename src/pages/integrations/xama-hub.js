@@ -66,7 +66,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Xama Hub</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

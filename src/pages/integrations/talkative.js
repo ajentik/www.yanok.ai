@@ -56,7 +56,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Talkative</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

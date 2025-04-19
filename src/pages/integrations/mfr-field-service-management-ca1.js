@@ -150,7 +150,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>mfr - field service management</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

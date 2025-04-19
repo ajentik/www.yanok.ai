@@ -115,7 +115,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Kaiten</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -76,7 +76,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Mindee OCR</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

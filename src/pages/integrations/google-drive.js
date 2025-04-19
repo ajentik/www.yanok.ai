@@ -130,7 +130,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Google Drive</title>
-          <meta name="description" content={}/>s file sync app that lets you store all of your files online alongside your Google Docs documents, and keep them synced with all of your devices.' />
         </>
       ),
     },

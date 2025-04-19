@@ -65,7 +65,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Space Invoices / Apollo</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

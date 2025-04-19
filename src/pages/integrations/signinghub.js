@@ -101,7 +101,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>SigningHub</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

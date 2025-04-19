@@ -56,7 +56,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Passage Ticketing</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

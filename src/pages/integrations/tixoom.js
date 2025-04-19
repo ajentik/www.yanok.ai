@@ -56,7 +56,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Tixoom</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

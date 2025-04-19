@@ -260,7 +260,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Evoliz</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

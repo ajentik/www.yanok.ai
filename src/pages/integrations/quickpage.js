@@ -85,7 +85,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Quickpage</title>
-          <meta name="description" content={}/>s increasing engagement by 200%. The quickest most effective closing tool used by sales reps and their clients.' />
         </>
       ),
     },

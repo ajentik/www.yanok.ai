@@ -66,7 +66,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Skilljar</title>
-          <meta name="description" content={}/>s learning management system (LMS) enables businesses to create, deliver, and track online training courses.' />
         </>
       ),
     },

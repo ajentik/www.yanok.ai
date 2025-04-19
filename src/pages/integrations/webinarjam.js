@@ -91,7 +91,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>WebinarJam / EverWebinar</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

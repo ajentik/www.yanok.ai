@@ -251,7 +251,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Udio</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

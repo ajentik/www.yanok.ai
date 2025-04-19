@@ -190,7 +190,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Invoice Ninja</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

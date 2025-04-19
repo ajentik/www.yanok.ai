@@ -146,7 +146,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>BulkGate</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

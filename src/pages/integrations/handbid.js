@@ -205,7 +205,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Handbid</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

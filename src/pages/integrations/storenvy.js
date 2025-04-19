@@ -71,7 +71,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Storenvy</title>
-          <meta name="description" content={}/>ll love from brands that inspire. It is also the easiest way to open your own store online.' />
         </>
       ),
     },

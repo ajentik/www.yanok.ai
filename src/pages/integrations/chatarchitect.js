@@ -105,7 +105,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>ChatArchitect.com</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

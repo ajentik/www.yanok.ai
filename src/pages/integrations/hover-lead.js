@@ -60,7 +60,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Hover Lead</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

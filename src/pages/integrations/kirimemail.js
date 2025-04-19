@@ -61,7 +61,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Kirim.Email</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

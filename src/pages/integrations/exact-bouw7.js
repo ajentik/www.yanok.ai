@@ -70,7 +70,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Exact Online Bouw</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

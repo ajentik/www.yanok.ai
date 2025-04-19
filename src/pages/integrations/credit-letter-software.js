@@ -125,7 +125,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Credit Letters Software</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

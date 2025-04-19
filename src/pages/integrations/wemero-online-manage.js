@@ -56,7 +56,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Wemero Online Manage</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -275,7 +275,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>JobAdder</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

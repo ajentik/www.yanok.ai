@@ -370,7 +370,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Recruit CRM</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -110,7 +110,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Virtuous CRM</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

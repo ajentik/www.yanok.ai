@@ -100,7 +100,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Elfsquad Product Configurator</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

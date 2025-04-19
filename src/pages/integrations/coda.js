@@ -85,7 +85,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Coda</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

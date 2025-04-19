@@ -155,7 +155,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>10,000ft</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

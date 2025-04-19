@@ -56,7 +56,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>URL Shortener by Zapier</title>
-          <meta name="description" content={}/>s URL Shortener spits out a simplified version of any link you throw its way. Pass that link to Twitter, drop it in an email, or send it along to any Zapier-connected app.' />
         </>
       ),
     },

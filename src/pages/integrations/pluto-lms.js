@@ -195,7 +195,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Pluto LMS</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

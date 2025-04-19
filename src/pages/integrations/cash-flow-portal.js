@@ -61,7 +61,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Cash Flow Portal</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

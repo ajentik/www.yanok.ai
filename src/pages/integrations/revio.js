@@ -245,7 +245,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Rev.io</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

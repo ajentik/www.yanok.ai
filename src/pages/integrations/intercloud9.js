@@ -66,7 +66,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>InterCloud9 SMS</title>
-          <meta name="description" content={}/> simple messaging solution for sending Texts and Automated Voice Messages. Easily integrate your CRM or Application today!' />
         </>
       ),
     },

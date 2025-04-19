@@ -80,7 +80,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Cloudprinter.com</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -115,7 +115,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Winoffice Prime</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

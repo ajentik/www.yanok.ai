@@ -76,7 +76,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Planning Center</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -60,7 +60,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Revolut Business</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

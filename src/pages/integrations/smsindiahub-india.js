@@ -56,7 +56,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>SMSINDIAHUB (India)</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

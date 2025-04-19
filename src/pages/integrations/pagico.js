@@ -75,7 +75,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Pagico</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

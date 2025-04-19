@@ -250,7 +250,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Zendesk Sell</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

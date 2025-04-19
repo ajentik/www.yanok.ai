@@ -52,7 +52,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Net-Results</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

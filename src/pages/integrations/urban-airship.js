@@ -52,7 +52,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Urban Airship</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -75,7 +75,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Pneumatic</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -56,7 +56,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Event Calendar App</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

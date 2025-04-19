@@ -85,7 +85,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Luma</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

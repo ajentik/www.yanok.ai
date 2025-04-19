@@ -125,7 +125,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>GoodBarber eCommerce</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

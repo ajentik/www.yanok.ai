@@ -61,7 +61,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Swiss QR Invoice</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

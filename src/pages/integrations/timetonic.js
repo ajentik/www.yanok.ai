@@ -75,7 +75,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>timetonic</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -175,7 +175,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Arlo</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

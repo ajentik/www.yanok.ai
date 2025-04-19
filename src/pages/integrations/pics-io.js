@@ -106,7 +106,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Pics.io</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

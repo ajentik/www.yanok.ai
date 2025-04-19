@@ -131,7 +131,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>TeamUp</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

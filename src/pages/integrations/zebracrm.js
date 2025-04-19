@@ -90,7 +90,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>zebraCRM</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

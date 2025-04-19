@@ -95,7 +95,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Responder (רב מסר)</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

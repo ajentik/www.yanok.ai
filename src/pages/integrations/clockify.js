@@ -180,7 +180,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Clockify</title>
-          <meta name="description" content={}/>s a simple time tracker and timesheet app for tracking work hours on projects.' />
         </>
       ),
     },

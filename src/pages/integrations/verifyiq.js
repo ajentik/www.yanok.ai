@@ -56,7 +56,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>VERIFYiQ</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

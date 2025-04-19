@@ -66,7 +66,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Google Groups</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

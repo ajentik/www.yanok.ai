@@ -160,7 +160,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Digital Practice</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

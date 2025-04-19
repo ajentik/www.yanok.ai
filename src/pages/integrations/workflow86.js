@@ -60,7 +60,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Workflow86</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

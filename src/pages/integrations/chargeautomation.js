@@ -66,7 +66,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>ChargeAutomation</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

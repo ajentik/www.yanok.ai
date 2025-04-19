@@ -56,7 +56,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Audiogram</title>
-          <meta name="description" content={}/>s popular with podcasters, marketers, and anyone who wants their audio to get more reach.' />
         </>
       ),
     },

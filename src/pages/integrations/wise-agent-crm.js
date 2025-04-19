@@ -56,7 +56,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Wise Agent CRM</title>
-          <meta name="description" content={}/>s become pros by automating their leads, responses, appointments, and transactions.' />
         </>
       ),
     },

@@ -95,7 +95,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Badger Maps</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

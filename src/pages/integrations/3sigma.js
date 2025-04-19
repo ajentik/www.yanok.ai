@@ -56,7 +56,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>3Sigma</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

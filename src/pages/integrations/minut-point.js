@@ -111,7 +111,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Minut Smart Home Sensor</title>
-          <meta name="description" content={}/> peace and quiet and your guests' privacy with Minut. Get real-time home analytics on noise, motion, temperature, humidity in your property, from anywhere in the world.' />
         </>
       ),
     },

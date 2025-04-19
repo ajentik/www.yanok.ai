@@ -65,7 +65,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>AppsForOps Timeline</title>
-          <meta name="description" content={}/>s people, processes and systems. It allows you to easily see the whole picture and act on what matters most.' />
         </>
       ),
     },

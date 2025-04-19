@@ -140,7 +140,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Cassa in Cloud</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

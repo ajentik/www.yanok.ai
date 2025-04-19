@@ -60,7 +60,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>College Aid Pro</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

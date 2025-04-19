@@ -56,7 +56,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Mailautic</title>
-          <meta name="description" content={}/>s and Entrepreneurs who wants to send emails and automations to their subscribers via Amazon SES.' />
         </>
       ),
     },

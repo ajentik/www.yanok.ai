@@ -110,7 +110,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Noticeable</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

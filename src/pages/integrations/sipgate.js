@@ -52,7 +52,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Sipgate</title>
-          <meta name="description" content={}/>s leading Business and Residential VoIP Providers, offering high quality pay as you go phone services.' />
         </>
       ),
     },

@@ -70,7 +70,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Real Estate Webmasters</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

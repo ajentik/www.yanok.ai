@@ -60,7 +60,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>lc.cx</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

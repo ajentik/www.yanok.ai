@@ -66,7 +66,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Digidom</title>
-          <meta name="description" content={}/>s customers and to help them always be aware of the new stuffs' />
         </>
       ),
     },

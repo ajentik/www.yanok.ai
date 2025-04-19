@@ -61,7 +61,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>REVE Chat</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

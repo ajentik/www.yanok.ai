@@ -61,7 +61,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Meetgeek.ai</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

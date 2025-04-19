@@ -76,7 +76,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>TeleCube VPBX</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

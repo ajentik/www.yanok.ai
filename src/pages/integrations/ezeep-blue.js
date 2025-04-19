@@ -60,7 +60,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>ezeep Blue printing</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

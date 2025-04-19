@@ -125,7 +125,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Livestorm</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

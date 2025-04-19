@@ -165,7 +165,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>OfficeRnD</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -110,7 +110,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Jira Software Server</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

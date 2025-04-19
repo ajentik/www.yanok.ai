@@ -65,7 +65,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Remo Conference</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

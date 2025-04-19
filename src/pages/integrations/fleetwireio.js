@@ -56,7 +56,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>FleetWire.io</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

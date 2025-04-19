@@ -81,7 +81,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>24sessions</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

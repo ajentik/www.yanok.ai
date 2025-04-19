@@ -60,7 +60,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>webautomation.io</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

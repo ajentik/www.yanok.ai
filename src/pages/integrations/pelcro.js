@@ -95,7 +95,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Pelcro</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -76,7 +76,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Direct Debit</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

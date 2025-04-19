@@ -70,7 +70,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>GEVME Registration</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

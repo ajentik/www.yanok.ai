@@ -56,7 +56,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Surf for Brands</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

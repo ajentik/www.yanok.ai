@@ -175,7 +175,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Higher Logic Vanilla</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

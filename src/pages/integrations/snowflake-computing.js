@@ -52,7 +52,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Snowflake Computing</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -56,7 +56,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Kissflow Coral</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

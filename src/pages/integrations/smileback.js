@@ -52,7 +52,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Smileback</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

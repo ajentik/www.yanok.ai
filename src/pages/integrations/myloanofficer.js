@@ -61,7 +61,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Myloanofficer</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

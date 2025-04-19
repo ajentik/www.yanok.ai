@@ -60,7 +60,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Hypercontext</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

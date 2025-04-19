@@ -61,7 +61,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Octane AI</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

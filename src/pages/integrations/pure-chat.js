@@ -66,7 +66,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Pure Chat</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

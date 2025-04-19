@@ -61,7 +61,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>IXACT Contact CRM</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

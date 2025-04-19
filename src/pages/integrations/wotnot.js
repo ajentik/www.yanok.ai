@@ -56,7 +56,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>WotNot</title>
-          <meta name="description" content={}/>s easy to build bots, but hard to get the desired results. This is where WotNot steps in, providing a done-for-you service. We build a pipeline of qualified leads, automate your support, without increasing headcount with our no-code chatbot platform.' />
         </>
       ),
     },

@@ -175,7 +175,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Hiveage</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -71,7 +71,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Facebook Conversions</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

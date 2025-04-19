@@ -75,7 +75,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Roi4Presenter</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

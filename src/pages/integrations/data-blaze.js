@@ -90,7 +90,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Data Blaze</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

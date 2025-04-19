@@ -135,7 +135,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Poodll NET</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -70,7 +70,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Alive5</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

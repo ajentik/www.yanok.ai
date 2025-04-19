@@ -56,7 +56,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Vista One</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -75,7 +75,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>HireTrack NX</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

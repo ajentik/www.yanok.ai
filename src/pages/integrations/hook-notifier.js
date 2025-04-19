@@ -56,7 +56,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Hook.Notifier</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -56,7 +56,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Korreos</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

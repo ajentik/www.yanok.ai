@@ -60,7 +60,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>NorthStar by GrowthHackers</title>
-          <meta name="description" content={}/>s growth potential. We do this via a community of growth practitioners that share insights and resources at GrowthHackers.com, as well as a collaborative software platform, NorthStar by GrowthHackers, that keeps teams on the same page as they accelerate their growth testing and learning process.' />
         </>
       ),
     },

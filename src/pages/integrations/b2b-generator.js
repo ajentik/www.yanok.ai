@@ -80,7 +80,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>B2B Generator</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

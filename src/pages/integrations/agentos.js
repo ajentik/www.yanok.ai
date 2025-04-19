@@ -75,7 +75,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>agentOS</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

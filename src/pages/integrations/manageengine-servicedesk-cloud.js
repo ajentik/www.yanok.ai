@@ -95,7 +95,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>ManageEngine ServiceDesk Plus Cloud</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

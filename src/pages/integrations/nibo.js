@@ -121,7 +121,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Nibo</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -61,7 +61,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Showcase IDX</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

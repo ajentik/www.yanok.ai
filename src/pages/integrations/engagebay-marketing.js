@@ -195,7 +195,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>EngageBay Marketing</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

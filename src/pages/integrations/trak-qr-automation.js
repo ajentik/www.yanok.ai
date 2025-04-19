@@ -71,7 +71,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Trak Qr Automation</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

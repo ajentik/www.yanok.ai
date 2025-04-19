@@ -52,7 +52,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Easybill</title>
-          <meta name="description" content={}/>s cloud-based accounting software.' />
         </>
       ),
     },

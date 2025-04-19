@@ -61,7 +61,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>D7 SMS</title>
-          <meta name="description" content={}/>s own connectivity to global mobile networks.' />
         </>
       ),
     },

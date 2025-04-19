@@ -52,7 +52,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Grafana</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

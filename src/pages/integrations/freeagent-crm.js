@@ -85,7 +85,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>FreeAgent CRM</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

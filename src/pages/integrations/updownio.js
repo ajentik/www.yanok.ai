@@ -96,7 +96,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Updown.io</title>
-          <meta name="description" content={}/>s status by periodically sending an HTTP request. It then notifies you by Slack, Telegram, email or SMS when your website is not responding correctly, your SSL certificate is invalid or about to expire, and more.' />
         </>
       ),
     },

@@ -76,7 +76,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Phraseanet</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

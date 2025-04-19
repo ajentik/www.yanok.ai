@@ -61,7 +61,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Optmyzr</title>
-          <meta name="description" content={}/>s leading PPC Optmization Tool.' />
         </>
       ),
     },

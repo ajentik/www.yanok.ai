@@ -60,7 +60,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>eRelocation</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

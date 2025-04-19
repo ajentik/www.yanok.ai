@@ -71,7 +71,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>OpenAI (ChatGPT)</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

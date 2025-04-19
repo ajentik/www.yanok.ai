@@ -61,7 +61,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>SoundCloud</title>
-          <meta name="description" content={}/>s largest community of artists, bands, podcasters and creators of music and audio.' />
         </>
       ),
     },

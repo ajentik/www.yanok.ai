@@ -75,7 +75,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>VideoAsk</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

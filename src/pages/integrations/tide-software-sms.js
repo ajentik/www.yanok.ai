@@ -56,7 +56,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Tide Software SMS</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

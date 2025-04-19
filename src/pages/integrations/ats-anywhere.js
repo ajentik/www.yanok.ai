@@ -61,7 +61,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>ATS Anywhere</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

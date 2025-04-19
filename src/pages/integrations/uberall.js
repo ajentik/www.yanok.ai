@@ -100,7 +100,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Uberall</title>
-          <meta name="description" content={}/>s brands and businesses to deliver a relevant and memorable 'Near Me' Brand Experience at every step of today's customer journey!' />
         </>
       ),
     },

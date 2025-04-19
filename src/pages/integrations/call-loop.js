@@ -66,7 +66,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Call Loop</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

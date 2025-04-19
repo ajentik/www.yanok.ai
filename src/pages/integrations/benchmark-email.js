@@ -105,7 +105,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Benchmark Email</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

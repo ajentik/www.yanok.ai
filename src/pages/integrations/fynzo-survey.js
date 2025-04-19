@@ -56,7 +56,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Fynzo Survey</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

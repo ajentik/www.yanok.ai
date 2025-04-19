@@ -90,7 +90,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Madgex Job Board</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

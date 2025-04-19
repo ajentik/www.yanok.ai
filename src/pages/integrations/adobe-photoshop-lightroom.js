@@ -76,7 +76,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Adobe Photoshop Lightroom</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

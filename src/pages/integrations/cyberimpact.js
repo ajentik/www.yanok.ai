@@ -95,7 +95,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Cyberimpact</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

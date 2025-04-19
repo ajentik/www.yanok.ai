@@ -56,7 +56,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Bestomer</title>
-          <meta name="description" content={}/>s needed.' />
         </>
       ),
     },

@@ -56,7 +56,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Text to Speech PRO</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

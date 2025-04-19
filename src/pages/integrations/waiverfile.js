@@ -75,7 +75,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>WaiverFile</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

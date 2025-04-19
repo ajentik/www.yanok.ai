@@ -85,7 +85,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>ServiceM8</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

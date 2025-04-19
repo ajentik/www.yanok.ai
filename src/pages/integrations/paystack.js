@@ -170,7 +170,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Paystack</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

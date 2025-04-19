@@ -75,7 +75,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>straight2Voicemail</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

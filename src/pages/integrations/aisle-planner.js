@@ -80,7 +80,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Aisle Planner</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

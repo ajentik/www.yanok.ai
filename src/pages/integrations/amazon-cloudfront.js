@@ -65,7 +65,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Amazon CloudFront</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

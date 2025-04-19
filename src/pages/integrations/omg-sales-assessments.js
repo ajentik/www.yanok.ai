@@ -60,7 +60,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>OMG Sales Assessments</title>
-          <meta name="description" content={}/>s (OMG) Sales Candidate Assessment is a sales-specific screening tool that provides an analysis of a candidate's skills, strengths and capabilities, and recommends whether to move forward with an interview.' />
         </>
       ),
     },

@@ -110,7 +110,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>PHP Point Of Sale</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -56,7 +56,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Amazon Relational Database Services (RDS)</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

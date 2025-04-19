@@ -52,7 +52,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Sage CRM</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

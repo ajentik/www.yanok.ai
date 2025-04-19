@@ -56,7 +56,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>QDS (Quality Driven Software)</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

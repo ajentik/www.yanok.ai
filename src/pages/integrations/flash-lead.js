@@ -56,7 +56,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Flash Lead</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

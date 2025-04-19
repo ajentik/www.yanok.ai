@@ -190,7 +190,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Chargebee</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

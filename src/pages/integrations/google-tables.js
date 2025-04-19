@@ -85,7 +85,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Google Tables</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

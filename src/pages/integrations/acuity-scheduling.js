@@ -100,7 +100,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Acuity Scheduling</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

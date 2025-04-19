@@ -135,7 +135,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>TiDB Cloud</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -290,7 +290,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Sage Accounting</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -90,7 +90,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>ClockShark</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

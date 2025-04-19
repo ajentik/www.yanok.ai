@@ -215,7 +215,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Moon Invoice</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -61,7 +61,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>HTML/CSS to Image</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

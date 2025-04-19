@@ -61,7 +61,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Urlooker</title>
-          <meta name="description" content={}/>ll receive notifications about changed content.' />
         </>
       ),
     },

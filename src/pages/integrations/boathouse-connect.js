@@ -105,7 +105,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Boathouse Connect</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

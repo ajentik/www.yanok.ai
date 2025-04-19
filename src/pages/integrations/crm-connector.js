@@ -135,7 +135,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>CRM Connector</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

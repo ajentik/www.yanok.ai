@@ -95,7 +95,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>CallWidget</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

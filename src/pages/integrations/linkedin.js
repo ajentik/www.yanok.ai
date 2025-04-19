@@ -61,7 +61,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>LinkedIn</title>
-          <meta name="description" content={}/>s largest social network for professionals. Manage your professional identity. Build and engage with your professional network. Access knowledge, insights and opportunities.' />
         </>
       ),
     },

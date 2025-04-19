@@ -335,7 +335,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>HourStack</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

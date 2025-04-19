@@ -105,7 +105,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Anthill</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

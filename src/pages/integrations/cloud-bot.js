@@ -70,7 +70,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Cloud BOT</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

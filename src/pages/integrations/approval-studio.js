@@ -185,7 +185,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Approval Studio</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

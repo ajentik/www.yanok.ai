@@ -60,7 +60,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Portals by Helium10</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

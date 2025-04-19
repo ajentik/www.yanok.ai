@@ -110,7 +110,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Microsoft Office 365</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

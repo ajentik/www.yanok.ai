@@ -105,7 +105,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Locate2u</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

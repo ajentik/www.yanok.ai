@@ -52,7 +52,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Rank Ranger</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

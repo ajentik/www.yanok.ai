@@ -71,7 +71,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Interviewer.ai</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

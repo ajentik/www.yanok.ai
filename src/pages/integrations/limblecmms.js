@@ -80,7 +80,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>LimbleCMMS</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

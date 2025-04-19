@@ -52,7 +52,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Clearlogin</title>
-          <meta name="description" content={}/>s Identity Management Platform and Application Dashboard make secure access to the cloud easy for users, IT administrators, and developers.' />
         </>
       ),
     },

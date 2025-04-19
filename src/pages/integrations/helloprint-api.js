@@ -56,7 +56,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Helloprint API</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

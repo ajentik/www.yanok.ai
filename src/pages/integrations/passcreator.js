@@ -95,7 +95,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Passcreator</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

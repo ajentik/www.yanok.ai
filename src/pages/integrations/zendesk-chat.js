@@ -52,7 +52,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Zendesk Chat</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

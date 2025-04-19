@@ -52,7 +52,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>QuickBooks Time (TSheets)</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

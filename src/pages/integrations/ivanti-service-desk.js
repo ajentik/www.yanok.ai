@@ -76,7 +76,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Ivanti Service Desk</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

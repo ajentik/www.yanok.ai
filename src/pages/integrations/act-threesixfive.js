@@ -60,7 +60,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Act! 365</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -125,7 +125,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Google Calendar</title>
-          <meta name="description" content={}/>s free online calendar, it's easy to keep track of your daily schedule.' />
         </>
       ),
     },

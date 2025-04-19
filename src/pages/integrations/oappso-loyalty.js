@@ -61,7 +61,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Oappso Loyalty</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

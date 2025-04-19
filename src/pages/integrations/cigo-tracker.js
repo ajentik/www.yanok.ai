@@ -116,7 +116,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Cigo Tracker</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

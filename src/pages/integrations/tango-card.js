@@ -60,7 +60,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Tango Card</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

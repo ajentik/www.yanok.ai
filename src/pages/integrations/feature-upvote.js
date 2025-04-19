@@ -75,7 +75,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Feature Upvote</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

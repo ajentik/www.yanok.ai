@@ -75,7 +75,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Troop Messenger</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -65,7 +65,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Lucky Orange</title>
-          <meta name="description" content={}/>s conversion rate using a collection of tools including Dynamic Heatmaps, Session Recordings and Live Chat.' />
         </>
       ),
     },

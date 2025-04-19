@@ -95,7 +95,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Ally Hub</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

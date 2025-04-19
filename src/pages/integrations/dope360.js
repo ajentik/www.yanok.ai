@@ -61,7 +61,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>DOPE360</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

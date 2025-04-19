@@ -85,7 +85,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>CheckFlow</title>
-          <meta name="description" content={}/>s recurring checklists and procedures in real-time.' />
         </>
       ),
     },

@@ -75,7 +75,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Texting Base</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

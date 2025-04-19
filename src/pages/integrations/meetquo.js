@@ -56,7 +56,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Meetquo</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -245,7 +245,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>FinLegal Claims Automation</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

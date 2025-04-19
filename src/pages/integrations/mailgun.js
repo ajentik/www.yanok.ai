@@ -100,7 +100,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Mailgun</title>
-          <meta name="description" content={}/>t have to write any code!' />
         </>
       ),
     },

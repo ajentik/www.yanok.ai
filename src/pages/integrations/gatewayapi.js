@@ -71,7 +71,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>GatewayAPI SMS</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

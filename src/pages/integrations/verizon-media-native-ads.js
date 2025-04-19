@@ -56,7 +56,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Verizon Media Native Ads</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

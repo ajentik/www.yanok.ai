@@ -56,7 +56,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>GetSwift</title>
-          <meta name="description" content={}/>s and route like FedEx.' />
         </>
       ),
     },

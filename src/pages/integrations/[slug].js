@@ -66,7 +66,6 @@ export async function getStaticProps({ params }) {
       metaTags: (
         <>
           <title>{integration.name}</title>
-          <meta name="description" content={integration.description} />
         </>
       ),
     },

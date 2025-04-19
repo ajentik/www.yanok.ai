@@ -120,7 +120,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>DisputeFox</title>
-          <meta name="description" content={}/>s Most Advanced All-in-One Credit Dispute Software.' />
         </>
       ),
     },

@@ -200,7 +200,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>CRM in Cloud</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

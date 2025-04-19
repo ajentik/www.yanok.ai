@@ -175,7 +175,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>BTCPay Server</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

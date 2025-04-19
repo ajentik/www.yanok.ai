@@ -52,7 +52,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Authorize.net</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -75,7 +75,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>PEP Cloud</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

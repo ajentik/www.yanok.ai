@@ -76,7 +76,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>StarLeaf</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -90,7 +90,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Pobuca Connect</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

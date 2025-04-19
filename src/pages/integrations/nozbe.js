@@ -76,7 +76,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Nozbe Personal</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

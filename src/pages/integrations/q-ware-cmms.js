@@ -60,7 +60,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Q Ware CMMS</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -56,7 +56,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>TheGenie Marketing Hub</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

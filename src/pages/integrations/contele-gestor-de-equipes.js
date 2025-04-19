@@ -105,7 +105,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Contele Gestor de Equipes</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

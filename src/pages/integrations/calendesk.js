@@ -126,7 +126,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Calendesk</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

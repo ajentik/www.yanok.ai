@@ -75,7 +75,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Mad Mimi</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

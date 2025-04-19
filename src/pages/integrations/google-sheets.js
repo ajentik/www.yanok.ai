@@ -160,7 +160,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Google Sheets</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

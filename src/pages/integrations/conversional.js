@@ -71,7 +71,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Conversional</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

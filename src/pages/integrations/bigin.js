@@ -215,7 +215,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Bigin by Zoho CRM</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

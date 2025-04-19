@@ -56,7 +56,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Instant Offer Engine</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

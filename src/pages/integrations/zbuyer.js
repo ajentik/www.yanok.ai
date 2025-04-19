@@ -56,7 +56,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>zBuyer.com</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

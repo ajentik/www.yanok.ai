@@ -71,7 +71,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Formatter by Zapier</title>
-          <meta name="description" content={}/>t always in the format you need. Perhaps a date is in International format, but your app needs it in American format. Or maybe you need to Title Case a subject, truncate text for a Tweet, or turn Markdown text into HTML for your blog. Zapier's Formatter tool can help.' />
         </>
       ),
     },

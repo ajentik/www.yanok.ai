@@ -70,7 +70,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Wootric by InMoment</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

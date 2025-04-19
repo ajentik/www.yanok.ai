@@ -320,7 +320,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Scoro</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -56,7 +56,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Ometria</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -90,7 +90,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Loop Returns</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

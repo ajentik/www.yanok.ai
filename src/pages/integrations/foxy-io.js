@@ -52,7 +52,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Foxy.Io</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

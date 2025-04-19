@@ -65,7 +65,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>RSS by Zapier</title>
-          <meta name="description" content={}/>ll find RSS feeds in almost every app imaginable.' />
         </>
       ),
     },

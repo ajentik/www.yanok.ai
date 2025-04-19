@@ -60,7 +60,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Sansan</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

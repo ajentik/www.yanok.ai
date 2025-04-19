@@ -56,7 +56,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Hive.co</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

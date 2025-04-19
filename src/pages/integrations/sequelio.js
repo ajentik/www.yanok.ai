@@ -90,7 +90,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Sequel.io</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

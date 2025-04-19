@@ -125,7 +125,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>SAM.ai</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

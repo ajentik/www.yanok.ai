@@ -61,7 +61,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Spincast</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

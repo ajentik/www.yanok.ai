@@ -135,7 +135,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Reflexion.ai</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

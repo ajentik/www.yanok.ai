@@ -60,7 +60,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Wise Pelican</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

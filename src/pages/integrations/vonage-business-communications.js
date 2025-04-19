@@ -70,7 +70,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Vonage Business Communications</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

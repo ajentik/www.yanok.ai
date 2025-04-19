@@ -75,7 +75,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Marketo</title>
-          <meta name="description" content={}/>s marketing automation software helps marketers engage customers and prospects.' />
         </>
       ),
     },

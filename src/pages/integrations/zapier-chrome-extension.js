@@ -60,7 +60,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Zapier Chrome extension</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

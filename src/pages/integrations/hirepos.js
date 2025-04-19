@@ -90,7 +90,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>HirePOS</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

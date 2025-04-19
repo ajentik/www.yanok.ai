@@ -90,7 +90,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>net2phone</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

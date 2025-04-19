@@ -52,7 +52,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Oracle Database</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

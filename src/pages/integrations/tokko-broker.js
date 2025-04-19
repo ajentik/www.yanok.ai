@@ -56,7 +56,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Tokko Broker</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

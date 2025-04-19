@@ -136,7 +136,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>LoginRadius</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

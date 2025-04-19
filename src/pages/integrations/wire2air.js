@@ -90,7 +90,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Wire2Air</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

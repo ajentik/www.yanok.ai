@@ -85,7 +85,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Jobtoolz</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

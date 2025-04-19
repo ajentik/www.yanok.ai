@@ -60,7 +60,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>muse.ai</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

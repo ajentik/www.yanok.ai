@@ -52,7 +52,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>IBM Watson Marketing</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

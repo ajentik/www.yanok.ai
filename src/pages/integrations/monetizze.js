@@ -101,7 +101,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Monetizze</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

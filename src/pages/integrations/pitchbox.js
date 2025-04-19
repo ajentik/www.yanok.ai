@@ -52,7 +52,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Pitchbox</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

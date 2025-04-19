@@ -75,7 +75,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>red-amber.green</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

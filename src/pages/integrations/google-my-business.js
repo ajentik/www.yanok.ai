@@ -65,7 +65,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Google My Business</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -215,7 +215,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Productive.io</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

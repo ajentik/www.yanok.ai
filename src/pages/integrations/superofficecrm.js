@@ -240,7 +240,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>SuperOffice CRM</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

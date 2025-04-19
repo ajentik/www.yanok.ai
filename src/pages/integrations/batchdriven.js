@@ -75,7 +75,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>BatchDriven</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -71,7 +71,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Data Soap</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -60,7 +60,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>SkylerAI</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

@@ -105,7 +105,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Teamleader Focus</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

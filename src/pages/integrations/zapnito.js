@@ -125,7 +125,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Zapnito</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },

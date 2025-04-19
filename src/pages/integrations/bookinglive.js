@@ -100,7 +100,6 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>BookingLive</title>
-          <meta name="description" content={}/> />
         </>
       ),
     },
