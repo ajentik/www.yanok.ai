@@ -17,6 +17,6 @@ exclude:
   - .jekyll-cache/
   - .jekyll-metadata
   - node_modules/
-  - .bundle_cache
+  - .bundle_cachegG
 
 google_tag_manager: GTM-MRHTGMH8
