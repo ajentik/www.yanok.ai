@@ -53,6 +53,9 @@ jobs:
       
       - name: Static HTML Export
         run: npm run export || npx next export
+
+      - name: Disable Jekyll
+        run: touch out/.nojekyll
         
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
