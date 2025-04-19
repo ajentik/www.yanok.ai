@@ -1,4 +1,4 @@
-_site/
+ git filter-repo --path .next --invert-pathsgit gc --prune=now --aggressive_site/
 .bundle/
 .jekyll-cache/
 .jekyll-metadata

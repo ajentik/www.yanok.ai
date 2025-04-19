@@ -14,7 +14,6 @@ permissions:
   contents: read
   pages: write
   id-token: write
-  
 # Allow only one concurrent deployment, skipping runs queued between the run in-progress and latest queued.
 # However, do NOT cancel in-progress runs as we want to allow these production deployments to complete.
 concurrency:
@@ -50,11 +49,11 @@ jobs:
           export NODE_OPTIONS="--max_old_space_size=8192"
           npm run build
         env:
-          # Add any environment variables needed for the build
           NEXT_PUBLIC_BASE_PATH: ${{ steps.pages.outputs.base_path }}
       
-      # The 'npm run build' command automatically handles static export when 'output: export' is set in next.config.js
-      
+      - name: Static HTML Export
+        run: npm run export || npx next export
+        
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
