@@ -1,6 +1,7 @@
 module.exports = {
   plugins: {
     'postcss-import': {},
+<<<<<<< HEAD
     'tailwindcss/nesting': {},
     tailwindcss: {},
     autoprefixer: {},
@@ -9,3 +10,10 @@ module.exports = {
       : {})
   }
 }
+=======
+    'postcss-nesting': {},
+    '@tailwindcss/postcss': {}, // Use the new package name
+    'autoprefixer': {},
+  },
+};
+>>>>>>> local-master

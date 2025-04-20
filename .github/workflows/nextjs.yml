@@ -38,7 +38,11 @@ jobs:
         run: npm ci
 
       - name: Run tests
+<<<<<<< HEAD
         run: npm test
+=======
+        run: npm run test --if-present
+>>>>>>> local-master
       
       - name: Setup Pages
         id: pages
