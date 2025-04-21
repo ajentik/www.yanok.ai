@@ -38,8 +38,17 @@ jobs:
         run: npm ci
 
       - name: Run tests
+<<<<<<< HEAD
         run: npm run test --if-present
 
+=======
+<<<<<<< HEAD
+        run: npm test
+=======
+        run: npm run test --if-present
+>>>>>>> local-master
+      
+>>>>>>> 2fa3df9a1a096bdc521b8c474d8c6bb0bd16b587
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v4
