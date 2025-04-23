@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Zoom"
-      description="Zoom brings teams together to get more done in a frictionless environment. Zoom's reliable, video-first unified communications platform provides video meetings, voice, webinars, and chat across desktops, phones, mobile devices, and conference systems"
+      description={`Zoom brings teams together to get more done in a frictionless environment. Zoom's reliable, video-first unified communications platform provides video meetings, voice, webinars, and chat across desktops, phones, mobile devices, and conference systems`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -86,7 +86,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Zoom</title>
-          <meta name="description" content="Zoom brings teams together to get more done in a frictionless environment. Zoom's reliable, video-first unified communications platform provides video meetings, voice, webinars, and chat across desktops, phones, mobile devices, and conference systems" />
+          <meta name="description" content={`Zoom brings teams together to get more done in a frictionless environment. Zoom's reliable, video-first unified communications platform provides video meetings, voice, webinars, and chat across desktops, phones, mobile devices, and conference systems`} />
         </>
       ),
     },

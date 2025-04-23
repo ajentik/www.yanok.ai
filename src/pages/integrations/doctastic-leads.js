@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Doctastic Leads"
-      description="Make your practice look fantastic! Websites, marketing, helpful articles and more! Setup your brand today and take control of your digital online presence. We are here as your digital partner allowing you more time to focus on your patients!"
+      description={`Make your practice look fantastic! Websites, marketing, helpful articles and more! Setup your brand today and take control of your digital online presence. We are here as your digital partner allowing you more time to focus on your patients!`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Doctastic Leads</title>
-          <meta name="description" content="Make your practice look fantastic! Websites, marketing, helpful articles and more! Setup your brand today and take control of your digital online presence. We are here as your digital partner allowing you more time to focus on your patients!" />
+          <meta name="description" content={`Make your practice look fantastic! Websites, marketing, helpful articles and more! Setup your brand today and take control of your digital online presence. We are here as your digital partner allowing you more time to focus on your patients!`} />
         </>
       ),
     },

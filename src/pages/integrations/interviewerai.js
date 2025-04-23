@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Interviewer.ai"
-      description="Interviewer.ai is a effective tool which can assist you in your hiring process. This product lets you to create and manage jobs , candidate and application and create video interview links and provides you results of candidate using AI."
+      description={`Interviewer.ai is a effective tool which can assist you in your hiring process. This product lets you to create and manage jobs , candidate and application and create video interview links and provides you results of candidate using AI.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -72,7 +72,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Interviewer.ai</title>
-          <meta name="description" content="Interviewer.ai is a effective tool which can assist you in your hiring process. This product lets you to create and manage jobs , candidate and application and create video interview links and provides you results of candidate using AI." />
+          <meta name="description" content={`Interviewer.ai is a effective tool which can assist you in your hiring process. This product lets you to create and manage jobs , candidate and application and create video interview links and provides you results of candidate using AI.`} />
         </>
       ),
     },

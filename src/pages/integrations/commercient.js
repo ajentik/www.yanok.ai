@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Commercient"
-      description="Commercient provides businesses with fast and flexible ERP & CRM integration apps that provide a 360-degree view of your business."
+      description={`Commercient provides businesses with fast and flexible ERP & CRM integration apps that provide a 360-degree view of your business.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +53,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Commercient</title>
-          <meta name="description" content="Commercient provides businesses with fast and flexible ERP & CRM integration apps that provide a 360-degree view of your business." />
+          <meta name="description" content={`Commercient provides businesses with fast and flexible ERP & CRM integration apps that provide a 360-degree view of your business.`} />
         </>
       ),
     },

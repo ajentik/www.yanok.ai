@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Parceldoo"
-      description="Use Parceldoo to enhance your productivity by automating your shipment tracking tasks. Have more time for what you love. Spend less time with WISMO (“Where IS My Order?”)."
+      description={`Use Parceldoo to enhance your productivity by automating your shipment tracking tasks. Have more time for what you love. Spend less time with WISMO (“Where IS My Order?”).`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Parceldoo</title>
-          <meta name="description" content="Use Parceldoo to enhance your productivity by automating your shipment tracking tasks. Have more time for what you love. Spend less time with WISMO (“Where IS My Order?”)." />
+          <meta name="description" content={`Use Parceldoo to enhance your productivity by automating your shipment tracking tasks. Have more time for what you love. Spend less time with WISMO (“Where IS My Order?”).`} />
         </>
       ),
     },

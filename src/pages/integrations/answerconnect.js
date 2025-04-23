@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="AnswerConnect"
-      description="AnswerConnect is a 24*7 live answering service that accepts inbound customer calls your business receives, assists your customers and helps them schedule appointments with your business."
+      description={`AnswerConnect is a 24*7 live answering service that accepts inbound customer calls your business receives, assists your customers and helps them schedule appointments with your business.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>AnswerConnect</title>
-          <meta name="description" content="AnswerConnect is a 24*7 live answering service that accepts inbound customer calls your business receives, assists your customers and helps them schedule appointments with your business." />
+          <meta name="description" content={`AnswerConnect is a 24*7 live answering service that accepts inbound customer calls your business receives, assists your customers and helps them schedule appointments with your business.`} />
         </>
       ),
     },

@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Koan"
-      description="Koan is the simple, collaborative way to manage goals and OKRs for your entire company."
+      description={`Koan is the simple, collaborative way to manage goals and OKRs for your entire company.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -67,7 +67,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Koan</title>
-          <meta name="description" content="Koan is the simple, collaborative way to manage goals and OKRs for your entire company." />
+          <meta name="description" content={`Koan is the simple, collaborative way to manage goals and OKRs for your entire company.`} />
         </>
       ),
     },

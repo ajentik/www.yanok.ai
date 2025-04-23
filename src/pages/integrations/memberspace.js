@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="MemberSpace"
-      description="MemberSpace allows you to turn any part of your website into members-only with just a few clicks."
+      description={`MemberSpace allows you to turn any part of your website into members-only with just a few clicks.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -67,7 +67,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>MemberSpace</title>
-          <meta name="description" content="MemberSpace allows you to turn any part of your website into members-only with just a few clicks." />
+          <meta name="description" content={`MemberSpace allows you to turn any part of your website into members-only with just a few clicks.`} />
         </>
       ),
     },

@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Heymarket SMS"
-      description="Heymarket SMS is a business texting with customers and employees. Your team gets shared inboxes, templates, and workflows to message quickly and securely from all the major messaging apps in one place."
+      description={`Heymarket SMS is a business texting with customers and employees. Your team gets shared inboxes, templates, and workflows to message quickly and securely from all the major messaging apps in one place.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -101,7 +101,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Heymarket SMS</title>
-          <meta name="description" content="Heymarket SMS is a business texting with customers and employees. Your team gets shared inboxes, templates, and workflows to message quickly and securely from all the major messaging apps in one place." />
+          <meta name="description" content={`Heymarket SMS is a business texting with customers and employees. Your team gets shared inboxes, templates, and workflows to message quickly and securely from all the major messaging apps in one place.`} />
         </>
       ),
     },

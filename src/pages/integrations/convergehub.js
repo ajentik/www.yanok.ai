@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="ConvergeHub"
-      description="ConvergeHub is a new-age converged CRM software that functions as a comprehensive Business Management solution. It manages Sales, Marketing, Support and Billing from within its full-featured and easy-to-use platform. It is ideally suited for fast-growing small to medium businesses, in need for a single broad application rather than multiple standalone systems."
+      description={`ConvergeHub is a new-age converged CRM software that functions as a comprehensive Business Management solution. It manages Sales, Marketing, Support and Billing from within its full-featured and easy-to-use platform. It is ideally suited for fast-growing small to medium businesses, in need for a single broad application rather than multiple standalone systems.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -141,7 +141,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>ConvergeHub</title>
-          <meta name="description" content="ConvergeHub is a new-age converged CRM software that functions as a comprehensive Business Management solution. It manages Sales, Marketing, Support and Billing from within its full-featured and easy-to-use platform. It is ideally suited for fast-growing small to medium businesses, in need for a single broad application rather than multiple standalone systems." />
+          <meta name="description" content={`ConvergeHub is a new-age converged CRM software that functions as a comprehensive Business Management solution. It manages Sales, Marketing, Support and Billing from within its full-featured and easy-to-use platform. It is ideally suited for fast-growing small to medium businesses, in need for a single broad application rather than multiple standalone systems.`} />
         </>
       ),
     },

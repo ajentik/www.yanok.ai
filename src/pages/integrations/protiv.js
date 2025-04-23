@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Protiv"
-      description="Protiv is a bonus program for employees that provides an automatic incentive to elevate productivity, performance, and lower labor costs."
+      description={`Protiv is a bonus program for employees that provides an automatic incentive to elevate productivity, performance, and lower labor costs.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -76,7 +76,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Protiv</title>
-          <meta name="description" content="Protiv is a bonus program for employees that provides an automatic incentive to elevate productivity, performance, and lower labor costs." />
+          <meta name="description" content={`Protiv is a bonus program for employees that provides an automatic incentive to elevate productivity, performance, and lower labor costs.`} />
         </>
       ),
     },

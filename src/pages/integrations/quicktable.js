@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="QuickTable"
-      description="QuickTable is a visual data modeling tool that lets everyone clean and transforms data without writing code. Using QuickTable helps reduce the time it takes to prepare data for analytics and modeling by up to 70 percent compared to traditional ways."
+      description={`QuickTable is a visual data modeling tool that lets everyone clean and transforms data without writing code. Using QuickTable helps reduce the time it takes to prepare data for analytics and modeling by up to 70 percent compared to traditional ways.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -61,7 +61,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>QuickTable</title>
-          <meta name="description" content="QuickTable is a visual data modeling tool that lets everyone clean and transforms data without writing code. Using QuickTable helps reduce the time it takes to prepare data for analytics and modeling by up to 70 percent compared to traditional ways." />
+          <meta name="description" content={`QuickTable is a visual data modeling tool that lets everyone clean and transforms data without writing code. Using QuickTable helps reduce the time it takes to prepare data for analytics and modeling by up to 70 percent compared to traditional ways.`} />
         </>
       ),
     },

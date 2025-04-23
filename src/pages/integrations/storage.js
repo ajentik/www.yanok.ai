@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Storage by Zapier"
-      description="Quickly store and retrieve small values of data. Allows you to reference data between Zap runs or share data between different Zaps."
+      description={`Quickly store and retrieve small values of data. Allows you to reference data between Zap runs or share data between different Zaps.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -142,7 +142,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Storage by Zapier</title>
-          <meta name="description" content="Quickly store and retrieve small values of data. Allows you to reference data between Zap runs or share data between different Zaps." />
+          <meta name="description" content={`Quickly store and retrieve small values of data. Allows you to reference data between Zap runs or share data between different Zaps.`} />
         </>
       ),
     },

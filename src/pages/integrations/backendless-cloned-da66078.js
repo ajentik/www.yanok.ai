@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Backendless"
-      description="Backendless is a Visual Application Development Platform. With Backendless you can streamline the process of developing highly scalable mobile and web applications by using our universal backend system and very intuitive UI development interface."
+      description={`Backendless is a Visual Application Development Platform. With Backendless you can streamline the process of developing highly scalable mobile and web applications by using our universal backend system and very intuitive UI development interface.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -126,7 +126,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Backendless</title>
-          <meta name="description" content="Backendless is a Visual Application Development Platform. With Backendless you can streamline the process of developing highly scalable mobile and web applications by using our universal backend system and very intuitive UI development interface." />
+          <meta name="description" content={`Backendless is a Visual Application Development Platform. With Backendless you can streamline the process of developing highly scalable mobile and web applications by using our universal backend system and very intuitive UI development interface.`} />
         </>
       ),
     },

@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="OfficeRnD"
-      description="OfficeRnD is a workspace management platform helping Coworking Spaces and Business Centers automate operations and improve members experience. The platform acts like a central hub that connects to and manages all systems already in place, saving space operators time and allowing them to focus only on the highest leverage activities."
+      description={`OfficeRnD is a workspace management platform helping Coworking Spaces and Business Centers automate operations and improve members experience. The platform acts like a central hub that connects to and manages all systems already in place, saving space operators time and allowing them to focus only on the highest leverage activities.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -166,7 +166,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>OfficeRnD</title>
-          <meta name="description" content="OfficeRnD is a workspace management platform helping Coworking Spaces and Business Centers automate operations and improve members experience. The platform acts like a central hub that connects to and manages all systems already in place, saving space operators time and allowing them to focus only on the highest leverage activities." />
+          <meta name="description" content={`OfficeRnD is a workspace management platform helping Coworking Spaces and Business Centers automate operations and improve members experience. The platform acts like a central hub that connects to and manages all systems already in place, saving space operators time and allowing them to focus only on the highest leverage activities.`} />
         </>
       ),
     },

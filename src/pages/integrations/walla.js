@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Walla"
-      description="Walla is studio management software for the boutique fitness industry, allowing the modern studio to handle booking, billing, clients, reporting, and virtual offerings."
+      description={`Walla is studio management software for the boutique fitness industry, allowing the modern studio to handle booking, billing, clients, reporting, and virtual offerings.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -72,7 +72,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Walla</title>
-          <meta name="description" content="Walla is studio management software for the boutique fitness industry, allowing the modern studio to handle booking, billing, clients, reporting, and virtual offerings." />
+          <meta name="description" content={`Walla is studio management software for the boutique fitness industry, allowing the modern studio to handle booking, billing, clients, reporting, and virtual offerings.`} />
         </>
       ),
     },

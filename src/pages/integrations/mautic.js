@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Mautic"
-      description="Mautic is a open source marketing automation software which helps marketers to communicate with their audience, giving a personalised message at the right time."
+      description={`Mautic is a open source marketing automation software which helps marketers to communicate with their audience, giving a personalised message at the right time.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -86,7 +86,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Mautic</title>
-          <meta name="description" content="Mautic is a open source marketing automation software which helps marketers to communicate with their audience, giving a personalised message at the right time." />
+          <meta name="description" content={`Mautic is a open source marketing automation software which helps marketers to communicate with their audience, giving a personalised message at the right time.`} />
         </>
       ),
     },

@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Calculoid"
-      description="Calculoid is a platform for creating interactive web calculators which can be easily publish into your website. Features such as online payments or emails submissions will enhance your e-commerce and lead generation capabilities. You do not have to be a web developer to create your own online calculator in just a few clicks."
+      description={`Calculoid is a platform for creating interactive web calculators which can be easily publish into your website. Features such as online payments or emails submissions will enhance your e-commerce and lead generation capabilities. You do not have to be a web developer to create your own online calculator in just a few clicks.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -66,7 +66,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Calculoid</title>
-          <meta name="description" content="Calculoid is a platform for creating interactive web calculators which can be easily publish into your website. Features such as online payments or emails submissions will enhance your e-commerce and lead generation capabilities. You do not have to be a web developer to create your own online calculator in just a few clicks." />
+          <meta name="description" content={`Calculoid is a platform for creating interactive web calculators which can be easily publish into your website. Features such as online payments or emails submissions will enhance your e-commerce and lead generation capabilities. You do not have to be a web developer to create your own online calculator in just a few clicks.`} />
         </>
       ),
     },

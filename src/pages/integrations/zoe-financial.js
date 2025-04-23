@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Zoe Financial"
-      description="Zoe Financial connects clients to financial advisors. Advisors listed on Zoe's network are all independent fiduciaries who work on a commission-free model, meaning your advisor won’t try to sell you products to make a profit."
+      description={`Zoe Financial connects clients to financial advisors. Advisors listed on Zoe's network are all independent fiduciaries who work on a commission-free model, meaning your advisor won’t try to sell you products to make a profit.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Zoe Financial</title>
-          <meta name="description" content="Zoe Financial connects clients to financial advisors. Advisors listed on Zoe's network are all independent fiduciaries who work on a commission-free model, meaning your advisor won’t try to sell you products to make a profit." />
+          <meta name="description" content={`Zoe Financial connects clients to financial advisors. Advisors listed on Zoe's network are all independent fiduciaries who work on a commission-free model, meaning your advisor won’t try to sell you products to make a profit.`} />
         </>
       ),
     },

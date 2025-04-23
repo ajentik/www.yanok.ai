@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Clientjoy"
-      description="Clientjoy is Client Life-Cycle Management Software for Modern Agencies that helps you manage Leads, Proposals, Clients, Invoicing and Revenues under a single roof."
+      description={`Clientjoy is Client Life-Cycle Management Software for Modern Agencies that helps you manage Leads, Proposals, Clients, Invoicing and Revenues under a single roof.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -181,7 +181,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Clientjoy</title>
-          <meta name="description" content="Clientjoy is Client Life-Cycle Management Software for Modern Agencies that helps you manage Leads, Proposals, Clients, Invoicing and Revenues under a single roof." />
+          <meta name="description" content={`Clientjoy is Client Life-Cycle Management Software for Modern Agencies that helps you manage Leads, Proposals, Clients, Invoicing and Revenues under a single roof.`} />
         </>
       ),
     },

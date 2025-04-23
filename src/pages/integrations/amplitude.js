@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Amplitude"
-      description="Amplitude is a product analytics service that makes it easier for companies to understand user behavior, ship the right features and improve business outcomes."
+      description={`Amplitude is a product analytics service that makes it easier for companies to understand user behavior, ship the right features and improve business outcomes.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +53,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Amplitude</title>
-          <meta name="description" content="Amplitude is a product analytics service that makes it easier for companies to understand user behavior, ship the right features and improve business outcomes." />
+          <meta name="description" content={`Amplitude is a product analytics service that makes it easier for companies to understand user behavior, ship the right features and improve business outcomes.`} />
         </>
       ),
     },

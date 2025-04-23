@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="ROAR Software"
-      description="ROAR is the Advice Marketplace - Connecting technology to better deliver financial advice"
+      description={`ROAR is the Advice Marketplace - Connecting technology to better deliver financial advice`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -62,7 +62,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>ROAR Software</title>
-          <meta name="description" content="ROAR is the Advice Marketplace - Connecting technology to better deliver financial advice" />
+          <meta name="description" content={`ROAR is the Advice Marketplace - Connecting technology to better deliver financial advice`} />
         </>
       ),
     },

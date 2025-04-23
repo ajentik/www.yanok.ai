@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Element451"
-      description="Element451 is a CRM for higher education that optimizes admissions marketing and enrollment management. Analytics, automation, and unparalleled ease of use are at its core."
+      description={`Element451 is a CRM for higher education that optimizes admissions marketing and enrollment management. Analytics, automation, and unparalleled ease of use are at its core.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -91,7 +91,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Element451</title>
-          <meta name="description" content="Element451 is a CRM for higher education that optimizes admissions marketing and enrollment management. Analytics, automation, and unparalleled ease of use are at its core." />
+          <meta name="description" content={`Element451 is a CRM for higher education that optimizes admissions marketing and enrollment management. Analytics, automation, and unparalleled ease of use are at its core.`} />
         </>
       ),
     },

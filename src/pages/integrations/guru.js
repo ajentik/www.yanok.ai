@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Guru"
-      description="Guru is a collaborative knowledge management solution where answers find you—everywhere, every time. Guru connects teams and people to one another and surfaces the know-how of those who know best, and turns collections of information into useful knowledge. By delivering the right knowledge at the right time, Guru reduces new-hire ramp time, drives amazing customer experiences, and makes teams more collaborative and productive."
+      description={`Guru is a collaborative knowledge management solution where answers find you—everywhere, every time. Guru connects teams and people to one another and surfaces the know-how of those who know best, and turns collections of information into useful knowledge. By delivering the right knowledge at the right time, Guru reduces new-hire ramp time, drives amazing customer experiences, and makes teams more collaborative and productive.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -226,7 +226,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Guru</title>
-          <meta name="description" content="Guru is a collaborative knowledge management solution where answers find you—everywhere, every time. Guru connects teams and people to one another and surfaces the know-how of those who know best, and turns collections of information into useful knowledge. By delivering the right knowledge at the right time, Guru reduces new-hire ramp time, drives amazing customer experiences, and makes teams more collaborative and productive." />
+          <meta name="description" content={`Guru is a collaborative knowledge management solution where answers find you—everywhere, every time. Guru connects teams and people to one another and surfaces the know-how of those who know best, and turns collections of information into useful knowledge. By delivering the right knowledge at the right time, Guru reduces new-hire ramp time, drives amazing customer experiences, and makes teams more collaborative and productive.`} />
         </>
       ),
     },

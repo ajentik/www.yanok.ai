@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Maropost Commerce Cloud"
-      description="Build an online store, process sales at your bricks-and-mortar store, and showcase your products through eBay and social media, all from one platform."
+      description={`Build an online store, process sales at your bricks-and-mortar store, and showcase your products through eBay and social media, all from one platform.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -221,7 +221,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Maropost Commerce Cloud</title>
-          <meta name="description" content="Build an online store, process sales at your bricks-and-mortar store, and showcase your products through eBay and social media, all from one platform." />
+          <meta name="description" content={`Build an online store, process sales at your bricks-and-mortar store, and showcase your products through eBay and social media, all from one platform.`} />
         </>
       ),
     },

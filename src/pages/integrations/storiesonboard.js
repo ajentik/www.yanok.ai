@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="StoriesOnBoard"
-      description="StoriesOnBoard is a feedback collection tool that helps remote teams collect and understand the user needs, prioritize the right ideas and collaborate with everyone around a user story map."
+      description={`StoriesOnBoard is a feedback collection tool that helps remote teams collect and understand the user needs, prioritize the right ideas and collaborate with everyone around a user story map.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>StoriesOnBoard</title>
-          <meta name="description" content="StoriesOnBoard is a feedback collection tool that helps remote teams collect and understand the user needs, prioritize the right ideas and collaborate with everyone around a user story map." />
+          <meta name="description" content={`StoriesOnBoard is a feedback collection tool that helps remote teams collect and understand the user needs, prioritize the right ideas and collaborate with everyone around a user story map.`} />
         </>
       ),
     },

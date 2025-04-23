@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="TextIt"
-      description="TextIt provides a way of automating conversational interactions over SMS, messaging bots and phone calls."
+      description={`TextIt provides a way of automating conversational interactions over SMS, messaging bots and phone calls.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -61,7 +61,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>TextIt</title>
-          <meta name="description" content="TextIt provides a way of automating conversational interactions over SMS, messaging bots and phone calls." />
+          <meta name="description" content={`TextIt provides a way of automating conversational interactions over SMS, messaging bots and phone calls.`} />
         </>
       ),
     },

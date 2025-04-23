@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="vivenu"
-      description="vivenu offers a unified platform to manage, market and analyze ticket sales."
+      description={`vivenu offers a unified platform to manage, market and analyze ticket sales.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -281,7 +281,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>vivenu</title>
-          <meta name="description" content="vivenu offers a unified platform to manage, market and analyze ticket sales." />
+          <meta name="description" content={`vivenu offers a unified platform to manage, market and analyze ticket sales.`} />
         </>
       ),
     },

@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Odoo ERP Self Hosted"
-      description="Odoo ERP Self Hosted (formerly known as OpenERP) is a powerful open source platform with dozens of apps to help you grow your business. Available apps range from CRM to eCommerce, and from accounting to manufacturing and project management. This Odoo ERP Self Hosted integration works with all of Odoo ERP's products. It works with instances that are self-hosted."
+      description={`Odoo ERP Self Hosted (formerly known as OpenERP) is a powerful open source platform with dozens of apps to help you grow your business. Available apps range from CRM to eCommerce, and from accounting to manufacturing and project management. This Odoo ERP Self Hosted integration works with all of Odoo ERP's products. It works with instances that are self-hosted.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -141,7 +141,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Odoo ERP Self Hosted</title>
-          <meta name="description" content="Odoo ERP Self Hosted (formerly known as OpenERP) is a powerful open source platform with dozens of apps to help you grow your business. Available apps range from CRM to eCommerce, and from accounting to manufacturing and project management. This Odoo ERP Self Hosted integration works with all of Odoo ERP's products. It works with instances that are self-hosted." />
+          <meta name="description" content={`Odoo ERP Self Hosted (formerly known as OpenERP) is a powerful open source platform with dozens of apps to help you grow your business. Available apps range from CRM to eCommerce, and from accounting to manufacturing and project management. This Odoo ERP Self Hosted integration works with all of Odoo ERP's products. It works with instances that are self-hosted.`} />
         </>
       ),
     },

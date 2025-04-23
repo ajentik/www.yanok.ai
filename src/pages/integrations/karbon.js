@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Karbon"
-      description="Karbon is a workstream collaboration platform combining email, discussions, tasks & powerful workflows to give your team everything it needs to get work done."
+      description={`Karbon is a workstream collaboration platform combining email, discussions, tasks & powerful workflows to give your team everything it needs to get work done.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -101,7 +101,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Karbon</title>
-          <meta name="description" content="Karbon is a workstream collaboration platform combining email, discussions, tasks & powerful workflows to give your team everything it needs to get work done." />
+          <meta name="description" content={`Karbon is a workstream collaboration platform combining email, discussions, tasks & powerful workflows to give your team everything it needs to get work done.`} />
         </>
       ),
     },

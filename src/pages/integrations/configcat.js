@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="ConfigCat"
-      description="10 minutes trainable feature flag and configuration management service with unlimited team size, awesome support and no surprises."
+      description={`10 minutes trainable feature flag and configuration management service with unlimited team size, awesome support and no surprises.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>ConfigCat</title>
-          <meta name="description" content="10 minutes trainable feature flag and configuration management service with unlimited team size, awesome support and no surprises." />
+          <meta name="description" content={`10 minutes trainable feature flag and configuration management service with unlimited team size, awesome support and no surprises.`} />
         </>
       ),
     },

@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Splash EU"
-      description="Splash is an event marketing automation platform that empowers brands to efficiently scale event programs, reach and connect with target audiences in-person, and connect event-driven engagement to business results."
+      description={`Splash is an event marketing automation platform that empowers brands to efficiently scale event programs, reach and connect with target audiences in-person, and connect event-driven engagement to business results.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -81,7 +81,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Splash EU</title>
-          <meta name="description" content="Splash is an event marketing automation platform that empowers brands to efficiently scale event programs, reach and connect with target audiences in-person, and connect event-driven engagement to business results." />
+          <meta name="description" content={`Splash is an event marketing automation platform that empowers brands to efficiently scale event programs, reach and connect with target audiences in-person, and connect event-driven engagement to business results.`} />
         </>
       ),
     },

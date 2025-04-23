@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Qualified.io"
-      description="Qualified helps you identify the best technical candidates faster and better with Code Assessments and Pair-Programming Interviews"
+      description={`Qualified helps you identify the best technical candidates faster and better with Code Assessments and Pair-Programming Interviews`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -106,7 +106,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Qualified.io</title>
-          <meta name="description" content="Qualified helps you identify the best technical candidates faster and better with Code Assessments and Pair-Programming Interviews" />
+          <meta name="description" content={`Qualified helps you identify the best technical candidates faster and better with Code Assessments and Pair-Programming Interviews`} />
         </>
       ),
     },

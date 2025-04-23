@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Insurance Website Builder"
-      description="ITC’s Insurance Website Builder builds websites for insurance agencies in the United States. Our insurance website experts know insurance website design so you get a strong online presence."
+      description={`ITC’s Insurance Website Builder builds websites for insurance agencies in the United States. Our insurance website experts know insurance website design so you get a strong online presence.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Insurance Website Builder</title>
-          <meta name="description" content="ITC’s Insurance Website Builder builds websites for insurance agencies in the United States. Our insurance website experts know insurance website design so you get a strong online presence." />
+          <meta name="description" content={`ITC’s Insurance Website Builder builds websites for insurance agencies in the United States. Our insurance website experts know insurance website design so you get a strong online presence.`} />
         </>
       ),
     },

@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="RecurPost"
-      description="RecurPost is a social media scheduler with repeating schedules."
+      description={`RecurPost is a social media scheduler with repeating schedules.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -66,7 +66,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>RecurPost</title>
-          <meta name="description" content="RecurPost is a social media scheduler with repeating schedules." />
+          <meta name="description" content={`RecurPost is a social media scheduler with repeating schedules.`} />
         </>
       ),
     },

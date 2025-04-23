@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Paid Memberships Pro"
-      description="PMPro plugin helps you start, manage, & grow a membership site on WordPress. Protect content, register users, & accept recurring payments."
+      description={`PMPro plugin helps you start, manage, & grow a membership site on WordPress. Protect content, register users, & accept recurring payments.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -76,7 +76,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Paid Memberships Pro</title>
-          <meta name="description" content="PMPro plugin helps you start, manage, & grow a membership site on WordPress. Protect content, register users, & accept recurring payments." />
+          <meta name="description" content={`PMPro plugin helps you start, manage, & grow a membership site on WordPress. Protect content, register users, & accept recurring payments.`} />
         </>
       ),
     },

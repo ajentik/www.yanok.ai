@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="CompanyCam"
-      description="CompanyCam is an app built for contractors and trades professionals to capture and organize important job site information, including photos and documents. Connecting CompanyCam with other software and CRMs allows users to keep tabs on progress and improve their processes."
+      description={`CompanyCam is an app built for contractors and trades professionals to capture and organize important job site information, including photos and documents. Connecting CompanyCam with other software and CRMs allows users to keep tabs on progress and improve their processes.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -96,7 +96,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>CompanyCam</title>
-          <meta name="description" content="CompanyCam is an app built for contractors and trades professionals to capture and organize important job site information, including photos and documents. Connecting CompanyCam with other software and CRMs allows users to keep tabs on progress and improve their processes." />
+          <meta name="description" content={`CompanyCam is an app built for contractors and trades professionals to capture and organize important job site information, including photos and documents. Connecting CompanyCam with other software and CRMs allows users to keep tabs on progress and improve their processes.`} />
         </>
       ),
     },

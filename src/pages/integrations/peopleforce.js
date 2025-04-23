@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="PeopleForce"
-      description="HRM solution for small to medium sized businesses"
+      description={`HRM solution for small to medium sized businesses`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -131,7 +131,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>PeopleForce</title>
-          <meta name="description" content="HRM solution for small to medium sized businesses" />
+          <meta name="description" content={`HRM solution for small to medium sized businesses`} />
         </>
       ),
     },

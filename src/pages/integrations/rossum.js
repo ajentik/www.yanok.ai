@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Rossum"
-      description="Rossum is cloud-based app that uses artificial intelligence to replicate the human approach to data extraction from business documents."
+      description={`Rossum is cloud-based app that uses artificial intelligence to replicate the human approach to data extraction from business documents.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -66,7 +66,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Rossum</title>
-          <meta name="description" content="Rossum is cloud-based app that uses artificial intelligence to replicate the human approach to data extraction from business documents." />
+          <meta name="description" content={`Rossum is cloud-based app that uses artificial intelligence to replicate the human approach to data extraction from business documents.`} />
         </>
       ),
     },

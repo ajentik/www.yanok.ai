@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Infotems"
-      description="Infotems is a cloud-based, case management software for law practitioners."
+      description={`Infotems is a cloud-based, case management software for law practitioners.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -77,7 +77,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Infotems</title>
-          <meta name="description" content="Infotems is a cloud-based, case management software for law practitioners." />
+          <meta name="description" content={`Infotems is a cloud-based, case management software for law practitioners.`} />
         </>
       ),
     },

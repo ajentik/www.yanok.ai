@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Rally"
-      description="Rally is an all-in-one automation and collaboration platform for business lawyers and their clients."
+      description={`Rally is an all-in-one automation and collaboration platform for business lawyers and their clients.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -81,7 +81,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Rally</title>
-          <meta name="description" content="Rally is an all-in-one automation and collaboration platform for business lawyers and their clients." />
+          <meta name="description" content={`Rally is an all-in-one automation and collaboration platform for business lawyers and their clients.`} />
         </>
       ),
     },

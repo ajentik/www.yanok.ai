@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="AlterEstate"
-      description="AlterEstate is a software for Real Estate Agencies to help them connect and build strong relationships with their clients."
+      description={`AlterEstate is a software for Real Estate Agencies to help them connect and build strong relationships with their clients.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -66,7 +66,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>AlterEstate</title>
-          <meta name="description" content="AlterEstate is a software for Real Estate Agencies to help them connect and build strong relationships with their clients." />
+          <meta name="description" content={`AlterEstate is a software for Real Estate Agencies to help them connect and build strong relationships with their clients.`} />
         </>
       ),
     },

@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Jestor"
-      description="Jestor is an easy way to build internal tools for your company. It's a relational database powered by analytics, low-code and no-code automations."
+      description={`Jestor is an easy way to build internal tools for your company. It's a relational database powered by analytics, low-code and no-code automations.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -71,7 +71,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Jestor</title>
-          <meta name="description" content="Jestor is an easy way to build internal tools for your company. It's a relational database powered by analytics, low-code and no-code automations." />
+          <meta name="description" content={`Jestor is an easy way to build internal tools for your company. It's a relational database powered by analytics, low-code and no-code automations.`} />
         </>
       ),
     },

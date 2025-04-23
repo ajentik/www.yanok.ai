@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Building Stack"
-      description="Building Stack is an all-in-one property management software that helps you; manage tenants, collect rent payments and resolve work orders."
+      description={`Building Stack is an all-in-one property management software that helps you; manage tenants, collect rent payments and resolve work orders.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -181,7 +181,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Building Stack</title>
-          <meta name="description" content="Building Stack is an all-in-one property management software that helps you; manage tenants, collect rent payments and resolve work orders." />
+          <meta name="description" content={`Building Stack is an all-in-one property management software that helps you; manage tenants, collect rent payments and resolve work orders.`} />
         </>
       ),
     },

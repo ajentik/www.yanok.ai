@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Perfit"
-      description="Perfit lets you send beautiful responsive emails, manage your lists, and track the results of your campaigns."
+      description={`Perfit lets you send beautiful responsive emails, manage your lists, and track the results of your campaigns.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -117,7 +117,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Perfit</title>
-          <meta name="description" content="Perfit lets you send beautiful responsive emails, manage your lists, and track the results of your campaigns." />
+          <meta name="description" content={`Perfit lets you send beautiful responsive emails, manage your lists, and track the results of your campaigns.`} />
         </>
       ),
     },

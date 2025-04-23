@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Signeasy"
-      description="SignEasy is the easiest and fastest way to sign and send documents for signature from your phone, tablet and computer. Over 100,000 customers from 180 countries trust SignEasy to reduce paperwork turnaround times, close deals faster, cut costs, and improve the customer experience by eliminating the cumbersome print-sign-scan-fax process."
+      description={`SignEasy is the easiest and fastest way to sign and send documents for signature from your phone, tablet and computer. Over 100,000 customers from 180 countries trust SignEasy to reduce paperwork turnaround times, close deals faster, cut costs, and improve the customer experience by eliminating the cumbersome print-sign-scan-fax process.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Signeasy</title>
-          <meta name="description" content="SignEasy is the easiest and fastest way to sign and send documents for signature from your phone, tablet and computer. Over 100,000 customers from 180 countries trust SignEasy to reduce paperwork turnaround times, close deals faster, cut costs, and improve the customer experience by eliminating the cumbersome print-sign-scan-fax process." />
+          <meta name="description" content={`SignEasy is the easiest and fastest way to sign and send documents for signature from your phone, tablet and computer. Over 100,000 customers from 180 countries trust SignEasy to reduce paperwork turnaround times, close deals faster, cut costs, and improve the customer experience by eliminating the cumbersome print-sign-scan-fax process.`} />
         </>
       ),
     },

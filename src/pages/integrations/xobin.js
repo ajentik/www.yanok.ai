@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Xobin"
-      description="Xobin is a skill evaluation and testing platform to build winning teams. Xobin has the largest collection white collar Job Assessments including Coding Tests, Skill Tests and Psychometric Tests"
+      description={`Xobin is a skill evaluation and testing platform to build winning teams. Xobin has the largest collection white collar Job Assessments including Coding Tests, Skill Tests and Psychometric Tests`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -71,7 +71,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Xobin</title>
-          <meta name="description" content="Xobin is a skill evaluation and testing platform to build winning teams. Xobin has the largest collection white collar Job Assessments including Coding Tests, Skill Tests and Psychometric Tests" />
+          <meta name="description" content={`Xobin is a skill evaluation and testing platform to build winning teams. Xobin has the largest collection white collar Job Assessments including Coding Tests, Skill Tests and Psychometric Tests`} />
         </>
       ),
     },

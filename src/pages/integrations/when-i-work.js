@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="When I Work"
-      description="When I Work is the easiest way to schedule, manage attendance, and communicate with your staff from your Android device and PC. Notify your staff instantly about their work schedule via text, email, and web notifications."
+      description={`When I Work is the easiest way to schedule, manage attendance, and communicate with your staff from your Android device and PC. Notify your staff instantly about their work schedule via text, email, and web notifications.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>When I Work</title>
-          <meta name="description" content="When I Work is the easiest way to schedule, manage attendance, and communicate with your staff from your Android device and PC. Notify your staff instantly about their work schedule via text, email, and web notifications." />
+          <meta name="description" content={`When I Work is the easiest way to schedule, manage attendance, and communicate with your staff from your Android device and PC. Notify your staff instantly about their work schedule via text, email, and web notifications.`} />
         </>
       ),
     },

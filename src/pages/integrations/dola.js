@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Dola"
-      description="Dola's a digital wallet and 1-click checkout."
+      description={`Dola's a digital wallet and 1-click checkout.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -61,7 +61,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Dola</title>
-          <meta name="description" content="Dola's a digital wallet and 1-click checkout." />
+          <meta name="description" content={`Dola's a digital wallet and 1-click checkout.`} />
         </>
       ),
     },

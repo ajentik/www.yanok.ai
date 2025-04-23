@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Airwallex"
-      description="Airwallex is a payments platform transforming the way businesses move and manage money globally."
+      description={`Airwallex is a payments platform transforming the way businesses move and manage money globally.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -101,7 +101,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Airwallex</title>
-          <meta name="description" content="Airwallex is a payments platform transforming the way businesses move and manage money globally." />
+          <meta name="description" content={`Airwallex is a payments platform transforming the way businesses move and manage money globally.`} />
         </>
       ),
     },

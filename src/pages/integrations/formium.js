@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Formium"
-      description="Formik is an all-in-one workflow for building forms your users will actually love."
+      description={`Formik is an all-in-one workflow for building forms your users will actually love.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Formium</title>
-          <meta name="description" content="Formik is an all-in-one workflow for building forms your users will actually love." />
+          <meta name="description" content={`Formik is an all-in-one workflow for building forms your users will actually love.`} />
         </>
       ),
     },

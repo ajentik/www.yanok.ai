@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Luxafor"
-      description="Luxafor Flag, Luxafor Orb and Luxafor Bluetooth - productivity tools that make it easy to stay focused on tasks at hand.Connect, customize and automate."
+      description={`Luxafor Flag, Luxafor Orb and Luxafor Bluetooth - productivity tools that make it easy to stay focused on tasks at hand.Connect, customize and automate.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -71,7 +71,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Luxafor</title>
-          <meta name="description" content="Luxafor Flag, Luxafor Orb and Luxafor Bluetooth - productivity tools that make it easy to stay focused on tasks at hand.Connect, customize and automate." />
+          <meta name="description" content={`Luxafor Flag, Luxafor Orb and Luxafor Bluetooth - productivity tools that make it easy to stay focused on tasks at hand.Connect, customize and automate.`} />
         </>
       ),
     },

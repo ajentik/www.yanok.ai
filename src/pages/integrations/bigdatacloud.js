@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="BigDataCloud"
-      description="BigDataCloud provides advanced IP geolocation and Reverse geocoding APIs, along with customer data APIs like phone number and email address validation APIS."
+      description={`BigDataCloud provides advanced IP geolocation and Reverse geocoding APIs, along with customer data APIs like phone number and email address validation APIS.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -72,7 +72,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>BigDataCloud</title>
-          <meta name="description" content="BigDataCloud provides advanced IP geolocation and Reverse geocoding APIs, along with customer data APIs like phone number and email address validation APIS." />
+          <meta name="description" content={`BigDataCloud provides advanced IP geolocation and Reverse geocoding APIs, along with customer data APIs like phone number and email address validation APIS.`} />
         </>
       ),
     },

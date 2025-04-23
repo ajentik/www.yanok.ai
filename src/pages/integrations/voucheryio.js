@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Vouchery.io"
-      description="Vouchery is an all-in-one promotional suite to help you orchestrate & deliver the right incentive at every stage of the customer lifecycle."
+      description={`Vouchery is an all-in-one promotional suite to help you orchestrate & deliver the right incentive at every stage of the customer lifecycle.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -71,7 +71,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Vouchery.io</title>
-          <meta name="description" content="Vouchery is an all-in-one promotional suite to help you orchestrate & deliver the right incentive at every stage of the customer lifecycle." />
+          <meta name="description" content={`Vouchery is an all-in-one promotional suite to help you orchestrate & deliver the right incentive at every stage of the customer lifecycle.`} />
         </>
       ),
     },

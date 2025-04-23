@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="PeopleSmart"
-      description="PeopleSmart is a B2B contact search engine for finding leads, candidates, and prospects"
+      description={`PeopleSmart is a B2B contact search engine for finding leads, candidates, and prospects`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>PeopleSmart</title>
-          <meta name="description" content="PeopleSmart is a B2B contact search engine for finding leads, candidates, and prospects" />
+          <meta name="description" content={`PeopleSmart is a B2B contact search engine for finding leads, candidates, and prospects`} />
         </>
       ),
     },

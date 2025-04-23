@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Snippet"
-      description="Snippet is a platform for all your highlights: books, Kindle ebooks and web articles. You got everything in one place, instantly searchable, available wherever you go."
+      description={`Snippet is a platform for all your highlights: books, Kindle ebooks and web articles. You got everything in one place, instantly searchable, available wherever you go.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -61,7 +61,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Snippet</title>
-          <meta name="description" content="Snippet is a platform for all your highlights: books, Kindle ebooks and web articles. You got everything in one place, instantly searchable, available wherever you go." />
+          <meta name="description" content={`Snippet is a platform for all your highlights: books, Kindle ebooks and web articles. You got everything in one place, instantly searchable, available wherever you go.`} />
         </>
       ),
     },

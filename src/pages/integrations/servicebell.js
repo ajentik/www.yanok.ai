@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="ServiceBell"
-      description="ServiceBell helps you win more customers and create better support experiences with live video chat, screen takeover, and user monitoring – directly on your website."
+      description={`ServiceBell helps you win more customers and create better support experiences with live video chat, screen takeover, and user monitoring – directly on your website.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -67,7 +67,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>ServiceBell</title>
-          <meta name="description" content="ServiceBell helps you win more customers and create better support experiences with live video chat, screen takeover, and user monitoring – directly on your website." />
+          <meta name="description" content={`ServiceBell helps you win more customers and create better support experiences with live video chat, screen takeover, and user monitoring – directly on your website.`} />
         </>
       ),
     },

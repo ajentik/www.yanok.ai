@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Nextiva"
-      description="Nextiva empowers businesses to manage their communications, productivity, and customer relationships on a truly unified platform."
+      description={`Nextiva empowers businesses to manage their communications, productivity, and customer relationships on a truly unified platform.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -86,7 +86,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Nextiva</title>
-          <meta name="description" content="Nextiva empowers businesses to manage their communications, productivity, and customer relationships on a truly unified platform." />
+          <meta name="description" content={`Nextiva empowers businesses to manage their communications, productivity, and customer relationships on a truly unified platform.`} />
         </>
       ),
     },

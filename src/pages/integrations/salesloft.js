@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="SalesLoft"
-      description="SalesLoft is the leading sales engagement platform, helping sales organizations to deliver a better sales experience for their customers."
+      description={`SalesLoft is the leading sales engagement platform, helping sales organizations to deliver a better sales experience for their customers.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +53,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>SalesLoft</title>
-          <meta name="description" content="SalesLoft is the leading sales engagement platform, helping sales organizations to deliver a better sales experience for their customers." />
+          <meta name="description" content={`SalesLoft is the leading sales engagement platform, helping sales organizations to deliver a better sales experience for their customers.`} />
         </>
       ),
     },

@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Timesheet"
-      description="Timesheet is a mobile Time Tracker which allows you the recording of your working hours with a simple push of a button."
+      description={`Timesheet is a mobile Time Tracker which allows you the recording of your working hours with a simple push of a button.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -156,7 +156,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Timesheet</title>
-          <meta name="description" content="Timesheet is a mobile Time Tracker which allows you the recording of your working hours with a simple push of a button." />
+          <meta name="description" content={`Timesheet is a mobile Time Tracker which allows you the recording of your working hours with a simple push of a button.`} />
         </>
       ),
     },

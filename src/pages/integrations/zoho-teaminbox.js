@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Zoho TeamInbox"
-      description="Zoho TeamInbox is a shared inboxes tool that teams can use to enhance productivity, transparency and collaboration. Connect your group emails with Zoho TeamInbox to have clutter-free, organized inboxes."
+      description={`Zoho TeamInbox is a shared inboxes tool that teams can use to enhance productivity, transparency and collaboration. Connect your group emails with Zoho TeamInbox to have clutter-free, organized inboxes.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -66,7 +66,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Zoho TeamInbox</title>
-          <meta name="description" content="Zoho TeamInbox is a shared inboxes tool that teams can use to enhance productivity, transparency and collaboration. Connect your group emails with Zoho TeamInbox to have clutter-free, organized inboxes." />
+          <meta name="description" content={`Zoho TeamInbox is a shared inboxes tool that teams can use to enhance productivity, transparency and collaboration. Connect your group emails with Zoho TeamInbox to have clutter-free, organized inboxes.`} />
         </>
       ),
     },

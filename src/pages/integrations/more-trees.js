@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="More Trees"
-      description="More Trees is a platform that provides you with an easy way to offset your carbon by automatically planting trees."
+      description={`More Trees is a platform that provides you with an easy way to offset your carbon by automatically planting trees.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -72,7 +72,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>More Trees</title>
-          <meta name="description" content="More Trees is a platform that provides you with an easy way to offset your carbon by automatically planting trees." />
+          <meta name="description" content={`More Trees is a platform that provides you with an easy way to offset your carbon by automatically planting trees.`} />
         </>
       ),
     },

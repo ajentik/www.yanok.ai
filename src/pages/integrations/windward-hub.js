@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Windward Hub"
-      description="Windward Hub allows you to integrate easy to use document automation with other SaaS applications and manage templates, versions, and output."
+      description={`Windward Hub allows you to integrate easy to use document automation with other SaaS applications and manage templates, versions, and output.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -61,7 +61,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Windward Hub</title>
-          <meta name="description" content="Windward Hub allows you to integrate easy to use document automation with other SaaS applications and manage templates, versions, and output." />
+          <meta name="description" content={`Windward Hub allows you to integrate easy to use document automation with other SaaS applications and manage templates, versions, and output.`} />
         </>
       ),
     },

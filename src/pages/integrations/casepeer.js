@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="CASEpeer"
-      description="Case and practice management software for personal injury attorneys"
+      description={`Case and practice management software for personal injury attorneys`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -71,7 +71,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>CASEpeer</title>
-          <meta name="description" content="Case and practice management software for personal injury attorneys" />
+          <meta name="description" content={`Case and practice management software for personal injury attorneys`} />
         </>
       ),
     },

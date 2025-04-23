@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="SwiftKanban"
-      description="SwiftKanban is a powerful, yet intuitive, Kanban software for helping you manage your Lean/ Agile initiatives."
+      description={`SwiftKanban is a powerful, yet intuitive, Kanban software for helping you manage your Lean/ Agile initiatives.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -116,7 +116,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>SwiftKanban</title>
-          <meta name="description" content="SwiftKanban is a powerful, yet intuitive, Kanban software for helping you manage your Lean/ Agile initiatives." />
+          <meta name="description" content={`SwiftKanban is a powerful, yet intuitive, Kanban software for helping you manage your Lean/ Agile initiatives.`} />
         </>
       ),
     },

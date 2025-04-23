@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Keltehue"
-      description="Keltehue is a project management software that enables CEOs and managers to flying through the projects, tracks and manages goals."
+      description={`Keltehue is a project management software that enables CEOs and managers to flying through the projects, tracks and manages goals.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -71,7 +71,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Keltehue</title>
-          <meta name="description" content="Keltehue is a project management software that enables CEOs and managers to flying through the projects, tracks and manages goals." />
+          <meta name="description" content={`Keltehue is a project management software that enables CEOs and managers to flying through the projects, tracks and manages goals.`} />
         </>
       ),
     },

@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Amazon Polly"
-      description="Amazon Polly is a service that turns text into lifelike speech, that uses advanced deep learning technologies to synthesize speech that sounds like a human voice. Supports voices for a variety of languages and accents."
+      description={`Amazon Polly is a service that turns text into lifelike speech, that uses advanced deep learning technologies to synthesize speech that sounds like a human voice. Supports voices for a variety of languages and accents.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Amazon Polly</title>
-          <meta name="description" content="Amazon Polly is a service that turns text into lifelike speech, that uses advanced deep learning technologies to synthesize speech that sounds like a human voice. Supports voices for a variety of languages and accents." />
+          <meta name="description" content={`Amazon Polly is a service that turns text into lifelike speech, that uses advanced deep learning technologies to synthesize speech that sounds like a human voice. Supports voices for a variety of languages and accents.`} />
         </>
       ),
     },

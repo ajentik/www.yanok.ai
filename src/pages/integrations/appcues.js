@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Appcues"
-      description="Appcues is a product-led growth platform. Build exceptional user experiences, code free."
+      description={`Appcues is a product-led growth platform. Build exceptional user experiences, code free.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -141,7 +141,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Appcues</title>
-          <meta name="description" content="Appcues is a product-led growth platform. Build exceptional user experiences, code free." />
+          <meta name="description" content={`Appcues is a product-led growth platform. Build exceptional user experiences, code free.`} />
         </>
       ),
     },

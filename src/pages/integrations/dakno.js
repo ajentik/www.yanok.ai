@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Dakno"
-      description="Dakno Marketing builds lead capturing tools to assist those in the real estate industry."
+      description={`Dakno Marketing builds lead capturing tools to assist those in the real estate industry.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -76,7 +76,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Dakno</title>
-          <meta name="description" content="Dakno Marketing builds lead capturing tools to assist those in the real estate industry." />
+          <meta name="description" content={`Dakno Marketing builds lead capturing tools to assist those in the real estate industry.`} />
         </>
       ),
     },

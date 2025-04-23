@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Luxury Presence"
-      description="Luxury Presence is a software company designed for real estate agents."
+      description={`Luxury Presence is a software company designed for real estate agents.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Luxury Presence</title>
-          <meta name="description" content="Luxury Presence is a software company designed for real estate agents." />
+          <meta name="description" content={`Luxury Presence is a software company designed for real estate agents.`} />
         </>
       ),
     },

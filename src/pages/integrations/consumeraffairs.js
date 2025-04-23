@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Consumeraffairs"
-      description="ConsumerAffairs is a consumer news and advocacy organization providing consumer news, recall information, and consumer reviews."
+      description={`ConsumerAffairs is a consumer news and advocacy organization providing consumer news, recall information, and consumer reviews.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +53,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Consumeraffairs</title>
-          <meta name="description" content="ConsumerAffairs is a consumer news and advocacy organization providing consumer news, recall information, and consumer reviews." />
+          <meta name="description" content={`ConsumerAffairs is a consumer news and advocacy organization providing consumer news, recall information, and consumer reviews.`} />
         </>
       ),
     },

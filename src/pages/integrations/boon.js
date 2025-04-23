@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Boon"
-      description="Boon is a social recruiting network that lets businesses engage and hire the right candidates faster through intelligent social referrals."
+      description={`Boon is a social recruiting network that lets businesses engage and hire the right candidates faster through intelligent social referrals.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -77,7 +77,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Boon</title>
-          <meta name="description" content="Boon is a social recruiting network that lets businesses engage and hire the right candidates faster through intelligent social referrals." />
+          <meta name="description" content={`Boon is a social recruiting network that lets businesses engage and hire the right candidates faster through intelligent social referrals.`} />
         </>
       ),
     },

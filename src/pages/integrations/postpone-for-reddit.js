@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Postpone for Reddit"
-      description="Postpone is a Reddit post scheduler and manager for content creators."
+      description={`Postpone is a Reddit post scheduler and manager for content creators.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -61,7 +61,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Postpone for Reddit</title>
-          <meta name="description" content="Postpone is a Reddit post scheduler and manager for content creators." />
+          <meta name="description" content={`Postpone is a Reddit post scheduler and manager for content creators.`} />
         </>
       ),
     },

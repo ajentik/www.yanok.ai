@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Openhab"
-      description="openHAB - a vendor and technology agnostic open source automation software for your home"
+      description={`openHAB - a vendor and technology agnostic open source automation software for your home`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +53,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Openhab</title>
-          <meta name="description" content="openHAB - a vendor and technology agnostic open source automation software for your home" />
+          <meta name="description" content={`openHAB - a vendor and technology agnostic open source automation software for your home`} />
         </>
       ),
     },

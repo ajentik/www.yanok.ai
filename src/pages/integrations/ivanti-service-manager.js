@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Ivanti Service Manager"
-      description="Ivanti Service Manager is a native Cloud and On-Premise Service Management solution that transforms service and support teams, help desks and service desks from tactical service providers to strategic business enablers."
+      description={`Ivanti Service Manager is a native Cloud and On-Premise Service Management solution that transforms service and support teams, help desks and service desks from tactical service providers to strategic business enablers.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -86,7 +86,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Ivanti Service Manager</title>
-          <meta name="description" content="Ivanti Service Manager is a native Cloud and On-Premise Service Management solution that transforms service and support teams, help desks and service desks from tactical service providers to strategic business enablers." />
+          <meta name="description" content={`Ivanti Service Manager is a native Cloud and On-Premise Service Management solution that transforms service and support teams, help desks and service desks from tactical service providers to strategic business enablers.`} />
         </>
       ),
     },

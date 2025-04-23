@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Billit.io"
-      description="Access your billit.io account, be notified about your invoices, customers or payments."
+      description={`Access your billit.io account, be notified about your invoices, customers or payments.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -106,7 +106,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Billit.io</title>
-          <meta name="description" content="Access your billit.io account, be notified about your invoices, customers or payments." />
+          <meta name="description" content={`Access your billit.io account, be notified about your invoices, customers or payments.`} />
         </>
       ),
     },

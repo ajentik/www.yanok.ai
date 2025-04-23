@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="CompanyHub"
-      description="CompanyHub is a highly customizable CRM that you can customize, write custom logic, and create automated alerts for and more without a single line of code."
+      description={`CompanyHub is a highly customizable CRM that you can customize, write custom logic, and create automated alerts for and more without a single line of code.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -146,7 +146,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>CompanyHub</title>
-          <meta name="description" content="CompanyHub is a highly customizable CRM that you can customize, write custom logic, and create automated alerts for and more without a single line of code." />
+          <meta name="description" content={`CompanyHub is a highly customizable CRM that you can customize, write custom logic, and create automated alerts for and more without a single line of code.`} />
         </>
       ),
     },

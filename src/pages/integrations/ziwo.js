@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Ziwo"
-      description="Ziwo Cloud Contact Center is an app with readymade CRM plugins to connect real or virtual agents with phone numbers in any country."
+      description={`Ziwo Cloud Contact Center is an app with readymade CRM plugins to connect real or virtual agents with phone numbers in any country.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -77,7 +77,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Ziwo</title>
-          <meta name="description" content="Ziwo Cloud Contact Center is an app with readymade CRM plugins to connect real or virtual agents with phone numbers in any country." />
+          <meta name="description" content={`Ziwo Cloud Contact Center is an app with readymade CRM plugins to connect real or virtual agents with phone numbers in any country.`} />
         </>
       ),
     },

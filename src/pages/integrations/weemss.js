@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Weemss"
-      description="Weemss® is an event management software that does the heavy-duty work, so you can focus on the actual event. It lets you manage any type of event, customize the registration process and integrate it on your own site, or use Weemss to create one. Accept payments, boost sales and track performance data - everything made fast and easy."
+      description={`Weemss® is an event management software that does the heavy-duty work, so you can focus on the actual event. It lets you manage any type of event, customize the registration process and integrate it on your own site, or use Weemss to create one. Accept payments, boost sales and track performance data - everything made fast and easy.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -62,7 +62,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Weemss</title>
-          <meta name="description" content="Weemss® is an event management software that does the heavy-duty work, so you can focus on the actual event. It lets you manage any type of event, customize the registration process and integrate it on your own site, or use Weemss to create one. Accept payments, boost sales and track performance data - everything made fast and easy." />
+          <meta name="description" content={`Weemss® is an event management software that does the heavy-duty work, so you can focus on the actual event. It lets you manage any type of event, customize the registration process and integrate it on your own site, or use Weemss to create one. Accept payments, boost sales and track performance data - everything made fast and easy.`} />
         </>
       ),
     },

@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Arrangr"
-      description="Arrangr makes arranging meetings fast and easy. Whether meeting 1-on-1 or herding a group, meeting for coffee or scheduling a call, Arrangr provides the tools and flows to arrange it with ease and efficiency."
+      description={`Arrangr makes arranging meetings fast and easy. Whether meeting 1-on-1 or herding a group, meeting for coffee or scheduling a call, Arrangr provides the tools and flows to arrange it with ease and efficiency.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -82,7 +82,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Arrangr</title>
-          <meta name="description" content="Arrangr makes arranging meetings fast and easy. Whether meeting 1-on-1 or herding a group, meeting for coffee or scheduling a call, Arrangr provides the tools and flows to arrange it with ease and efficiency." />
+          <meta name="description" content={`Arrangr makes arranging meetings fast and easy. Whether meeting 1-on-1 or herding a group, meeting for coffee or scheduling a call, Arrangr provides the tools and flows to arrange it with ease and efficiency.`} />
         </>
       ),
     },

@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="WorkAdventure"
-      description="Welcome to WorkAdventure: your virtual office, your digital event and your virtual campus! Let's think outside the box and imagine a place where you can gather with your teammates wherever you are!"
+      description={`Welcome to WorkAdventure: your virtual office, your digital event and your virtual campus! Let's think outside the box and imagine a place where you can gather with your teammates wherever you are!`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -77,7 +77,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>WorkAdventure</title>
-          <meta name="description" content="Welcome to WorkAdventure: your virtual office, your digital event and your virtual campus! Let's think outside the box and imagine a place where you can gather with your teammates wherever you are!" />
+          <meta name="description" content={`Welcome to WorkAdventure: your virtual office, your digital event and your virtual campus! Let's think outside the box and imagine a place where you can gather with your teammates wherever you are!`} />
         </>
       ),
     },

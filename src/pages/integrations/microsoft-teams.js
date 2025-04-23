@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Microsoft Teams"
-      description="Microsoft Teams is the hub for teamwork in Office 365 that integrates all the people, content, and tools your team needs to be more engaged and effective."
+      description={`Microsoft Teams is the hub for teamwork in Office 365 that integrates all the people, content, and tools your team needs to be more engaged and effective.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -96,7 +96,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Microsoft Teams</title>
-          <meta name="description" content="Microsoft Teams is the hub for teamwork in Office 365 that integrates all the people, content, and tools your team needs to be more engaged and effective." />
+          <meta name="description" content={`Microsoft Teams is the hub for teamwork in Office 365 that integrates all the people, content, and tools your team needs to be more engaged and effective.`} />
         </>
       ),
     },

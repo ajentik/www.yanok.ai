@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="DIDWW SMS OUT"
-      description="DIDWW SMS OUT is a app to send outgoing SMS via DIDWW HTTP SMS OUT Trunk"
+      description={`DIDWW SMS OUT is a app to send outgoing SMS via DIDWW HTTP SMS OUT Trunk`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>DIDWW SMS OUT</title>
-          <meta name="description" content="DIDWW SMS OUT is a app to send outgoing SMS via DIDWW HTTP SMS OUT Trunk" />
+          <meta name="description" content={`DIDWW SMS OUT is a app to send outgoing SMS via DIDWW HTTP SMS OUT Trunk`} />
         </>
       ),
     },

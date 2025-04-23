@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Mailcheck"
-      description="Mailcheck is an email verification service, that helps businesses to increase conversion in emailing and decrease bounce rates."
+      description={`Mailcheck is an email verification service, that helps businesses to increase conversion in emailing and decrease bounce rates.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Mailcheck</title>
-          <meta name="description" content="Mailcheck is an email verification service, that helps businesses to increase conversion in emailing and decrease bounce rates." />
+          <meta name="description" content={`Mailcheck is an email verification service, that helps businesses to increase conversion in emailing and decrease bounce rates.`} />
         </>
       ),
     },

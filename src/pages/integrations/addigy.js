@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Addigy"
-      description="Addigy provides a simple, yet powerful way to manage all your Apple IT infrastructure."
+      description={`Addigy provides a simple, yet powerful way to manage all your Apple IT infrastructure.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -196,7 +196,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Addigy</title>
-          <meta name="description" content="Addigy provides a simple, yet powerful way to manage all your Apple IT infrastructure." />
+          <meta name="description" content={`Addigy provides a simple, yet powerful way to manage all your Apple IT infrastructure.`} />
         </>
       ),
     },

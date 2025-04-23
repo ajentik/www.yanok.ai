@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Detrack"
-      description="Detrack is a live delivery tracking system that offers a robust Proof of Delivery system to last-mile couriers and logistics."
+      description={`Detrack is a live delivery tracking system that offers a robust Proof of Delivery system to last-mile couriers and logistics.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Detrack</title>
-          <meta name="description" content="Detrack is a live delivery tracking system that offers a robust Proof of Delivery system to last-mile couriers and logistics." />
+          <meta name="description" content={`Detrack is a live delivery tracking system that offers a robust Proof of Delivery system to last-mile couriers and logistics.`} />
         </>
       ),
     },

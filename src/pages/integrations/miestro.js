@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Miestro"
-      description="Miestro is a membership platform for online education courses, where you can create powerful courses with free or payable plans."
+      description={`Miestro is a membership platform for online education courses, where you can create powerful courses with free or payable plans.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -86,7 +86,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Miestro</title>
-          <meta name="description" content="Miestro is a membership platform for online education courses, where you can create powerful courses with free or payable plans." />
+          <meta name="description" content={`Miestro is a membership platform for online education courses, where you can create powerful courses with free or payable plans.`} />
         </>
       ),
     },

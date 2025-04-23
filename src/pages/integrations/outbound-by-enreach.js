@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Outbound by Enreach"
-      description="Outbound by Enreach is a cloud-based solution that helps sales organizations call leads, prospects or customers as smart and efficiently as possible."
+      description={`Outbound by Enreach is a cloud-based solution that helps sales organizations call leads, prospects or customers as smart and efficiently as possible.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -61,7 +61,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Outbound by Enreach</title>
-          <meta name="description" content="Outbound by Enreach is a cloud-based solution that helps sales organizations call leads, prospects or customers as smart and efficiently as possible." />
+          <meta name="description" content={`Outbound by Enreach is a cloud-based solution that helps sales organizations call leads, prospects or customers as smart and efficiently as possible.`} />
         </>
       ),
     },

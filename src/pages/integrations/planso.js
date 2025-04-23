@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="PlanSo Forms for WordPress"
-      description="PlanSo Forms is a form management and creation tool. It can be used directly or via wordpress plugin."
+      description={`PlanSo Forms is a form management and creation tool. It can be used directly or via wordpress plugin.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>PlanSo Forms for WordPress</title>
-          <meta name="description" content="PlanSo Forms is a form management and creation tool. It can be used directly or via wordpress plugin." />
+          <meta name="description" content={`PlanSo Forms is a form management and creation tool. It can be used directly or via wordpress plugin.`} />
         </>
       ),
     },

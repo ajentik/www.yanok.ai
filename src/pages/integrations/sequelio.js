@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Sequel.io"
-      description="Sequel.io provides powerful pre-built live communication components to give your audience an experience right where they are, on your site."
+      description={`Sequel.io provides powerful pre-built live communication components to give your audience an experience right where they are, on your site.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -91,7 +91,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Sequel.io</title>
-          <meta name="description" content="Sequel.io provides powerful pre-built live communication components to give your audience an experience right where they are, on your site." />
+          <meta name="description" content={`Sequel.io provides powerful pre-built live communication components to give your audience an experience right where they are, on your site.`} />
         </>
       ),
     },

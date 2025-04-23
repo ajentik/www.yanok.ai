@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Dext"
-      description="Dext makes accountants and the businesses you look after more productive and profitable through better data and insights."
+      description={`Dext makes accountants and the businesses you look after more productive and profitable through better data and insights.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -86,7 +86,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Dext</title>
-          <meta name="description" content="Dext makes accountants and the businesses you look after more productive and profitable through better data and insights." />
+          <meta name="description" content={`Dext makes accountants and the businesses you look after more productive and profitable through better data and insights.`} />
         </>
       ),
     },

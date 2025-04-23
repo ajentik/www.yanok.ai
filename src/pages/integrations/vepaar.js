@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Vepaar"
-      description="Vepaar app contains all the tools you need to create your business page, efficiently communicate with your business contacts, manage your sales pipeline, build an e-commerce store, and run polls."
+      description={`Vepaar app contains all the tools you need to create your business page, efficiently communicate with your business contacts, manage your sales pipeline, build an e-commerce store, and run polls.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -67,7 +67,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Vepaar</title>
-          <meta name="description" content="Vepaar app contains all the tools you need to create your business page, efficiently communicate with your business contacts, manage your sales pipeline, build an e-commerce store, and run polls." />
+          <meta name="description" content={`Vepaar app contains all the tools you need to create your business page, efficiently communicate with your business contacts, manage your sales pipeline, build an e-commerce store, and run polls.`} />
         </>
       ),
     },

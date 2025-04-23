@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="GoFormz"
-      description="GoFormz gives you a complete mobile forms solution that lets you capture data electronically with mobile forms that look exactly like your current paper forms."
+      description={`GoFormz gives you a complete mobile forms solution that lets you capture data electronically with mobile forms that look exactly like your current paper forms.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -61,7 +61,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>GoFormz</title>
-          <meta name="description" content="GoFormz gives you a complete mobile forms solution that lets you capture data electronically with mobile forms that look exactly like your current paper forms." />
+          <meta name="description" content={`GoFormz gives you a complete mobile forms solution that lets you capture data electronically with mobile forms that look exactly like your current paper forms.`} />
         </>
       ),
     },

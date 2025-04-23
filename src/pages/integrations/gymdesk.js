@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Gymdesk"
-      description="Gymdesk provides modern management software to gyms, martial arts schools, yoga studios and other membership businesses."
+      description={`Gymdesk provides modern management software to gyms, martial arts schools, yoga studios and other membership businesses.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -101,7 +101,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Gymdesk</title>
-          <meta name="description" content="Gymdesk provides modern management software to gyms, martial arts schools, yoga studios and other membership businesses." />
+          <meta name="description" content={`Gymdesk provides modern management software to gyms, martial arts schools, yoga studios and other membership businesses.`} />
         </>
       ),
     },

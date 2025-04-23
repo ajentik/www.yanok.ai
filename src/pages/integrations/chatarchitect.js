@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="ChatArchitect.com"
-      description="ChatArchitect.com manages inbound WhatsApp messages, outbound session and template messages (HSM), media, and WhatsApp buttons."
+      description={`ChatArchitect.com manages inbound WhatsApp messages, outbound session and template messages (HSM), media, and WhatsApp buttons.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -106,7 +106,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>ChatArchitect.com</title>
-          <meta name="description" content="ChatArchitect.com manages inbound WhatsApp messages, outbound session and template messages (HSM), media, and WhatsApp buttons." />
+          <meta name="description" content={`ChatArchitect.com manages inbound WhatsApp messages, outbound session and template messages (HSM), media, and WhatsApp buttons.`} />
         </>
       ),
     },

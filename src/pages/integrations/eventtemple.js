@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="EventTemple"
-      description="Event Temple is an all in one event management software used by hotels, wedding venues, clubs, restaurants, and conference centers."
+      description={`Event Temple is an all in one event management software used by hotels, wedding venues, clubs, restaurants, and conference centers.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -191,7 +191,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>EventTemple</title>
-          <meta name="description" content="Event Temple is an all in one event management software used by hotels, wedding venues, clubs, restaurants, and conference centers." />
+          <meta name="description" content={`Event Temple is an all in one event management software used by hotels, wedding venues, clubs, restaurants, and conference centers.`} />
         </>
       ),
     },

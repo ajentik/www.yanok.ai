@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Aerofiler"
-      description="Aerofiler is for in-house legal teams who wish to automate the process of creating, approving, filing and tracking contracts."
+      description={`Aerofiler is for in-house legal teams who wish to automate the process of creating, approving, filing and tracking contracts.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -96,7 +96,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Aerofiler</title>
-          <meta name="description" content="Aerofiler is for in-house legal teams who wish to automate the process of creating, approving, filing and tracking contracts." />
+          <meta name="description" content={`Aerofiler is for in-house legal teams who wish to automate the process of creating, approving, filing and tracking contracts.`} />
         </>
       ),
     },

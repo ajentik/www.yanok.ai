@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="NiceJob"
-      description="NiceJob is a platform that helps you get more customer reviews and build a great reputation online."
+      description={`NiceJob is a platform that helps you get more customer reviews and build a great reputation online.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -106,7 +106,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>NiceJob</title>
-          <meta name="description" content="NiceJob is a platform that helps you get more customer reviews and build a great reputation online." />
+          <meta name="description" content={`NiceJob is a platform that helps you get more customer reviews and build a great reputation online.`} />
         </>
       ),
     },

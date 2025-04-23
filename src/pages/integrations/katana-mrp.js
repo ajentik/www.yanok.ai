@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Katana"
-      description="Katana gives thousands of manufacturers a live look at their business. Manage all the moving parts of your business and unite the apps and services you use in one visual platform."
+      description={`Katana gives thousands of manufacturers a live look at their business. Manage all the moving parts of your business and unite the apps and services you use in one visual platform.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -72,7 +72,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Katana</title>
-          <meta name="description" content="Katana gives thousands of manufacturers a live look at their business. Manage all the moving parts of your business and unite the apps and services you use in one visual platform." />
+          <meta name="description" content={`Katana gives thousands of manufacturers a live look at their business. Manage all the moving parts of your business and unite the apps and services you use in one visual platform.`} />
         </>
       ),
     },

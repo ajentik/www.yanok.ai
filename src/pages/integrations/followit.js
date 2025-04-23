@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="follow.it"
-      description="follow.it is a news service provider platform that helps Readers to subscribe to the various news providers under the same table while providing Publishers a way to get more recurring visitors & subscribers."
+      description={`follow.it is a news service provider platform that helps Readers to subscribe to the various news providers under the same table while providing Publishers a way to get more recurring visitors & subscribers.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>follow.it</title>
-          <meta name="description" content="follow.it is a news service provider platform that helps Readers to subscribe to the various news providers under the same table while providing Publishers a way to get more recurring visitors & subscribers." />
+          <meta name="description" content={`follow.it is a news service provider platform that helps Readers to subscribe to the various news providers under the same table while providing Publishers a way to get more recurring visitors & subscribers.`} />
         </>
       ),
     },

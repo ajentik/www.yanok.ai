@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="QApp"
-      description="QApp is an all-in-one management system for businesses"
+      description={`QApp is an all-in-one management system for businesses`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -91,7 +91,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>QApp</title>
-          <meta name="description" content="QApp is an all-in-one management system for businesses" />
+          <meta name="description" content={`QApp is an all-in-one management system for businesses`} />
         </>
       ),
     },

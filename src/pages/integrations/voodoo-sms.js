@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Voodoo SMS"
-      description="Voodoo SMS is an SMS platform that allows you to send text messages to your customers quickly and easily."
+      description={`Voodoo SMS is an SMS platform that allows you to send text messages to your customers quickly and easily.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -101,7 +101,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Voodoo SMS</title>
-          <meta name="description" content="Voodoo SMS is an SMS platform that allows you to send text messages to your customers quickly and easily." />
+          <meta name="description" content={`Voodoo SMS is an SMS platform that allows you to send text messages to your customers quickly and easily.`} />
         </>
       ),
     },

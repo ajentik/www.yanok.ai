@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Colligso MailIn"
-      description="Colligso MailIn helps businesses to reach their customers to remarket their product/services using calendar-scheduled email campaigns. Colligso has pre-built and curated calendars for holidays, restaurants and game days."
+      description={`Colligso MailIn helps businesses to reach their customers to remarket their product/services using calendar-scheduled email campaigns. Colligso has pre-built and curated calendars for holidays, restaurants and game days.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Colligso MailIn</title>
-          <meta name="description" content="Colligso MailIn helps businesses to reach their customers to remarket their product/services using calendar-scheduled email campaigns. Colligso has pre-built and curated calendars for holidays, restaurants and game days." />
+          <meta name="description" content={`Colligso MailIn helps businesses to reach their customers to remarket their product/services using calendar-scheduled email campaigns. Colligso has pre-built and curated calendars for holidays, restaurants and game days.`} />
         </>
       ),
     },

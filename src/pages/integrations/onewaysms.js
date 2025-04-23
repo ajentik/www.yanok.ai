@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="OneWaySMS"
-      description="OneWaySMS Malaysia offers a complete bulk SMS service that allow businesses to send customized SMS to an ever increasing mobile audience."
+      description={`OneWaySMS Malaysia offers a complete bulk SMS service that allow businesses to send customized SMS to an ever increasing mobile audience.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>OneWaySMS</title>
-          <meta name="description" content="OneWaySMS Malaysia offers a complete bulk SMS service that allow businesses to send customized SMS to an ever increasing mobile audience." />
+          <meta name="description" content={`OneWaySMS Malaysia offers a complete bulk SMS service that allow businesses to send customized SMS to an ever increasing mobile audience.`} />
         </>
       ),
     },

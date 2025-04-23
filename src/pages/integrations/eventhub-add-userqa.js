@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="EventHub"
-      description="EventHub is an all-in-one event package. You can hold seminars, conferences, and other events for registered users."
+      description={`EventHub is an all-in-one event package. You can hold seminars, conferences, and other events for registered users.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -76,7 +76,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>EventHub</title>
-          <meta name="description" content="EventHub is an all-in-one event package. You can hold seminars, conferences, and other events for registered users." />
+          <meta name="description" content={`EventHub is an all-in-one event package. You can hold seminars, conferences, and other events for registered users.`} />
         </>
       ),
     },

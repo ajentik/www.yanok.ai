@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="OfficeTimer"
-      description="OfficeTimer is an online office management software that helps office owners to track their employees timesheet, attendance, leave and payroll systems."
+      description={`OfficeTimer is an online office management software that helps office owners to track their employees timesheet, attendance, leave and payroll systems.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -126,7 +126,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>OfficeTimer</title>
-          <meta name="description" content="OfficeTimer is an online office management software that helps office owners to track their employees timesheet, attendance, leave and payroll systems." />
+          <meta name="description" content={`OfficeTimer is an online office management software that helps office owners to track their employees timesheet, attendance, leave and payroll systems.`} />
         </>
       ),
     },

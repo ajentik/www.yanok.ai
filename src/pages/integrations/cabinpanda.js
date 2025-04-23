@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="CabinPanda"
-      description="CabinPanda is an innovative data collection tool. It enables users to create good looking online forms which perform great across different devices. CabinPanda stands out with its solid platform and ease of use."
+      description={`CabinPanda is an innovative data collection tool. It enables users to create good looking online forms which perform great across different devices. CabinPanda stands out with its solid platform and ease of use.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>CabinPanda</title>
-          <meta name="description" content="CabinPanda is an innovative data collection tool. It enables users to create good looking online forms which perform great across different devices. CabinPanda stands out with its solid platform and ease of use." />
+          <meta name="description" content={`CabinPanda is an innovative data collection tool. It enables users to create good looking online forms which perform great across different devices. CabinPanda stands out with its solid platform and ease of use.`} />
         </>
       ),
     },

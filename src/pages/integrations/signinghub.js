@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="SigningHub"
-      description="SigningHub is an e-signature service with a powerful workflow engine that boosts team productivity by automating repetitive document and sign-off processes."
+      description={`SigningHub is an e-signature service with a powerful workflow engine that boosts team productivity by automating repetitive document and sign-off processes.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -102,7 +102,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>SigningHub</title>
-          <meta name="description" content="SigningHub is an e-signature service with a powerful workflow engine that boosts team productivity by automating repetitive document and sign-off processes." />
+          <meta name="description" content={`SigningHub is an e-signature service with a powerful workflow engine that boosts team productivity by automating repetitive document and sign-off processes.`} />
         </>
       ),
     },

@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Raindrop.io"
-      description="Raindrop.io is the best way to save articles, videos and links to view on any device, any time."
+      description={`Raindrop.io is the best way to save articles, videos and links to view on any device, any time.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -76,7 +76,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Raindrop.io</title>
-          <meta name="description" content="Raindrop.io is the best way to save articles, videos and links to view on any device, any time." />
+          <meta name="description" content={`Raindrop.io is the best way to save articles, videos and links to view on any device, any time.`} />
         </>
       ),
     },

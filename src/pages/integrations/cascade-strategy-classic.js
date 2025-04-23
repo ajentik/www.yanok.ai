@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Cascade Strategy Classic"
-      description="Cascade is a strategy execution platform which helps organizations create, communicate and execute their strategic plans. For Cascade Strategy Classic users."
+      description={`Cascade is a strategy execution platform which helps organizations create, communicate and execute their strategic plans. For Cascade Strategy Classic users.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -126,7 +126,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Cascade Strategy Classic</title>
-          <meta name="description" content="Cascade is a strategy execution platform which helps organizations create, communicate and execute their strategic plans. For Cascade Strategy Classic users." />
+          <meta name="description" content={`Cascade is a strategy execution platform which helps organizations create, communicate and execute their strategic plans. For Cascade Strategy Classic users.`} />
         </>
       ),
     },

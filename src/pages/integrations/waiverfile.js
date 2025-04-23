@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="WaiverFile"
-      description="WaiverFile lets your customers sign waivers from a computer, tablet or mobile device. From your website or at a kiosk, completing the forms is quick and easy."
+      description={`WaiverFile lets your customers sign waivers from a computer, tablet or mobile device. From your website or at a kiosk, completing the forms is quick and easy.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -76,7 +76,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>WaiverFile</title>
-          <meta name="description" content="WaiverFile lets your customers sign waivers from a computer, tablet or mobile device. From your website or at a kiosk, completing the forms is quick and easy." />
+          <meta name="description" content={`WaiverFile lets your customers sign waivers from a computer, tablet or mobile device. From your website or at a kiosk, completing the forms is quick and easy.`} />
         </>
       ),
     },

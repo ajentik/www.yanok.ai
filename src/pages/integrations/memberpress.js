@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="MemberPress"
-      description="MemberPress is an “all-in-one” membership and LMS plugin for WordPress that will help you generate recurring membership revenue from content like blogs, newsletters, online courses, digital downloads, podcasts, videos, and more."
+      description={`MemberPress is an “all-in-one” membership and LMS plugin for WordPress that will help you generate recurring membership revenue from content like blogs, newsletters, online courses, digital downloads, podcasts, videos, and more.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -171,7 +171,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>MemberPress</title>
-          <meta name="description" content="MemberPress is an “all-in-one” membership and LMS plugin for WordPress that will help you generate recurring membership revenue from content like blogs, newsletters, online courses, digital downloads, podcasts, videos, and more." />
+          <meta name="description" content={`MemberPress is an “all-in-one” membership and LMS plugin for WordPress that will help you generate recurring membership revenue from content like blogs, newsletters, online courses, digital downloads, podcasts, videos, and more.`} />
         </>
       ),
     },

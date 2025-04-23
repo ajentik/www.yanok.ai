@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="MantisProperty"
-      description="MantisProperty gives you an easy-to-use, low cost CRM built specifically for Real Estate Agents and Business Brokers in Australia and New Zealand."
+      description={`MantisProperty gives you an easy-to-use, low cost CRM built specifically for Real Estate Agents and Business Brokers in Australia and New Zealand.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -67,7 +67,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>MantisProperty</title>
-          <meta name="description" content="MantisProperty gives you an easy-to-use, low cost CRM built specifically for Real Estate Agents and Business Brokers in Australia and New Zealand." />
+          <meta name="description" content={`MantisProperty gives you an easy-to-use, low cost CRM built specifically for Real Estate Agents and Business Brokers in Australia and New Zealand.`} />
         </>
       ),
     },

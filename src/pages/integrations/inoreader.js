@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Inoreader"
-      description="Inoreader is a content reader for power users who want to save time."
+      description={`Inoreader is a content reader for power users who want to save time.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -86,7 +86,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Inoreader</title>
-          <meta name="description" content="Inoreader is a content reader for power users who want to save time." />
+          <meta name="description" content={`Inoreader is a content reader for power users who want to save time.`} />
         </>
       ),
     },

@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Dastra"
-      description="Dastra is a simple and guided data protection solution to make your entire organization accountable for risks around personal data. Simplify tasks and make sure they meet compliance standards."
+      description={`Dastra is a simple and guided data protection solution to make your entire organization accountable for risks around personal data. Simplify tasks and make sure they meet compliance standards.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -101,7 +101,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Dastra</title>
-          <meta name="description" content="Dastra is a simple and guided data protection solution to make your entire organization accountable for risks around personal data. Simplify tasks and make sure they meet compliance standards." />
+          <meta name="description" content={`Dastra is a simple and guided data protection solution to make your entire organization accountable for risks around personal data. Simplify tasks and make sure they meet compliance standards.`} />
         </>
       ),
     },

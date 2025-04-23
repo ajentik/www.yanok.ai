@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Event Cadence"
-      description="Event Cadence is an all-in-one events platform for live, virtual, and hybrid events."
+      description={`Event Cadence is an all-in-one events platform for live, virtual, and hybrid events.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Event Cadence</title>
-          <meta name="description" content="Event Cadence is an all-in-one events platform for live, virtual, and hybrid events." />
+          <meta name="description" content={`Event Cadence is an all-in-one events platform for live, virtual, and hybrid events.`} />
         </>
       ),
     },

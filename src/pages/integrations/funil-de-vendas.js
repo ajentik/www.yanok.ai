@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Funil de Vendas"
-      description="Funil de Vendas helps to manage the whole sales process, from the search for opportunities to the closing of the deals."
+      description={`Funil de Vendas helps to manage the whole sales process, from the search for opportunities to the closing of the deals.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Funil de Vendas</title>
-          <meta name="description" content="Funil de Vendas helps to manage the whole sales process, from the search for opportunities to the closing of the deals." />
+          <meta name="description" content={`Funil de Vendas helps to manage the whole sales process, from the search for opportunities to the closing of the deals.`} />
         </>
       ),
     },

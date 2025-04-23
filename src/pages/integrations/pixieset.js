@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Pixieset"
-      description="Beautiful client photo gallery designed for professional photographers to share, deliver, proof and sell online."
+      description={`Beautiful client photo gallery designed for professional photographers to share, deliver, proof and sell online.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +53,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Pixieset</title>
-          <meta name="description" content="Beautiful client photo gallery designed for professional photographers to share, deliver, proof and sell online." />
+          <meta name="description" content={`Beautiful client photo gallery designed for professional photographers to share, deliver, proof and sell online.`} />
         </>
       ),
     },

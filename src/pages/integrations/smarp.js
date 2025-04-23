@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Smarp"
-      description="SaaS solution with which companies can empower their employees to discover share content created by the company such as blogs, events, and open positions to their social media networks."
+      description={`SaaS solution with which companies can empower their employees to discover share content created by the company such as blogs, events, and open positions to their social media networks.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +53,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Smarp</title>
-          <meta name="description" content="SaaS solution with which companies can empower their employees to discover share content created by the company such as blogs, events, and open positions to their social media networks." />
+          <meta name="description" content={`SaaS solution with which companies can empower their employees to discover share content created by the company such as blogs, events, and open positions to their social media networks.`} />
         </>
       ),
     },

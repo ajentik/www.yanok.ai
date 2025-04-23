@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="AnywhereWorks"
-      description="AnywhereWorks is an online platform that makes team collaboration and communication simple for your business. Built to empower teams to connect from anywhere, your team can collaborate via audio/video calls, status feed updates, group and 1:1 chats, and file sharing features."
+      description={`AnywhereWorks is an online platform that makes team collaboration and communication simple for your business. Built to empower teams to connect from anywhere, your team can collaborate via audio/video calls, status feed updates, group and 1:1 chats, and file sharing features.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -67,7 +67,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>AnywhereWorks</title>
-          <meta name="description" content="AnywhereWorks is an online platform that makes team collaboration and communication simple for your business. Built to empower teams to connect from anywhere, your team can collaborate via audio/video calls, status feed updates, group and 1:1 chats, and file sharing features." />
+          <meta name="description" content={`AnywhereWorks is an online platform that makes team collaboration and communication simple for your business. Built to empower teams to connect from anywhere, your team can collaborate via audio/video calls, status feed updates, group and 1:1 chats, and file sharing features.`} />
         </>
       ),
     },

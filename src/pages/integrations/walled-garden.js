@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Walled Garden"
-      description="Walled Garden sends Real Estate leads from Facebook Listing Ads."
+      description={`Walled Garden sends Real Estate leads from Facebook Listing Ads.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Walled Garden</title>
-          <meta name="description" content="Walled Garden sends Real Estate leads from Facebook Listing Ads." />
+          <meta name="description" content={`Walled Garden sends Real Estate leads from Facebook Listing Ads.`} />
         </>
       ),
     },

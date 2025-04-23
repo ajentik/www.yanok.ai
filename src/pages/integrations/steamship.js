@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Steamship"
-      description="Steamship is platform for AI builders to share great new capabilities."
+      description={`Steamship is platform for AI builders to share great new capabilities.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Steamship</title>
-          <meta name="description" content="Steamship is platform for AI builders to share great new capabilities." />
+          <meta name="description" content={`Steamship is platform for AI builders to share great new capabilities.`} />
         </>
       ),
     },

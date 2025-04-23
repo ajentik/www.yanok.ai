@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Groopit"
-      description="Groopit makes it easy to collect real-time data and engage the extended team to keep them contributing."
+      description={`Groopit makes it easy to collect real-time data and engage the extended team to keep them contributing.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -71,7 +71,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Groopit</title>
-          <meta name="description" content="Groopit makes it easy to collect real-time data and engage the extended team to keep them contributing." />
+          <meta name="description" content={`Groopit makes it easy to collect real-time data and engage the extended team to keep them contributing.`} />
         </>
       ),
     },

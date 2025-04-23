@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Gratavid"
-      description="Gratavid is a video service that lets you create and send personalized videos, beautifully delivered via email and text message. Update supporters, promote events, and thank your biggest advocates with video."
+      description={`Gratavid is a video service that lets you create and send personalized videos, beautifully delivered via email and text message. Update supporters, promote events, and thank your biggest advocates with video.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -66,7 +66,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Gratavid</title>
-          <meta name="description" content="Gratavid is a video service that lets you create and send personalized videos, beautifully delivered via email and text message. Update supporters, promote events, and thank your biggest advocates with video." />
+          <meta name="description" content={`Gratavid is a video service that lets you create and send personalized videos, beautifully delivered via email and text message. Update supporters, promote events, and thank your biggest advocates with video.`} />
         </>
       ),
     },

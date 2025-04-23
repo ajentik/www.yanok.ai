@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="ThoughtTrace"
-      description="ThoughtTrace is an AI-Powered Document Understanding Platform that delivers rich, contextual insights for complex documents and contracts."
+      description={`ThoughtTrace is an AI-Powered Document Understanding Platform that delivers rich, contextual insights for complex documents and contracts.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -92,7 +92,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>ThoughtTrace</title>
-          <meta name="description" content="ThoughtTrace is an AI-Powered Document Understanding Platform that delivers rich, contextual insights for complex documents and contracts." />
+          <meta name="description" content={`ThoughtTrace is an AI-Powered Document Understanding Platform that delivers rich, contextual insights for complex documents and contracts.`} />
         </>
       ),
     },

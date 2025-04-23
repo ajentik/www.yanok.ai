@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Salespad"
-      description="SalesPad Cloud brings enterprise-level functionality and visibility to QuickBooks Online for your whole distribution business."
+      description={`SalesPad Cloud brings enterprise-level functionality and visibility to QuickBooks Online for your whole distribution business.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +53,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Salespad</title>
-          <meta name="description" content="SalesPad Cloud brings enterprise-level functionality and visibility to QuickBooks Online for your whole distribution business." />
+          <meta name="description" content={`SalesPad Cloud brings enterprise-level functionality and visibility to QuickBooks Online for your whole distribution business.`} />
         </>
       ),
     },

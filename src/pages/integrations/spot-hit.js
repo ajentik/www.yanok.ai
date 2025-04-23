@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Spot-Hit"
-      description="SPOT HIT is the french leading plateform to manage all your campaigns (SMS, Rich SMS, email)"
+      description={`SPOT HIT is the french leading plateform to manage all your campaigns (SMS, Rich SMS, email)`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -91,7 +91,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Spot-Hit</title>
-          <meta name="description" content="SPOT HIT is the french leading plateform to manage all your campaigns (SMS, Rich SMS, email)" />
+          <meta name="description" content={`SPOT HIT is the french leading plateform to manage all your campaigns (SMS, Rich SMS, email)`} />
         </>
       ),
     },

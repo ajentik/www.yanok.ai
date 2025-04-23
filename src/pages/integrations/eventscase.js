@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Eventscase"
-      description="Eventscase provides the technology to efficiently manage, enrich and boost your physical, virtual & hybrid events."
+      description={`Eventscase provides the technology to efficiently manage, enrich and boost your physical, virtual & hybrid events.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -62,7 +62,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Eventscase</title>
-          <meta name="description" content="Eventscase provides the technology to efficiently manage, enrich and boost your physical, virtual & hybrid events." />
+          <meta name="description" content={`Eventscase provides the technology to efficiently manage, enrich and boost your physical, virtual & hybrid events.`} />
         </>
       ),
     },

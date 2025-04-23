@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Planning Pod"
-      description="Planning Pod is an event management platform designed for event venues and planning professionals to keep you and your team organized and to centralize your event details."
+      description={`Planning Pod is an event management platform designed for event venues and planning professionals to keep you and your team organized and to centralize your event details.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -126,7 +126,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Planning Pod</title>
-          <meta name="description" content="Planning Pod is an event management platform designed for event venues and planning professionals to keep you and your team organized and to centralize your event details." />
+          <meta name="description" content={`Planning Pod is an event management platform designed for event venues and planning professionals to keep you and your team organized and to centralize your event details.`} />
         </>
       ),
     },

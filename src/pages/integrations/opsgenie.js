@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="OpsGenie"
-      description="OpsGenie extends IT Operations Management to mobile devices. OpsGenie gets alerts from IT management systems and notify the users via iPhone/Android push notifications, email, text messages and voice to text phone calls. OpsGenie automates the notification process, empowering users to receive alert notifications and rapidly respond to them directly from OpsGenie apps."
+      description={`OpsGenie extends IT Operations Management to mobile devices. OpsGenie gets alerts from IT management systems and notify the users via iPhone/Android push notifications, email, text messages and voice to text phone calls. OpsGenie automates the notification process, empowering users to receive alert notifications and rapidly respond to them directly from OpsGenie apps.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>OpsGenie</title>
-          <meta name="description" content="OpsGenie extends IT Operations Management to mobile devices. OpsGenie gets alerts from IT management systems and notify the users via iPhone/Android push notifications, email, text messages and voice to text phone calls. OpsGenie automates the notification process, empowering users to receive alert notifications and rapidly respond to them directly from OpsGenie apps." />
+          <meta name="description" content={`OpsGenie extends IT Operations Management to mobile devices. OpsGenie gets alerts from IT management systems and notify the users via iPhone/Android push notifications, email, text messages and voice to text phone calls. OpsGenie automates the notification process, empowering users to receive alert notifications and rapidly respond to them directly from OpsGenie apps.`} />
         </>
       ),
     },

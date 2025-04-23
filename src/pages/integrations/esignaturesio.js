@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="eSignatures.io"
-      description="ESignatures.io is a tool used for signing mobile friendly contracts over the web."
+      description={`ESignatures.io is a tool used for signing mobile friendly contracts over the web.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -81,7 +81,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>eSignatures.io</title>
-          <meta name="description" content="ESignatures.io is a tool used for signing mobile friendly contracts over the web." />
+          <meta name="description" content={`ESignatures.io is a tool used for signing mobile friendly contracts over the web.`} />
         </>
       ),
     },

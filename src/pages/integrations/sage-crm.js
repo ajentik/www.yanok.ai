@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Sage CRM"
-      description="Helps businesses improve customer relationships by organising and automating communications and activities across all customer-facing departments."
+      description={`Helps businesses improve customer relationships by organising and automating communications and activities across all customer-facing departments.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +53,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Sage CRM</title>
-          <meta name="description" content="Helps businesses improve customer relationships by organising and automating communications and activities across all customer-facing departments." />
+          <meta name="description" content={`Helps businesses improve customer relationships by organising and automating communications and activities across all customer-facing departments.`} />
         </>
       ),
     },

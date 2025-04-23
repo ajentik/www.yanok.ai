@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Celery"
-      description="Celery is a pre-order platform that brings your products to life. Use Celery for your pre-order, custom crowdfunding, and e-commerce needs."
+      description={`Celery is a pre-order platform that brings your products to life. Use Celery for your pre-order, custom crowdfunding, and e-commerce needs.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +53,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Celery</title>
-          <meta name="description" content="Celery is a pre-order platform that brings your products to life. Use Celery for your pre-order, custom crowdfunding, and e-commerce needs." />
+          <meta name="description" content={`Celery is a pre-order platform that brings your products to life. Use Celery for your pre-order, custom crowdfunding, and e-commerce needs.`} />
         </>
       ),
     },

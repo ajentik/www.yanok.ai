@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="BlogIn"
-      description="BlogIn is the beautifully simple internal blog and knowledge sharing platform for teams of all sizes."
+      description={`BlogIn is the beautifully simple internal blog and knowledge sharing platform for teams of all sizes.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -81,7 +81,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>BlogIn</title>
-          <meta name="description" content="BlogIn is the beautifully simple internal blog and knowledge sharing platform for teams of all sizes." />
+          <meta name="description" content={`BlogIn is the beautifully simple internal blog and knowledge sharing platform for teams of all sizes.`} />
         </>
       ),
     },

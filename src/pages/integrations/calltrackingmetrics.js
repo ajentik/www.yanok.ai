@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="CallTrackingMetrics"
-      description="CallTrackingMetrics is the only digital platform that uses call tracking intelligence to inform contact center automation—resulting in a more personalized customer experience. Discover which marketing campaigns are generating leads and conversions, and use that data to automate call flows and power your contact center."
+      description={`CallTrackingMetrics is the only digital platform that uses call tracking intelligence to inform contact center automation—resulting in a more personalized customer experience. Discover which marketing campaigns are generating leads and conversions, and use that data to automate call flows and power your contact center.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>CallTrackingMetrics</title>
-          <meta name="description" content="CallTrackingMetrics is the only digital platform that uses call tracking intelligence to inform contact center automation—resulting in a more personalized customer experience. Discover which marketing campaigns are generating leads and conversions, and use that data to automate call flows and power your contact center." />
+          <meta name="description" content={`CallTrackingMetrics is the only digital platform that uses call tracking intelligence to inform contact center automation—resulting in a more personalized customer experience. Discover which marketing campaigns are generating leads and conversions, and use that data to automate call flows and power your contact center.`} />
         </>
       ),
     },

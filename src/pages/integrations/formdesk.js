@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Formdesk"
-      description="Online form builder where powerful flexible features create endless possibilities."
+      description={`Online form builder where powerful flexible features create endless possibilities.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Formdesk</title>
-          <meta name="description" content="Online form builder where powerful flexible features create endless possibilities." />
+          <meta name="description" content={`Online form builder where powerful flexible features create endless possibilities.`} />
         </>
       ),
     },

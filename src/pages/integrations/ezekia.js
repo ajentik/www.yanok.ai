@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Ezekia"
-      description="Ezekia is a platform for executive search firms to manage their assignments and business development campaigns."
+      description={`Ezekia is a platform for executive search firms to manage their assignments and business development campaigns.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -456,7 +456,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Ezekia</title>
-          <meta name="description" content="Ezekia is a platform for executive search firms to manage their assignments and business development campaigns." />
+          <meta name="description" content={`Ezekia is a platform for executive search firms to manage their assignments and business development campaigns.`} />
         </>
       ),
     },

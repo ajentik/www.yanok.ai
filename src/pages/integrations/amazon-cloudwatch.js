@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Amazon CloudWatch"
-      description="Amazon CloudWatch is a monitoring service for AWS cloud resources and the applications you run on AWS."
+      description={`Amazon CloudWatch is a monitoring service for AWS cloud resources and the applications you run on AWS.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -76,7 +76,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Amazon CloudWatch</title>
-          <meta name="description" content="Amazon CloudWatch is a monitoring service for AWS cloud resources and the applications you run on AWS." />
+          <meta name="description" content={`Amazon CloudWatch is a monitoring service for AWS cloud resources and the applications you run on AWS.`} />
         </>
       ),
     },

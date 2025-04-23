@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Learner Community"
-      description="Learner Community, a Xerox Initiative and Learning Management System"
+      description={`Learner Community, a Xerox Initiative and Learning Management System`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -102,7 +102,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Learner Community</title>
-          <meta name="description" content="Learner Community, a Xerox Initiative and Learning Management System" />
+          <meta name="description" content={`Learner Community, a Xerox Initiative and Learning Management System`} />
         </>
       ),
     },

@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Urban Airship"
-      description="A market-leading mobile app engagement, mobile analytics, mobile data integration and mobile wallet marketing solution."
+      description={`A market-leading mobile app engagement, mobile analytics, mobile data integration and mobile wallet marketing solution.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +53,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Urban Airship</title>
-          <meta name="description" content="A market-leading mobile app engagement, mobile analytics, mobile data integration and mobile wallet marketing solution." />
+          <meta name="description" content={`A market-leading mobile app engagement, mobile analytics, mobile data integration and mobile wallet marketing solution.`} />
         </>
       ),
     },

@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Dixa"
-      description="Dixa is omnichannel customer service software that unifies voice, email, chat, and messaging apps into one single platform."
+      description={`Dixa is omnichannel customer service software that unifies voice, email, chat, and messaging apps into one single platform.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -157,7 +157,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Dixa</title>
-          <meta name="description" content="Dixa is omnichannel customer service software that unifies voice, email, chat, and messaging apps into one single platform." />
+          <meta name="description" content={`Dixa is omnichannel customer service software that unifies voice, email, chat, and messaging apps into one single platform.`} />
         </>
       ),
     },

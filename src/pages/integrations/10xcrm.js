@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="10xCRM"
-      description="10xCRM can replace your office phone system and add the functionality of Text and Emails. All communication by your team is automatically logged for future reference and compliance."
+      description={`10xCRM can replace your office phone system and add the functionality of Text and Emails. All communication by your team is automatically logged for future reference and compliance.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>10xCRM</title>
-          <meta name="description" content="10xCRM can replace your office phone system and add the functionality of Text and Emails. All communication by your team is automatically logged for future reference and compliance." />
+          <meta name="description" content={`10xCRM can replace your office phone system and add the functionality of Text and Emails. All communication by your team is automatically logged for future reference and compliance.`} />
         </>
       ),
     },

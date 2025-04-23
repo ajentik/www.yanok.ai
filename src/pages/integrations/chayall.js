@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="ChayAll"
-      description="ChayAll is a tool that allows you to centralize all your instant messaging customer messages within a single platform"
+      description={`ChayAll is a tool that allows you to centralize all your instant messaging customer messages within a single platform`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -66,7 +66,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>ChayAll</title>
-          <meta name="description" content="ChayAll is a tool that allows you to centralize all your instant messaging customer messages within a single platform" />
+          <meta name="description" content={`ChayAll is a tool that allows you to centralize all your instant messaging customer messages within a single platform`} />
         </>
       ),
     },

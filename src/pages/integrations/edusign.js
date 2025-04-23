@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Edusign"
-      description="Digital attendance sheets. Sign online and generate certified documents in seconds."
+      description={`Digital attendance sheets. Sign online and generate certified documents in seconds.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -126,7 +126,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Edusign</title>
-          <meta name="description" content="Digital attendance sheets. Sign online and generate certified documents in seconds." />
+          <meta name="description" content={`Digital attendance sheets. Sign online and generate certified documents in seconds.`} />
         </>
       ),
     },

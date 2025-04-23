@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Lead Score by Zapier"
-      description="An easy tool to score and obtain information about your leads."
+      description={`An easy tool to score and obtain information about your leads.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Lead Score by Zapier</title>
-          <meta name="description" content="An easy tool to score and obtain information about your leads." />
+          <meta name="description" content={`An easy tool to score and obtain information about your leads.`} />
         </>
       ),
     },

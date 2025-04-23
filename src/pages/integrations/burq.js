@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Burq"
-      description="Burq provides a delivery API and dashboard to help businesses offer on-demand and same-day delivery to their customers."
+      description={`Burq provides a delivery API and dashboard to help businesses offer on-demand and same-day delivery to their customers.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -86,7 +86,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Burq</title>
-          <meta name="description" content="Burq provides a delivery API and dashboard to help businesses offer on-demand and same-day delivery to their customers." />
+          <meta name="description" content={`Burq provides a delivery API and dashboard to help businesses offer on-demand and same-day delivery to their customers.`} />
         </>
       ),
     },

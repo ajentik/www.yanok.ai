@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Mifiel"
-      description="Mifiel is a tool that allows you to sign contracts electronically using the FIEL (e.firma) of SAT to achieve greater legal validity than with any other type of signature in Mexico."
+      description={`Mifiel is a tool that allows you to sign contracts electronically using the FIEL (e.firma) of SAT to achieve greater legal validity than with any other type of signature in Mexico.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Mifiel</title>
-          <meta name="description" content="Mifiel is a tool that allows you to sign contracts electronically using the FIEL (e.firma) of SAT to achieve greater legal validity than with any other type of signature in Mexico." />
+          <meta name="description" content={`Mifiel is a tool that allows you to sign contracts electronically using the FIEL (e.firma) of SAT to achieve greater legal validity than with any other type of signature in Mexico.`} />
         </>
       ),
     },

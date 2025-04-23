@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Circle"
-      description="A modern community platform for creators."
+      description={`A modern community platform for creators.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -226,7 +226,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Circle</title>
-          <meta name="description" content="A modern community platform for creators." />
+          <meta name="description" content={`A modern community platform for creators.`} />
         </>
       ),
     },

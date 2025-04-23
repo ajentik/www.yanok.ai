@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="JustCall"
-      description="JustCall helps sales and support teams to connect easily with their leads & customers. We provide a cloud based service that allows you to make calls and send text messages."
+      description={`JustCall helps sales and support teams to connect easily with their leads & customers. We provide a cloud based service that allows you to make calls and send text messages.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -126,7 +126,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>JustCall</title>
-          <meta name="description" content="JustCall helps sales and support teams to connect easily with their leads & customers. We provide a cloud based service that allows you to make calls and send text messages." />
+          <meta name="description" content={`JustCall helps sales and support teams to connect easily with their leads & customers. We provide a cloud based service that allows you to make calls and send text messages.`} />
         </>
       ),
     },

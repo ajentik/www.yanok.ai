@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="ClientRock"
-      description="ClientRock is an online booking tool made for attorneys to book consultations and get paid all in one step."
+      description={`ClientRock is an online booking tool made for attorneys to book consultations and get paid all in one step.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -66,7 +66,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>ClientRock</title>
-          <meta name="description" content="ClientRock is an online booking tool made for attorneys to book consultations and get paid all in one step." />
+          <meta name="description" content={`ClientRock is an online booking tool made for attorneys to book consultations and get paid all in one step.`} />
         </>
       ),
     },

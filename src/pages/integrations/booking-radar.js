@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Booking Radar"
-      description="Booking Radar is an all-in-one SaaS solution offering online reservation, accounting, marketing, CRM and analytic to grow your business."
+      description={`Booking Radar is an all-in-one SaaS solution offering online reservation, accounting, marketing, CRM and analytic to grow your business.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -67,7 +67,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Booking Radar</title>
-          <meta name="description" content="Booking Radar is an all-in-one SaaS solution offering online reservation, accounting, marketing, CRM and analytic to grow your business." />
+          <meta name="description" content={`Booking Radar is an all-in-one SaaS solution offering online reservation, accounting, marketing, CRM and analytic to grow your business.`} />
         </>
       ),
     },

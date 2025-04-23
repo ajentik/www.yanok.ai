@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="ChatPay"
-      description="ChatPay is a platform for sharing knowledge and creating digital communities."
+      description={`ChatPay is a platform for sharing knowledge and creating digital communities.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -72,7 +72,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>ChatPay</title>
-          <meta name="description" content="ChatPay is a platform for sharing knowledge and creating digital communities." />
+          <meta name="description" content={`ChatPay is a platform for sharing knowledge and creating digital communities.`} />
         </>
       ),
     },

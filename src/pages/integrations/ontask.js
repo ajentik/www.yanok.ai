@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="OnTask"
-      description="Create easy-to-use forms to collect data, documents, and signatures. Build a process flow to personalize, route and track your form progress."
+      description={`Create easy-to-use forms to collect data, documents, and signatures. Build a process flow to personalize, route and track your form progress.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -66,7 +66,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>OnTask</title>
-          <meta name="description" content="Create easy-to-use forms to collect data, documents, and signatures. Build a process flow to personalize, route and track your form progress." />
+          <meta name="description" content={`Create easy-to-use forms to collect data, documents, and signatures. Build a process flow to personalize, route and track your form progress.`} />
         </>
       ),
     },

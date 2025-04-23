@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="CentrixOne"
-      description="CentrixOne is a full featured yet easy-to-use CRM, e-mail and marketing automation platform for SMB’s."
+      description={`CentrixOne is a full featured yet easy-to-use CRM, e-mail and marketing automation platform for SMB’s.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -77,7 +77,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>CentrixOne</title>
-          <meta name="description" content="CentrixOne is a full featured yet easy-to-use CRM, e-mail and marketing automation platform for SMB’s." />
+          <meta name="description" content={`CentrixOne is a full featured yet easy-to-use CRM, e-mail and marketing automation platform for SMB’s.`} />
         </>
       ),
     },

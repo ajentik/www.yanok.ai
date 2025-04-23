@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="DialMyCalls"
-      description="DialMyCalls provides calling and texting to customers around the world. We offer reporting for all broadcasts as well as a contact management system."
+      description={`DialMyCalls provides calling and texting to customers around the world. We offer reporting for all broadcasts as well as a contact management system.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -71,7 +71,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>DialMyCalls</title>
-          <meta name="description" content="DialMyCalls provides calling and texting to customers around the world. We offer reporting for all broadcasts as well as a contact management system." />
+          <meta name="description" content={`DialMyCalls provides calling and texting to customers around the world. We offer reporting for all broadcasts as well as a contact management system.`} />
         </>
       ),
     },

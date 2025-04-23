@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Tenstreet"
-      description="World-class integrated driver recruiting software & solutions focused 100% on helping trucking companies market to, recruit, hire & manage truck drivers."
+      description={`World-class integrated driver recruiting software & solutions focused 100% on helping trucking companies market to, recruit, hire & manage truck drivers.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +53,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Tenstreet</title>
-          <meta name="description" content="World-class integrated driver recruiting software & solutions focused 100% on helping trucking companies market to, recruit, hire & manage truck drivers." />
+          <meta name="description" content={`World-class integrated driver recruiting software & solutions focused 100% on helping trucking companies market to, recruit, hire & manage truck drivers.`} />
         </>
       ),
     },

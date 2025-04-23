@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="PostGrid Print & Mail"
-      description="PostGrid's Print & Mail REST API allows you to send personalized letters, checks, or postcards on demand and at scale."
+      description={`PostGrid's Print & Mail REST API allows you to send personalized letters, checks, or postcards on demand and at scale.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -86,7 +86,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>PostGrid Print & Mail</title>
-          <meta name="description" content="PostGrid's Print & Mail REST API allows you to send personalized letters, checks, or postcards on demand and at scale." />
+          <meta name="description" content={`PostGrid's Print & Mail REST API allows you to send personalized letters, checks, or postcards on demand and at scale.`} />
         </>
       ),
     },

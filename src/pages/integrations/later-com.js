@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Later.Com"
-      description="A visual content marketing-based application that enables its users to plan, schedule, and manage content for Instagram."
+      description={`A visual content marketing-based application that enables its users to plan, schedule, and manage content for Instagram.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +53,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Later.Com</title>
-          <meta name="description" content="A visual content marketing-based application that enables its users to plan, schedule, and manage content for Instagram." />
+          <meta name="description" content={`A visual content marketing-based application that enables its users to plan, schedule, and manage content for Instagram.`} />
         </>
       ),
     },

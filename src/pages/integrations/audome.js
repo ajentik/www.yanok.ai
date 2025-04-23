@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Audome"
-      description="Audome is the all-in-one tool for faster audio revisions."
+      description={`Audome is the all-in-one tool for faster audio revisions.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Audome</title>
-          <meta name="description" content="Audome is the all-in-one tool for faster audio revisions." />
+          <meta name="description" content={`Audome is the all-in-one tool for faster audio revisions.`} />
         </>
       ),
     },

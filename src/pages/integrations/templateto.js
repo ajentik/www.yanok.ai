@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="TemplateTo"
-      description="TemplateTo allows you to easily create Liquid-based templates for your documents. Utilise our drag-and-drop editor or provide your HTML."
+      description={`TemplateTo allows you to easily create Liquid-based templates for your documents. Utilise our drag-and-drop editor or provide your HTML.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>TemplateTo</title>
-          <meta name="description" content="TemplateTo allows you to easily create Liquid-based templates for your documents. Utilise our drag-and-drop editor or provide your HTML." />
+          <meta name="description" content={`TemplateTo allows you to easily create Liquid-based templates for your documents. Utilise our drag-and-drop editor or provide your HTML.`} />
         </>
       ),
     },

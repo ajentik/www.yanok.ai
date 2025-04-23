@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Mavenoid"
-      description="Mavenoid combines self-service and live support in one, so companies can effortlessly support their customers in every step. From installing, to using, to troubleshooting their products."
+      description={`Mavenoid combines self-service and live support in one, so companies can effortlessly support their customers in every step. From installing, to using, to troubleshooting their products.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -66,7 +66,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Mavenoid</title>
-          <meta name="description" content="Mavenoid combines self-service and live support in one, so companies can effortlessly support their customers in every step. From installing, to using, to troubleshooting their products." />
+          <meta name="description" content={`Mavenoid combines self-service and live support in one, so companies can effortlessly support their customers in every step. From installing, to using, to troubleshooting their products.`} />
         </>
       ),
     },

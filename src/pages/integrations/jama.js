@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Jama"
-      description="Jama Software is a leading product development platform provider for companies building complex products and integrated systems."
+      description={`Jama Software is a leading product development platform provider for companies building complex products and integrated systems.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +53,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Jama</title>
-          <meta name="description" content="Jama Software is a leading product development platform provider for companies building complex products and integrated systems." />
+          <meta name="description" content={`Jama Software is a leading product development platform provider for companies building complex products and integrated systems.`} />
         </>
       ),
     },

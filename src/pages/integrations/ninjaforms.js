@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Ninja Forms"
-      description="Ninja Forms is the easiest and most flexible WordPress Form builder."
+      description={`Ninja Forms is the easiest and most flexible WordPress Form builder.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Ninja Forms</title>
-          <meta name="description" content="Ninja Forms is the easiest and most flexible WordPress Form builder." />
+          <meta name="description" content={`Ninja Forms is the easiest and most flexible WordPress Form builder.`} />
         </>
       ),
     },

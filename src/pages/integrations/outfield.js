@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Outfield"
-      description="Outfield is an outside sales & marketing CRM that makes it easy to discover valuable insights about your market, track + verify team activity, and communicate effortlessly across all your devices"
+      description={`Outfield is an outside sales & marketing CRM that makes it easy to discover valuable insights about your market, track + verify team activity, and communicate effortlessly across all your devices`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -121,7 +121,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Outfield</title>
-          <meta name="description" content="Outfield is an outside sales & marketing CRM that makes it easy to discover valuable insights about your market, track + verify team activity, and communicate effortlessly across all your devices" />
+          <meta name="description" content={`Outfield is an outside sales & marketing CRM that makes it easy to discover valuable insights about your market, track + verify team activity, and communicate effortlessly across all your devices`} />
         </>
       ),
     },

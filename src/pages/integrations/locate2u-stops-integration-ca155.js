@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Locate2u"
-      description="Locate2u helps your service or delivery business. It helps you manage your bookings, optimizes your route, and shares your live location with your customers"
+      description={`Locate2u helps your service or delivery business. It helps you manage your bookings, optimizes your route, and shares your live location with your customers`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -106,7 +106,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Locate2u</title>
-          <meta name="description" content="Locate2u helps your service or delivery business. It helps you manage your bookings, optimizes your route, and shares your live location with your customers" />
+          <meta name="description" content={`Locate2u helps your service or delivery business. It helps you manage your bookings, optimizes your route, and shares your live location with your customers`} />
         </>
       ),
     },

@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="AgentFire"
-      description="AgentFire is a revolutionary real estate website and marketing platform that helps agents maximize digital opportunities."
+      description={`AgentFire is a revolutionary real estate website and marketing platform that helps agents maximize digital opportunities.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -101,7 +101,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>AgentFire</title>
-          <meta name="description" content="AgentFire is a revolutionary real estate website and marketing platform that helps agents maximize digital opportunities." />
+          <meta name="description" content={`AgentFire is a revolutionary real estate website and marketing platform that helps agents maximize digital opportunities.`} />
         </>
       ),
     },

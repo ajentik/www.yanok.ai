@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Customer.guru"
-      description="Customer.guru is an easy-to-setup tool for measuring customer satisfaction using Net Promoter Score."
+      description={`Customer.guru is an easy-to-setup tool for measuring customer satisfaction using Net Promoter Score.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -66,7 +66,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Customer.guru</title>
-          <meta name="description" content="Customer.guru is an easy-to-setup tool for measuring customer satisfaction using Net Promoter Score." />
+          <meta name="description" content={`Customer.guru is an easy-to-setup tool for measuring customer satisfaction using Net Promoter Score.`} />
         </>
       ),
     },

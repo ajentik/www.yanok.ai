@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="inMobile - SMS gateway"
-      description="inMobile is a powerful SMS gateway. inMobile makes it easy for you to send personalized SMS messages, manage lists and subscribers."
+      description={`inMobile is a powerful SMS gateway. inMobile makes it easy for you to send personalized SMS messages, manage lists and subscribers.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -77,7 +77,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>inMobile - SMS gateway</title>
-          <meta name="description" content="inMobile is a powerful SMS gateway. inMobile makes it easy for you to send personalized SMS messages, manage lists and subscribers." />
+          <meta name="description" content={`inMobile is a powerful SMS gateway. inMobile makes it easy for you to send personalized SMS messages, manage lists and subscribers.`} />
         </>
       ),
     },

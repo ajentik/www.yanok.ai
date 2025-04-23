@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Usabilla"
-      description="Headquartered in Amsterdam, Usabilla was founded in 2009 with the belief that continuous user feedback is the key to any successful website, product or service."
+      description={`Headquartered in Amsterdam, Usabilla was founded in 2009 with the belief that continuous user feedback is the key to any successful website, product or service.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +53,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Usabilla</title>
-          <meta name="description" content="Headquartered in Amsterdam, Usabilla was founded in 2009 with the belief that continuous user feedback is the key to any successful website, product or service." />
+          <meta name="description" content={`Headquartered in Amsterdam, Usabilla was founded in 2009 with the belief that continuous user feedback is the key to any successful website, product or service.`} />
         </>
       ),
     },

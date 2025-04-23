@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Loyalty Gator"
-      description="Loyalty Gator is a customer loyalty program that helps increase retention and sales while providing cross communication of transactions."
+      description={`Loyalty Gator is a customer loyalty program that helps increase retention and sales while providing cross communication of transactions.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -72,7 +72,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Loyalty Gator</title>
-          <meta name="description" content="Loyalty Gator is a customer loyalty program that helps increase retention and sales while providing cross communication of transactions." />
+          <meta name="description" content={`Loyalty Gator is a customer loyalty program that helps increase retention and sales while providing cross communication of transactions.`} />
         </>
       ),
     },

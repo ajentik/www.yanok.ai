@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Buying Buddy"
-      description="Buying Buddy is a real estate sales and marketing solution with IDX, lead capture and CRM for Agents and Teams."
+      description={`Buying Buddy is a real estate sales and marketing solution with IDX, lead capture and CRM for Agents and Teams.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -71,7 +71,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Buying Buddy</title>
-          <meta name="description" content="Buying Buddy is a real estate sales and marketing solution with IDX, lead capture and CRM for Agents and Teams." />
+          <meta name="description" content={`Buying Buddy is a real estate sales and marketing solution with IDX, lead capture and CRM for Agents and Teams.`} />
         </>
       ),
     },

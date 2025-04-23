@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="LightSpeed VT"
-      description="LightSpeed VT is an enterprise-ready, e-learning solution that uses interactive video, automated reports, and custom courseware to train your people better."
+      description={`LightSpeed VT is an enterprise-ready, e-learning solution that uses interactive video, automated reports, and custom courseware to train your people better.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -126,7 +126,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>LightSpeed VT</title>
-          <meta name="description" content="LightSpeed VT is an enterprise-ready, e-learning solution that uses interactive video, automated reports, and custom courseware to train your people better." />
+          <meta name="description" content={`LightSpeed VT is an enterprise-ready, e-learning solution that uses interactive video, automated reports, and custom courseware to train your people better.`} />
         </>
       ),
     },

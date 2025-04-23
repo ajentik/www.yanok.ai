@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Coupon River"
-      description="Coupon River is a unique coupon code distributtion service for your Amazon or e-commerce business."
+      description={`Coupon River is a unique coupon code distributtion service for your Amazon or e-commerce business.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -67,7 +67,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Coupon River</title>
-          <meta name="description" content="Coupon River is a unique coupon code distributtion service for your Amazon or e-commerce business." />
+          <meta name="description" content={`Coupon River is a unique coupon code distributtion service for your Amazon or e-commerce business.`} />
         </>
       ),
     },

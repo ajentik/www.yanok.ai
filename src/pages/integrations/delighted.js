@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Delighted"
-      description="Delighted is the easiest and most beautiful way to measure customer happiness."
+      description={`Delighted is the easiest and most beautiful way to measure customer happiness.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -131,7 +131,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Delighted</title>
-          <meta name="description" content="Delighted is the easiest and most beautiful way to measure customer happiness." />
+          <meta name="description" content={`Delighted is the easiest and most beautiful way to measure customer happiness.`} />
         </>
       ),
     },

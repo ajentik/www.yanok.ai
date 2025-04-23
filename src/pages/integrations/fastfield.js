@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="FastField Mobile Forms"
-      description="FastField Mobile Forms is a flexible platform to efficiently capture custom form data using smartphones and tablets."
+      description={`FastField Mobile Forms is a flexible platform to efficiently capture custom form data using smartphones and tablets.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -71,7 +71,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>FastField Mobile Forms</title>
-          <meta name="description" content="FastField Mobile Forms is a flexible platform to efficiently capture custom form data using smartphones and tablets." />
+          <meta name="description" content={`FastField Mobile Forms is a flexible platform to efficiently capture custom form data using smartphones and tablets.`} />
         </>
       ),
     },

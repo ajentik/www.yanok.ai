@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Retrograde by Zapier"
-      description="Retrograde is a Zapier-built app that takes the guesswork out of communication during tricky astrological times."
+      description={`Retrograde is a Zapier-built app that takes the guesswork out of communication during tricky astrological times.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -67,7 +67,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Retrograde by Zapier</title>
-          <meta name="description" content="Retrograde is a Zapier-built app that takes the guesswork out of communication during tricky astrological times." />
+          <meta name="description" content={`Retrograde is a Zapier-built app that takes the guesswork out of communication during tricky astrological times.`} />
         </>
       ),
     },

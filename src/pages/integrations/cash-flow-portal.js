@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Cash Flow Portal"
-      description="Real-estate syndication software that accelerates capital raising."
+      description={`Real-estate syndication software that accelerates capital raising.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -62,7 +62,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Cash Flow Portal</title>
-          <meta name="description" content="Real-estate syndication software that accelerates capital raising." />
+          <meta name="description" content={`Real-estate syndication software that accelerates capital raising.`} />
         </>
       ),
     },

@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Google Tables"
-      description="Google Tables helps teams easily track & automate tasks, enabling them to save time and work smarter."
+      description={`Google Tables helps teams easily track & automate tasks, enabling them to save time and work smarter.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -86,7 +86,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Google Tables</title>
-          <meta name="description" content="Google Tables helps teams easily track & automate tasks, enabling them to save time and work smarter." />
+          <meta name="description" content={`Google Tables helps teams easily track & automate tasks, enabling them to save time and work smarter.`} />
         </>
       ),
     },

@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="QuestionPro"
-      description="QuestionPro is an online survey platform that allows users to generate the insights they need to make better business decisions."
+      description={`QuestionPro is an online survey platform that allows users to generate the insights they need to make better business decisions.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -66,7 +66,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>QuestionPro</title>
-          <meta name="description" content="QuestionPro is an online survey platform that allows users to generate the insights they need to make better business decisions." />
+          <meta name="description" content={`QuestionPro is an online survey platform that allows users to generate the insights they need to make better business decisions.`} />
         </>
       ),
     },

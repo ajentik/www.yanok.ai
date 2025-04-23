@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Credit Repair Cloud"
-      description="Cloud-based Credit Repair Software and CRM. For mortgage brokers and entrepreneurs. Help your clients or start a credit repair business."
+      description={`Cloud-based Credit Repair Software and CRM. For mortgage brokers and entrepreneurs. Help your clients or start a credit repair business.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -116,7 +116,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Credit Repair Cloud</title>
-          <meta name="description" content="Cloud-based Credit Repair Software and CRM. For mortgage brokers and entrepreneurs. Help your clients or start a credit repair business." />
+          <meta name="description" content={`Cloud-based Credit Repair Software and CRM. For mortgage brokers and entrepreneurs. Help your clients or start a credit repair business.`} />
         </>
       ),
     },

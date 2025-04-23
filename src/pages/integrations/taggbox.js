@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Taggbox"
-      description="Platform to create and publish User-Generated Content campaigns across different marketing touchpoints."
+      description={`Platform to create and publish User-Generated Content campaigns across different marketing touchpoints.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -61,7 +61,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Taggbox</title>
-          <meta name="description" content="Platform to create and publish User-Generated Content campaigns across different marketing touchpoints." />
+          <meta name="description" content={`Platform to create and publish User-Generated Content campaigns across different marketing touchpoints.`} />
         </>
       ),
     },

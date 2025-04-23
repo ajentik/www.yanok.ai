@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="G2 Crowd"
-      description="G2 Crowd is a business review platform, that makes business purchasing decisions transparent and easy."
+      description={`G2 Crowd is a business review platform, that makes business purchasing decisions transparent and easy.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -72,7 +72,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>G2 Crowd</title>
-          <meta name="description" content="G2 Crowd is a business review platform, that makes business purchasing decisions transparent and easy." />
+          <meta name="description" content={`G2 Crowd is a business review platform, that makes business purchasing decisions transparent and easy.`} />
         </>
       ),
     },

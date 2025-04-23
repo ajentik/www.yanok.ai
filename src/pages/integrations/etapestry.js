@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="eTapestry"
-      description="eTapestry is the leading web-based, or on-demand, database software for fundraising, donor management, church management, and communication with over 5000 customers worldwide."
+      description={`eTapestry is the leading web-based, or on-demand, database software for fundraising, donor management, church management, and communication with over 5000 customers worldwide.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +53,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>eTapestry</title>
-          <meta name="description" content="eTapestry is the leading web-based, or on-demand, database software for fundraising, donor management, church management, and communication with over 5000 customers worldwide." />
+          <meta name="description" content={`eTapestry is the leading web-based, or on-demand, database software for fundraising, donor management, church management, and communication with over 5000 customers worldwide.`} />
         </>
       ),
     },

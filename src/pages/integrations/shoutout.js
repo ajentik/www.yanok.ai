@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="ShoutOut"
-      description="ShoutOut is a collaborative content creation tool for generating branded video directly from your supporters and influencers."
+      description={`ShoutOut is a collaborative content creation tool for generating branded video directly from your supporters and influencers.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -81,7 +81,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>ShoutOut</title>
-          <meta name="description" content="ShoutOut is a collaborative content creation tool for generating branded video directly from your supporters and influencers." />
+          <meta name="description" content={`ShoutOut is a collaborative content creation tool for generating branded video directly from your supporters and influencers.`} />
         </>
       ),
     },

@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="iDenfy"
-      description="iDenfy helps you automate identity verification enforced with manual oversight. Defeat fraud while processing customers' data quickly and securely."
+      description={`iDenfy helps you automate identity verification enforced with manual oversight. Defeat fraud while processing customers' data quickly and securely.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -76,7 +76,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>iDenfy</title>
-          <meta name="description" content="iDenfy helps you automate identity verification enforced with manual oversight. Defeat fraud while processing customers' data quickly and securely." />
+          <meta name="description" content={`iDenfy helps you automate identity verification enforced with manual oversight. Defeat fraud while processing customers' data quickly and securely.`} />
         </>
       ),
     },

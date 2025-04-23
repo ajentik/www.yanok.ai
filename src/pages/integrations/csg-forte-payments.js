@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="CSG Forte Payments"
-      description="CSG Forte Payments is a single platform to accept card and echeck/ACH payments, online, in-person or via IVR."
+      description={`CSG Forte Payments is a single platform to accept card and echeck/ACH payments, online, in-person or via IVR.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -72,7 +72,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>CSG Forte Payments</title>
-          <meta name="description" content="CSG Forte Payments is a single platform to accept card and echeck/ACH payments, online, in-person or via IVR." />
+          <meta name="description" content={`CSG Forte Payments is a single platform to accept card and echeck/ACH payments, online, in-person or via IVR.`} />
         </>
       ),
     },

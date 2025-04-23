@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Cvent"
-      description="Cvent is a modern online management product for event, survey, and email marketing management."
+      description={`Cvent is a modern online management product for event, survey, and email marketing management.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -111,7 +111,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Cvent</title>
-          <meta name="description" content="Cvent is a modern online management product for event, survey, and email marketing management." />
+          <meta name="description" content={`Cvent is a modern online management product for event, survey, and email marketing management.`} />
         </>
       ),
     },

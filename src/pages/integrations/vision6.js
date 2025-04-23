@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Vision6"
-      description="Grow your business with powerful email and SMS marketing by using Vision6. Trusted by thousands of small to large businesses, agencies, government and financial institutions, and nonprofit organizations."
+      description={`Grow your business with powerful email and SMS marketing by using Vision6. Trusted by thousands of small to large businesses, agencies, government and financial institutions, and nonprofit organizations.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -111,7 +111,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Vision6</title>
-          <meta name="description" content="Grow your business with powerful email and SMS marketing by using Vision6. Trusted by thousands of small to large businesses, agencies, government and financial institutions, and nonprofit organizations." />
+          <meta name="description" content={`Grow your business with powerful email and SMS marketing by using Vision6. Trusted by thousands of small to large businesses, agencies, government and financial institutions, and nonprofit organizations.`} />
         </>
       ),
     },

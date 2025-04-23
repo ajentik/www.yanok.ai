@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Actito"
-      description="Actito offers a suite of relationship marketing tools to create a meaningful dialogue with prospects and clients."
+      description={`Actito offers a suite of relationship marketing tools to create a meaningful dialogue with prospects and clients.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +53,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Actito</title>
-          <meta name="description" content="Actito offers a suite of relationship marketing tools to create a meaningful dialogue with prospects and clients." />
+          <meta name="description" content={`Actito offers a suite of relationship marketing tools to create a meaningful dialogue with prospects and clients.`} />
         </>
       ),
     },

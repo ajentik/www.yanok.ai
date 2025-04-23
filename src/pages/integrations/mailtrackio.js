@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Mailtrack"
-      description="Mailtrack is an email tracking extension for Gmail. With Mailtrack, you can see how people interact with the emails you send from Gmail. Track if your emails have been opened, links have been clicked, and much more!"
+      description={`Mailtrack is an email tracking extension for Gmail. With Mailtrack, you can see how people interact with the emails you send from Gmail. Track if your emails have been opened, links have been clicked, and much more!`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -71,7 +71,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Mailtrack</title>
-          <meta name="description" content="Mailtrack is an email tracking extension for Gmail. With Mailtrack, you can see how people interact with the emails you send from Gmail. Track if your emails have been opened, links have been clicked, and much more!" />
+          <meta name="description" content={`Mailtrack is an email tracking extension for Gmail. With Mailtrack, you can see how people interact with the emails you send from Gmail. Track if your emails have been opened, links have been clicked, and much more!`} />
         </>
       ),
     },

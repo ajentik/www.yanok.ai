@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Notify"
-      description="Notify, a new messaging and notification platform for a user friendly and faster communication in B2B & B2C."
+      description={`Notify, a new messaging and notification platform for a user friendly and faster communication in B2B & B2C.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Notify</title>
-          <meta name="description" content="Notify, a new messaging and notification platform for a user friendly and faster communication in B2B & B2C." />
+          <meta name="description" content={`Notify, a new messaging and notification platform for a user friendly and faster communication in B2B & B2C.`} />
         </>
       ),
     },

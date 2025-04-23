@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="snapADDY"
-      description="snapADDY is a sales support software for finding B2B contacts and directly transferring them to CRM and ERP systems."
+      description={`snapADDY is a sales support software for finding B2B contacts and directly transferring them to CRM and ERP systems.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +53,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>snapADDY</title>
-          <meta name="description" content="snapADDY is a sales support software for finding B2B contacts and directly transferring them to CRM and ERP systems." />
+          <meta name="description" content={`snapADDY is a sales support software for finding B2B contacts and directly transferring them to CRM and ERP systems.`} />
         </>
       ),
     },

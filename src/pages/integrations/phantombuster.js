@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="PhantomBuster"
-      description="PhantomBuster is an automation tool for teams to extract lists of leads, enrich data and emails as well as send outreach campaigns."
+      description={`PhantomBuster is an automation tool for teams to extract lists of leads, enrich data and emails as well as send outreach campaigns.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -61,7 +61,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>PhantomBuster</title>
-          <meta name="description" content="PhantomBuster is an automation tool for teams to extract lists of leads, enrich data and emails as well as send outreach campaigns." />
+          <meta name="description" content={`PhantomBuster is an automation tool for teams to extract lists of leads, enrich data and emails as well as send outreach campaigns.`} />
         </>
       ),
     },

@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="WooCommerce"
-      description="WooCommerce is the eCommerce platform for WordPress. This connection requires a paid extension."
+      description={`WooCommerce is the eCommerce platform for WordPress. This connection requires a paid extension.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -186,7 +186,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>WooCommerce</title>
-          <meta name="description" content="WooCommerce is the eCommerce platform for WordPress. This connection requires a paid extension." />
+          <meta name="description" content={`WooCommerce is the eCommerce platform for WordPress. This connection requires a paid extension.`} />
         </>
       ),
     },

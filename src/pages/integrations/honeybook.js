@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="HoneyBook"
-      description="HoneyBook is a proactive platform for creative small businesses to create, review, and manage their business - all in one place."
+      description={`HoneyBook is a proactive platform for creative small businesses to create, review, and manage their business - all in one place.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -72,7 +72,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>HoneyBook</title>
-          <meta name="description" content="HoneyBook is a proactive platform for creative small businesses to create, review, and manage their business - all in one place." />
+          <meta name="description" content={`HoneyBook is a proactive platform for creative small businesses to create, review, and manage their business - all in one place.`} />
         </>
       ),
     },

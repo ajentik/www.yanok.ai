@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Descript"
-      description="Descript is a tool for getting accurate, fast, and affordable automatic transcriptions of your audio and video media. Once your media is transcribed, you can also edit the text - media word processing."
+      description={`Descript is a tool for getting accurate, fast, and affordable automatic transcriptions of your audio and video media. Once your media is transcribed, you can also edit the text - media word processing.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -61,7 +61,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Descript</title>
-          <meta name="description" content="Descript is a tool for getting accurate, fast, and affordable automatic transcriptions of your audio and video media. Once your media is transcribed, you can also edit the text - media word processing." />
+          <meta name="description" content={`Descript is a tool for getting accurate, fast, and affordable automatic transcriptions of your audio and video media. Once your media is transcribed, you can also edit the text - media word processing.`} />
         </>
       ),
     },

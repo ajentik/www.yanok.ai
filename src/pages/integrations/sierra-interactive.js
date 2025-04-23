@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Sierra Interactive"
-      description="Sierra Interactive is an all-in-one real estate platform that helps you close more deals and grow your business."
+      description={`Sierra Interactive is an all-in-one real estate platform that helps you close more deals and grow your business.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -136,7 +136,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Sierra Interactive</title>
-          <meta name="description" content="Sierra Interactive is an all-in-one real estate platform that helps you close more deals and grow your business." />
+          <meta name="description" content={`Sierra Interactive is an all-in-one real estate platform that helps you close more deals and grow your business.`} />
         </>
       ),
     },

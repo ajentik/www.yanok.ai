@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Flipdish"
-      description="Online ordering system for restaurants. Create your own branded food ordering website in minutes."
+      description={`Online ordering system for restaurants. Create your own branded food ordering website in minutes.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -271,7 +271,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Flipdish</title>
-          <meta name="description" content="Online ordering system for restaurants. Create your own branded food ordering website in minutes." />
+          <meta name="description" content={`Online ordering system for restaurants. Create your own branded food ordering website in minutes.`} />
         </>
       ),
     },

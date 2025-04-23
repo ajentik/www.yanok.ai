@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Recruiters*Unite"
-      description="Recruiters*Unite is a smart search engine dedicated to CV-Search. Use big data and AI-technology to manager and search your talent pool."
+      description={`Recruiters*Unite is a smart search engine dedicated to CV-Search. Use big data and AI-technology to manager and search your talent pool.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -86,7 +86,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Recruiters*Unite</title>
-          <meta name="description" content="Recruiters*Unite is a smart search engine dedicated to CV-Search. Use big data and AI-technology to manager and search your talent pool." />
+          <meta name="description" content={`Recruiters*Unite is a smart search engine dedicated to CV-Search. Use big data and AI-technology to manager and search your talent pool.`} />
         </>
       ),
     },

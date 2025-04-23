@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="PDF Blocks"
-      description="PDF actions for your zaps: Merge PDF documents, protect PDFs with a password, watermark PDF documents, and more."
+      description={`PDF actions for your zaps: Merge PDF documents, protect PDFs with a password, watermark PDF documents, and more.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -77,7 +77,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>PDF Blocks</title>
-          <meta name="description" content="PDF actions for your zaps: Merge PDF documents, protect PDFs with a password, watermark PDF documents, and more." />
+          <meta name="description" content={`PDF actions for your zaps: Merge PDF documents, protect PDFs with a password, watermark PDF documents, and more.`} />
         </>
       ),
     },

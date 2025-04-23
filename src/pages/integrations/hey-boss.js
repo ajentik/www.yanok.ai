@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Hey Boss"
-      description="Remote monitoring service for employees. Allows you to conveniently track the location of employees and receive real-time updates when changing locations."
+      description={`Remote monitoring service for employees. Allows you to conveniently track the location of employees and receive real-time updates when changing locations.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Hey Boss</title>
-          <meta name="description" content="Remote monitoring service for employees. Allows you to conveniently track the location of employees and receive real-time updates when changing locations." />
+          <meta name="description" content={`Remote monitoring service for employees. Allows you to conveniently track the location of employees and receive real-time updates when changing locations.`} />
         </>
       ),
     },

@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Documate"
-      description="Documate is a no-code platform for document automation and building expert systems."
+      description={`Documate is a no-code platform for document automation and building expert systems.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -61,7 +61,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Documate</title>
-          <meta name="description" content="Documate is a no-code platform for document automation and building expert systems." />
+          <meta name="description" content={`Documate is a no-code platform for document automation and building expert systems.`} />
         </>
       ),
     },

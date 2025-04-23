@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Menaflow"
-      description="Menaflow is an omnichannel customer engagement platform built exclusively for businesses in the Middle East."
+      description={`Menaflow is an omnichannel customer engagement platform built exclusively for businesses in the Middle East.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -72,7 +72,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Menaflow</title>
-          <meta name="description" content="Menaflow is an omnichannel customer engagement platform built exclusively for businesses in the Middle East." />
+          <meta name="description" content={`Menaflow is an omnichannel customer engagement platform built exclusively for businesses in the Middle East.`} />
         </>
       ),
     },

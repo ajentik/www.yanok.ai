@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="ShippyPro"
-      description="ShippyPro is the One-Stop Shipping Solution that allows you to create Shipping Labels, Track Packages and Manage Returns."
+      description={`ShippyPro is the One-Stop Shipping Solution that allows you to create Shipping Labels, Track Packages and Manage Returns.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -76,7 +76,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>ShippyPro</title>
-          <meta name="description" content="ShippyPro is the One-Stop Shipping Solution that allows you to create Shipping Labels, Track Packages and Manage Returns." />
+          <meta name="description" content={`ShippyPro is the One-Stop Shipping Solution that allows you to create Shipping Labels, Track Packages and Manage Returns.`} />
         </>
       ),
     },

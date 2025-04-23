@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="ClickDimensions"
-      description="ClickDimensions provides email marketing, web intelligence, lead scoring, nurture marketing, social discovery, form capture, surveys and more."
+      description={`ClickDimensions provides email marketing, web intelligence, lead scoring, nurture marketing, social discovery, form capture, surveys and more.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +53,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>ClickDimensions</title>
-          <meta name="description" content="ClickDimensions provides email marketing, web intelligence, lead scoring, nurture marketing, social discovery, form capture, surveys and more." />
+          <meta name="description" content={`ClickDimensions provides email marketing, web intelligence, lead scoring, nurture marketing, social discovery, form capture, surveys and more.`} />
         </>
       ),
     },

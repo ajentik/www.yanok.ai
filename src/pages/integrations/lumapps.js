@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="LumApps"
-      description="LumApps is a social intranet platform that concentrates everything you need to work in one place. Providing corporate content, business apps, social communities and enterprise tools, wherever you are."
+      description={`LumApps is a social intranet platform that concentrates everything you need to work in one place. Providing corporate content, business apps, social communities and enterprise tools, wherever you are.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -76,7 +76,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>LumApps</title>
-          <meta name="description" content="LumApps is a social intranet platform that concentrates everything you need to work in one place. Providing corporate content, business apps, social communities and enterprise tools, wherever you are." />
+          <meta name="description" content={`LumApps is a social intranet platform that concentrates everything you need to work in one place. Providing corporate content, business apps, social communities and enterprise tools, wherever you are.`} />
         </>
       ),
     },

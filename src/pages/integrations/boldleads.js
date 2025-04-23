@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="BoldLeads"
-      description="BoldLeads is a system for real estate agents to generate buyer and seller leads."
+      description={`BoldLeads is a system for real estate agents to generate buyer and seller leads.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>BoldLeads</title>
-          <meta name="description" content="BoldLeads is a system for real estate agents to generate buyer and seller leads." />
+          <meta name="description" content={`BoldLeads is a system for real estate agents to generate buyer and seller leads.`} />
         </>
       ),
     },

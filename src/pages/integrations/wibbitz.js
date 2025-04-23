@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Wibbitz"
-      description="Wibbitz is an online video creation software that gives you the freedom to create short-form videos online in minutes – no experience necessary"
+      description={`Wibbitz is an online video creation software that gives you the freedom to create short-form videos online in minutes – no experience necessary`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -66,7 +66,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Wibbitz</title>
-          <meta name="description" content="Wibbitz is an online video creation software that gives you the freedom to create short-form videos online in minutes – no experience necessary" />
+          <meta name="description" content={`Wibbitz is an online video creation software that gives you the freedom to create short-form videos online in minutes – no experience necessary`} />
         </>
       ),
     },

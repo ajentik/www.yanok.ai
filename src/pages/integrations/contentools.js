@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Workflow by GrowthHackers"
-      description="GrowthHackers Workflow is a content marketing platform to streamline and manage content creation. Create. Collaborate. Publish. All in one place."
+      description={`GrowthHackers Workflow is a content marketing platform to streamline and manage content creation. Create. Collaborate. Publish. All in one place.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -111,7 +111,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Workflow by GrowthHackers</title>
-          <meta name="description" content="GrowthHackers Workflow is a content marketing platform to streamline and manage content creation. Create. Collaborate. Publish. All in one place." />
+          <meta name="description" content={`GrowthHackers Workflow is a content marketing platform to streamline and manage content creation. Create. Collaborate. Publish. All in one place.`} />
         </>
       ),
     },

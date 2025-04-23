@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="CR Self Booking Reminder"
-      description="CR Self Booking Reminder is part of the Contact Reach software."
+      description={`CR Self Booking Reminder is part of the Contact Reach software.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -66,7 +66,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>CR Self Booking Reminder</title>
-          <meta name="description" content="CR Self Booking Reminder is part of the Contact Reach software." />
+          <meta name="description" content={`CR Self Booking Reminder is part of the Contact Reach software.`} />
         </>
       ),
     },

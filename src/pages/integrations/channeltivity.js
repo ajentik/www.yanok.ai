@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Channeltivity"
-      description="Channeltivity is a user-friendly Partner Relationship Management (PRM) solution that includes everything for a successful channel program."
+      description={`Channeltivity is a user-friendly Partner Relationship Management (PRM) solution that includes everything for a successful channel program.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -131,7 +131,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Channeltivity</title>
-          <meta name="description" content="Channeltivity is a user-friendly Partner Relationship Management (PRM) solution that includes everything for a successful channel program." />
+          <meta name="description" content={`Channeltivity is a user-friendly Partner Relationship Management (PRM) solution that includes everything for a successful channel program.`} />
         </>
       ),
     },

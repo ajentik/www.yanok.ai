@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="sevDesk"
-      description="sevDesk is the personal CFO for small businesses. It will help you to do accounting, banking, invoicing and will give you real time insights"
+      description={`sevDesk is the personal CFO for small businesses. It will help you to do accounting, banking, invoicing and will give you real time insights`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +53,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>sevDesk</title>
-          <meta name="description" content="sevDesk is the personal CFO for small businesses. It will help you to do accounting, banking, invoicing and will give you real time insights" />
+          <meta name="description" content={`sevDesk is the personal CFO for small businesses. It will help you to do accounting, banking, invoicing and will give you real time insights`} />
         </>
       ),
     },

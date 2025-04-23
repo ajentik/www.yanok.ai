@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="WPL"
-      description="WPL (WordPress Property Listing) is a flexible plugin for real estate and vertical markets."
+      description={`WPL (WordPress Property Listing) is a flexible plugin for real estate and vertical markets.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -171,7 +171,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>WPL</title>
-          <meta name="description" content="WPL (WordPress Property Listing) is a flexible plugin for real estate and vertical markets." />
+          <meta name="description" content={`WPL (WordPress Property Listing) is a flexible plugin for real estate and vertical markets.`} />
         </>
       ),
     },

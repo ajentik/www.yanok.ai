@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Run my Accounts"
-      description="Bookkeeping service for Swiss SME. Scan your documents and you are done."
+      description={`Bookkeeping service for Swiss SME. Scan your documents and you are done.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -116,7 +116,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Run my Accounts</title>
-          <meta name="description" content="Bookkeeping service for Swiss SME. Scan your documents and you are done." />
+          <meta name="description" content={`Bookkeeping service for Swiss SME. Scan your documents and you are done.`} />
         </>
       ),
     },

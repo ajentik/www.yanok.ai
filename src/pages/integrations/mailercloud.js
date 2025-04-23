@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Mailercloud"
-      description="Mailercloud is a cloud-based email marketing platform that allows businesses to launch email marketing campaigns without having any technical expertise."
+      description={`Mailercloud is a cloud-based email marketing platform that allows businesses to launch email marketing campaigns without having any technical expertise.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -62,7 +62,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Mailercloud</title>
-          <meta name="description" content="Mailercloud is a cloud-based email marketing platform that allows businesses to launch email marketing campaigns without having any technical expertise." />
+          <meta name="description" content={`Mailercloud is a cloud-based email marketing platform that allows businesses to launch email marketing campaigns without having any technical expertise.`} />
         </>
       ),
     },

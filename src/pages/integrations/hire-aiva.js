@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Hire Aiva"
-      description="Aiva helps real estate agents convert online leads"
+      description={`Aiva helps real estate agents convert online leads`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -101,7 +101,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Hire Aiva</title>
-          <meta name="description" content="Aiva helps real estate agents convert online leads" />
+          <meta name="description" content={`Aiva helps real estate agents convert online leads`} />
         </>
       ),
     },

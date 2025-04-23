@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="BizTalk"
-      description="Microsoft BizTalk gives companies the ability to automate business processes through the use of "adapters". Adapters are custom tailored to communicate with different software systems used in an enterprise, and now Zapier can be a powerful adapter!"
+      description={`Microsoft BizTalk gives companies the ability to automate business processes through the use of `}adapters". Adapters are custom tailored to communicate with different software systems used in an enterprise, and now Zapier can be a powerful adapter!"
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +53,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>BizTalk</title>
-          <meta name="description" content="Microsoft BizTalk gives companies the ability to automate business processes through the use of "adapters". Adapters are custom tailored to communicate with different software systems used in an enterprise, and now Zapier can be a powerful adapter!" />
+          <meta name="description" content={`Microsoft BizTalk gives companies the ability to automate business processes through the use of `}adapters". Adapters are custom tailored to communicate with different software systems used in an enterprise, and now Zapier can be a powerful adapter!" />
         </>
       ),
     },

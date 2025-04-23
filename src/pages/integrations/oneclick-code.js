@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="OneClick Code"
-      description="OneClick Code is a tool used to quickly identify building and roofing codes relevant to home repairs for contractors, insurers, and others."
+      description={`OneClick Code is a tool used to quickly identify building and roofing codes relevant to home repairs for contractors, insurers, and others.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>OneClick Code</title>
-          <meta name="description" content="OneClick Code is a tool used to quickly identify building and roofing codes relevant to home repairs for contractors, insurers, and others." />
+          <meta name="description" content={`OneClick Code is a tool used to quickly identify building and roofing codes relevant to home repairs for contractors, insurers, and others.`} />
         </>
       ),
     },

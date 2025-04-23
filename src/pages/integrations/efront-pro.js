@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="eFront Pro"
-      description="A powerful, yet simple LMS to cover your training & skills development needs."
+      description={`A powerful, yet simple LMS to cover your training & skills development needs.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -121,7 +121,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>eFront Pro</title>
-          <meta name="description" content="A powerful, yet simple LMS to cover your training & skills development needs." />
+          <meta name="description" content={`A powerful, yet simple LMS to cover your training & skills development needs.`} />
         </>
       ),
     },

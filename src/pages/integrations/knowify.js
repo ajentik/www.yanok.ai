@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Knowify"
-      description="Knowify is a job costing and project management platform for contractors."
+      description={`Knowify is a job costing and project management platform for contractors.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -256,7 +256,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Knowify</title>
-          <meta name="description" content="Knowify is a job costing and project management platform for contractors." />
+          <meta name="description" content={`Knowify is a job costing and project management platform for contractors.`} />
         </>
       ),
     },

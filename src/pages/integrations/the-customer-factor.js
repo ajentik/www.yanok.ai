@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="The Customer Factor"
-      description="The Customer Factor is a software where users can register, store their contacts, their appointments, invoices, etc.,"
+      description={`The Customer Factor is a software where users can register, store their contacts, their appointments, invoices, etc.,`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -126,7 +126,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>The Customer Factor</title>
-          <meta name="description" content="The Customer Factor is a software where users can register, store their contacts, their appointments, invoices, etc.," />
+          <meta name="description" content={`The Customer Factor is a software where users can register, store their contacts, their appointments, invoices, etc.,`} />
         </>
       ),
     },

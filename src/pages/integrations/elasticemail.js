@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Elastic Email"
-      description="Elastic Email is an all-in-one email delivery platform. Offering an SMTP Relay, robust HTTP API, and a User Interface that has a complete suite of tools and features for managing contacts, templates, campaigns, and reports. Specializing in delivering transactional and marketing email for businesses of any size."
+      description={`Elastic Email is an all-in-one email delivery platform. Offering an SMTP Relay, robust HTTP API, and a User Interface that has a complete suite of tools and features for managing contacts, templates, campaigns, and reports. Specializing in delivering transactional and marketing email for businesses of any size.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -96,7 +96,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Elastic Email</title>
-          <meta name="description" content="Elastic Email is an all-in-one email delivery platform. Offering an SMTP Relay, robust HTTP API, and a User Interface that has a complete suite of tools and features for managing contacts, templates, campaigns, and reports. Specializing in delivering transactional and marketing email for businesses of any size." />
+          <meta name="description" content={`Elastic Email is an all-in-one email delivery platform. Offering an SMTP Relay, robust HTTP API, and a User Interface that has a complete suite of tools and features for managing contacts, templates, campaigns, and reports. Specializing in delivering transactional and marketing email for businesses of any size.`} />
         </>
       ),
     },

@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Kirim.Email"
-      description="Kirim.Email is an email marketing solution for any size of business, currently operated in the Indonesian and ASEAN market. Send your newsletter easily with KIRIM.EMAIL."
+      description={`Kirim.Email is an email marketing solution for any size of business, currently operated in the Indonesian and ASEAN market. Send your newsletter easily with KIRIM.EMAIL.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -62,7 +62,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Kirim.Email</title>
-          <meta name="description" content="Kirim.Email is an email marketing solution for any size of business, currently operated in the Indonesian and ASEAN market. Send your newsletter easily with KIRIM.EMAIL." />
+          <meta name="description" content={`Kirim.Email is an email marketing solution for any size of business, currently operated in the Indonesian and ASEAN market. Send your newsletter easily with KIRIM.EMAIL.`} />
         </>
       ),
     },

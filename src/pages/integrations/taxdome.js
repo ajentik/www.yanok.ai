@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="TaxDome"
-      description="TaxDome is an all-in-one solution for tax and accounting professionals to manage their business."
+      description={`TaxDome is an all-in-one solution for tax and accounting professionals to manage their business.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -86,7 +86,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>TaxDome</title>
-          <meta name="description" content="TaxDome is an all-in-one solution for tax and accounting professionals to manage their business." />
+          <meta name="description" content={`TaxDome is an all-in-one solution for tax and accounting professionals to manage their business.`} />
         </>
       ),
     },

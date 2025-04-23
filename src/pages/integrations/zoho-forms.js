@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Zoho Forms"
-      description="Zoho Forms is a free online form builder that lets you create custom forms, receive responses by email, and collaborate with your team."
+      description={`Zoho Forms is a free online form builder that lets you create custom forms, receive responses by email, and collaborate with your team.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Zoho Forms</title>
-          <meta name="description" content="Zoho Forms is a free online form builder that lets you create custom forms, receive responses by email, and collaborate with your team." />
+          <meta name="description" content={`Zoho Forms is a free online form builder that lets you create custom forms, receive responses by email, and collaborate with your team.`} />
         </>
       ),
     },

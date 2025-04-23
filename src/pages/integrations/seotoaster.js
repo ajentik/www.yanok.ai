@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="SeoToaster"
-      description="SeoToaster is a great CMS platform for SEO and Ecommerce"
+      description={`SeoToaster is a great CMS platform for SEO and Ecommerce`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -71,7 +71,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>SeoToaster</title>
-          <meta name="description" content="SeoToaster is a great CMS platform for SEO and Ecommerce" />
+          <meta name="description" content={`SeoToaster is a great CMS platform for SEO and Ecommerce`} />
         </>
       ),
     },

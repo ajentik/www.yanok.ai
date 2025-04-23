@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="RocketReach"
-      description="RocketReach helps you find email, phone and social links for over 250 million professionals, across 6 million companies, worldwide."
+      description={`RocketReach helps you find email, phone and social links for over 250 million professionals, across 6 million companies, worldwide.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -66,7 +66,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>RocketReach</title>
-          <meta name="description" content="RocketReach helps you find email, phone and social links for over 250 million professionals, across 6 million companies, worldwide." />
+          <meta name="description" content={`RocketReach helps you find email, phone and social links for over 250 million professionals, across 6 million companies, worldwide.`} />
         </>
       ),
     },

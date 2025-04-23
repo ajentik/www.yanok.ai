@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Wavo"
-      description="Wavo is a cold email tool that automatically sends outbound emails and follow up sequences directly from your email account."
+      description={`Wavo is a cold email tool that automatically sends outbound emails and follow up sequences directly from your email account.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -111,7 +111,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Wavo</title>
-          <meta name="description" content="Wavo is a cold email tool that automatically sends outbound emails and follow up sequences directly from your email account." />
+          <meta name="description" content={`Wavo is a cold email tool that automatically sends outbound emails and follow up sequences directly from your email account.`} />
         </>
       ),
     },

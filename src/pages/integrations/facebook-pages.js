@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Facebook Pages"
-      description="Facebook Pages lets you connect with your customers, fans and followers on the world's largest social network. Share relevant content to engage people who Like your page, create events to build and grow your community, and run a Facebook ad campaign by targeting location, age and more."
+      description={`Facebook Pages lets you connect with your customers, fans and followers on the world's largest social network. Share relevant content to engage people who Like your page, create events to build and grow your community, and run a Facebook ad campaign by targeting location, age and more.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -86,7 +86,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Facebook Pages</title>
-          <meta name="description" content="Facebook Pages lets you connect with your customers, fans and followers on the world's largest social network. Share relevant content to engage people who Like your page, create events to build and grow your community, and run a Facebook ad campaign by targeting location, age and more." />
+          <meta name="description" content={`Facebook Pages lets you connect with your customers, fans and followers on the world's largest social network. Share relevant content to engage people who Like your page, create events to build and grow your community, and run a Facebook ad campaign by targeting location, age and more.`} />
         </>
       ),
     },

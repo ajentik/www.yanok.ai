@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Railer.com"
-      description="Railer.com is a Mobile Face Recognition Attendance and Shift Management Platform. Powerful features such as smart attendance detection, daily timesheet, QR Code, geolocation, real-time sensor based people tracking, roster, reporting and much more."
+      description={`Railer.com is a Mobile Face Recognition Attendance and Shift Management Platform. Powerful features such as smart attendance detection, daily timesheet, QR Code, geolocation, real-time sensor based people tracking, roster, reporting and much more.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Railer.com</title>
-          <meta name="description" content="Railer.com is a Mobile Face Recognition Attendance and Shift Management Platform. Powerful features such as smart attendance detection, daily timesheet, QR Code, geolocation, real-time sensor based people tracking, roster, reporting and much more." />
+          <meta name="description" content={`Railer.com is a Mobile Face Recognition Attendance and Shift Management Platform. Powerful features such as smart attendance detection, daily timesheet, QR Code, geolocation, real-time sensor based people tracking, roster, reporting and much more.`} />
         </>
       ),
     },

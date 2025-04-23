@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Wheelbase"
-      description="All-in-one rentals suite that combines rental management software with $1M in insurance coverage."
+      description={`All-in-one rentals suite that combines rental management software with $1M in insurance coverage.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -101,7 +101,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Wheelbase</title>
-          <meta name="description" content="All-in-one rentals suite that combines rental management software with $1M in insurance coverage." />
+          <meta name="description" content={`All-in-one rentals suite that combines rental management software with $1M in insurance coverage.`} />
         </>
       ),
     },

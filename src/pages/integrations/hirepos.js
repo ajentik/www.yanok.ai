@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="HirePOS"
-      description="HirePOS® is a modern web application that assists with all aspects of hire rental businesses from start to finish."
+      description={`HirePOS® is a modern web application that assists with all aspects of hire rental businesses from start to finish.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -91,7 +91,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>HirePOS</title>
-          <meta name="description" content="HirePOS® is a modern web application that assists with all aspects of hire rental businesses from start to finish." />
+          <meta name="description" content={`HirePOS® is a modern web application that assists with all aspects of hire rental businesses from start to finish.`} />
         </>
       ),
     },

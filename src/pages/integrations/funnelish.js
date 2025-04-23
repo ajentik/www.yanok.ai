@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Funnelish"
-      description="Funnelish™ is a platform to build/optimise high performance eCommerce sales funnels."
+      description={`Funnelish™ is a platform to build/optimise high performance eCommerce sales funnels.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -62,7 +62,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Funnelish</title>
-          <meta name="description" content="Funnelish™ is a platform to build/optimise high performance eCommerce sales funnels." />
+          <meta name="description" content={`Funnelish™ is a platform to build/optimise high performance eCommerce sales funnels.`} />
         </>
       ),
     },

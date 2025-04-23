@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Microspace"
-      description="Microspace is an intuitive tool for teams to share their story with clients and get customer insights in a branded shared digital space."
+      description={`Microspace is an intuitive tool for teams to share their story with clients and get customer insights in a branded shared digital space.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -77,7 +77,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Microspace</title>
-          <meta name="description" content="Microspace is an intuitive tool for teams to share their story with clients and get customer insights in a branded shared digital space." />
+          <meta name="description" content={`Microspace is an intuitive tool for teams to share their story with clients and get customer insights in a branded shared digital space.`} />
         </>
       ),
     },

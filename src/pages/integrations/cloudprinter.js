@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Cloudprinter.com"
-      description="This application is for sending any print job, data or content to Cloudprinter and printing it locally in more than 104 countries. Offering transparent pricing, real-time status updates, and 500+ product templates."
+      description={`This application is for sending any print job, data or content to Cloudprinter and printing it locally in more than 104 countries. Offering transparent pricing, real-time status updates, and 500+ product templates.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -81,7 +81,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Cloudprinter.com</title>
-          <meta name="description" content="This application is for sending any print job, data or content to Cloudprinter and printing it locally in more than 104 countries. Offering transparent pricing, real-time status updates, and 500+ product templates." />
+          <meta name="description" content={`This application is for sending any print job, data or content to Cloudprinter and printing it locally in more than 104 countries. Offering transparent pricing, real-time status updates, and 500+ product templates.`} />
         </>
       ),
     },

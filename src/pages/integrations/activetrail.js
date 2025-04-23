@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="ActiveTrail"
-      description="ActiveTrail is a marketing automation platform designed to help you maintain active relationships with customers, prospects, and user communities."
+      description={`ActiveTrail is a marketing automation platform designed to help you maintain active relationships with customers, prospects, and user communities.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -111,7 +111,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>ActiveTrail</title>
-          <meta name="description" content="ActiveTrail is a marketing automation platform designed to help you maintain active relationships with customers, prospects, and user communities." />
+          <meta name="description" content={`ActiveTrail is a marketing automation platform designed to help you maintain active relationships with customers, prospects, and user communities.`} />
         </>
       ),
     },

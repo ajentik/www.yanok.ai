@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Systemate"
-      description="Systemate is an all-in-one system for real estate investors"
+      description={`Systemate is an all-in-one system for real estate investors`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Systemate</title>
-          <meta name="description" content="Systemate is an all-in-one system for real estate investors" />
+          <meta name="description" content={`Systemate is an all-in-one system for real estate investors`} />
         </>
       ),
     },

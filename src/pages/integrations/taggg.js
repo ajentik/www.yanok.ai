@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Taggg"
-      description="Taggg uses connected contacts & calendars to easily schedule online group meetings with multiple parties no matter if you use Google or Microsoft calendar."
+      description={`Taggg uses connected contacts & calendars to easily schedule online group meetings with multiple parties no matter if you use Google or Microsoft calendar.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -62,7 +62,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Taggg</title>
-          <meta name="description" content="Taggg uses connected contacts & calendars to easily schedule online group meetings with multiple parties no matter if you use Google or Microsoft calendar." />
+          <meta name="description" content={`Taggg uses connected contacts & calendars to easily schedule online group meetings with multiple parties no matter if you use Google or Microsoft calendar.`} />
         </>
       ),
     },

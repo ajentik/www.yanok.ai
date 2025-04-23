@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Anymail finder"
-      description="Anymail is a sales and marketing tool that allows you to find anybody's email address."
+      description={`Anymail is a sales and marketing tool that allows you to find anybody's email address.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -66,7 +66,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Anymail finder</title>
-          <meta name="description" content="Anymail is a sales and marketing tool that allows you to find anybody's email address." />
+          <meta name="description" content={`Anymail is a sales and marketing tool that allows you to find anybody's email address.`} />
         </>
       ),
     },

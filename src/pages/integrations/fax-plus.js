@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="FAX.PLUS"
-      description="FAX.PLUS is a secure and reliable online fax service that enables enterprises and small to mid-size businesses to send & receive fax online."
+      description={`FAX.PLUS is a secure and reliable online fax service that enables enterprises and small to mid-size businesses to send & receive fax online.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -61,7 +61,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>FAX.PLUS</title>
-          <meta name="description" content="FAX.PLUS is a secure and reliable online fax service that enables enterprises and small to mid-size businesses to send & receive fax online." />
+          <meta name="description" content={`FAX.PLUS is a secure and reliable online fax service that enables enterprises and small to mid-size businesses to send & receive fax online.`} />
         </>
       ),
     },

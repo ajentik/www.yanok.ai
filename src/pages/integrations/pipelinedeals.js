@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Pipeline CRM"
-      description="Simple and useful CRM software in the cloud. Sell more today with sales tracking software. Our CRM software will help organize, track, and manage your deals, leads, and contacts."
+      description={`Simple and useful CRM software in the cloud. Sell more today with sales tracking software. Our CRM software will help organize, track, and manage your deals, leads, and contacts.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -161,7 +161,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Pipeline CRM</title>
-          <meta name="description" content="Simple and useful CRM software in the cloud. Sell more today with sales tracking software. Our CRM software will help organize, track, and manage your deals, leads, and contacts." />
+          <meta name="description" content={`Simple and useful CRM software in the cloud. Sell more today with sales tracking software. Our CRM software will help organize, track, and manage your deals, leads, and contacts.`} />
         </>
       ),
     },

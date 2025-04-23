@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="NetBase Quid"
-      description="NetBase Quid is a Consumer and Market Intelligence Platform"
+      description={`NetBase Quid is a Consumer and Market Intelligence Platform`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -61,7 +61,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>NetBase Quid</title>
-          <meta name="description" content="NetBase Quid is a Consumer and Market Intelligence Platform" />
+          <meta name="description" content={`NetBase Quid is a Consumer and Market Intelligence Platform`} />
         </>
       ),
     },

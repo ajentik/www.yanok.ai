@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Usherpa"
-      description="Usherpa is the easiest-to-use marketing crm for sales professionals that saves time, maximizes referrals and automates marketing."
+      description={`Usherpa is the easiest-to-use marketing crm for sales professionals that saves time, maximizes referrals and automates marketing.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Usherpa</title>
-          <meta name="description" content="Usherpa is the easiest-to-use marketing crm for sales professionals that saves time, maximizes referrals and automates marketing." />
+          <meta name="description" content={`Usherpa is the easiest-to-use marketing crm for sales professionals that saves time, maximizes referrals and automates marketing.`} />
         </>
       ),
     },

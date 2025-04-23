@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="HouseVize"
-      description="Import your leads directly into HouseVize"
+      description={`Import your leads directly into HouseVize`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -61,7 +61,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>HouseVize</title>
-          <meta name="description" content="Import your leads directly into HouseVize" />
+          <meta name="description" content={`Import your leads directly into HouseVize`} />
         </>
       ),
     },

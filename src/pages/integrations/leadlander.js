@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="LeadLander"
-      description="LeadLander is a website tracking tool that can identify companies and people visiting your website to help grow your sales pipeline."
+      description={`LeadLander is a website tracking tool that can identify companies and people visiting your website to help grow your sales pipeline.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -77,7 +77,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>LeadLander</title>
-          <meta name="description" content="LeadLander is a website tracking tool that can identify companies and people visiting your website to help grow your sales pipeline." />
+          <meta name="description" content={`LeadLander is a website tracking tool that can identify companies and people visiting your website to help grow your sales pipeline.`} />
         </>
       ),
     },

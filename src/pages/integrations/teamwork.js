@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Teamwork"
-      description="Teamwork is an easy-to-use online teamwork & project management software application that helps managers, staff and clients work together more productively online."
+      description={`Teamwork is an easy-to-use online teamwork & project management software application that helps managers, staff and clients work together more productively online.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -506,7 +506,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Teamwork</title>
-          <meta name="description" content="Teamwork is an easy-to-use online teamwork & project management software application that helps managers, staff and clients work together more productively online." />
+          <meta name="description" content={`Teamwork is an easy-to-use online teamwork & project management software application that helps managers, staff and clients work together more productively online.`} />
         </>
       ),
     },

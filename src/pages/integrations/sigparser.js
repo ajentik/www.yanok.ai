@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="SigParser"
-      description="SigParser captures contact details from everyday email communication and match them to all your apps."
+      description={`SigParser captures contact details from everyday email communication and match them to all your apps.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -76,7 +76,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>SigParser</title>
-          <meta name="description" content="SigParser captures contact details from everyday email communication and match them to all your apps." />
+          <meta name="description" content={`SigParser captures contact details from everyday email communication and match them to all your apps.`} />
         </>
       ),
     },

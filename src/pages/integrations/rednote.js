@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Rednote"
-      description="Rednote is a Lead management tool which helps business people to manage their sales leads."
+      description={`Rednote is a Lead management tool which helps business people to manage their sales leads.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Rednote</title>
-          <meta name="description" content="Rednote is a Lead management tool which helps business people to manage their sales leads." />
+          <meta name="description" content={`Rednote is a Lead management tool which helps business people to manage their sales leads.`} />
         </>
       ),
     },

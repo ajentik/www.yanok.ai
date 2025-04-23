@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="atSpoke"
-      description="atSpoke is a simpler, smarter way to manage workplace requests."
+      description={`atSpoke is a simpler, smarter way to manage workplace requests.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -96,7 +96,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>atSpoke</title>
-          <meta name="description" content="atSpoke is a simpler, smarter way to manage workplace requests." />
+          <meta name="description" content={`atSpoke is a simpler, smarter way to manage workplace requests.`} />
         </>
       ),
     },

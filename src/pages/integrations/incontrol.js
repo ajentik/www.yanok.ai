@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Incontrol"
-      description="With the Incontrol apps you can fill in digital forms anytime, anywhere."
+      description={`With the Incontrol apps you can fill in digital forms anytime, anywhere.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -67,7 +67,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Incontrol</title>
-          <meta name="description" content="With the Incontrol apps you can fill in digital forms anytime, anywhere." />
+          <meta name="description" content={`With the Incontrol apps you can fill in digital forms anytime, anywhere.`} />
         </>
       ),
     },

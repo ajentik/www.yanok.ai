@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Salesflare"
-      description="Salesflare is an intelligent CRM startups and small businesses love to use. It's a zero-input sales pipeline tool that thinks and works for its user, not the other way around."
+      description={`Salesflare is an intelligent CRM startups and small businesses love to use. It's a zero-input sales pipeline tool that thinks and works for its user, not the other way around.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -191,7 +191,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Salesflare</title>
-          <meta name="description" content="Salesflare is an intelligent CRM startups and small businesses love to use. It's a zero-input sales pipeline tool that thinks and works for its user, not the other way around." />
+          <meta name="description" content={`Salesflare is an intelligent CRM startups and small businesses love to use. It's a zero-input sales pipeline tool that thinks and works for its user, not the other way around.`} />
         </>
       ),
     },

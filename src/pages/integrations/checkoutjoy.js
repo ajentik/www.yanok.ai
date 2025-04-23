@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="CheckoutJoy"
-      description="CheckoutJoy is an eCommerce platform that helps e-learning businesses worldwide to increase revenue and save costs by offering advanced checkout experiences."
+      description={`CheckoutJoy is an eCommerce platform that helps e-learning businesses worldwide to increase revenue and save costs by offering advanced checkout experiences.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -87,7 +87,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>CheckoutJoy</title>
-          <meta name="description" content="CheckoutJoy is an eCommerce platform that helps e-learning businesses worldwide to increase revenue and save costs by offering advanced checkout experiences." />
+          <meta name="description" content={`CheckoutJoy is an eCommerce platform that helps e-learning businesses worldwide to increase revenue and save costs by offering advanced checkout experiences.`} />
         </>
       ),
     },

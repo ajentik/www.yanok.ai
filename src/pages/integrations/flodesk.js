@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Flodesk"
-      description="Beginners and experts use Flodesk to create stunning emails that grow their business. Meet the most intuitive way to send emails and build workflows that convert."
+      description={`Beginners and experts use Flodesk to create stunning emails that grow their business. Meet the most intuitive way to send emails and build workflows that convert.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -101,7 +101,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Flodesk</title>
-          <meta name="description" content="Beginners and experts use Flodesk to create stunning emails that grow their business. Meet the most intuitive way to send emails and build workflows that convert." />
+          <meta name="description" content={`Beginners and experts use Flodesk to create stunning emails that grow their business. Meet the most intuitive way to send emails and build workflows that convert.`} />
         </>
       ),
     },

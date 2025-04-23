@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="ZeptoMail"
-      description="ZeptoMail is a developer-friendly and secure transactional email service for your applications."
+      description={`ZeptoMail is a developer-friendly and secure transactional email service for your applications.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -61,7 +61,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>ZeptoMail</title>
-          <meta name="description" content="ZeptoMail is a developer-friendly and secure transactional email service for your applications." />
+          <meta name="description" content={`ZeptoMail is a developer-friendly and secure transactional email service for your applications.`} />
         </>
       ),
     },

@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Adobe Creative Cloud Libraries"
-      description="Adobe Creative Cloud Libraries makes the core design assets for your brand or personal projects available to you anywhere. Easily collect and organize images, colors, text styles, and other elements created in various Creative Cloud desktop and mobile apps. Then reuse and modify these assets across projects, devices, other Creative Cloud apps, and teams."
+      description={`Adobe Creative Cloud Libraries makes the core design assets for your brand or personal projects available to you anywhere. Easily collect and organize images, colors, text styles, and other elements created in various Creative Cloud desktop and mobile apps. Then reuse and modify these assets across projects, devices, other Creative Cloud apps, and teams.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -86,7 +86,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Adobe Creative Cloud Libraries</title>
-          <meta name="description" content="Adobe Creative Cloud Libraries makes the core design assets for your brand or personal projects available to you anywhere. Easily collect and organize images, colors, text styles, and other elements created in various Creative Cloud desktop and mobile apps. Then reuse and modify these assets across projects, devices, other Creative Cloud apps, and teams." />
+          <meta name="description" content={`Adobe Creative Cloud Libraries makes the core design assets for your brand or personal projects available to you anywhere. Easily collect and organize images, colors, text styles, and other elements created in various Creative Cloud desktop and mobile apps. Then reuse and modify these assets across projects, devices, other Creative Cloud apps, and teams.`} />
         </>
       ),
     },

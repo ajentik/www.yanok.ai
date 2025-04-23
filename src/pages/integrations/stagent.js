@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Stagent"
-      description="Software for booking agencies, artists and managers in the music and entertainment industry."
+      description={`Software for booking agencies, artists and managers in the music and entertainment industry.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -131,7 +131,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Stagent</title>
-          <meta name="description" content="Software for booking agencies, artists and managers in the music and entertainment industry." />
+          <meta name="description" content={`Software for booking agencies, artists and managers in the music and entertainment industry.`} />
         </>
       ),
     },

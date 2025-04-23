@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Myob"
-      description="MYOB is an Australian multinational corporation that provides tax, accounting and other business services software to small and medium businesses."
+      description={`MYOB is an Australian multinational corporation that provides tax, accounting and other business services software to small and medium businesses.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +53,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Myob</title>
-          <meta name="description" content="MYOB is an Australian multinational corporation that provides tax, accounting and other business services software to small and medium businesses." />
+          <meta name="description" content={`MYOB is an Australian multinational corporation that provides tax, accounting and other business services software to small and medium businesses.`} />
         </>
       ),
     },

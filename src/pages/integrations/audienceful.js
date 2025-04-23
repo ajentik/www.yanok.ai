@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Audienceful"
-      description="Audienceful is lightweight email marketing that feels like using your favorite notes app. Newsletters, drip sequences, multiple audiences and more."
+      description={`Audienceful is lightweight email marketing that feels like using your favorite notes app. Newsletters, drip sequences, multiple audiences and more.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -61,7 +61,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Audienceful</title>
-          <meta name="description" content="Audienceful is lightweight email marketing that feels like using your favorite notes app. Newsletters, drip sequences, multiple audiences and more." />
+          <meta name="description" content={`Audienceful is lightweight email marketing that feels like using your favorite notes app. Newsletters, drip sequences, multiple audiences and more.`} />
         </>
       ),
     },

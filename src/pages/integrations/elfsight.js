@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Elfsight"
-      description="Elfsight Forms is an easy way to create contact, feedback, survey, subscription and any other kind of form."
+      description={`Elfsight Forms is an easy way to create contact, feedback, survey, subscription and any other kind of form.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Elfsight</title>
-          <meta name="description" content="Elfsight Forms is an easy way to create contact, feedback, survey, subscription and any other kind of form." />
+          <meta name="description" content={`Elfsight Forms is an easy way to create contact, feedback, survey, subscription and any other kind of form.`} />
         </>
       ),
     },

@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="RD Station"
-      description="RD Station is a complete digital marketing platform to help you generate more results in traffic generation, leads, sales for your business, and to build a solid digital marketing presence. This app is available only in Portuguese."
+      description={`RD Station is a complete digital marketing platform to help you generate more results in traffic generation, leads, sales for your business, and to build a solid digital marketing presence. This app is available only in Portuguese.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -76,7 +76,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>RD Station</title>
-          <meta name="description" content="RD Station is a complete digital marketing platform to help you generate more results in traffic generation, leads, sales for your business, and to build a solid digital marketing presence. This app is available only in Portuguese." />
+          <meta name="description" content={`RD Station is a complete digital marketing platform to help you generate more results in traffic generation, leads, sales for your business, and to build a solid digital marketing presence. This app is available only in Portuguese.`} />
         </>
       ),
     },

@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Feature Watch"
-      description="Feature Watch is a productivity tool to help capture and track user feedback for your SaaS application."
+      description={`Feature Watch is a productivity tool to help capture and track user feedback for your SaaS application.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -96,7 +96,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Feature Watch</title>
-          <meta name="description" content="Feature Watch is a productivity tool to help capture and track user feedback for your SaaS application." />
+          <meta name="description" content={`Feature Watch is a productivity tool to help capture and track user feedback for your SaaS application.`} />
         </>
       ),
     },

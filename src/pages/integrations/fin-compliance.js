@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="FIN Compliance"
-      description="FIN Compliance is a consortium of compliance, consulting, and business management solutions to help investment firms to structure, maintain, and develop their regulatory review programs."
+      description={`FIN Compliance is a consortium of compliance, consulting, and business management solutions to help investment firms to structure, maintain, and develop their regulatory review programs.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>FIN Compliance</title>
-          <meta name="description" content="FIN Compliance is a consortium of compliance, consulting, and business management solutions to help investment firms to structure, maintain, and develop their regulatory review programs." />
+          <meta name="description" content={`FIN Compliance is a consortium of compliance, consulting, and business management solutions to help investment firms to structure, maintain, and develop their regulatory review programs.`} />
         </>
       ),
     },

@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Android"
-      description="Android is a mobile phone operating system used extensively by dozens of carriers. Zapier can make it easier than ever to leverage the hundreds of thousands of apps out there with Android."
+      description={`Android is a mobile phone operating system used extensively by dozens of carriers. Zapier can make it easier than ever to leverage the hundreds of thousands of apps out there with Android.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +53,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Android</title>
-          <meta name="description" content="Android is a mobile phone operating system used extensively by dozens of carriers. Zapier can make it easier than ever to leverage the hundreds of thousands of apps out there with Android." />
+          <meta name="description" content={`Android is a mobile phone operating system used extensively by dozens of carriers. Zapier can make it easier than ever to leverage the hundreds of thousands of apps out there with Android.`} />
         </>
       ),
     },

@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Sphere"
-      description="Sphere is a lifechanging tool for Agents and Teams to manage every aspect of all transactions, To Do lists, contacts, and deadlines."
+      description={`Sphere is a lifechanging tool for Agents and Teams to manage every aspect of all transactions, To Do lists, contacts, and deadlines.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -61,7 +61,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Sphere</title>
-          <meta name="description" content="Sphere is a lifechanging tool for Agents and Teams to manage every aspect of all transactions, To Do lists, contacts, and deadlines." />
+          <meta name="description" content={`Sphere is a lifechanging tool for Agents and Teams to manage every aspect of all transactions, To Do lists, contacts, and deadlines.`} />
         </>
       ),
     },

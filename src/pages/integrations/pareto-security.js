@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Pareto Security"
-      description="Pareto Security is an app that regularly checks your Mac's security configuration. It helps you take care of 20% of security tasks that prevent 80% of problems."
+      description={`Pareto Security is an app that regularly checks your Mac's security configuration. It helps you take care of 20% of security tasks that prevent 80% of problems.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -67,7 +67,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Pareto Security</title>
-          <meta name="description" content="Pareto Security is an app that regularly checks your Mac's security configuration. It helps you take care of 20% of security tasks that prevent 80% of problems." />
+          <meta name="description" content={`Pareto Security is an app that regularly checks your Mac's security configuration. It helps you take care of 20% of security tasks that prevent 80% of problems.`} />
         </>
       ),
     },

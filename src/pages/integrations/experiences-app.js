@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Experiences App"
-      description="Experiences App is a nimble and robust experience engine used to create a wide range of event types including multi-day and recurring weekly/monthly. Stay in control of your brand by owning the design and processing of your bookings."
+      description={`Experiences App is a nimble and robust experience engine used to create a wide range of event types including multi-day and recurring weekly/monthly. Stay in control of your brand by owning the design and processing of your bookings.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Experiences App</title>
-          <meta name="description" content="Experiences App is a nimble and robust experience engine used to create a wide range of event types including multi-day and recurring weekly/monthly. Stay in control of your brand by owning the design and processing of your bookings." />
+          <meta name="description" content={`Experiences App is a nimble and robust experience engine used to create a wide range of event types including multi-day and recurring weekly/monthly. Stay in control of your brand by owning the design and processing of your bookings.`} />
         </>
       ),
     },

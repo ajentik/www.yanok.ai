@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Oappso Loyalty"
-      description="Digital Loyalty Stamp Cards for your business, allowing you to automatically stamp and reward from many applications. Requires an Oappso Loyalty account."
+      description={`Digital Loyalty Stamp Cards for your business, allowing you to automatically stamp and reward from many applications. Requires an Oappso Loyalty account.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -62,7 +62,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Oappso Loyalty</title>
-          <meta name="description" content="Digital Loyalty Stamp Cards for your business, allowing you to automatically stamp and reward from many applications. Requires an Oappso Loyalty account." />
+          <meta name="description" content={`Digital Loyalty Stamp Cards for your business, allowing you to automatically stamp and reward from many applications. Requires an Oappso Loyalty account.`} />
         </>
       ),
     },

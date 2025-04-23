@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Qomon"
-      description="With Qomon, turn anyone into an active supporter, drive actions digitally & on the field, capture data, make the most of it."
+      description={`With Qomon, turn anyone into an active supporter, drive actions digitally & on the field, capture data, make the most of it.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -71,7 +71,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Qomon</title>
-          <meta name="description" content="With Qomon, turn anyone into an active supporter, drive actions digitally & on the field, capture data, make the most of it." />
+          <meta name="description" content={`With Qomon, turn anyone into an active supporter, drive actions digitally & on the field, capture data, make the most of it.`} />
         </>
       ),
     },

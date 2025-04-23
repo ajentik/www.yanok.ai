@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="EventChain"
-      description="EventChain SmartTickets empowers event creators of small to medium sized events to sell tickets as well as manage and engage fans in one easy to use platform."
+      description={`EventChain SmartTickets empowers event creators of small to medium sized events to sell tickets as well as manage and engage fans in one easy to use platform.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -62,7 +62,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>EventChain</title>
-          <meta name="description" content="EventChain SmartTickets empowers event creators of small to medium sized events to sell tickets as well as manage and engage fans in one easy to use platform." />
+          <meta name="description" content={`EventChain SmartTickets empowers event creators of small to medium sized events to sell tickets as well as manage and engage fans in one easy to use platform.`} />
         </>
       ),
     },

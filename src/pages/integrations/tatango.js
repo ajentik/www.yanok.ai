@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Tatango"
-      description="Tatango offers a complete suit of SMS marketing products, including SMS marketing campaigns to your customers. Find out more at Tatango.com"
+      description={`Tatango offers a complete suit of SMS marketing products, including SMS marketing campaigns to your customers. Find out more at Tatango.com`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -62,7 +62,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Tatango</title>
-          <meta name="description" content="Tatango offers a complete suit of SMS marketing products, including SMS marketing campaigns to your customers. Find out more at Tatango.com" />
+          <meta name="description" content={`Tatango offers a complete suit of SMS marketing products, including SMS marketing campaigns to your customers. Find out more at Tatango.com`} />
         </>
       ),
     },

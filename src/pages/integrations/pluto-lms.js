@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Pluto LMS"
-      description="Pluto LMS is the easiest way to create and manage online courses."
+      description={`Pluto LMS is the easiest way to create and manage online courses.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -196,7 +196,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Pluto LMS</title>
-          <meta name="description" content="Pluto LMS is the easiest way to create and manage online courses." />
+          <meta name="description" content={`Pluto LMS is the easiest way to create and manage online courses.`} />
         </>
       ),
     },

@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Zengine"
-      description="Zengine by WizeHive is a flexible solution for managing grants, scholarships, fellowships, and more through the entire program lifecycle—providing tailored workflows, engaging experiences, and impact analysis to mission-driven organizations."
+      description={`Zengine by WizeHive is a flexible solution for managing grants, scholarships, fellowships, and more through the entire program lifecycle—providing tailored workflows, engaging experiences, and impact analysis to mission-driven organizations.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -106,7 +106,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Zengine</title>
-          <meta name="description" content="Zengine by WizeHive is a flexible solution for managing grants, scholarships, fellowships, and more through the entire program lifecycle—providing tailored workflows, engaging experiences, and impact analysis to mission-driven organizations." />
+          <meta name="description" content={`Zengine by WizeHive is a flexible solution for managing grants, scholarships, fellowships, and more through the entire program lifecycle—providing tailored workflows, engaging experiences, and impact analysis to mission-driven organizations.`} />
         </>
       ),
     },

@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Solo"
-      description="SOLO solar proposal software allows your sales reps to request and receive a proposal in minutes while in the customer’s home."
+      description={`SOLO solar proposal software allows your sales reps to request and receive a proposal in minutes while in the customer’s home.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -206,7 +206,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Solo</title>
-          <meta name="description" content="SOLO solar proposal software allows your sales reps to request and receive a proposal in minutes while in the customer’s home." />
+          <meta name="description" content={`SOLO solar proposal software allows your sales reps to request and receive a proposal in minutes while in the customer’s home.`} />
         </>
       ),
     },

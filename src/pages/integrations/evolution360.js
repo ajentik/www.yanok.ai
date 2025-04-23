@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="360 Application Service"
-      description="360 Application Service provides Evolution360 and Agency360 with tools to manage leads, SEO, web analytics, social media, form tracking, intuitive reports and more."
+      description={`360 Application Service provides Evolution360 and Agency360 with tools to manage leads, SEO, web analytics, social media, form tracking, intuitive reports and more.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -72,7 +72,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>360 Application Service</title>
-          <meta name="description" content="360 Application Service provides Evolution360 and Agency360 with tools to manage leads, SEO, web analytics, social media, form tracking, intuitive reports and more." />
+          <meta name="description" content={`360 Application Service provides Evolution360 and Agency360 with tools to manage leads, SEO, web analytics, social media, form tracking, intuitive reports and more.`} />
         </>
       ),
     },

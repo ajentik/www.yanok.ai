@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Colligso TextIn"
-      description="Colligso enables businesses to grow profitably by providing an easy to use and integrated platform to create and cultivate digital customer relationships. TextIn helps businesses by engaging with customers directly using text (SMS)/ picture (MMS) messaging. App-less, no app installation required by your customers. Easy opt-in and opt-out. Universal, available on every mobile phone where SMS is available."
+      description={`Colligso enables businesses to grow profitably by providing an easy to use and integrated platform to create and cultivate digital customer relationships. TextIn helps businesses by engaging with customers directly using text (SMS)/ picture (MMS) messaging. App-less, no app installation required by your customers. Easy opt-in and opt-out. Universal, available on every mobile phone where SMS is available.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -67,7 +67,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Colligso TextIn</title>
-          <meta name="description" content="Colligso enables businesses to grow profitably by providing an easy to use and integrated platform to create and cultivate digital customer relationships. TextIn helps businesses by engaging with customers directly using text (SMS)/ picture (MMS) messaging. App-less, no app installation required by your customers. Easy opt-in and opt-out. Universal, available on every mobile phone where SMS is available." />
+          <meta name="description" content={`Colligso enables businesses to grow profitably by providing an easy to use and integrated platform to create and cultivate digital customer relationships. TextIn helps businesses by engaging with customers directly using text (SMS)/ picture (MMS) messaging. App-less, no app installation required by your customers. Easy opt-in and opt-out. Universal, available on every mobile phone where SMS is available.`} />
         </>
       ),
     },

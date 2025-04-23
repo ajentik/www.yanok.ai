@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="DoorKnock"
-      description="DoorKnock is a mobile canvassing app that helps progressive candidates record data on the doorstep."
+      description={`DoorKnock is a mobile canvassing app that helps progressive candidates record data on the doorstep.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -62,7 +62,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>DoorKnock</title>
-          <meta name="description" content="DoorKnock is a mobile canvassing app that helps progressive candidates record data on the doorstep." />
+          <meta name="description" content={`DoorKnock is a mobile canvassing app that helps progressive candidates record data on the doorstep.`} />
         </>
       ),
     },

@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Unleashed Software"
-      description="UnleashedSoftware is a world class online inventory management software for small, medium and large business which integrates closely with Xero."
+      description={`UnleashedSoftware is a world class online inventory management software for small, medium and large business which integrates closely with Xero.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +53,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Unleashed Software</title>
-          <meta name="description" content="UnleashedSoftware is a world class online inventory management software for small, medium and large business which integrates closely with Xero." />
+          <meta name="description" content={`UnleashedSoftware is a world class online inventory management software for small, medium and large business which integrates closely with Xero.`} />
         </>
       ),
     },

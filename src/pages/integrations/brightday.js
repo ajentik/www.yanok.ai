@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="BrightDay"
-      description="BrightDay is a life operating system, featuring a full-featured calendar, habit builder, life hacking tools and community templates you can copy to your calendar"
+      description={`BrightDay is a life operating system, featuring a full-featured calendar, habit builder, life hacking tools and community templates you can copy to your calendar`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -62,7 +62,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>BrightDay</title>
-          <meta name="description" content="BrightDay is a life operating system, featuring a full-featured calendar, habit builder, life hacking tools and community templates you can copy to your calendar" />
+          <meta name="description" content={`BrightDay is a life operating system, featuring a full-featured calendar, habit builder, life hacking tools and community templates you can copy to your calendar`} />
         </>
       ),
     },

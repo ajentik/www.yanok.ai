@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Flutterwave"
-      description="Flutterwave is a payment gateway that allows businesses, developers, individual, and organisations to collect one-time and recurring payments, disburse payments, perform customer KYC and sell bill services."
+      description={`Flutterwave is a payment gateway that allows businesses, developers, individual, and organisations to collect one-time and recurring payments, disburse payments, perform customer KYC and sell bill services.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -91,7 +91,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Flutterwave</title>
-          <meta name="description" content="Flutterwave is a payment gateway that allows businesses, developers, individual, and organisations to collect one-time and recurring payments, disburse payments, perform customer KYC and sell bill services." />
+          <meta name="description" content={`Flutterwave is a payment gateway that allows businesses, developers, individual, and organisations to collect one-time and recurring payments, disburse payments, perform customer KYC and sell bill services.`} />
         </>
       ),
     },

@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Formlets"
-      description="Formlets is a powerful easy-to-use online form builder for your website. No coding, easy to integrate, highly secure and many more."
+      description={`Formlets is a powerful easy-to-use online form builder for your website. No coding, easy to integrate, highly secure and many more.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Formlets</title>
-          <meta name="description" content="Formlets is a powerful easy-to-use online form builder for your website. No coding, easy to integrate, highly secure and many more." />
+          <meta name="description" content={`Formlets is a powerful easy-to-use online form builder for your website. No coding, easy to integrate, highly secure and many more.`} />
         </>
       ),
     },

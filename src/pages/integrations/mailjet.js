@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Mailjet"
-      description="Mailjet is an all-in-one solution to send, track and deliver transactional, notification and marketing emails. Engage, analyze and react with your client base through email. Get started by using the Mailjet zap to synchronise contacts from your favorite eCommerce, CRM or other SaaS tools to your Mailjet contact lists. For users on API version 3 or higher."
+      description={`Mailjet is an all-in-one solution to send, track and deliver transactional, notification and marketing emails. Engage, analyze and react with your client base through email. Get started by using the Mailjet zap to synchronise contacts from your favorite eCommerce, CRM or other SaaS tools to your Mailjet contact lists. For users on API version 3 or higher.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -111,7 +111,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Mailjet</title>
-          <meta name="description" content="Mailjet is an all-in-one solution to send, track and deliver transactional, notification and marketing emails. Engage, analyze and react with your client base through email. Get started by using the Mailjet zap to synchronise contacts from your favorite eCommerce, CRM or other SaaS tools to your Mailjet contact lists. For users on API version 3 or higher." />
+          <meta name="description" content={`Mailjet is an all-in-one solution to send, track and deliver transactional, notification and marketing emails. Engage, analyze and react with your client base through email. Get started by using the Mailjet zap to synchronise contacts from your favorite eCommerce, CRM or other SaaS tools to your Mailjet contact lists. For users on API version 3 or higher.`} />
         </>
       ),
     },

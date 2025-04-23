@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="MyDocSafe"
-      description="MyDocSafe is secure eSign software for companies in diverse sectors. End-to-end document security and compliance."
+      description={`MyDocSafe is secure eSign software for companies in diverse sectors. End-to-end document security and compliance.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -92,7 +92,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>MyDocSafe</title>
-          <meta name="description" content="MyDocSafe is secure eSign software for companies in diverse sectors. End-to-end document security and compliance." />
+          <meta name="description" content={`MyDocSafe is secure eSign software for companies in diverse sectors. End-to-end document security and compliance.`} />
         </>
       ),
     },

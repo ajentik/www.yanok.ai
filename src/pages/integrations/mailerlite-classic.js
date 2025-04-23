@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="MailerLite Classic"
-      description="Use MailerLite Classic to stay connected with your customers through email marketing. Create websites, landing pages, and forms to grow your audience."
+      description={`Use MailerLite Classic to stay connected with your customers through email marketing. Create websites, landing pages, and forms to grow your audience.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -121,7 +121,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>MailerLite Classic</title>
-          <meta name="description" content="Use MailerLite Classic to stay connected with your customers through email marketing. Create websites, landing pages, and forms to grow your audience." />
+          <meta name="description" content={`Use MailerLite Classic to stay connected with your customers through email marketing. Create websites, landing pages, and forms to grow your audience.`} />
         </>
       ),
     },

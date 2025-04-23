@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="RESimpli 2.0"
-      description="REsimpli is simple real estate investment software that requires NO customization. It empowers you with real-time data to help you make better decisions which means higher net profit."
+      description={`REsimpli is simple real estate investment software that requires NO customization. It empowers you with real-time data to help you make better decisions which means higher net profit.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -62,7 +62,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>RESimpli 2.0</title>
-          <meta name="description" content="REsimpli is simple real estate investment software that requires NO customization. It empowers you with real-time data to help you make better decisions which means higher net profit." />
+          <meta name="description" content={`REsimpli is simple real estate investment software that requires NO customization. It empowers you with real-time data to help you make better decisions which means higher net profit.`} />
         </>
       ),
     },

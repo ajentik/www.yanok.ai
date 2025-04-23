@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="SimpleTexting"
-      description="SimpleTexting is a text messaging platform that helps you reach your customers using one of the most effective channels: their text inbox. Send promotions, alerts, polls or reminders to your entire list in a matter of seconds."
+      description={`SimpleTexting is a text messaging platform that helps you reach your customers using one of the most effective channels: their text inbox. Send promotions, alerts, polls or reminders to your entire list in a matter of seconds.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -96,7 +96,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>SimpleTexting</title>
-          <meta name="description" content="SimpleTexting is a text messaging platform that helps you reach your customers using one of the most effective channels: their text inbox. Send promotions, alerts, polls or reminders to your entire list in a matter of seconds." />
+          <meta name="description" content={`SimpleTexting is a text messaging platform that helps you reach your customers using one of the most effective channels: their text inbox. Send promotions, alerts, polls or reminders to your entire list in a matter of seconds.`} />
         </>
       ),
     },

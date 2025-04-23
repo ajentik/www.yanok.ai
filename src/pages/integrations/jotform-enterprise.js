@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Jotform Enterprise"
-      description="Jotform Enterprise is a digital workplace productivity tool that provides a powerful ROI across your entire organization."
+      description={`Jotform Enterprise is a digital workplace productivity tool that provides a powerful ROI across your entire organization.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -71,7 +71,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Jotform Enterprise</title>
-          <meta name="description" content="Jotform Enterprise is a digital workplace productivity tool that provides a powerful ROI across your entire organization." />
+          <meta name="description" content={`Jotform Enterprise is a digital workplace productivity tool that provides a powerful ROI across your entire organization.`} />
         </>
       ),
     },

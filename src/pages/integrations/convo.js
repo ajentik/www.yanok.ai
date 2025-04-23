@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Convo"
-      description="Convo is an Enterprise Social Network that helps you have actionable work conversations and file collaboration."
+      description={`Convo is an Enterprise Social Network that helps you have actionable work conversations and file collaboration.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -62,7 +62,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Convo</title>
-          <meta name="description" content="Convo is an Enterprise Social Network that helps you have actionable work conversations and file collaboration." />
+          <meta name="description" content={`Convo is an Enterprise Social Network that helps you have actionable work conversations and file collaboration.`} />
         </>
       ),
     },

@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="involve.me"
-      description="involve.me is a customer experience platform. Everything you need to capture leads, collect feedback & activate your audience."
+      description={`involve.me is a customer experience platform. Everything you need to capture leads, collect feedback & activate your audience.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>involve.me</title>
-          <meta name="description" content="involve.me is a customer experience platform. Everything you need to capture leads, collect feedback & activate your audience." />
+          <meta name="description" content={`involve.me is a customer experience platform. Everything you need to capture leads, collect feedback & activate your audience.`} />
         </>
       ),
     },

@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="MemoMeister"
-      description="MemoMeister is an easy-to-use application that helps you document projects by facts from anywhere. Documents like images, videos, plans or forms are stored as memos (including description, metadata and comments) securely and structured in one place: the digital project file."
+      description={`MemoMeister is an easy-to-use application that helps you document projects by facts from anywhere. Documents like images, videos, plans or forms are stored as memos (including description, metadata and comments) securely and structured in one place: the digital project file.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -106,7 +106,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>MemoMeister</title>
-          <meta name="description" content="MemoMeister is an easy-to-use application that helps you document projects by facts from anywhere. Documents like images, videos, plans or forms are stored as memos (including description, metadata and comments) securely and structured in one place: the digital project file." />
+          <meta name="description" content={`MemoMeister is an easy-to-use application that helps you document projects by facts from anywhere. Documents like images, videos, plans or forms are stored as memos (including description, metadata and comments) securely and structured in one place: the digital project file.`} />
         </>
       ),
     },

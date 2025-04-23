@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Azure DevOps"
-      description="Azure DevOps is where teams manage, develop, and deliver software in the cloud. Azure DevOps provides free, private Git project hosting for up to 5 users, project and test management tools, build and CI, and team collaboration. Connect using the development tools of your choice, including Visual Studio, Eclipse, Xcode, and more."
+      description={`Azure DevOps is where teams manage, develop, and deliver software in the cloud. Azure DevOps provides free, private Git project hosting for up to 5 users, project and test management tools, build and CI, and team collaboration. Connect using the development tools of your choice, including Visual Studio, Eclipse, Xcode, and more.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -96,7 +96,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Azure DevOps</title>
-          <meta name="description" content="Azure DevOps is where teams manage, develop, and deliver software in the cloud. Azure DevOps provides free, private Git project hosting for up to 5 users, project and test management tools, build and CI, and team collaboration. Connect using the development tools of your choice, including Visual Studio, Eclipse, Xcode, and more." />
+          <meta name="description" content={`Azure DevOps is where teams manage, develop, and deliver software in the cloud. Azure DevOps provides free, private Git project hosting for up to 5 users, project and test management tools, build and CI, and team collaboration. Connect using the development tools of your choice, including Visual Studio, Eclipse, Xcode, and more.`} />
         </>
       ),
     },

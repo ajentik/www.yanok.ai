@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Insiteful"
-      description="Insiteful is a web form tracking & optimization tool to automagically unlock more leads from any form — make every click count!"
+      description={`Insiteful is a web form tracking & optimization tool to automagically unlock more leads from any form — make every click count!`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -76,7 +76,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Insiteful</title>
-          <meta name="description" content="Insiteful is a web form tracking & optimization tool to automagically unlock more leads from any form — make every click count!" />
+          <meta name="description" content={`Insiteful is a web form tracking & optimization tool to automagically unlock more leads from any form — make every click count!`} />
         </>
       ),
     },

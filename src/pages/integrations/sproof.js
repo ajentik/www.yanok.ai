@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="sproof"
-      description="Sproof is a digital documents platform able to generate documents that are 100% GDPR-compliant and guaranteed legally-binding."
+      description={`Sproof is a digital documents platform able to generate documents that are 100% GDPR-compliant and guaranteed legally-binding.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>sproof</title>
-          <meta name="description" content="Sproof is a digital documents platform able to generate documents that are 100% GDPR-compliant and guaranteed legally-binding." />
+          <meta name="description" content={`Sproof is a digital documents platform able to generate documents that are 100% GDPR-compliant and guaranteed legally-binding.`} />
         </>
       ),
     },

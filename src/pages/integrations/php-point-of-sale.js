@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="PHP Point Of Sale"
-      description="PHP Point Of Sale is an easy to use Web Based Point Of Sale System for Retail. Helps with inventory tracking, sales tax, and managing all aspects of your retail business."
+      description={`PHP Point Of Sale is an easy to use Web Based Point Of Sale System for Retail. Helps with inventory tracking, sales tax, and managing all aspects of your retail business.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -111,7 +111,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>PHP Point Of Sale</title>
-          <meta name="description" content="PHP Point Of Sale is an easy to use Web Based Point Of Sale System for Retail. Helps with inventory tracking, sales tax, and managing all aspects of your retail business." />
+          <meta name="description" content={`PHP Point Of Sale is an easy to use Web Based Point Of Sale System for Retail. Helps with inventory tracking, sales tax, and managing all aspects of your retail business.`} />
         </>
       ),
     },

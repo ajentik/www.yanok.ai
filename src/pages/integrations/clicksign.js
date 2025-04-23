@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Clicksign"
-      description="Clicksign is an electronic document signing platform that meets the requirements of integrity, authenticity and non-repudiation of Brazilian legislation."
+      description={`Clicksign is an electronic document signing platform that meets the requirements of integrity, authenticity and non-repudiation of Brazilian legislation.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -151,7 +151,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Clicksign</title>
-          <meta name="description" content="Clicksign is an electronic document signing platform that meets the requirements of integrity, authenticity and non-repudiation of Brazilian legislation." />
+          <meta name="description" content={`Clicksign is an electronic document signing platform that meets the requirements of integrity, authenticity and non-repudiation of Brazilian legislation.`} />
         </>
       ),
     },

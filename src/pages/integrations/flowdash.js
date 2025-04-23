@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Flowdash"
-      description="The most flexible platform for fast-growing companies to manage, track & complete their work."
+      description={`The most flexible platform for fast-growing companies to manage, track & complete their work.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -81,7 +81,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Flowdash</title>
-          <meta name="description" content="The most flexible platform for fast-growing companies to manage, track & complete their work." />
+          <meta name="description" content={`The most flexible platform for fast-growing companies to manage, track & complete their work.`} />
         </>
       ),
     },

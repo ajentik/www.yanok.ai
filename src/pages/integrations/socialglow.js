@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="SocialGlow"
-      description="SocialGlow helps course creators build amazing communities and online courses."
+      description={`SocialGlow helps course creators build amazing communities and online courses.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -61,7 +61,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>SocialGlow</title>
-          <meta name="description" content="SocialGlow helps course creators build amazing communities and online courses." />
+          <meta name="description" content={`SocialGlow helps course creators build amazing communities and online courses.`} />
         </>
       ),
     },

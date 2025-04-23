@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Pingboard"
-      description="Pingboard is real-time org chart software that makes it easy to build professional looking org charts."
+      description={`Pingboard is real-time org chart software that makes it easy to build professional looking org charts.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +53,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Pingboard</title>
-          <meta name="description" content="Pingboard is real-time org chart software that makes it easy to build professional looking org charts." />
+          <meta name="description" content={`Pingboard is real-time org chart software that makes it easy to build professional looking org charts.`} />
         </>
       ),
     },

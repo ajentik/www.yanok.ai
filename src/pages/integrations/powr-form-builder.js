@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="POWR Form Builder"
-      description="POWR Form Builder is an easy way to collect information, grow your email list, and take payments online on all devices and platforms."
+      description={`POWR Form Builder is an easy way to collect information, grow your email list, and take payments online on all devices and platforms.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>POWR Form Builder</title>
-          <meta name="description" content="POWR Form Builder is an easy way to collect information, grow your email list, and take payments online on all devices and platforms." />
+          <meta name="description" content={`POWR Form Builder is an easy way to collect information, grow your email list, and take payments online on all devices and platforms.`} />
         </>
       ),
     },

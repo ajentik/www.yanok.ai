@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="DocuPost Postal Mail"
-      description="DocuPost is a print & mail service allowing you to easily mail your digital files as physical letters and postcards via the US Postal Service."
+      description={`DocuPost is a print & mail service allowing you to easily mail your digital files as physical letters and postcards via the US Postal Service.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -62,7 +62,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>DocuPost Postal Mail</title>
-          <meta name="description" content="DocuPost is a print & mail service allowing you to easily mail your digital files as physical letters and postcards via the US Postal Service." />
+          <meta name="description" content={`DocuPost is a print & mail service allowing you to easily mail your digital files as physical letters and postcards via the US Postal Service.`} />
         </>
       ),
     },

@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="bunq"
-      description="bunq is a mobile bank, built from a clean slate, dedicated to your wants and needs. Get the freedom to spend, save, move and invest your money whichever way you like."
+      description={`bunq is a mobile bank, built from a clean slate, dedicated to your wants and needs. Get the freedom to spend, save, move and invest your money whichever way you like.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -76,7 +76,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>bunq</title>
-          <meta name="description" content="bunq is a mobile bank, built from a clean slate, dedicated to your wants and needs. Get the freedom to spend, save, move and invest your money whichever way you like." />
+          <meta name="description" content={`bunq is a mobile bank, built from a clean slate, dedicated to your wants and needs. Get the freedom to spend, save, move and invest your money whichever way you like.`} />
         </>
       ),
     },

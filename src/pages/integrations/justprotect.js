@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="JustProtect"
-      description="JustProtect is a regulation and content-agnostic cloud-based platform that centralizes, automates, and simplifies the assessment process for companies with or without a GRC."
+      description={`JustProtect is a regulation and content-agnostic cloud-based platform that centralizes, automates, and simplifies the assessment process for companies with or without a GRC.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -176,7 +176,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>JustProtect</title>
-          <meta name="description" content="JustProtect is a regulation and content-agnostic cloud-based platform that centralizes, automates, and simplifies the assessment process for companies with or without a GRC." />
+          <meta name="description" content={`JustProtect is a regulation and content-agnostic cloud-based platform that centralizes, automates, and simplifies the assessment process for companies with or without a GRC.`} />
         </>
       ),
     },

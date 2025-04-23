@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Logicbroker"
-      description="Cloud-based EDI to API technology connecting brands, retailers and the systems they rely on. We craft the connections to enable digital commerce."
+      description={`Cloud-based EDI to API technology connecting brands, retailers and the systems they rely on. We craft the connections to enable digital commerce.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +53,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Logicbroker</title>
-          <meta name="description" content="Cloud-based EDI to API technology connecting brands, retailers and the systems they rely on. We craft the connections to enable digital commerce." />
+          <meta name="description" content={`Cloud-based EDI to API technology connecting brands, retailers and the systems they rely on. We craft the connections to enable digital commerce.`} />
         </>
       ),
     },

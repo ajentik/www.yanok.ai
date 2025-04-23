@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Wintouch 7"
-      description="Wintouch 7 CRM is an all-in-one software solution that is designed to help businesses of all sizes improve productivity in marketing, sales, customer service, and administration."
+      description={`Wintouch 7 CRM is an all-in-one software solution that is designed to help businesses of all sizes improve productivity in marketing, sales, customer service, and administration.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -91,7 +91,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Wintouch 7</title>
-          <meta name="description" content="Wintouch 7 CRM is an all-in-one software solution that is designed to help businesses of all sizes improve productivity in marketing, sales, customer service, and administration." />
+          <meta name="description" content={`Wintouch 7 CRM is an all-in-one software solution that is designed to help businesses of all sizes improve productivity in marketing, sales, customer service, and administration.`} />
         </>
       ),
     },

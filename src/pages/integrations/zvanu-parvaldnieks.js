@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Zvanu Pārvaldnieks"
-      description="Zvanu Pārvaldnieks is a mobile virtual PBX service for LMT mobile subscribers."
+      description={`Zvanu Pārvaldnieks is a mobile virtual PBX service for LMT mobile subscribers.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -161,7 +161,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Zvanu Pārvaldnieks</title>
-          <meta name="description" content="Zvanu Pārvaldnieks is a mobile virtual PBX service for LMT mobile subscribers." />
+          <meta name="description" content={`Zvanu Pārvaldnieks is a mobile virtual PBX service for LMT mobile subscribers.`} />
         </>
       ),
     },

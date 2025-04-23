@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Speak Ai"
-      description="Speak Ai is a tool to analyze audio and video to get insights extraction and transcriptions."
+      description={`Speak Ai is a tool to analyze audio and video to get insights extraction and transcriptions.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -76,7 +76,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Speak Ai</title>
-          <meta name="description" content="Speak Ai is a tool to analyze audio and video to get insights extraction and transcriptions." />
+          <meta name="description" content={`Speak Ai is a tool to analyze audio and video to get insights extraction and transcriptions.`} />
         </>
       ),
     },

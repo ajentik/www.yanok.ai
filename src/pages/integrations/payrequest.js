@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="PayRequest"
-      description="PayRequest is a payment request platform that makes it easy to create your own branded payment page and to send payment links to all your customers."
+      description={`PayRequest is a payment request platform that makes it easy to create your own branded payment page and to send payment links to all your customers.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -71,7 +71,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>PayRequest</title>
-          <meta name="description" content="PayRequest is a payment request platform that makes it easy to create your own branded payment page and to send payment links to all your customers." />
+          <meta name="description" content={`PayRequest is a payment request platform that makes it easy to create your own branded payment page and to send payment links to all your customers.`} />
         </>
       ),
     },

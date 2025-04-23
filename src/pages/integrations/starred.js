@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Starred"
-      description="Starred is a feedback software solution that helps you improve on your People Experience, from hire to retire."
+      description={`Starred is a feedback software solution that helps you improve on your People Experience, from hire to retire.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -62,7 +62,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Starred</title>
-          <meta name="description" content="Starred is a feedback software solution that helps you improve on your People Experience, from hire to retire." />
+          <meta name="description" content={`Starred is a feedback software solution that helps you improve on your People Experience, from hire to retire.`} />
         </>
       ),
     },

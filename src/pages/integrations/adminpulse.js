@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="AdminPulse"
-      description="AdminPulse is the online office management software for accountants, bookkeepers and auditors"
+      description={`AdminPulse is the online office management software for accountants, bookkeepers and auditors`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -67,7 +67,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>AdminPulse</title>
-          <meta name="description" content="AdminPulse is the online office management software for accountants, bookkeepers and auditors" />
+          <meta name="description" content={`AdminPulse is the online office management software for accountants, bookkeepers and auditors`} />
         </>
       ),
     },

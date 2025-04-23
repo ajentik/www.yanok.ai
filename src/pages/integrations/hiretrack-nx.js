@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="HireTrack NX"
-      description="HireTrack NX is a Windows application that organizes, schedules and tracks financials for live events equipment rental and production businesses."
+      description={`HireTrack NX is a Windows application that organizes, schedules and tracks financials for live events equipment rental and production businesses.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -76,7 +76,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>HireTrack NX</title>
-          <meta name="description" content="HireTrack NX is a Windows application that organizes, schedules and tracks financials for live events equipment rental and production businesses." />
+          <meta name="description" content={`HireTrack NX is a Windows application that organizes, schedules and tracks financials for live events equipment rental and production businesses.`} />
         </>
       ),
     },

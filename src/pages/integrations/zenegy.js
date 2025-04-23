@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Zenegy"
-      description="Zenegy is a complete salary system with advanced features such as time, vacation, material and mileage registration."
+      description={`Zenegy is a complete salary system with advanced features such as time, vacation, material and mileage registration.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -72,7 +72,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Zenegy</title>
-          <meta name="description" content="Zenegy is a complete salary system with advanced features such as time, vacation, material and mileage registration." />
+          <meta name="description" content={`Zenegy is a complete salary system with advanced features such as time, vacation, material and mileage registration.`} />
         </>
       ),
     },

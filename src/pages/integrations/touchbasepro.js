@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="TouchBasePro"
-      description="TouchBasePro is a email marketing tool to help you create beautiful email campaigns that will transform your brand."
+      description={`TouchBasePro is a email marketing tool to help you create beautiful email campaigns that will transform your brand.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -91,7 +91,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>TouchBasePro</title>
-          <meta name="description" content="TouchBasePro is a email marketing tool to help you create beautiful email campaigns that will transform your brand." />
+          <meta name="description" content={`TouchBasePro is a email marketing tool to help you create beautiful email campaigns that will transform your brand.`} />
         </>
       ),
     },

@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Email Hippo"
-      description="Email Hippos is an email intelligence platform to stop bad emails getting into your systems. MORE shields your forms from fraudsters and typos in real-time."
+      description={`Email Hippos is an email intelligence platform to stop bad emails getting into your systems. MORE shields your forms from fraudsters and typos in real-time.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Email Hippo</title>
-          <meta name="description" content="Email Hippos is an email intelligence platform to stop bad emails getting into your systems. MORE shields your forms from fraudsters and typos in real-time." />
+          <meta name="description" content={`Email Hippos is an email intelligence platform to stop bad emails getting into your systems. MORE shields your forms from fraudsters and typos in real-time.`} />
         </>
       ),
     },

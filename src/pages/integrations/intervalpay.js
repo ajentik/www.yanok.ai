@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="IntervalPay"
-      description="IntervalPay is a subscription management and billing platform that drives transformational growth and automation for your business."
+      description={`IntervalPay is a subscription management and billing platform that drives transformational growth and automation for your business.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -72,7 +72,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>IntervalPay</title>
-          <meta name="description" content="IntervalPay is a subscription management and billing platform that drives transformational growth and automation for your business." />
+          <meta name="description" content={`IntervalPay is a subscription management and billing platform that drives transformational growth and automation for your business.`} />
         </>
       ),
     },

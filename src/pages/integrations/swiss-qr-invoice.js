@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Swiss QR Invoice"
-      description="This application allows creation and processing of Swiss QR Bills (including Swiss QR Code). This is app makes use of the Codeblock QR Invoice Cloud REST Services."
+      description={`This application allows creation and processing of Swiss QR Bills (including Swiss QR Code). This is app makes use of the Codeblock QR Invoice Cloud REST Services.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -62,7 +62,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Swiss QR Invoice</title>
-          <meta name="description" content="This application allows creation and processing of Swiss QR Bills (including Swiss QR Code). This is app makes use of the Codeblock QR Invoice Cloud REST Services." />
+          <meta name="description" content={`This application allows creation and processing of Swiss QR Bills (including Swiss QR Code). This is app makes use of the Codeblock QR Invoice Cloud REST Services.`} />
         </>
       ),
     },

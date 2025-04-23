@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Looping by Zapier"
-      description="Looping by Zapier is a helper app to repeat Action(s) in you Zaps a variable number of times for sets of values."
+      description={`Looping by Zapier is a helper app to repeat Action(s) in you Zaps a variable number of times for sets of values.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -67,7 +67,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Looping by Zapier</title>
-          <meta name="description" content="Looping by Zapier is a helper app to repeat Action(s) in you Zaps a variable number of times for sets of values." />
+          <meta name="description" content={`Looping by Zapier is a helper app to repeat Action(s) in you Zaps a variable number of times for sets of values.`} />
         </>
       ),
     },

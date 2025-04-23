@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Kaleyra"
-      description="Kaleyra focuses on providing an integrated Cloud communication platform that caters to messaging services globally."
+      description={`Kaleyra focuses on providing an integrated Cloud communication platform that caters to messaging services globally.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -67,7 +67,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Kaleyra</title>
-          <meta name="description" content="Kaleyra focuses on providing an integrated Cloud communication platform that caters to messaging services globally." />
+          <meta name="description" content={`Kaleyra focuses on providing an integrated Cloud communication platform that caters to messaging services globally.`} />
         </>
       ),
     },

@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Sharetribe Flex"
-      description="Sharetribe Flex is a headless marketplace solution. It lets you build a unique online marketplace 90% faster than coding from scratch."
+      description={`Sharetribe Flex is a headless marketplace solution. It lets you build a unique online marketplace 90% faster than coding from scratch.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -81,7 +81,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Sharetribe Flex</title>
-          <meta name="description" content="Sharetribe Flex is a headless marketplace solution. It lets you build a unique online marketplace 90% faster than coding from scratch." />
+          <meta name="description" content={`Sharetribe Flex is a headless marketplace solution. It lets you build a unique online marketplace 90% faster than coding from scratch.`} />
         </>
       ),
     },

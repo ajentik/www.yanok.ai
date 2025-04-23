@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="ChangeTower"
-      description="ChangeTower is a website monitoring and archiving platform that detects and tracks critical changes and sends you detailed alerts. Monitor for visual, content and code changes. Stay effortlessly informed about about updates that matter to you across the web."
+      description={`ChangeTower is a website monitoring and archiving platform that detects and tracks critical changes and sends you detailed alerts. Monitor for visual, content and code changes. Stay effortlessly informed about about updates that matter to you across the web.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>ChangeTower</title>
-          <meta name="description" content="ChangeTower is a website monitoring and archiving platform that detects and tracks critical changes and sends you detailed alerts. Monitor for visual, content and code changes. Stay effortlessly informed about about updates that matter to you across the web." />
+          <meta name="description" content={`ChangeTower is a website monitoring and archiving platform that detects and tracks critical changes and sends you detailed alerts. Monitor for visual, content and code changes. Stay effortlessly informed about about updates that matter to you across the web.`} />
         </>
       ),
     },

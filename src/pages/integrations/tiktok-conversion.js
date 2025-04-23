@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="TikTok Conversions"
-      description="Send important customer events directly from your server or CRM to TikTok Event API, allowing you to better optimize for ad performance."
+      description={`Send important customer events directly from your server or CRM to TikTok Event API, allowing you to better optimize for ad performance.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>TikTok Conversions</title>
-          <meta name="description" content="Send important customer events directly from your server or CRM to TikTok Event API, allowing you to better optimize for ad performance." />
+          <meta name="description" content={`Send important customer events directly from your server or CRM to TikTok Event API, allowing you to better optimize for ad performance.`} />
         </>
       ),
     },

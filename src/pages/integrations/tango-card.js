@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Tango Card"
-      description="Tango Card allows you to send gift cards for 100+ brands."
+      description={`Tango Card allows you to send gift cards for 100+ brands.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -61,7 +61,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Tango Card</title>
-          <meta name="description" content="Tango Card allows you to send gift cards for 100+ brands." />
+          <meta name="description" content={`Tango Card allows you to send gift cards for 100+ brands.`} />
         </>
       ),
     },

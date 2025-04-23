@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="GrooveJar"
-      description="Awesome lead capture and customer conversion rate crushing popup and triggered email apps for any website and e-commerce store."
+      description={`Awesome lead capture and customer conversion rate crushing popup and triggered email apps for any website and e-commerce store.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +53,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>GrooveJar</title>
-          <meta name="description" content="Awesome lead capture and customer conversion rate crushing popup and triggered email apps for any website and e-commerce store." />
+          <meta name="description" content={`Awesome lead capture and customer conversion rate crushing popup and triggered email apps for any website and e-commerce store.`} />
         </>
       ),
     },

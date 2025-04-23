@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Privyr"
-      description="Privyr is a mobile CRM built for sales professionals who run their businesses from their phone. It works with WhatsApp, iMessage, SMS, email, and other popular chat apps."
+      description={`Privyr is a mobile CRM built for sales professionals who run their businesses from their phone. It works with WhatsApp, iMessage, SMS, email, and other popular chat apps.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Privyr</title>
-          <meta name="description" content="Privyr is a mobile CRM built for sales professionals who run their businesses from their phone. It works with WhatsApp, iMessage, SMS, email, and other popular chat apps." />
+          <meta name="description" content={`Privyr is a mobile CRM built for sales professionals who run their businesses from their phone. It works with WhatsApp, iMessage, SMS, email, and other popular chat apps.`} />
         </>
       ),
     },

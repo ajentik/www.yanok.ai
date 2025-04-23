@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Ehminem"
-      description="Ehminem is an app that cuts filler words from your podcast. Currently available for German."
+      description={`Ehminem is an app that cuts filler words from your podcast. Currently available for German.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -61,7 +61,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Ehminem</title>
-          <meta name="description" content="Ehminem is an app that cuts filler words from your podcast. Currently available for German." />
+          <meta name="description" content={`Ehminem is an app that cuts filler words from your podcast. Currently available for German.`} />
         </>
       ),
     },

@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Officexlr"
-      description="Officexlr is a low-code application development platform to create customized, secure & integrated business apps."
+      description={`Officexlr is a low-code application development platform to create customized, secure & integrated business apps.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -61,7 +61,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Officexlr</title>
-          <meta name="description" content="Officexlr is a low-code application development platform to create customized, secure & integrated business apps." />
+          <meta name="description" content={`Officexlr is a low-code application development platform to create customized, secure & integrated business apps.`} />
         </>
       ),
     },

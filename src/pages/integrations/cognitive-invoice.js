@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Cognitive Invoice"
-      description="Cognitive Invoice is a platform built on deep learning which automates invoice processing workflows. Automate invoice data extraction, build your workflows to ingest, capture, validate and post invoices to system of your choice – no coding required."
+      description={`Cognitive Invoice is a platform built on deep learning which automates invoice processing workflows. Automate invoice data extraction, build your workflows to ingest, capture, validate and post invoices to system of your choice – no coding required.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -61,7 +61,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Cognitive Invoice</title>
-          <meta name="description" content="Cognitive Invoice is a platform built on deep learning which automates invoice processing workflows. Automate invoice data extraction, build your workflows to ingest, capture, validate and post invoices to system of your choice – no coding required." />
+          <meta name="description" content={`Cognitive Invoice is a platform built on deep learning which automates invoice processing workflows. Automate invoice data extraction, build your workflows to ingest, capture, validate and post invoices to system of your choice – no coding required.`} />
         </>
       ),
     },

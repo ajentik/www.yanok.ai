@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Fulcrum"
-      description="Fulcrum is a mobile data collection tool that allows users to easily design custom forms and quickly conduct field data collection on Android and iOS. Fulcrum works in connected and disconnected environments."
+      description={`Fulcrum is a mobile data collection tool that allows users to easily design custom forms and quickly conduct field data collection on Android and iOS. Fulcrum works in connected and disconnected environments.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -81,7 +81,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Fulcrum</title>
-          <meta name="description" content="Fulcrum is a mobile data collection tool that allows users to easily design custom forms and quickly conduct field data collection on Android and iOS. Fulcrum works in connected and disconnected environments." />
+          <meta name="description" content={`Fulcrum is a mobile data collection tool that allows users to easily design custom forms and quickly conduct field data collection on Android and iOS. Fulcrum works in connected and disconnected environments.`} />
         </>
       ),
     },

@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Magentrix"
-      description="Magentrix provides advanced API connections to Salesforce CRM & Microsoft Dynamics which allow you to easily build custom, self-service webpages for customers or partners to access or change account or contact related data."
+      description={`Magentrix provides advanced API connections to Salesforce CRM & Microsoft Dynamics which allow you to easily build custom, self-service webpages for customers or partners to access or change account or contact related data.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -101,7 +101,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Magentrix</title>
-          <meta name="description" content="Magentrix provides advanced API connections to Salesforce CRM & Microsoft Dynamics which allow you to easily build custom, self-service webpages for customers or partners to access or change account or contact related data." />
+          <meta name="description" content={`Magentrix provides advanced API connections to Salesforce CRM & Microsoft Dynamics which allow you to easily build custom, self-service webpages for customers or partners to access or change account or contact related data.`} />
         </>
       ),
     },

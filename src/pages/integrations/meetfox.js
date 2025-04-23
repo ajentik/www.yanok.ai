@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="MeetFox"
-      description="MeetFox is an easy-to-use meeting tool with online scheduling, seamless video calls and immediate payments all-in-one. Helping you monetize your time while providing a great user experience for your clients."
+      description={`MeetFox is an easy-to-use meeting tool with online scheduling, seamless video calls and immediate payments all-in-one. Helping you monetize your time while providing a great user experience for your clients.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>MeetFox</title>
-          <meta name="description" content="MeetFox is an easy-to-use meeting tool with online scheduling, seamless video calls and immediate payments all-in-one. Helping you monetize your time while providing a great user experience for your clients." />
+          <meta name="description" content={`MeetFox is an easy-to-use meeting tool with online scheduling, seamless video calls and immediate payments all-in-one. Helping you monetize your time while providing a great user experience for your clients.`} />
         </>
       ),
     },

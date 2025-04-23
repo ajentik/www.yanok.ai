@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="OCR Car Plates"
-      description="The cutting edge OCR technology has been applied by Primesoft Polska into a useful tool that recognizes numbers from a car plate image. The numbers are recognized within seconds and are ready to be used within any integrated application."
+      description={`The cutting edge OCR technology has been applied by Primesoft Polska into a useful tool that recognizes numbers from a car plate image. The numbers are recognized within seconds and are ready to be used within any integrated application.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>OCR Car Plates</title>
-          <meta name="description" content="The cutting edge OCR technology has been applied by Primesoft Polska into a useful tool that recognizes numbers from a car plate image. The numbers are recognized within seconds and are ready to be used within any integrated application." />
+          <meta name="description" content={`The cutting edge OCR technology has been applied by Primesoft Polska into a useful tool that recognizes numbers from a car plate image. The numbers are recognized within seconds and are ready to be used within any integrated application.`} />
         </>
       ),
     },

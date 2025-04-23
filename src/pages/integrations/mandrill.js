@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Mailchimp Transactional"
-      description="Mailchimp Transactional is simple, powerful transactional email."
+      description={`Mailchimp Transactional is simple, powerful transactional email.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -66,7 +66,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Mailchimp Transactional</title>
-          <meta name="description" content="Mailchimp Transactional is simple, powerful transactional email." />
+          <meta name="description" content={`Mailchimp Transactional is simple, powerful transactional email.`} />
         </>
       ),
     },

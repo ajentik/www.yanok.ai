@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Third Light Chorus"
-      description="Chorus is a digital asset management (DAM) system which helps teams to store, share, search and re-use and publish content"
+      description={`Chorus is a digital asset management (DAM) system which helps teams to store, share, search and re-use and publish content`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -81,7 +81,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Third Light Chorus</title>
-          <meta name="description" content="Chorus is a digital asset management (DAM) system which helps teams to store, share, search and re-use and publish content" />
+          <meta name="description" content={`Chorus is a digital asset management (DAM) system which helps teams to store, share, search and re-use and publish content`} />
         </>
       ),
     },

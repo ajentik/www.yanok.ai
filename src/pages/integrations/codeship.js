@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Codeship"
-      description="Codeship is a fast and secure hosted Continuous Integration service that scales with your needs. It supports GitHub, Bitbucket, and Gitlab projects."
+      description={`Codeship is a fast and secure hosted Continuous Integration service that scales with your needs. It supports GitHub, Bitbucket, and Gitlab projects.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +53,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Codeship</title>
-          <meta name="description" content="Codeship is a fast and secure hosted Continuous Integration service that scales with your needs. It supports GitHub, Bitbucket, and Gitlab projects." />
+          <meta name="description" content={`Codeship is a fast and secure hosted Continuous Integration service that scales with your needs. It supports GitHub, Bitbucket, and Gitlab projects.`} />
         </>
       ),
     },

@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Blaze"
-      description="Blaze is the smarter no-code tool for teams that we've all been waiting for! We give you everything you need to create apps and internal tools that supercharge your team's processes."
+      description={`Blaze is the smarter no-code tool for teams that we've all been waiting for! We give you everything you need to create apps and internal tools that supercharge your team's processes.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -62,7 +62,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Blaze</title>
-          <meta name="description" content="Blaze is the smarter no-code tool for teams that we've all been waiting for! We give you everything you need to create apps and internal tools that supercharge your team's processes." />
+          <meta name="description" content={`Blaze is the smarter no-code tool for teams that we've all been waiting for! We give you everything you need to create apps and internal tools that supercharge your team's processes.`} />
         </>
       ),
     },

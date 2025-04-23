@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Time Tracker"
-      description="Time Tracker by eBillity helps you track and bill for your time."
+      description={`Time Tracker by eBillity helps you track and bill for your time.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -111,7 +111,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Time Tracker</title>
-          <meta name="description" content="Time Tracker by eBillity helps you track and bill for your time." />
+          <meta name="description" content={`Time Tracker by eBillity helps you track and bill for your time.`} />
         </>
       ),
     },

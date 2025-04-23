@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Nimble"
-      description="Social CRM Simplified. With Nimble’s social CRM, easily manage all your contacts, communications, activities and sales in one single place."
+      description={`Social CRM Simplified. With Nimble’s social CRM, easily manage all your contacts, communications, activities and sales in one single place.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -66,7 +66,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Nimble</title>
-          <meta name="description" content="Social CRM Simplified. With Nimble’s social CRM, easily manage all your contacts, communications, activities and sales in one single place." />
+          <meta name="description" content={`Social CRM Simplified. With Nimble’s social CRM, easily manage all your contacts, communications, activities and sales in one single place.`} />
         </>
       ),
     },

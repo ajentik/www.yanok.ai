@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Uptime.com"
-      description="Uptime.com checks your website availability at one minute intervals from 30 different locations across 6 continents. Connect your Uptime.com alerts so you can integrate them fully into your workflow."
+      description={`Uptime.com checks your website availability at one minute intervals from 30 different locations across 6 continents. Connect your Uptime.com alerts so you can integrate them fully into your workflow.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -61,7 +61,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Uptime.com</title>
-          <meta name="description" content="Uptime.com checks your website availability at one minute intervals from 30 different locations across 6 continents. Connect your Uptime.com alerts so you can integrate them fully into your workflow." />
+          <meta name="description" content={`Uptime.com checks your website availability at one minute intervals from 30 different locations across 6 continents. Connect your Uptime.com alerts so you can integrate them fully into your workflow.`} />
         </>
       ),
     },

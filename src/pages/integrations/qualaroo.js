@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Qualaroo"
-      description="Qualaroo is a SaaS company that enables companies to gain valuable insights from their prospects and customers in real time."
+      description={`Qualaroo is a SaaS company that enables companies to gain valuable insights from their prospects and customers in real time.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -81,7 +81,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Qualaroo</title>
-          <meta name="description" content="Qualaroo is a SaaS company that enables companies to gain valuable insights from their prospects and customers in real time." />
+          <meta name="description" content={`Qualaroo is a SaaS company that enables companies to gain valuable insights from their prospects and customers in real time.`} />
         </>
       ),
     },

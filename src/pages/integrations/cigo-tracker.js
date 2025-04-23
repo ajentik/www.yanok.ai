@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Cigo Tracker"
-      description="Cigo Tracker is an innovative cloud solution to increase deliveries, service calls or pick-ups, scale efficiently and provide your customers with a perfect last-mile delivery experience."
+      description={`Cigo Tracker is an innovative cloud solution to increase deliveries, service calls or pick-ups, scale efficiently and provide your customers with a perfect last-mile delivery experience.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -117,7 +117,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Cigo Tracker</title>
-          <meta name="description" content="Cigo Tracker is an innovative cloud solution to increase deliveries, service calls or pick-ups, scale efficiently and provide your customers with a perfect last-mile delivery experience." />
+          <meta name="description" content={`Cigo Tracker is an innovative cloud solution to increase deliveries, service calls or pick-ups, scale efficiently and provide your customers with a perfect last-mile delivery experience.`} />
         </>
       ),
     },

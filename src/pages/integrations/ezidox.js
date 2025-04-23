@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="ezidox"
-      description="Ezidox is a cloud-based platform for automating and simplifying the collection and exchange of documents required for transactions."
+      description={`Ezidox is a cloud-based platform for automating and simplifying the collection and exchange of documents required for transactions.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -136,7 +136,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>ezidox</title>
-          <meta name="description" content="Ezidox is a cloud-based platform for automating and simplifying the collection and exchange of documents required for transactions." />
+          <meta name="description" content={`Ezidox is a cloud-based platform for automating and simplifying the collection and exchange of documents required for transactions.`} />
         </>
       ),
     },

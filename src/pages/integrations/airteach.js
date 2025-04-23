@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Airteach"
-      description="Airteach allows you to create, host and sell online courses without any technical knowledge, on your own training academy."
+      description={`Airteach allows you to create, host and sell online courses without any technical knowledge, on your own training academy.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -126,7 +126,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Airteach</title>
-          <meta name="description" content="Airteach allows you to create, host and sell online courses without any technical knowledge, on your own training academy." />
+          <meta name="description" content={`Airteach allows you to create, host and sell online courses without any technical knowledge, on your own training academy.`} />
         </>
       ),
     },

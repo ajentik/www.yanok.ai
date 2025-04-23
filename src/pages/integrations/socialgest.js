@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="SocialGest"
-      description="SocialGest is a suite of tools for social media management that allows user to schedule content, visualize and export metrics."
+      description={`SocialGest is a suite of tools for social media management that allows user to schedule content, visualize and export metrics.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -62,7 +62,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>SocialGest</title>
-          <meta name="description" content="SocialGest is a suite of tools for social media management that allows user to schedule content, visualize and export metrics." />
+          <meta name="description" content={`SocialGest is a suite of tools for social media management that allows user to schedule content, visualize and export metrics.`} />
         </>
       ),
     },

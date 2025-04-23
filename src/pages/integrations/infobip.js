@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Infobip"
-      description="Infobip is a multi-channel communications platform with SMS, voice, push, email, and chat functionality to cover all your engagement needs."
+      description={`Infobip is a multi-channel communications platform with SMS, voice, push, email, and chat functionality to cover all your engagement needs.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -81,7 +81,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Infobip</title>
-          <meta name="description" content="Infobip is a multi-channel communications platform with SMS, voice, push, email, and chat functionality to cover all your engagement needs." />
+          <meta name="description" content={`Infobip is a multi-channel communications platform with SMS, voice, push, email, and chat functionality to cover all your engagement needs.`} />
         </>
       ),
     },

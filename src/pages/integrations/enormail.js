@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Enormail"
-      description="Enormail is an email marketing tool that makes it a breeze to grow your list and send automated campaigns."
+      description={`Enormail is an email marketing tool that makes it a breeze to grow your list and send automated campaigns.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -76,7 +76,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Enormail</title>
-          <meta name="description" content="Enormail is an email marketing tool that makes it a breeze to grow your list and send automated campaigns." />
+          <meta name="description" content={`Enormail is an email marketing tool that makes it a breeze to grow your list and send automated campaigns.`} />
         </>
       ),
     },

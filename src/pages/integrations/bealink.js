@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Bealink"
-      description="Bealink is a mobile learning application for companies. Being contextual, it transforms user experience by providing the information in the work environment and increases your team’s engagement, knowledge retention, and productivity."
+      description={`Bealink is a mobile learning application for companies. Being contextual, it transforms user experience by providing the information in the work environment and increases your team’s engagement, knowledge retention, and productivity.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -86,7 +86,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Bealink</title>
-          <meta name="description" content="Bealink is a mobile learning application for companies. Being contextual, it transforms user experience by providing the information in the work environment and increases your team’s engagement, knowledge retention, and productivity." />
+          <meta name="description" content={`Bealink is a mobile learning application for companies. Being contextual, it transforms user experience by providing the information in the work environment and increases your team’s engagement, knowledge retention, and productivity.`} />
         </>
       ),
     },

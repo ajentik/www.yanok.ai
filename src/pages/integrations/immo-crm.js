@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="IMMO CRM 360"
-      description="Immo CRM 360 is a real estate technology partner to make the control of your real estate and communication with your contacts and clients more agile and easy."
+      description={`Immo CRM 360 is a real estate technology partner to make the control of your real estate and communication with your contacts and clients more agile and easy.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -61,7 +61,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>IMMO CRM 360</title>
-          <meta name="description" content="Immo CRM 360 is a real estate technology partner to make the control of your real estate and communication with your contacts and clients more agile and easy." />
+          <meta name="description" content={`Immo CRM 360 is a real estate technology partner to make the control of your real estate and communication with your contacts and clients more agile and easy.`} />
         </>
       ),
     },

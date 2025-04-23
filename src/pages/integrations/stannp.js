@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Stannp"
-      description="Stannp is a service for posting real, physical direct mail such as postcards or letters to recipients' mail boxes, anywhere in the world."
+      description={`Stannp is a service for posting real, physical direct mail such as postcards or letters to recipients' mail boxes, anywhere in the world.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -72,7 +72,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Stannp</title>
-          <meta name="description" content="Stannp is a service for posting real, physical direct mail such as postcards or letters to recipients' mail boxes, anywhere in the world." />
+          <meta name="description" content={`Stannp is a service for posting real, physical direct mail such as postcards or letters to recipients' mail boxes, anywhere in the world.`} />
         </>
       ),
     },

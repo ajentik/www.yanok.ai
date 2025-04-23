@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Fill"
-      description="Fill is the effortless way to fill, sign and send documents and forms."
+      description={`Fill is the effortless way to fill, sign and send documents and forms.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -62,7 +62,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Fill</title>
-          <meta name="description" content="Fill is the effortless way to fill, sign and send documents and forms." />
+          <meta name="description" content={`Fill is the effortless way to fill, sign and send documents and forms.`} />
         </>
       ),
     },

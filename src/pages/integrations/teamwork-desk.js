@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Teamwork Desk"
-      description="Teamwork Desk makes it easy for your team to handle any customer support queries that come their way."
+      description={`Teamwork Desk makes it easy for your team to handle any customer support queries that come their way.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -151,7 +151,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Teamwork Desk</title>
-          <meta name="description" content="Teamwork Desk makes it easy for your team to handle any customer support queries that come their way." />
+          <meta name="description" content={`Teamwork Desk makes it easy for your team to handle any customer support queries that come their way.`} />
         </>
       ),
     },

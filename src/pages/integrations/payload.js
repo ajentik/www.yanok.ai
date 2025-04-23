@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Payload"
-      description="Payload is a flexible payment stack for modern platforms."
+      description={`Payload is a flexible payment stack for modern platforms.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Payload</title>
-          <meta name="description" content="Payload is a flexible payment stack for modern platforms." />
+          <meta name="description" content={`Payload is a flexible payment stack for modern platforms.`} />
         </>
       ),
     },

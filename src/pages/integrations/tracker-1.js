@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Tracker"
-      description="Tracker helps recruitment and staffing firms build better relationships, workflows, and revenue with our integrated Recruitment ATS and CRM"
+      description={`Tracker helps recruitment and staffing firms build better relationships, workflows, and revenue with our integrated Recruitment ATS and CRM`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -191,7 +191,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Tracker</title>
-          <meta name="description" content="Tracker helps recruitment and staffing firms build better relationships, workflows, and revenue with our integrated Recruitment ATS and CRM" />
+          <meta name="description" content={`Tracker helps recruitment and staffing firms build better relationships, workflows, and revenue with our integrated Recruitment ATS and CRM`} />
         </>
       ),
     },

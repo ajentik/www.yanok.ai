@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Authvia"
-      description="Authvia allows you to send and receive payments through simple text requests."
+      description={`Authvia allows you to send and receive payments through simple text requests.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -86,7 +86,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Authvia</title>
-          <meta name="description" content="Authvia allows you to send and receive payments through simple text requests." />
+          <meta name="description" content={`Authvia allows you to send and receive payments through simple text requests.`} />
         </>
       ),
     },

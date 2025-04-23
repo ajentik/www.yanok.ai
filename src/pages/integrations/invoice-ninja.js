@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Invoice Ninja"
-      description="Create. Send. Get Paid. Invoice Ninja is a free, code-available suite of apps to invoice clients, accept payments, track expenses & time billable-tasks. Designed for freelancers and small to medium-sized businesses to increase efficiency, Invoice Ninja will help you get paid!"
+      description={`Create. Send. Get Paid. Invoice Ninja is a free, code-available suite of apps to invoice clients, accept payments, track expenses & time billable-tasks. Designed for freelancers and small to medium-sized businesses to increase efficiency, Invoice Ninja will help you get paid!`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -191,7 +191,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Invoice Ninja</title>
-          <meta name="description" content="Create. Send. Get Paid. Invoice Ninja is a free, code-available suite of apps to invoice clients, accept payments, track expenses & time billable-tasks. Designed for freelancers and small to medium-sized businesses to increase efficiency, Invoice Ninja will help you get paid!" />
+          <meta name="description" content={`Create. Send. Get Paid. Invoice Ninja is a free, code-available suite of apps to invoice clients, accept payments, track expenses & time billable-tasks. Designed for freelancers and small to medium-sized businesses to increase efficiency, Invoice Ninja will help you get paid!`} />
         </>
       ),
     },

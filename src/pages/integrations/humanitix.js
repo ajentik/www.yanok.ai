@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Humanitix"
-      description="Humanitix is a not-for-profit ticketing platform, in which all booking fees are donated to a charity of the event organiser's choice."
+      description={`Humanitix is a not-for-profit ticketing platform, in which all booking fees are donated to a charity of the event organiser's choice.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -81,7 +81,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Humanitix</title>
-          <meta name="description" content="Humanitix is a not-for-profit ticketing platform, in which all booking fees are donated to a charity of the event organiser's choice." />
+          <meta name="description" content={`Humanitix is a not-for-profit ticketing platform, in which all booking fees are donated to a charity of the event organiser's choice.`} />
         </>
       ),
     },

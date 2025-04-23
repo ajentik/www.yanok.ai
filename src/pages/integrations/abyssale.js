@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Abyssale"
-      description="Abyssale is a banner maker platform that helps you to automatically generate on-brand images at scale."
+      description={`Abyssale is a banner maker platform that helps you to automatically generate on-brand images at scale.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -131,7 +131,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Abyssale</title>
-          <meta name="description" content="Abyssale is a banner maker platform that helps you to automatically generate on-brand images at scale." />
+          <meta name="description" content={`Abyssale is a banner maker platform that helps you to automatically generate on-brand images at scale.`} />
         </>
       ),
     },

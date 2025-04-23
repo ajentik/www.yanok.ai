@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Hippo CMMS"
-      description="Hippo CMMS is a simple solution for preventive maintenance, work order management, equipment maintenance, inventory and more!"
+      description={`Hippo CMMS is a simple solution for preventive maintenance, work order management, equipment maintenance, inventory and more!`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -61,7 +61,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Hippo CMMS</title>
-          <meta name="description" content="Hippo CMMS is a simple solution for preventive maintenance, work order management, equipment maintenance, inventory and more!" />
+          <meta name="description" content={`Hippo CMMS is a simple solution for preventive maintenance, work order management, equipment maintenance, inventory and more!`} />
         </>
       ),
     },

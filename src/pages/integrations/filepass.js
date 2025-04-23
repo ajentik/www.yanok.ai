@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Filepass"
-      description="Filepass is file sharing built for the audio industry."
+      description={`Filepass is file sharing built for the audio industry.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -71,7 +71,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Filepass</title>
-          <meta name="description" content="Filepass is file sharing built for the audio industry." />
+          <meta name="description" content={`Filepass is file sharing built for the audio industry.`} />
         </>
       ),
     },

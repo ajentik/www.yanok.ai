@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="BugReplay"
-      description="BugReplay gives you all the data you need to diagnose and fix issues."
+      description={`BugReplay gives you all the data you need to diagnose and fix issues.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>BugReplay</title>
-          <meta name="description" content="BugReplay gives you all the data you need to diagnose and fix issues." />
+          <meta name="description" content={`BugReplay gives you all the data you need to diagnose and fix issues.`} />
         </>
       ),
     },

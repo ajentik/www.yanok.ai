@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Zingtree"
-      description="Zingtree makes it easy to build and maintain interactive troubleshooters and process flows with ZERO coding."
+      description={`Zingtree makes it easy to build and maintain interactive troubleshooters and process flows with ZERO coding.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +53,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Zingtree</title>
-          <meta name="description" content="Zingtree makes it easy to build and maintain interactive troubleshooters and process flows with ZERO coding." />
+          <meta name="description" content={`Zingtree makes it easy to build and maintain interactive troubleshooters and process flows with ZERO coding.`} />
         </>
       ),
     },

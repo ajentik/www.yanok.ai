@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Aesthetic Record EMR"
-      description="Aesthetic Record EMR is A Complete Practice Management & EMR Solution in the Industry. Software Designed To Make Growing Your Aesthetic Practice Easy."
+      description={`Aesthetic Record EMR is A Complete Practice Management & EMR Solution in the Industry. Software Designed To Make Growing Your Aesthetic Practice Easy.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -62,7 +62,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Aesthetic Record EMR</title>
-          <meta name="description" content="Aesthetic Record EMR is A Complete Practice Management & EMR Solution in the Industry. Software Designed To Make Growing Your Aesthetic Practice Easy." />
+          <meta name="description" content={`Aesthetic Record EMR is A Complete Practice Management & EMR Solution in the Industry. Software Designed To Make Growing Your Aesthetic Practice Easy.`} />
         </>
       ),
     },

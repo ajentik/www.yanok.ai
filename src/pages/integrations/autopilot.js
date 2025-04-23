@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Autopilot Journeys"
-      description="Autopilot Journeys is visual marketing software for automating customer journeys, to help companies acquire and nurture leads through email, web, SMS and direct mail."
+      description={`Autopilot Journeys is visual marketing software for automating customer journeys, to help companies acquire and nurture leads through email, web, SMS and direct mail.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -91,7 +91,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Autopilot Journeys</title>
-          <meta name="description" content="Autopilot Journeys is visual marketing software for automating customer journeys, to help companies acquire and nurture leads through email, web, SMS and direct mail." />
+          <meta name="description" content={`Autopilot Journeys is visual marketing software for automating customer journeys, to help companies acquire and nurture leads through email, web, SMS and direct mail.`} />
         </>
       ),
     },

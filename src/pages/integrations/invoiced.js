@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Invoiced"
-      description="Invoiced is autopilot for accounts receivable."
+      description={`Invoiced is autopilot for accounts receivable.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -191,7 +191,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Invoiced</title>
-          <meta name="description" content="Invoiced is autopilot for accounts receivable." />
+          <meta name="description" content={`Invoiced is autopilot for accounts receivable.`} />
         </>
       ),
     },

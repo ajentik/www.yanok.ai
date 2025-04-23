@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Apiary"
-      description="Apiary provides the leading API-First platform designed specifically to help companies accelerate and control the design, development, and documentation of APIs."
+      description={`Apiary provides the leading API-First platform designed specifically to help companies accelerate and control the design, development, and documentation of APIs.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +53,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Apiary</title>
-          <meta name="description" content="Apiary provides the leading API-First platform designed specifically to help companies accelerate and control the design, development, and documentation of APIs." />
+          <meta name="description" content={`Apiary provides the leading API-First platform designed specifically to help companies accelerate and control the design, development, and documentation of APIs.`} />
         </>
       ),
     },

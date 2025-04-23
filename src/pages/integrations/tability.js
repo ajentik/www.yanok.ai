@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Tability"
-      description="Tability is a simple goal-tracking platform for OKRs and team goals"
+      description={`Tability is a simple goal-tracking platform for OKRs and team goals`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Tability</title>
-          <meta name="description" content="Tability is a simple goal-tracking platform for OKRs and team goals" />
+          <meta name="description" content={`Tability is a simple goal-tracking platform for OKRs and team goals`} />
         </>
       ),
     },

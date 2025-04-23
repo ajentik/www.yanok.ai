@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Workday"
-      description="Workday, Inc. is an on‑demand financial management and human capital management software vendor."
+      description={`Workday, Inc. is an on‑demand financial management and human capital management software vendor.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +53,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Workday</title>
-          <meta name="description" content="Workday, Inc. is an on‑demand financial management and human capital management software vendor." />
+          <meta name="description" content={`Workday, Inc. is an on‑demand financial management and human capital management software vendor.`} />
         </>
       ),
     },

@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Journalize.io"
-      description="Journalize is a tool that turns financial transaction data into GL entries"
+      description={`Journalize is a tool that turns financial transaction data into GL entries`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -67,7 +67,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Journalize.io</title>
-          <meta name="description" content="Journalize is a tool that turns financial transaction data into GL entries" />
+          <meta name="description" content={`Journalize is a tool that turns financial transaction data into GL entries`} />
         </>
       ),
     },

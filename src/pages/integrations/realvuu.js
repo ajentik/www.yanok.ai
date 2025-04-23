@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="RealVuu"
-      description="RealVuu is a real estate platform that helps promoters fill their empty units"
+      description={`RealVuu is a real estate platform that helps promoters fill their empty units`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>RealVuu</title>
-          <meta name="description" content="RealVuu is a real estate platform that helps promoters fill their empty units" />
+          <meta name="description" content={`RealVuu is a real estate platform that helps promoters fill their empty units`} />
         </>
       ),
     },

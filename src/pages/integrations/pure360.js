@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Pure360"
-      description="Pure360 offers marketing automation powered by email, enabling UK marketers to deliver targeted multi-channel campaigns."
+      description={`Pure360 offers marketing automation powered by email, enabling UK marketers to deliver targeted multi-channel campaigns.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -81,7 +81,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Pure360</title>
-          <meta name="description" content="Pure360 offers marketing automation powered by email, enabling UK marketers to deliver targeted multi-channel campaigns." />
+          <meta name="description" content={`Pure360 offers marketing automation powered by email, enabling UK marketers to deliver targeted multi-channel campaigns.`} />
         </>
       ),
     },

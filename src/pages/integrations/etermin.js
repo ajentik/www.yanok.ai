@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="eTermin"
-      description="eTermin allows your customers to access all available appointments online and book one directly - 7 days a week, around the clock."
+      description={`eTermin allows your customers to access all available appointments online and book one directly - 7 days a week, around the clock.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -71,7 +71,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>eTermin</title>
-          <meta name="description" content="eTermin allows your customers to access all available appointments online and book one directly - 7 days a week, around the clock." />
+          <meta name="description" content={`eTermin allows your customers to access all available appointments online and book one directly - 7 days a week, around the clock.`} />
         </>
       ),
     },

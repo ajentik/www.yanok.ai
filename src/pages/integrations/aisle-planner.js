@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Aisle Planner"
-      description="Aisle Planner started with the idea that there was a better way to plan weddings - that wedding professionals could have all of the wedding planning and client management tools they need, all in one reliable place. With everything from lead management and booking tools to checklists, day-of timelines and a guest manager, Aisle Planner has what wedding industry pros need to book clients quickly and manage the million and one details that come with the job."
+      description={`Aisle Planner started with the idea that there was a better way to plan weddings - that wedding professionals could have all of the wedding planning and client management tools they need, all in one reliable place. With everything from lead management and booking tools to checklists, day-of timelines and a guest manager, Aisle Planner has what wedding industry pros need to book clients quickly and manage the million and one details that come with the job.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -81,7 +81,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Aisle Planner</title>
-          <meta name="description" content="Aisle Planner started with the idea that there was a better way to plan weddings - that wedding professionals could have all of the wedding planning and client management tools they need, all in one reliable place. With everything from lead management and booking tools to checklists, day-of timelines and a guest manager, Aisle Planner has what wedding industry pros need to book clients quickly and manage the million and one details that come with the job." />
+          <meta name="description" content={`Aisle Planner started with the idea that there was a better way to plan weddings - that wedding professionals could have all of the wedding planning and client management tools they need, all in one reliable place. With everything from lead management and booking tools to checklists, day-of timelines and a guest manager, Aisle Planner has what wedding industry pros need to book clients quickly and manage the million and one details that come with the job.`} />
         </>
       ),
     },

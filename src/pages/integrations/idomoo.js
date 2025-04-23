@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Idomoo"
-      description="Idomoo’s Personalized Marketing Videos enable you to easily engage with your customers on a truly personal level, driving loyalty and revenue growth."
+      description={`Idomoo’s Personalized Marketing Videos enable you to easily engage with your customers on a truly personal level, driving loyalty and revenue growth.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +53,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Idomoo</title>
-          <meta name="description" content="Idomoo’s Personalized Marketing Videos enable you to easily engage with your customers on a truly personal level, driving loyalty and revenue growth." />
+          <meta name="description" content={`Idomoo’s Personalized Marketing Videos enable you to easily engage with your customers on a truly personal level, driving loyalty and revenue growth.`} />
         </>
       ),
     },

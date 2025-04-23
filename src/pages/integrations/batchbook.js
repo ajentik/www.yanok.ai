@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Batchbook"
-      description="Batchbook is a social CRM. It has all the standard features of a CRM plus it can take in Twitter streams, Facebook updates, RSS feeds and more."
+      description={`Batchbook is a social CRM. It has all the standard features of a CRM plus it can take in Twitter streams, Facebook updates, RSS feeds and more.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -76,7 +76,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Batchbook</title>
-          <meta name="description" content="Batchbook is a social CRM. It has all the standard features of a CRM plus it can take in Twitter streams, Facebook updates, RSS feeds and more." />
+          <meta name="description" content={`Batchbook is a social CRM. It has all the standard features of a CRM plus it can take in Twitter streams, Facebook updates, RSS feeds and more.`} />
         </>
       ),
     },

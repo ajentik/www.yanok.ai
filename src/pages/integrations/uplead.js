@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="UpLead"
-      description="UpLead is a B2B sales intelligence platform to drive growth."
+      description={`UpLead is a B2B sales intelligence platform to drive growth.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -76,7 +76,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>UpLead</title>
-          <meta name="description" content="UpLead is a B2B sales intelligence platform to drive growth." />
+          <meta name="description" content={`UpLead is a B2B sales intelligence platform to drive growth.`} />
         </>
       ),
     },

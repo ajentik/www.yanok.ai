@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Brick FTP"
-      description="Get your own server to send and receive files to and from your clients, vendors and co-workers. Supports any browser, operating system, or FTP program. Flexible permissions and military-strength encryption protect your files."
+      description={`Get your own server to send and receive files to and from your clients, vendors and co-workers. Supports any browser, operating system, or FTP program. Flexible permissions and military-strength encryption protect your files.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -86,7 +86,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Brick FTP</title>
-          <meta name="description" content="Get your own server to send and receive files to and from your clients, vendors and co-workers. Supports any browser, operating system, or FTP program. Flexible permissions and military-strength encryption protect your files." />
+          <meta name="description" content={`Get your own server to send and receive files to and from your clients, vendors and co-workers. Supports any browser, operating system, or FTP program. Flexible permissions and military-strength encryption protect your files.`} />
         </>
       ),
     },

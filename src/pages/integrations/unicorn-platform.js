@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Unicorn Platform"
-      description="Unicorn Platform is a drag & drop website and blog builder for startups, mobile apps, and SaaS."
+      description={`Unicorn Platform is a drag & drop website and blog builder for startups, mobile apps, and SaaS.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Unicorn Platform</title>
-          <meta name="description" content="Unicorn Platform is a drag & drop website and blog builder for startups, mobile apps, and SaaS." />
+          <meta name="description" content={`Unicorn Platform is a drag & drop website and blog builder for startups, mobile apps, and SaaS.`} />
         </>
       ),
     },

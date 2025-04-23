@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Notifii"
-      description="Notifii is a package management and notification tool for corporate mailrooms and apartment offices."
+      description={`Notifii is a package management and notification tool for corporate mailrooms and apartment offices.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Notifii</title>
-          <meta name="description" content="Notifii is a package management and notification tool for corporate mailrooms and apartment offices." />
+          <meta name="description" content={`Notifii is a package management and notification tool for corporate mailrooms and apartment offices.`} />
         </>
       ),
     },

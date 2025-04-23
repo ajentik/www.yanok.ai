@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Karen"
-      description="Karen is an AI enabled scheduling service that helps schedule appointment, take payment, and send reminders."
+      description={`Karen is an AI enabled scheduling service that helps schedule appointment, take payment, and send reminders.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -67,7 +67,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Karen</title>
-          <meta name="description" content="Karen is an AI enabled scheduling service that helps schedule appointment, take payment, and send reminders." />
+          <meta name="description" content={`Karen is an AI enabled scheduling service that helps schedule appointment, take payment, and send reminders.`} />
         </>
       ),
     },

@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="CRM in Cloud"
-      description="CRM in Cloud offers contact management, marketing automation, quote generation, analytics, telephony integration, sales force management with a modern and easy to use interface."
+      description={`CRM in Cloud offers contact management, marketing automation, quote generation, analytics, telephony integration, sales force management with a modern and easy to use interface.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -201,7 +201,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>CRM in Cloud</title>
-          <meta name="description" content="CRM in Cloud offers contact management, marketing automation, quote generation, analytics, telephony integration, sales force management with a modern and easy to use interface." />
+          <meta name="description" content={`CRM in Cloud offers contact management, marketing automation, quote generation, analytics, telephony integration, sales force management with a modern and easy to use interface.`} />
         </>
       ),
     },

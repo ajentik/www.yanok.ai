@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Blink"
-      description="Blink is a workplace messaging platform that uses bots, apps and messaging to simplify work."
+      description={`Blink is a workplace messaging platform that uses bots, apps and messaging to simplify work.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Blink</title>
-          <meta name="description" content="Blink is a workplace messaging platform that uses bots, apps and messaging to simplify work." />
+          <meta name="description" content={`Blink is a workplace messaging platform that uses bots, apps and messaging to simplify work.`} />
         </>
       ),
     },

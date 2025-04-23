@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Turbine"
-      description="Turbine makes it easy to create, review and manage purchase orders online or on your smartphone. Get control of your spending and streamline your approval process using our simple online order form."
+      description={`Turbine makes it easy to create, review and manage purchase orders online or on your smartphone. Get control of your spending and streamline your approval process using our simple online order form.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -121,7 +121,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Turbine</title>
-          <meta name="description" content="Turbine makes it easy to create, review and manage purchase orders online or on your smartphone. Get control of your spending and streamline your approval process using our simple online order form." />
+          <meta name="description" content={`Turbine makes it easy to create, review and manage purchase orders online or on your smartphone. Get control of your spending and streamline your approval process using our simple online order form.`} />
         </>
       ),
     },

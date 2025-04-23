@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Rolldog"
-      description="Rolldog is a CRM designed to manage your business relationships, increase revenue and boost sales effectiveness."
+      description={`Rolldog is a CRM designed to manage your business relationships, increase revenue and boost sales effectiveness.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -116,7 +116,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Rolldog</title>
-          <meta name="description" content="Rolldog is a CRM designed to manage your business relationships, increase revenue and boost sales effectiveness." />
+          <meta name="description" content={`Rolldog is a CRM designed to manage your business relationships, increase revenue and boost sales effectiveness.`} />
         </>
       ),
     },

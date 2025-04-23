@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Digital Pigeon"
-      description="Digital Pigeon is a large file sharing service for digital media producers, creatives, and anyone wishing to send large files via the internet."
+      description={`Digital Pigeon is a large file sharing service for digital media producers, creatives, and anyone wishing to send large files via the internet.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -116,7 +116,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Digital Pigeon</title>
-          <meta name="description" content="Digital Pigeon is a large file sharing service for digital media producers, creatives, and anyone wishing to send large files via the internet." />
+          <meta name="description" content={`Digital Pigeon is a large file sharing service for digital media producers, creatives, and anyone wishing to send large files via the internet.`} />
         </>
       ),
     },

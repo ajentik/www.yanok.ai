@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Systeme.io"
-      description="Systeme.io allows you to build sales funnels, send emails and automate your entire business."
+      description={`Systeme.io allows you to build sales funnels, send emails and automate your entire business.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -106,7 +106,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Systeme.io</title>
-          <meta name="description" content="Systeme.io allows you to build sales funnels, send emails and automate your entire business." />
+          <meta name="description" content={`Systeme.io allows you to build sales funnels, send emails and automate your entire business.`} />
         </>
       ),
     },

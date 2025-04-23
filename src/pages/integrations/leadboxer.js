@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="LeadBoxer"
-      description="Generate B2B sales leads from your online data. We analyse your online data in realtime and show you the businesses who visited your site. Score, rank, filter your leads and contact them."
+      description={`Generate B2B sales leads from your online data. We analyse your online data in realtime and show you the businesses who visited your site. Score, rank, filter your leads and contact them.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -61,7 +61,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>LeadBoxer</title>
-          <meta name="description" content="Generate B2B sales leads from your online data. We analyse your online data in realtime and show you the businesses who visited your site. Score, rank, filter your leads and contact them." />
+          <meta name="description" content={`Generate B2B sales leads from your online data. We analyse your online data in realtime and show you the businesses who visited your site. Score, rank, filter your leads and contact them.`} />
         </>
       ),
     },

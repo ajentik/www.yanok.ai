@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="V8 Media"
-      description="It is a revolutionary, world`s very first,most powerful and complete Messenger marketing software."
+      description={`It is a revolutionary, world`s very first,most powerful and complete Messenger marketing software.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>V8 Media</title>
-          <meta name="description" content="It is a revolutionary, world`s very first,most powerful and complete Messenger marketing software." />
+          <meta name="description" content={`It is a revolutionary, world`s very first,most powerful and complete Messenger marketing software.`} />
         </>
       ),
     },

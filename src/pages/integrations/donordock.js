@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="DonorDock"
-      description="DonorDock is a CRM designed for small nonprofits that helps you raise more money in less time."
+      description={`DonorDock is a CRM designed for small nonprofits that helps you raise more money in less time.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -141,7 +141,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>DonorDock</title>
-          <meta name="description" content="DonorDock is a CRM designed for small nonprofits that helps you raise more money in less time." />
+          <meta name="description" content={`DonorDock is a CRM designed for small nonprofits that helps you raise more money in less time.`} />
         </>
       ),
     },

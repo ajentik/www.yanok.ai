@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Wufoo"
-      description="Wufoo is an easy way to create and manage HTML forms."
+      description={`Wufoo is an easy way to create and manage HTML forms.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -91,7 +91,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Wufoo</title>
-          <meta name="description" content="Wufoo is an easy way to create and manage HTML forms." />
+          <meta name="description" content={`Wufoo is an easy way to create and manage HTML forms.`} />
         </>
       ),
     },

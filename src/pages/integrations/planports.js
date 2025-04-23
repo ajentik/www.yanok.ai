@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Planports"
-      description="Planports combines CRM and Business Management tools like proposals, orders, stock management and accounting"
+      description={`Planports combines CRM and Business Management tools like proposals, orders, stock management and accounting`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -66,7 +66,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Planports</title>
-          <meta name="description" content="Planports combines CRM and Business Management tools like proposals, orders, stock management and accounting" />
+          <meta name="description" content={`Planports combines CRM and Business Management tools like proposals, orders, stock management and accounting`} />
         </>
       ),
     },

@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Replyify"
-      description="Replyify is a B2B sales platform to automate personalized cold emails & follow-ups. Generate a consistent pipeline of leads sent directly to your inbox and CRM."
+      description={`Replyify is a B2B sales platform to automate personalized cold emails & follow-ups. Generate a consistent pipeline of leads sent directly to your inbox and CRM.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -81,7 +81,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Replyify</title>
-          <meta name="description" content="Replyify is a B2B sales platform to automate personalized cold emails & follow-ups. Generate a consistent pipeline of leads sent directly to your inbox and CRM." />
+          <meta name="description" content={`Replyify is a B2B sales platform to automate personalized cold emails & follow-ups. Generate a consistent pipeline of leads sent directly to your inbox and CRM.`} />
         </>
       ),
     },

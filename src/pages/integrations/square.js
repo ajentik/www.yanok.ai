@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Square"
-      description="Square creates tools that help sellers of all sizes start, run and grow their businesses. Square’s point-of-sale service offers tools for every part of running a business, from accepting credit cards and tracking inventory to real-time analytics and invoicing."
+      description={`Square creates tools that help sellers of all sizes start, run and grow their businesses. Square’s point-of-sale service offers tools for every part of running a business, from accepting credit cards and tracking inventory to real-time analytics and invoicing.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -156,7 +156,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Square</title>
-          <meta name="description" content="Square creates tools that help sellers of all sizes start, run and grow their businesses. Square’s point-of-sale service offers tools for every part of running a business, from accepting credit cards and tracking inventory to real-time analytics and invoicing." />
+          <meta name="description" content={`Square creates tools that help sellers of all sizes start, run and grow their businesses. Square’s point-of-sale service offers tools for every part of running a business, from accepting credit cards and tracking inventory to real-time analytics and invoicing.`} />
         </>
       ),
     },

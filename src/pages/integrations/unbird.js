@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Unbird"
-      description="Unbird is a seamless way to collect, analyze, and action your customer feedback."
+      description={`Unbird is a seamless way to collect, analyze, and action your customer feedback.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -66,7 +66,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Unbird</title>
-          <meta name="description" content="Unbird is a seamless way to collect, analyze, and action your customer feedback." />
+          <meta name="description" content={`Unbird is a seamless way to collect, analyze, and action your customer feedback.`} />
         </>
       ),
     },

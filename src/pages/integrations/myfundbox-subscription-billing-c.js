@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="MYFUNDBOX"
-      description="MYFUNDBOX Subscription Billing Platform is the simplest way to Accept, Process, Manage subscriptions Billing securely."
+      description={`MYFUNDBOX Subscription Billing Platform is the simplest way to Accept, Process, Manage subscriptions Billing securely.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>MYFUNDBOX</title>
-          <meta name="description" content="MYFUNDBOX Subscription Billing Platform is the simplest way to Accept, Process, Manage subscriptions Billing securely." />
+          <meta name="description" content={`MYFUNDBOX Subscription Billing Platform is the simplest way to Accept, Process, Manage subscriptions Billing securely.`} />
         </>
       ),
     },

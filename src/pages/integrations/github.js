@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="GitHub"
-      description="GitHub is the perfect place to share code and work collaboratively on private and open source software."
+      description={`GitHub is the perfect place to share code and work collaboratively on private and open source software.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -226,7 +226,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>GitHub</title>
-          <meta name="description" content="GitHub is the perfect place to share code and work collaboratively on private and open source software." />
+          <meta name="description" content={`GitHub is the perfect place to share code and work collaboratively on private and open source software.`} />
         </>
       ),
     },

@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="NextAgency"
-      description="NextAgency is an insurance agency management software and CRM that helps producers save time, money and clients."
+      description={`NextAgency is an insurance agency management software and CRM that helps producers save time, money and clients.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -86,7 +86,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>NextAgency</title>
-          <meta name="description" content="NextAgency is an insurance agency management software and CRM that helps producers save time, money and clients." />
+          <meta name="description" content={`NextAgency is an insurance agency management software and CRM that helps producers save time, money and clients.`} />
         </>
       ),
     },

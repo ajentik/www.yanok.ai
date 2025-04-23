@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Thrive Themes"
-      description="Thrive Themes is a company that provides marketing focused themes and plugins for building a conversion focused website on WordPress"
+      description={`Thrive Themes is a company that provides marketing focused themes and plugins for building a conversion focused website on WordPress`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -62,7 +62,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Thrive Themes</title>
-          <meta name="description" content="Thrive Themes is a company that provides marketing focused themes and plugins for building a conversion focused website on WordPress" />
+          <meta name="description" content={`Thrive Themes is a company that provides marketing focused themes and plugins for building a conversion focused website on WordPress`} />
         </>
       ),
     },

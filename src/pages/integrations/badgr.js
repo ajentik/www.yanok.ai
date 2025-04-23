@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Badgr"
-      description="Badgr makes it easy to collect and award digital badges and micro-credentials! Whether you are an educator, employer, or program administrator secure, portable, and shareable digital credentials are a great way to recognize accomplishments while engaging your audience."
+      description={`Badgr makes it easy to collect and award digital badges and micro-credentials! Whether you are an educator, employer, or program administrator secure, portable, and shareable digital credentials are a great way to recognize accomplishments while engaging your audience.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Badgr</title>
-          <meta name="description" content="Badgr makes it easy to collect and award digital badges and micro-credentials! Whether you are an educator, employer, or program administrator secure, portable, and shareable digital credentials are a great way to recognize accomplishments while engaging your audience." />
+          <meta name="description" content={`Badgr makes it easy to collect and award digital badges and micro-credentials! Whether you are an educator, employer, or program administrator secure, portable, and shareable digital credentials are a great way to recognize accomplishments while engaging your audience.`} />
         </>
       ),
     },

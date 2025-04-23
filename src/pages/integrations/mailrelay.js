@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Mailrelay"
-      description="Mailrelay is an advanced email marketing platform with powerful features. It allows you to create, send and manage your newsletters providing complete subscriber behaviour statistics."
+      description={`Mailrelay is an advanced email marketing platform with powerful features. It allows you to create, send and manage your newsletters providing complete subscriber behaviour statistics.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +53,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Mailrelay</title>
-          <meta name="description" content="Mailrelay is an advanced email marketing platform with powerful features. It allows you to create, send and manage your newsletters providing complete subscriber behaviour statistics." />
+          <meta name="description" content={`Mailrelay is an advanced email marketing platform with powerful features. It allows you to create, send and manage your newsletters providing complete subscriber behaviour statistics.`} />
         </>
       ),
     },

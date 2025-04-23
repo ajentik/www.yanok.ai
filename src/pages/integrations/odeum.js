@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Odeum"
-      description="Odeum is a complete solution for launching a branded subscription video service with apps on every major platform."
+      description={`Odeum is a complete solution for launching a branded subscription video service with apps on every major platform.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -82,7 +82,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Odeum</title>
-          <meta name="description" content="Odeum is a complete solution for launching a branded subscription video service with apps on every major platform." />
+          <meta name="description" content={`Odeum is a complete solution for launching a branded subscription video service with apps on every major platform.`} />
         </>
       ),
     },

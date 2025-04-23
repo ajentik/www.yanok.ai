@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Simplesat"
-      description="Simplesat is a survey tool that makes it easy for any business to collect, analyze and publish customer feedback."
+      description={`Simplesat is a survey tool that makes it easy for any business to collect, analyze and publish customer feedback.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Simplesat</title>
-          <meta name="description" content="Simplesat is a survey tool that makes it easy for any business to collect, analyze and publish customer feedback." />
+          <meta name="description" content={`Simplesat is a survey tool that makes it easy for any business to collect, analyze and publish customer feedback.`} />
         </>
       ),
     },

@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="IDX Leads"
-      description="IDX Leads is a system for real estate lead capture. Leverage your MLS/IDX listings to collect qualified leads from high quality traffic."
+      description={`IDX Leads is a system for real estate lead capture. Leverage your MLS/IDX listings to collect qualified leads from high quality traffic.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -61,7 +61,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>IDX Leads</title>
-          <meta name="description" content="IDX Leads is a system for real estate lead capture. Leverage your MLS/IDX listings to collect qualified leads from high quality traffic." />
+          <meta name="description" content={`IDX Leads is a system for real estate lead capture. Leverage your MLS/IDX listings to collect qualified leads from high quality traffic.`} />
         </>
       ),
     },

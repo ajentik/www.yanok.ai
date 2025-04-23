@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="InVision"
-      description="InVision is a digital product design platform powering the world’s best user experiences."
+      description={`InVision is a digital product design platform powering the world’s best user experiences.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +53,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>InVision</title>
-          <meta name="description" content="InVision is a digital product design platform powering the world’s best user experiences." />
+          <meta name="description" content={`InVision is a digital product design platform powering the world’s best user experiences.`} />
         </>
       ),
     },

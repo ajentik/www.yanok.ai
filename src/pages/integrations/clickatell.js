@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Clickatell"
-      description="Send SMS messages (up to 765 characters) through your Clickatell account to alert mobile users on various triggers OR execute actions based on receiving an SMS in your Clickatell two way account."
+      description={`Send SMS messages (up to 765 characters) through your Clickatell account to alert mobile users on various triggers OR execute actions based on receiving an SMS in your Clickatell two way account.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -61,7 +61,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Clickatell</title>
-          <meta name="description" content="Send SMS messages (up to 765 characters) through your Clickatell account to alert mobile users on various triggers OR execute actions based on receiving an SMS in your Clickatell two way account." />
+          <meta name="description" content={`Send SMS messages (up to 765 characters) through your Clickatell account to alert mobile users on various triggers OR execute actions based on receiving an SMS in your Clickatell two way account.`} />
         </>
       ),
     },

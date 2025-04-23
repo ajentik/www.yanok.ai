@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Mediatoolkit"
-      description="Mediatoolkit is a media monitoring tool that tracks relevant mentions of your brand across the web and social media in real time."
+      description={`Mediatoolkit is a media monitoring tool that tracks relevant mentions of your brand across the web and social media in real time.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Mediatoolkit</title>
-          <meta name="description" content="Mediatoolkit is a media monitoring tool that tracks relevant mentions of your brand across the web and social media in real time." />
+          <meta name="description" content={`Mediatoolkit is a media monitoring tool that tracks relevant mentions of your brand across the web and social media in real time.`} />
         </>
       ),
     },

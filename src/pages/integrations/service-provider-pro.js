@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Service Provider Pro"
-      description="SPP is a shopping cart and project management software for selling productized services."
+      description={`SPP is a shopping cart and project management software for selling productized services.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -111,7 +111,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Service Provider Pro</title>
-          <meta name="description" content="SPP is a shopping cart and project management software for selling productized services." />
+          <meta name="description" content={`SPP is a shopping cart and project management software for selling productized services.`} />
         </>
       ),
     },

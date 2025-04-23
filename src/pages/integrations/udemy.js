@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Udemy"
-      description="Udemy.com is an online learning platform. It is aimed at professional adults. Udemy uses content from online content creators to sell for profit."
+      description={`Udemy.com is an online learning platform. It is aimed at professional adults. Udemy uses content from online content creators to sell for profit.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +53,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Udemy</title>
-          <meta name="description" content="Udemy.com is an online learning platform. It is aimed at professional adults. Udemy uses content from online content creators to sell for profit." />
+          <meta name="description" content={`Udemy.com is an online learning platform. It is aimed at professional adults. Udemy uses content from online content creators to sell for profit.`} />
         </>
       ),
     },

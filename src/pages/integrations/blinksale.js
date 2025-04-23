@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Blinksale"
-      description="Blinksale makes it easy to send invoices and track payments. Every Blinksale invoice and estimate tracks its own history, reminders, comments, payments and more."
+      description={`Blinksale makes it easy to send invoices and track payments. Every Blinksale invoice and estimate tracks its own history, reminders, comments, payments and more.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Blinksale</title>
-          <meta name="description" content="Blinksale makes it easy to send invoices and track payments. Every Blinksale invoice and estimate tracks its own history, reminders, comments, payments and more." />
+          <meta name="description" content={`Blinksale makes it easy to send invoices and track payments. Every Blinksale invoice and estimate tracks its own history, reminders, comments, payments and more.`} />
         </>
       ),
     },

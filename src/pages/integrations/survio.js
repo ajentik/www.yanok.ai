@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Survio"
-      description="Survio helps small companies as well as large organizations capture valuable customer insight, employee feedback, and other evaluation data for proper decision making, workflow refinement and business efficiency."
+      description={`Survio helps small companies as well as large organizations capture valuable customer insight, employee feedback, and other evaluation data for proper decision making, workflow refinement and business efficiency.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -61,7 +61,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Survio</title>
-          <meta name="description" content="Survio helps small companies as well as large organizations capture valuable customer insight, employee feedback, and other evaluation data for proper decision making, workflow refinement and business efficiency." />
+          <meta name="description" content={`Survio helps small companies as well as large organizations capture valuable customer insight, employee feedback, and other evaluation data for proper decision making, workflow refinement and business efficiency.`} />
         </>
       ),
     },

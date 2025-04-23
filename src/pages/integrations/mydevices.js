@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="myDevices"
-      description="One platform. Infinite plug-and-play IoT solutions."
+      description={`One platform. Infinite plug-and-play IoT solutions.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -72,7 +72,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>myDevices</title>
-          <meta name="description" content="One platform. Infinite plug-and-play IoT solutions." />
+          <meta name="description" content={`One platform. Infinite plug-and-play IoT solutions.`} />
         </>
       ),
     },

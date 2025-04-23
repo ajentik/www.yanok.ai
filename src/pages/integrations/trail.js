@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Trail"
-      description="Trail is a checklist and compliance app to guide hospitality teams through their day"
+      description={`Trail is a checklist and compliance app to guide hospitality teams through their day`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -61,7 +61,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Trail</title>
-          <meta name="description" content="Trail is a checklist and compliance app to guide hospitality teams through their day" />
+          <meta name="description" content={`Trail is a checklist and compliance app to guide hospitality teams through their day`} />
         </>
       ),
     },

@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Wefunder"
-      description="Wefunder is a crowdfunding service which connects startups with investors online."
+      description={`Wefunder is a crowdfunding service which connects startups with investors online.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +53,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Wefunder</title>
-          <meta name="description" content="Wefunder is a crowdfunding service which connects startups with investors online." />
+          <meta name="description" content={`Wefunder is a crowdfunding service which connects startups with investors online.`} />
         </>
       ),
     },

@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Smshosting"
-      description="Smshosting is a professional tool to send SMS, push notifications, and to create mobile landing pages."
+      description={`Smshosting is a professional tool to send SMS, push notifications, and to create mobile landing pages.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -77,7 +77,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Smshosting</title>
-          <meta name="description" content="Smshosting is a professional tool to send SMS, push notifications, and to create mobile landing pages." />
+          <meta name="description" content={`Smshosting is a professional tool to send SMS, push notifications, and to create mobile landing pages.`} />
         </>
       ),
     },

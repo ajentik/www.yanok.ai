@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="UPilot"
-      description="UPilot is a CRM with advanced features like role-based access and control, email tracking, revenue forecast, all on a single platform and easy to use interface, resulting in enthusiastic user adoption in fast-growing companies."
+      description={`UPilot is a CRM with advanced features like role-based access and control, email tracking, revenue forecast, all on a single platform and easy to use interface, resulting in enthusiastic user adoption in fast-growing companies.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -77,7 +77,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>UPilot</title>
-          <meta name="description" content="UPilot is a CRM with advanced features like role-based access and control, email tracking, revenue forecast, all on a single platform and easy to use interface, resulting in enthusiastic user adoption in fast-growing companies." />
+          <meta name="description" content={`UPilot is a CRM with advanced features like role-based access and control, email tracking, revenue forecast, all on a single platform and easy to use interface, resulting in enthusiastic user adoption in fast-growing companies.`} />
         </>
       ),
     },

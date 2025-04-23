@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="ReviewPoint"
-      description="ReviewPoint is a review management tool that helps with review generation via automated SMS or emails, and review monitoring in one place."
+      description={`ReviewPoint is a review management tool that helps with review generation via automated SMS or emails, and review monitoring in one place.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>ReviewPoint</title>
-          <meta name="description" content="ReviewPoint is a review management tool that helps with review generation via automated SMS or emails, and review monitoring in one place." />
+          <meta name="description" content={`ReviewPoint is a review management tool that helps with review generation via automated SMS or emails, and review monitoring in one place.`} />
         </>
       ),
     },

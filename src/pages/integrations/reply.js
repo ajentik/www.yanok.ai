@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Reply"
-      description="Reply is a sales automation platform that puts outreach on autopilot, while still making each communication personal."
+      description={`Reply is a sales automation platform that puts outreach on autopilot, while still making each communication personal.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -131,7 +131,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Reply</title>
-          <meta name="description" content="Reply is a sales automation platform that puts outreach on autopilot, while still making each communication personal." />
+          <meta name="description" content={`Reply is a sales automation platform that puts outreach on autopilot, while still making each communication personal.`} />
         </>
       ),
     },

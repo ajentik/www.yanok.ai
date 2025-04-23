@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="GitScrum"
-      description="Everything You Need to Manage your Projects Remotely"
+      description={`Everything You Need to Manage your Projects Remotely`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>GitScrum</title>
-          <meta name="description" content="Everything You Need to Manage your Projects Remotely" />
+          <meta name="description" content={`Everything You Need to Manage your Projects Remotely`} />
         </>
       ),
     },

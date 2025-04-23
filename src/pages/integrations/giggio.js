@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Giggio"
-      description="Giggio is a web-based system for entertainers to manage their bookings, invoices and payments."
+      description={`Giggio is a web-based system for entertainers to manage their bookings, invoices and payments.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -121,7 +121,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Giggio</title>
-          <meta name="description" content="Giggio is a web-based system for entertainers to manage their bookings, invoices and payments." />
+          <meta name="description" content={`Giggio is a web-based system for entertainers to manage their bookings, invoices and payments.`} />
         </>
       ),
     },

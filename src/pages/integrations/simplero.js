@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Simplero"
-      description="Integrated software for info marketing and online courses. Email marketing, billing, membership sites, and content delivery, all in one easy-to-use and affordable package. With the best support in the business."
+      description={`Integrated software for info marketing and online courses. Email marketing, billing, membership sites, and content delivery, all in one easy-to-use and affordable package. With the best support in the business.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -116,7 +116,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Simplero</title>
-          <meta name="description" content="Integrated software for info marketing and online courses. Email marketing, billing, membership sites, and content delivery, all in one easy-to-use and affordable package. With the best support in the business." />
+          <meta name="description" content={`Integrated software for info marketing and online courses. Email marketing, billing, membership sites, and content delivery, all in one easy-to-use and affordable package. With the best support in the business.`} />
         </>
       ),
     },

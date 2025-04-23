@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Eva Gifting Assistant (EvaBot)"
-      description="Eva helps you easily send personalized client gifts for closings, birthdays, house-anniversaries. Connect with a CRM to automate client gifting today."
+      description={`Eva helps you easily send personalized client gifts for closings, birthdays, house-anniversaries. Connect with a CRM to automate client gifting today.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -81,7 +81,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Eva Gifting Assistant (EvaBot)</title>
-          <meta name="description" content="Eva helps you easily send personalized client gifts for closings, birthdays, house-anniversaries. Connect with a CRM to automate client gifting today." />
+          <meta name="description" content={`Eva helps you easily send personalized client gifts for closings, birthdays, house-anniversaries. Connect with a CRM to automate client gifting today.`} />
         </>
       ),
     },

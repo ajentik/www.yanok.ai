@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="TPNI Engage"
-      description="The world's first completely integrated multi-channel lead capture, follow up, sales and marketing system."
+      description={`The world's first completely integrated multi-channel lead capture, follow up, sales and marketing system.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -71,7 +71,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>TPNI Engage</title>
-          <meta name="description" content="The world's first completely integrated multi-channel lead capture, follow up, sales and marketing system." />
+          <meta name="description" content={`The world's first completely integrated multi-channel lead capture, follow up, sales and marketing system.`} />
         </>
       ),
     },

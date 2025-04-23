@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="SoundCloud"
-      description="The world's largest community of artists, bands, podcasters and creators of music and audio."
+      description={`The world's largest community of artists, bands, podcasters and creators of music and audio.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -62,7 +62,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>SoundCloud</title>
-          <meta name="description" content="The world's largest community of artists, bands, podcasters and creators of music and audio." />
+          <meta name="description" content={`The world's largest community of artists, bands, podcasters and creators of music and audio.`} />
         </>
       ),
     },

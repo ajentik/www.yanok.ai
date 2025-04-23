@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="CallDNA"
-      description="CallsDNA is a speech analytics tool with an easy-to-use API integration for audio file uploading"
+      description={`CallsDNA is a speech analytics tool with an easy-to-use API integration for audio file uploading`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>CallDNA</title>
-          <meta name="description" content="CallsDNA is a speech analytics tool with an easy-to-use API integration for audio file uploading" />
+          <meta name="description" content={`CallsDNA is a speech analytics tool with an easy-to-use API integration for audio file uploading`} />
         </>
       ),
     },

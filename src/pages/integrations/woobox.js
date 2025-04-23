@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Woobox"
-      description="Woobox is a page builder to create forms, hashtag contests, giveaways, polls, coupons, & quizzes for leads, email signups, and engagement."
+      description={`Woobox is a page builder to create forms, hashtag contests, giveaways, polls, coupons, & quizzes for leads, email signups, and engagement.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Woobox</title>
-          <meta name="description" content="Woobox is a page builder to create forms, hashtag contests, giveaways, polls, coupons, & quizzes for leads, email signups, and engagement." />
+          <meta name="description" content={`Woobox is a page builder to create forms, hashtag contests, giveaways, polls, coupons, & quizzes for leads, email signups, and engagement.`} />
         </>
       ),
     },

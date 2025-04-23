@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="EverAfter"
-      description="B2B Customer Hub Platform for Customer Onboarding & Retention."
+      description={`B2B Customer Hub Platform for Customer Onboarding & Retention.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -71,7 +71,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>EverAfter</title>
-          <meta name="description" content="B2B Customer Hub Platform for Customer Onboarding & Retention." />
+          <meta name="description" content={`B2B Customer Hub Platform for Customer Onboarding & Retention.`} />
         </>
       ),
     },

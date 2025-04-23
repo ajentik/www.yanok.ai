@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Uptics"
-      description="The modern, all-in-one, sales software for SMBs that adds the gift of automation."
+      description={`The modern, all-in-one, sales software for SMBs that adds the gift of automation.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -106,7 +106,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Uptics</title>
-          <meta name="description" content="The modern, all-in-one, sales software for SMBs that adds the gift of automation." />
+          <meta name="description" content={`The modern, all-in-one, sales software for SMBs that adds the gift of automation.`} />
         </>
       ),
     },

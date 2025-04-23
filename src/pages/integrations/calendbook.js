@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Calendbook"
-      description="Share your calendar with a link to get more bookings"
+      description={`Share your calendar with a link to get more bookings`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -62,7 +62,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Calendbook</title>
-          <meta name="description" content="Share your calendar with a link to get more bookings" />
+          <meta name="description" content={`Share your calendar with a link to get more bookings`} />
         </>
       ),
     },

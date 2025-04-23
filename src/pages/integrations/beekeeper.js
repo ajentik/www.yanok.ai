@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Beekeeper"
-      description="Beekeeper is a mobile-first communication platform built for frontline employees that reaches every shift, location, and language through real-time messaging, targeted streams, and automated workflows."
+      description={`Beekeeper is a mobile-first communication platform built for frontline employees that reaches every shift, location, and language through real-time messaging, targeted streams, and automated workflows.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -116,7 +116,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Beekeeper</title>
-          <meta name="description" content="Beekeeper is a mobile-first communication platform built for frontline employees that reaches every shift, location, and language through real-time messaging, targeted streams, and automated workflows." />
+          <meta name="description" content={`Beekeeper is a mobile-first communication platform built for frontline employees that reaches every shift, location, and language through real-time messaging, targeted streams, and automated workflows.`} />
         </>
       ),
     },

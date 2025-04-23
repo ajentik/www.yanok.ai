@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="NPS.Today"
-      description="Turn on your customer experience radar and keep it turned on. Make your loyalty program simple and effective with NPS. Get real-time customer feedback for improved customer interaction and customer experience transformation."
+      description={`Turn on your customer experience radar and keep it turned on. Make your loyalty program simple and effective with NPS. Get real-time customer feedback for improved customer interaction and customer experience transformation.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -71,7 +71,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>NPS.Today</title>
-          <meta name="description" content="Turn on your customer experience radar and keep it turned on. Make your loyalty program simple and effective with NPS. Get real-time customer feedback for improved customer interaction and customer experience transformation." />
+          <meta name="description" content={`Turn on your customer experience radar and keep it turned on. Make your loyalty program simple and effective with NPS. Get real-time customer feedback for improved customer interaction and customer experience transformation.`} />
         </>
       ),
     },

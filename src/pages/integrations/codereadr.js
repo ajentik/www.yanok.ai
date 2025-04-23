@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="CodeREADr"
-      description="Codereadr is a barcode scanner app for iOS and Android OS devices to control event access, track attendance and track asset/inventory."
+      description={`Codereadr is a barcode scanner app for iOS and Android OS devices to control event access, track attendance and track asset/inventory.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -61,7 +61,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>CodeREADr</title>
-          <meta name="description" content="Codereadr is a barcode scanner app for iOS and Android OS devices to control event access, track attendance and track asset/inventory." />
+          <meta name="description" content={`Codereadr is a barcode scanner app for iOS and Android OS devices to control event access, track attendance and track asset/inventory.`} />
         </>
       ),
     },

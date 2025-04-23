@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Staatic"
-      description="Staatic allows you to generate and deploy an optimized static version of your WordPress site, improving performance, SEO and security all at the same time."
+      description={`Staatic allows you to generate and deploy an optimized static version of your WordPress site, improving performance, SEO and security all at the same time.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -61,7 +61,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Staatic</title>
-          <meta name="description" content="Staatic allows you to generate and deploy an optimized static version of your WordPress site, improving performance, SEO and security all at the same time." />
+          <meta name="description" content={`Staatic allows you to generate and deploy an optimized static version of your WordPress site, improving performance, SEO and security all at the same time.`} />
         </>
       ),
     },

@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Piriod"
-      description="Subscription management & recurring billing"
+      description={`Subscription management & recurring billing`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -102,7 +102,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Piriod</title>
-          <meta name="description" content="Subscription management & recurring billing" />
+          <meta name="description" content={`Subscription management & recurring billing`} />
         </>
       ),
     },

@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Site24x7"
-      description="Site24x7 alerts when downtime is detected."
+      description={`Site24x7 alerts when downtime is detected.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -67,7 +67,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Site24x7</title>
-          <meta name="description" content="Site24x7 alerts when downtime is detected." />
+          <meta name="description" content={`Site24x7 alerts when downtime is detected.`} />
         </>
       ),
     },

@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Quboo"
-      description="Quboo is a gamification platform to have fun while you improve productivity in your organization."
+      description={`Quboo is a gamification platform to have fun while you improve productivity in your organization.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Quboo</title>
-          <meta name="description" content="Quboo is a gamification platform to have fun while you improve productivity in your organization." />
+          <meta name="description" content={`Quboo is a gamification platform to have fun while you improve productivity in your organization.`} />
         </>
       ),
     },

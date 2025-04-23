@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Horntell"
-      description="Horntell is a notification center which allows you to have a single feed for all your notifications. Stay updated through actionable notifications and have total control so no one can spam you."
+      description={`Horntell is a notification center which allows you to have a single feed for all your notifications. Stay updated through actionable notifications and have total control so no one can spam you.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Horntell</title>
-          <meta name="description" content="Horntell is a notification center which allows you to have a single feed for all your notifications. Stay updated through actionable notifications and have total control so no one can spam you." />
+          <meta name="description" content={`Horntell is a notification center which allows you to have a single feed for all your notifications. Stay updated through actionable notifications and have total control so no one can spam you.`} />
         </>
       ),
     },

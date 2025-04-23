@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Dashiverse"
-      description="Dashiverse is an Analytics and Reporting tool that let's you track important KPIs from multiple data sources in visually appealing dashboards."
+      description={`Dashiverse is an Analytics and Reporting tool that let's you track important KPIs from multiple data sources in visually appealing dashboards.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -142,7 +142,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Dashiverse</title>
-          <meta name="description" content="Dashiverse is an Analytics and Reporting tool that let's you track important KPIs from multiple data sources in visually appealing dashboards." />
+          <meta name="description" content={`Dashiverse is an Analytics and Reporting tool that let's you track important KPIs from multiple data sources in visually appealing dashboards.`} />
         </>
       ),
     },

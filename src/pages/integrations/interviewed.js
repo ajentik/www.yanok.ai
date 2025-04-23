@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Interviewed"
-      description="Interviewed lets hiring managers get to see candidates in action as they demonstrate their real-world skills."
+      description={`Interviewed lets hiring managers get to see candidates in action as they demonstrate their real-world skills.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +53,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Interviewed</title>
-          <meta name="description" content="Interviewed lets hiring managers get to see candidates in action as they demonstrate their real-world skills." />
+          <meta name="description" content={`Interviewed lets hiring managers get to see candidates in action as they demonstrate their real-world skills.`} />
         </>
       ),
     },

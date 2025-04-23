@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Rafflecopter"
-      description="Rafflecopter allows you to customize and embed an entry form on your site that incentivizes your audience to perform tasks in exchange for entries into a sweepstakes."
+      description={`Rafflecopter allows you to customize and embed an entry form on your site that incentivizes your audience to perform tasks in exchange for entries into a sweepstakes.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +53,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Rafflecopter</title>
-          <meta name="description" content="Rafflecopter allows you to customize and embed an entry form on your site that incentivizes your audience to perform tasks in exchange for entries into a sweepstakes." />
+          <meta name="description" content={`Rafflecopter allows you to customize and embed an entry form on your site that incentivizes your audience to perform tasks in exchange for entries into a sweepstakes.`} />
         </>
       ),
     },

@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="EarlyBird"
-      description="EarlyBird (https://earlybird.im) is a no-code landing page builder for early-stage startups to pitch and validate business ideas fast."
+      description={`EarlyBird (https://earlybird.im) is a no-code landing page builder for early-stage startups to pitch and validate business ideas fast.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -62,7 +62,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>EarlyBird</title>
-          <meta name="description" content="EarlyBird (https://earlybird.im) is a no-code landing page builder for early-stage startups to pitch and validate business ideas fast." />
+          <meta name="description" content={`EarlyBird (https://earlybird.im) is a no-code landing page builder for early-stage startups to pitch and validate business ideas fast.`} />
         </>
       ),
     },

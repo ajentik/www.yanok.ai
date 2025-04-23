@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="VerifyPass"
-      description="VerifyPass is a simple website addon allowing e-commerce companies to create exclusive offers for Military, First Responders, and more."
+      description={`VerifyPass is a simple website addon allowing e-commerce companies to create exclusive offers for Military, First Responders, and more.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>VerifyPass</title>
-          <meta name="description" content="VerifyPass is a simple website addon allowing e-commerce companies to create exclusive offers for Military, First Responders, and more." />
+          <meta name="description" content={`VerifyPass is a simple website addon allowing e-commerce companies to create exclusive offers for Military, First Responders, and more.`} />
         </>
       ),
     },

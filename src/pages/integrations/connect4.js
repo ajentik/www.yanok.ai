@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Connect4"
-      description="Connect4 gives you and your team the structure you need to consistently deliver outstanding client meetings."
+      description={`Connect4 gives you and your team the structure you need to consistently deliver outstanding client meetings.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -71,7 +71,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Connect4</title>
-          <meta name="description" content="Connect4 gives you and your team the structure you need to consistently deliver outstanding client meetings." />
+          <meta name="description" content={`Connect4 gives you and your team the structure you need to consistently deliver outstanding client meetings.`} />
         </>
       ),
     },

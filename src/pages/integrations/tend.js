@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Tend"
-      description="Tend is a web analytics tool that makes it easy to see what drives customers."
+      description={`Tend is a web analytics tool that makes it easy to see what drives customers.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -116,7 +116,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Tend</title>
-          <meta name="description" content="Tend is a web analytics tool that makes it easy to see what drives customers." />
+          <meta name="description" content={`Tend is a web analytics tool that makes it easy to see what drives customers.`} />
         </>
       ),
     },

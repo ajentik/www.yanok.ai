@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Ziggeo"
-      description="Ziggeo is an award-winning cloud-based service for in-browser/in-app video recording, playback, transcoding, storage & video management."
+      description={`Ziggeo is an award-winning cloud-based service for in-browser/in-app video recording, playback, transcoding, storage & video management.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -61,7 +61,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Ziggeo</title>
-          <meta name="description" content="Ziggeo is an award-winning cloud-based service for in-browser/in-app video recording, playback, transcoding, storage & video management." />
+          <meta name="description" content={`Ziggeo is an award-winning cloud-based service for in-browser/in-app video recording, playback, transcoding, storage & video management.`} />
         </>
       ),
     },

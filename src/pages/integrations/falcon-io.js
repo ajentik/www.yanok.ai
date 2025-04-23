@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Falcon.Io"
-      description="Falcon is your social media marketing platform built on social analytics, community engagement and governance for Facebook, Twitter, LinkedIn, and Instagram."
+      description={`Falcon is your social media marketing platform built on social analytics, community engagement and governance for Facebook, Twitter, LinkedIn, and Instagram.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +53,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Falcon.Io</title>
-          <meta name="description" content="Falcon is your social media marketing platform built on social analytics, community engagement and governance for Facebook, Twitter, LinkedIn, and Instagram." />
+          <meta name="description" content={`Falcon is your social media marketing platform built on social analytics, community engagement and governance for Facebook, Twitter, LinkedIn, and Instagram.`} />
         </>
       ),
     },

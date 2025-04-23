@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Pepipost"
-      description="Pepipost has a highly scalable cloud based platform that is capable of delivering billions of emails every hour with email delivery expertise that ensures the best inbox rates."
+      description={`Pepipost has a highly scalable cloud based platform that is capable of delivering billions of emails every hour with email delivery expertise that ensures the best inbox rates.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Pepipost</title>
-          <meta name="description" content="Pepipost has a highly scalable cloud based platform that is capable of delivering billions of emails every hour with email delivery expertise that ensures the best inbox rates." />
+          <meta name="description" content={`Pepipost has a highly scalable cloud based platform that is capable of delivering billions of emails every hour with email delivery expertise that ensures the best inbox rates.`} />
         </>
       ),
     },

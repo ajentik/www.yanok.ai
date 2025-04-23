@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Shipday"
-      description="Shipday is a free dispatch and delivery tracking system with driver App."
+      description={`Shipday is a free dispatch and delivery tracking system with driver App.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Shipday</title>
-          <meta name="description" content="Shipday is a free dispatch and delivery tracking system with driver App." />
+          <meta name="description" content={`Shipday is a free dispatch and delivery tracking system with driver App.`} />
         </>
       ),
     },

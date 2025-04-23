@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="SnapCall"
-      description="Meet SnapCall, the easiest way to add real-time video to your platform, product or service."
+      description={`Meet SnapCall, the easiest way to add real-time video to your platform, product or service.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>SnapCall</title>
-          <meta name="description" content="Meet SnapCall, the easiest way to add real-time video to your platform, product or service." />
+          <meta name="description" content={`Meet SnapCall, the easiest way to add real-time video to your platform, product or service.`} />
         </>
       ),
     },

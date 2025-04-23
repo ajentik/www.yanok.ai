@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Smartlook"
-      description="Smartlook is the missing puzzle in analyzing user behavior. Get real qualitative information that helps you understand in-depth what's going on in your app and website."
+      description={`Smartlook is the missing puzzle in analyzing user behavior. Get real qualitative information that helps you understand in-depth what's going on in your app and website.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -71,7 +71,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Smartlook</title>
-          <meta name="description" content="Smartlook is the missing puzzle in analyzing user behavior. Get real qualitative information that helps you understand in-depth what's going on in your app and website." />
+          <meta name="description" content={`Smartlook is the missing puzzle in analyzing user behavior. Get real qualitative information that helps you understand in-depth what's going on in your app and website.`} />
         </>
       ),
     },

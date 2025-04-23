@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Escala"
-      description="Escala is the all-in-one marketing and automation platform to accelerate your sales"
+      description={`Escala is the all-in-one marketing and automation platform to accelerate your sales`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -81,7 +81,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Escala</title>
-          <meta name="description" content="Escala is the all-in-one marketing and automation platform to accelerate your sales" />
+          <meta name="description" content={`Escala is the all-in-one marketing and automation platform to accelerate your sales`} />
         </>
       ),
     },

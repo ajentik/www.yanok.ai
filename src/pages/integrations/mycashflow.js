@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="MyCashflow"
-      description="MyCashflow is a SaaS ecommerce platform that lets you easily create your own online store and grow it into a successful online business."
+      description={`MyCashflow is a SaaS ecommerce platform that lets you easily create your own online store and grow it into a successful online business.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -131,7 +131,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>MyCashflow</title>
-          <meta name="description" content="MyCashflow is a SaaS ecommerce platform that lets you easily create your own online store and grow it into a successful online business." />
+          <meta name="description" content={`MyCashflow is a SaaS ecommerce platform that lets you easily create your own online store and grow it into a successful online business.`} />
         </>
       ),
     },

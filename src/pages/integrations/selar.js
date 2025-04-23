@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Selar"
-      description="Selar is an ecommerce tool creatives & entrepreneurs use to sell their content, products and services across borders without any hassle."
+      description={`Selar is an ecommerce tool creatives & entrepreneurs use to sell their content, products and services across borders without any hassle.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Selar</title>
-          <meta name="description" content="Selar is an ecommerce tool creatives & entrepreneurs use to sell their content, products and services across borders without any hassle." />
+          <meta name="description" content={`Selar is an ecommerce tool creatives & entrepreneurs use to sell their content, products and services across borders without any hassle.`} />
         </>
       ),
     },

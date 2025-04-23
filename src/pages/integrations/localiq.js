@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="LOCALiQ"
-      description="Local IQ provides digital marketing solutions to help you grow your business."
+      description={`Local IQ provides digital marketing solutions to help you grow your business.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -62,7 +62,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>LOCALiQ</title>
-          <meta name="description" content="Local IQ provides digital marketing solutions to help you grow your business." />
+          <meta name="description" content={`Local IQ provides digital marketing solutions to help you grow your business.`} />
         </>
       ),
     },

@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="ReviewTrackers"
-      description="Use customer feedback from 100+ reviews sites to act today and predict tomorrow."
+      description={`Use customer feedback from 100+ reviews sites to act today and predict tomorrow.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -66,7 +66,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>ReviewTrackers</title>
-          <meta name="description" content="Use customer feedback from 100+ reviews sites to act today and predict tomorrow." />
+          <meta name="description" content={`Use customer feedback from 100+ reviews sites to act today and predict tomorrow.`} />
         </>
       ),
     },

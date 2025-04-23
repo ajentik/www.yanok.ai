@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Foxycart"
-      description="Custom ecommerce, simplified. Foxy's hosted cart & payment page allow you to sell anything, using your existing website or platform."
+      description={`Custom ecommerce, simplified. Foxy's hosted cart & payment page allow you to sell anything, using your existing website or platform.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +53,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Foxycart</title>
-          <meta name="description" content="Custom ecommerce, simplified. Foxy's hosted cart & payment page allow you to sell anything, using your existing website or platform." />
+          <meta name="description" content={`Custom ecommerce, simplified. Foxy's hosted cart & payment page allow you to sell anything, using your existing website or platform.`} />
         </>
       ),
     },

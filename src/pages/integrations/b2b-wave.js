@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="B2B Wave"
-      description="B2B Wave is the easiest cloud B2B eCommerce solution for distributors, wholesalers, and manufacturers"
+      description={`B2B Wave is the easiest cloud B2B eCommerce solution for distributors, wholesalers, and manufacturers`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -146,7 +146,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>B2B Wave</title>
-          <meta name="description" content="B2B Wave is the easiest cloud B2B eCommerce solution for distributors, wholesalers, and manufacturers" />
+          <meta name="description" content={`B2B Wave is the easiest cloud B2B eCommerce solution for distributors, wholesalers, and manufacturers`} />
         </>
       ),
     },

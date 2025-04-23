@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="QuickChart"
-      description="QuickChart turns your data into chart and graph images that you can use anywhere."
+      description={`QuickChart turns your data into chart and graph images that you can use anywhere.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -77,7 +77,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>QuickChart</title>
-          <meta name="description" content="QuickChart turns your data into chart and graph images that you can use anywhere." />
+          <meta name="description" content={`QuickChart turns your data into chart and graph images that you can use anywhere.`} />
         </>
       ),
     },

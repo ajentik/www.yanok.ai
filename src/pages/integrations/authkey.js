@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Authkey"
-      description="Authkey is a cloud platform to send sms, voice and email notifications using a single API"
+      description={`Authkey is a cloud platform to send sms, voice and email notifications using a single API`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -62,7 +62,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Authkey</title>
-          <meta name="description" content="Authkey is a cloud platform to send sms, voice and email notifications using a single API" />
+          <meta name="description" content={`Authkey is a cloud platform to send sms, voice and email notifications using a single API`} />
         </>
       ),
     },

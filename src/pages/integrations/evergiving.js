@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Evergiving"
-      description="Evergiving is an end-to-end solution for regular giving fundraising."
+      description={`Evergiving is an end-to-end solution for regular giving fundraising.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Evergiving</title>
-          <meta name="description" content="Evergiving is an end-to-end solution for regular giving fundraising." />
+          <meta name="description" content={`Evergiving is an end-to-end solution for regular giving fundraising.`} />
         </>
       ),
     },

@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Tickd"
-      description="A simple yet powerful tool to organise your team projects, issues and more ..."
+      description={`A simple yet powerful tool to organise your team projects, issues and more ...`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -71,7 +71,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Tickd</title>
-          <meta name="description" content="A simple yet powerful tool to organise your team projects, issues and more ..." />
+          <meta name="description" content={`A simple yet powerful tool to organise your team projects, issues and more ...`} />
         </>
       ),
     },

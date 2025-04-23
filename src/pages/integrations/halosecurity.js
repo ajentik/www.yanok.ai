@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Halo Security"
-      description="Halo Security offers organizations a comprehensive platform to improve their external security posture from the attacker’s perspective."
+      description={`Halo Security offers organizations a comprehensive platform to improve their external security posture from the attacker’s perspective.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -67,7 +67,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Halo Security</title>
-          <meta name="description" content="Halo Security offers organizations a comprehensive platform to improve their external security posture from the attacker’s perspective." />
+          <meta name="description" content={`Halo Security offers organizations a comprehensive platform to improve their external security posture from the attacker’s perspective.`} />
         </>
       ),
     },

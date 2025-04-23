@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Affinda"
-      description="Affinda provides AI-powered document extraction solutions to return structured data in seconds."
+      description={`Affinda provides AI-powered document extraction solutions to return structured data in seconds.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -66,7 +66,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Affinda</title>
-          <meta name="description" content="Affinda provides AI-powered document extraction solutions to return structured data in seconds." />
+          <meta name="description" content={`Affinda provides AI-powered document extraction solutions to return structured data in seconds.`} />
         </>
       ),
     },

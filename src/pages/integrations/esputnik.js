@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="eSputnik"
-      description="ESputnik is a marketing automation service made to embody the toughest ideas of enterprise level solutions in very clear and efficient way for everyone."
+      description={`ESputnik is a marketing automation service made to embody the toughest ideas of enterprise level solutions in very clear and efficient way for everyone.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -86,7 +86,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>eSputnik</title>
-          <meta name="description" content="ESputnik is a marketing automation service made to embody the toughest ideas of enterprise level solutions in very clear and efficient way for everyone." />
+          <meta name="description" content={`ESputnik is a marketing automation service made to embody the toughest ideas of enterprise level solutions in very clear and efficient way for everyone.`} />
         </>
       ),
     },

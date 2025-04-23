@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Milestonia"
-      description="Milestonia is an all-in-one software solution that keeps teams aligned and agile."
+      description={`Milestonia is an all-in-one software solution that keeps teams aligned and agile.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -71,7 +71,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Milestonia</title>
-          <meta name="description" content="Milestonia is an all-in-one software solution that keeps teams aligned and agile." />
+          <meta name="description" content={`Milestonia is an all-in-one software solution that keeps teams aligned and agile.`} />
         </>
       ),
     },

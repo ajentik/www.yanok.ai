@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Askneo"
-      description="Turn marketing into human experiences. By SMS, in seconds. Neo’s chatbot, keywords and tags help turn mass outreach into personal experiences and skyrocket returns."
+      description={`Turn marketing into human experiences. By SMS, in seconds. Neo’s chatbot, keywords and tags help turn mass outreach into personal experiences and skyrocket returns.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -62,7 +62,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Askneo</title>
-          <meta name="description" content="Turn marketing into human experiences. By SMS, in seconds. Neo’s chatbot, keywords and tags help turn mass outreach into personal experiences and skyrocket returns." />
+          <meta name="description" content={`Turn marketing into human experiences. By SMS, in seconds. Neo’s chatbot, keywords and tags help turn mass outreach into personal experiences and skyrocket returns.`} />
         </>
       ),
     },

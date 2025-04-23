@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="GoHire"
-      description="GoHire is easy-to-use recruitment software that will transform your hiring, make it simpler, more productive, and more pleasant."
+      description={`GoHire is easy-to-use recruitment software that will transform your hiring, make it simpler, more productive, and more pleasant.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -66,7 +66,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>GoHire</title>
-          <meta name="description" content="GoHire is easy-to-use recruitment software that will transform your hiring, make it simpler, more productive, and more pleasant." />
+          <meta name="description" content={`GoHire is easy-to-use recruitment software that will transform your hiring, make it simpler, more productive, and more pleasant.`} />
         </>
       ),
     },

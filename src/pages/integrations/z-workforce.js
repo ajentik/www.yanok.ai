@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Z Workforce"
-      description="Mobile field service. With a single tool companies can improve their performance of teams in the field, fulfill checklists and generate indicators on sales, products, services, customers, quality of service and even monitor competitor actions"
+      description={`Mobile field service. With a single tool companies can improve their performance of teams in the field, fulfill checklists and generate indicators on sales, products, services, customers, quality of service and even monitor competitor actions`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -77,7 +77,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Z Workforce</title>
-          <meta name="description" content="Mobile field service. With a single tool companies can improve their performance of teams in the field, fulfill checklists and generate indicators on sales, products, services, customers, quality of service and even monitor competitor actions" />
+          <meta name="description" content={`Mobile field service. With a single tool companies can improve their performance of teams in the field, fulfill checklists and generate indicators on sales, products, services, customers, quality of service and even monitor competitor actions`} />
         </>
       ),
     },

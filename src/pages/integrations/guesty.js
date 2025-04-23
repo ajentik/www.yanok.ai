@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Guesty"
-      description="Guesty is an end-to-end solution that simplifies the complex operational needs of short-term rental management companies."
+      description={`Guesty is an end-to-end solution that simplifies the complex operational needs of short-term rental management companies.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Guesty</title>
-          <meta name="description" content="Guesty is an end-to-end solution that simplifies the complex operational needs of short-term rental management companies." />
+          <meta name="description" content={`Guesty is an end-to-end solution that simplifies the complex operational needs of short-term rental management companies.`} />
         </>
       ),
     },

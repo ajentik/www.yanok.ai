@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Harvestr"
-      description="Harvestr is a product management tool that lets you centralize user feedback, prioritize features and communicate on your roadmap."
+      description={`Harvestr is a product management tool that lets you centralize user feedback, prioritize features and communicate on your roadmap.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -71,7 +71,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Harvestr</title>
-          <meta name="description" content="Harvestr is a product management tool that lets you centralize user feedback, prioritize features and communicate on your roadmap." />
+          <meta name="description" content={`Harvestr is a product management tool that lets you centralize user feedback, prioritize features and communicate on your roadmap.`} />
         </>
       ),
     },

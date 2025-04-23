@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="PayFacile"
-      description="PayFacile is a web-app for collecting payments without coding. Manage customers, automate billing, sell subscriptions and digital files, design your own payment pages, integrate with your website or share a secure payment link."
+      description={`PayFacile is a web-app for collecting payments without coding. Manage customers, automate billing, sell subscriptions and digital files, design your own payment pages, integrate with your website or share a secure payment link.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -92,7 +92,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>PayFacile</title>
-          <meta name="description" content="PayFacile is a web-app for collecting payments without coding. Manage customers, automate billing, sell subscriptions and digital files, design your own payment pages, integrate with your website or share a secure payment link." />
+          <meta name="description" content={`PayFacile is a web-app for collecting payments without coding. Manage customers, automate billing, sell subscriptions and digital files, design your own payment pages, integrate with your website or share a secure payment link.`} />
         </>
       ),
     },

@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="QuestionScout"
-      description="QuestionScout is the only tool you need to build forms and surveys in just minutes and start collecting data."
+      description={`QuestionScout is the only tool you need to build forms and surveys in just minutes and start collecting data.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>QuestionScout</title>
-          <meta name="description" content="QuestionScout is the only tool you need to build forms and surveys in just minutes and start collecting data." />
+          <meta name="description" content={`QuestionScout is the only tool you need to build forms and surveys in just minutes and start collecting data.`} />
         </>
       ),
     },

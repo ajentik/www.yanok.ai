@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Law Dash"
-      description="Law Dash is a very simple to use lead tracking dashboard for law firms that even lawyers can understand."
+      description={`Law Dash is a very simple to use lead tracking dashboard for law firms that even lawyers can understand.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -61,7 +61,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Law Dash</title>
-          <meta name="description" content="Law Dash is a very simple to use lead tracking dashboard for law firms that even lawyers can understand." />
+          <meta name="description" content={`Law Dash is a very simple to use lead tracking dashboard for law firms that even lawyers can understand.`} />
         </>
       ),
     },

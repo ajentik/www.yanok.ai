@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Fidelizador"
-      description="Fidelizador is a professional solution to create, automate and customize emails. Engage your customers and build your brand with advanced email marketing campaigns."
+      description={`Fidelizador is a professional solution to create, automate and customize emails. Engage your customers and build your brand with advanced email marketing campaigns.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -91,7 +91,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Fidelizador</title>
-          <meta name="description" content="Fidelizador is a professional solution to create, automate and customize emails. Engage your customers and build your brand with advanced email marketing campaigns." />
+          <meta name="description" content={`Fidelizador is a professional solution to create, automate and customize emails. Engage your customers and build your brand with advanced email marketing campaigns.`} />
         </>
       ),
     },

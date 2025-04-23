@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Das Keyboard 5Q"
-      description="Das Keyboard 5Q is a cloud-connected, open API RGB mechanical keyboard that allows each key to be color-controlled over the Internet."
+      description={`Das Keyboard 5Q is a cloud-connected, open API RGB mechanical keyboard that allows each key to be color-controlled over the Internet.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Das Keyboard 5Q</title>
-          <meta name="description" content="Das Keyboard 5Q is a cloud-connected, open API RGB mechanical keyboard that allows each key to be color-controlled over the Internet." />
+          <meta name="description" content={`Das Keyboard 5Q is a cloud-connected, open API RGB mechanical keyboard that allows each key to be color-controlled over the Internet.`} />
         </>
       ),
     },

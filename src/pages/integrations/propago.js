@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Propago"
-      description="Propago Allows Print Producers, Enterprises and Marketers To Better Manage, Personalize, Produce, and Distribute Their Marketing Assets."
+      description={`Propago Allows Print Producers, Enterprises and Marketers To Better Manage, Personalize, Produce, and Distribute Their Marketing Assets.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -101,7 +101,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Propago</title>
-          <meta name="description" content="Propago Allows Print Producers, Enterprises and Marketers To Better Manage, Personalize, Produce, and Distribute Their Marketing Assets." />
+          <meta name="description" content={`Propago Allows Print Producers, Enterprises and Marketers To Better Manage, Personalize, Produce, and Distribute Their Marketing Assets.`} />
         </>
       ),
     },

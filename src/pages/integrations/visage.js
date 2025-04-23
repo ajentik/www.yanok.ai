@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Visage"
-      description="For content marketers who need to create a lot of visual content, Visage is a design tool that makes on-brand content creation simple. Unlike working with slow and expensive vendors, Visage makes beautiful content creation easy."
+      description={`For content marketers who need to create a lot of visual content, Visage is a design tool that makes on-brand content creation simple. Unlike working with slow and expensive vendors, Visage makes beautiful content creation easy.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Visage</title>
-          <meta name="description" content="For content marketers who need to create a lot of visual content, Visage is a design tool that makes on-brand content creation simple. Unlike working with slow and expensive vendors, Visage makes beautiful content creation easy." />
+          <meta name="description" content={`For content marketers who need to create a lot of visual content, Visage is a design tool that makes on-brand content creation simple. Unlike working with slow and expensive vendors, Visage makes beautiful content creation easy.`} />
         </>
       ),
     },

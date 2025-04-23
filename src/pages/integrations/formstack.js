@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Formstack"
-      description="Formstack is one of the easiest ways to build custom forms that let you collect data your way."
+      description={`Formstack is one of the easiest ways to build custom forms that let you collect data your way.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -66,7 +66,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Formstack</title>
-          <meta name="description" content="Formstack is one of the easiest ways to build custom forms that let you collect data your way." />
+          <meta name="description" content={`Formstack is one of the easiest ways to build custom forms that let you collect data your way.`} />
         </>
       ),
     },

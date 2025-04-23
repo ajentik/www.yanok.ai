@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="LabsMobile"
-      description="LabsMobile is a communication platform that lets you send SMS to more than 200 countries. Easy, reliable and economic."
+      description={`LabsMobile is a communication platform that lets you send SMS to more than 200 countries. Easy, reliable and economic.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>LabsMobile</title>
-          <meta name="description" content="LabsMobile is a communication platform that lets you send SMS to more than 200 countries. Easy, reliable and economic." />
+          <meta name="description" content={`LabsMobile is a communication platform that lets you send SMS to more than 200 countries. Easy, reliable and economic.`} />
         </>
       ),
     },

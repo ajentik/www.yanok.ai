@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Vyte"
-      description="Vyte is a tool that makes scheduling appointments, meetings, and customers bookings easy and user-friendly."
+      description={`Vyte is a tool that makes scheduling appointments, meetings, and customers bookings easy and user-friendly.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -91,7 +91,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Vyte</title>
-          <meta name="description" content="Vyte is a tool that makes scheduling appointments, meetings, and customers bookings easy and user-friendly." />
+          <meta name="description" content={`Vyte is a tool that makes scheduling appointments, meetings, and customers bookings easy and user-friendly.`} />
         </>
       ),
     },

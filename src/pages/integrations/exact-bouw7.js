@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Exact Online Bouw"
-      description="Exact Online Bouw is a construction project management platform."
+      description={`Exact Online Bouw is a construction project management platform.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -71,7 +71,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Exact Online Bouw</title>
-          <meta name="description" content="Exact Online Bouw is a construction project management platform." />
+          <meta name="description" content={`Exact Online Bouw is a construction project management platform.`} />
         </>
       ),
     },

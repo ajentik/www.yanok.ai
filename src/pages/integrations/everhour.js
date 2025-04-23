@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Everhour"
-      description="Everhour is a time tracking software equipped with budgeting, forward resource planning, expenses tracking, visual dashboards and flexible reports."
+      description={`Everhour is a time tracking software equipped with budgeting, forward resource planning, expenses tracking, visual dashboards and flexible reports.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -156,7 +156,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Everhour</title>
-          <meta name="description" content="Everhour is a time tracking software equipped with budgeting, forward resource planning, expenses tracking, visual dashboards and flexible reports." />
+          <meta name="description" content={`Everhour is a time tracking software equipped with budgeting, forward resource planning, expenses tracking, visual dashboards and flexible reports.`} />
         </>
       ),
     },

@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Daily AI Mortgage"
-      description="Daily AI Mortgage helps loan officers convert more leads and manage transactions."
+      description={`Daily AI Mortgage helps loan officers convert more leads and manage transactions.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -66,7 +66,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Daily AI Mortgage</title>
-          <meta name="description" content="Daily AI Mortgage helps loan officers convert more leads and manage transactions." />
+          <meta name="description" content={`Daily AI Mortgage helps loan officers convert more leads and manage transactions.`} />
         </>
       ),
     },

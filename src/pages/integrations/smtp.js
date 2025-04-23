@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="SMTP by Zapier"
-      description="SMTP stands for Simple Mail Transfer Protocol, which is an Internet standard for email transmission available in Microsoft, Google and Yahoo! products among millions of mail servers worldwide. Check our IMAP service as well!"
+      description={`SMTP stands for Simple Mail Transfer Protocol, which is an Internet standard for email transmission available in Microsoft, Google and Yahoo! products among millions of mail servers worldwide. Check our IMAP service as well!`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>SMTP by Zapier</title>
-          <meta name="description" content="SMTP stands for Simple Mail Transfer Protocol, which is an Internet standard for email transmission available in Microsoft, Google and Yahoo! products among millions of mail servers worldwide. Check our IMAP service as well!" />
+          <meta name="description" content={`SMTP stands for Simple Mail Transfer Protocol, which is an Internet standard for email transmission available in Microsoft, Google and Yahoo! products among millions of mail servers worldwide. Check our IMAP service as well!`} />
         </>
       ),
     },

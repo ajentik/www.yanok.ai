@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Channels"
-      description="Channels is a data-driven phone system that lets you make and take calls directly in the browser."
+      description={`Channels is a data-driven phone system that lets you make and take calls directly in the browser.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -71,7 +71,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Channels</title>
-          <meta name="description" content="Channels is a data-driven phone system that lets you make and take calls directly in the browser." />
+          <meta name="description" content={`Channels is a data-driven phone system that lets you make and take calls directly in the browser.`} />
         </>
       ),
     },

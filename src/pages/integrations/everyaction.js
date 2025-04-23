@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="EveryAction"
-      description="EveryAction provides nonprofits with customer relationship management, donor management, and fundraising software tools."
+      description={`EveryAction provides nonprofits with customer relationship management, donor management, and fundraising software tools.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -127,7 +127,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>EveryAction</title>
-          <meta name="description" content="EveryAction provides nonprofits with customer relationship management, donor management, and fundraising software tools." />
+          <meta name="description" content={`EveryAction provides nonprofits with customer relationship management, donor management, and fundraising software tools.`} />
         </>
       ),
     },

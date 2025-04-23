@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="DocupletionForms"
-      description="DocupletionForms is a conditional logic contact form program to build and manage your online forms."
+      description={`DocupletionForms is a conditional logic contact form program to build and manage your online forms.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>DocupletionForms</title>
-          <meta name="description" content="DocupletionForms is a conditional logic contact form program to build and manage your online forms." />
+          <meta name="description" content={`DocupletionForms is a conditional logic contact form program to build and manage your online forms.`} />
         </>
       ),
     },

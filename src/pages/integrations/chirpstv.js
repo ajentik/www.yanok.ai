@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Chirps TV"
-      description="Chirps TV connects the services you love to your Android TV to provide real-time push notifications."
+      description={`Chirps TV connects the services you love to your Android TV to provide real-time push notifications.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -61,7 +61,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Chirps TV</title>
-          <meta name="description" content="Chirps TV connects the services you love to your Android TV to provide real-time push notifications." />
+          <meta name="description" content={`Chirps TV connects the services you love to your Android TV to provide real-time push notifications.`} />
         </>
       ),
     },

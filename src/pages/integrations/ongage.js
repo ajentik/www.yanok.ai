@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Ongage"
-      description="Powered by a feature-rich dashboard that hosts advanced segmentation tools and a full suite of analytics, ultimately helping marketers drive measurable growth and increase deliverability."
+      description={`Powered by a feature-rich dashboard that hosts advanced segmentation tools and a full suite of analytics, ultimately helping marketers drive measurable growth and increase deliverability.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +53,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Ongage</title>
-          <meta name="description" content="Powered by a feature-rich dashboard that hosts advanced segmentation tools and a full suite of analytics, ultimately helping marketers drive measurable growth and increase deliverability." />
+          <meta name="description" content={`Powered by a feature-rich dashboard that hosts advanced segmentation tools and a full suite of analytics, ultimately helping marketers drive measurable growth and increase deliverability.`} />
         </>
       ),
     },

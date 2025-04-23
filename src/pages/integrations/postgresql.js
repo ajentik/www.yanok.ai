@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="PostgreSQL"
-      description="PostgreSQL is a powerful, open-source database engine with a uniquely advanced query optimizer and dozens of built in features, making it an easy choice for production databases."
+      description={`PostgreSQL is a powerful, open-source database engine with a uniquely advanced query optimizer and dozens of built in features, making it an easy choice for production databases.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -96,7 +96,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>PostgreSQL</title>
-          <meta name="description" content="PostgreSQL is a powerful, open-source database engine with a uniquely advanced query optimizer and dozens of built in features, making it an easy choice for production databases." />
+          <meta name="description" content={`PostgreSQL is a powerful, open-source database engine with a uniquely advanced query optimizer and dozens of built in features, making it an easy choice for production databases.`} />
         </>
       ),
     },

@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Ministry Sync"
-      description="Ministry Sync is an event management software for event coordinators and participants to promote and raise funds for their cause. AttendEasy and FundEasy are front-end applications that connect with Ministry Sync."
+      description={`Ministry Sync is an event management software for event coordinators and participants to promote and raise funds for their cause. AttendEasy and FundEasy are front-end applications that connect with Ministry Sync.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -96,7 +96,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Ministry Sync</title>
-          <meta name="description" content="Ministry Sync is an event management software for event coordinators and participants to promote and raise funds for their cause. AttendEasy and FundEasy are front-end applications that connect with Ministry Sync." />
+          <meta name="description" content={`Ministry Sync is an event management software for event coordinators and participants to promote and raise funds for their cause. AttendEasy and FundEasy are front-end applications that connect with Ministry Sync.`} />
         </>
       ),
     },

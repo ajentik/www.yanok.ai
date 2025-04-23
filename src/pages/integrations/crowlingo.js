@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Crowlingo"
-      description="Crowlingo provides NLP services to find insights and relationships in text of 100+ different languages."
+      description={`Crowlingo provides NLP services to find insights and relationships in text of 100+ different languages.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -121,7 +121,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Crowlingo</title>
-          <meta name="description" content="Crowlingo provides NLP services to find insights and relationships in text of 100+ different languages." />
+          <meta name="description" content={`Crowlingo provides NLP services to find insights and relationships in text of 100+ different languages.`} />
         </>
       ),
     },

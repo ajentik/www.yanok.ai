@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="bttn"
-      description="Bttn is a stand-alone physical push button that connects to the internet."
+      description={`Bttn is a stand-alone physical push button that connects to the internet.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>bttn</title>
-          <meta name="description" content="Bttn is a stand-alone physical push button that connects to the internet." />
+          <meta name="description" content={`Bttn is a stand-alone physical push button that connects to the internet.`} />
         </>
       ),
     },

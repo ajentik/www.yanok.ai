@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Senta"
-      description="Senta is a cloud practice management software including marketing, workflow, email automation, secure documents and insights for accountants and bookkeepers."
+      description={`Senta is a cloud practice management software including marketing, workflow, email automation, secure documents and insights for accountants and bookkeepers.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -131,7 +131,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Senta</title>
-          <meta name="description" content="Senta is a cloud practice management software including marketing, workflow, email automation, secure documents and insights for accountants and bookkeepers." />
+          <meta name="description" content={`Senta is a cloud practice management software including marketing, workflow, email automation, secure documents and insights for accountants and bookkeepers.`} />
         </>
       ),
     },

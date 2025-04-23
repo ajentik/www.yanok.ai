@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="ChargeDesk"
-      description="ChargeDesk helps you manage your customer payments inside of your helpdesk. This integration helps you automate tasks such as exporting charge or customer data, automatically requesting payments and cancelling subscriptions."
+      description={`ChargeDesk helps you manage your customer payments inside of your helpdesk. This integration helps you automate tasks such as exporting charge or customer data, automatically requesting payments and cancelling subscriptions.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -126,7 +126,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>ChargeDesk</title>
-          <meta name="description" content="ChargeDesk helps you manage your customer payments inside of your helpdesk. This integration helps you automate tasks such as exporting charge or customer data, automatically requesting payments and cancelling subscriptions." />
+          <meta name="description" content={`ChargeDesk helps you manage your customer payments inside of your helpdesk. This integration helps you automate tasks such as exporting charge or customer data, automatically requesting payments and cancelling subscriptions.`} />
         </>
       ),
     },

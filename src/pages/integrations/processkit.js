@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="ProcessKit"
-      description="ProcessKit gives your team its operating procedures, systems, and automation workflows to make repeatable projects more predictable and scalable."
+      description={`ProcessKit gives your team its operating procedures, systems, and automation workflows to make repeatable projects more predictable and scalable.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -191,7 +191,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>ProcessKit</title>
-          <meta name="description" content="ProcessKit gives your team its operating procedures, systems, and automation workflows to make repeatable projects more predictable and scalable." />
+          <meta name="description" content={`ProcessKit gives your team its operating procedures, systems, and automation workflows to make repeatable projects more predictable and scalable.`} />
         </>
       ),
     },

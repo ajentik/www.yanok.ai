@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Uiza"
-      description="Uiza is a Streaming OS that allows you to build a video platform with everything that you need."
+      description={`Uiza is a Streaming OS that allows you to build a video platform with everything that you need.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Uiza</title>
-          <meta name="description" content="Uiza is a Streaming OS that allows you to build a video platform with everything that you need." />
+          <meta name="description" content={`Uiza is a Streaming OS that allows you to build a video platform with everything that you need.`} />
         </>
       ),
     },

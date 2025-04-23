@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Dubsado"
-      description="Dubsado is a business management suite for the creative industry professionals. Sign contracts, manage tasks, and get paid."
+      description={`Dubsado is a business management suite for the creative industry professionals. Sign contracts, manage tasks, and get paid.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -81,7 +81,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Dubsado</title>
-          <meta name="description" content="Dubsado is a business management suite for the creative industry professionals. Sign contracts, manage tasks, and get paid." />
+          <meta name="description" content={`Dubsado is a business management suite for the creative industry professionals. Sign contracts, manage tasks, and get paid.`} />
         </>
       ),
     },

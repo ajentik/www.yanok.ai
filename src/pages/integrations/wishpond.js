@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Wishpond"
-      description="Wishpond is a lead generation and marketing automation platform that helps customers to manage and nurture their leads."
+      description={`Wishpond is a lead generation and marketing automation platform that helps customers to manage and nurture their leads.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -96,7 +96,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Wishpond</title>
-          <meta name="description" content="Wishpond is a lead generation and marketing automation platform that helps customers to manage and nurture their leads." />
+          <meta name="description" content={`Wishpond is a lead generation and marketing automation platform that helps customers to manage and nurture their leads.`} />
         </>
       ),
     },

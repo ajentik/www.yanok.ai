@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Mozeo"
-      description="Mozeo offers the easiest mobile marketing services for anyone to blast SMS text messages through an easy & affordable text message marketing software."
+      description={`Mozeo offers the easiest mobile marketing services for anyone to blast SMS text messages through an easy & affordable text message marketing software.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +53,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Mozeo</title>
-          <meta name="description" content="Mozeo offers the easiest mobile marketing services for anyone to blast SMS text messages through an easy & affordable text message marketing software." />
+          <meta name="description" content={`Mozeo offers the easiest mobile marketing services for anyone to blast SMS text messages through an easy & affordable text message marketing software.`} />
         </>
       ),
     },

@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Virtual In/Out"
-      description="Virtual In/Out saves you time and money by helping you better communicate the status of your workforce and site visitors."
+      description={`Virtual In/Out saves you time and money by helping you better communicate the status of your workforce and site visitors.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -61,7 +61,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Virtual In/Out</title>
-          <meta name="description" content="Virtual In/Out saves you time and money by helping you better communicate the status of your workforce and site visitors." />
+          <meta name="description" content={`Virtual In/Out saves you time and money by helping you better communicate the status of your workforce and site visitors.`} />
         </>
       ),
     },

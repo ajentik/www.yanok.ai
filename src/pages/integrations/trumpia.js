@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Trumpia"
-      description="Trumpia offers text messaging in the easiest platform to start with, giving you everything you need for your first campagin."
+      description={`Trumpia offers text messaging in the easiest platform to start with, giving you everything you need for your first campagin.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -81,7 +81,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Trumpia</title>
-          <meta name="description" content="Trumpia offers text messaging in the easiest platform to start with, giving you everything you need for your first campagin." />
+          <meta name="description" content={`Trumpia offers text messaging in the easiest platform to start with, giving you everything you need for your first campagin.`} />
         </>
       ),
     },

@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="The Giving Block"
-      description="The Giving Block is a crypto donation solution, allowing nonprofits to fundraise Bitcoin, Ethereum and many other cryptocurrencies."
+      description={`The Giving Block is a crypto donation solution, allowing nonprofits to fundraise Bitcoin, Ethereum and many other cryptocurrencies.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -62,7 +62,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>The Giving Block</title>
-          <meta name="description" content="The Giving Block is a crypto donation solution, allowing nonprofits to fundraise Bitcoin, Ethereum and many other cryptocurrencies." />
+          <meta name="description" content={`The Giving Block is a crypto donation solution, allowing nonprofits to fundraise Bitcoin, Ethereum and many other cryptocurrencies.`} />
         </>
       ),
     },

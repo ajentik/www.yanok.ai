@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="StockTwits"
-      description="StockTwits is a financial communications platform for the investing community. You can easily learn from other stock traders and get new ideas."
+      description={`StockTwits is a financial communications platform for the investing community. You can easily learn from other stock traders and get new ideas.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -71,7 +71,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>StockTwits</title>
-          <meta name="description" content="StockTwits is a financial communications platform for the investing community. You can easily learn from other stock traders and get new ideas." />
+          <meta name="description" content={`StockTwits is a financial communications platform for the investing community. You can easily learn from other stock traders and get new ideas.`} />
         </>
       ),
     },

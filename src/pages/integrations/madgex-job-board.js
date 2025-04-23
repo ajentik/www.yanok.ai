@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Madgex Job Board"
-      description="The most sophisticated job board software on the market, powering the world’s biggest brands & associations"
+      description={`The most sophisticated job board software on the market, powering the world’s biggest brands & associations`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -91,7 +91,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Madgex Job Board</title>
-          <meta name="description" content="The most sophisticated job board software on the market, powering the world’s biggest brands & associations" />
+          <meta name="description" content={`The most sophisticated job board software on the market, powering the world’s biggest brands & associations`} />
         </>
       ),
     },

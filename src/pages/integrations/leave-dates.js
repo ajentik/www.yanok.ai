@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Leave Dates"
-      description="Leave Dates is a leave management system for modern companies to plan and track employee holidays and absences."
+      description={`Leave Dates is a leave management system for modern companies to plan and track employee holidays and absences.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -76,7 +76,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Leave Dates</title>
-          <meta name="description" content="Leave Dates is a leave management system for modern companies to plan and track employee holidays and absences." />
+          <meta name="description" content={`Leave Dates is a leave management system for modern companies to plan and track employee holidays and absences.`} />
         </>
       ),
     },

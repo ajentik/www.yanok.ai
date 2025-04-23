@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="3Scribe"
-      description="3Scribe is the most accurate, automated text transcription available. We convert audio and video files and give near human accuracy at automated prices."
+      description={`3Scribe is the most accurate, automated text transcription available. We convert audio and video files and give near human accuracy at automated prices.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -71,7 +71,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>3Scribe</title>
-          <meta name="description" content="3Scribe is the most accurate, automated text transcription available. We convert audio and video files and give near human accuracy at automated prices." />
+          <meta name="description" content={`3Scribe is the most accurate, automated text transcription available. We convert audio and video files and give near human accuracy at automated prices.`} />
         </>
       ),
     },

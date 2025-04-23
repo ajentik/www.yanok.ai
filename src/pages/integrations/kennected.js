@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Kennected"
-      description="Kennected is a LinkedIn Automation tool used to generate leads"
+      description={`Kennected is a LinkedIn Automation tool used to generate leads`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -61,7 +61,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Kennected</title>
-          <meta name="description" content="Kennected is a LinkedIn Automation tool used to generate leads" />
+          <meta name="description" content={`Kennected is a LinkedIn Automation tool used to generate leads`} />
         </>
       ),
     },

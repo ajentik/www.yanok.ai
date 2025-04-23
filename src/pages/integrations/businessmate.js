@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="BusinessMate"
-      description="Grab your business opportunities contact with ease and get a thousand phone numbers, websites, etc., with only one click."
+      description={`Grab your business opportunities contact with ease and get a thousand phone numbers, websites, etc., with only one click.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -61,7 +61,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>BusinessMate</title>
-          <meta name="description" content="Grab your business opportunities contact with ease and get a thousand phone numbers, websites, etc., with only one click." />
+          <meta name="description" content={`Grab your business opportunities contact with ease and get a thousand phone numbers, websites, etc., with only one click.`} />
         </>
       ),
     },

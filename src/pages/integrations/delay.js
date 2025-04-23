@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Delay by Zapier"
-      description="Put your Actions on hold for a specified amount of time before sending data to another app. You can set up scheduled emails, get notified of incomplete tasks, send automatic follow-ups, and automate other tasks on your timeline."
+      description={`Put your Actions on hold for a specified amount of time before sending data to another app. You can set up scheduled emails, get notified of incomplete tasks, send automatic follow-ups, and automate other tasks on your timeline.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -67,7 +67,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Delay by Zapier</title>
-          <meta name="description" content="Put your Actions on hold for a specified amount of time before sending data to another app. You can set up scheduled emails, get notified of incomplete tasks, send automatic follow-ups, and automate other tasks on your timeline." />
+          <meta name="description" content={`Put your Actions on hold for a specified amount of time before sending data to another app. You can set up scheduled emails, get notified of incomplete tasks, send automatic follow-ups, and automate other tasks on your timeline.`} />
         </>
       ),
     },

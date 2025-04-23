@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Super Receptionist"
-      description="Super Receptionist is a call centre solution that lets you set up a call handling process for customer care, sales and other departments."
+      description={`Super Receptionist is a call centre solution that lets you set up a call handling process for customer care, sales and other departments.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Super Receptionist</title>
-          <meta name="description" content="Super Receptionist is a call centre solution that lets you set up a call handling process for customer care, sales and other departments." />
+          <meta name="description" content={`Super Receptionist is a call centre solution that lets you set up a call handling process for customer care, sales and other departments.`} />
         </>
       ),
     },

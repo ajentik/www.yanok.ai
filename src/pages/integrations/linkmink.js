@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="LinkMink"
-      description="LinkMink is a partnership management tool to track referrals and automate administrative tasks."
+      description={`LinkMink is a partnership management tool to track referrals and automate administrative tasks.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>LinkMink</title>
-          <meta name="description" content="LinkMink is a partnership management tool to track referrals and automate administrative tasks." />
+          <meta name="description" content={`LinkMink is a partnership management tool to track referrals and automate administrative tasks.`} />
         </>
       ),
     },

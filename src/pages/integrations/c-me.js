@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="C-Me"
-      description="C-Me, the video first hiring solution, lets organisations fill roles faster with video job posts and video interviews."
+      description={`C-Me, the video first hiring solution, lets organisations fill roles faster with video job posts and video interviews.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -62,7 +62,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>C-Me</title>
-          <meta name="description" content="C-Me, the video first hiring solution, lets organisations fill roles faster with video job posts and video interviews." />
+          <meta name="description" content={`C-Me, the video first hiring solution, lets organisations fill roles faster with video job posts and video interviews.`} />
         </>
       ),
     },

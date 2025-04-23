@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Practice Better"
-      description="Practice Better is a comprehensive solution to help you manage your Health & Wellness practice and the entire client journey with ease, saving you both time and money!"
+      description={`Practice Better is a comprehensive solution to help you manage your Health & Wellness practice and the entire client journey with ease, saving you both time and money!`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -86,7 +86,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Practice Better</title>
-          <meta name="description" content="Practice Better is a comprehensive solution to help you manage your Health & Wellness practice and the entire client journey with ease, saving you both time and money!" />
+          <meta name="description" content={`Practice Better is a comprehensive solution to help you manage your Health & Wellness practice and the entire client journey with ease, saving you both time and money!`} />
         </>
       ),
     },

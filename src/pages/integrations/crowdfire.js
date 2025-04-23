@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Crowdfire"
-      description="Crowdfire is a Social Media management tool used by brands, businesses, agencies, and individuals all over the world."
+      description={`Crowdfire is a Social Media management tool used by brands, businesses, agencies, and individuals all over the world.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Crowdfire</title>
-          <meta name="description" content="Crowdfire is a Social Media management tool used by brands, businesses, agencies, and individuals all over the world." />
+          <meta name="description" content={`Crowdfire is a Social Media management tool used by brands, businesses, agencies, and individuals all over the world.`} />
         </>
       ),
     },

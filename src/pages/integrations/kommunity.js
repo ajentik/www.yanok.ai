@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Kommunity"
-      description="Kommunity is a social event platform where you can grow your community, organize events, and communicate with members in one place."
+      description={`Kommunity is a social event platform where you can grow your community, organize events, and communicate with members in one place.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -87,7 +87,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Kommunity</title>
-          <meta name="description" content="Kommunity is a social event platform where you can grow your community, organize events, and communicate with members in one place." />
+          <meta name="description" content={`Kommunity is a social event platform where you can grow your community, organize events, and communicate with members in one place.`} />
         </>
       ),
     },

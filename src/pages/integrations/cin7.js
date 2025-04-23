@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Cin7"
-      description="Cloud-based solution with fully integrated inventory management, POS, EDI and 3PL functions in a single system."
+      description={`Cloud-based solution with fully integrated inventory management, POS, EDI and 3PL functions in a single system.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +53,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Cin7</title>
-          <meta name="description" content="Cloud-based solution with fully integrated inventory management, POS, EDI and 3PL functions in a single system." />
+          <meta name="description" content={`Cloud-based solution with fully integrated inventory management, POS, EDI and 3PL functions in a single system.`} />
         </>
       ),
     },

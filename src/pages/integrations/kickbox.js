@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Kickbox"
-      description="Kickbox is an email verification platform that can help identify deliverable, invalid, or otherwise risky email addresses. Using Kickbox you can ensure you only ever send emails to real addresses - reduce bounce rates and improve inbox placement."
+      description={`Kickbox is an email verification platform that can help identify deliverable, invalid, or otherwise risky email addresses. Using Kickbox you can ensure you only ever send emails to real addresses - reduce bounce rates and improve inbox placement.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Kickbox</title>
-          <meta name="description" content="Kickbox is an email verification platform that can help identify deliverable, invalid, or otherwise risky email addresses. Using Kickbox you can ensure you only ever send emails to real addresses - reduce bounce rates and improve inbox placement." />
+          <meta name="description" content={`Kickbox is an email verification platform that can help identify deliverable, invalid, or otherwise risky email addresses. Using Kickbox you can ensure you only ever send emails to real addresses - reduce bounce rates and improve inbox placement.`} />
         </>
       ),
     },

@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Bullhorn CRM"
-      description="Bullhorn provides cloud-based CRM solutions for companies in service-based industries. Its data capture and customer insight technology puts the most up-to-date and powerful information at users' fingertips to give them everything they need to win customers and keep them happy."
+      description={`Bullhorn provides cloud-based CRM solutions for companies in service-based industries. Its data capture and customer insight technology puts the most up-to-date and powerful information at users' fingertips to give them everything they need to win customers and keep them happy.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -156,7 +156,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Bullhorn CRM</title>
-          <meta name="description" content="Bullhorn provides cloud-based CRM solutions for companies in service-based industries. Its data capture and customer insight technology puts the most up-to-date and powerful information at users' fingertips to give them everything they need to win customers and keep them happy." />
+          <meta name="description" content={`Bullhorn provides cloud-based CRM solutions for companies in service-based industries. Its data capture and customer insight technology puts the most up-to-date and powerful information at users' fingertips to give them everything they need to win customers and keep them happy.`} />
         </>
       ),
     },

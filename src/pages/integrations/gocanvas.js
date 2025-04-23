@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="GoCanvas"
-      description="GoCanvas provides a simple, drag and drop tool for creating your own mobile forms (called GoCanvas Apps) that can be filled out by your employees on their mobile devices. Customize your own mobile inspections, work orders, time cards, invoices, waivers and much more. Instantly transmit your data to customers and colleagues to keep your business moving at the speed of digital."
+      description={`GoCanvas provides a simple, drag and drop tool for creating your own mobile forms (called GoCanvas Apps) that can be filled out by your employees on their mobile devices. Customize your own mobile inspections, work orders, time cards, invoices, waivers and much more. Instantly transmit your data to customers and colleagues to keep your business moving at the speed of digital.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -71,7 +71,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>GoCanvas</title>
-          <meta name="description" content="GoCanvas provides a simple, drag and drop tool for creating your own mobile forms (called GoCanvas Apps) that can be filled out by your employees on their mobile devices. Customize your own mobile inspections, work orders, time cards, invoices, waivers and much more. Instantly transmit your data to customers and colleagues to keep your business moving at the speed of digital." />
+          <meta name="description" content={`GoCanvas provides a simple, drag and drop tool for creating your own mobile forms (called GoCanvas Apps) that can be filled out by your employees on their mobile devices. Customize your own mobile inspections, work orders, time cards, invoices, waivers and much more. Instantly transmit your data to customers and colleagues to keep your business moving at the speed of digital.`} />
         </>
       ),
     },

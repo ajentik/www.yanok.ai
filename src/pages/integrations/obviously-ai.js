@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Obviously AI"
-      description="Obviously AI enables any business user to use historical data and make high fidelity predictive AI models in minutes, without writing code."
+      description={`Obviously AI enables any business user to use historical data and make high fidelity predictive AI models in minutes, without writing code.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -62,7 +62,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Obviously AI</title>
-          <meta name="description" content="Obviously AI enables any business user to use historical data and make high fidelity predictive AI models in minutes, without writing code." />
+          <meta name="description" content={`Obviously AI enables any business user to use historical data and make high fidelity predictive AI models in minutes, without writing code.`} />
         </>
       ),
     },

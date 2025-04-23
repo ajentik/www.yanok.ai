@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="iconpractice"
-      description="Software for your chiro, osteo or myotherapy clinic. iconpractice is a full featured cloud based solution"
+      description={`Software for your chiro, osteo or myotherapy clinic. iconpractice is a full featured cloud based solution`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -92,7 +92,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>iconpractice</title>
-          <meta name="description" content="Software for your chiro, osteo or myotherapy clinic. iconpractice is a full featured cloud based solution" />
+          <meta name="description" content={`Software for your chiro, osteo or myotherapy clinic. iconpractice is a full featured cloud based solution`} />
         </>
       ),
     },

@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Property Inspect"
-      description="Property Inspect is a web and mobile platform for managing and producing property inspections and reports"
+      description={`Property Inspect is a web and mobile platform for managing and producing property inspections and reports`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -271,7 +271,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Property Inspect</title>
-          <meta name="description" content="Property Inspect is a web and mobile platform for managing and producing property inspections and reports" />
+          <meta name="description" content={`Property Inspect is a web and mobile platform for managing and producing property inspections and reports`} />
         </>
       ),
     },

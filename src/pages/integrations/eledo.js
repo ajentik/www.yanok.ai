@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Eledo"
-      description="Eledo is a PDF service that helps you with your automated document creation. Build your document template in Eledo online editor and include dynamic elements."
+      description={`Eledo is a PDF service that helps you with your automated document creation. Build your document template in Eledo online editor and include dynamic elements.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Eledo</title>
-          <meta name="description" content="Eledo is a PDF service that helps you with your automated document creation. Build your document template in Eledo online editor and include dynamic elements." />
+          <meta name="description" content={`Eledo is a PDF service that helps you with your automated document creation. Build your document template in Eledo online editor and include dynamic elements.`} />
         </>
       ),
     },

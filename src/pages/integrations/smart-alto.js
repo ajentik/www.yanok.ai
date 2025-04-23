@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Smart Alto"
-      description="Smart Alto is a messaging platform that responds to your leads within 2 minutes and nurtures past clients monthly"
+      description={`Smart Alto is a messaging platform that responds to your leads within 2 minutes and nurtures past clients monthly`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -66,7 +66,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Smart Alto</title>
-          <meta name="description" content="Smart Alto is a messaging platform that responds to your leads within 2 minutes and nurtures past clients monthly" />
+          <meta name="description" content={`Smart Alto is a messaging platform that responds to your leads within 2 minutes and nurtures past clients monthly`} />
         </>
       ),
     },

@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="CINC"
-      description="CINC is a CRM for top-producing real estate brokers and agents, providing an integrated buyer lead generation and management solution."
+      description={`CINC is a CRM for top-producing real estate brokers and agents, providing an integrated buyer lead generation and management solution.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -121,7 +121,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>CINC</title>
-          <meta name="description" content="CINC is a CRM for top-producing real estate brokers and agents, providing an integrated buyer lead generation and management solution." />
+          <meta name="description" content={`CINC is a CRM for top-producing real estate brokers and agents, providing an integrated buyer lead generation and management solution.`} />
         </>
       ),
     },

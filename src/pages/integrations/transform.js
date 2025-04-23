@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="TransForm"
-      description="Transform lets you easily build mobile forms. Features include the ability to capture photos and audio recordings within your form."
+      description={`Transform lets you easily build mobile forms. Features include the ability to capture photos and audio recordings within your form.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -61,7 +61,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>TransForm</title>
-          <meta name="description" content="Transform lets you easily build mobile forms. Features include the ability to capture photos and audio recordings within your form." />
+          <meta name="description" content={`Transform lets you easily build mobile forms. Features include the ability to capture photos and audio recordings within your form.`} />
         </>
       ),
     },

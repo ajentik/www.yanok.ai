@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Razorpay"
-      description="Razorpay is India’s first full-stack financial solutions company. We enable businesses to accept and disburse payments, raise capital and park money."
+      description={`Razorpay is India’s first full-stack financial solutions company. We enable businesses to accept and disburse payments, raise capital and park money.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -87,7 +87,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Razorpay</title>
-          <meta name="description" content="Razorpay is India’s first full-stack financial solutions company. We enable businesses to accept and disburse payments, raise capital and park money." />
+          <meta name="description" content={`Razorpay is India’s first full-stack financial solutions company. We enable businesses to accept and disburse payments, raise capital and park money.`} />
         </>
       ),
     },

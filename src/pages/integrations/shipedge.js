@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Shipedge"
-      description="Shipedge is a cloud-based ecommerce order fulfillment solution that is great for third party logistics companies and ecommerce sellers alike."
+      description={`Shipedge is a cloud-based ecommerce order fulfillment solution that is great for third party logistics companies and ecommerce sellers alike.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +53,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Shipedge</title>
-          <meta name="description" content="Shipedge is a cloud-based ecommerce order fulfillment solution that is great for third party logistics companies and ecommerce sellers alike." />
+          <meta name="description" content={`Shipedge is a cloud-based ecommerce order fulfillment solution that is great for third party logistics companies and ecommerce sellers alike.`} />
         </>
       ),
     },

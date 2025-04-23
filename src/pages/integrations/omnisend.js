@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Omnisend"
-      description="Omnisend is a marketing automation platform built for growing ecommerce businesses that have graduated their basic email marketing tools."
+      description={`Omnisend is a marketing automation platform built for growing ecommerce businesses that have graduated their basic email marketing tools.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -62,7 +62,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Omnisend</title>
-          <meta name="description" content="Omnisend is a marketing automation platform built for growing ecommerce businesses that have graduated their basic email marketing tools." />
+          <meta name="description" content={`Omnisend is a marketing automation platform built for growing ecommerce businesses that have graduated their basic email marketing tools.`} />
         </>
       ),
     },

@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="LeadDelta"
-      description="LeadDelta is a productivity app that helps you to organize your LinkedIn connections better and save time."
+      description={`LeadDelta is a productivity app that helps you to organize your LinkedIn connections better and save time.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -106,7 +106,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>LeadDelta</title>
-          <meta name="description" content="LeadDelta is a productivity app that helps you to organize your LinkedIn connections better and save time." />
+          <meta name="description" content={`LeadDelta is a productivity app that helps you to organize your LinkedIn connections better and save time.`} />
         </>
       ),
     },

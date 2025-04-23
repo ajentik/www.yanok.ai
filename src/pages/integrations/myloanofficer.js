@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Myloanofficer"
-      description="MyLoanOfficer is a platform owned by Reverse Focus that creates websites for Reverse Mortgage Loan Officers."
+      description={`MyLoanOfficer is a platform owned by Reverse Focus that creates websites for Reverse Mortgage Loan Officers.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -62,7 +62,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Myloanofficer</title>
-          <meta name="description" content="MyLoanOfficer is a platform owned by Reverse Focus that creates websites for Reverse Mortgage Loan Officers." />
+          <meta name="description" content={`MyLoanOfficer is a platform owned by Reverse Focus that creates websites for Reverse Mortgage Loan Officers.`} />
         </>
       ),
     },

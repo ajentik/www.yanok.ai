@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="The Studio Director"
-      description="The most complete dance studio software online. We make running your studio simple, easy, and rewarding by catering our software to your exact business needs."
+      description={`The most complete dance studio software online. We make running your studio simple, easy, and rewarding by catering our software to your exact business needs.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +53,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>The Studio Director</title>
-          <meta name="description" content="The most complete dance studio software online. We make running your studio simple, easy, and rewarding by catering our software to your exact business needs." />
+          <meta name="description" content={`The most complete dance studio software online. We make running your studio simple, easy, and rewarding by catering our software to your exact business needs.`} />
         </>
       ),
     },

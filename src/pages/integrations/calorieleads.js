@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="CalorieLeads"
-      description="Build a Custom Calorie Calculator For Your Fitness Business."
+      description={`Build a Custom Calorie Calculator For Your Fitness Business.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>CalorieLeads</title>
-          <meta name="description" content="Build a Custom Calorie Calculator For Your Fitness Business." />
+          <meta name="description" content={`Build a Custom Calorie Calculator For Your Fitness Business.`} />
         </>
       ),
     },

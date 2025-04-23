@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Data8"
-      description="Data8 can save you money by cleaning and enriching your data, as well as keeping it high quality at the point of entry."
+      description={`Data8 can save you money by cleaning and enriching your data, as well as keeping it high quality at the point of entry.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -87,7 +87,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Data8</title>
-          <meta name="description" content="Data8 can save you money by cleaning and enriching your data, as well as keeping it high quality at the point of entry." />
+          <meta name="description" content={`Data8 can save you money by cleaning and enriching your data, as well as keeping it high quality at the point of entry.`} />
         </>
       ),
     },

@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="MySQL"
-      description="MySQL is a premier database used in millions of production environments around the world. Easily plug your MySQL database into any web service."
+      description={`MySQL is a premier database used in millions of production environments around the world. Easily plug your MySQL database into any web service.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -96,7 +96,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>MySQL</title>
-          <meta name="description" content="MySQL is a premier database used in millions of production environments around the world. Easily plug your MySQL database into any web service." />
+          <meta name="description" content={`MySQL is a premier database used in millions of production environments around the world. Easily plug your MySQL database into any web service.`} />
         </>
       ),
     },

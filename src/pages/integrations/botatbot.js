@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="BotatBot"
-      description="BotatBot allows anyone to create their own bots on Telegram Messenger, without coding. Automatically send broadcasts to all your bot subscribers."
+      description={`BotatBot allows anyone to create their own bots on Telegram Messenger, without coding. Automatically send broadcasts to all your bot subscribers.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>BotatBot</title>
-          <meta name="description" content="BotatBot allows anyone to create their own bots on Telegram Messenger, without coding. Automatically send broadcasts to all your bot subscribers." />
+          <meta name="description" content={`BotatBot allows anyone to create their own bots on Telegram Messenger, without coding. Automatically send broadcasts to all your bot subscribers.`} />
         </>
       ),
     },

@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Ipregistry"
-      description="Build location and threat aware applications with the most reliable IP Geolocation and threat data service."
+      description={`Build location and threat aware applications with the most reliable IP Geolocation and threat data service.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -62,7 +62,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Ipregistry</title>
-          <meta name="description" content="Build location and threat aware applications with the most reliable IP Geolocation and threat data service." />
+          <meta name="description" content={`Build location and threat aware applications with the most reliable IP Geolocation and threat data service.`} />
         </>
       ),
     },

@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Shopping Feed"
-      description="Shopping Feed is a single platform to List, Sync, and Manage your products, inventory and orders with the world's largest marketplaces, adspaces, affiliate channels and shopping engines."
+      description={`Shopping Feed is a single platform to List, Sync, and Manage your products, inventory and orders with the world's largest marketplaces, adspaces, affiliate channels and shopping engines.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -101,7 +101,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Shopping Feed</title>
-          <meta name="description" content="Shopping Feed is a single platform to List, Sync, and Manage your products, inventory and orders with the world's largest marketplaces, adspaces, affiliate channels and shopping engines." />
+          <meta name="description" content={`Shopping Feed is a single platform to List, Sync, and Manage your products, inventory and orders with the world's largest marketplaces, adspaces, affiliate channels and shopping engines.`} />
         </>
       ),
     },

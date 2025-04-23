@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="ClickUp"
-      description="ClickUp is a productivity platform that allows you to manage your work and personal tasks in a beautifully intuitive environment."
+      description={`ClickUp is a productivity platform that allows you to manage your work and personal tasks in a beautifully intuitive environment.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -131,7 +131,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>ClickUp</title>
-          <meta name="description" content="ClickUp is a productivity platform that allows you to manage your work and personal tasks in a beautifully intuitive environment." />
+          <meta name="description" content={`ClickUp is a productivity platform that allows you to manage your work and personal tasks in a beautifully intuitive environment.`} />
         </>
       ),
     },

@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Leadspin"
-      description="Leadspin is a gamification tool to collect leads in a fun and efficient way."
+      description={`Leadspin is a gamification tool to collect leads in a fun and efficient way.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Leadspin</title>
-          <meta name="description" content="Leadspin is a gamification tool to collect leads in a fun and efficient way." />
+          <meta name="description" content={`Leadspin is a gamification tool to collect leads in a fun and efficient way.`} />
         </>
       ),
     },

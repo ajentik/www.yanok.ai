@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Collect.chat"
-      description="Collect.chat helps you make interactive chatbots for your website. Easily collect data, leads and feedbacks from your visitors on auto-pilot."
+      description={`Collect.chat helps you make interactive chatbots for your website. Easily collect data, leads and feedbacks from your visitors on auto-pilot.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Collect.chat</title>
-          <meta name="description" content="Collect.chat helps you make interactive chatbots for your website. Easily collect data, leads and feedbacks from your visitors on auto-pilot." />
+          <meta name="description" content={`Collect.chat helps you make interactive chatbots for your website. Easily collect data, leads and feedbacks from your visitors on auto-pilot.`} />
         </>
       ),
     },

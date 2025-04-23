@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Unleashed"
-      description="Through its 3 mobile brands Mobile Vikings, JIM Mobile and Stievie, the goal at Unleashed is to provide an answer to all your mobile needs."
+      description={`Through its 3 mobile brands Mobile Vikings, JIM Mobile and Stievie, the goal at Unleashed is to provide an answer to all your mobile needs.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +53,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Unleashed</title>
-          <meta name="description" content="Through its 3 mobile brands Mobile Vikings, JIM Mobile and Stievie, the goal at Unleashed is to provide an answer to all your mobile needs." />
+          <meta name="description" content={`Through its 3 mobile brands Mobile Vikings, JIM Mobile and Stievie, the goal at Unleashed is to provide an answer to all your mobile needs.`} />
         </>
       ),
     },

@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Gravitec.net"
-      description="Gravitec.net offers the widest range of push notification services throughout the world!"
+      description={`Gravitec.net offers the widest range of push notification services throughout the world!`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Gravitec.net</title>
-          <meta name="description" content="Gravitec.net offers the widest range of push notification services throughout the world!" />
+          <meta name="description" content={`Gravitec.net offers the widest range of push notification services throughout the world!`} />
         </>
       ),
     },

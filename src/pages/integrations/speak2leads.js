@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Speak2Leads"
-      description="Speak2Leads converts your new inbound leads into phone calls to your reps to help them respond quickly and persistently and make more sales."
+      description={`Speak2Leads converts your new inbound leads into phone calls to your reps to help them respond quickly and persistently and make more sales.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -61,7 +61,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Speak2Leads</title>
-          <meta name="description" content="Speak2Leads converts your new inbound leads into phone calls to your reps to help them respond quickly and persistently and make more sales." />
+          <meta name="description" content={`Speak2Leads converts your new inbound leads into phone calls to your reps to help them respond quickly and persistently and make more sales.`} />
         </>
       ),
     },

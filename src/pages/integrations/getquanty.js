@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Getquanty"
-      description="Getquanty is a B2B prospection & predictive marketing solution. Identify your website visitors easily and optimize your marketing campaigns."
+      description={`Getquanty is a B2B prospection & predictive marketing solution. Identify your website visitors easily and optimize your marketing campaigns.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -71,7 +71,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Getquanty</title>
-          <meta name="description" content="Getquanty is a B2B prospection & predictive marketing solution. Identify your website visitors easily and optimize your marketing campaigns." />
+          <meta name="description" content={`Getquanty is a B2B prospection & predictive marketing solution. Identify your website visitors easily and optimize your marketing campaigns.`} />
         </>
       ),
     },

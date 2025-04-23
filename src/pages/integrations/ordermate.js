@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Ordermate"
-      description="Ordermate is an automated buying app that allows you to make automatic orders from Amazon, Walmart, and other retailers."
+      description={`Ordermate is an automated buying app that allows you to make automatic orders from Amazon, Walmart, and other retailers.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -61,7 +61,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Ordermate</title>
-          <meta name="description" content="Ordermate is an automated buying app that allows you to make automatic orders from Amazon, Walmart, and other retailers." />
+          <meta name="description" content={`Ordermate is an automated buying app that allows you to make automatic orders from Amazon, Walmart, and other retailers.`} />
         </>
       ),
     },

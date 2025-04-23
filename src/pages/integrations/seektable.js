@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="SeekTable"
-      description="Data exploration and reporting tool to create pivot tables, charts, tabular reports."
+      description={`Data exploration and reporting tool to create pivot tables, charts, tabular reports.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -76,7 +76,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>SeekTable</title>
-          <meta name="description" content="Data exploration and reporting tool to create pivot tables, charts, tabular reports." />
+          <meta name="description" content={`Data exploration and reporting tool to create pivot tables, charts, tabular reports.`} />
         </>
       ),
     },

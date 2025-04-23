@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="MyDesk"
-      description="MyDesk: Get started quickly with a user-friendly CRM for sales."
+      description={`MyDesk: Get started quickly with a user-friendly CRM for sales.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -66,7 +66,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>MyDesk</title>
-          <meta name="description" content="MyDesk: Get started quickly with a user-friendly CRM for sales." />
+          <meta name="description" content={`MyDesk: Get started quickly with a user-friendly CRM for sales.`} />
         </>
       ),
     },

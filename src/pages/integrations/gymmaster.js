@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="GymMaster"
-      description="GymMaster is an advanced membership management system helping simplify business for thousands of fitness clubs around the world."
+      description={`GymMaster is an advanced membership management system helping simplify business for thousands of fitness clubs around the world.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -146,7 +146,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>GymMaster</title>
-          <meta name="description" content="GymMaster is an advanced membership management system helping simplify business for thousands of fitness clubs around the world." />
+          <meta name="description" content={`GymMaster is an advanced membership management system helping simplify business for thousands of fitness clubs around the world.`} />
         </>
       ),
     },

@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Alegra"
-      description="Alegra is an accounting and billing app designed for Latin American managers."
+      description={`Alegra is an accounting and billing app designed for Latin American managers.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -326,7 +326,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Alegra</title>
-          <meta name="description" content="Alegra is an accounting and billing app designed for Latin American managers." />
+          <meta name="description" content={`Alegra is an accounting and billing app designed for Latin American managers.`} />
         </>
       ),
     },

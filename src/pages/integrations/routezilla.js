@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Routezilla"
-      description="Routezilla is a location based scheduling software that understands geography (and your customers)."
+      description={`Routezilla is a location based scheduling software that understands geography (and your customers).`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Routezilla</title>
-          <meta name="description" content="Routezilla is a location based scheduling software that understands geography (and your customers)." />
+          <meta name="description" content={`Routezilla is a location based scheduling software that understands geography (and your customers).`} />
         </>
       ),
     },

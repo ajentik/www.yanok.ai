@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Device Magic"
-      description="Build custom forms to capture important data through your mobile device with Device Magic. Save time, get better data, and automate your business."
+      description={`Build custom forms to capture important data through your mobile device with Device Magic. Save time, get better data, and automate your business.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -61,7 +61,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Device Magic</title>
-          <meta name="description" content="Build custom forms to capture important data through your mobile device with Device Magic. Save time, get better data, and automate your business." />
+          <meta name="description" content={`Build custom forms to capture important data through your mobile device with Device Magic. Save time, get better data, and automate your business.`} />
         </>
       ),
     },

@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Gleam"
-      description="Build powerful competitions and sweepstakes for your business or clients. Our huge range of action combinations, integrations and widget features help you build a wide variety of campaigns."
+      description={`Build powerful competitions and sweepstakes for your business or clients. Our huge range of action combinations, integrations and widget features help you build a wide variety of campaigns.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +53,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Gleam</title>
-          <meta name="description" content="Build powerful competitions and sweepstakes for your business or clients. Our huge range of action combinations, integrations and widget features help you build a wide variety of campaigns." />
+          <meta name="description" content={`Build powerful competitions and sweepstakes for your business or clients. Our huge range of action combinations, integrations and widget features help you build a wide variety of campaigns.`} />
         </>
       ),
     },

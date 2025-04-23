@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="PaySolution Asia"
-      description="Online Payment Service Provider, The First of Thailand."
+      description={`Online Payment Service Provider, The First of Thailand.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>PaySolution Asia</title>
-          <meta name="description" content="Online Payment Service Provider, The First of Thailand." />
+          <meta name="description" content={`Online Payment Service Provider, The First of Thailand.`} />
         </>
       ),
     },

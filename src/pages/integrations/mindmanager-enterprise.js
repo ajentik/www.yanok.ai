@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="MindManager"
-      description="MindManager is productivity software for visualizing and managing complex information, such as detailed project plans. MindManager mind maps, flow charts, Gantt charts, and other diagrams help users more accurately define and validate project schedules, dependencies, workflows and resources."
+      description={`MindManager is productivity software for visualizing and managing complex information, such as detailed project plans. MindManager mind maps, flow charts, Gantt charts, and other diagrams help users more accurately define and validate project schedules, dependencies, workflows and resources.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -61,7 +61,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>MindManager</title>
-          <meta name="description" content="MindManager is productivity software for visualizing and managing complex information, such as detailed project plans. MindManager mind maps, flow charts, Gantt charts, and other diagrams help users more accurately define and validate project schedules, dependencies, workflows and resources." />
+          <meta name="description" content={`MindManager is productivity software for visualizing and managing complex information, such as detailed project plans. MindManager mind maps, flow charts, Gantt charts, and other diagrams help users more accurately define and validate project schedules, dependencies, workflows and resources.`} />
         </>
       ),
     },

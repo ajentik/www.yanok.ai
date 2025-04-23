@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="BookingKoala"
-      description="BookingKoala is a booking platform for service businesses such as cleaning, dog walking, spa, and tutoring services."
+      description={`BookingKoala is a booking platform for service businesses such as cleaning, dog walking, spa, and tutoring services.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -97,7 +97,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>BookingKoala</title>
-          <meta name="description" content="BookingKoala is a booking platform for service businesses such as cleaning, dog walking, spa, and tutoring services." />
+          <meta name="description" content={`BookingKoala is a booking platform for service businesses such as cleaning, dog walking, spa, and tutoring services.`} />
         </>
       ),
     },

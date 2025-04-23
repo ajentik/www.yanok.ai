@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Robly"
-      description="Robly is an email marketing solution designed for beginners and experts alike."
+      description={`Robly is an email marketing solution designed for beginners and experts alike.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -101,7 +101,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Robly</title>
-          <meta name="description" content="Robly is an email marketing solution designed for beginners and experts alike." />
+          <meta name="description" content={`Robly is an email marketing solution designed for beginners and experts alike.`} />
         </>
       ),
     },

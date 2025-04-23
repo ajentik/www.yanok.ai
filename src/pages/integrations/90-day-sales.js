@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="90-Day Sales"
-      description="90-Day Sales is an easy-to-use CRM that features gamification through a Scoreboard that tracks your sales activities."
+      description={`90-Day Sales is an easy-to-use CRM that features gamification through a Scoreboard that tracks your sales activities.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -126,7 +126,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>90-Day Sales</title>
-          <meta name="description" content="90-Day Sales is an easy-to-use CRM that features gamification through a Scoreboard that tracks your sales activities." />
+          <meta name="description" content={`90-Day Sales is an easy-to-use CRM that features gamification through a Scoreboard that tracks your sales activities.`} />
         </>
       ),
     },

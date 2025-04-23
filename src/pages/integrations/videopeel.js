@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="VideoPeel"
-      description="VideoPeel enables businesses to request, capture, collect, share, and analyze videos from their customers, patients, students, and employees."
+      description={`VideoPeel enables businesses to request, capture, collect, share, and analyze videos from their customers, patients, students, and employees.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -66,7 +66,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>VideoPeel</title>
-          <meta name="description" content="VideoPeel enables businesses to request, capture, collect, share, and analyze videos from their customers, patients, students, and employees." />
+          <meta name="description" content={`VideoPeel enables businesses to request, capture, collect, share, and analyze videos from their customers, patients, students, and employees.`} />
         </>
       ),
     },

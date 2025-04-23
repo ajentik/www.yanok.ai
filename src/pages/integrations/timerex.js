@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="TimeRex"
-      description="TimeRex is a schedule automation tool that saves you from the hassle of figuring out schedules, arranging meetings and keeping your calendar updated."
+      description={`TimeRex is a schedule automation tool that saves you from the hassle of figuring out schedules, arranging meetings and keeping your calendar updated.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -62,7 +62,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>TimeRex</title>
-          <meta name="description" content="TimeRex is a schedule automation tool that saves you from the hassle of figuring out schedules, arranging meetings and keeping your calendar updated." />
+          <meta name="description" content={`TimeRex is a schedule automation tool that saves you from the hassle of figuring out schedules, arranging meetings and keeping your calendar updated.`} />
         </>
       ),
     },

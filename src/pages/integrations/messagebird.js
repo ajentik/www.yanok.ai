@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="MessageBird"
-      description="Send SMS and voice messages to any country. Easily done via our website, email or your own software (API). No setup fees. No monthly fees."
+      description={`Send SMS and voice messages to any country. Easily done via our website, email or your own software (API). No setup fees. No monthly fees.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -67,7 +67,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>MessageBird</title>
-          <meta name="description" content="Send SMS and voice messages to any country. Easily done via our website, email or your own software (API). No setup fees. No monthly fees." />
+          <meta name="description" content={`Send SMS and voice messages to any country. Easily done via our website, email or your own software (API). No setup fees. No monthly fees.`} />
         </>
       ),
     },

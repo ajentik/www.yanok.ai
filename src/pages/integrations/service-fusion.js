@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Service Fusion"
-      description="Service Fusion is a field service management software for service contractors. With this application, you create new customers, retrieve job and estimate history, technician information and much more."
+      description={`Service Fusion is a field service management software for service contractors. With this application, you create new customers, retrieve job and estimate history, technician information and much more.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -96,7 +96,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Service Fusion</title>
-          <meta name="description" content="Service Fusion is a field service management software for service contractors. With this application, you create new customers, retrieve job and estimate history, technician information and much more." />
+          <meta name="description" content={`Service Fusion is a field service management software for service contractors. With this application, you create new customers, retrieve job and estimate history, technician information and much more.`} />
         </>
       ),
     },

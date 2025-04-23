@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Anywhere"
-      description="Anywhere helps you organize your work, automate repetitive tasks, and helps you deliver your projects on time."
+      description={`Anywhere helps you organize your work, automate repetitive tasks, and helps you deliver your projects on time.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -66,7 +66,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Anywhere</title>
-          <meta name="description" content="Anywhere helps you organize your work, automate repetitive tasks, and helps you deliver your projects on time." />
+          <meta name="description" content={`Anywhere helps you organize your work, automate repetitive tasks, and helps you deliver your projects on time.`} />
         </>
       ),
     },

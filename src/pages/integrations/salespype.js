@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="SalesPype"
-      description="Automate your sales pipeline and take your sales to new heights. SalesPype is a CRM with built-in automation. 2 Way Text Messages, Ringless Vmail and Email."
+      description={`Automate your sales pipeline and take your sales to new heights. SalesPype is a CRM with built-in automation. 2 Way Text Messages, Ringless Vmail and Email.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +53,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>SalesPype</title>
-          <meta name="description" content="Automate your sales pipeline and take your sales to new heights. SalesPype is a CRM with built-in automation. 2 Way Text Messages, Ringless Vmail and Email." />
+          <meta name="description" content={`Automate your sales pipeline and take your sales to new heights. SalesPype is a CRM with built-in automation. 2 Way Text Messages, Ringless Vmail and Email.`} />
         </>
       ),
     },

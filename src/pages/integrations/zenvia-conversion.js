@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Zenvia Conversion"
-      description="Zenvia Conversion helps you respond to WhatsApp, Instagram and Facebook Messenger through a centralized account and transform your sales processes in the messaging era."
+      description={`Zenvia Conversion helps you respond to WhatsApp, Instagram and Facebook Messenger through a centralized account and transform your sales processes in the messaging era.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -131,7 +131,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Zenvia Conversion</title>
-          <meta name="description" content="Zenvia Conversion helps you respond to WhatsApp, Instagram and Facebook Messenger through a centralized account and transform your sales processes in the messaging era." />
+          <meta name="description" content={`Zenvia Conversion helps you respond to WhatsApp, Instagram and Facebook Messenger through a centralized account and transform your sales processes in the messaging era.`} />
         </>
       ),
     },

@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="SmartFile"
-      description="Secure File Sharing & Transfer Solutions for Business and Enterprise"
+      description={`Secure File Sharing & Transfer Solutions for Business and Enterprise`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -86,7 +86,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>SmartFile</title>
-          <meta name="description" content="Secure File Sharing & Transfer Solutions for Business and Enterprise" />
+          <meta name="description" content={`Secure File Sharing & Transfer Solutions for Business and Enterprise`} />
         </>
       ),
     },

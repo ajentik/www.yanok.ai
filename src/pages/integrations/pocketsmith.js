@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="PocketSmith"
-      description="Manage your budget and forecast your finances with PocketSmith, the best personal finance software on the web. Connect to your bank accounts securely."
+      description={`Manage your budget and forecast your finances with PocketSmith, the best personal finance software on the web. Connect to your bank accounts securely.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +53,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>PocketSmith</title>
-          <meta name="description" content="Manage your budget and forecast your finances with PocketSmith, the best personal finance software on the web. Connect to your bank accounts securely." />
+          <meta name="description" content={`Manage your budget and forecast your finances with PocketSmith, the best personal finance software on the web. Connect to your bank accounts securely.`} />
         </>
       ),
     },

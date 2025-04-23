@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Google Docs"
-      description="Google Docs is an online word processor that lets you create and format text documents. Collaboratively edit documents with other people in real time. We also support Google Sheets!"
+      description={`Google Docs is an online word processor that lets you create and format text documents. Collaboratively edit documents with other people in real time. We also support Google Sheets!`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -91,7 +91,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Google Docs</title>
-          <meta name="description" content="Google Docs is an online word processor that lets you create and format text documents. Collaboratively edit documents with other people in real time. We also support Google Sheets!" />
+          <meta name="description" content={`Google Docs is an online word processor that lets you create and format text documents. Collaboratively edit documents with other people in real time. We also support Google Sheets!`} />
         </>
       ),
     },

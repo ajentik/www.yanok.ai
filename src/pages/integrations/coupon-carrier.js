@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Coupon Carrier"
-      description="Coupon Carrier is a coupon and code distribution service to help you generate and distribute your unique codes. You can integrate with several different email service providers to monitor for new subscribers or events."
+      description={`Coupon Carrier is a coupon and code distribution service to help you generate and distribute your unique codes. You can integrate with several different email service providers to monitor for new subscribers or events.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -91,7 +91,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Coupon Carrier</title>
-          <meta name="description" content="Coupon Carrier is a coupon and code distribution service to help you generate and distribute your unique codes. You can integrate with several different email service providers to monitor for new subscribers or events." />
+          <meta name="description" content={`Coupon Carrier is a coupon and code distribution service to help you generate and distribute your unique codes. You can integrate with several different email service providers to monitor for new subscribers or events.`} />
         </>
       ),
     },

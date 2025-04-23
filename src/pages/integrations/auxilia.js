@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Auxilia"
-      description="Auxilia is a user-friendly donation management system that combines social media integrations, event management, and donor outreach tools."
+      description={`Auxilia is a user-friendly donation management system that combines social media integrations, event management, and donor outreach tools.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -62,7 +62,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Auxilia</title>
-          <meta name="description" content="Auxilia is a user-friendly donation management system that combines social media integrations, event management, and donor outreach tools." />
+          <meta name="description" content={`Auxilia is a user-friendly donation management system that combines social media integrations, event management, and donor outreach tools.`} />
         </>
       ),
     },

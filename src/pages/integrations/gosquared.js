@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="GoSquared"
-      description="GoSquared is a customer analytics platform that brings together all your customer information in one place. GoSquared enables teams to easily search, discover and take action on their customer data, enabling them to acquire more customers, provide better support, and build a better product."
+      description={`GoSquared is a customer analytics platform that brings together all your customer information in one place. GoSquared enables teams to easily search, discover and take action on their customer data, enabling them to acquire more customers, provide better support, and build a better product.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -86,7 +86,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>GoSquared</title>
-          <meta name="description" content="GoSquared is a customer analytics platform that brings together all your customer information in one place. GoSquared enables teams to easily search, discover and take action on their customer data, enabling them to acquire more customers, provide better support, and build a better product." />
+          <meta name="description" content={`GoSquared is a customer analytics platform that brings together all your customer information in one place. GoSquared enables teams to easily search, discover and take action on their customer data, enabling them to acquire more customers, provide better support, and build a better product.`} />
         </>
       ),
     },

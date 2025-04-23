@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="DigiMember"
-      description="DigiMember is a powerful membership plugin for WordPress, that enables you to build your very own automated member area within minutes."
+      description={`DigiMember is a powerful membership plugin for WordPress, that enables you to build your very own automated member area within minutes.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -71,7 +71,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>DigiMember</title>
-          <meta name="description" content="DigiMember is a powerful membership plugin for WordPress, that enables you to build your very own automated member area within minutes." />
+          <meta name="description" content={`DigiMember is a powerful membership plugin for WordPress, that enables you to build your very own automated member area within minutes.`} />
         </>
       ),
     },

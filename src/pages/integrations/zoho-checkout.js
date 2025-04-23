@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Zoho Checkout"
-      description="Zoho Checkout allows you to accept recurring payments and one-time payments with personalized payment pages with zero coding."
+      description={`Zoho Checkout allows you to accept recurring payments and one-time payments with personalized payment pages with zero coding.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -66,7 +66,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Zoho Checkout</title>
-          <meta name="description" content="Zoho Checkout allows you to accept recurring payments and one-time payments with personalized payment pages with zero coding." />
+          <meta name="description" content={`Zoho Checkout allows you to accept recurring payments and one-time payments with personalized payment pages with zero coding.`} />
         </>
       ),
     },

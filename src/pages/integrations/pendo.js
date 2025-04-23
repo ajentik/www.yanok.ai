@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Pendo Feedback"
-      description="Pendo Feedback is a platform that helps SaaS companies manage product feedback and requests from their customers and team."
+      description={`Pendo Feedback is a platform that helps SaaS companies manage product feedback and requests from their customers and team.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -67,7 +67,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Pendo Feedback</title>
-          <meta name="description" content="Pendo Feedback is a platform that helps SaaS companies manage product feedback and requests from their customers and team." />
+          <meta name="description" content={`Pendo Feedback is a platform that helps SaaS companies manage product feedback and requests from their customers and team.`} />
         </>
       ),
     },

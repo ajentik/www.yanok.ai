@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Amazon Alexa"
-      description="Amazon Alexa is used to set up your Alexa-enabled devices, listen to music, create shopping lists, get news updates, and much more."
+      description={`Amazon Alexa is used to set up your Alexa-enabled devices, listen to music, create shopping lists, get news updates, and much more.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Amazon Alexa</title>
-          <meta name="description" content="Amazon Alexa is used to set up your Alexa-enabled devices, listen to music, create shopping lists, get news updates, and much more." />
+          <meta name="description" content={`Amazon Alexa is used to set up your Alexa-enabled devices, listen to music, create shopping lists, get news updates, and much more.`} />
         </>
       ),
     },

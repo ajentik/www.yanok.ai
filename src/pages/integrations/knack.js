@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Knack"
-      description="Knack is the easy way to build online databases and applications."
+      description={`Knack is the easy way to build online databases and applications.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -86,7 +86,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Knack</title>
-          <meta name="description" content="Knack is the easy way to build online databases and applications." />
+          <meta name="description" content={`Knack is the easy way to build online databases and applications.`} />
         </>
       ),
     },

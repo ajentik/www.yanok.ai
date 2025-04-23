@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="WizeHire"
-      description="WizeHire helps small businesses find and hire the best talent by transforming the recruiting process."
+      description={`WizeHire helps small businesses find and hire the best talent by transforming the recruiting process.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -67,7 +67,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>WizeHire</title>
-          <meta name="description" content="WizeHire helps small businesses find and hire the best talent by transforming the recruiting process." />
+          <meta name="description" content={`WizeHire helps small businesses find and hire the best talent by transforming the recruiting process.`} />
         </>
       ),
     },

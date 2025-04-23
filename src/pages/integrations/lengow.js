@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Lengow"
-      description="Lengow is an e-commerce automation platform that helps brands and distributors to sell their products online, manage their orders coming from marketplaces and improve their online performance."
+      description={`Lengow is an e-commerce automation platform that helps brands and distributors to sell their products online, manage their orders coming from marketplaces and improve their online performance.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -62,7 +62,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Lengow</title>
-          <meta name="description" content="Lengow is an e-commerce automation platform that helps brands and distributors to sell their products online, manage their orders coming from marketplaces and improve their online performance." />
+          <meta name="description" content={`Lengow is an e-commerce automation platform that helps brands and distributors to sell their products online, manage their orders coming from marketplaces and improve their online performance.`} />
         </>
       ),
     },

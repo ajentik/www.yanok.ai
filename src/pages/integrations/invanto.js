@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Invanto"
-      description="Invanto business centralization suite is designed to provide an all-in-one solution to build & automate your business."
+      description={`Invanto business centralization suite is designed to provide an all-in-one solution to build & automate your business.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +53,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Invanto</title>
-          <meta name="description" content="Invanto business centralization suite is designed to provide an all-in-one solution to build & automate your business." />
+          <meta name="description" content={`Invanto business centralization suite is designed to provide an all-in-one solution to build & automate your business.`} />
         </>
       ),
     },

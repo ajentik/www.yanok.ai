@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="CartHook"
-      description="CartHook Inc. operates a website that automatically recovers abandoned carts for ecommerce sites."
+      description={`CartHook Inc. operates a website that automatically recovers abandoned carts for ecommerce sites.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +53,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>CartHook</title>
-          <meta name="description" content="CartHook Inc. operates a website that automatically recovers abandoned carts for ecommerce sites." />
+          <meta name="description" content={`CartHook Inc. operates a website that automatically recovers abandoned carts for ecommerce sites.`} />
         </>
       ),
     },

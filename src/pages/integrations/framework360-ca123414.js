@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Framework360"
-      description="Framework360 è il software essenziale per i veri professionisti del digital marketing."
+      description={`Framework360 è il software essenziale per i veri professionisti del digital marketing.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -96,7 +96,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Framework360</title>
-          <meta name="description" content="Framework360 è il software essenziale per i veri professionisti del digital marketing." />
+          <meta name="description" content={`Framework360 è il software essenziale per i veri professionisti del digital marketing.`} />
         </>
       ),
     },

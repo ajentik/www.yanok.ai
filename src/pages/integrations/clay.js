@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Clay"
-      description="Clay is a simple spreadsheet interface, yet powerful automation platform that allows you to build internal tooling and automations to streamline your marketing, sales, and recruiting."
+      description={`Clay is a simple spreadsheet interface, yet powerful automation platform that allows you to build internal tooling and automations to streamline your marketing, sales, and recruiting.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -77,7 +77,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Clay</title>
-          <meta name="description" content="Clay is a simple spreadsheet interface, yet powerful automation platform that allows you to build internal tooling and automations to streamline your marketing, sales, and recruiting." />
+          <meta name="description" content={`Clay is a simple spreadsheet interface, yet powerful automation platform that allows you to build internal tooling and automations to streamline your marketing, sales, and recruiting.`} />
         </>
       ),
     },

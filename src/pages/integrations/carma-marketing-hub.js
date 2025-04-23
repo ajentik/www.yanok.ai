@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Carma Marketing Hub"
-      description="Carma Marketing Hub is a platform made for enterprise marketers to create, send and track digital 1:1 communication. Manage your responsive email marketing, segmented and personalized newsletters, marketing automation and recipient data."
+      description={`Carma Marketing Hub is a platform made for enterprise marketers to create, send and track digital 1:1 communication. Manage your responsive email marketing, segmented and personalized newsletters, marketing automation and recipient data.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -72,7 +72,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Carma Marketing Hub</title>
-          <meta name="description" content="Carma Marketing Hub is a platform made for enterprise marketers to create, send and track digital 1:1 communication. Manage your responsive email marketing, segmented and personalized newsletters, marketing automation and recipient data." />
+          <meta name="description" content={`Carma Marketing Hub is a platform made for enterprise marketers to create, send and track digital 1:1 communication. Manage your responsive email marketing, segmented and personalized newsletters, marketing automation and recipient data.`} />
         </>
       ),
     },

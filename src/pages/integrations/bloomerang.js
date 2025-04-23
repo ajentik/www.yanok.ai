@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Bloomerang"
-      description="Bloomerang is a simple, cloud-based donor database solution that pools together the latest in best practices for donor engagement and retention."
+      description={`Bloomerang is a simple, cloud-based donor database solution that pools together the latest in best practices for donor engagement and retention.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -121,7 +121,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Bloomerang</title>
-          <meta name="description" content="Bloomerang is a simple, cloud-based donor database solution that pools together the latest in best practices for donor engagement and retention." />
+          <meta name="description" content={`Bloomerang is a simple, cloud-based donor database solution that pools together the latest in best practices for donor engagement and retention.`} />
         </>
       ),
     },

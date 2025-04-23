@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Analytic Call Tracking"
-      description="Analytic Call Tracking (ACT) helps route and track calls with full analytic reporting."
+      description={`Analytic Call Tracking (ACT) helps route and track calls with full analytic reporting.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -111,7 +111,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Analytic Call Tracking</title>
-          <meta name="description" content="Analytic Call Tracking (ACT) helps route and track calls with full analytic reporting." />
+          <meta name="description" content={`Analytic Call Tracking (ACT) helps route and track calls with full analytic reporting.`} />
         </>
       ),
     },

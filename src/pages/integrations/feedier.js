@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Feedier"
-      description="Feedier lets you collect valuable feedback from your users by providing an enjoyable & rewarding experience."
+      description={`Feedier lets you collect valuable feedback from your users by providing an enjoyable & rewarding experience.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -86,7 +86,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Feedier</title>
-          <meta name="description" content="Feedier lets you collect valuable feedback from your users by providing an enjoyable & rewarding experience." />
+          <meta name="description" content={`Feedier lets you collect valuable feedback from your users by providing an enjoyable & rewarding experience.`} />
         </>
       ),
     },

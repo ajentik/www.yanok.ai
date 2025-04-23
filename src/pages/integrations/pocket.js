@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Pocket"
-      description="Pocket is the best way to save articles, videos and links to view on any device, any time."
+      description={`Pocket is the best way to save articles, videos and links to view on any device, any time.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -76,7 +76,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Pocket</title>
-          <meta name="description" content="Pocket is the best way to save articles, videos and links to view on any device, any time." />
+          <meta name="description" content={`Pocket is the best way to save articles, videos and links to view on any device, any time.`} />
         </>
       ),
     },

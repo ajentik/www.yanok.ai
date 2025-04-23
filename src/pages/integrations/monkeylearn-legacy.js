@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="MonkeyLearn"
-      description="MonkeyLearn is a Text Analysis platform that allows you to classify and extract actionable data from raw texts like emails, chats, webpages, documents, tweets and more! You can classify texts with custom tags like sentiment or topic, and extract any particular data like organizations or keywords."
+      description={`MonkeyLearn is a Text Analysis platform that allows you to classify and extract actionable data from raw texts like emails, chats, webpages, documents, tweets and more! You can classify texts with custom tags like sentiment or topic, and extract any particular data like organizations or keywords.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -67,7 +67,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>MonkeyLearn</title>
-          <meta name="description" content="MonkeyLearn is a Text Analysis platform that allows you to classify and extract actionable data from raw texts like emails, chats, webpages, documents, tweets and more! You can classify texts with custom tags like sentiment or topic, and extract any particular data like organizations or keywords." />
+          <meta name="description" content={`MonkeyLearn is a Text Analysis platform that allows you to classify and extract actionable data from raw texts like emails, chats, webpages, documents, tweets and more! You can classify texts with custom tags like sentiment or topic, and extract any particular data like organizations or keywords.`} />
         </>
       ),
     },

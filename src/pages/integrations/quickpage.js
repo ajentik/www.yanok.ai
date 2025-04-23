@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Quickpage"
-      description="Quickpage is a video follow-up tool that's increasing engagement by 200%. The quickest most effective closing tool used by sales reps and their clients."
+      description={`Quickpage is a video follow-up tool that's increasing engagement by 200%. The quickest most effective closing tool used by sales reps and their clients.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -86,7 +86,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Quickpage</title>
-          <meta name="description" content="Quickpage is a video follow-up tool that's increasing engagement by 200%. The quickest most effective closing tool used by sales reps and their clients." />
+          <meta name="description" content={`Quickpage is a video follow-up tool that's increasing engagement by 200%. The quickest most effective closing tool used by sales reps and their clients.`} />
         </>
       ),
     },

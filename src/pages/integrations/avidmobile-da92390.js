@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="AvidMobile"
-      description="AvidMobile is a service that enables you to add SMS to your communication and marketing strategies with 2-way SMS, coupons, contests, and loyalty."
+      description={`AvidMobile is a service that enables you to add SMS to your communication and marketing strategies with 2-way SMS, coupons, contests, and loyalty.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -136,7 +136,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>AvidMobile</title>
-          <meta name="description" content="AvidMobile is a service that enables you to add SMS to your communication and marketing strategies with 2-way SMS, coupons, contests, and loyalty." />
+          <meta name="description" content={`AvidMobile is a service that enables you to add SMS to your communication and marketing strategies with 2-way SMS, coupons, contests, and loyalty.`} />
         </>
       ),
     },

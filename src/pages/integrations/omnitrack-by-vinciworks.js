@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Omnitrack by VinciWorks"
-      description="Omnitrack is a workflow and automation app for risk and compliance professionals."
+      description={`Omnitrack is a workflow and automation app for risk and compliance professionals.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Omnitrack by VinciWorks</title>
-          <meta name="description" content="Omnitrack is a workflow and automation app for risk and compliance professionals." />
+          <meta name="description" content={`Omnitrack is a workflow and automation app for risk and compliance professionals.`} />
         </>
       ),
     },

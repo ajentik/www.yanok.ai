@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Convert Forms"
-      description="Convert Forms is a user-friendly form builder for Joomla that allows you to easily create perfect contact forms, newsletter opt-in forms and any kind of forms so you can collect the data and registrations in your Joomla website."
+      description={`Convert Forms is a user-friendly form builder for Joomla that allows you to easily create perfect contact forms, newsletter opt-in forms and any kind of forms so you can collect the data and registrations in your Joomla website.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Convert Forms</title>
-          <meta name="description" content="Convert Forms is a user-friendly form builder for Joomla that allows you to easily create perfect contact forms, newsletter opt-in forms and any kind of forms so you can collect the data and registrations in your Joomla website." />
+          <meta name="description" content={`Convert Forms is a user-friendly form builder for Joomla that allows you to easily create perfect contact forms, newsletter opt-in forms and any kind of forms so you can collect the data and registrations in your Joomla website.`} />
         </>
       ),
     },

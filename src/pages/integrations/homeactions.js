@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="HomeActions"
-      description="HomeActions is a leading provider of email newsletters for real estate professionals. We deliver a simple, effective way for Real Estate professionals to consistently reach their entire group of contacts, keep referrals flowing and increase opportunities for sales."
+      description={`HomeActions is a leading provider of email newsletters for real estate professionals. We deliver a simple, effective way for Real Estate professionals to consistently reach their entire group of contacts, keep referrals flowing and increase opportunities for sales.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -81,7 +81,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>HomeActions</title>
-          <meta name="description" content="HomeActions is a leading provider of email newsletters for real estate professionals. We deliver a simple, effective way for Real Estate professionals to consistently reach their entire group of contacts, keep referrals flowing and increase opportunities for sales." />
+          <meta name="description" content={`HomeActions is a leading provider of email newsletters for real estate professionals. We deliver a simple, effective way for Real Estate professionals to consistently reach their entire group of contacts, keep referrals flowing and increase opportunities for sales.`} />
         </>
       ),
     },

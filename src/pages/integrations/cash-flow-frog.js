@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Cash Flow Frog"
-      description="Cash Flow Frog is a simple yet powerful cash flow forecasting and scenario planning tool."
+      description={`Cash Flow Frog is a simple yet powerful cash flow forecasting and scenario planning tool.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Cash Flow Frog</title>
-          <meta name="description" content="Cash Flow Frog is a simple yet powerful cash flow forecasting and scenario planning tool." />
+          <meta name="description" content={`Cash Flow Frog is a simple yet powerful cash flow forecasting and scenario planning tool.`} />
         </>
       ),
     },

@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="myPresences"
-      description="Manage and grow your business's online presence and reputation everywhere online. Get more reviews and showcase them on your website or on social media."
+      description={`Manage and grow your business's online presence and reputation everywhere online. Get more reviews and showcase them on your website or on social media.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>myPresences</title>
-          <meta name="description" content="Manage and grow your business's online presence and reputation everywhere online. Get more reviews and showcase them on your website or on social media." />
+          <meta name="description" content={`Manage and grow your business's online presence and reputation everywhere online. Get more reviews and showcase them on your website or on social media.`} />
         </>
       ),
     },

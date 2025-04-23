@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Expiration Reminder"
-      description="Expiration Reminder automatically tracks expiration dates and renewals for employee certifications, software licenses, contracts, etc."
+      description={`Expiration Reminder automatically tracks expiration dates and renewals for employee certifications, software licenses, contracts, etc.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -72,7 +72,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Expiration Reminder</title>
-          <meta name="description" content="Expiration Reminder automatically tracks expiration dates and renewals for employee certifications, software licenses, contracts, etc." />
+          <meta name="description" content={`Expiration Reminder automatically tracks expiration dates and renewals for employee certifications, software licenses, contracts, etc.`} />
         </>
       ),
     },

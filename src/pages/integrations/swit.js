@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Swit"
-      description="Swit is one work suite for Chat and Project Management. With Swit, you can replace other team collaboration tools."
+      description={`Swit is one work suite for Chat and Project Management. With Swit, you can replace other team collaboration tools.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -181,7 +181,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Swit</title>
-          <meta name="description" content="Swit is one work suite for Chat and Project Management. With Swit, you can replace other team collaboration tools." />
+          <meta name="description" content={`Swit is one work suite for Chat and Project Management. With Swit, you can replace other team collaboration tools.`} />
         </>
       ),
     },

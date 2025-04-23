@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Mouseflow"
-      description="Mouseflow is the most popular session replay / recording and website heatmap tool."
+      description={`Mouseflow is the most popular session replay / recording and website heatmap tool.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +53,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Mouseflow</title>
-          <meta name="description" content="Mouseflow is the most popular session replay / recording and website heatmap tool." />
+          <meta name="description" content={`Mouseflow is the most popular session replay / recording and website heatmap tool.`} />
         </>
       ),
     },

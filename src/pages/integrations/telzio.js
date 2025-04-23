@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Telzio"
-      description="Telzio provides companies with high-quality, feature-rich phone systems, and integrates teams under a seamless, cloud platform."
+      description={`Telzio provides companies with high-quality, feature-rich phone systems, and integrates teams under a seamless, cloud platform.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -91,7 +91,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Telzio</title>
-          <meta name="description" content="Telzio provides companies with high-quality, feature-rich phone systems, and integrates teams under a seamless, cloud platform." />
+          <meta name="description" content={`Telzio provides companies with high-quality, feature-rich phone systems, and integrates teams under a seamless, cloud platform.`} />
         </>
       ),
     },

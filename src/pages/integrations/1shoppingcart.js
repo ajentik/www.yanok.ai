@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="1Shoppingcart"
-      description="Build a powerful, secure ecommerce storefront with our Online Store Software. Sell, promote, and grow with the 1ShoppingCart.com Online Store Builder."
+      description={`Build a powerful, secure ecommerce storefront with our Online Store Software. Sell, promote, and grow with the 1ShoppingCart.com Online Store Builder.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +53,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>1Shoppingcart</title>
-          <meta name="description" content="Build a powerful, secure ecommerce storefront with our Online Store Software. Sell, promote, and grow with the 1ShoppingCart.com Online Store Builder." />
+          <meta name="description" content={`Build a powerful, secure ecommerce storefront with our Online Store Software. Sell, promote, and grow with the 1ShoppingCart.com Online Store Builder.`} />
         </>
       ),
     },

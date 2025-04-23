@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="DynaPictures"
-      description="Design image templates and auto-generate personalized images via API."
+      description={`Design image templates and auto-generate personalized images via API.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -71,7 +71,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>DynaPictures</title>
-          <meta name="description" content="Design image templates and auto-generate personalized images via API." />
+          <meta name="description" content={`Design image templates and auto-generate personalized images via API.`} />
         </>
       ),
     },

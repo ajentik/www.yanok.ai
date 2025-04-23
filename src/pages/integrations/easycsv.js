@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="EasyCSV"
-      description="EasyCSV enables your users or team members to import CSV files and Google Sheets into your app or any public api."
+      description={`EasyCSV enables your users or team members to import CSV files and Google Sheets into your app or any public api.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -66,7 +66,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>EasyCSV</title>
-          <meta name="description" content="EasyCSV enables your users or team members to import CSV files and Google Sheets into your app or any public api." />
+          <meta name="description" content={`EasyCSV enables your users or team members to import CSV files and Google Sheets into your app or any public api.`} />
         </>
       ),
     },

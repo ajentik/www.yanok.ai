@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="LeadOwl"
-      description="LeadOwl is a smart phone & web app that allows you and your team to connect funnels, get reminders, and follow up with prospects instantly."
+      description={`LeadOwl is a smart phone & web app that allows you and your team to connect funnels, get reminders, and follow up with prospects instantly.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>LeadOwl</title>
-          <meta name="description" content="LeadOwl is a smart phone & web app that allows you and your team to connect funnels, get reminders, and follow up with prospects instantly." />
+          <meta name="description" content={`LeadOwl is a smart phone & web app that allows you and your team to connect funnels, get reminders, and follow up with prospects instantly.`} />
         </>
       ),
     },

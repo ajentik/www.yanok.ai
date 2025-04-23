@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="WhatCounts"
-      description="WhatCounts is an email marketing company that provides data management, software, and services to marketing professionals."
+      description={`WhatCounts is an email marketing company that provides data management, software, and services to marketing professionals.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +53,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>WhatCounts</title>
-          <meta name="description" content="WhatCounts is an email marketing company that provides data management, software, and services to marketing professionals." />
+          <meta name="description" content={`WhatCounts is an email marketing company that provides data management, software, and services to marketing professionals.`} />
         </>
       ),
     },

@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Vista One"
-      description="Vista One by Ambry Hill Technologies is Real-Time Data Resource Exchange Across Different ODBC Compliant Databases"
+      description={`Vista One by Ambry Hill Technologies is Real-Time Data Resource Exchange Across Different ODBC Compliant Databases`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Vista One</title>
-          <meta name="description" content="Vista One by Ambry Hill Technologies is Real-Time Data Resource Exchange Across Different ODBC Compliant Databases" />
+          <meta name="description" content={`Vista One by Ambry Hill Technologies is Real-Time Data Resource Exchange Across Different ODBC Compliant Databases`} />
         </>
       ),
     },

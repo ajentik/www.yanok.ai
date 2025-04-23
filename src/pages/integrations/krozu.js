@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Krozu"
-      description="Krozu is a hierarchical project/business management tool to collaborate, track and organize projects on a business scale"
+      description={`Krozu is a hierarchical project/business management tool to collaborate, track and organize projects on a business scale`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -361,7 +361,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Krozu</title>
-          <meta name="description" content="Krozu is a hierarchical project/business management tool to collaborate, track and organize projects on a business scale" />
+          <meta name="description" content={`Krozu is a hierarchical project/business management tool to collaborate, track and organize projects on a business scale`} />
         </>
       ),
     },

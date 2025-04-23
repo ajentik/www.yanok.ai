@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Mohimmatech"
-      description="Mohimmatech is task and project management tool that helps teams organize their work and improve their performance."
+      description={`Mohimmatech is task and project management tool that helps teams organize their work and improve their performance.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -96,7 +96,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Mohimmatech</title>
-          <meta name="description" content="Mohimmatech is task and project management tool that helps teams organize their work and improve their performance." />
+          <meta name="description" content={`Mohimmatech is task and project management tool that helps teams organize their work and improve their performance.`} />
         </>
       ),
     },

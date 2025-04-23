@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="OneDrive"
-      description="OneDrive, Microsoft's file sync app formerly known as SkyDrive, lets you store your files online, edit Office documents in the free Office Web Apps, and easily access your online files from your PC."
+      description={`OneDrive, Microsoft's file sync app formerly known as SkyDrive, lets you store your files online, edit Office documents in the free Office Web Apps, and easily access your online files from your PC.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -96,7 +96,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>OneDrive</title>
-          <meta name="description" content="OneDrive, Microsoft's file sync app formerly known as SkyDrive, lets you store your files online, edit Office documents in the free Office Web Apps, and easily access your online files from your PC." />
+          <meta name="description" content={`OneDrive, Microsoft's file sync app formerly known as SkyDrive, lets you store your files online, edit Office documents in the free Office Web Apps, and easily access your online files from your PC.`} />
         </>
       ),
     },

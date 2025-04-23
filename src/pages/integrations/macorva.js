@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Macorva"
-      description="Macorva is a customer survey tool that allows you to easily collect and analyze customer, brand, employee, and product experiences."
+      description={`Macorva is a customer survey tool that allows you to easily collect and analyze customer, brand, employee, and product experiences.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -62,7 +62,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Macorva</title>
-          <meta name="description" content="Macorva is a customer survey tool that allows you to easily collect and analyze customer, brand, employee, and product experiences." />
+          <meta name="description" content={`Macorva is a customer survey tool that allows you to easily collect and analyze customer, brand, employee, and product experiences.`} />
         </>
       ),
     },

@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Repsly"
-      description="Repsly's retail execution platform provides data-driven merchandising, field sales, and promotion execution solutions to help CPG brands and merchandisers maximize the impact of their field teams."
+      description={`Repsly's retail execution platform provides data-driven merchandising, field sales, and promotion execution solutions to help CPG brands and merchandisers maximize the impact of their field teams.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -121,7 +121,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Repsly</title>
-          <meta name="description" content="Repsly's retail execution platform provides data-driven merchandising, field sales, and promotion execution solutions to help CPG brands and merchandisers maximize the impact of their field teams." />
+          <meta name="description" content={`Repsly's retail execution platform provides data-driven merchandising, field sales, and promotion execution solutions to help CPG brands and merchandisers maximize the impact of their field teams.`} />
         </>
       ),
     },

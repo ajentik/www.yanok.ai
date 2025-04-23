@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="TeleCube VPBX"
-      description="TeleCube is a VoIP operator that delivers innovative telecommunication solutions to Business Clients. Through the modern and intuitive Client Panel, TeleCube allows easy management of calls and telecommunication services."
+      description={`TeleCube is a VoIP operator that delivers innovative telecommunication solutions to Business Clients. Through the modern and intuitive Client Panel, TeleCube allows easy management of calls and telecommunication services.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -77,7 +77,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>TeleCube VPBX</title>
-          <meta name="description" content="TeleCube is a VoIP operator that delivers innovative telecommunication solutions to Business Clients. Through the modern and intuitive Client Panel, TeleCube allows easy management of calls and telecommunication services." />
+          <meta name="description" content={`TeleCube is a VoIP operator that delivers innovative telecommunication solutions to Business Clients. Through the modern and intuitive Client Panel, TeleCube allows easy management of calls and telecommunication services.`} />
         </>
       ),
     },

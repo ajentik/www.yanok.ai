@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Workflowsoft"
-      description="Workflowsoft is a work management solution to automate, manage, and track your business processes."
+      description={`Workflowsoft is a work management solution to automate, manage, and track your business processes.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -76,7 +76,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Workflowsoft</title>
-          <meta name="description" content="Workflowsoft is a work management solution to automate, manage, and track your business processes." />
+          <meta name="description" content={`Workflowsoft is a work management solution to automate, manage, and track your business processes.`} />
         </>
       ),
     },

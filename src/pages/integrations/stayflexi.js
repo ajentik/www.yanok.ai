@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Stayflexi"
-      description="Stayflexi is the Modern Operating System for Hotels and Vacation Rentals. It helps properties to automate operations and maximize revenues on unsold rooms and amenities with an innovative flexible booking model."
+      description={`Stayflexi is the Modern Operating System for Hotels and Vacation Rentals. It helps properties to automate operations and maximize revenues on unsold rooms and amenities with an innovative flexible booking model.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Stayflexi</title>
-          <meta name="description" content="Stayflexi is the Modern Operating System for Hotels and Vacation Rentals. It helps properties to automate operations and maximize revenues on unsold rooms and amenities with an innovative flexible booking model." />
+          <meta name="description" content={`Stayflexi is the Modern Operating System for Hotels and Vacation Rentals. It helps properties to automate operations and maximize revenues on unsold rooms and amenities with an innovative flexible booking model.`} />
         </>
       ),
     },

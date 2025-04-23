@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Landvoice"
-      description="Landvoice is the premier lead provider for the real estate industry. Landvoice finds the most accurate phone numbers for your leads."
+      description={`Landvoice is the premier lead provider for the real estate industry. Landvoice finds the most accurate phone numbers for your leads.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +53,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Landvoice</title>
-          <meta name="description" content="Landvoice is the premier lead provider for the real estate industry. Landvoice finds the most accurate phone numbers for your leads." />
+          <meta name="description" content={`Landvoice is the premier lead provider for the real estate industry. Landvoice finds the most accurate phone numbers for your leads.`} />
         </>
       ),
     },

@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="LinkedIn Matched Audiences"
-      description="LinkedIn Matched Audiences lets you deliver marketing messages based on website retargeting, account targeting, and email contact targeting."
+      description={`LinkedIn Matched Audiences lets you deliver marketing messages based on website retargeting, account targeting, and email contact targeting.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -67,7 +67,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>LinkedIn Matched Audiences</title>
-          <meta name="description" content="LinkedIn Matched Audiences lets you deliver marketing messages based on website retargeting, account targeting, and email contact targeting." />
+          <meta name="description" content={`LinkedIn Matched Audiences lets you deliver marketing messages based on website retargeting, account targeting, and email contact targeting.`} />
         </>
       ),
     },

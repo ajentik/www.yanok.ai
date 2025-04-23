@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Helpy Pro"
-      description="Helpy Pro is the customer support platform engineered for companies that are serious about customer data security and control."
+      description={`Helpy Pro is the customer support platform engineered for companies that are serious about customer data security and control.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -121,7 +121,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Helpy Pro</title>
-          <meta name="description" content="Helpy Pro is the customer support platform engineered for companies that are serious about customer data security and control." />
+          <meta name="description" content={`Helpy Pro is the customer support platform engineered for companies that are serious about customer data security and control.`} />
         </>
       ),
     },

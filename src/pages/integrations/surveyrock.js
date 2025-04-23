@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="SurveyRock"
-      description="SurvyeRock is a survey creation tool to help you gather feedback from anyone at anytime."
+      description={`SurvyeRock is a survey creation tool to help you gather feedback from anyone at anytime.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>SurveyRock</title>
-          <meta name="description" content="SurvyeRock is a survey creation tool to help you gather feedback from anyone at anytime." />
+          <meta name="description" content={`SurvyeRock is a survey creation tool to help you gather feedback from anyone at anytime.`} />
         </>
       ),
     },

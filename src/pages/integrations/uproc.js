@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="UProc"
-      description="UProc is a multipurpose data platform: clean, verify or enrich any field in forms, databases, files or applications with multiple categories supported (persons, companies, products, communications, social...)."
+      description={`UProc is a multipurpose data platform: clean, verify or enrich any field in forms, databases, files or applications with multiple categories supported (persons, companies, products, communications, social...).`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -66,7 +66,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>UProc</title>
-          <meta name="description" content="UProc is a multipurpose data platform: clean, verify or enrich any field in forms, databases, files or applications with multiple categories supported (persons, companies, products, communications, social...)." />
+          <meta name="description" content={`UProc is a multipurpose data platform: clean, verify or enrich any field in forms, databases, files or applications with multiple categories supported (persons, companies, products, communications, social...).`} />
         </>
       ),
     },

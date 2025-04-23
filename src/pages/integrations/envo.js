@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Envo"
-      description="Envo is a native connection with the electronic invoicing solution developed by Collado & Compañía for the Dominican Republic"
+      description={`Envo is a native connection with the electronic invoicing solution developed by Collado & Compañía for the Dominican Republic`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Envo</title>
-          <meta name="description" content="Envo is a native connection with the electronic invoicing solution developed by Collado & Compañía for the Dominican Republic" />
+          <meta name="description" content={`Envo is a native connection with the electronic invoicing solution developed by Collado & Compañía for the Dominican Republic`} />
         </>
       ),
     },

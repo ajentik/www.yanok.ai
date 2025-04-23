@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="DG1"
-      description="DG1 is an all-in-one E-Business suite with enterprise-level capabilities for small and medium-sized businesses. It is affordably delivered through the cloud as a SaaS."
+      description={`DG1 is an all-in-one E-Business suite with enterprise-level capabilities for small and medium-sized businesses. It is affordably delivered through the cloud as a SaaS.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -71,7 +71,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>DG1</title>
-          <meta name="description" content="DG1 is an all-in-one E-Business suite with enterprise-level capabilities for small and medium-sized businesses. It is affordably delivered through the cloud as a SaaS." />
+          <meta name="description" content={`DG1 is an all-in-one E-Business suite with enterprise-level capabilities for small and medium-sized businesses. It is affordably delivered through the cloud as a SaaS.`} />
         </>
       ),
     },

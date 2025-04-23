@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="3Sigma"
-      description="3Sigma is a CRM application and one stop solution to manage your leads in realtime from different resources."
+      description={`3Sigma is a CRM application and one stop solution to manage your leads in realtime from different resources.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>3Sigma</title>
-          <meta name="description" content="3Sigma is a CRM application and one stop solution to manage your leads in realtime from different resources." />
+          <meta name="description" content={`3Sigma is a CRM application and one stop solution to manage your leads in realtime from different resources.`} />
         </>
       ),
     },

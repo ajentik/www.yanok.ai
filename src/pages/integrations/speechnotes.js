@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Speechnotes"
-      description="Automatically transform all audio recordings to text. Most accurate AI transcription (speech to text) engines. Fast, affordable, secure & private."
+      description={`Automatically transform all audio recordings to text. Most accurate AI transcription (speech to text) engines. Fast, affordable, secure & private.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -61,7 +61,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Speechnotes</title>
-          <meta name="description" content="Automatically transform all audio recordings to text. Most accurate AI transcription (speech to text) engines. Fast, affordable, secure & private." />
+          <meta name="description" content={`Automatically transform all audio recordings to text. Most accurate AI transcription (speech to text) engines. Fast, affordable, secure & private.`} />
         </>
       ),
     },

@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="EasyWebinar"
-      description="EasyWebinar is a webinar software program that allows you to go live or use our automated feature to show a pre-recorded video as your webinar. Connect any webinar in EasyWebinar, live or automated, to your favorite autoresponder."
+      description={`EasyWebinar is a webinar software program that allows you to go live or use our automated feature to show a pre-recorded video as your webinar. Connect any webinar in EasyWebinar, live or automated, to your favorite autoresponder.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -71,7 +71,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>EasyWebinar</title>
-          <meta name="description" content="EasyWebinar is a webinar software program that allows you to go live or use our automated feature to show a pre-recorded video as your webinar. Connect any webinar in EasyWebinar, live or automated, to your favorite autoresponder." />
+          <meta name="description" content={`EasyWebinar is a webinar software program that allows you to go live or use our automated feature to show a pre-recorded video as your webinar. Connect any webinar in EasyWebinar, live or automated, to your favorite autoresponder.`} />
         </>
       ),
     },

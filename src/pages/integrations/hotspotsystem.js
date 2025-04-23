@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="HotspotSystem"
-      description="Extract data of your hotspot users, using the cloud based hotspot management service of hotspotsystem.com."
+      description={`Extract data of your hotspot users, using the cloud based hotspot management service of hotspotsystem.com.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -66,7 +66,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>HotspotSystem</title>
-          <meta name="description" content="Extract data of your hotspot users, using the cloud based hotspot management service of hotspotsystem.com." />
+          <meta name="description" content={`Extract data of your hotspot users, using the cloud based hotspot management service of hotspotsystem.com.`} />
         </>
       ),
     },

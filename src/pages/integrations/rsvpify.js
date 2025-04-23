@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="RSVPify"
-      description="RSVPify is a powerful, end-to-end event management and online ticketing platform."
+      description={`RSVPify is a powerful, end-to-end event management and online ticketing platform.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -146,7 +146,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>RSVPify</title>
-          <meta name="description" content="RSVPify is a powerful, end-to-end event management and online ticketing platform." />
+          <meta name="description" content={`RSVPify is a powerful, end-to-end event management and online ticketing platform.`} />
         </>
       ),
     },

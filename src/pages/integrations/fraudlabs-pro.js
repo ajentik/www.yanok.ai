@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="FraudLabs Pro"
-      description="FraudLabs Pro helps merchants to protect their online stores from payment frauds."
+      description={`FraudLabs Pro helps merchants to protect their online stores from payment frauds.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -61,7 +61,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>FraudLabs Pro</title>
-          <meta name="description" content="FraudLabs Pro helps merchants to protect their online stores from payment frauds." />
+          <meta name="description" content={`FraudLabs Pro helps merchants to protect their online stores from payment frauds.`} />
         </>
       ),
     },

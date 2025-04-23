@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Hypercontext"
-      description="Hypercontext is an app designed to help managers and direct reports have better one-on-ones, team meetings, and discussions."
+      description={`Hypercontext is an app designed to help managers and direct reports have better one-on-ones, team meetings, and discussions.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -61,7 +61,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Hypercontext</title>
-          <meta name="description" content="Hypercontext is an app designed to help managers and direct reports have better one-on-ones, team meetings, and discussions." />
+          <meta name="description" content={`Hypercontext is an app designed to help managers and direct reports have better one-on-ones, team meetings, and discussions.`} />
         </>
       ),
     },

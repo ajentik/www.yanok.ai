@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Builderall Mailingboss"
-      description="Builderall Mailingboss is an Autoresponder and Email Marketing Platform. With Mailingboss you can capture and send unlimited emails with superior delivery and open rates."
+      description={`Builderall Mailingboss is an Autoresponder and Email Marketing Platform. With Mailingboss you can capture and send unlimited emails with superior delivery and open rates.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Builderall Mailingboss</title>
-          <meta name="description" content="Builderall Mailingboss is an Autoresponder and Email Marketing Platform. With Mailingboss you can capture and send unlimited emails with superior delivery and open rates." />
+          <meta name="description" content={`Builderall Mailingboss is an Autoresponder and Email Marketing Platform. With Mailingboss you can capture and send unlimited emails with superior delivery and open rates.`} />
         </>
       ),
     },

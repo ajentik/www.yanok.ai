@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="BotConversa"
-      description="BotConversa is a Chatbot builder for WhatsApp. We’ve made it simples for small to big Size businesses to automate their WhatsApp conversations and create a true lead generation machine."
+      description={`BotConversa is a Chatbot builder for WhatsApp. We’ve made it simples for small to big Size businesses to automate their WhatsApp conversations and create a true lead generation machine.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -126,7 +126,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>BotConversa</title>
-          <meta name="description" content="BotConversa is a Chatbot builder for WhatsApp. We’ve made it simples for small to big Size businesses to automate their WhatsApp conversations and create a true lead generation machine." />
+          <meta name="description" content={`BotConversa is a Chatbot builder for WhatsApp. We’ve made it simples for small to big Size businesses to automate their WhatsApp conversations and create a true lead generation machine.`} />
         </>
       ),
     },

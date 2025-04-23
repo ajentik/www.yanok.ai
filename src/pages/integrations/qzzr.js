@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Qzzr"
-      description="Qzzr is a simple online quiz tool that allows get better leads, improved engagement, and more revenue."
+      description={`Qzzr is a simple online quiz tool that allows get better leads, improved engagement, and more revenue.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +53,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Qzzr</title>
-          <meta name="description" content="Qzzr is a simple online quiz tool that allows get better leads, improved engagement, and more revenue." />
+          <meta name="description" content={`Qzzr is a simple online quiz tool that allows get better leads, improved engagement, and more revenue.`} />
         </>
       ),
     },

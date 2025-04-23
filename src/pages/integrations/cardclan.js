@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="CardClan"
-      description="A platform to build and send interactive and personalized digital cards using prebuilt templates. Replace plain old boring emails."
+      description={`A platform to build and send interactive and personalized digital cards using prebuilt templates. Replace plain old boring emails.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>CardClan</title>
-          <meta name="description" content="A platform to build and send interactive and personalized digital cards using prebuilt templates. Replace plain old boring emails." />
+          <meta name="description" content={`A platform to build and send interactive and personalized digital cards using prebuilt templates. Replace plain old boring emails.`} />
         </>
       ),
     },

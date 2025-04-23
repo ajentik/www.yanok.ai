@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="SQL Server"
-      description="SQL server (or MS SQL) is a top of the line database geared for the cloud"
+      description={`SQL server (or MS SQL) is a top of the line database geared for the cloud`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -96,7 +96,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>SQL Server</title>
-          <meta name="description" content="SQL server (or MS SQL) is a top of the line database geared for the cloud" />
+          <meta name="description" content={`SQL server (or MS SQL) is a top of the line database geared for the cloud`} />
         </>
       ),
     },

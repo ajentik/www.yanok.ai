@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="RealScout"
-      description="RealScout is a collaborative listing alert platform that delivers automated, high-performing listing alerts to your clients based on their unique home search preferences."
+      description={`RealScout is a collaborative listing alert platform that delivers automated, high-performing listing alerts to your clients based on their unique home search preferences.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -71,7 +71,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>RealScout</title>
-          <meta name="description" content="RealScout is a collaborative listing alert platform that delivers automated, high-performing listing alerts to your clients based on their unique home search preferences." />
+          <meta name="description" content={`RealScout is a collaborative listing alert platform that delivers automated, high-performing listing alerts to your clients based on their unique home search preferences.`} />
         </>
       ),
     },

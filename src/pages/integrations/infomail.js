@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Infomail"
-      description="Infomail is an email marketing tool. It makes it easy to manage lists and subscribers, send newsletters and transactional emails. Grow your business with the tools you need to send marketing emails."
+      description={`Infomail is an email marketing tool. It makes it easy to manage lists and subscribers, send newsletters and transactional emails. Grow your business with the tools you need to send marketing emails.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -67,7 +67,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Infomail</title>
-          <meta name="description" content="Infomail is an email marketing tool. It makes it easy to manage lists and subscribers, send newsletters and transactional emails. Grow your business with the tools you need to send marketing emails." />
+          <meta name="description" content={`Infomail is an email marketing tool. It makes it easy to manage lists and subscribers, send newsletters and transactional emails. Grow your business with the tools you need to send marketing emails.`} />
         </>
       ),
     },

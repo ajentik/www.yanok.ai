@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="TrekkSoft"
-      description="TrekkSoft is a booking platform that allows you to receive and manage bookings and payments for your activity or tours company."
+      description={`TrekkSoft is a booking platform that allows you to receive and manage bookings and payments for your activity or tours company.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -77,7 +77,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>TrekkSoft</title>
-          <meta name="description" content="TrekkSoft is a booking platform that allows you to receive and manage bookings and payments for your activity or tours company." />
+          <meta name="description" content={`TrekkSoft is a booking platform that allows you to receive and manage bookings and payments for your activity or tours company.`} />
         </>
       ),
     },

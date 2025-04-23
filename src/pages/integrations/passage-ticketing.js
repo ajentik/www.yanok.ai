@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Passage Ticketing"
-      description="Passage is an online event ticketing platform that helps event organizers sell tickets, merchandise, and concessions both online and at-the-door."
+      description={`Passage is an online event ticketing platform that helps event organizers sell tickets, merchandise, and concessions both online and at-the-door.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Passage Ticketing</title>
-          <meta name="description" content="Passage is an online event ticketing platform that helps event organizers sell tickets, merchandise, and concessions both online and at-the-door." />
+          <meta name="description" content={`Passage is an online event ticketing platform that helps event organizers sell tickets, merchandise, and concessions both online and at-the-door.`} />
         </>
       ),
     },

@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Moloni"
-      description="Moloni is an online invoicing software, that allows each entrepreneur to effectively control business, automate billing, deliver documents quickly and intuitively."
+      description={`Moloni is an online invoicing software, that allows each entrepreneur to effectively control business, automate billing, deliver documents quickly and intuitively.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -116,7 +116,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Moloni</title>
-          <meta name="description" content="Moloni is an online invoicing software, that allows each entrepreneur to effectively control business, automate billing, deliver documents quickly and intuitively." />
+          <meta name="description" content={`Moloni is an online invoicing software, that allows each entrepreneur to effectively control business, automate billing, deliver documents quickly and intuitively.`} />
         </>
       ),
     },

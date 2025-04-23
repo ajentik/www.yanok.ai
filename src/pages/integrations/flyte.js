@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Flyte"
-      description="Flyte helps businesses attract, retain and communicate with their customers all from one platform."
+      description={`Flyte helps businesses attract, retain and communicate with their customers all from one platform.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -62,7 +62,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Flyte</title>
-          <meta name="description" content="Flyte helps businesses attract, retain and communicate with their customers all from one platform." />
+          <meta name="description" content={`Flyte helps businesses attract, retain and communicate with their customers all from one platform.`} />
         </>
       ),
     },

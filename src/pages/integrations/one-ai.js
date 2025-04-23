@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="One AI"
-      description="One AI is an API-first, language AI service built for developers. Embed our API to analyze, process, and transform text in your project"
+      description={`One AI is an API-first, language AI service built for developers. Embed our API to analyze, process, and transform text in your project`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -67,7 +67,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>One AI</title>
-          <meta name="description" content="One AI is an API-first, language AI service built for developers. Embed our API to analyze, process, and transform text in your project" />
+          <meta name="description" content={`One AI is an API-first, language AI service built for developers. Embed our API to analyze, process, and transform text in your project`} />
         </>
       ),
     },

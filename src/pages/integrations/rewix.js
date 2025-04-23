@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Rewix"
-      description="Rewix is a b2b e-commerce platform that offers all the features necessary to manage your online store."
+      description={`Rewix is a b2b e-commerce platform that offers all the features necessary to manage your online store.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -66,7 +66,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Rewix</title>
-          <meta name="description" content="Rewix is a b2b e-commerce platform that offers all the features necessary to manage your online store." />
+          <meta name="description" content={`Rewix is a b2b e-commerce platform that offers all the features necessary to manage your online store.`} />
         </>
       ),
     },

@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Push by Techulus"
-      description="Push by Techulus allows you to get custom real-time notifications on your iOS & Android devices."
+      description={`Push by Techulus allows you to get custom real-time notifications on your iOS & Android devices.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Push by Techulus</title>
-          <meta name="description" content="Push by Techulus allows you to get custom real-time notifications on your iOS & Android devices." />
+          <meta name="description" content={`Push by Techulus allows you to get custom real-time notifications on your iOS & Android devices.`} />
         </>
       ),
     },

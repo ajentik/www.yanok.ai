@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="TinyEmail"
-      description="Easily connect your brand, send interactive personalized emails, automate your messaging and drive more sales. TinyEmail lets you spend time delivering the perfect message by automating everything else."
+      description={`Easily connect your brand, send interactive personalized emails, automate your messaging and drive more sales. TinyEmail lets you spend time delivering the perfect message by automating everything else.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>TinyEmail</title>
-          <meta name="description" content="Easily connect your brand, send interactive personalized emails, automate your messaging and drive more sales. TinyEmail lets you spend time delivering the perfect message by automating everything else." />
+          <meta name="description" content={`Easily connect your brand, send interactive personalized emails, automate your messaging and drive more sales. TinyEmail lets you spend time delivering the perfect message by automating everything else.`} />
         </>
       ),
     },

@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Condens"
-      description="Condens helps you and your team store, analyze and share UX research data."
+      description={`Condens helps you and your team store, analyze and share UX research data.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -91,7 +91,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Condens</title>
-          <meta name="description" content="Condens helps you and your team store, analyze and share UX research data." />
+          <meta name="description" content={`Condens helps you and your team store, analyze and share UX research data.`} />
         </>
       ),
     },

@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="ConvertKit"
-      description="ConvertKit is an email marketing platform for professional bloggers. Easily create email sequences, tag subscribers, grow your list, and automate your email marketing."
+      description={`ConvertKit is an email marketing platform for professional bloggers. Easily create email sequences, tag subscribers, grow your list, and automate your email marketing.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -111,7 +111,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>ConvertKit</title>
-          <meta name="description" content="ConvertKit is an email marketing platform for professional bloggers. Easily create email sequences, tag subscribers, grow your list, and automate your email marketing." />
+          <meta name="description" content={`ConvertKit is an email marketing platform for professional bloggers. Easily create email sequences, tag subscribers, grow your list, and automate your email marketing.`} />
         </>
       ),
     },

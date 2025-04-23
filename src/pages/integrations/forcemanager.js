@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="ForceManager"
-      description="ForceManager is a mobile CRM that allows you to measure, analyse and improve your sales team’s performance."
+      description={`ForceManager is a mobile CRM that allows you to measure, analyse and improve your sales team’s performance.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -226,7 +226,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>ForceManager</title>
-          <meta name="description" content="ForceManager is a mobile CRM that allows you to measure, analyse and improve your sales team’s performance." />
+          <meta name="description" content={`ForceManager is a mobile CRM that allows you to measure, analyse and improve your sales team’s performance.`} />
         </>
       ),
     },

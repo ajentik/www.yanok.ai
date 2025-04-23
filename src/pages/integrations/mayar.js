@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Mayar"
-      description="Mayar is a no-code checkout, payment and billing platform for business and entrepreneur"
+      description={`Mayar is a no-code checkout, payment and billing platform for business and entrepreneur`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -67,7 +67,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Mayar</title>
-          <meta name="description" content="Mayar is a no-code checkout, payment and billing platform for business and entrepreneur" />
+          <meta name="description" content={`Mayar is a no-code checkout, payment and billing platform for business and entrepreneur`} />
         </>
       ),
     },

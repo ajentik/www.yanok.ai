@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="ToastWorx"
-      description="Send instant, beautiful notifications to phones and tablets from any browser or web server"
+      description={`Send instant, beautiful notifications to phones and tablets from any browser or web server`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -77,7 +77,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>ToastWorx</title>
-          <meta name="description" content="Send instant, beautiful notifications to phones and tablets from any browser or web server" />
+          <meta name="description" content={`Send instant, beautiful notifications to phones and tablets from any browser or web server`} />
         </>
       ),
     },

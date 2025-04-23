@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Jamf"
-      description="Jamf is a comprehensive management system for Apple macOS computers and iOS devices."
+      description={`Jamf is a comprehensive management system for Apple macOS computers and iOS devices.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +53,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Jamf</title>
-          <meta name="description" content="Jamf is a comprehensive management system for Apple macOS computers and iOS devices." />
+          <meta name="description" content={`Jamf is a comprehensive management system for Apple macOS computers and iOS devices.`} />
         </>
       ),
     },

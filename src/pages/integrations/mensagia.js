@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Mensagia"
-      description="Mensagia offer reliable SMS, Email and Voice for business automation communication."
+      description={`Mensagia offer reliable SMS, Email and Voice for business automation communication.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -82,7 +82,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Mensagia</title>
-          <meta name="description" content="Mensagia offer reliable SMS, Email and Voice for business automation communication." />
+          <meta name="description" content={`Mensagia offer reliable SMS, Email and Voice for business automation communication.`} />
         </>
       ),
     },

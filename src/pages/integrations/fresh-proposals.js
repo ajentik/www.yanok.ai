@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Fresh Proposals"
-      description="FreshProposals is a Proposal management software to organize proposals and keep track of them. Allows end users to sign or reject proposal"
+      description={`FreshProposals is a Proposal management software to organize proposals and keep track of them. Allows end users to sign or reject proposal`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -91,7 +91,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Fresh Proposals</title>
-          <meta name="description" content="FreshProposals is a Proposal management software to organize proposals and keep track of them. Allows end users to sign or reject proposal" />
+          <meta name="description" content={`FreshProposals is a Proposal management software to organize proposals and keep track of them. Allows end users to sign or reject proposal`} />
         </>
       ),
     },

@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Confluence Cloud"
-      description="Confluence is where you create, organize and discuss work with your team. This integration connects to cloud-hosted instances of Confluence. Use the 'Confluence Server' app for server-hosted instances."
+      description={`Confluence is where you create, organize and discuss work with your team. This integration connects to cloud-hosted instances of Confluence. Use the 'Confluence Server' app for server-hosted instances.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -61,7 +61,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Confluence Cloud</title>
-          <meta name="description" content="Confluence is where you create, organize and discuss work with your team. This integration connects to cloud-hosted instances of Confluence. Use the 'Confluence Server' app for server-hosted instances." />
+          <meta name="description" content={`Confluence is where you create, organize and discuss work with your team. This integration connects to cloud-hosted instances of Confluence. Use the 'Confluence Server' app for server-hosted instances.`} />
         </>
       ),
     },

@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Hilos"
-      description="Hilos is the full-stack for WhatsApp: get Business API Access, chat using our WhatsApp multi-agent Inbox and build automations that integrate with your existing tools (like your CRM)."
+      description={`Hilos is the full-stack for WhatsApp: get Business API Access, chat using our WhatsApp multi-agent Inbox and build automations that integrate with your existing tools (like your CRM).`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -96,7 +96,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Hilos</title>
-          <meta name="description" content="Hilos is the full-stack for WhatsApp: get Business API Access, chat using our WhatsApp multi-agent Inbox and build automations that integrate with your existing tools (like your CRM)." />
+          <meta name="description" content={`Hilos is the full-stack for WhatsApp: get Business API Access, chat using our WhatsApp multi-agent Inbox and build automations that integrate with your existing tools (like your CRM).`} />
         </>
       ),
     },

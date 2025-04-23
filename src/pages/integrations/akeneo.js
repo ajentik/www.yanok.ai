@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Akeneo"
-      description="Akeneo is a Product Information Management software that helps more than 40000 marketing teams worldwide to take care of their product data."
+      description={`Akeneo is a Product Information Management software that helps more than 40000 marketing teams worldwide to take care of their product data.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +53,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Akeneo</title>
-          <meta name="description" content="Akeneo is a Product Information Management software that helps more than 40000 marketing teams worldwide to take care of their product data." />
+          <meta name="description" content={`Akeneo is a Product Information Management software that helps more than 40000 marketing teams worldwide to take care of their product data.`} />
         </>
       ),
     },

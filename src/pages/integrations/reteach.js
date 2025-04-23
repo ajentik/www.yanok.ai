@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="reteach"
-      description="Reteach is the powerful e-learning software from Germany. Education providers and companies use educats to easily offer learning content in their own online academy."
+      description={`Reteach is the powerful e-learning software from Germany. Education providers and companies use educats to easily offer learning content in their own online academy.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -216,7 +216,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>reteach</title>
-          <meta name="description" content="Reteach is the powerful e-learning software from Germany. Education providers and companies use educats to easily offer learning content in their own online academy." />
+          <meta name="description" content={`Reteach is the powerful e-learning software from Germany. Education providers and companies use educats to easily offer learning content in their own online academy.`} />
         </>
       ),
     },

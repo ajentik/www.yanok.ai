@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="LeadKlozer"
-      description="LeadKlozer is an ad performance, conversation & sales tool for Facebook marketers."
+      description={`LeadKlozer is an ad performance, conversation & sales tool for Facebook marketers.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -81,7 +81,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>LeadKlozer</title>
-          <meta name="description" content="LeadKlozer is an ad performance, conversation & sales tool for Facebook marketers." />
+          <meta name="description" content={`LeadKlozer is an ad performance, conversation & sales tool for Facebook marketers.`} />
         </>
       ),
     },

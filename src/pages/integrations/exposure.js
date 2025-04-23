@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Exposure"
-      description="Exposure is a web tool and a community of passionate photographers and storytellers that allows users to create photo narratives."
+      description={`Exposure is a web tool and a community of passionate photographers and storytellers that allows users to create photo narratives.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +53,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Exposure</title>
-          <meta name="description" content="Exposure is a web tool and a community of passionate photographers and storytellers that allows users to create photo narratives." />
+          <meta name="description" content={`Exposure is a web tool and a community of passionate photographers and storytellers that allows users to create photo narratives.`} />
         </>
       ),
     },

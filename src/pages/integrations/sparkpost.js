@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="SparkPost"
-      description="SparkPost by Message Systems is the enterprise-grade, developer-friendly email delivery service. It puts the same deliverability, scalability and speed of the world’s leading email platform in the hands of developers at companies of all sizes in an easily accessible cloud solution."
+      description={`SparkPost by Message Systems is the enterprise-grade, developer-friendly email delivery service. It puts the same deliverability, scalability and speed of the world’s leading email platform in the hands of developers at companies of all sizes in an easily accessible cloud solution.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>SparkPost</title>
-          <meta name="description" content="SparkPost by Message Systems is the enterprise-grade, developer-friendly email delivery service. It puts the same deliverability, scalability and speed of the world’s leading email platform in the hands of developers at companies of all sizes in an easily accessible cloud solution." />
+          <meta name="description" content={`SparkPost by Message Systems is the enterprise-grade, developer-friendly email delivery service. It puts the same deliverability, scalability and speed of the world’s leading email platform in the hands of developers at companies of all sizes in an easily accessible cloud solution.`} />
         </>
       ),
     },

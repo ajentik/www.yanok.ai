@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Ambassador"
-      description="Ambassador gives any company the tools to turbo-charge their referral program, turning their customers into brand Ambassadors. Use Ambassador to easily create, track & manage custom incentives that drive referrals and evangelize your users. It's as simple as pasting a javascript snippet or can be seamlessly integrated via API."
+      description={`Ambassador gives any company the tools to turbo-charge their referral program, turning their customers into brand Ambassadors. Use Ambassador to easily create, track & manage custom incentives that drive referrals and evangelize your users. It's as simple as pasting a javascript snippet or can be seamlessly integrated via API.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -116,7 +116,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Ambassador</title>
-          <meta name="description" content="Ambassador gives any company the tools to turbo-charge their referral program, turning their customers into brand Ambassadors. Use Ambassador to easily create, track & manage custom incentives that drive referrals and evangelize your users. It's as simple as pasting a javascript snippet or can be seamlessly integrated via API." />
+          <meta name="description" content={`Ambassador gives any company the tools to turbo-charge their referral program, turning their customers into brand Ambassadors. Use Ambassador to easily create, track & manage custom incentives that drive referrals and evangelize your users. It's as simple as pasting a javascript snippet or can be seamlessly integrated via API.`} />
         </>
       ),
     },

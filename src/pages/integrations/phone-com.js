@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Phone.com"
-      description="Phone.com app allows you to send and receive SMS, integrate CRM, get events on calls and call logs and generate calls."
+      description={`Phone.com app allows you to send and receive SMS, integrate CRM, get events on calls and call logs and generate calls.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -111,7 +111,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Phone.com</title>
-          <meta name="description" content="Phone.com app allows you to send and receive SMS, integrate CRM, get events on calls and call logs and generate calls." />
+          <meta name="description" content={`Phone.com app allows you to send and receive SMS, integrate CRM, get events on calls and call logs and generate calls.`} />
         </>
       ),
     },

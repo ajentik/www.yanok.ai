@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Trolley"
-      description="Trolley helps businesses send payouts to (and manage associated tax details for) their vendors, suppliers, artists, and independent contractors worldwide."
+      description={`Trolley helps businesses send payouts to (and manage associated tax details for) their vendors, suppliers, artists, and independent contractors worldwide.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -111,7 +111,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Trolley</title>
-          <meta name="description" content="Trolley helps businesses send payouts to (and manage associated tax details for) their vendors, suppliers, artists, and independent contractors worldwide." />
+          <meta name="description" content={`Trolley helps businesses send payouts to (and manage associated tax details for) their vendors, suppliers, artists, and independent contractors worldwide.`} />
         </>
       ),
     },

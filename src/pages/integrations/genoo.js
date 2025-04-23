@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Genoo"
-      description="Marketing Automation and Online Marketing Tools for small and midsized organizations. Includes comprehensive lead database, activity tracking and scoring, email marketing, and lead nurturing. Also contains integrated CRM for small sales teams."
+      description={`Marketing Automation and Online Marketing Tools for small and midsized organizations. Includes comprehensive lead database, activity tracking and scoring, email marketing, and lead nurturing. Also contains integrated CRM for small sales teams.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -101,7 +101,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Genoo</title>
-          <meta name="description" content="Marketing Automation and Online Marketing Tools for small and midsized organizations. Includes comprehensive lead database, activity tracking and scoring, email marketing, and lead nurturing. Also contains integrated CRM for small sales teams." />
+          <meta name="description" content={`Marketing Automation and Online Marketing Tools for small and midsized organizations. Includes comprehensive lead database, activity tracking and scoring, email marketing, and lead nurturing. Also contains integrated CRM for small sales teams.`} />
         </>
       ),
     },

@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Zoho Connect"
-      description="From ideas to execution, Zoho Connect is your organization's private social network that redefines the way your employees and teams share information and collaborate with each other."
+      description={`From ideas to execution, Zoho Connect is your organization's private social network that redefines the way your employees and teams share information and collaborate with each other.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -116,7 +116,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Zoho Connect</title>
-          <meta name="description" content="From ideas to execution, Zoho Connect is your organization's private social network that redefines the way your employees and teams share information and collaborate with each other." />
+          <meta name="description" content={`From ideas to execution, Zoho Connect is your organization's private social network that redefines the way your employees and teams share information and collaborate with each other.`} />
         </>
       ),
     },

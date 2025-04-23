@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="CallHub"
-      description="CallHub sets up complete telephony for marketing and sales teams with no hardware. Voice broadcasting, SMS Marketing and Call Center software for 200+ countries. It has delivered millions of messages for 300+ customers."
+      description={`CallHub sets up complete telephony for marketing and sales teams with no hardware. Voice broadcasting, SMS Marketing and Call Center software for 200+ countries. It has delivered millions of messages for 300+ customers.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -86,7 +86,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>CallHub</title>
-          <meta name="description" content="CallHub sets up complete telephony for marketing and sales teams with no hardware. Voice broadcasting, SMS Marketing and Call Center software for 200+ countries. It has delivered millions of messages for 300+ customers." />
+          <meta name="description" content={`CallHub sets up complete telephony for marketing and sales teams with no hardware. Voice broadcasting, SMS Marketing and Call Center software for 200+ countries. It has delivered millions of messages for 300+ customers.`} />
         </>
       ),
     },

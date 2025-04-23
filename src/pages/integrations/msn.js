@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Msn"
-      description="MSN is a web portal and related collection of Internet services and apps for Windows and mobile devices."
+      description={`MSN is a web portal and related collection of Internet services and apps for Windows and mobile devices.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +53,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Msn</title>
-          <meta name="description" content="MSN is a web portal and related collection of Internet services and apps for Windows and mobile devices." />
+          <meta name="description" content={`MSN is a web portal and related collection of Internet services and apps for Windows and mobile devices.`} />
         </>
       ),
     },

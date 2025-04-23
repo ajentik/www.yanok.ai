@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Papertrail"
-      description="Papertrail offers a software solution that is able to record and manage logs from different locations."
+      description={`Papertrail offers a software solution that is able to record and manage logs from different locations.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +53,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Papertrail</title>
-          <meta name="description" content="Papertrail offers a software solution that is able to record and manage logs from different locations." />
+          <meta name="description" content={`Papertrail offers a software solution that is able to record and manage logs from different locations.`} />
         </>
       ),
     },

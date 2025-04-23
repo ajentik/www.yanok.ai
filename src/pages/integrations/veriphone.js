@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Veriphone"
-      description="Veriphone is a phone number verification tool. It will parse, format and validate phone numbers for all countries/regions worldwide."
+      description={`Veriphone is a phone number verification tool. It will parse, format and validate phone numbers for all countries/regions worldwide.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Veriphone</title>
-          <meta name="description" content="Veriphone is a phone number verification tool. It will parse, format and validate phone numbers for all countries/regions worldwide." />
+          <meta name="description" content={`Veriphone is a phone number verification tool. It will parse, format and validate phone numbers for all countries/regions worldwide.`} />
         </>
       ),
     },

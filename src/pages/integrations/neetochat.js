@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="neetoChat"
-      description="neetoChat is an all-in-one chat solution for your business. Chat with your customers live and help them find what they're looking for."
+      description={`neetoChat is an all-in-one chat solution for your business. Chat with your customers live and help them find what they're looking for.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>neetoChat</title>
-          <meta name="description" content="neetoChat is an all-in-one chat solution for your business. Chat with your customers live and help them find what they're looking for." />
+          <meta name="description" content={`neetoChat is an all-in-one chat solution for your business. Chat with your customers live and help them find what they're looking for.`} />
         </>
       ),
     },

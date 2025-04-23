@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Emitrr"
-      description="Emitrr is a human-like smart receptionist for small businesses. With Emitrr, business owners don’t have to worry about missing customer calls and can focus on their business growth, while Emitrr handles customer queries like booking appointments, quotes, FAQs, and more."
+      description={`Emitrr is a human-like smart receptionist for small businesses. With Emitrr, business owners don’t have to worry about missing customer calls and can focus on their business growth, while Emitrr handles customer queries like booking appointments, quotes, FAQs, and more.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -77,7 +77,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Emitrr</title>
-          <meta name="description" content="Emitrr is a human-like smart receptionist for small businesses. With Emitrr, business owners don’t have to worry about missing customer calls and can focus on their business growth, while Emitrr handles customer queries like booking appointments, quotes, FAQs, and more." />
+          <meta name="description" content={`Emitrr is a human-like smart receptionist for small businesses. With Emitrr, business owners don’t have to worry about missing customer calls and can focus on their business growth, while Emitrr handles customer queries like booking appointments, quotes, FAQs, and more.`} />
         </>
       ),
     },

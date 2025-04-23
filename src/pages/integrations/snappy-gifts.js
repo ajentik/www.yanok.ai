@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Snappy Gifts"
-      description="Snappy Gifts is the all-in-one gifting platform that combines fun, personal gifting experiences with advanced technology."
+      description={`Snappy Gifts is the all-in-one gifting platform that combines fun, personal gifting experiences with advanced technology.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Snappy Gifts</title>
-          <meta name="description" content="Snappy Gifts is the all-in-one gifting platform that combines fun, personal gifting experiences with advanced technology." />
+          <meta name="description" content={`Snappy Gifts is the all-in-one gifting platform that combines fun, personal gifting experiences with advanced technology.`} />
         </>
       ),
     },

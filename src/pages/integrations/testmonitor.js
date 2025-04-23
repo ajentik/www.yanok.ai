@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="TestMonitor"
-      description="TestMonitor is a test management application that allows you to design, plan, and run user acceptance tests."
+      description={`TestMonitor is a test management application that allows you to design, plan, and run user acceptance tests.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -76,7 +76,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>TestMonitor</title>
-          <meta name="description" content="TestMonitor is a test management application that allows you to design, plan, and run user acceptance tests." />
+          <meta name="description" content={`TestMonitor is a test management application that allows you to design, plan, and run user acceptance tests.`} />
         </>
       ),
     },

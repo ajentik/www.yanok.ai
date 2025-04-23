@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Amped"
-      description="Amped is an intelligent sales automation tool that enhances productivity, streamlines process, and empowers your sales teams to close more and increase retention."
+      description={`Amped is an intelligent sales automation tool that enhances productivity, streamlines process, and empowers your sales teams to close more and increase retention.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -71,7 +71,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Amped</title>
-          <meta name="description" content="Amped is an intelligent sales automation tool that enhances productivity, streamlines process, and empowers your sales teams to close more and increase retention." />
+          <meta name="description" content={`Amped is an intelligent sales automation tool that enhances productivity, streamlines process, and empowers your sales teams to close more and increase retention.`} />
         </>
       ),
     },

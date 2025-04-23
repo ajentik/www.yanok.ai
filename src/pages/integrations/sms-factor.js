@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="SMSFactor"
-      description="SMSFactor is an online platform allowing you to send professional SMS to your clients/patients."
+      description={`SMSFactor is an online platform allowing you to send professional SMS to your clients/patients.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>SMSFactor</title>
-          <meta name="description" content="SMSFactor is an online platform allowing you to send professional SMS to your clients/patients." />
+          <meta name="description" content={`SMSFactor is an online platform allowing you to send professional SMS to your clients/patients.`} />
         </>
       ),
     },

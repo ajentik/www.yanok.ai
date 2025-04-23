@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Loket.com"
-      description="Loket is a self service event management platform, create, manage and sell your ticket event by yourself."
+      description={`Loket is a self service event management platform, create, manage and sell your ticket event by yourself.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Loket.com</title>
-          <meta name="description" content="Loket is a self service event management platform, create, manage and sell your ticket event by yourself." />
+          <meta name="description" content={`Loket is a self service event management platform, create, manage and sell your ticket event by yourself.`} />
         </>
       ),
     },

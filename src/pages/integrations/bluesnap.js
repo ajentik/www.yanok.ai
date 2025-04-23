@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="BlueSnap"
-      description="BlueSnap is an All-in-one Payment Platform designed to increase sales and reduce costs for B2B and B2C businesses."
+      description={`BlueSnap is an All-in-one Payment Platform designed to increase sales and reduce costs for B2B and B2C businesses.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>BlueSnap</title>
-          <meta name="description" content="BlueSnap is an All-in-one Payment Platform designed to increase sales and reduce costs for B2B and B2C businesses." />
+          <meta name="description" content={`BlueSnap is an All-in-one Payment Platform designed to increase sales and reduce costs for B2B and B2C businesses.`} />
         </>
       ),
     },

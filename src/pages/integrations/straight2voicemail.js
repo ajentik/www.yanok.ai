@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="straight2Voicemail"
-      description="Straight2Voicemail is a tool for anyone to place a voicemail on a recipients mobile/cellular phone without it ringing."
+      description={`Straight2Voicemail is a tool for anyone to place a voicemail on a recipients mobile/cellular phone without it ringing.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -76,7 +76,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>straight2Voicemail</title>
-          <meta name="description" content="Straight2Voicemail is a tool for anyone to place a voicemail on a recipients mobile/cellular phone without it ringing." />
+          <meta name="description" content={`Straight2Voicemail is a tool for anyone to place a voicemail on a recipients mobile/cellular phone without it ringing.`} />
         </>
       ),
     },

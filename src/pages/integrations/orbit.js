@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Orbit"
-      description="Grow your community and prove ROI with Orbit, the community experience platform for delivering stellar member experience."
+      description={`Grow your community and prove ROI with Orbit, the community experience platform for delivering stellar member experience.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -96,7 +96,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Orbit</title>
-          <meta name="description" content="Grow your community and prove ROI with Orbit, the community experience platform for delivering stellar member experience." />
+          <meta name="description" content={`Grow your community and prove ROI with Orbit, the community experience platform for delivering stellar member experience.`} />
         </>
       ),
     },

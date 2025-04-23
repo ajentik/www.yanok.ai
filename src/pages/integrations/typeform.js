@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Typeform"
-      description="Typeform helps you ask awesomely online! If you ever need to run a survey, questionnaire, form, contest etc. Typeform will help you achieve it beautifully across all devices, every time, using its next generation platform."
+      description={`Typeform helps you ask awesomely online! If you ever need to run a survey, questionnaire, form, contest etc. Typeform will help you achieve it beautifully across all devices, every time, using its next generation platform.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -76,7 +76,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Typeform</title>
-          <meta name="description" content="Typeform helps you ask awesomely online! If you ever need to run a survey, questionnaire, form, contest etc. Typeform will help you achieve it beautifully across all devices, every time, using its next generation platform." />
+          <meta name="description" content={`Typeform helps you ask awesomely online! If you ever need to run a survey, questionnaire, form, contest etc. Typeform will help you achieve it beautifully across all devices, every time, using its next generation platform.`} />
         </>
       ),
     },

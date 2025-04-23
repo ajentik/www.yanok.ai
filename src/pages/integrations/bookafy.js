@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Bookafy"
-      description="Bookafy is an easy tool to share your calendar for booking appointments, demos and group interviews."
+      description={`Bookafy is an easy tool to share your calendar for booking appointments, demos and group interviews.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -81,7 +81,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Bookafy</title>
-          <meta name="description" content="Bookafy is an easy tool to share your calendar for booking appointments, demos and group interviews." />
+          <meta name="description" content={`Bookafy is an easy tool to share your calendar for booking appointments, demos and group interviews.`} />
         </>
       ),
     },

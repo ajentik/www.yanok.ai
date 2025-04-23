@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Huddo Boards"
-      description="Huddo Boards - Collaboration done right. A task management tool with multiple ways to enter and view the data, including textual, kanban, mindmap and timeline."
+      description={`Huddo Boards - Collaboration done right. A task management tool with multiple ways to enter and view the data, including textual, kanban, mindmap and timeline.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -146,7 +146,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Huddo Boards</title>
-          <meta name="description" content="Huddo Boards - Collaboration done right. A task management tool with multiple ways to enter and view the data, including textual, kanban, mindmap and timeline." />
+          <meta name="description" content={`Huddo Boards - Collaboration done right. A task management tool with multiple ways to enter and view the data, including textual, kanban, mindmap and timeline.`} />
         </>
       ),
     },

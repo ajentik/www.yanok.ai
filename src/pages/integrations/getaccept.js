@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="GetAccept"
-      description="GetAccept is a cloud solution where you design, send, track and promote your proposals to win and get more deals signed digitally."
+      description={`GetAccept is a cloud solution where you design, send, track and promote your proposals to win and get more deals signed digitally.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -141,7 +141,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>GetAccept</title>
-          <meta name="description" content="GetAccept is a cloud solution where you design, send, track and promote your proposals to win and get more deals signed digitally." />
+          <meta name="description" content={`GetAccept is a cloud solution where you design, send, track and promote your proposals to win and get more deals signed digitally.`} />
         </>
       ),
     },

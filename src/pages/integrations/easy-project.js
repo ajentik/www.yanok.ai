@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Easy Project"
-      description="Easy Project is a professional project management software for you, your team and the whole company. Based on WBS, Gantt, Agile and other best PM practices. It is compatible with modules for Resources, Finances, Help Desk and CRM."
+      description={`Easy Project is a professional project management software for you, your team and the whole company. Based on WBS, Gantt, Agile and other best PM practices. It is compatible with modules for Resources, Finances, Help Desk and CRM.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -126,7 +126,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Easy Project</title>
-          <meta name="description" content="Easy Project is a professional project management software for you, your team and the whole company. Based on WBS, Gantt, Agile and other best PM practices. It is compatible with modules for Resources, Finances, Help Desk and CRM." />
+          <meta name="description" content={`Easy Project is a professional project management software for you, your team and the whole company. Based on WBS, Gantt, Agile and other best PM practices. It is compatible with modules for Resources, Finances, Help Desk and CRM.`} />
         </>
       ),
     },

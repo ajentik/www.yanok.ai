@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Vincere"
-      description="Vincere is an out-of-the-box platform for the front/middle/back office operations of ambitious recruitment firms."
+      description={`Vincere is an out-of-the-box platform for the front/middle/back office operations of ambitious recruitment firms.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -126,7 +126,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Vincere</title>
-          <meta name="description" content="Vincere is an out-of-the-box platform for the front/middle/back office operations of ambitious recruitment firms." />
+          <meta name="description" content={`Vincere is an out-of-the-box platform for the front/middle/back office operations of ambitious recruitment firms.`} />
         </>
       ),
     },

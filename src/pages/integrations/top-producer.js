@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Top Producer"
-      description="Top Producer is a real estate CRM that simplifies the follow-up process so you can focus on what matters most—building lifelong relationships with your customers."
+      description={`Top Producer is a real estate CRM that simplifies the follow-up process so you can focus on what matters most—building lifelong relationships with your customers.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Top Producer</title>
-          <meta name="description" content="Top Producer is a real estate CRM that simplifies the follow-up process so you can focus on what matters most—building lifelong relationships with your customers." />
+          <meta name="description" content={`Top Producer is a real estate CRM that simplifies the follow-up process so you can focus on what matters most—building lifelong relationships with your customers.`} />
         </>
       ),
     },

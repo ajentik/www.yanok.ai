@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Wicked Reports"
-      description="Wicked Reports is marketing automation that lets you send contacts, orders & visitors clicks from your CRM or Shopping cart into your Wicked Reports account."
+      description={`Wicked Reports is marketing automation that lets you send contacts, orders & visitors clicks from your CRM or Shopping cart into your Wicked Reports account.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -67,7 +67,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Wicked Reports</title>
-          <meta name="description" content="Wicked Reports is marketing automation that lets you send contacts, orders & visitors clicks from your CRM or Shopping cart into your Wicked Reports account." />
+          <meta name="description" content={`Wicked Reports is marketing automation that lets you send contacts, orders & visitors clicks from your CRM or Shopping cart into your Wicked Reports account.`} />
         </>
       ),
     },

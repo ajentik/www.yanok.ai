@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="RegFox"
-      description="RegFox is a premier registration platform to ensure the building, marketing and taking in registrants for your event all goes smoothly."
+      description={`RegFox is a premier registration platform to ensure the building, marketing and taking in registrants for your event all goes smoothly.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -62,7 +62,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>RegFox</title>
-          <meta name="description" content="RegFox is a premier registration platform to ensure the building, marketing and taking in registrants for your event all goes smoothly." />
+          <meta name="description" content={`RegFox is a premier registration platform to ensure the building, marketing and taking in registrants for your event all goes smoothly.`} />
         </>
       ),
     },

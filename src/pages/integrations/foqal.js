@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Foqal"
-      description="Foqal is a ticketing tool allowing you to support your customers on Salck"
+      description={`Foqal is a ticketing tool allowing you to support your customers on Salck`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Foqal</title>
-          <meta name="description" content="Foqal is a ticketing tool allowing you to support your customers on Salck" />
+          <meta name="description" content={`Foqal is a ticketing tool allowing you to support your customers on Salck`} />
         </>
       ),
     },

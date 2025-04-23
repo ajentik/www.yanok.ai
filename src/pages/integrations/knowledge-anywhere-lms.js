@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Knowledge Anywhere LMS"
-      description="Knowledge Anywhere's LMS helps connect your learners to Just in Time Training."
+      description={`Knowledge Anywhere's LMS helps connect your learners to Just in Time Training.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Knowledge Anywhere LMS</title>
-          <meta name="description" content="Knowledge Anywhere's LMS helps connect your learners to Just in Time Training." />
+          <meta name="description" content={`Knowledge Anywhere's LMS helps connect your learners to Just in Time Training.`} />
         </>
       ),
     },

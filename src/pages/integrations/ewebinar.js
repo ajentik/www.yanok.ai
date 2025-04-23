@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="eWebinar"
-      description="eWebinar turns any video into an interactive, automated webinar that you can set on a recurring schedule. We save you from doing the same webinar over and over again."
+      description={`eWebinar turns any video into an interactive, automated webinar that you can set on a recurring schedule. We save you from doing the same webinar over and over again.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -97,7 +97,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>eWebinar</title>
-          <meta name="description" content="eWebinar turns any video into an interactive, automated webinar that you can set on a recurring schedule. We save you from doing the same webinar over and over again." />
+          <meta name="description" content={`eWebinar turns any video into an interactive, automated webinar that you can set on a recurring schedule. We save you from doing the same webinar over and over again.`} />
         </>
       ),
     },

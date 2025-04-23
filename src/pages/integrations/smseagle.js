@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="SMSEagle"
-      description="SMSEagle is a hardware SMS gateway for sending and receiving SMS. Purchase SMSEagle device, use your own SIM and save money on SMS sending costs."
+      description={`SMSEagle is a hardware SMS gateway for sending and receiving SMS. Purchase SMSEagle device, use your own SIM and save money on SMS sending costs.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -61,7 +61,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>SMSEagle</title>
-          <meta name="description" content="SMSEagle is a hardware SMS gateway for sending and receiving SMS. Purchase SMSEagle device, use your own SIM and save money on SMS sending costs." />
+          <meta name="description" content={`SMSEagle is a hardware SMS gateway for sending and receiving SMS. Purchase SMSEagle device, use your own SIM and save money on SMS sending costs.`} />
         </>
       ),
     },

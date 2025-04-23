@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Winoffice Prime"
-      description="Winoffice Prime is a comprehensive software platform for the automation and digitalization of small and medium-sized enterprises in the fields of facility services, project services and trade."
+      description={`Winoffice Prime is a comprehensive software platform for the automation and digitalization of small and medium-sized enterprises in the fields of facility services, project services and trade.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -116,7 +116,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Winoffice Prime</title>
-          <meta name="description" content="Winoffice Prime is a comprehensive software platform for the automation and digitalization of small and medium-sized enterprises in the fields of facility services, project services and trade." />
+          <meta name="description" content={`Winoffice Prime is a comprehensive software platform for the automation and digitalization of small and medium-sized enterprises in the fields of facility services, project services and trade.`} />
         </>
       ),
     },

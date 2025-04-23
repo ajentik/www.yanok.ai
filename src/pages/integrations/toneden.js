@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="ToneDen"
-      description="ToneDen is a friendly social marketing platform that gives you the power to reach and sell to the people who matter."
+      description={`ToneDen is a friendly social marketing platform that gives you the power to reach and sell to the people who matter.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -87,7 +87,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>ToneDen</title>
-          <meta name="description" content="ToneDen is a friendly social marketing platform that gives you the power to reach and sell to the people who matter." />
+          <meta name="description" content={`ToneDen is a friendly social marketing platform that gives you the power to reach and sell to the people who matter.`} />
         </>
       ),
     },

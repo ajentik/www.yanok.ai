@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="EZ Texting"
-      description="EZ Texting is a text marketing platform to send and receive SMS & MMS via web and mobile apps. Use it for group texts or 1:1 messages."
+      description={`EZ Texting is a text marketing platform to send and receive SMS & MMS via web and mobile apps. Use it for group texts or 1:1 messages.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -76,7 +76,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>EZ Texting</title>
-          <meta name="description" content="EZ Texting is a text marketing platform to send and receive SMS & MMS via web and mobile apps. Use it for group texts or 1:1 messages." />
+          <meta name="description" content={`EZ Texting is a text marketing platform to send and receive SMS & MMS via web and mobile apps. Use it for group texts or 1:1 messages.`} />
         </>
       ),
     },

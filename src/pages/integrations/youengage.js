@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="youengage"
-      description="Create interactive experiences that convert. Engage and get feedback using quizzes, surveys, polls, calculators, forms, and live Q&A"
+      description={`Create interactive experiences that convert. Engage and get feedback using quizzes, surveys, polls, calculators, forms, and live Q&A`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>youengage</title>
-          <meta name="description" content="Create interactive experiences that convert. Engage and get feedback using quizzes, surveys, polls, calculators, forms, and live Q&A" />
+          <meta name="description" content={`Create interactive experiences that convert. Engage and get feedback using quizzes, surveys, polls, calculators, forms, and live Q&A`} />
         </>
       ),
     },

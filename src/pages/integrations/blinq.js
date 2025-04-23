@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Blinq"
-      description="Blinq digital business cards allow you to instantly share who you are, with anyone, wherever you go."
+      description={`Blinq digital business cards allow you to instantly share who you are, with anyone, wherever you go.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Blinq</title>
-          <meta name="description" content="Blinq digital business cards allow you to instantly share who you are, with anyone, wherever you go." />
+          <meta name="description" content={`Blinq digital business cards allow you to instantly share who you are, with anyone, wherever you go.`} />
         </>
       ),
     },

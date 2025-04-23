@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Xama Hub"
-      description="Xama Hub enables the streamlined onboarding of customers through the automation of identity verification and anti money laundering checks."
+      description={`Xama Hub enables the streamlined onboarding of customers through the automation of identity verification and anti money laundering checks.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -67,7 +67,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Xama Hub</title>
-          <meta name="description" content="Xama Hub enables the streamlined onboarding of customers through the automation of identity verification and anti money laundering checks." />
+          <meta name="description" content={`Xama Hub enables the streamlined onboarding of customers through the automation of identity verification and anti money laundering checks.`} />
         </>
       ),
     },

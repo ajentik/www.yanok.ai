@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="AirGift"
-      description="AirGift.io is a platform for creating and offering NFTs to businesses. In a few minutes, any company can create its own NFT collection, set up trigger events and start offering NFTs to its community."
+      description={`AirGift.io is a platform for creating and offering NFTs to businesses. In a few minutes, any company can create its own NFT collection, set up trigger events and start offering NFTs to its community.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>AirGift</title>
-          <meta name="description" content="AirGift.io is a platform for creating and offering NFTs to businesses. In a few minutes, any company can create its own NFT collection, set up trigger events and start offering NFTs to its community." />
+          <meta name="description" content={`AirGift.io is a platform for creating and offering NFTs to businesses. In a few minutes, any company can create its own NFT collection, set up trigger events and start offering NFTs to its community.`} />
         </>
       ),
     },

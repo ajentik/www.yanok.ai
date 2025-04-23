@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Weebly"
-      description="Weebly is an easy to use way to make high-quality websites like blogs or online stores."
+      description={`Weebly is an easy to use way to make high-quality websites like blogs or online stores.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +53,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Weebly</title>
-          <meta name="description" content="Weebly is an easy to use way to make high-quality websites like blogs or online stores." />
+          <meta name="description" content={`Weebly is an easy to use way to make high-quality websites like blogs or online stores.`} />
         </>
       ),
     },

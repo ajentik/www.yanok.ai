@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="MaxScheduler"
-      description="MaxScheduler is scheduling software often used in manufacturing. It can be useful to import job data from other systems and create a operations schedule."
+      description={`MaxScheduler is scheduling software often used in manufacturing. It can be useful to import job data from other systems and create a operations schedule.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>MaxScheduler</title>
-          <meta name="description" content="MaxScheduler is scheduling software often used in manufacturing. It can be useful to import job data from other systems and create a operations schedule." />
+          <meta name="description" content={`MaxScheduler is scheduling software often used in manufacturing. It can be useful to import job data from other systems and create a operations schedule.`} />
         </>
       ),
     },

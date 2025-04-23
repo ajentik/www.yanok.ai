@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Verdn"
-      description="Verdn lets companies effortlessly pledge to support tree planting, ocean plastic recovery, and coral restoration with any action or event. End-users can track all of their impact on a timeline."
+      description={`Verdn lets companies effortlessly pledge to support tree planting, ocean plastic recovery, and coral restoration with any action or event. End-users can track all of their impact on a timeline.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -67,7 +67,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Verdn</title>
-          <meta name="description" content="Verdn lets companies effortlessly pledge to support tree planting, ocean plastic recovery, and coral restoration with any action or event. End-users can track all of their impact on a timeline." />
+          <meta name="description" content={`Verdn lets companies effortlessly pledge to support tree planting, ocean plastic recovery, and coral restoration with any action or event. End-users can track all of their impact on a timeline.`} />
         </>
       ),
     },

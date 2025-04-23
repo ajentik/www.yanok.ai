@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Kajabi"
-      description="Kajabi is an all in one platform for selling, marketing, and delivering your online content."
+      description={`Kajabi is an all in one platform for selling, marketing, and delivering your online content.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -91,7 +91,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Kajabi</title>
-          <meta name="description" content="Kajabi is an all in one platform for selling, marketing, and delivering your online content." />
+          <meta name="description" content={`Kajabi is an all in one platform for selling, marketing, and delivering your online content.`} />
         </>
       ),
     },

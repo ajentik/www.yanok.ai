@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="GetBusy"
-      description="GetBusy is a secure messaging platform that helps you communicate more productively. It's simply a better way to work with your team and your clients."
+      description={`GetBusy is a secure messaging platform that helps you communicate more productively. It's simply a better way to work with your team and your clients.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -67,7 +67,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>GetBusy</title>
-          <meta name="description" content="GetBusy is a secure messaging platform that helps you communicate more productively. It's simply a better way to work with your team and your clients." />
+          <meta name="description" content={`GetBusy is a secure messaging platform that helps you communicate more productively. It's simply a better way to work with your team and your clients.`} />
         </>
       ),
     },

@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="SproutVideo"
-      description="SproutVideo is a video hosting platform with powerful video marketing, privacy, and analytical tools that take the guesswork out of sharing videos online."
+      description={`SproutVideo is a video hosting platform with powerful video marketing, privacy, and analytical tools that take the guesswork out of sharing videos online.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -136,7 +136,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>SproutVideo</title>
-          <meta name="description" content="SproutVideo is a video hosting platform with powerful video marketing, privacy, and analytical tools that take the guesswork out of sharing videos online." />
+          <meta name="description" content={`SproutVideo is a video hosting platform with powerful video marketing, privacy, and analytical tools that take the guesswork out of sharing videos online.`} />
         </>
       ),
     },

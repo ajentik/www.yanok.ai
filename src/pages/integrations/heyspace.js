@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="HeySpace"
-      description="HeySpace is a free task and simple project management software with communication and collaboration features."
+      description={`HeySpace is a free task and simple project management software with communication and collaboration features.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -87,7 +87,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>HeySpace</title>
-          <meta name="description" content="HeySpace is a free task and simple project management software with communication and collaboration features." />
+          <meta name="description" content={`HeySpace is a free task and simple project management software with communication and collaboration features.`} />
         </>
       ),
     },

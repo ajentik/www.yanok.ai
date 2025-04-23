@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="TimeORA"
-      description="TimeORA is a clock in, clock out application that allows employees to digitally track their employees working hours without the need for paper timesheets."
+      description={`TimeORA is a clock in, clock out application that allows employees to digitally track their employees working hours without the need for paper timesheets.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -62,7 +62,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>TimeORA</title>
-          <meta name="description" content="TimeORA is a clock in, clock out application that allows employees to digitally track their employees working hours without the need for paper timesheets." />
+          <meta name="description" content={`TimeORA is a clock in, clock out application that allows employees to digitally track their employees working hours without the need for paper timesheets.`} />
         </>
       ),
     },

@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="AB.GL"
-      description="AB.GL is a link shortener platform that allows custom overlays and domains."
+      description={`AB.GL is a link shortener platform that allows custom overlays and domains.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -61,7 +61,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>AB.GL</title>
-          <meta name="description" content="AB.GL is a link shortener platform that allows custom overlays and domains." />
+          <meta name="description" content={`AB.GL is a link shortener platform that allows custom overlays and domains.`} />
         </>
       ),
     },

@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="SITE123"
-      description="SITE123 is the easiest free website builder that gives you ready-made layouts and styles to build your website fast and without any bugs."
+      description={`SITE123 is the easiest free website builder that gives you ready-made layouts and styles to build your website fast and without any bugs.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>SITE123</title>
-          <meta name="description" content="SITE123 is the easiest free website builder that gives you ready-made layouts and styles to build your website fast and without any bugs." />
+          <meta name="description" content={`SITE123 is the easiest free website builder that gives you ready-made layouts and styles to build your website fast and without any bugs.`} />
         </>
       ),
     },

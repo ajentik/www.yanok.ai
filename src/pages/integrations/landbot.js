@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Landbot"
-      description="Landbot is a tool to create Conversational Experiences that live on a website. Build your own in minutes without coding and engage more."
+      description={`Landbot is a tool to create Conversational Experiences that live on a website. Build your own in minutes without coding and engage more.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Landbot</title>
-          <meta name="description" content="Landbot is a tool to create Conversational Experiences that live on a website. Build your own in minutes without coding and engage more." />
+          <meta name="description" content={`Landbot is a tool to create Conversational Experiences that live on a website. Build your own in minutes without coding and engage more.`} />
         </>
       ),
     },

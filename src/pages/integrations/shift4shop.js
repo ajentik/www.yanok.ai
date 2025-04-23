@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Shift4Shop"
-      description="Shift4Shop is an all-in-one eCommerce platform for online retailers of any size. It includes a full range of website building and business management features."
+      description={`Shift4Shop is an all-in-one eCommerce platform for online retailers of any size. It includes a full range of website building and business management features.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -141,7 +141,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Shift4Shop</title>
-          <meta name="description" content="Shift4Shop is an all-in-one eCommerce platform for online retailers of any size. It includes a full range of website building and business management features." />
+          <meta name="description" content={`Shift4Shop is an all-in-one eCommerce platform for online retailers of any size. It includes a full range of website building and business management features.`} />
         </>
       ),
     },

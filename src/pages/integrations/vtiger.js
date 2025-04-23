@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Vtiger CRM"
-      description="Vtiger CRM is more than just a CRM. At its heart, Vtiger CRM enables salespersons and support staff do more through an easy but powerful interface. With built-in solutions that range from email marketing to activity and project management and beyond, Vtiger CRM provides an integrated solution to drive business growth."
+      description={`Vtiger CRM is more than just a CRM. At its heart, Vtiger CRM enables salespersons and support staff do more through an easy but powerful interface. With built-in solutions that range from email marketing to activity and project management and beyond, Vtiger CRM provides an integrated solution to drive business growth.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -171,7 +171,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Vtiger CRM</title>
-          <meta name="description" content="Vtiger CRM is more than just a CRM. At its heart, Vtiger CRM enables salespersons and support staff do more through an easy but powerful interface. With built-in solutions that range from email marketing to activity and project management and beyond, Vtiger CRM provides an integrated solution to drive business growth." />
+          <meta name="description" content={`Vtiger CRM is more than just a CRM. At its heart, Vtiger CRM enables salespersons and support staff do more through an easy but powerful interface. With built-in solutions that range from email marketing to activity and project management and beyond, Vtiger CRM provides an integrated solution to drive business growth.`} />
         </>
       ),
     },

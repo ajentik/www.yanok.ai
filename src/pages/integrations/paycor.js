@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Paycor"
-      description="Intuitive onboarding, HR, payroll and timekeeping software supported by personalized support."
+      description={`Intuitive onboarding, HR, payroll and timekeeping software supported by personalized support.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +53,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Paycor</title>
-          <meta name="description" content="Intuitive onboarding, HR, payroll and timekeeping software supported by personalized support." />
+          <meta name="description" content={`Intuitive onboarding, HR, payroll and timekeeping software supported by personalized support.`} />
         </>
       ),
     },

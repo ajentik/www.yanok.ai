@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Robolytix"
-      description="Robolytix is the key robot analytic tool for automated processes, providing all data you need for monitoring and managing software robots."
+      description={`Robolytix is the key robot analytic tool for automated processes, providing all data you need for monitoring and managing software robots.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Robolytix</title>
-          <meta name="description" content="Robolytix is the key robot analytic tool for automated processes, providing all data you need for monitoring and managing software robots." />
+          <meta name="description" content={`Robolytix is the key robot analytic tool for automated processes, providing all data you need for monitoring and managing software robots.`} />
         </>
       ),
     },

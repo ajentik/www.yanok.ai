@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="SmartMatchApp"
-      description="SmartMatchApp is a matchmaking and membership CRM to organize and optimize the process of matching, introducing, and connecting people."
+      description={`SmartMatchApp is a matchmaking and membership CRM to organize and optimize the process of matching, introducing, and connecting people.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -76,7 +76,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>SmartMatchApp</title>
-          <meta name="description" content="SmartMatchApp is a matchmaking and membership CRM to organize and optimize the process of matching, introducing, and connecting people." />
+          <meta name="description" content={`SmartMatchApp is a matchmaking and membership CRM to organize and optimize the process of matching, introducing, and connecting people.`} />
         </>
       ),
     },

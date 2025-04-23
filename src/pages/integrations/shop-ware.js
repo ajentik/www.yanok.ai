@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Shop-Ware"
-      description="Shop-Ware is a cloud-based auto-shop management system to help run your repair shop at its fullest potential."
+      description={`Shop-Ware is a cloud-based auto-shop management system to help run your repair shop at its fullest potential.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -161,7 +161,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Shop-Ware</title>
-          <meta name="description" content="Shop-Ware is a cloud-based auto-shop management system to help run your repair shop at its fullest potential." />
+          <meta name="description" content={`Shop-Ware is a cloud-based auto-shop management system to help run your repair shop at its fullest potential.`} />
         </>
       ),
     },

@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Hexometer"
-      description="Hexometer is a Website Health and Performance Monitoring Service"
+      description={`Hexometer is a Website Health and Performance Monitoring Service`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -62,7 +62,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Hexometer</title>
-          <meta name="description" content="Hexometer is a Website Health and Performance Monitoring Service" />
+          <meta name="description" content={`Hexometer is a Website Health and Performance Monitoring Service`} />
         </>
       ),
     },

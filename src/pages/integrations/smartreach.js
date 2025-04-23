@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="SmartReach"
-      description="SmartReach.io is a sales automation platform that helps you automate sending cold-emails and follow-ups from your mailbox and running email outreach campaigns with built-in tools."
+      description={`SmartReach.io is a sales automation platform that helps you automate sending cold-emails and follow-ups from your mailbox and running email outreach campaigns with built-in tools.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -146,7 +146,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>SmartReach</title>
-          <meta name="description" content="SmartReach.io is a sales automation platform that helps you automate sending cold-emails and follow-ups from your mailbox and running email outreach campaigns with built-in tools." />
+          <meta name="description" content={`SmartReach.io is a sales automation platform that helps you automate sending cold-emails and follow-ups from your mailbox and running email outreach campaigns with built-in tools.`} />
         </>
       ),
     },

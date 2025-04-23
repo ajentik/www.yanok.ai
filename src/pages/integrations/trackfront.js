@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Trackfront"
-      description="The All-In-One Solution For Project Collaboration, Easy Quotes, Estimates and Custom Proposals. Keeping Clients Happy and Coming Back, Reducing Emails and Simplifying Communication."
+      description={`The All-In-One Solution For Project Collaboration, Easy Quotes, Estimates and Custom Proposals. Keeping Clients Happy and Coming Back, Reducing Emails and Simplifying Communication.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -91,7 +91,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Trackfront</title>
-          <meta name="description" content="The All-In-One Solution For Project Collaboration, Easy Quotes, Estimates and Custom Proposals. Keeping Clients Happy and Coming Back, Reducing Emails and Simplifying Communication." />
+          <meta name="description" content={`The All-In-One Solution For Project Collaboration, Easy Quotes, Estimates and Custom Proposals. Keeping Clients Happy and Coming Back, Reducing Emails and Simplifying Communication.`} />
         </>
       ),
     },

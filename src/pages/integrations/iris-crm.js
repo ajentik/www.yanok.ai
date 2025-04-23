@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="IRIS CRM"
-      description="IRIS CRM is a payments platform for tracking leads, merchants and calculating residuals for processors such as First Data, TSYS and WorldPay."
+      description={`IRIS CRM is a payments platform for tracking leads, merchants and calculating residuals for processors such as First Data, TSYS and WorldPay.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -131,7 +131,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>IRIS CRM</title>
-          <meta name="description" content="IRIS CRM is a payments platform for tracking leads, merchants and calculating residuals for processors such as First Data, TSYS and WorldPay." />
+          <meta name="description" content={`IRIS CRM is a payments platform for tracking leads, merchants and calculating residuals for processors such as First Data, TSYS and WorldPay.`} />
         </>
       ),
     },

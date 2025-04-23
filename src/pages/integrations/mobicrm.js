@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="MobiCRM"
-      description="MobiCRM is a smartphone-first CRM, designed for your itinerant sales force, offering prospection tools, contacts management, and calendar synchronization."
+      description={`MobiCRM is a smartphone-first CRM, designed for your itinerant sales force, offering prospection tools, contacts management, and calendar synchronization.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -86,7 +86,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>MobiCRM</title>
-          <meta name="description" content="MobiCRM is a smartphone-first CRM, designed for your itinerant sales force, offering prospection tools, contacts management, and calendar synchronization." />
+          <meta name="description" content={`MobiCRM is a smartphone-first CRM, designed for your itinerant sales force, offering prospection tools, contacts management, and calendar synchronization.`} />
         </>
       ),
     },

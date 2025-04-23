@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="BugBug"
-      description="Save time with easy-to-use, automated browser testing. Ensure that your website or web app works and looks like it should. No coding required."
+      description={`Save time with easy-to-use, automated browser testing. Ensure that your website or web app works and looks like it should. No coding required.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -97,7 +97,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>BugBug</title>
-          <meta name="description" content="Save time with easy-to-use, automated browser testing. Ensure that your website or web app works and looks like it should. No coding required." />
+          <meta name="description" content={`Save time with easy-to-use, automated browser testing. Ensure that your website or web app works and looks like it should. No coding required.`} />
         </>
       ),
     },

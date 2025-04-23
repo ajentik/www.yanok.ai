@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Qawafil"
-      description="Qawafil is an e-commerce platform to create online stores."
+      description={`Qawafil is an e-commerce platform to create online stores.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -171,7 +171,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Qawafil</title>
-          <meta name="description" content="Qawafil is an e-commerce platform to create online stores." />
+          <meta name="description" content={`Qawafil is an e-commerce platform to create online stores.`} />
         </>
       ),
     },

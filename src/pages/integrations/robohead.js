@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="RoboHead"
-      description="RoboHead is a project management solution that helps teams focus on their people, deadlines, and creative deliverables."
+      description={`RoboHead is a project management solution that helps teams focus on their people, deadlines, and creative deliverables.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -91,7 +91,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>RoboHead</title>
-          <meta name="description" content="RoboHead is a project management solution that helps teams focus on their people, deadlines, and creative deliverables." />
+          <meta name="description" content={`RoboHead is a project management solution that helps teams focus on their people, deadlines, and creative deliverables.`} />
         </>
       ),
     },

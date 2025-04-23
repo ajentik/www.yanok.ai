@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Super Dispatch"
-      description="Super Dispatch platform is a better and a faster way to move cars for Carriers, Brokers, and Shippers."
+      description={`Super Dispatch platform is a better and a faster way to move cars for Carriers, Brokers, and Shippers.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -81,7 +81,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Super Dispatch</title>
-          <meta name="description" content="Super Dispatch platform is a better and a faster way to move cars for Carriers, Brokers, and Shippers." />
+          <meta name="description" content={`Super Dispatch platform is a better and a faster way to move cars for Carriers, Brokers, and Shippers.`} />
         </>
       ),
     },

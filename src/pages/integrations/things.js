@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Things"
-      description="Things is an award-winning personal task manager for Mac and iOS that helps you achieve your goals."
+      description={`Things is an award-winning personal task manager for Mac and iOS that helps you achieve your goals.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Things</title>
-          <meta name="description" content="Things is an award-winning personal task manager for Mac and iOS that helps you achieve your goals." />
+          <meta name="description" content={`Things is an award-winning personal task manager for Mac and iOS that helps you achieve your goals.`} />
         </>
       ),
     },

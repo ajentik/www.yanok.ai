@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Localytics"
-      description="Used on more than 3 billion devices worldwide, Localytics is a mobile engagement platform for mobile and web apps."
+      description={`Used on more than 3 billion devices worldwide, Localytics is a mobile engagement platform for mobile and web apps.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +53,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Localytics</title>
-          <meta name="description" content="Used on more than 3 billion devices worldwide, Localytics is a mobile engagement platform for mobile and web apps." />
+          <meta name="description" content={`Used on more than 3 billion devices worldwide, Localytics is a mobile engagement platform for mobile and web apps.`} />
         </>
       ),
     },

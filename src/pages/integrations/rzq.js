@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="RZQ"
-      description="RZQ is an e-commerce platform that allows merchants to establish, operate, and manage their online stores with no technical hassle. It also allows them to enable or disable the connection with any logistic company and/or payment gateway with a click of a button."
+      description={`RZQ is an e-commerce platform that allows merchants to establish, operate, and manage their online stores with no technical hassle. It also allows them to enable or disable the connection with any logistic company and/or payment gateway with a click of a button.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -131,7 +131,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>RZQ</title>
-          <meta name="description" content="RZQ is an e-commerce platform that allows merchants to establish, operate, and manage their online stores with no technical hassle. It also allows them to enable or disable the connection with any logistic company and/or payment gateway with a click of a button." />
+          <meta name="description" content={`RZQ is an e-commerce platform that allows merchants to establish, operate, and manage their online stores with no technical hassle. It also allows them to enable or disable the connection with any logistic company and/or payment gateway with a click of a button.`} />
         </>
       ),
     },

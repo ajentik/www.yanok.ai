@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="CloudCulate"
-      description="CloudCulate is a REST API that dramatically simplifies communication with Excel and Google Sheets."
+      description={`CloudCulate is a REST API that dramatically simplifies communication with Excel and Google Sheets.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -61,7 +61,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>CloudCulate</title>
-          <meta name="description" content="CloudCulate is a REST API that dramatically simplifies communication with Excel and Google Sheets." />
+          <meta name="description" content={`CloudCulate is a REST API that dramatically simplifies communication with Excel and Google Sheets.`} />
         </>
       ),
     },

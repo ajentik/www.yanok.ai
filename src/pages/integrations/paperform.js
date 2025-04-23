@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Paperform"
-      description="Paperform helps you create beautiful forms online."
+      description={`Paperform helps you create beautiful forms online.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Paperform</title>
-          <meta name="description" content="Paperform helps you create beautiful forms online." />
+          <meta name="description" content={`Paperform helps you create beautiful forms online.`} />
         </>
       ),
     },

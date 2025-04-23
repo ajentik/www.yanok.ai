@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="MillionVerifier"
-      description="MillionVerifier is an email verifier service and API"
+      description={`MillionVerifier is an email verifier service and API`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>MillionVerifier</title>
-          <meta name="description" content="MillionVerifier is an email verifier service and API" />
+          <meta name="description" content={`MillionVerifier is an email verifier service and API`} />
         </>
       ),
     },

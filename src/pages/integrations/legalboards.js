@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Legalboards"
-      description="Legalboards streamline your workflow and Reduce the learning curve of new team members."
+      description={`Legalboards streamline your workflow and Reduce the learning curve of new team members.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -111,7 +111,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Legalboards</title>
-          <meta name="description" content="Legalboards streamline your workflow and Reduce the learning curve of new team members." />
+          <meta name="description" content={`Legalboards streamline your workflow and Reduce the learning curve of new team members.`} />
         </>
       ),
     },

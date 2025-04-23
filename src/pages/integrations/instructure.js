@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Instructure"
-      description="Instructure, Inc. is an educational technology company. It is the developer of the Canvas learning management system, a comprehensive cloud-native software package."
+      description={`Instructure, Inc. is an educational technology company. It is the developer of the Canvas learning management system, a comprehensive cloud-native software package.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +53,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Instructure</title>
-          <meta name="description" content="Instructure, Inc. is an educational technology company. It is the developer of the Canvas learning management system, a comprehensive cloud-native software package." />
+          <meta name="description" content={`Instructure, Inc. is an educational technology company. It is the developer of the Canvas learning management system, a comprehensive cloud-native software package.`} />
         </>
       ),
     },

@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="ConectoHub"
-      description="ConectoHub is OKR Integrated Agile Work Management OS to managing your tasks, projects and OKRs."
+      description={`ConectoHub is OKR Integrated Agile Work Management OS to managing your tasks, projects and OKRs.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -106,7 +106,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>ConectoHub</title>
-          <meta name="description" content="ConectoHub is OKR Integrated Agile Work Management OS to managing your tasks, projects and OKRs." />
+          <meta name="description" content={`ConectoHub is OKR Integrated Agile Work Management OS to managing your tasks, projects and OKRs.`} />
         </>
       ),
     },

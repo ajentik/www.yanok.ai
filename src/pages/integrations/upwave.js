@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Upwave"
-      description="Upwave is a visual collaboration platform that will increase productivity and reduce stress."
+      description={`Upwave is a visual collaboration platform that will increase productivity and reduce stress.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Upwave</title>
-          <meta name="description" content="Upwave is a visual collaboration platform that will increase productivity and reduce stress." />
+          <meta name="description" content={`Upwave is a visual collaboration platform that will increase productivity and reduce stress.`} />
         </>
       ),
     },

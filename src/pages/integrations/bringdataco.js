@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="BringData.co"
-      description="BringData is a data validation plataform that shows you what are the invalid data in your database."
+      description={`BringData is a data validation plataform that shows you what are the invalid data in your database.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -62,7 +62,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>BringData.co</title>
-          <meta name="description" content="BringData is a data validation plataform that shows you what are the invalid data in your database." />
+          <meta name="description" content={`BringData is a data validation plataform that shows you what are the invalid data in your database.`} />
         </>
       ),
     },

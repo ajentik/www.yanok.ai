@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Freshservice"
-      description="Freshservice is an online, cloud-based IT Helpdesk which is ITIL ready."
+      description={`Freshservice is an online, cloud-based IT Helpdesk which is ITIL ready.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -81,7 +81,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Freshservice</title>
-          <meta name="description" content="Freshservice is an online, cloud-based IT Helpdesk which is ITIL ready." />
+          <meta name="description" content={`Freshservice is an online, cloud-based IT Helpdesk which is ITIL ready.`} />
         </>
       ),
     },

@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Odify"
-      description="Odify is a platform for the creation, management and distribution of introductory and onboarding videos, as well as the development of your software."
+      description={`Odify is a platform for the creation, management and distribution of introductory and onboarding videos, as well as the development of your software.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -66,7 +66,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Odify</title>
-          <meta name="description" content="Odify is a platform for the creation, management and distribution of introductory and onboarding videos, as well as the development of your software." />
+          <meta name="description" content={`Odify is a platform for the creation, management and distribution of introductory and onboarding videos, as well as the development of your software.`} />
         </>
       ),
     },

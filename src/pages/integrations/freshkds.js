@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Fresh KDS"
-      description="KDS is a Kitchen / Take Out / Production Management System"
+      description={`KDS is a Kitchen / Take Out / Production Management System`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Fresh KDS</title>
-          <meta name="description" content="KDS is a Kitchen / Take Out / Production Management System" />
+          <meta name="description" content={`KDS is a Kitchen / Take Out / Production Management System`} />
         </>
       ),
     },

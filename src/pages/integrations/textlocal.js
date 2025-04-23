@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Textlocal"
-      description="A great tool for sending and receiving SMS texts. Allows you to send SMS texts to thousands of customers at once with no fuss. You can also include attachments, surveys and vouchers/tickets, all within a single SMS message."
+      description={`A great tool for sending and receiving SMS texts. Allows you to send SMS texts to thousands of customers at once with no fuss. You can also include attachments, surveys and vouchers/tickets, all within a single SMS message.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -76,7 +76,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Textlocal</title>
-          <meta name="description" content="A great tool for sending and receiving SMS texts. Allows you to send SMS texts to thousands of customers at once with no fuss. You can also include attachments, surveys and vouchers/tickets, all within a single SMS message." />
+          <meta name="description" content={`A great tool for sending and receiving SMS texts. Allows you to send SMS texts to thousands of customers at once with no fuss. You can also include attachments, surveys and vouchers/tickets, all within a single SMS message.`} />
         </>
       ),
     },

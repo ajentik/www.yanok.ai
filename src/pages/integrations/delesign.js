@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Delesign"
-      description="Delesign provides you with a dedicated senior-level designer. For a flat monthly rate, complete all your graphic design, animation, web & app, UI/UX, and illustration projects (and more) today."
+      description={`Delesign provides you with a dedicated senior-level designer. For a flat monthly rate, complete all your graphic design, animation, web & app, UI/UX, and illustration projects (and more) today.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -71,7 +71,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Delesign</title>
-          <meta name="description" content="Delesign provides you with a dedicated senior-level designer. For a flat monthly rate, complete all your graphic design, animation, web & app, UI/UX, and illustration projects (and more) today." />
+          <meta name="description" content={`Delesign provides you with a dedicated senior-level designer. For a flat monthly rate, complete all your graphic design, animation, web & app, UI/UX, and illustration projects (and more) today.`} />
         </>
       ),
     },

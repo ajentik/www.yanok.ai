@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="TheTexting"
-      description="TheTexting.com offers best SMS API services and SMS Gateway services for OTP text messages, notification texts, or even preferred for text marketing via own Text API based solution."
+      description={`TheTexting.com offers best SMS API services and SMS Gateway services for OTP text messages, notification texts, or even preferred for text marketing via own Text API based solution.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -61,7 +61,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>TheTexting</title>
-          <meta name="description" content="TheTexting.com offers best SMS API services and SMS Gateway services for OTP text messages, notification texts, or even preferred for text marketing via own Text API based solution." />
+          <meta name="description" content={`TheTexting.com offers best SMS API services and SMS Gateway services for OTP text messages, notification texts, or even preferred for text marketing via own Text API based solution.`} />
         </>
       ),
     },

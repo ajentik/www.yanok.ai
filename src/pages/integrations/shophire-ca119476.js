@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="ShopHire"
-      description="ShopHire is a recruitment marketing and applicant tracking plugin for Shopify stores to promote their employer brand, post jobs and manage their hiring process."
+      description={`ShopHire is a recruitment marketing and applicant tracking plugin for Shopify stores to promote their employer brand, post jobs and manage their hiring process.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -101,7 +101,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>ShopHire</title>
-          <meta name="description" content="ShopHire is a recruitment marketing and applicant tracking plugin for Shopify stores to promote their employer brand, post jobs and manage their hiring process." />
+          <meta name="description" content={`ShopHire is a recruitment marketing and applicant tracking plugin for Shopify stores to promote their employer brand, post jobs and manage their hiring process.`} />
         </>
       ),
     },

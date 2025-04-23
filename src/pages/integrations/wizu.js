@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Wizu"
-      description="Wizu is a conversational survey platform that engages respondents and results in better verbatims"
+      description={`Wizu is a conversational survey platform that engages respondents and results in better verbatims`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -66,7 +66,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Wizu</title>
-          <meta name="description" content="Wizu is a conversational survey platform that engages respondents and results in better verbatims" />
+          <meta name="description" content={`Wizu is a conversational survey platform that engages respondents and results in better verbatims`} />
         </>
       ),
     },

@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="FunnelDash"
-      description="Funneldash is the ultimate agency growth funnel software as it combines data from multiple CRM, Payment and Advertising solutions to show key metrics about your funnels."
+      description={`Funneldash is the ultimate agency growth funnel software as it combines data from multiple CRM, Payment and Advertising solutions to show key metrics about your funnels.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +53,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>FunnelDash</title>
-          <meta name="description" content="Funneldash is the ultimate agency growth funnel software as it combines data from multiple CRM, Payment and Advertising solutions to show key metrics about your funnels." />
+          <meta name="description" content={`Funneldash is the ultimate agency growth funnel software as it combines data from multiple CRM, Payment and Advertising solutions to show key metrics about your funnels.`} />
         </>
       ),
     },

@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Shopify"
-      description="Shopify is a simple way to create an online store to list products, collect credit card payments, and ship your goods."
+      description={`Shopify is a simple way to create an online store to list products, collect credit card payments, and ship your goods.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -176,7 +176,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Shopify</title>
-          <meta name="description" content="Shopify is a simple way to create an online store to list products, collect credit card payments, and ship your goods." />
+          <meta name="description" content={`Shopify is a simple way to create an online store to list products, collect credit card payments, and ship your goods.`} />
         </>
       ),
     },

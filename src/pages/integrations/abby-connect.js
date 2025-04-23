@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Abby Connect"
-      description="Abby Connect helps small businesses grow and stay connected with potential clients and customers 24/7/365 with live phone answering and chat messaging services."
+      description={`Abby Connect helps small businesses grow and stay connected with potential clients and customers 24/7/365 with live phone answering and chat messaging services.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -67,7 +67,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Abby Connect</title>
-          <meta name="description" content="Abby Connect helps small businesses grow and stay connected with potential clients and customers 24/7/365 with live phone answering and chat messaging services." />
+          <meta name="description" content={`Abby Connect helps small businesses grow and stay connected with potential clients and customers 24/7/365 with live phone answering and chat messaging services.`} />
         </>
       ),
     },

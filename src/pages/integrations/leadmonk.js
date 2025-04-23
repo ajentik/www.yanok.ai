@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Leadmonk"
-      description="Leadmonk is a highly versatile and simple online appointment scheduling tool for businesses and individuals."
+      description={`Leadmonk is a highly versatile and simple online appointment scheduling tool for businesses and individuals.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -62,7 +62,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Leadmonk</title>
-          <meta name="description" content="Leadmonk is a highly versatile and simple online appointment scheduling tool for businesses and individuals." />
+          <meta name="description" content={`Leadmonk is a highly versatile and simple online appointment scheduling tool for businesses and individuals.`} />
         </>
       ),
     },

@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Valispace"
-      description="Valispace is a platform for engineering collaboration. Ensuring a single source-of-truth for engineering design, Valispace helps engineers build complex systems more efficiently in a browser-based platform designed for the engineers of today and tomorrow."
+      description={`Valispace is a platform for engineering collaboration. Ensuring a single source-of-truth for engineering design, Valispace helps engineers build complex systems more efficiently in a browser-based platform designed for the engineers of today and tomorrow.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -121,7 +121,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Valispace</title>
-          <meta name="description" content="Valispace is a platform for engineering collaboration. Ensuring a single source-of-truth for engineering design, Valispace helps engineers build complex systems more efficiently in a browser-based platform designed for the engineers of today and tomorrow." />
+          <meta name="description" content={`Valispace is a platform for engineering collaboration. Ensuring a single source-of-truth for engineering design, Valispace helps engineers build complex systems more efficiently in a browser-based platform designed for the engineers of today and tomorrow.`} />
         </>
       ),
     },

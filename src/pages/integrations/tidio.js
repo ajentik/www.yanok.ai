@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Tidio"
-      description="Tidio uniquely merges live chat, Bots, and Marketing Automation in one place to let you easily communicate with your customers."
+      description={`Tidio uniquely merges live chat, Bots, and Marketing Automation in one place to let you easily communicate with your customers.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Tidio</title>
-          <meta name="description" content="Tidio uniquely merges live chat, Bots, and Marketing Automation in one place to let you easily communicate with your customers." />
+          <meta name="description" content={`Tidio uniquely merges live chat, Bots, and Marketing Automation in one place to let you easily communicate with your customers.`} />
         </>
       ),
     },

@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Emailjs"
-      description="Send email directly from your client-side Javascript code – no server side code required."
+      description={`Send email directly from your client-side Javascript code – no server side code required.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +53,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Emailjs</title>
-          <meta name="description" content="Send email directly from your client-side Javascript code – no server side code required." />
+          <meta name="description" content={`Send email directly from your client-side Javascript code – no server side code required.`} />
         </>
       ),
     },

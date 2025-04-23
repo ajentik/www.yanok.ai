@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="WebWork Time Tracker"
-      description="WebWork time tracker is a time tracking and employee monitoring software. Track time and screenshots, export timesheet reports, add billable contracts and generate invoices."
+      description={`WebWork time tracker is a time tracking and employee monitoring software. Track time and screenshots, export timesheet reports, add billable contracts and generate invoices.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -81,7 +81,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>WebWork Time Tracker</title>
-          <meta name="description" content="WebWork time tracker is a time tracking and employee monitoring software. Track time and screenshots, export timesheet reports, add billable contracts and generate invoices." />
+          <meta name="description" content={`WebWork time tracker is a time tracking and employee monitoring software. Track time and screenshots, export timesheet reports, add billable contracts and generate invoices.`} />
         </>
       ),
     },

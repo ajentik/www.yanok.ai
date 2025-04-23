@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Nectar Desk"
-      description="Nectar Desk is a multi-channel communication platform for Sales teams, Support teams and Call Centers"
+      description={`Nectar Desk is a multi-channel communication platform for Sales teams, Support teams and Call Centers`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -61,7 +61,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Nectar Desk</title>
-          <meta name="description" content="Nectar Desk is a multi-channel communication platform for Sales teams, Support teams and Call Centers" />
+          <meta name="description" content={`Nectar Desk is a multi-channel communication platform for Sales teams, Support teams and Call Centers`} />
         </>
       ),
     },

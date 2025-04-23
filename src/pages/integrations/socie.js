@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Socie"
-      description="Socie is the top down communication app for societies, companies and associations. We serve a large variety of communities, such as sports clubs, churches, businesses and many others."
+      description={`Socie is the top down communication app for societies, companies and associations. We serve a large variety of communities, such as sports clubs, churches, businesses and many others.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Socie</title>
-          <meta name="description" content="Socie is the top down communication app for societies, companies and associations. We serve a large variety of communities, such as sports clubs, churches, businesses and many others." />
+          <meta name="description" content={`Socie is the top down communication app for societies, companies and associations. We serve a large variety of communities, such as sports clubs, churches, businesses and many others.`} />
         </>
       ),
     },

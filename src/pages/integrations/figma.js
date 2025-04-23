@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Figma"
-      description="Turn Ideas into Products Faster. Design, prototype, and gather feedback all in one place with Figma."
+      description={`Turn Ideas into Products Faster. Design, prototype, and gather feedback all in one place with Figma.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +53,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Figma</title>
-          <meta name="description" content="Turn Ideas into Products Faster. Design, prototype, and gather feedback all in one place with Figma." />
+          <meta name="description" content={`Turn Ideas into Products Faster. Design, prototype, and gather feedback all in one place with Figma.`} />
         </>
       ),
     },

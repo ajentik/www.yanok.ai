@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Zuora"
-      description="Zuora is a world class subscription service management system used by hundreds of companies across the world."
+      description={`Zuora is a world class subscription service management system used by hundreds of companies across the world.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +53,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Zuora</title>
-          <meta name="description" content="Zuora is a world class subscription service management system used by hundreds of companies across the world." />
+          <meta name="description" content={`Zuora is a world class subscription service management system used by hundreds of companies across the world.`} />
         </>
       ),
     },

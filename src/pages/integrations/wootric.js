@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Wootric by InMoment"
-      description="Wootric by InMoment collects and manages customer feedback using proven CX metrics (Net Promoter Score® (NPS), CSAT, and Customer Effort Score (CES). Survey in-app, via mobile, email & SMS, track ongoing results, follow up with customers, and quickly surface insights in an easy-to-use dashboard."
+      description={`Wootric by InMoment collects and manages customer feedback using proven CX metrics (Net Promoter Score® (NPS), CSAT, and Customer Effort Score (CES). Survey in-app, via mobile, email & SMS, track ongoing results, follow up with customers, and quickly surface insights in an easy-to-use dashboard.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -71,7 +71,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Wootric by InMoment</title>
-          <meta name="description" content="Wootric by InMoment collects and manages customer feedback using proven CX metrics (Net Promoter Score® (NPS), CSAT, and Customer Effort Score (CES). Survey in-app, via mobile, email & SMS, track ongoing results, follow up with customers, and quickly surface insights in an easy-to-use dashboard." />
+          <meta name="description" content={`Wootric by InMoment collects and manages customer feedback using proven CX metrics (Net Promoter Score® (NPS), CSAT, and Customer Effort Score (CES). Survey in-app, via mobile, email & SMS, track ongoing results, follow up with customers, and quickly surface insights in an easy-to-use dashboard.`} />
         </>
       ),
     },

@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Reloadly"
-      description="Reloadly is a technology company that builds airtime APIs for developers and their brands. Businesses of every size in a wide variety of industries use our software to enable the transfer of digital mobile payments, digital goods and mobile top-ups."
+      description={`Reloadly is a technology company that builds airtime APIs for developers and their brands. Businesses of every size in a wide variety of industries use our software to enable the transfer of digital mobile payments, digital goods and mobile top-ups.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -62,7 +62,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Reloadly</title>
-          <meta name="description" content="Reloadly is a technology company that builds airtime APIs for developers and their brands. Businesses of every size in a wide variety of industries use our software to enable the transfer of digital mobile payments, digital goods and mobile top-ups." />
+          <meta name="description" content={`Reloadly is a technology company that builds airtime APIs for developers and their brands. Businesses of every size in a wide variety of industries use our software to enable the transfer of digital mobile payments, digital goods and mobile top-ups.`} />
         </>
       ),
     },

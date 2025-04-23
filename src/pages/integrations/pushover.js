@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Pushover"
-      description="Pushover is a simple push notification service to instantly send alerts to Android and iOS devices."
+      description={`Pushover is a simple push notification service to instantly send alerts to Android and iOS devices.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Pushover</title>
-          <meta name="description" content="Pushover is a simple push notification service to instantly send alerts to Android and iOS devices." />
+          <meta name="description" content={`Pushover is a simple push notification service to instantly send alerts to Android and iOS devices.`} />
         </>
       ),
     },

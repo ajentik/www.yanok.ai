@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Set a Time"
-      description="Set a Time is an appointment scheduling software and scheduling app, that helps businesses accept and manage appointments, online."
+      description={`Set a Time is an appointment scheduling software and scheduling app, that helps businesses accept and manage appointments, online.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -61,7 +61,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Set a Time</title>
-          <meta name="description" content="Set a Time is an appointment scheduling software and scheduling app, that helps businesses accept and manage appointments, online." />
+          <meta name="description" content={`Set a Time is an appointment scheduling software and scheduling app, that helps businesses accept and manage appointments, online.`} />
         </>
       ),
     },

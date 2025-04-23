@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Targetprocess"
-      description="Targetprocess is a Visual Management Software."
+      description={`Targetprocess is a Visual Management Software.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -161,7 +161,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Targetprocess</title>
-          <meta name="description" content="Targetprocess is a Visual Management Software." />
+          <meta name="description" content={`Targetprocess is a Visual Management Software.`} />
         </>
       ),
     },

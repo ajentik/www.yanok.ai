@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Frontify"
-      description="Frontify simplifies brand management with a platform that connects everything (and everyone) important to the growth of your brand."
+      description={`Frontify simplifies brand management with a platform that connects everything (and everyone) important to the growth of your brand.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -71,7 +71,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Frontify</title>
-          <meta name="description" content="Frontify simplifies brand management with a platform that connects everything (and everyone) important to the growth of your brand." />
+          <meta name="description" content={`Frontify simplifies brand management with a platform that connects everything (and everyone) important to the growth of your brand.`} />
         </>
       ),
     },

@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Tradable Bits"
-      description="Tradable Bits reinvents social media marketing by connecting brands with their fans through social media aggregation, engagement campaigns and social e-commerce integration."
+      description={`Tradable Bits reinvents social media marketing by connecting brands with their fans through social media aggregation, engagement campaigns and social e-commerce integration.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -62,7 +62,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Tradable Bits</title>
-          <meta name="description" content="Tradable Bits reinvents social media marketing by connecting brands with their fans through social media aggregation, engagement campaigns and social e-commerce integration." />
+          <meta name="description" content={`Tradable Bits reinvents social media marketing by connecting brands with their fans through social media aggregation, engagement campaigns and social e-commerce integration.`} />
         </>
       ),
     },

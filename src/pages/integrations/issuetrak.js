@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Issuetrak"
-      description="Issuetrak is an operational management platform to help you solve problems, control chaos, and experience less stress."
+      description={`Issuetrak is an operational management platform to help you solve problems, control chaos, and experience less stress.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -161,7 +161,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Issuetrak</title>
-          <meta name="description" content="Issuetrak is an operational management platform to help you solve problems, control chaos, and experience less stress." />
+          <meta name="description" content={`Issuetrak is an operational management platform to help you solve problems, control chaos, and experience less stress.`} />
         </>
       ),
     },

@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Lessonspace"
-      description="The best way to teach online. Teach live, one-on-one, or with a group, using the most versatile collaborative space for online lessons."
+      description={`The best way to teach online. Teach live, one-on-one, or with a group, using the most versatile collaborative space for online lessons.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Lessonspace</title>
-          <meta name="description" content="The best way to teach online. Teach live, one-on-one, or with a group, using the most versatile collaborative space for online lessons." />
+          <meta name="description" content={`The best way to teach online. Teach live, one-on-one, or with a group, using the most versatile collaborative space for online lessons.`} />
         </>
       ),
     },

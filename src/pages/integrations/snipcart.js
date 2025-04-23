@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Snipcart"
-      description="Snipcart is a comprehensive e-commerce platform that has been designed to be easy to incorporate e-commerce into any custom website."
+      description={`Snipcart is a comprehensive e-commerce platform that has been designed to be easy to incorporate e-commerce into any custom website.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +53,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Snipcart</title>
-          <meta name="description" content="Snipcart is a comprehensive e-commerce platform that has been designed to be easy to incorporate e-commerce into any custom website." />
+          <meta name="description" content={`Snipcart is a comprehensive e-commerce platform that has been designed to be easy to incorporate e-commerce into any custom website.`} />
         </>
       ),
     },

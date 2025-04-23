@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Act-On"
-      description="Act-On's growth marketing platform enables marketers to grow their business, deliver exceptional brand experiences, and drive customer engagement with their offerings across the customer life cycle-for every customer, every time."
+      description={`Act-On's growth marketing platform enables marketers to grow their business, deliver exceptional brand experiences, and drive customer engagement with their offerings across the customer life cycle-for every customer, every time.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -76,7 +76,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Act-On</title>
-          <meta name="description" content="Act-On's growth marketing platform enables marketers to grow their business, deliver exceptional brand experiences, and drive customer engagement with their offerings across the customer life cycle-for every customer, every time." />
+          <meta name="description" content={`Act-On's growth marketing platform enables marketers to grow their business, deliver exceptional brand experiences, and drive customer engagement with their offerings across the customer life cycle-for every customer, every time.`} />
         </>
       ),
     },

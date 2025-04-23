@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Trint"
-      description="Trint is an automated transcription (speech to text) service that allows users to upload audio and video media and receive a searchable, publishable transcript."
+      description={`Trint is an automated transcription (speech to text) service that allows users to upload audio and video media and receive a searchable, publishable transcript.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -76,7 +76,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Trint</title>
-          <meta name="description" content="Trint is an automated transcription (speech to text) service that allows users to upload audio and video media and receive a searchable, publishable transcript." />
+          <meta name="description" content={`Trint is an automated transcription (speech to text) service that allows users to upload audio and video media and receive a searchable, publishable transcript.`} />
         </>
       ),
     },

@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Patreon"
-      description="Patreon was built to power membership businesses for creators and strives to support creators who wish to gain consistent, sustainable income through their work. Patreon also empowers creators to retain direct contact with their most passionate fans and own creative control of their work."
+      description={`Patreon was built to power membership businesses for creators and strives to support creators who wish to gain consistent, sustainable income through their work. Patreon also empowers creators to retain direct contact with their most passionate fans and own creative control of their work.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -97,7 +97,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Patreon</title>
-          <meta name="description" content="Patreon was built to power membership businesses for creators and strives to support creators who wish to gain consistent, sustainable income through their work. Patreon also empowers creators to retain direct contact with their most passionate fans and own creative control of their work." />
+          <meta name="description" content={`Patreon was built to power membership businesses for creators and strives to support creators who wish to gain consistent, sustainable income through their work. Patreon also empowers creators to retain direct contact with their most passionate fans and own creative control of their work.`} />
         </>
       ),
     },

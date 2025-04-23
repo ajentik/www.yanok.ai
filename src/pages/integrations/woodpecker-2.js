@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Woodpecker"
-      description="Woodpecker is a document automation platform that allows you to automatically prepare & populate frequently used documents for new recipients without ever having to open Microsoft Word!"
+      description={`Woodpecker is a document automation platform that allows you to automatically prepare & populate frequently used documents for new recipients without ever having to open Microsoft Word!`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -66,7 +66,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Woodpecker</title>
-          <meta name="description" content="Woodpecker is a document automation platform that allows you to automatically prepare & populate frequently used documents for new recipients without ever having to open Microsoft Word!" />
+          <meta name="description" content={`Woodpecker is a document automation platform that allows you to automatically prepare & populate frequently used documents for new recipients without ever having to open Microsoft Word!`} />
         </>
       ),
     },

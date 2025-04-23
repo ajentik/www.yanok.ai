@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Timeneye"
-      description="Timeneye is a simple and intelligent time tracking tool for teams and freelancers."
+      description={`Timeneye is a simple and intelligent time tracking tool for teams and freelancers.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -136,7 +136,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Timeneye</title>
-          <meta name="description" content="Timeneye is a simple and intelligent time tracking tool for teams and freelancers." />
+          <meta name="description" content={`Timeneye is a simple and intelligent time tracking tool for teams and freelancers.`} />
         </>
       ),
     },

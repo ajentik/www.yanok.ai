@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="PersistIQ"
-      description="PersistIQ is software for effective outbound sales that combines communication and workflow into one easy to use system."
+      description={`PersistIQ is software for effective outbound sales that combines communication and workflow into one easy to use system.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -86,7 +86,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>PersistIQ</title>
-          <meta name="description" content="PersistIQ is software for effective outbound sales that combines communication and workflow into one easy to use system." />
+          <meta name="description" content={`PersistIQ is software for effective outbound sales that combines communication and workflow into one easy to use system.`} />
         </>
       ),
     },

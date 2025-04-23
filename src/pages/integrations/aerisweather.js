@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="AerisWeather"
-      description="AerisWeather provides developer-friendly data services and tools that allow you to monetize weather where it impacts your business."
+      description={`AerisWeather provides developer-friendly data services and tools that allow you to monetize weather where it impacts your business.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -81,7 +81,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>AerisWeather</title>
-          <meta name="description" content="AerisWeather provides developer-friendly data services and tools that allow you to monetize weather where it impacts your business." />
+          <meta name="description" content={`AerisWeather provides developer-friendly data services and tools that allow you to monetize weather where it impacts your business.`} />
         </>
       ),
     },

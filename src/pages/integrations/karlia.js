@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Karlia"
-      description="Karlia is the first CRM software to integrate your complete mailboxes with tracking, scheduled mailings, templates and predefined responses. Be twice as productive !"
+      description={`Karlia is the first CRM software to integrate your complete mailboxes with tracking, scheduled mailings, templates and predefined responses. Be twice as productive !`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -721,7 +721,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Karlia</title>
-          <meta name="description" content="Karlia is the first CRM software to integrate your complete mailboxes with tracking, scheduled mailings, templates and predefined responses. Be twice as productive !" />
+          <meta name="description" content={`Karlia is the first CRM software to integrate your complete mailboxes with tracking, scheduled mailings, templates and predefined responses. Be twice as productive !`} />
         </>
       ),
     },

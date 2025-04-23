@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="WP Popups"
-      description="WP Popups is a Wordpress popup plugin."
+      description={`WP Popups is a Wordpress popup plugin.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>WP Popups</title>
-          <meta name="description" content="WP Popups is a Wordpress popup plugin." />
+          <meta name="description" content={`WP Popups is a Wordpress popup plugin.`} />
         </>
       ),
     },

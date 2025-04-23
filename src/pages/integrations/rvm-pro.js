@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="RVM Pro"
-      description="RVM Pro is a simple tool for advertisers to send ringless voicemails to potential customers."
+      description={`RVM Pro is a simple tool for advertisers to send ringless voicemails to potential customers.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -91,7 +91,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>RVM Pro</title>
-          <meta name="description" content="RVM Pro is a simple tool for advertisers to send ringless voicemails to potential customers." />
+          <meta name="description" content={`RVM Pro is a simple tool for advertisers to send ringless voicemails to potential customers.`} />
         </>
       ),
     },

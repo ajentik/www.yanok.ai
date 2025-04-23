@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Speak4"
-      description="Speak4 makes it simple for organizations to empower their supporters to speak up for the causes they believe in."
+      description={`Speak4 makes it simple for organizations to empower their supporters to speak up for the causes they believe in.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -77,7 +77,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Speak4</title>
-          <meta name="description" content="Speak4 makes it simple for organizations to empower their supporters to speak up for the causes they believe in." />
+          <meta name="description" content={`Speak4 makes it simple for organizations to empower their supporters to speak up for the causes they believe in.`} />
         </>
       ),
     },

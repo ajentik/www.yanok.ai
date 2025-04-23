@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Codebase"
-      description="Codebase is a software project management tool with Git, Mercurial & Subversion hosting, and an array of tools for software development teams."
+      description={`Codebase is a software project management tool with Git, Mercurial & Subversion hosting, and an array of tools for software development teams.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +53,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Codebase</title>
-          <meta name="description" content="Codebase is a software project management tool with Git, Mercurial & Subversion hosting, and an array of tools for software development teams." />
+          <meta name="description" content={`Codebase is a software project management tool with Git, Mercurial & Subversion hosting, and an array of tools for software development teams.`} />
         </>
       ),
     },

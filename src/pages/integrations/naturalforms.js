@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="naturalForms"
-      description="NaturalForms is a mobile app that replaces paper forms and collects information electronically that exactly match your current paperwork."
+      description={`NaturalForms is a mobile app that replaces paper forms and collects information electronically that exactly match your current paperwork.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>naturalForms</title>
-          <meta name="description" content="NaturalForms is a mobile app that replaces paper forms and collects information electronically that exactly match your current paperwork." />
+          <meta name="description" content={`NaturalForms is a mobile app that replaces paper forms and collects information electronically that exactly match your current paperwork.`} />
         </>
       ),
     },

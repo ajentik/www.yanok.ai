@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Basecamp 3"
-      description="Basecamp’s unique blend of tools is everything any team needs to stay on the same page about whatever they’re working on."
+      description={`Basecamp’s unique blend of tools is everything any team needs to stay on the same page about whatever they’re working on.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -196,7 +196,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Basecamp 3</title>
-          <meta name="description" content="Basecamp’s unique blend of tools is everything any team needs to stay on the same page about whatever they’re working on." />
+          <meta name="description" content={`Basecamp’s unique blend of tools is everything any team needs to stay on the same page about whatever they’re working on.`} />
         </>
       ),
     },

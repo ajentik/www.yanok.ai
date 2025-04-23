@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Howspace"
-      description="Howspace brings people together to collaborate and learn. All in one platform."
+      description={`Howspace brings people together to collaborate and learn. All in one platform.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -81,7 +81,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Howspace</title>
-          <meta name="description" content="Howspace brings people together to collaborate and learn. All in one platform." />
+          <meta name="description" content={`Howspace brings people together to collaborate and learn. All in one platform.`} />
         </>
       ),
     },

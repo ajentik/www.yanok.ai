@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Diffbot Enhance"
-      description="Turn a name into an account. Get firmographic data and insights on every prospect, lead, and customer by enhancing your data with Diffbot."
+      description={`Turn a name into an account. Get firmographic data and insights on every prospect, lead, and customer by enhancing your data with Diffbot.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +53,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Diffbot Enhance</title>
-          <meta name="description" content="Turn a name into an account. Get firmographic data and insights on every prospect, lead, and customer by enhancing your data with Diffbot." />
+          <meta name="description" content={`Turn a name into an account. Get firmographic data and insights on every prospect, lead, and customer by enhancing your data with Diffbot.`} />
         </>
       ),
     },

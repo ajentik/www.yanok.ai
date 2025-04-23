@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Opentute"
-      description="Opentute is an e-learning platform for anything from selling online courses or blended learning and training for your staff."
+      description={`Opentute is an e-learning platform for anything from selling online courses or blended learning and training for your staff.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -196,7 +196,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Opentute</title>
-          <meta name="description" content="Opentute is an e-learning platform for anything from selling online courses or blended learning and training for your staff." />
+          <meta name="description" content={`Opentute is an e-learning platform for anything from selling online courses or blended learning and training for your staff.`} />
         </>
       ),
     },

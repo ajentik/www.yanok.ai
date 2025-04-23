@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="XemailVerify"
-      description="A application to verify lots of emails if they are safe to send or not, within a moment of time. Providing integrations to some popular application for easy one click verification of emails."
+      description={`A application to verify lots of emails if they are safe to send or not, within a moment of time. Providing integrations to some popular application for easy one click verification of emails.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>XemailVerify</title>
-          <meta name="description" content="A application to verify lots of emails if they are safe to send or not, within a moment of time. Providing integrations to some popular application for easy one click verification of emails." />
+          <meta name="description" content={`A application to verify lots of emails if they are safe to send or not, within a moment of time. Providing integrations to some popular application for easy one click verification of emails.`} />
         </>
       ),
     },

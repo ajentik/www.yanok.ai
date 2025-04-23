@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Adobe"
-      description="Adobe Inc., commonly known as Adobe, is an American multinational computer software company."
+      description={`Adobe Inc., commonly known as Adobe, is an American multinational computer software company.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +53,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Adobe</title>
-          <meta name="description" content="Adobe Inc., commonly known as Adobe, is an American multinational computer software company." />
+          <meta name="description" content={`Adobe Inc., commonly known as Adobe, is an American multinational computer software company.`} />
         </>
       ),
     },

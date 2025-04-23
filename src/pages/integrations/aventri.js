@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Aventri"
-      description="Aventri is a global leader in cloud based data-driven event management and venue sourcing solutions."
+      description={`Aventri is a global leader in cloud based data-driven event management and venue sourcing solutions.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +53,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Aventri</title>
-          <meta name="description" content="Aventri is a global leader in cloud based data-driven event management and venue sourcing solutions." />
+          <meta name="description" content={`Aventri is a global leader in cloud based data-driven event management and venue sourcing solutions.`} />
         </>
       ),
     },

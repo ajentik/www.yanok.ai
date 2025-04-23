@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="BigMailer"
-      description="BigMailer is email marketing software for agencies and developers."
+      description={`BigMailer is email marketing software for agencies and developers.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -61,7 +61,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>BigMailer</title>
-          <meta name="description" content="BigMailer is email marketing software for agencies and developers." />
+          <meta name="description" content={`BigMailer is email marketing software for agencies and developers.`} />
         </>
       ),
     },

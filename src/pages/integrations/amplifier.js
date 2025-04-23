@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Amplifier"
-      description="Amplifier is a powerful print-on-demand, screen printing & logistics platform."
+      description={`Amplifier is a powerful print-on-demand, screen printing & logistics platform.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -106,7 +106,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Amplifier</title>
-          <meta name="description" content="Amplifier is a powerful print-on-demand, screen printing & logistics platform." />
+          <meta name="description" content={`Amplifier is a powerful print-on-demand, screen printing & logistics platform.`} />
         </>
       ),
     },

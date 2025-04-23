@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Actionstep"
-      description="Actionstep is a Legal Practice Management Solution for Law firms."
+      description={`Actionstep is a Legal Practice Management Solution for Law firms.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -211,7 +211,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Actionstep</title>
-          <meta name="description" content="Actionstep is a Legal Practice Management Solution for Law firms." />
+          <meta name="description" content={`Actionstep is a Legal Practice Management Solution for Law firms.`} />
         </>
       ),
     },

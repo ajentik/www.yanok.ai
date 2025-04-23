@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Fusioo"
-      description="Fusioo helps growing businesses get organized. Create your custom online database and manage everything in one place."
+      description={`Fusioo helps growing businesses get organized. Create your custom online database and manage everything in one place.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Fusioo</title>
-          <meta name="description" content="Fusioo helps growing businesses get organized. Create your custom online database and manage everything in one place." />
+          <meta name="description" content={`Fusioo helps growing businesses get organized. Create your custom online database and manage everything in one place.`} />
         </>
       ),
     },

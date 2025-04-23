@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Acelle Mail"
-      description="Acelle Mail is a self hosted, open source, full-featured and easy to use email marketing web application written in PHP / Laravel 5 that lets you send high-volume marketing emails via your own server or through other email service (SMTP) providers."
+      description={`Acelle Mail is a self hosted, open source, full-featured and easy to use email marketing web application written in PHP / Laravel 5 that lets you send high-volume marketing emails via your own server or through other email service (SMTP) providers.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Acelle Mail</title>
-          <meta name="description" content="Acelle Mail is a self hosted, open source, full-featured and easy to use email marketing web application written in PHP / Laravel 5 that lets you send high-volume marketing emails via your own server or through other email service (SMTP) providers." />
+          <meta name="description" content={`Acelle Mail is a self hosted, open source, full-featured and easy to use email marketing web application written in PHP / Laravel 5 that lets you send high-volume marketing emails via your own server or through other email service (SMTP) providers.`} />
         </>
       ),
     },

@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="YesInsights"
-      description="YesInsights allows you to create one-click surveys for your team or clients, giving you actionable feedback to move your business forward."
+      description={`YesInsights allows you to create one-click surveys for your team or clients, giving you actionable feedback to move your business forward.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -67,7 +67,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>YesInsights</title>
-          <meta name="description" content="YesInsights allows you to create one-click surveys for your team or clients, giving you actionable feedback to move your business forward." />
+          <meta name="description" content={`YesInsights allows you to create one-click surveys for your team or clients, giving you actionable feedback to move your business forward.`} />
         </>
       ),
     },

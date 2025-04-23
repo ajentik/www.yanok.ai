@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Client Broadcast"
-      description="Client Broadcast is a cloud based communications platform designed to save your business time and money while increasing sales!"
+      description={`Client Broadcast is a cloud based communications platform designed to save your business time and money while increasing sales!`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -61,7 +61,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Client Broadcast</title>
-          <meta name="description" content="Client Broadcast is a cloud based communications platform designed to save your business time and money while increasing sales!" />
+          <meta name="description" content={`Client Broadcast is a cloud based communications platform designed to save your business time and money while increasing sales!`} />
         </>
       ),
     },

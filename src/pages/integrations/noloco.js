@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Noloco"
-      description="Noloco is a no-code client portal builder, you can create the perfect experience for your clients and your team built around your existing workflows."
+      description={`Noloco is a no-code client portal builder, you can create the perfect experience for your clients and your team built around your existing workflows.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -76,7 +76,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Noloco</title>
-          <meta name="description" content="Noloco is a no-code client portal builder, you can create the perfect experience for your clients and your team built around your existing workflows." />
+          <meta name="description" content={`Noloco is a no-code client portal builder, you can create the perfect experience for your clients and your team built around your existing workflows.`} />
         </>
       ),
     },

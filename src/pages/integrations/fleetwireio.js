@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="FleetWire.io"
-      description="FleetWire.io is a fleet management software that streamlines your rentals."
+      description={`FleetWire.io is a fleet management software that streamlines your rentals.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>FleetWire.io</title>
-          <meta name="description" content="FleetWire.io is a fleet management software that streamlines your rentals." />
+          <meta name="description" content={`FleetWire.io is a fleet management software that streamlines your rentals.`} />
         </>
       ),
     },

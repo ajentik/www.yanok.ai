@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="SEON. Fraud Fighters"
-      description="SEON provides a complete end-to-end, fraud-fighting platform for online businesses."
+      description={`SEON provides a complete end-to-end, fraud-fighting platform for online businesses.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -86,7 +86,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>SEON. Fraud Fighters</title>
-          <meta name="description" content="SEON provides a complete end-to-end, fraud-fighting platform for online businesses." />
+          <meta name="description" content={`SEON provides a complete end-to-end, fraud-fighting platform for online businesses.`} />
         </>
       ),
     },

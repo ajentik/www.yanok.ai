@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="GeniusReferrals"
-      description="Referral Marketing Platform that helps businesses to acquire new customers using word of mouth and recommendation techniques."
+      description={`Referral Marketing Platform that helps businesses to acquire new customers using word of mouth and recommendation techniques.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -161,7 +161,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>GeniusReferrals</title>
-          <meta name="description" content="Referral Marketing Platform that helps businesses to acquire new customers using word of mouth and recommendation techniques." />
+          <meta name="description" content={`Referral Marketing Platform that helps businesses to acquire new customers using word of mouth and recommendation techniques.`} />
         </>
       ),
     },

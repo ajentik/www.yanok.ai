@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Payday"
-      description="Payday simplifies business administration for freelancers and small businesses."
+      description={`Payday simplifies business administration for freelancers and small businesses.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -71,7 +71,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Payday</title>
-          <meta name="description" content="Payday simplifies business administration for freelancers and small businesses." />
+          <meta name="description" content={`Payday simplifies business administration for freelancers and small businesses.`} />
         </>
       ),
     },

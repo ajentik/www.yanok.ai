@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Maestro"
-      description="Maestro is a no-code process orchestration tool, created to support agile business processes and leverage automation to allow team to focus on innovation."
+      description={`Maestro is a no-code process orchestration tool, created to support agile business processes and leverage automation to allow team to focus on innovation.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -76,7 +76,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Maestro</title>
-          <meta name="description" content="Maestro is a no-code process orchestration tool, created to support agile business processes and leverage automation to allow team to focus on innovation." />
+          <meta name="description" content={`Maestro is a no-code process orchestration tool, created to support agile business processes and leverage automation to allow team to focus on innovation.`} />
         </>
       ),
     },

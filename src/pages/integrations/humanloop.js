@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Humanloop"
-      description="Humanloop is a machine learning platform to automate processing and understanding of text using AI and a human in the loop."
+      description={`Humanloop is a machine learning platform to automate processing and understanding of text using AI and a human in the loop.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -62,7 +62,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Humanloop</title>
-          <meta name="description" content="Humanloop is a machine learning platform to automate processing and understanding of text using AI and a human in the loop." />
+          <meta name="description" content={`Humanloop is a machine learning platform to automate processing and understanding of text using AI and a human in the loop.`} />
         </>
       ),
     },

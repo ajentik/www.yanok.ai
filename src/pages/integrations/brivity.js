@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Brivity"
-      description="Brivity is a cloud-based CRM platform for real estate professionals & brokerages."
+      description={`Brivity is a cloud-based CRM platform for real estate professionals & brokerages.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -66,7 +66,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Brivity</title>
-          <meta name="description" content="Brivity is a cloud-based CRM platform for real estate professionals & brokerages." />
+          <meta name="description" content={`Brivity is a cloud-based CRM platform for real estate professionals & brokerages.`} />
         </>
       ),
     },

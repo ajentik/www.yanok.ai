@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Ideanote"
-      description="Ideanote is an easier and faster way for companies to collect, collaborate and act on ideas from customers and employees."
+      description={`Ideanote is an easier and faster way for companies to collect, collaborate and act on ideas from customers and employees.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -76,7 +76,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Ideanote</title>
-          <meta name="description" content="Ideanote is an easier and faster way for companies to collect, collaborate and act on ideas from customers and employees." />
+          <meta name="description" content={`Ideanote is an easier and faster way for companies to collect, collaborate and act on ideas from customers and employees.`} />
         </>
       ),
     },

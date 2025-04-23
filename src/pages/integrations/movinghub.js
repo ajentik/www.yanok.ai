@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Movinghub"
-      description="Movinghub is an online SAAS platform that enables partners to access everything needed to offer utility connections, energy comparisons and a vast range of essential home service."
+      description={`Movinghub is an online SAAS platform that enables partners to access everything needed to offer utility connections, energy comparisons and a vast range of essential home service.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Movinghub</title>
-          <meta name="description" content="Movinghub is an online SAAS platform that enables partners to access everything needed to offer utility connections, energy comparisons and a vast range of essential home service." />
+          <meta name="description" content={`Movinghub is an online SAAS platform that enables partners to access everything needed to offer utility connections, energy comparisons and a vast range of essential home service.`} />
         </>
       ),
     },

@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Social Intents"
-      description="Social Intents lets you live chat with your customers in real-time to provide exceptional service."
+      description={`Social Intents lets you live chat with your customers in real-time to provide exceptional service.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -67,7 +67,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Social Intents</title>
-          <meta name="description" content="Social Intents lets you live chat with your customers in real-time to provide exceptional service." />
+          <meta name="description" content={`Social Intents lets you live chat with your customers in real-time to provide exceptional service.`} />
         </>
       ),
     },

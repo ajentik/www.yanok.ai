@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Kanban Zone"
-      description="Get into the Kanban Zone to collaborate online using Kanban with a laser focus on the right work at the right time."
+      description={`Get into the Kanban Zone to collaborate online using Kanban with a laser focus on the right work at the right time.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -71,7 +71,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Kanban Zone</title>
-          <meta name="description" content="Get into the Kanban Zone to collaborate online using Kanban with a laser focus on the right work at the right time." />
+          <meta name="description" content={`Get into the Kanban Zone to collaborate online using Kanban with a laser focus on the right work at the right time.`} />
         </>
       ),
     },

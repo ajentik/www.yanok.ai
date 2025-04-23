@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Webbymize"
-      description="Webbymize helps you to build opt-in forms for webinar registration"
+      description={`Webbymize helps you to build opt-in forms for webinar registration`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Webbymize</title>
-          <meta name="description" content="Webbymize helps you to build opt-in forms for webinar registration" />
+          <meta name="description" content={`Webbymize helps you to build opt-in forms for webinar registration`} />
         </>
       ),
     },

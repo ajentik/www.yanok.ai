@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Dwolla"
-      description="Say goodbye to plastic cards, ATM fees, hidden charges and fine print. Dwolla empowers anyone with an internet connection to safely send money to friends or businesses."
+      description={`Say goodbye to plastic cards, ATM fees, hidden charges and fine print. Dwolla empowers anyone with an internet connection to safely send money to friends or businesses.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +53,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Dwolla</title>
-          <meta name="description" content="Say goodbye to plastic cards, ATM fees, hidden charges and fine print. Dwolla empowers anyone with an internet connection to safely send money to friends or businesses." />
+          <meta name="description" content={`Say goodbye to plastic cards, ATM fees, hidden charges and fine print. Dwolla empowers anyone with an internet connection to safely send money to friends or businesses.`} />
         </>
       ),
     },

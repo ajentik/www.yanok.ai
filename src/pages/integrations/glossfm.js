@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Gloss.fm"
-      description="Automatically create beautiful screenshots of tweets."
+      description={`Automatically create beautiful screenshots of tweets.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Gloss.fm</title>
-          <meta name="description" content="Automatically create beautiful screenshots of tweets." />
+          <meta name="description" content={`Automatically create beautiful screenshots of tweets.`} />
         </>
       ),
     },

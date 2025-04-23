@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Evernote Business"
-      description="Evernote Business brings the note-taking features of Evernote to your team. Capture and remember ideas and more, then collaborate on them with anyone in your company. Using Evernote on your own? Check out Evernote Personal."
+      description={`Evernote Business brings the note-taking features of Evernote to your team. Capture and remember ideas and more, then collaborate on them with anyone in your company. Using Evernote on your own? Check out Evernote Personal.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -116,7 +116,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Evernote Business</title>
-          <meta name="description" content="Evernote Business brings the note-taking features of Evernote to your team. Capture and remember ideas and more, then collaborate on them with anyone in your company. Using Evernote on your own? Check out Evernote Personal." />
+          <meta name="description" content={`Evernote Business brings the note-taking features of Evernote to your team. Capture and remember ideas and more, then collaborate on them with anyone in your company. Using Evernote on your own? Check out Evernote Personal.`} />
         </>
       ),
     },

@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="BunkerDB"
-      description="BunkerDB is a platform in which you can store, group, filter, segment your customers and trigger actions on them."
+      description={`BunkerDB is a platform in which you can store, group, filter, segment your customers and trigger actions on them.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -62,7 +62,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>BunkerDB</title>
-          <meta name="description" content="BunkerDB is a platform in which you can store, group, filter, segment your customers and trigger actions on them." />
+          <meta name="description" content={`BunkerDB is a platform in which you can store, group, filter, segment your customers and trigger actions on them.`} />
         </>
       ),
     },

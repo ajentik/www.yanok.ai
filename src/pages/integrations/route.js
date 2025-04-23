@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Route"
-      description="Route is a multi-channel marketing automation platform. Identify contacts in your site or app, track their behaviour and trigger automated personalized campaigns."
+      description={`Route is a multi-channel marketing automation platform. Identify contacts in your site or app, track their behaviour and trigger automated personalized campaigns.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -66,7 +66,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Route</title>
-          <meta name="description" content="Route is a multi-channel marketing automation platform. Identify contacts in your site or app, track their behaviour and trigger automated personalized campaigns." />
+          <meta name="description" content={`Route is a multi-channel marketing automation platform. Identify contacts in your site or app, track their behaviour and trigger automated personalized campaigns.`} />
         </>
       ),
     },

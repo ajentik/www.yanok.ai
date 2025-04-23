@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Happierleads"
-      description="Happierleads is a B2B Web Analytics platform, which turns your website visitors to hot sales leads by revealing important information about them."
+      description={`Happierleads is a B2B Web Analytics platform, which turns your website visitors to hot sales leads by revealing important information about them.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Happierleads</title>
-          <meta name="description" content="Happierleads is a B2B Web Analytics platform, which turns your website visitors to hot sales leads by revealing important information about them." />
+          <meta name="description" content={`Happierleads is a B2B Web Analytics platform, which turns your website visitors to hot sales leads by revealing important information about them.`} />
         </>
       ),
     },

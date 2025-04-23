@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="WeSupply"
-      description="WeSupply Labs is an eCommerce platform that helps merchants provide the best post-purchase customer experience when selling online with their integrated services designed to assure a smooth post-purchase experience for end-users."
+      description={`WeSupply Labs is an eCommerce platform that helps merchants provide the best post-purchase customer experience when selling online with their integrated services designed to assure a smooth post-purchase experience for end-users.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -72,7 +72,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>WeSupply</title>
-          <meta name="description" content="WeSupply Labs is an eCommerce platform that helps merchants provide the best post-purchase customer experience when selling online with their integrated services designed to assure a smooth post-purchase experience for end-users." />
+          <meta name="description" content={`WeSupply Labs is an eCommerce platform that helps merchants provide the best post-purchase customer experience when selling online with their integrated services designed to assure a smooth post-purchase experience for end-users.`} />
         </>
       ),
     },

@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Hubilo"
-      description="Hubilo is a virtual event platform to drive audience engagement and event excellence."
+      description={`Hubilo is a virtual event platform to drive audience engagement and event excellence.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -71,7 +71,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Hubilo</title>
-          <meta name="description" content="Hubilo is a virtual event platform to drive audience engagement and event excellence." />
+          <meta name="description" content={`Hubilo is a virtual event platform to drive audience engagement and event excellence.`} />
         </>
       ),
     },

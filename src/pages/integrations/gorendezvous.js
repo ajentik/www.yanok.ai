@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Gorendezvous"
-      description="All-in-one Online Scheduling Platform for the Health, Wellness, Fitness and Beauty Industries!"
+      description={`All-in-one Online Scheduling Platform for the Health, Wellness, Fitness and Beauty Industries!`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +53,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Gorendezvous</title>
-          <meta name="description" content="All-in-one Online Scheduling Platform for the Health, Wellness, Fitness and Beauty Industries!" />
+          <meta name="description" content={`All-in-one Online Scheduling Platform for the Health, Wellness, Fitness and Beauty Industries!`} />
         </>
       ),
     },

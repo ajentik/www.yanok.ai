@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="PDF.co"
-      description="PDF.co is a set of tools for PDF file and data extraction. Get CSV out of pdf, spreadshets, barcodes, invoices. Also can split pdf, merge pdf, convert pdf."
+      description={`PDF.co is a set of tools for PDF file and data extraction. Get CSV out of pdf, spreadshets, barcodes, invoices. Also can split pdf, merge pdf, convert pdf.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -157,7 +157,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>PDF.co</title>
-          <meta name="description" content="PDF.co is a set of tools for PDF file and data extraction. Get CSV out of pdf, spreadshets, barcodes, invoices. Also can split pdf, merge pdf, convert pdf." />
+          <meta name="description" content={`PDF.co is a set of tools for PDF file and data extraction. Get CSV out of pdf, spreadshets, barcodes, invoices. Also can split pdf, merge pdf, convert pdf.`} />
         </>
       ),
     },

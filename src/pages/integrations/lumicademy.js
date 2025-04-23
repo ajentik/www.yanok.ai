@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Lumicademy"
-      description="Use Lumicademy to engage face-to-face, with high quality video meetings and a full suite of collaboration tools."
+      description={`Use Lumicademy to engage face-to-face, with high quality video meetings and a full suite of collaboration tools.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -101,7 +101,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Lumicademy</title>
-          <meta name="description" content="Use Lumicademy to engage face-to-face, with high quality video meetings and a full suite of collaboration tools." />
+          <meta name="description" content={`Use Lumicademy to engage face-to-face, with high quality video meetings and a full suite of collaboration tools.`} />
         </>
       ),
     },

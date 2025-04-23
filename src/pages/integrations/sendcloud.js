@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Sendcloud"
-      description="Provides international clients fast, stable and efficient email and SMS delivery solutions in China."
+      description={`Provides international clients fast, stable and efficient email and SMS delivery solutions in China.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +53,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Sendcloud</title>
-          <meta name="description" content="Provides international clients fast, stable and efficient email and SMS delivery solutions in China." />
+          <meta name="description" content={`Provides international clients fast, stable and efficient email and SMS delivery solutions in China.`} />
         </>
       ),
     },

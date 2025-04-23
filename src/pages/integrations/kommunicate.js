@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Kommunicate"
-      description="Kommunicate is a human + bot hybrid customer support software for growing businesses to build long-lasting customer relationships that drive growth."
+      description={`Kommunicate is a human + bot hybrid customer support software for growing businesses to build long-lasting customer relationships that drive growth.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -67,7 +67,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Kommunicate</title>
-          <meta name="description" content="Kommunicate is a human + bot hybrid customer support software for growing businesses to build long-lasting customer relationships that drive growth." />
+          <meta name="description" content={`Kommunicate is a human + bot hybrid customer support software for growing businesses to build long-lasting customer relationships that drive growth.`} />
         </>
       ),
     },

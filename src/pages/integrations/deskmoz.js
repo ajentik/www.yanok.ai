@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="DeskMoz"
-      description="DeskMoz is 24x7 live chat agent service provider that helps you in generating sales leads and providing support to new and existing customers."
+      description={`DeskMoz is 24x7 live chat agent service provider that helps you in generating sales leads and providing support to new and existing customers.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -67,7 +67,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>DeskMoz</title>
-          <meta name="description" content="DeskMoz is 24x7 live chat agent service provider that helps you in generating sales leads and providing support to new and existing customers." />
+          <meta name="description" content={`DeskMoz is 24x7 live chat agent service provider that helps you in generating sales leads and providing support to new and existing customers.`} />
         </>
       ),
     },

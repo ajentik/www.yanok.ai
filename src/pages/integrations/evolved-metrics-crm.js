@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Evolved Metrics CRM"
-      description="An upgrade from a spreadsheet, CRM will help you organize your sales process so that you can focus on what matters most, building relationships with your customers."
+      description={`An upgrade from a spreadsheet, CRM will help you organize your sales process so that you can focus on what matters most, building relationships with your customers.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -71,7 +71,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Evolved Metrics CRM</title>
-          <meta name="description" content="An upgrade from a spreadsheet, CRM will help you organize your sales process so that you can focus on what matters most, building relationships with your customers." />
+          <meta name="description" content={`An upgrade from a spreadsheet, CRM will help you organize your sales process so that you can focus on what matters most, building relationships with your customers.`} />
         </>
       ),
     },

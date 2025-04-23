@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Mitto"
-      description="The Mitto integration enables apps to send enterprise grade SMS. Use it to send alerts, reminders, invites, marketing messages or any other kind of short message. We provide you a fast and reliable service which also brings you high conversion rates!"
+      description={`The Mitto integration enables apps to send enterprise grade SMS. Use it to send alerts, reminders, invites, marketing messages or any other kind of short message. We provide you a fast and reliable service which also brings you high conversion rates!`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -62,7 +62,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Mitto</title>
-          <meta name="description" content="The Mitto integration enables apps to send enterprise grade SMS. Use it to send alerts, reminders, invites, marketing messages or any other kind of short message. We provide you a fast and reliable service which also brings you high conversion rates!" />
+          <meta name="description" content={`The Mitto integration enables apps to send enterprise grade SMS. Use it to send alerts, reminders, invites, marketing messages or any other kind of short message. We provide you a fast and reliable service which also brings you high conversion rates!`} />
         </>
       ),
     },

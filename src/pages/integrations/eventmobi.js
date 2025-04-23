@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="EventMobi"
-      description="EventMobi’s event management platform has been trusted by associations, agencies and corporations to deliver engaging professional events for 12+ years"
+      description={`EventMobi’s event management platform has been trusted by associations, agencies and corporations to deliver engaging professional events for 12+ years`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -71,7 +71,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>EventMobi</title>
-          <meta name="description" content="EventMobi’s event management platform has been trusted by associations, agencies and corporations to deliver engaging professional events for 12+ years" />
+          <meta name="description" content={`EventMobi’s event management platform has been trusted by associations, agencies and corporations to deliver engaging professional events for 12+ years`} />
         </>
       ),
     },

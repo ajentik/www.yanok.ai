@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Formstack Documents"
-      description="Introducing Formstack Documents, formerly WebMerge. Automatically generate PDF and Word DOCX documents merged with data from online web services. Contracts, invoices, applications, tickets, and more - all created dynamically, saving you time and money."
+      description={`Introducing Formstack Documents, formerly WebMerge. Automatically generate PDF and Word DOCX documents merged with data from online web services. Contracts, invoices, applications, tickets, and more - all created dynamically, saving you time and money.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -81,7 +81,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Formstack Documents</title>
-          <meta name="description" content="Introducing Formstack Documents, formerly WebMerge. Automatically generate PDF and Word DOCX documents merged with data from online web services. Contracts, invoices, applications, tickets, and more - all created dynamically, saving you time and money." />
+          <meta name="description" content={`Introducing Formstack Documents, formerly WebMerge. Automatically generate PDF and Word DOCX documents merged with data from online web services. Contracts, invoices, applications, tickets, and more - all created dynamically, saving you time and money.`} />
         </>
       ),
     },

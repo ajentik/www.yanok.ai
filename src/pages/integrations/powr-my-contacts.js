@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="POWR My Contacts"
-      description="Collect and store all your contacts in one app to improve lead generation tactics"
+      description={`Collect and store all your contacts in one app to improve lead generation tactics`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>POWR My Contacts</title>
-          <meta name="description" content="Collect and store all your contacts in one app to improve lead generation tactics" />
+          <meta name="description" content={`Collect and store all your contacts in one app to improve lead generation tactics`} />
         </>
       ),
     },

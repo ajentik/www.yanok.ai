@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Cielo"
-      description="Cielo SA is the leader in electronic payment solutions in Latin America."
+      description={`Cielo SA is the leader in electronic payment solutions in Latin America.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +53,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Cielo</title>
-          <meta name="description" content="Cielo SA is the leader in electronic payment solutions in Latin America." />
+          <meta name="description" content={`Cielo SA is the leader in electronic payment solutions in Latin America.`} />
         </>
       ),
     },

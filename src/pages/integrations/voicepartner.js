@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Voicepartner"
-      description="Voicepartner allows you to send voice messages to phones"
+      description={`Voicepartner allows you to send voice messages to phones`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Voicepartner</title>
-          <meta name="description" content="Voicepartner allows you to send voice messages to phones" />
+          <meta name="description" content={`Voicepartner allows you to send voice messages to phones`} />
         </>
       ),
     },

@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Njano"
-      description="Njano is a cloud based management solution for workspaces."
+      description={`Njano is a cloud based management solution for workspaces.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -87,7 +87,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Njano</title>
-          <meta name="description" content="Njano is a cloud based management solution for workspaces." />
+          <meta name="description" content={`Njano is a cloud based management solution for workspaces.`} />
         </>
       ),
     },

@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Tapfiliate"
-      description="Tapfiliate is cloud based affiliate tracking software. It enables you to create, track and optimize your own affiliate programs."
+      description={`Tapfiliate is cloud based affiliate tracking software. It enables you to create, track and optimize your own affiliate programs.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -186,7 +186,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Tapfiliate</title>
-          <meta name="description" content="Tapfiliate is cloud based affiliate tracking software. It enables you to create, track and optimize your own affiliate programs." />
+          <meta name="description" content={`Tapfiliate is cloud based affiliate tracking software. It enables you to create, track and optimize your own affiliate programs.`} />
         </>
       ),
     },

@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="SimpleX"
-      description="SimpleX analyse qualitative data from any survey with a smart console that truly understands words and languages. Never again with a spreadsheet."
+      description={`SimpleX analyse qualitative data from any survey with a smart console that truly understands words and languages. Never again with a spreadsheet.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>SimpleX</title>
-          <meta name="description" content="SimpleX analyse qualitative data from any survey with a smart console that truly understands words and languages. Never again with a spreadsheet." />
+          <meta name="description" content={`SimpleX analyse qualitative data from any survey with a smart console that truly understands words and languages. Never again with a spreadsheet.`} />
         </>
       ),
     },

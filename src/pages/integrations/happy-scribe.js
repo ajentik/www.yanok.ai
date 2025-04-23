@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Happy Scribe"
-      description="Video & Audio to Text in minutes! All Formats of Audio & Video Accepted. Available in +119 languages. Export in Word, PDF, TXT, SRT, VTT, STL, XML, Premiere & AVID."
+      description={`Video & Audio to Text in minutes! All Formats of Audio & Video Accepted. Available in +119 languages. Export in Word, PDF, TXT, SRT, VTT, STL, XML, Premiere & AVID.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -71,7 +71,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Happy Scribe</title>
-          <meta name="description" content="Video & Audio to Text in minutes! All Formats of Audio & Video Accepted. Available in +119 languages. Export in Word, PDF, TXT, SRT, VTT, STL, XML, Premiere & AVID." />
+          <meta name="description" content={`Video & Audio to Text in minutes! All Formats of Audio & Video Accepted. Available in +119 languages. Export in Word, PDF, TXT, SRT, VTT, STL, XML, Premiere & AVID.`} />
         </>
       ),
     },

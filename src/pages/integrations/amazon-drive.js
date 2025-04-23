@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Amazon Drive"
-      description="Amazon Drive is a cloud storage application managed by Amazon. The service offers secure cloud storage, file backup, file sharing, and Photo printing."
+      description={`Amazon Drive is a cloud storage application managed by Amazon. The service offers secure cloud storage, file backup, file sharing, and Photo printing.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +53,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Amazon Drive</title>
-          <meta name="description" content="Amazon Drive is a cloud storage application managed by Amazon. The service offers secure cloud storage, file backup, file sharing, and Photo printing." />
+          <meta name="description" content={`Amazon Drive is a cloud storage application managed by Amazon. The service offers secure cloud storage, file backup, file sharing, and Photo printing.`} />
         </>
       ),
     },

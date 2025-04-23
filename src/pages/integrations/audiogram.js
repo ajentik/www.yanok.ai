@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Audiogram"
-      description="Audiogram converts your audio files into beautiful videos. It's popular with podcasters, marketers, and anyone who wants their audio to get more reach."
+      description={`Audiogram converts your audio files into beautiful videos. It's popular with podcasters, marketers, and anyone who wants their audio to get more reach.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Audiogram</title>
-          <meta name="description" content="Audiogram converts your audio files into beautiful videos. It's popular with podcasters, marketers, and anyone who wants their audio to get more reach." />
+          <meta name="description" content={`Audiogram converts your audio files into beautiful videos. It's popular with podcasters, marketers, and anyone who wants their audio to get more reach.`} />
         </>
       ),
     },

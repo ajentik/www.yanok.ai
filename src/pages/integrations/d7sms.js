@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="D7 SMS"
-      description="Use D7 SMS to reach your customers over D7's own connectivity to global mobile networks."
+      description={`Use D7 SMS to reach your customers over D7's own connectivity to global mobile networks.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -62,7 +62,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>D7 SMS</title>
-          <meta name="description" content="Use D7 SMS to reach your customers over D7's own connectivity to global mobile networks." />
+          <meta name="description" content={`Use D7 SMS to reach your customers over D7's own connectivity to global mobile networks.`} />
         </>
       ),
     },

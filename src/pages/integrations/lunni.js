@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Lunni"
-      description="Lunni Device Management system is a tool to help you to keep track of your devices and device components and your other realty in one place."
+      description={`Lunni Device Management system is a tool to help you to keep track of your devices and device components and your other realty in one place.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -62,7 +62,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Lunni</title>
-          <meta name="description" content="Lunni Device Management system is a tool to help you to keep track of your devices and device components and your other realty in one place." />
+          <meta name="description" content={`Lunni Device Management system is a tool to help you to keep track of your devices and device components and your other realty in one place.`} />
         </>
       ),
     },

@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Dolby.io"
-      description="Dolby.io offers support for media workflows to analyze and enhance file-based media and improve the quality of audience experiences."
+      description={`Dolby.io offers support for media workflows to analyze and enhance file-based media and improve the quality of audience experiences.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -132,7 +132,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Dolby.io</title>
-          <meta name="description" content="Dolby.io offers support for media workflows to analyze and enhance file-based media and improve the quality of audience experiences." />
+          <meta name="description" content={`Dolby.io offers support for media workflows to analyze and enhance file-based media and improve the quality of audience experiences.`} />
         </>
       ),
     },

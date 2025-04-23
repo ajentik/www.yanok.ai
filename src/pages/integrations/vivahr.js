@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="VIVAHR"
-      description="VIVAHR is a recruitment marketing tool to help you advertise jobs, collaborate on candidates and accelerate your company's hiring process."
+      description={`VIVAHR is a recruitment marketing tool to help you advertise jobs, collaborate on candidates and accelerate your company's hiring process.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -66,7 +66,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>VIVAHR</title>
-          <meta name="description" content="VIVAHR is a recruitment marketing tool to help you advertise jobs, collaborate on candidates and accelerate your company's hiring process." />
+          <meta name="description" content={`VIVAHR is a recruitment marketing tool to help you advertise jobs, collaborate on candidates and accelerate your company's hiring process.`} />
         </>
       ),
     },

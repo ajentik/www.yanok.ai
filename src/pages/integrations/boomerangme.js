@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Boomerangme"
-      description="Boomerangme is a Loyalty SaaS, upsell tool for agencies. Get additional recurring income from existing customers offering Loyalty as a Service. Use Reseller feature including white label, pricing set up, payment gateway connections."
+      description={`Boomerangme is a Loyalty SaaS, upsell tool for agencies. Get additional recurring income from existing customers offering Loyalty as a Service. Use Reseller feature including white label, pricing set up, payment gateway connections.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -106,7 +106,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Boomerangme</title>
-          <meta name="description" content="Boomerangme is a Loyalty SaaS, upsell tool for agencies. Get additional recurring income from existing customers offering Loyalty as a Service. Use Reseller feature including white label, pricing set up, payment gateway connections." />
+          <meta name="description" content={`Boomerangme is a Loyalty SaaS, upsell tool for agencies. Get additional recurring income from existing customers offering Loyalty as a Service. Use Reseller feature including white label, pricing set up, payment gateway connections.`} />
         </>
       ),
     },

@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Teachmore"
-      description="Create and sell online courses with your own fully-featured mobile apps and website. Don't miss out on sales for not having mobile apps!"
+      description={`Create and sell online courses with your own fully-featured mobile apps and website. Don't miss out on sales for not having mobile apps!`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -131,7 +131,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Teachmore</title>
-          <meta name="description" content="Create and sell online courses with your own fully-featured mobile apps and website. Don't miss out on sales for not having mobile apps!" />
+          <meta name="description" content={`Create and sell online courses with your own fully-featured mobile apps and website. Don't miss out on sales for not having mobile apps!`} />
         </>
       ),
     },

@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Hyperstack Certificates"
-      description="Hyperstack helps you easily create and manage digital certificates & badges for your events or courses."
+      description={`Hyperstack helps you easily create and manage digital certificates & badges for your events or courses.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Hyperstack Certificates</title>
-          <meta name="description" content="Hyperstack helps you easily create and manage digital certificates & badges for your events or courses." />
+          <meta name="description" content={`Hyperstack helps you easily create and manage digital certificates & badges for your events or courses.`} />
         </>
       ),
     },

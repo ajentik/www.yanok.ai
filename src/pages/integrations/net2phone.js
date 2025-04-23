@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="net2phone"
-      description="net2phone is a leading provider of cloud-based business phone systems and unified communications tools."
+      description={`net2phone is a leading provider of cloud-based business phone systems and unified communications tools.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -91,7 +91,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>net2phone</title>
-          <meta name="description" content="net2phone is a leading provider of cloud-based business phone systems and unified communications tools." />
+          <meta name="description" content={`net2phone is a leading provider of cloud-based business phone systems and unified communications tools.`} />
         </>
       ),
     },

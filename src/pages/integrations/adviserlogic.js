@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Morningstar AdviserLogic"
-      description="Morningstar AdviserLogic is a financial planning and business management solution that positions advisers to engage and impress clients while efficiently running their business and helping them meet compliance obligations."
+      description={`Morningstar AdviserLogic is a financial planning and business management solution that positions advisers to engage and impress clients while efficiently running their business and helping them meet compliance obligations.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -81,7 +81,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Morningstar AdviserLogic</title>
-          <meta name="description" content="Morningstar AdviserLogic is a financial planning and business management solution that positions advisers to engage and impress clients while efficiently running their business and helping them meet compliance obligations." />
+          <meta name="description" content={`Morningstar AdviserLogic is a financial planning and business management solution that positions advisers to engage and impress clients while efficiently running their business and helping them meet compliance obligations.`} />
         </>
       ),
     },

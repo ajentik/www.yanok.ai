@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="bookingkit"
-      description="bookingkit is the Europe’s leading booking, marketing & administration suite for professional operators of tours, activities & attractions."
+      description={`bookingkit is the Europe’s leading booking, marketing & administration suite for professional operators of tours, activities & attractions.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>bookingkit</title>
-          <meta name="description" content="bookingkit is the Europe’s leading booking, marketing & administration suite for professional operators of tours, activities & attractions." />
+          <meta name="description" content={`bookingkit is the Europe’s leading booking, marketing & administration suite for professional operators of tours, activities & attractions.`} />
         </>
       ),
     },

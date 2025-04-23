@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Tinypng"
-      description="TinyPNG optimizes your PNG images by 50-80% while preserving full transparency!"
+      description={`TinyPNG optimizes your PNG images by 50-80% while preserving full transparency!`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +53,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Tinypng</title>
-          <meta name="description" content="TinyPNG optimizes your PNG images by 50-80% while preserving full transparency!" />
+          <meta name="description" content={`TinyPNG optimizes your PNG images by 50-80% while preserving full transparency!`} />
         </>
       ),
     },

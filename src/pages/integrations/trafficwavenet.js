@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="TrafficWave.net"
-      description="TrafficWave is a powerful and easy-to-use email marketing platform that will help you start growing your business and stay connected with your customers."
+      description={`TrafficWave is a powerful and easy-to-use email marketing platform that will help you start growing your business and stay connected with your customers.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -72,7 +72,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>TrafficWave.net</title>
-          <meta name="description" content="TrafficWave is a powerful and easy-to-use email marketing platform that will help you start growing your business and stay connected with your customers." />
+          <meta name="description" content={`TrafficWave is a powerful and easy-to-use email marketing platform that will help you start growing your business and stay connected with your customers.`} />
         </>
       ),
     },

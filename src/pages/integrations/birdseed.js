@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="BirdSeed"
-      description="BirdSeed is an all-in-one website sales center with 12 powerful tools including live chat, meeting scheduling, FAQ, testimonials and more."
+      description={`BirdSeed is an all-in-one website sales center with 12 powerful tools including live chat, meeting scheduling, FAQ, testimonials and more.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -82,7 +82,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>BirdSeed</title>
-          <meta name="description" content="BirdSeed is an all-in-one website sales center with 12 powerful tools including live chat, meeting scheduling, FAQ, testimonials and more." />
+          <meta name="description" content={`BirdSeed is an all-in-one website sales center with 12 powerful tools including live chat, meeting scheduling, FAQ, testimonials and more.`} />
         </>
       ),
     },

@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Salesmachine"
-      description="Salesmachine is a customer intelligence platform for sales teams and customer success."
+      description={`Salesmachine is a customer intelligence platform for sales teams and customer success.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -67,7 +67,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Salesmachine</title>
-          <meta name="description" content="Salesmachine is a customer intelligence platform for sales teams and customer success." />
+          <meta name="description" content={`Salesmachine is a customer intelligence platform for sales teams and customer success.`} />
         </>
       ),
     },

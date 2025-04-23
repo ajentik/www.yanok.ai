@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Jobber"
-      description="Jobber is the command centre for home service businesses. Our easy-to-use app powers sales, operations, and customer service—all in one place."
+      description={`Jobber is the command centre for home service businesses. Our easy-to-use app powers sales, operations, and customer service—all in one place.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -106,7 +106,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Jobber</title>
-          <meta name="description" content="Jobber is the command centre for home service businesses. Our easy-to-use app powers sales, operations, and customer service—all in one place." />
+          <meta name="description" content={`Jobber is the command centre for home service businesses. Our easy-to-use app powers sales, operations, and customer service—all in one place.`} />
         </>
       ),
     },

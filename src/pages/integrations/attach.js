@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Attach"
-      description="Attach is a sales engagement tool that lets you manage, track and control the sales collateral you share."
+      description={`Attach is a sales engagement tool that lets you manage, track and control the sales collateral you share.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -76,7 +76,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Attach</title>
-          <meta name="description" content="Attach is a sales engagement tool that lets you manage, track and control the sales collateral you share." />
+          <meta name="description" content={`Attach is a sales engagement tool that lets you manage, track and control the sales collateral you share.`} />
         </>
       ),
     },

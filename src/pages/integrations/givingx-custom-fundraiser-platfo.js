@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="GivingX Custom Fundraiser Platform"
-      description="Fundraising is made simpler and better for any organization! Get all of our integrations and features for no extra fees! It helps people to make their own campaign and track their event by powerful integrations"
+      description={`Fundraising is made simpler and better for any organization! Get all of our integrations and features for no extra fees! It helps people to make their own campaign and track their event by powerful integrations`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>GivingX Custom Fundraiser Platform</title>
-          <meta name="description" content="Fundraising is made simpler and better for any organization! Get all of our integrations and features for no extra fees! It helps people to make their own campaign and track their event by powerful integrations" />
+          <meta name="description" content={`Fundraising is made simpler and better for any organization! Get all of our integrations and features for no extra fees! It helps people to make their own campaign and track their event by powerful integrations`} />
         </>
       ),
     },

@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="SweetAssist"
-      description="SweetAssist is a complete real estate training centre relationship marketing software and mastermind community."
+      description={`SweetAssist is a complete real estate training centre relationship marketing software and mastermind community.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -76,7 +76,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>SweetAssist</title>
-          <meta name="description" content="SweetAssist is a complete real estate training centre relationship marketing software and mastermind community." />
+          <meta name="description" content={`SweetAssist is a complete real estate training centre relationship marketing software and mastermind community.`} />
         </>
       ),
     },

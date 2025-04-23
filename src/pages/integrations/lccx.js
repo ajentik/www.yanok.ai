@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="lc.cx"
-      description="lc.cx is a URL shortener service wich allows users to shorten URLs with our domain or with their custom brand domains."
+      description={`lc.cx is a URL shortener service wich allows users to shorten URLs with our domain or with their custom brand domains.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -61,7 +61,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>lc.cx</title>
-          <meta name="description" content="lc.cx is a URL shortener service wich allows users to shorten URLs with our domain or with their custom brand domains." />
+          <meta name="description" content={`lc.cx is a URL shortener service wich allows users to shorten URLs with our domain or with their custom brand domains.`} />
         </>
       ),
     },

@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Monetizze"
-      description="Monetizze is a payment method with affiliate platform. There you can be a productor or affiliate, and sell info products or physical products."
+      description={`Monetizze is a payment method with affiliate platform. There you can be a productor or affiliate, and sell info products or physical products.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -102,7 +102,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Monetizze</title>
-          <meta name="description" content="Monetizze is a payment method with affiliate platform. There you can be a productor or affiliate, and sell info products or physical products." />
+          <meta name="description" content={`Monetizze is a payment method with affiliate platform. There you can be a productor or affiliate, and sell info products or physical products.`} />
         </>
       ),
     },

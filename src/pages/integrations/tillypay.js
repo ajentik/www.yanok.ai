@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="TillyPay"
-      description="TillyPay is a payment platform that allows you to create single & recurring payment forms just by sharing a link."
+      description={`TillyPay is a payment platform that allows you to create single & recurring payment forms just by sharing a link.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -67,7 +67,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>TillyPay</title>
-          <meta name="description" content="TillyPay is a payment platform that allows you to create single & recurring payment forms just by sharing a link." />
+          <meta name="description" content={`TillyPay is a payment platform that allows you to create single & recurring payment forms just by sharing a link.`} />
         </>
       ),
     },

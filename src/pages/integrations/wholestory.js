@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="WholeStory"
-      description="WholeStory is a technology platform for employers that integrates the candidate's pivotal life experiences into the screening and interview process. This uncovers critical soft skills not revealed in the resume and interview."
+      description={`WholeStory is a technology platform for employers that integrates the candidate's pivotal life experiences into the screening and interview process. This uncovers critical soft skills not revealed in the resume and interview.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>WholeStory</title>
-          <meta name="description" content="WholeStory is a technology platform for employers that integrates the candidate's pivotal life experiences into the screening and interview process. This uncovers critical soft skills not revealed in the resume and interview." />
+          <meta name="description" content={`WholeStory is a technology platform for employers that integrates the candidate's pivotal life experiences into the screening and interview process. This uncovers critical soft skills not revealed in the resume and interview.`} />
         </>
       ),
     },

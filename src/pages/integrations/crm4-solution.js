@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="crm4 solution"
-      description="crm4 is a software for call center outbound."
+      description={`crm4 is a software for call center outbound.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -62,7 +62,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>crm4 solution</title>
-          <meta name="description" content="crm4 is a software for call center outbound." />
+          <meta name="description" content={`crm4 is a software for call center outbound.`} />
         </>
       ),
     },

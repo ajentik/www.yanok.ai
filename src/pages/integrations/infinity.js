@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Infinity"
-      description="Infinity is a flexible project management platform that lets you organize anything, your way."
+      description={`Infinity is a flexible project management platform that lets you organize anything, your way.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -126,7 +126,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Infinity</title>
-          <meta name="description" content="Infinity is a flexible project management platform that lets you organize anything, your way." />
+          <meta name="description" content={`Infinity is a flexible project management platform that lets you organize anything, your way.`} />
         </>
       ),
     },

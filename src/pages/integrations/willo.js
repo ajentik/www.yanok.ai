@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Willo"
-      description="Willo helps you get answers to your questions faster with video interviewing. Works beautifully across all devices, everywhere, every time."
+      description={`Willo helps you get answers to your questions faster with video interviewing. Works beautifully across all devices, everywhere, every time.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -76,7 +76,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Willo</title>
-          <meta name="description" content="Willo helps you get answers to your questions faster with video interviewing. Works beautifully across all devices, everywhere, every time." />
+          <meta name="description" content={`Willo helps you get answers to your questions faster with video interviewing. Works beautifully across all devices, everywhere, every time.`} />
         </>
       ),
     },

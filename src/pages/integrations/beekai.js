@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="BEEKAI"
-      description="BEEKAI is a next-gen form application which allows the user to control and manage their form application's workflow."
+      description={`BEEKAI is a next-gen form application which allows the user to control and manage their form application's workflow.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>BEEKAI</title>
-          <meta name="description" content="BEEKAI is a next-gen form application which allows the user to control and manage their form application's workflow." />
+          <meta name="description" content={`BEEKAI is a next-gen form application which allows the user to control and manage their form application's workflow.`} />
         </>
       ),
     },

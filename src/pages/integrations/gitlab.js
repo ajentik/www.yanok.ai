@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="GitLab"
-      description="GitLab is an open source code collaboration tool with a rich feature set including management of repositories, reviewing tools, issue tracking, activity feeds and much more."
+      description={`GitLab is an open source code collaboration tool with a rich feature set including management of repositories, reviewing tools, issue tracking, activity feeds and much more.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -111,7 +111,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>GitLab</title>
-          <meta name="description" content="GitLab is an open source code collaboration tool with a rich feature set including management of repositories, reviewing tools, issue tracking, activity feeds and much more." />
+          <meta name="description" content={`GitLab is an open source code collaboration tool with a rich feature set including management of repositories, reviewing tools, issue tracking, activity feeds and much more.`} />
         </>
       ),
     },

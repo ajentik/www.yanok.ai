@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Discourse"
-      description="Discourse is an open source discussion platform used as a mailing list, discussion forum, long-form chat room, and more."
+      description={`Discourse is an open source discussion platform used as a mailing list, discussion forum, long-form chat room, and more.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -61,7 +61,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Discourse</title>
-          <meta name="description" content="Discourse is an open source discussion platform used as a mailing list, discussion forum, long-form chat room, and more." />
+          <meta name="description" content={`Discourse is an open source discussion platform used as a mailing list, discussion forum, long-form chat room, and more.`} />
         </>
       ),
     },

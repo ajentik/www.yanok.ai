@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Chirpley"
-      description="Chirpley is a SMS AI tool to create powerful productivity and text based applications."
+      description={`Chirpley is a SMS AI tool to create powerful productivity and text based applications.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -116,7 +116,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Chirpley</title>
-          <meta name="description" content="Chirpley is a SMS AI tool to create powerful productivity and text based applications." />
+          <meta name="description" content={`Chirpley is a SMS AI tool to create powerful productivity and text based applications.`} />
         </>
       ),
     },

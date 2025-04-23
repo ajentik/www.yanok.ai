@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Scrape-It.Cloud"
-      description="Scrape-It.Cloud is an API for web scraping valuable data in JSON format from any website without needing a proxy."
+      description={`Scrape-It.Cloud is an API for web scraping valuable data in JSON format from any website without needing a proxy.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -67,7 +67,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Scrape-It.Cloud</title>
-          <meta name="description" content="Scrape-It.Cloud is an API for web scraping valuable data in JSON format from any website without needing a proxy." />
+          <meta name="description" content={`Scrape-It.Cloud is an API for web scraping valuable data in JSON format from any website without needing a proxy.`} />
         </>
       ),
     },

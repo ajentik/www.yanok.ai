@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Listing Booster"
-      description="Listing Booster is a fully automated property marketing system specialized in lead generation. The system is designed to be co-branded between an agent and loan officer so both receive the leads, and works with most US MLS systems."
+      description={`Listing Booster is a fully automated property marketing system specialized in lead generation. The system is designed to be co-branded between an agent and loan officer so both receive the leads, and works with most US MLS systems.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -62,7 +62,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Listing Booster</title>
-          <meta name="description" content="Listing Booster is a fully automated property marketing system specialized in lead generation. The system is designed to be co-branded between an agent and loan officer so both receive the leads, and works with most US MLS systems." />
+          <meta name="description" content={`Listing Booster is a fully automated property marketing system specialized in lead generation. The system is designed to be co-branded between an agent and loan officer so both receive the leads, and works with most US MLS systems.`} />
         </>
       ),
     },

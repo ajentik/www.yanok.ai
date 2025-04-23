@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Stackby"
-      description="Stackby brings the best of spreadsheets, databases and business APIs in a flexible collaboration platform."
+      description={`Stackby brings the best of spreadsheets, databases and business APIs in a flexible collaboration platform.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -86,7 +86,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Stackby</title>
-          <meta name="description" content="Stackby brings the best of spreadsheets, databases and business APIs in a flexible collaboration platform." />
+          <meta name="description" content={`Stackby brings the best of spreadsheets, databases and business APIs in a flexible collaboration platform.`} />
         </>
       ),
     },

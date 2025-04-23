@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Contactout"
-      description="Find anyone's personal email & phone number. Hire talent 10x faster with the most powerful sourcing platform available"
+      description={`Find anyone's personal email & phone number. Hire talent 10x faster with the most powerful sourcing platform available`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Contactout</title>
-          <meta name="description" content="Find anyone's personal email & phone number. Hire talent 10x faster with the most powerful sourcing platform available" />
+          <meta name="description" content={`Find anyone's personal email & phone number. Hire talent 10x faster with the most powerful sourcing platform available`} />
         </>
       ),
     },

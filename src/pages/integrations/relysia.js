@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Relysia"
-      description="Relysia is a Blockchain as a Service offer to write immutable data to chain, create smart contracts on the fly and send them to hundrets of recipients at once."
+      description={`Relysia is a Blockchain as a Service offer to write immutable data to chain, create smart contracts on the fly and send them to hundrets of recipients at once.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -137,7 +137,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Relysia</title>
-          <meta name="description" content="Relysia is a Blockchain as a Service offer to write immutable data to chain, create smart contracts on the fly and send them to hundrets of recipients at once." />
+          <meta name="description" content={`Relysia is a Blockchain as a Service offer to write immutable data to chain, create smart contracts on the fly and send them to hundrets of recipients at once.`} />
         </>
       ),
     },

@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Appspotr"
-      description="Appspotr lets you create smartphone apps visually without coding. It is a cheaper, faster and easier way of creating and maintaining native IOS and Android apps and PWAs."
+      description={`Appspotr lets you create smartphone apps visually without coding. It is a cheaper, faster and easier way of creating and maintaining native IOS and Android apps and PWAs.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -86,7 +86,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Appspotr</title>
-          <meta name="description" content="Appspotr lets you create smartphone apps visually without coding. It is a cheaper, faster and easier way of creating and maintaining native IOS and Android apps and PWAs." />
+          <meta name="description" content={`Appspotr lets you create smartphone apps visually without coding. It is a cheaper, faster and easier way of creating and maintaining native IOS and Android apps and PWAs.`} />
         </>
       ),
     },

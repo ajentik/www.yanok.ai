@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="GatedContent.com"
-      description="GatedContent.com is an enterprise web form and content-gating platform providing global data governance whilst scaling inbound lead capture for marketing automation."
+      description={`GatedContent.com is an enterprise web form and content-gating platform providing global data governance whilst scaling inbound lead capture for marketing automation.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>GatedContent.com</title>
-          <meta name="description" content="GatedContent.com is an enterprise web form and content-gating platform providing global data governance whilst scaling inbound lead capture for marketing automation." />
+          <meta name="description" content={`GatedContent.com is an enterprise web form and content-gating platform providing global data governance whilst scaling inbound lead capture for marketing automation.`} />
         </>
       ),
     },

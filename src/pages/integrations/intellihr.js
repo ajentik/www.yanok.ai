@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="intelliHR"
-      description="All-in-one people management system with configurable HR automation and analytics"
+      description={`All-in-one people management system with configurable HR automation and analytics`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -146,7 +146,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>intelliHR</title>
-          <meta name="description" content="All-in-one people management system with configurable HR automation and analytics" />
+          <meta name="description" content={`All-in-one people management system with configurable HR automation and analytics`} />
         </>
       ),
     },

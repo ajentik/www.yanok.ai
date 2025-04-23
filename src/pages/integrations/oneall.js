@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="OneAll"
-      description="OneAll Social Login is used by more than 250,000 websites worldwide, including small blogs, growing startups and large corporate enterprises."
+      description={`OneAll Social Login is used by more than 250,000 websites worldwide, including small blogs, growing startups and large corporate enterprises.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +53,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>OneAll</title>
-          <meta name="description" content="OneAll Social Login is used by more than 250,000 websites worldwide, including small blogs, growing startups and large corporate enterprises." />
+          <meta name="description" content={`OneAll Social Login is used by more than 250,000 websites worldwide, including small blogs, growing startups and large corporate enterprises.`} />
         </>
       ),
     },

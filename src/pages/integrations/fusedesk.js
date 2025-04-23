@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="FuseDesk"
-      description="FuseDesk is an integrated Help Desk and Messaging Platform for sales and customer support case management."
+      description={`FuseDesk is an integrated Help Desk and Messaging Platform for sales and customer support case management.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -121,7 +121,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>FuseDesk</title>
-          <meta name="description" content="FuseDesk is an integrated Help Desk and Messaging Platform for sales and customer support case management." />
+          <meta name="description" content={`FuseDesk is an integrated Help Desk and Messaging Platform for sales and customer support case management.`} />
         </>
       ),
     },

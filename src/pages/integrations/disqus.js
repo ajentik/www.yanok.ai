@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Disqus"
-      description="If you’re passionate about writing and sharing, Disqus helps you build a community of active readers and commenters. If you’re a brand building an audience for content, advertising with Disqus connects you to geeks geeking out, about stuff that matters to you."
+      description={`If you’re passionate about writing and sharing, Disqus helps you build a community of active readers and commenters. If you’re a brand building an audience for content, advertising with Disqus connects you to geeks geeking out, about stuff that matters to you.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -67,7 +67,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Disqus</title>
-          <meta name="description" content="If you’re passionate about writing and sharing, Disqus helps you build a community of active readers and commenters. If you’re a brand building an audience for content, advertising with Disqus connects you to geeks geeking out, about stuff that matters to you." />
+          <meta name="description" content={`If you’re passionate about writing and sharing, Disqus helps you build a community of active readers and commenters. If you’re a brand building an audience for content, advertising with Disqus connects you to geeks geeking out, about stuff that matters to you.`} />
         </>
       ),
     },

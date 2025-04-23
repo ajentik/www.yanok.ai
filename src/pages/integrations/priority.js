@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Priority"
-      description="Priority is a comprehensive ERP package empowering hundreds of thousands of end users worldwide in their daily tasks of running the business"
+      description={`Priority is a comprehensive ERP package empowering hundreds of thousands of end users worldwide in their daily tasks of running the business`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -151,7 +151,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Priority</title>
-          <meta name="description" content="Priority is a comprehensive ERP package empowering hundreds of thousands of end users worldwide in their daily tasks of running the business" />
+          <meta name="description" content={`Priority is a comprehensive ERP package empowering hundreds of thousands of end users worldwide in their daily tasks of running the business`} />
         </>
       ),
     },

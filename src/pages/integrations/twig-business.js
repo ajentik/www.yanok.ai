@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Twig Business"
-      description="Twig Business offers sustainable business cards that offer cash back and automate expense reporting."
+      description={`Twig Business offers sustainable business cards that offer cash back and automate expense reporting.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Twig Business</title>
-          <meta name="description" content="Twig Business offers sustainable business cards that offer cash back and automate expense reporting." />
+          <meta name="description" content={`Twig Business offers sustainable business cards that offer cash back and automate expense reporting.`} />
         </>
       ),
     },

@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="innos"
-      description="Innos Note is a knowledge garden that empowers creators to express thoughts and discover new knowledge. It equips curious minds with the right content creation tools to inspire and connect ideas."
+      description={`Innos Note is a knowledge garden that empowers creators to express thoughts and discover new knowledge. It equips curious minds with the right content creation tools to inspire and connect ideas.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -61,7 +61,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>innos</title>
-          <meta name="description" content="Innos Note is a knowledge garden that empowers creators to express thoughts and discover new knowledge. It equips curious minds with the right content creation tools to inspire and connect ideas." />
+          <meta name="description" content={`Innos Note is a knowledge garden that empowers creators to express thoughts and discover new knowledge. It equips curious minds with the right content creation tools to inspire and connect ideas.`} />
         </>
       ),
     },

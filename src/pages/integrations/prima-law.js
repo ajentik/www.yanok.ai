@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Prima.Law"
-      description="Prima.Law is an immigration forms platform to collect data, generate forms and manage immigration cases for immigration attorneys."
+      description={`Prima.Law is an immigration forms platform to collect data, generate forms and manage immigration cases for immigration attorneys.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -321,7 +321,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Prima.Law</title>
-          <meta name="description" content="Prima.Law is an immigration forms platform to collect data, generate forms and manage immigration cases for immigration attorneys." />
+          <meta name="description" content={`Prima.Law is an immigration forms platform to collect data, generate forms and manage immigration cases for immigration attorneys.`} />
         </>
       ),
     },

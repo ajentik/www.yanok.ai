@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Staykeepers"
-      description="Staykeepers is a tech solution that amplifies the lead generation of guests, tenants & students for residential property management companies & asset owners."
+      description={`Staykeepers is a tech solution that amplifies the lead generation of guests, tenants & students for residential property management companies & asset owners.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -62,7 +62,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Staykeepers</title>
-          <meta name="description" content="Staykeepers is a tech solution that amplifies the lead generation of guests, tenants & students for residential property management companies & asset owners." />
+          <meta name="description" content={`Staykeepers is a tech solution that amplifies the lead generation of guests, tenants & students for residential property management companies & asset owners.`} />
         </>
       ),
     },

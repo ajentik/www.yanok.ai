@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Ecwid by Lightspeed"
-      description="Ecwid by Lightspeed is a cloud online store builder which lets you instantly launch an online store on any website, Facebook page, or multiple sites simultaneously."
+      description={`Ecwid by Lightspeed is a cloud online store builder which lets you instantly launch an online store on any website, Facebook page, or multiple sites simultaneously.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -136,7 +136,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Ecwid by Lightspeed</title>
-          <meta name="description" content="Ecwid by Lightspeed is a cloud online store builder which lets you instantly launch an online store on any website, Facebook page, or multiple sites simultaneously." />
+          <meta name="description" content={`Ecwid by Lightspeed is a cloud online store builder which lets you instantly launch an online store on any website, Facebook page, or multiple sites simultaneously.`} />
         </>
       ),
     },

@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="JobCloser"
-      description="JobCloser is a custom CRM made to service the field service industry, helping small businesses quote jobs, invoice for work, collect payments online, and get paid faster."
+      description={`JobCloser is a custom CRM made to service the field service industry, helping small businesses quote jobs, invoice for work, collect payments online, and get paid faster.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -62,7 +62,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>JobCloser</title>
-          <meta name="description" content="JobCloser is a custom CRM made to service the field service industry, helping small businesses quote jobs, invoice for work, collect payments online, and get paid faster." />
+          <meta name="description" content={`JobCloser is a custom CRM made to service the field service industry, helping small businesses quote jobs, invoice for work, collect payments online, and get paid faster.`} />
         </>
       ),
     },

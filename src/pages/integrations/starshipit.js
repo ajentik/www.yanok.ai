@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Starshipit"
-      description="Starshipit is an integrated shipping and tracking software allowing you to generate shipments in bulk, send out customised notifications to your customers, and track shipments."
+      description={`Starshipit is an integrated shipping and tracking software allowing you to generate shipments in bulk, send out customised notifications to your customers, and track shipments.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -116,7 +116,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Starshipit</title>
-          <meta name="description" content="Starshipit is an integrated shipping and tracking software allowing you to generate shipments in bulk, send out customised notifications to your customers, and track shipments." />
+          <meta name="description" content={`Starshipit is an integrated shipping and tracking software allowing you to generate shipments in bulk, send out customised notifications to your customers, and track shipments.`} />
         </>
       ),
     },

@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Lobbytrack"
-      description="Lobbytrack visitor management software is used for registering visitors in corporate lobbies, government facilities, hospital visits, and schools."
+      description={`Lobbytrack visitor management software is used for registering visitors in corporate lobbies, government facilities, hospital visits, and schools.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -116,7 +116,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Lobbytrack</title>
-          <meta name="description" content="Lobbytrack visitor management software is used for registering visitors in corporate lobbies, government facilities, hospital visits, and schools." />
+          <meta name="description" content={`Lobbytrack visitor management software is used for registering visitors in corporate lobbies, government facilities, hospital visits, and schools.`} />
         </>
       ),
     },

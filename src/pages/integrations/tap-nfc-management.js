@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="TAP NFC Management"
-      description="TAP NFC Management is the modern answer to RFID. Stick a TAP NFC Tag to anything to track your people, places and products."
+      description={`TAP NFC Management is the modern answer to RFID. Stick a TAP NFC Tag to anything to track your people, places and products.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>TAP NFC Management</title>
-          <meta name="description" content="TAP NFC Management is the modern answer to RFID. Stick a TAP NFC Tag to anything to track your people, places and products." />
+          <meta name="description" content={`TAP NFC Management is the modern answer to RFID. Stick a TAP NFC Tag to anything to track your people, places and products.`} />
         </>
       ),
     },

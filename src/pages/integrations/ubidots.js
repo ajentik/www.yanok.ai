@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Ubidots"
-      description="Rapidly assemble and launch Internet of Things (IoT) applications without having to write code or hire a software development team."
+      description={`Rapidly assemble and launch Internet of Things (IoT) applications without having to write code or hire a software development team.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -76,7 +76,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Ubidots</title>
-          <meta name="description" content="Rapidly assemble and launch Internet of Things (IoT) applications without having to write code or hire a software development team." />
+          <meta name="description" content={`Rapidly assemble and launch Internet of Things (IoT) applications without having to write code or hire a software development team.`} />
         </>
       ),
     },

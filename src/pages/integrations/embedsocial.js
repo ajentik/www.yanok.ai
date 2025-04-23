@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="EmbedSocial"
-      description="EmbedSocial helps you manage your online reviews and other user generated content."
+      description={`EmbedSocial helps you manage your online reviews and other user generated content.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -71,7 +71,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>EmbedSocial</title>
-          <meta name="description" content="EmbedSocial helps you manage your online reviews and other user generated content." />
+          <meta name="description" content={`EmbedSocial helps you manage your online reviews and other user generated content.`} />
         </>
       ),
     },

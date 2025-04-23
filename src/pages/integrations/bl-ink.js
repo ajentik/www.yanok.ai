@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="BL.INK"
-      description="BL.INK is a link shortener that allows you to turn clunky URLs into word-based Smart Links or branded links with BL.INK. Transform your marketing and optimize every link you share."
+      description={`BL.INK is a link shortener that allows you to turn clunky URLs into word-based Smart Links or branded links with BL.INK. Transform your marketing and optimize every link you share.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -66,7 +66,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>BL.INK</title>
-          <meta name="description" content="BL.INK is a link shortener that allows you to turn clunky URLs into word-based Smart Links or branded links with BL.INK. Transform your marketing and optimize every link you share." />
+          <meta name="description" content={`BL.INK is a link shortener that allows you to turn clunky URLs into word-based Smart Links or branded links with BL.INK. Transform your marketing and optimize every link you share.`} />
         </>
       ),
     },

@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Orangescrum"
-      description="Orangescrum is a project management tool to organize tasks projects and users and keep everything on track."
+      description={`Orangescrum is a project management tool to organize tasks projects and users and keep everything on track.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -81,7 +81,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Orangescrum</title>
-          <meta name="description" content="Orangescrum is a project management tool to organize tasks projects and users and keep everything on track." />
+          <meta name="description" content={`Orangescrum is a project management tool to organize tasks projects and users and keep everything on track.`} />
         </>
       ),
     },

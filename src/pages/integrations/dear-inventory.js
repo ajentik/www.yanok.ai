@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="DEAR Inventory"
-      description="DEAR is an all in one holistic solution for Inventory Management, POS & B2B eCommerce. Easily manage all your inventory, purchases, sales, suppliers and customers in one easy to use system."
+      description={`DEAR is an all in one holistic solution for Inventory Management, POS & B2B eCommerce. Easily manage all your inventory, purchases, sales, suppliers and customers in one easy to use system.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -246,7 +246,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>DEAR Inventory</title>
-          <meta name="description" content="DEAR is an all in one holistic solution for Inventory Management, POS & B2B eCommerce. Easily manage all your inventory, purchases, sales, suppliers and customers in one easy to use system." />
+          <meta name="description" content={`DEAR is an all in one holistic solution for Inventory Management, POS & B2B eCommerce. Easily manage all your inventory, purchases, sales, suppliers and customers in one easy to use system.`} />
         </>
       ),
     },

@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Proofer"
-      description="Proofer is a Shopify app that lets you manage your custom order proofs"
+      description={`Proofer is a Shopify app that lets you manage your custom order proofs`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -71,7 +71,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Proofer</title>
-          <meta name="description" content="Proofer is a Shopify app that lets you manage your custom order proofs" />
+          <meta name="description" content={`Proofer is a Shopify app that lets you manage your custom order proofs`} />
         </>
       ),
     },

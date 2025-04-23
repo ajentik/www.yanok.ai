@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Virtual Business Cards"
-      description="Virtual Business Cards secures leads from new connections and can distribute them to your CRMs"
+      description={`Virtual Business Cards secures leads from new connections and can distribute them to your CRMs`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Virtual Business Cards</title>
-          <meta name="description" content="Virtual Business Cards secures leads from new connections and can distribute them to your CRMs" />
+          <meta name="description" content={`Virtual Business Cards secures leads from new connections and can distribute them to your CRMs`} />
         </>
       ),
     },

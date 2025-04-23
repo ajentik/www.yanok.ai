@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="SubscriptionFlow"
-      description="SubscriptionFlow can help recurring businesses turn their billing into a competitive advantage. Our all-inclusive subscription features can boost the sales, marketing, and services of your business to its potential."
+      description={`SubscriptionFlow can help recurring businesses turn their billing into a competitive advantage. Our all-inclusive subscription features can boost the sales, marketing, and services of your business to its potential.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -76,7 +76,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>SubscriptionFlow</title>
-          <meta name="description" content="SubscriptionFlow can help recurring businesses turn their billing into a competitive advantage. Our all-inclusive subscription features can boost the sales, marketing, and services of your business to its potential." />
+          <meta name="description" content={`SubscriptionFlow can help recurring businesses turn their billing into a competitive advantage. Our all-inclusive subscription features can boost the sales, marketing, and services of your business to its potential.`} />
         </>
       ),
     },

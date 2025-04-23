@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="CustomerGauge"
-      description="CustomerGauge is a SaaS platform that helps clients improve retention, using Customer Success and Net Promoter® methodologies."
+      description={`CustomerGauge is a SaaS platform that helps clients improve retention, using Customer Success and Net Promoter® methodologies.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -77,7 +77,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>CustomerGauge</title>
-          <meta name="description" content="CustomerGauge is a SaaS platform that helps clients improve retention, using Customer Success and Net Promoter® methodologies." />
+          <meta name="description" content={`CustomerGauge is a SaaS platform that helps clients improve retention, using Customer Success and Net Promoter® methodologies.`} />
         </>
       ),
     },

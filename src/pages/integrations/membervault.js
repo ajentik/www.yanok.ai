@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="MemberVault"
-      description="MemberVault is a Relationship Marketing Platform that allows users to host courses, membership and other digital products in one place."
+      description={`MemberVault is a Relationship Marketing Platform that allows users to host courses, membership and other digital products in one place.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -96,7 +96,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>MemberVault</title>
-          <meta name="description" content="MemberVault is a Relationship Marketing Platform that allows users to host courses, membership and other digital products in one place." />
+          <meta name="description" content={`MemberVault is a Relationship Marketing Platform that allows users to host courses, membership and other digital products in one place.`} />
         </>
       ),
     },

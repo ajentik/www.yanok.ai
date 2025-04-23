@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Sansan"
-      description="Sansan is a cloud based contact management system. Digitize your business cards with 99.9% accuracy and share the contact information with your colleagues. Save time and increase your business opportunities."
+      description={`Sansan is a cloud based contact management system. Digitize your business cards with 99.9% accuracy and share the contact information with your colleagues. Save time and increase your business opportunities.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -61,7 +61,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Sansan</title>
-          <meta name="description" content="Sansan is a cloud based contact management system. Digitize your business cards with 99.9% accuracy and share the contact information with your colleagues. Save time and increase your business opportunities." />
+          <meta name="description" content={`Sansan is a cloud based contact management system. Digitize your business cards with 99.9% accuracy and share the contact information with your colleagues. Save time and increase your business opportunities.`} />
         </>
       ),
     },

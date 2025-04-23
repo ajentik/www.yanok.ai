@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Zoho Sheet"
-      description="Zoho Sheet is a cloud-based spreadsheet software that allows you to create, edit, share and collaborate on spreadsheets in real time."
+      description={`Zoho Sheet is a cloud-based spreadsheet software that allows you to create, edit, share and collaborate on spreadsheets in real time.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -166,7 +166,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Zoho Sheet</title>
-          <meta name="description" content="Zoho Sheet is a cloud-based spreadsheet software that allows you to create, edit, share and collaborate on spreadsheets in real time." />
+          <meta name="description" content={`Zoho Sheet is a cloud-based spreadsheet software that allows you to create, edit, share and collaborate on spreadsheets in real time.`} />
         </>
       ),
     },

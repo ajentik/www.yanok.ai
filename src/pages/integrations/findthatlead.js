@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="FindThatLead"
-      description="FindThatLead is a tool to automate your lead generation and increase your sales"
+      description={`FindThatLead is a tool to automate your lead generation and increase your sales`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -66,7 +66,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>FindThatLead</title>
-          <meta name="description" content="FindThatLead is a tool to automate your lead generation and increase your sales" />
+          <meta name="description" content={`FindThatLead is a tool to automate your lead generation and increase your sales`} />
         </>
       ),
     },

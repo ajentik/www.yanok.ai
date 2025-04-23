@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Interseller"
-      description="Interseller helps you find contacts' email addresses, send them messages and push them into any CRM or ATS with one-click."
+      description={`Interseller helps you find contacts' email addresses, send them messages and push them into any CRM or ATS with one-click.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -81,7 +81,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Interseller</title>
-          <meta name="description" content="Interseller helps you find contacts' email addresses, send them messages and push them into any CRM or ATS with one-click." />
+          <meta name="description" content={`Interseller helps you find contacts' email addresses, send them messages and push them into any CRM or ATS with one-click.`} />
         </>
       ),
     },

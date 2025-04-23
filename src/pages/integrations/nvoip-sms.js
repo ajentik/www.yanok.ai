@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Nvoip SMS"
-      description="Nvoip SMS is an API for send SMS to Brazilian Mobile Phone Numbers."
+      description={`Nvoip SMS is an API for send SMS to Brazilian Mobile Phone Numbers.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Nvoip SMS</title>
-          <meta name="description" content="Nvoip SMS is an API for send SMS to Brazilian Mobile Phone Numbers." />
+          <meta name="description" content={`Nvoip SMS is an API for send SMS to Brazilian Mobile Phone Numbers.`} />
         </>
       ),
     },

@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="iFax"
-      description="iFax is a go-to solution for effortless, lightning-fast online fax app that’s reliable and secure. You can send and receive a fax as easily you would send an email."
+      description={`iFax is a go-to solution for effortless, lightning-fast online fax app that’s reliable and secure. You can send and receive a fax as easily you would send an email.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -62,7 +62,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>iFax</title>
-          <meta name="description" content="iFax is a go-to solution for effortless, lightning-fast online fax app that’s reliable and secure. You can send and receive a fax as easily you would send an email." />
+          <meta name="description" content={`iFax is a go-to solution for effortless, lightning-fast online fax app that’s reliable and secure. You can send and receive a fax as easily you would send an email.`} />
         </>
       ),
     },

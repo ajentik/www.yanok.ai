@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="FIVE CRM"
-      description="FIVE CRM gives a range of options for contact management CRM, outbound calling, email marketing, lead generation."
+      description={`FIVE CRM gives a range of options for contact management CRM, outbound calling, email marketing, lead generation.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +53,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>FIVE CRM</title>
-          <meta name="description" content="FIVE CRM gives a range of options for contact management CRM, outbound calling, email marketing, lead generation." />
+          <meta name="description" content={`FIVE CRM gives a range of options for contact management CRM, outbound calling, email marketing, lead generation.`} />
         </>
       ),
     },

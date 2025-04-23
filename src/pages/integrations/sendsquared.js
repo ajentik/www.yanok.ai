@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="SendSquared"
-      description="SendSquared is a simple, design focused email & SMS marketing platform."
+      description={`SendSquared is a simple, design focused email & SMS marketing platform.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>SendSquared</title>
-          <meta name="description" content="SendSquared is a simple, design focused email & SMS marketing platform." />
+          <meta name="description" content={`SendSquared is a simple, design focused email & SMS marketing platform.`} />
         </>
       ),
     },

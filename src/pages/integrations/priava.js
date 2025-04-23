@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Priava"
-      description="Priava is a purpose-built, web based venue & event management software. Powerful, easy to use and suitable for any industry."
+      description={`Priava is a purpose-built, web based venue & event management software. Powerful, easy to use and suitable for any industry.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +53,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Priava</title>
-          <meta name="description" content="Priava is a purpose-built, web based venue & event management software. Powerful, easy to use and suitable for any industry." />
+          <meta name="description" content={`Priava is a purpose-built, web based venue & event management software. Powerful, easy to use and suitable for any industry.`} />
         </>
       ),
     },

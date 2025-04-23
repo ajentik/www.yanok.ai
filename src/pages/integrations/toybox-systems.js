@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Toybox Systems"
-      description="Toybox is the leading visual bug tracking tool and allows you to collect visual feedback from your team and clients directly on your site."
+      description={`Toybox is the leading visual bug tracking tool and allows you to collect visual feedback from your team and clients directly on your site.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -67,7 +67,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Toybox Systems</title>
-          <meta name="description" content="Toybox is the leading visual bug tracking tool and allows you to collect visual feedback from your team and clients directly on your site." />
+          <meta name="description" content={`Toybox is the leading visual bug tracking tool and allows you to collect visual feedback from your team and clients directly on your site.`} />
         </>
       ),
     },

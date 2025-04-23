@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="IQM Reports"
-      description="IQM Reports provides access to all dimensions and KPI of your ad-serving reporting data in convenient file formats."
+      description={`IQM Reports provides access to all dimensions and KPI of your ad-serving reporting data in convenient file formats.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>IQM Reports</title>
-          <meta name="description" content="IQM Reports provides access to all dimensions and KPI of your ad-serving reporting data in convenient file formats." />
+          <meta name="description" content={`IQM Reports provides access to all dimensions and KPI of your ad-serving reporting data in convenient file formats.`} />
         </>
       ),
     },

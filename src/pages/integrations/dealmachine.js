@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="DealMachine"
-      description="DealMachine intelligently automates your REI marketing process. Simply take a picture of a property with your smartphone and DealMachine looks up the owner and sends highly personalized mail."
+      description={`DealMachine intelligently automates your REI marketing process. Simply take a picture of a property with your smartphone and DealMachine looks up the owner and sends highly personalized mail.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -131,7 +131,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>DealMachine</title>
-          <meta name="description" content="DealMachine intelligently automates your REI marketing process. Simply take a picture of a property with your smartphone and DealMachine looks up the owner and sends highly personalized mail." />
+          <meta name="description" content={`DealMachine intelligently automates your REI marketing process. Simply take a picture of a property with your smartphone and DealMachine looks up the owner and sends highly personalized mail.`} />
         </>
       ),
     },

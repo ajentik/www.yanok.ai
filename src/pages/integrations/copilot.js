@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Copilot"
-      description="Create a client portal to combine messaging, payments, and other modules to offer clients a branded, streamlined experience."
+      description={`Create a client portal to combine messaging, payments, and other modules to offer clients a branded, streamlined experience.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -136,7 +136,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Copilot</title>
-          <meta name="description" content="Create a client portal to combine messaging, payments, and other modules to offer clients a branded, streamlined experience." />
+          <meta name="description" content={`Create a client portal to combine messaging, payments, and other modules to offer clients a branded, streamlined experience.`} />
         </>
       ),
     },

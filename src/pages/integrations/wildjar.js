@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="WildJar"
-      description="Integrate your phone and SMS conversions with your favourite platforms."
+      description={`Integrate your phone and SMS conversions with your favourite platforms.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -61,7 +61,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>WildJar</title>
-          <meta name="description" content="Integrate your phone and SMS conversions with your favourite platforms." />
+          <meta name="description" content={`Integrate your phone and SMS conversions with your favourite platforms.`} />
         </>
       ),
     },

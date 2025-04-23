@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="NetSuite"
-      description="NetSuite offers a range of cloud based software solutions that include customer service management, enterprise resource planning and more."
+      description={`NetSuite offers a range of cloud based software solutions that include customer service management, enterprise resource planning and more.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +53,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>NetSuite</title>
-          <meta name="description" content="NetSuite offers a range of cloud based software solutions that include customer service management, enterprise resource planning and more." />
+          <meta name="description" content={`NetSuite offers a range of cloud based software solutions that include customer service management, enterprise resource planning and more.`} />
         </>
       ),
     },

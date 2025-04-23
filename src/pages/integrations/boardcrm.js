@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="BoardCRM"
-      description="Fresh and user-friendly CRM system of next-generation for effective small and medium-sized businesses: deal stats, sales pipeline, customer base (leads), form builder for collecting leads."
+      description={`Fresh and user-friendly CRM system of next-generation for effective small and medium-sized businesses: deal stats, sales pipeline, customer base (leads), form builder for collecting leads.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -131,7 +131,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>BoardCRM</title>
-          <meta name="description" content="Fresh and user-friendly CRM system of next-generation for effective small and medium-sized businesses: deal stats, sales pipeline, customer base (leads), form builder for collecting leads." />
+          <meta name="description" content={`Fresh and user-friendly CRM system of next-generation for effective small and medium-sized businesses: deal stats, sales pipeline, customer base (leads), form builder for collecting leads.`} />
         </>
       ),
     },

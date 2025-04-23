@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Teamgate"
-      description="Teamgate is an intelligent sales CRM with a great insights. Start from Lead capturing and move along to closing a Deal. Get top reports, which will become a necessity from day one."
+      description={`Teamgate is an intelligent sales CRM with a great insights. Start from Lead capturing and move along to closing a Deal. Get top reports, which will become a necessity from day one.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -201,7 +201,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Teamgate</title>
-          <meta name="description" content="Teamgate is an intelligent sales CRM with a great insights. Start from Lead capturing and move along to closing a Deal. Get top reports, which will become a necessity from day one." />
+          <meta name="description" content={`Teamgate is an intelligent sales CRM with a great insights. Start from Lead capturing and move along to closing a Deal. Get top reports, which will become a necessity from day one.`} />
         </>
       ),
     },

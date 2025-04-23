@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="BenchmarkONE"
-      description="Keep tabs on your contacts, automatically follow up on them, and track your marketing with smart insights in BenchmarkONE's simple CRM."
+      description={`Keep tabs on your contacts, automatically follow up on them, and track your marketing with smart insights in BenchmarkONE's simple CRM.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -71,7 +71,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>BenchmarkONE</title>
-          <meta name="description" content="Keep tabs on your contacts, automatically follow up on them, and track your marketing with smart insights in BenchmarkONE's simple CRM." />
+          <meta name="description" content={`Keep tabs on your contacts, automatically follow up on them, and track your marketing with smart insights in BenchmarkONE's simple CRM.`} />
         </>
       ),
     },

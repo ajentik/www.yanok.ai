@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="cituro"
-      description="cituro is a powerful yet simple online scheduling software for businesses across industries. It optimizes scheduling processes and at the same time offers great service and increase sales."
+      description={`cituro is a powerful yet simple online scheduling software for businesses across industries. It optimizes scheduling processes and at the same time offers great service and increase sales.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -101,7 +101,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>cituro</title>
-          <meta name="description" content="cituro is a powerful yet simple online scheduling software for businesses across industries. It optimizes scheduling processes and at the same time offers great service and increase sales." />
+          <meta name="description" content={`cituro is a powerful yet simple online scheduling software for businesses across industries. It optimizes scheduling processes and at the same time offers great service and increase sales.`} />
         </>
       ),
     },

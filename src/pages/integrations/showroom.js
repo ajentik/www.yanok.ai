@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Showroom"
-      description="Showroom is a polling app that helps you build and collect the results from easy polls, conversational forms and clean educational tests"
+      description={`Showroom is a polling app that helps you build and collect the results from easy polls, conversational forms and clean educational tests`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Showroom</title>
-          <meta name="description" content="Showroom is a polling app that helps you build and collect the results from easy polls, conversational forms and clean educational tests" />
+          <meta name="description" content={`Showroom is a polling app that helps you build and collect the results from easy polls, conversational forms and clean educational tests`} />
         </>
       ),
     },

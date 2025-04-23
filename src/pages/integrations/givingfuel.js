@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="GivingFuel"
-      description="GivingFuel helps people and organizations fundraise to change the world. We are the world’s simplest and most affordable donation platform"
+      description={`GivingFuel helps people and organizations fundraise to change the world. We are the world’s simplest and most affordable donation platform`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -67,7 +67,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>GivingFuel</title>
-          <meta name="description" content="GivingFuel helps people and organizations fundraise to change the world. We are the world’s simplest and most affordable donation platform" />
+          <meta name="description" content={`GivingFuel helps people and organizations fundraise to change the world. We are the world’s simplest and most affordable donation platform`} />
         </>
       ),
     },

@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="MarketingPlatform"
-      description="MarketingPlatform is a SaaS for marketing automation, designing campaigns, retrieving leads and powerful segmentation for targeted messages."
+      description={`MarketingPlatform is a SaaS for marketing automation, designing campaigns, retrieving leads and powerful segmentation for targeted messages.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -86,7 +86,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>MarketingPlatform</title>
-          <meta name="description" content="MarketingPlatform is a SaaS for marketing automation, designing campaigns, retrieving leads and powerful segmentation for targeted messages." />
+          <meta name="description" content={`MarketingPlatform is a SaaS for marketing automation, designing campaigns, retrieving leads and powerful segmentation for targeted messages.`} />
         </>
       ),
     },

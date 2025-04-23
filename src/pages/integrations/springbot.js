@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Springbot"
-      description="Springbot's Marketing Robotics™ streamlines the process of automating, analyzing and personalizing eCommerce marketing. With its all-in-one platform and data-driven marketing recommendations, Springbot empowers retailers through its core features."
+      description={`Springbot's Marketing Robotics™ streamlines the process of automating, analyzing and personalizing eCommerce marketing. With its all-in-one platform and data-driven marketing recommendations, Springbot empowers retailers through its core features.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Springbot</title>
-          <meta name="description" content="Springbot's Marketing Robotics™ streamlines the process of automating, analyzing and personalizing eCommerce marketing. With its all-in-one platform and data-driven marketing recommendations, Springbot empowers retailers through its core features." />
+          <meta name="description" content={`Springbot's Marketing Robotics™ streamlines the process of automating, analyzing and personalizing eCommerce marketing. With its all-in-one platform and data-driven marketing recommendations, Springbot empowers retailers through its core features.`} />
         </>
       ),
     },

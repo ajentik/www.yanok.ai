@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Voucherify"
-      description="Build promotional campaigns faster. Programmable building blocks for coupon, referral, and loyalty programs."
+      description={`Build promotional campaigns faster. Programmable building blocks for coupon, referral, and loyalty programs.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +53,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Voucherify</title>
-          <meta name="description" content="Build promotional campaigns faster. Programmable building blocks for coupon, referral, and loyalty programs." />
+          <meta name="description" content={`Build promotional campaigns faster. Programmable building blocks for coupon, referral, and loyalty programs.`} />
         </>
       ),
     },

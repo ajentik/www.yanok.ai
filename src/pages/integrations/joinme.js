@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="join.me"
-      description="join.me by LogMeIn is the instant, intuitive online meeting and collaboration solution. With join.me users can share their screens, as well as host/attend audio and video meetings with ease. Integrate join.me into your workflow to save time, and stay connected with with coworkers and clients alike"
+      description={`join.me by LogMeIn is the instant, intuitive online meeting and collaboration solution. With join.me users can share their screens, as well as host/attend audio and video meetings with ease. Integrate join.me into your workflow to save time, and stay connected with with coworkers and clients alike`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -66,7 +66,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>join.me</title>
-          <meta name="description" content="join.me by LogMeIn is the instant, intuitive online meeting and collaboration solution. With join.me users can share their screens, as well as host/attend audio and video meetings with ease. Integrate join.me into your workflow to save time, and stay connected with with coworkers and clients alike" />
+          <meta name="description" content={`join.me by LogMeIn is the instant, intuitive online meeting and collaboration solution. With join.me users can share their screens, as well as host/attend audio and video meetings with ease. Integrate join.me into your workflow to save time, and stay connected with with coworkers and clients alike`} />
         </>
       ),
     },

@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="BirdSend"
-      description="BirdSend is an email marketing tool exclusively for content creators only."
+      description={`BirdSend is an email marketing tool exclusively for content creators only.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -116,7 +116,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>BirdSend</title>
-          <meta name="description" content="BirdSend is an email marketing tool exclusively for content creators only." />
+          <meta name="description" content={`BirdSend is an email marketing tool exclusively for content creators only.`} />
         </>
       ),
     },

@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="SpotMe"
-      description="From live to on-demand, SpotMe makes it easy to deliver digital experiences and event apps that your audience loves."
+      description={`From live to on-demand, SpotMe makes it easy to deliver digital experiences and event apps that your audience loves.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -111,7 +111,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>SpotMe</title>
-          <meta name="description" content="From live to on-demand, SpotMe makes it easy to deliver digital experiences and event apps that your audience loves." />
+          <meta name="description" content={`From live to on-demand, SpotMe makes it easy to deliver digital experiences and event apps that your audience loves.`} />
         </>
       ),
     },

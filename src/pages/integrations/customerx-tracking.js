@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="CustomerX"
-      description="CustomerX is a customer success platform that helps you manage engagement and relationships with your customers"
+      description={`CustomerX is a customer success platform that helps you manage engagement and relationships with your customers`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -112,7 +112,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>CustomerX</title>
-          <meta name="description" content="CustomerX is a customer success platform that helps you manage engagement and relationships with your customers" />
+          <meta name="description" content={`CustomerX is a customer success platform that helps you manage engagement and relationships with your customers`} />
         </>
       ),
     },

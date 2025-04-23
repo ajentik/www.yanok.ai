@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="WeTravel"
-      description="WeTravel is the leading global payment & booking platform for multi-day tour operators and group travel companies."
+      description={`WeTravel is the leading global payment & booking platform for multi-day tour operators and group travel companies.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -62,7 +62,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>WeTravel</title>
-          <meta name="description" content="WeTravel is the leading global payment & booking platform for multi-day tour operators and group travel companies." />
+          <meta name="description" content={`WeTravel is the leading global payment & booking platform for multi-day tour operators and group travel companies.`} />
         </>
       ),
     },

@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="SalesWings"
-      description="SalesWings enables your team to constantly engage into more timely, and fully personal conversations thanks to real-time insights into your leads' interest, priorities, and profile."
+      description={`SalesWings enables your team to constantly engage into more timely, and fully personal conversations thanks to real-time insights into your leads' interest, priorities, and profile.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +53,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>SalesWings</title>
-          <meta name="description" content="SalesWings enables your team to constantly engage into more timely, and fully personal conversations thanks to real-time insights into your leads' interest, priorities, and profile." />
+          <meta name="description" content={`SalesWings enables your team to constantly engage into more timely, and fully personal conversations thanks to real-time insights into your leads' interest, priorities, and profile.`} />
         </>
       ),
     },

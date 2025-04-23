@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Mercury Integrations"
-      description="Mercury is an online financial platform that helps startups grow and manage their capital."
+      description={`Mercury is an online financial platform that helps startups grow and manage their capital.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -82,7 +82,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Mercury Integrations</title>
-          <meta name="description" content="Mercury is an online financial platform that helps startups grow and manage their capital." />
+          <meta name="description" content={`Mercury is an online financial platform that helps startups grow and manage their capital.`} />
         </>
       ),
     },

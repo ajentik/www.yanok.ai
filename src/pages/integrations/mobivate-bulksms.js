@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Mobivate BulkSMS"
-      description="Send SMS messages hassle-free using Mobivate. Receive SMS messages and trigger your ZAPs."
+      description={`Send SMS messages hassle-free using Mobivate. Receive SMS messages and trigger your ZAPs.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -66,7 +66,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Mobivate BulkSMS</title>
-          <meta name="description" content="Send SMS messages hassle-free using Mobivate. Receive SMS messages and trigger your ZAPs." />
+          <meta name="description" content={`Send SMS messages hassle-free using Mobivate. Receive SMS messages and trigger your ZAPs.`} />
         </>
       ),
     },

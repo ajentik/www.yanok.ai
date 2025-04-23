@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Hull"
-      description="Hull is a customer data platform that unifies your customer data in a single place and sends that data to all of your connected tools."
+      description={`Hull is a customer data platform that unifies your customer data in a single place and sends that data to all of your connected tools.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -121,7 +121,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Hull</title>
-          <meta name="description" content="Hull is a customer data platform that unifies your customer data in a single place and sends that data to all of your connected tools." />
+          <meta name="description" content={`Hull is a customer data platform that unifies your customer data in a single place and sends that data to all of your connected tools.`} />
         </>
       ),
     },

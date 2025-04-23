@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="CViewSurvey"
-      description="CViewSurvey is a SaaS-based Web & Mobile application that provides digital transformation to traditional paper surveys and feedback for customer & employee experience, field & market research that helps you evaluate your customer's as well as employee's loyalty."
+      description={`CViewSurvey is a SaaS-based Web & Mobile application that provides digital transformation to traditional paper surveys and feedback for customer & employee experience, field & market research that helps you evaluate your customer's as well as employee's loyalty.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>CViewSurvey</title>
-          <meta name="description" content="CViewSurvey is a SaaS-based Web & Mobile application that provides digital transformation to traditional paper surveys and feedback for customer & employee experience, field & market research that helps you evaluate your customer's as well as employee's loyalty." />
+          <meta name="description" content={`CViewSurvey is a SaaS-based Web & Mobile application that provides digital transformation to traditional paper surveys and feedback for customer & employee experience, field & market research that helps you evaluate your customer's as well as employee's loyalty.`} />
         </>
       ),
     },

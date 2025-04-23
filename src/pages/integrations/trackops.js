@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Trackops"
-      description="Streamline the process of managing an investigation from start to finish. Trackops will assist your company in becoming more organized, efficient, and profitable with less effort."
+      description={`Streamline the process of managing an investigation from start to finish. Trackops will assist your company in becoming more organized, efficient, and profitable with less effort.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +53,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Trackops</title>
-          <meta name="description" content="Streamline the process of managing an investigation from start to finish. Trackops will assist your company in becoming more organized, efficient, and profitable with less effort." />
+          <meta name="description" content={`Streamline the process of managing an investigation from start to finish. Trackops will assist your company in becoming more organized, efficient, and profitable with less effort.`} />
         </>
       ),
     },

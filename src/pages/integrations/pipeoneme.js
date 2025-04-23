@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="PipeOne.me"
-      description="PipeOne.me is a CRM for mobile messaging. Let people ask, suggest, buy and talk to your company using mobile messages via your PipeOne number, any mobile messaging app, your website or even via QR code."
+      description={`PipeOne.me is a CRM for mobile messaging. Let people ask, suggest, buy and talk to your company using mobile messages via your PipeOne number, any mobile messaging app, your website or even via QR code.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -81,7 +81,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>PipeOne.me</title>
-          <meta name="description" content="PipeOne.me is a CRM for mobile messaging. Let people ask, suggest, buy and talk to your company using mobile messages via your PipeOne number, any mobile messaging app, your website or even via QR code." />
+          <meta name="description" content={`PipeOne.me is a CRM for mobile messaging. Let people ask, suggest, buy and talk to your company using mobile messages via your PipeOne number, any mobile messaging app, your website or even via QR code.`} />
         </>
       ),
     },

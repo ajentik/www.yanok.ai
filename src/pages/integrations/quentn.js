@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Quentn"
-      description="Quentn is a marketing automation tool that helps you to create and organize marketing processes."
+      description={`Quentn is a marketing automation tool that helps you to create and organize marketing processes.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -76,7 +76,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Quentn</title>
-          <meta name="description" content="Quentn is a marketing automation tool that helps you to create and organize marketing processes." />
+          <meta name="description" content={`Quentn is a marketing automation tool that helps you to create and organize marketing processes.`} />
         </>
       ),
     },

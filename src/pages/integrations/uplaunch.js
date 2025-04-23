@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="UpLaunch"
-      description="UpLaunch is a CRM and marketing automation platform built specifically for the fitness industry."
+      description={`UpLaunch is a CRM and marketing automation platform built specifically for the fitness industry.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -81,7 +81,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>UpLaunch</title>
-          <meta name="description" content="UpLaunch is a CRM and marketing automation platform built specifically for the fitness industry." />
+          <meta name="description" content={`UpLaunch is a CRM and marketing automation platform built specifically for the fitness industry.`} />
         </>
       ),
     },

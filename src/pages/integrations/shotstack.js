@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Shotstack"
-      description="Shotstack is a service that allows you to edit videos, images and audio at scale."
+      description={`Shotstack is a service that allows you to edit videos, images and audio at scale.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -107,7 +107,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Shotstack</title>
-          <meta name="description" content="Shotstack is a service that allows you to edit videos, images and audio at scale." />
+          <meta name="description" content={`Shotstack is a service that allows you to edit videos, images and audio at scale.`} />
         </>
       ),
     },

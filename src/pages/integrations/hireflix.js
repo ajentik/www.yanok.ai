@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Hireflix"
-      description="Hireflix is a video interview platform. We make the hiring process less painful by enabling companies to pre-record interview questions and invite their candidates to record the responses when it suits them best."
+      description={`Hireflix is a video interview platform. We make the hiring process less painful by enabling companies to pre-record interview questions and invite their candidates to record the responses when it suits them best.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -66,7 +66,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Hireflix</title>
-          <meta name="description" content="Hireflix is a video interview platform. We make the hiring process less painful by enabling companies to pre-record interview questions and invite their candidates to record the responses when it suits them best." />
+          <meta name="description" content={`Hireflix is a video interview platform. We make the hiring process less painful by enabling companies to pre-record interview questions and invite their candidates to record the responses when it suits them best.`} />
         </>
       ),
     },

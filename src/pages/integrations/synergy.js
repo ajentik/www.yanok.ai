@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Synergy!"
-      description="Synergy! is a cloud-based CRM service that enables optimal communication based on a customer database which securely stores information."
+      description={`Synergy! is a cloud-based CRM service that enables optimal communication based on a customer database which securely stores information.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -62,7 +62,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Synergy!</title>
-          <meta name="description" content="Synergy! is a cloud-based CRM service that enables optimal communication based on a customer database which securely stores information." />
+          <meta name="description" content={`Synergy! is a cloud-based CRM service that enables optimal communication based on a customer database which securely stores information.`} />
         </>
       ),
     },

@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="AFRUS"
-      description="AFRUS means Acquisition, First Donation, Recruitment, Upgrade, Socializing. We help you to receive donations and process with all the information of your leads"
+      description={`AFRUS means Acquisition, First Donation, Recruitment, Upgrade, Socializing. We help you to receive donations and process with all the information of your leads`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +53,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>AFRUS</title>
-          <meta name="description" content="AFRUS means Acquisition, First Donation, Recruitment, Upgrade, Socializing. We help you to receive donations and process with all the information of your leads" />
+          <meta name="description" content={`AFRUS means Acquisition, First Donation, Recruitment, Upgrade, Socializing. We help you to receive donations and process with all the information of your leads`} />
         </>
       ),
     },

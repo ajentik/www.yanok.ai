@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="CauseVox"
-      description="CauseVox is a digital fundraising platform for nonprofits and social good projects. Increase fundraising results with our donation forms, crowdfunding campaigns, peer to peer fundraising, event ticketing, and pledge donations."
+      description={`CauseVox is a digital fundraising platform for nonprofits and social good projects. Increase fundraising results with our donation forms, crowdfunding campaigns, peer to peer fundraising, event ticketing, and pledge donations.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -102,7 +102,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>CauseVox</title>
-          <meta name="description" content="CauseVox is a digital fundraising platform for nonprofits and social good projects. Increase fundraising results with our donation forms, crowdfunding campaigns, peer to peer fundraising, event ticketing, and pledge donations." />
+          <meta name="description" content={`CauseVox is a digital fundraising platform for nonprofits and social good projects. Increase fundraising results with our donation forms, crowdfunding campaigns, peer to peer fundraising, event ticketing, and pledge donations.`} />
         </>
       ),
     },

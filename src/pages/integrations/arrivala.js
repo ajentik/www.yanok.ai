@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Arrivala"
-      description="Arrivala helps businesses automate the review collection process to improve their business reputation online."
+      description={`Arrivala helps businesses automate the review collection process to improve their business reputation online.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Arrivala</title>
-          <meta name="description" content="Arrivala helps businesses automate the review collection process to improve their business reputation online." />
+          <meta name="description" content={`Arrivala helps businesses automate the review collection process to improve their business reputation online.`} />
         </>
       ),
     },

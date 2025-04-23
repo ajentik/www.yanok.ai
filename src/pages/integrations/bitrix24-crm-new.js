@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Bitrix24 CRM"
-      description="Bitrix24 is a free CRM, project management and collaboration platform used by 10 million teams and available in 18 different languages."
+      description={`Bitrix24 is a free CRM, project management and collaboration platform used by 10 million teams and available in 18 different languages.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -111,7 +111,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Bitrix24 CRM</title>
-          <meta name="description" content="Bitrix24 is a free CRM, project management and collaboration platform used by 10 million teams and available in 18 different languages." />
+          <meta name="description" content={`Bitrix24 is a free CRM, project management and collaboration platform used by 10 million teams and available in 18 different languages.`} />
         </>
       ),
     },

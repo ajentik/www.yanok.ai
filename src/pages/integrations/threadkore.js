@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="ThreadKore"
-      description="ThreadKore is a centralized collection of applications intended for the management and facilitation of numerous business operations."
+      description={`ThreadKore is a centralized collection of applications intended for the management and facilitation of numerous business operations.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -62,7 +62,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>ThreadKore</title>
-          <meta name="description" content="ThreadKore is a centralized collection of applications intended for the management and facilitation of numerous business operations." />
+          <meta name="description" content={`ThreadKore is a centralized collection of applications intended for the management and facilitation of numerous business operations.`} />
         </>
       ),
     },

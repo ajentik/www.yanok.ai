@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Pluspoint"
-      description="Pluspoint is customer reviews software that helps you to automate review generation, manage reputation and get more customers."
+      description={`Pluspoint is customer reviews software that helps you to automate review generation, manage reputation and get more customers.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -67,7 +67,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Pluspoint</title>
-          <meta name="description" content="Pluspoint is customer reviews software that helps you to automate review generation, manage reputation and get more customers." />
+          <meta name="description" content={`Pluspoint is customer reviews software that helps you to automate review generation, manage reputation and get more customers.`} />
         </>
       ),
     },

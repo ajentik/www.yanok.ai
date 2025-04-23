@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Google Analytics"
-      description="Google Analytics is an industry standard freemium web and mobile analytics package."
+      description={`Google Analytics is an industry standard freemium web and mobile analytics package.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -76,7 +76,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Google Analytics</title>
-          <meta name="description" content="Google Analytics is an industry standard freemium web and mobile analytics package." />
+          <meta name="description" content={`Google Analytics is an industry standard freemium web and mobile analytics package.`} />
         </>
       ),
     },

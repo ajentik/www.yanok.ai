@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Smartsheet"
-      description="Smartsheet is a leading cloud-based platform for work execution, enabling teams and organizations to plan, capture, manage, automate, and report on work at scale, resulting in more efficient processes and better business outcomes."
+      description={`Smartsheet is a leading cloud-based platform for work execution, enabling teams and organizations to plan, capture, manage, automate, and report on work at scale, resulting in more efficient processes and better business outcomes.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -146,7 +146,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Smartsheet</title>
-          <meta name="description" content="Smartsheet is a leading cloud-based platform for work execution, enabling teams and organizations to plan, capture, manage, automate, and report on work at scale, resulting in more efficient processes and better business outcomes." />
+          <meta name="description" content={`Smartsheet is a leading cloud-based platform for work execution, enabling teams and organizations to plan, capture, manage, automate, and report on work at scale, resulting in more efficient processes and better business outcomes.`} />
         </>
       ),
     },

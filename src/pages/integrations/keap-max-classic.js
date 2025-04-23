@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Keap Max Classic"
-      description="Keap Max Classic is all-in-one marketing and sales automation software for small businesses. It effortlessly combines CRM, email marketing and e-commerce."
+      description={`Keap Max Classic is all-in-one marketing and sales automation software for small businesses. It effortlessly combines CRM, email marketing and e-commerce.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -191,7 +191,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Keap Max Classic</title>
-          <meta name="description" content="Keap Max Classic is all-in-one marketing and sales automation software for small businesses. It effortlessly combines CRM, email marketing and e-commerce." />
+          <meta name="description" content={`Keap Max Classic is all-in-one marketing and sales automation software for small businesses. It effortlessly combines CRM, email marketing and e-commerce.`} />
         </>
       ),
     },

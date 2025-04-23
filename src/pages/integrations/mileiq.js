@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="MileIQ"
-      description="MileIQ is an American-based technology company that develops a mileage tracking and logging app."
+      description={`MileIQ is an American-based technology company that develops a mileage tracking and logging app.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +53,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>MileIQ</title>
-          <meta name="description" content="MileIQ is an American-based technology company that develops a mileage tracking and logging app." />
+          <meta name="description" content={`MileIQ is an American-based technology company that develops a mileage tracking and logging app.`} />
         </>
       ),
     },

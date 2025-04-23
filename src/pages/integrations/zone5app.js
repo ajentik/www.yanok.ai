@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="zone5app"
-      description="This app is used for handling the team like we can handle the team or get the Analytics of the team with the help of the zone5app."
+      description={`This app is used for handling the team like we can handle the team or get the Analytics of the team with the help of the zone5app.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -62,7 +62,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>zone5app</title>
-          <meta name="description" content="This app is used for handling the team like we can handle the team or get the Analytics of the team with the help of the zone5app." />
+          <meta name="description" content={`This app is used for handling the team like we can handle the team or get the Analytics of the team with the help of the zone5app.`} />
         </>
       ),
     },

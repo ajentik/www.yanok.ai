@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Docsify"
-      description="Docsify is a chrome extension for Gmail and G Suite that tracks email opens, link clicks, attachment downloads, and per-page document and website views that you send via email. And Docsify automates and prioritizes your sales workflow based on recipient's engagement with anything you emailed them"
+      description={`Docsify is a chrome extension for Gmail and G Suite that tracks email opens, link clicks, attachment downloads, and per-page document and website views that you send via email. And Docsify automates and prioritizes your sales workflow based on recipient's engagement with anything you emailed them`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -77,7 +77,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Docsify</title>
-          <meta name="description" content="Docsify is a chrome extension for Gmail and G Suite that tracks email opens, link clicks, attachment downloads, and per-page document and website views that you send via email. And Docsify automates and prioritizes your sales workflow based on recipient's engagement with anything you emailed them" />
+          <meta name="description" content={`Docsify is a chrome extension for Gmail and G Suite that tracks email opens, link clicks, attachment downloads, and per-page document and website views that you send via email. And Docsify automates and prioritizes your sales workflow based on recipient's engagement with anything you emailed them`} />
         </>
       ),
     },

@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="123FormBuilder"
-      description="123FormBuilder is an easy way to create and use free html forms for your website using their online contact form generator!"
+      description={`123FormBuilder is an easy way to create and use free html forms for your website using their online contact form generator!`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -62,7 +62,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>123FormBuilder</title>
-          <meta name="description" content="123FormBuilder is an easy way to create and use free html forms for your website using their online contact form generator!" />
+          <meta name="description" content={`123FormBuilder is an easy way to create and use free html forms for your website using their online contact form generator!`} />
         </>
       ),
     },

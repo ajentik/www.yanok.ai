@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Switchy.io"
-      description="Switchy is a plug & play SaaS that enables brands to engage their community through the links they share, turning them into marketing levers."
+      description={`Switchy is a plug & play SaaS that enables brands to engage their community through the links they share, turning them into marketing levers.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -62,7 +62,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Switchy.io</title>
-          <meta name="description" content="Switchy is a plug & play SaaS that enables brands to engage their community through the links they share, turning them into marketing levers." />
+          <meta name="description" content={`Switchy is a plug & play SaaS that enables brands to engage their community through the links they share, turning them into marketing levers.`} />
         </>
       ),
     },

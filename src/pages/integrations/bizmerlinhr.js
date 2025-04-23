@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="BizMerlinHR"
-      description="HR Software for all your Human Capital Management needs employee records, onboarding, PTO & attendance, performance reviews, applicant tracking system."
+      description={`HR Software for all your Human Capital Management needs employee records, onboarding, PTO & attendance, performance reviews, applicant tracking system.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -131,7 +131,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>BizMerlinHR</title>
-          <meta name="description" content="HR Software for all your Human Capital Management needs employee records, onboarding, PTO & attendance, performance reviews, applicant tracking system." />
+          <meta name="description" content={`HR Software for all your Human Capital Management needs employee records, onboarding, PTO & attendance, performance reviews, applicant tracking system.`} />
         </>
       ),
     },

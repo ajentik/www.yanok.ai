@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="WS Form"
-      description="WS Form is a form builder for Wordpress. Build forms in a single click or use the unique drag and drop editor to create forms in seconds."
+      description={`WS Form is a form builder for Wordpress. Build forms in a single click or use the unique drag and drop editor to create forms in seconds.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>WS Form</title>
-          <meta name="description" content="WS Form is a form builder for Wordpress. Build forms in a single click or use the unique drag and drop editor to create forms in seconds." />
+          <meta name="description" content={`WS Form is a form builder for Wordpress. Build forms in a single click or use the unique drag and drop editor to create forms in seconds.`} />
         </>
       ),
     },

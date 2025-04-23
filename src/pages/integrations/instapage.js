@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Instapage"
-      description="Instapage is the leader in post-click optimization and maximizes conversions for advertisers and marketers by enabling them to create, optimize, and personalize landing pages at scale."
+      description={`Instapage is the leader in post-click optimization and maximizes conversions for advertisers and marketers by enabling them to create, optimize, and personalize landing pages at scale.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Instapage</title>
-          <meta name="description" content="Instapage is the leader in post-click optimization and maximizes conversions for advertisers and marketers by enabling them to create, optimize, and personalize landing pages at scale." />
+          <meta name="description" content={`Instapage is the leader in post-click optimization and maximizes conversions for advertisers and marketers by enabling them to create, optimize, and personalize landing pages at scale.`} />
         </>
       ),
     },

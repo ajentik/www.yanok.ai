@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Stella Connect"
-      description="Stella Connect is a software platform built to empower customer service agents, make them happier in their jobs, and help with their career development."
+      description={`Stella Connect is a software platform built to empower customer service agents, make them happier in their jobs, and help with their career development.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Stella Connect</title>
-          <meta name="description" content="Stella Connect is a software platform built to empower customer service agents, make them happier in their jobs, and help with their career development." />
+          <meta name="description" content={`Stella Connect is a software platform built to empower customer service agents, make them happier in their jobs, and help with their career development.`} />
         </>
       ),
     },

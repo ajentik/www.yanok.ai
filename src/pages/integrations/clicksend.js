@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="ClickSend SMS"
-      description="ClickSend is a cloud-based service that lets you send and receive SMS, Email, Voice, Fax and Letters worldwide."
+      description={`ClickSend is a cloud-based service that lets you send and receive SMS, Email, Voice, Fax and Letters worldwide.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -126,7 +126,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>ClickSend SMS</title>
-          <meta name="description" content="ClickSend is a cloud-based service that lets you send and receive SMS, Email, Voice, Fax and Letters worldwide." />
+          <meta name="description" content={`ClickSend is a cloud-based service that lets you send and receive SMS, Email, Voice, Fax and Letters worldwide.`} />
         </>
       ),
     },

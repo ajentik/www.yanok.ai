@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Angaza"
-      description="Angaza is a business solution designed for last-mile distributors of products and services in emerging markets. Angaza allows you to unlock new markets and sell more products — from solar lighting systems to clean cookstoves."
+      description={`Angaza is a business solution designed for last-mile distributors of products and services in emerging markets. Angaza allows you to unlock new markets and sell more products — from solar lighting systems to clean cookstoves.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -91,7 +91,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Angaza</title>
-          <meta name="description" content="Angaza is a business solution designed for last-mile distributors of products and services in emerging markets. Angaza allows you to unlock new markets and sell more products — from solar lighting systems to clean cookstoves." />
+          <meta name="description" content={`Angaza is a business solution designed for last-mile distributors of products and services in emerging markets. Angaza allows you to unlock new markets and sell more products — from solar lighting systems to clean cookstoves.`} />
         </>
       ),
     },

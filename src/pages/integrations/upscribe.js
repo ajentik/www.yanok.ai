@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Upscribe"
-      description="Upscribe enables you to create embedable newsletter signup forms for Medium, SquareSpace, WordPress, and other awesome platforms."
+      description={`Upscribe enables you to create embedable newsletter signup forms for Medium, SquareSpace, WordPress, and other awesome platforms.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -91,7 +91,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Upscribe</title>
-          <meta name="description" content="Upscribe enables you to create embedable newsletter signup forms for Medium, SquareSpace, WordPress, and other awesome platforms." />
+          <meta name="description" content={`Upscribe enables you to create embedable newsletter signup forms for Medium, SquareSpace, WordPress, and other awesome platforms.`} />
         </>
       ),
     },

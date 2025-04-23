@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Hexomatic"
-      description="Hexomatic is a no-code, work automation platform that enables you to harness the internet as your own data source, leverage the most sophisticated AI services and a crowdsourced team of human assistants to automate and delegate time consuming tasks."
+      description={`Hexomatic is a no-code, work automation platform that enables you to harness the internet as your own data source, leverage the most sophisticated AI services and a crowdsourced team of human assistants to automate and delegate time consuming tasks.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Hexomatic</title>
-          <meta name="description" content="Hexomatic is a no-code, work automation platform that enables you to harness the internet as your own data source, leverage the most sophisticated AI services and a crowdsourced team of human assistants to automate and delegate time consuming tasks." />
+          <meta name="description" content={`Hexomatic is a no-code, work automation platform that enables you to harness the internet as your own data source, leverage the most sophisticated AI services and a crowdsourced team of human assistants to automate and delegate time consuming tasks.`} />
         </>
       ),
     },

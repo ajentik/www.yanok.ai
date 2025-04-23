@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Huddle"
-      description="Huddle is the ideal e-learning and community software for all your digital training programs, membership and community building."
+      description={`Huddle is the ideal e-learning and community software for all your digital training programs, membership and community building.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +53,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Huddle</title>
-          <meta name="description" content="Huddle is the ideal e-learning and community software for all your digital training programs, membership and community building." />
+          <meta name="description" content={`Huddle is the ideal e-learning and community software for all your digital training programs, membership and community building.`} />
         </>
       ),
     },

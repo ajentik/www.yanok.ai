@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="NorthStar by GrowthHackers"
-      description="GrowthHackers is a powerful collaboration platform helping marketers and growth professionals unleash their company's growth potential. We do this via a community of growth practitioners that share insights and resources at GrowthHackers.com, as well as a collaborative software platform, NorthStar by GrowthHackers, that keeps teams on the same page as they accelerate their growth testing and learning process."
+      description={`GrowthHackers is a powerful collaboration platform helping marketers and growth professionals unleash their company's growth potential. We do this via a community of growth practitioners that share insights and resources at GrowthHackers.com, as well as a collaborative software platform, NorthStar by GrowthHackers, that keeps teams on the same page as they accelerate their growth testing and learning process.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -61,7 +61,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>NorthStar by GrowthHackers</title>
-          <meta name="description" content="GrowthHackers is a powerful collaboration platform helping marketers and growth professionals unleash their company's growth potential. We do this via a community of growth practitioners that share insights and resources at GrowthHackers.com, as well as a collaborative software platform, NorthStar by GrowthHackers, that keeps teams on the same page as they accelerate their growth testing and learning process." />
+          <meta name="description" content={`GrowthHackers is a powerful collaboration platform helping marketers and growth professionals unleash their company's growth potential. We do this via a community of growth practitioners that share insights and resources at GrowthHackers.com, as well as a collaborative software platform, NorthStar by GrowthHackers, that keeps teams on the same page as they accelerate their growth testing and learning process.`} />
         </>
       ),
     },

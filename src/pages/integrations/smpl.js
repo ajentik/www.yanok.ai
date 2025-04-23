@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="smpl"
-      description="Smpl is a member management platform for modern subscription-based businesses. Whether you're running a coworking business, a makerspace, or a gallery, smpl seamlessly automates your member billing and invoicing, meeting room reservations, and communication in one place. Get started with smpl and be up and running within minutes."
+      description={`Smpl is a member management platform for modern subscription-based businesses. Whether you're running a coworking business, a makerspace, or a gallery, smpl seamlessly automates your member billing and invoicing, meeting room reservations, and communication in one place. Get started with smpl and be up and running within minutes.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -77,7 +77,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>smpl</title>
-          <meta name="description" content="Smpl is a member management platform for modern subscription-based businesses. Whether you're running a coworking business, a makerspace, or a gallery, smpl seamlessly automates your member billing and invoicing, meeting room reservations, and communication in one place. Get started with smpl and be up and running within minutes." />
+          <meta name="description" content={`Smpl is a member management platform for modern subscription-based businesses. Whether you're running a coworking business, a makerspace, or a gallery, smpl seamlessly automates your member billing and invoicing, meeting room reservations, and communication in one place. Get started with smpl and be up and running within minutes.`} />
         </>
       ),
     },

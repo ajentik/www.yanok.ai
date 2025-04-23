@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Cloudsmith"
-      description="Cloudsmith is the preferred software platform for securely storing and sharing packages and containers."
+      description={`Cloudsmith is the preferred software platform for securely storing and sharing packages and containers.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -62,7 +62,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Cloudsmith</title>
-          <meta name="description" content="Cloudsmith is the preferred software platform for securely storing and sharing packages and containers." />
+          <meta name="description" content={`Cloudsmith is the preferred software platform for securely storing and sharing packages and containers.`} />
         </>
       ),
     },

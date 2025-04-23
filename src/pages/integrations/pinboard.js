@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Pinboard"
-      description="Pinboard is a fast, no-nonsense bookmarking site. No ads, no fluff."
+      description={`Pinboard is a fast, no-nonsense bookmarking site. No ads, no fluff.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -61,7 +61,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Pinboard</title>
-          <meta name="description" content="Pinboard is a fast, no-nonsense bookmarking site. No ads, no fluff." />
+          <meta name="description" content={`Pinboard is a fast, no-nonsense bookmarking site. No ads, no fluff.`} />
         </>
       ),
     },

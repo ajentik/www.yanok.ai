@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Pleo"
-      description="Pleo offers smart company cards that automate expense reports and simplify company spending."
+      description={`Pleo offers smart company cards that automate expense reports and simplify company spending.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -91,7 +91,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Pleo</title>
-          <meta name="description" content="Pleo offers smart company cards that automate expense reports and simplify company spending." />
+          <meta name="description" content={`Pleo offers smart company cards that automate expense reports and simplify company spending.`} />
         </>
       ),
     },

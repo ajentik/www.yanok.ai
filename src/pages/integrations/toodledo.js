@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Toodledo"
-      description="Toodledo is one of the most popular online productivity tools available today. Use it to organize your life into list and notes."
+      description={`Toodledo is one of the most popular online productivity tools available today. Use it to organize your life into list and notes.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -101,7 +101,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Toodledo</title>
-          <meta name="description" content="Toodledo is one of the most popular online productivity tools available today. Use it to organize your life into list and notes." />
+          <meta name="description" content={`Toodledo is one of the most popular online productivity tools available today. Use it to organize your life into list and notes.`} />
         </>
       ),
     },

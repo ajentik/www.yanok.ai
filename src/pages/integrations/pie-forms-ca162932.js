@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Pie Forms"
-      description="Pie Forms are fast, flexible, and 100% responsive. It lets you create multiple interactive types of WordPress forms with no prior coding knowledge, offering you to take your form building experience to the next level."
+      description={`Pie Forms are fast, flexible, and 100% responsive. It lets you create multiple interactive types of WordPress forms with no prior coding knowledge, offering you to take your form building experience to the next level.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -61,7 +61,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Pie Forms</title>
-          <meta name="description" content="Pie Forms are fast, flexible, and 100% responsive. It lets you create multiple interactive types of WordPress forms with no prior coding knowledge, offering you to take your form building experience to the next level." />
+          <meta name="description" content={`Pie Forms are fast, flexible, and 100% responsive. It lets you create multiple interactive types of WordPress forms with no prior coding knowledge, offering you to take your form building experience to the next level.`} />
         </>
       ),
     },

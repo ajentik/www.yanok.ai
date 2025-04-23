@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Planbox Innovation Central"
-      description="Planbox Innovation Central is a best-in-class workflow-driven online portal and tool for your employees, customers, partners and community to collaborate, discover, evaluate, manage, and develop creative ideas and actionable solutions."
+      description={`Planbox Innovation Central is a best-in-class workflow-driven online portal and tool for your employees, customers, partners and community to collaborate, discover, evaluate, manage, and develop creative ideas and actionable solutions.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -171,7 +171,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Planbox Innovation Central</title>
-          <meta name="description" content="Planbox Innovation Central is a best-in-class workflow-driven online portal and tool for your employees, customers, partners and community to collaborate, discover, evaluate, manage, and develop creative ideas and actionable solutions." />
+          <meta name="description" content={`Planbox Innovation Central is a best-in-class workflow-driven online portal and tool for your employees, customers, partners and community to collaborate, discover, evaluate, manage, and develop creative ideas and actionable solutions.`} />
         </>
       ),
     },

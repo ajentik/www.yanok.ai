@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="TextBetter"
-      description="Send & receive texts from your existing landline number. Our simple & affordable works with any kind of landline, toll-free or VoIP number – guaranteed."
+      description={`Send & receive texts from your existing landline number. Our simple & affordable works with any kind of landline, toll-free or VoIP number – guaranteed.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -61,7 +61,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>TextBetter</title>
-          <meta name="description" content="Send & receive texts from your existing landline number. Our simple & affordable works with any kind of landline, toll-free or VoIP number – guaranteed." />
+          <meta name="description" content={`Send & receive texts from your existing landline number. Our simple & affordable works with any kind of landline, toll-free or VoIP number – guaranteed.`} />
         </>
       ),
     },

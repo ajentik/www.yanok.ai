@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="AbleCommerce"
-      description="AbleCommerce is a complete and secure eCommerce platform for your business."
+      description={`AbleCommerce is a complete and secure eCommerce platform for your business.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -126,7 +126,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>AbleCommerce</title>
-          <meta name="description" content="AbleCommerce is a complete and secure eCommerce platform for your business." />
+          <meta name="description" content={`AbleCommerce is a complete and secure eCommerce platform for your business.`} />
         </>
       ),
     },

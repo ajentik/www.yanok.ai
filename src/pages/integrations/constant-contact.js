@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Constant Contact"
-      description="Constant Contact can help grow your business with an email marketing tool that’s affordable, powerful, and easy to use."
+      description={`Constant Contact can help grow your business with an email marketing tool that’s affordable, powerful, and easy to use.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -86,7 +86,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Constant Contact</title>
-          <meta name="description" content="Constant Contact can help grow your business with an email marketing tool that’s affordable, powerful, and easy to use." />
+          <meta name="description" content={`Constant Contact can help grow your business with an email marketing tool that’s affordable, powerful, and easy to use.`} />
         </>
       ),
     },

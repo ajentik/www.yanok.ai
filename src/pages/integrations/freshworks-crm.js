@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Freshsales Suite"
-      description="Freshsales Suite is an online, cloud-based CRM with integrated phone and email, user behavior tracking, lead scoring and more."
+      description={`Freshsales Suite is an online, cloud-based CRM with integrated phone and email, user behavior tracking, lead scoring and more.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -131,7 +131,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Freshsales Suite</title>
-          <meta name="description" content="Freshsales Suite is an online, cloud-based CRM with integrated phone and email, user behavior tracking, lead scoring and more." />
+          <meta name="description" content={`Freshsales Suite is an online, cloud-based CRM with integrated phone and email, user behavior tracking, lead scoring and more.`} />
         </>
       ),
     },

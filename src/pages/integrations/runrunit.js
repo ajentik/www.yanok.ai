@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Runrun.it"
-      description="Runrun.it is a solution for task, time, and performance management. Simple, powerful and tightly integrated."
+      description={`Runrun.it is a solution for task, time, and performance management. Simple, powerful and tightly integrated.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -96,7 +96,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Runrun.it</title>
-          <meta name="description" content="Runrun.it is a solution for task, time, and performance management. Simple, powerful and tightly integrated." />
+          <meta name="description" content={`Runrun.it is a solution for task, time, and performance management. Simple, powerful and tightly integrated.`} />
         </>
       ),
     },

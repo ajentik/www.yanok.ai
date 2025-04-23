@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Helloprint API"
-      description="Helloprint is a marketplace for customized print products. Connect and automate the fulfillment process of your print orders at Helloprint"
+      description={`Helloprint is a marketplace for customized print products. Connect and automate the fulfillment process of your print orders at Helloprint`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Helloprint API</title>
-          <meta name="description" content="Helloprint is a marketplace for customized print products. Connect and automate the fulfillment process of your print orders at Helloprint" />
+          <meta name="description" content={`Helloprint is a marketplace for customized print products. Connect and automate the fulfillment process of your print orders at Helloprint`} />
         </>
       ),
     },

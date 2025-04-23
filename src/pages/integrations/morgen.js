@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Morgen"
-      description="Morgen is an all-in-one app for your time management"
+      description={`Morgen is an all-in-one app for your time management`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -76,7 +76,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Morgen</title>
-          <meta name="description" content="Morgen is an all-in-one app for your time management" />
+          <meta name="description" content={`Morgen is an all-in-one app for your time management`} />
         </>
       ),
     },

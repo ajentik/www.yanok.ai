@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="ArtiBot.ai"
-      description="ArtiBot is an intelligent chat bot that enables you to capture leads automatically."
+      description={`ArtiBot is an intelligent chat bot that enables you to capture leads automatically.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>ArtiBot.ai</title>
-          <meta name="description" content="ArtiBot is an intelligent chat bot that enables you to capture leads automatically." />
+          <meta name="description" content={`ArtiBot is an intelligent chat bot that enables you to capture leads automatically.`} />
         </>
       ),
     },

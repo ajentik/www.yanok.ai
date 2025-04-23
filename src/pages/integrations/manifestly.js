@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Manifestly Checklists"
-      description="Manifestly Checklists software improves collaboration and accountability in your organization's recurring processes."
+      description={`Manifestly Checklists software improves collaboration and accountability in your organization's recurring processes.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -71,7 +71,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Manifestly Checklists</title>
-          <meta name="description" content="Manifestly Checklists software improves collaboration and accountability in your organization's recurring processes." />
+          <meta name="description" content={`Manifestly Checklists software improves collaboration and accountability in your organization's recurring processes.`} />
         </>
       ),
     },

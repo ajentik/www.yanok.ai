@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Warm Welcome"
-      description="Warm Welcome helps you improve your business relationships by leveraging video at every touchpoint. You can create video business cards, site bubbles and send video emails."
+      description={`Warm Welcome helps you improve your business relationships by leveraging video at every touchpoint. You can create video business cards, site bubbles and send video emails.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -61,7 +61,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Warm Welcome</title>
-          <meta name="description" content="Warm Welcome helps you improve your business relationships by leveraging video at every touchpoint. You can create video business cards, site bubbles and send video emails." />
+          <meta name="description" content={`Warm Welcome helps you improve your business relationships by leveraging video at every touchpoint. You can create video business cards, site bubbles and send video emails.`} />
         </>
       ),
     },

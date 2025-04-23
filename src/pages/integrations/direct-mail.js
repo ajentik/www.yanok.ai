@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Direct Mail"
-      description="Direct Mail is a native OS X app for creating, sending, and tracking email campaigns. Includes tools for building mailing list sign-up forms, autoresponders, dynamic content, and more. Works offline and online, including cloud collaboration features."
+      description={`Direct Mail is a native OS X app for creating, sending, and tracking email campaigns. Includes tools for building mailing list sign-up forms, autoresponders, dynamic content, and more. Works offline and online, including cloud collaboration features.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -96,7 +96,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Direct Mail</title>
-          <meta name="description" content="Direct Mail is a native OS X app for creating, sending, and tracking email campaigns. Includes tools for building mailing list sign-up forms, autoresponders, dynamic content, and more. Works offline and online, including cloud collaboration features." />
+          <meta name="description" content={`Direct Mail is a native OS X app for creating, sending, and tracking email campaigns. Includes tools for building mailing list sign-up forms, autoresponders, dynamic content, and more. Works offline and online, including cloud collaboration features.`} />
         </>
       ),
     },

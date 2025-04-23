@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="SmartDialog"
-      description="SmartDialog is a platform used to send and receive SMS- and WhatsApp messages. It offers a wide variety of smart messaging services."
+      description={`SmartDialog is a platform used to send and receive SMS- and WhatsApp messages. It offers a wide variety of smart messaging services.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -61,7 +61,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>SmartDialog</title>
-          <meta name="description" content="SmartDialog is a platform used to send and receive SMS- and WhatsApp messages. It offers a wide variety of smart messaging services." />
+          <meta name="description" content={`SmartDialog is a platform used to send and receive SMS- and WhatsApp messages. It offers a wide variety of smart messaging services.`} />
         </>
       ),
     },

@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Jibble"
-      description="Jibble is a free time clock app that enables you to track when your staff are at work for attendance, payroll and projects. This app connects with Jibble 2 only."
+      description={`Jibble is a free time clock app that enables you to track when your staff are at work for attendance, payroll and projects. This app connects with Jibble 2 only.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -301,7 +301,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Jibble</title>
-          <meta name="description" content="Jibble is a free time clock app that enables you to track when your staff are at work for attendance, payroll and projects. This app connects with Jibble 2 only." />
+          <meta name="description" content={`Jibble is a free time clock app that enables you to track when your staff are at work for attendance, payroll and projects. This app connects with Jibble 2 only.`} />
         </>
       ),
     },

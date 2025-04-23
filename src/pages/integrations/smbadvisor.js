@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="BuzzBoard Insights"
-      description="BuzzBoard Insights is an account intelligence platform that sources thousands of robust data points on small to mid-sized businesses. Plug-in to start streaming real-time account intelligence."
+      description={`BuzzBoard Insights is an account intelligence platform that sources thousands of robust data points on small to mid-sized businesses. Plug-in to start streaming real-time account intelligence.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -156,7 +156,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>BuzzBoard Insights</title>
-          <meta name="description" content="BuzzBoard Insights is an account intelligence platform that sources thousands of robust data points on small to mid-sized businesses. Plug-in to start streaming real-time account intelligence." />
+          <meta name="description" content={`BuzzBoard Insights is an account intelligence platform that sources thousands of robust data points on small to mid-sized businesses. Plug-in to start streaming real-time account intelligence.`} />
         </>
       ),
     },

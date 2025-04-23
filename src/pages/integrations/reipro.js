@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="REIPro"
-      description="REIPro is the All-In-One Real Estate Investor Software CRM, Lead Generation, Deal Analyzer and more."
+      description={`REIPro is the All-In-One Real Estate Investor Software CRM, Lead Generation, Deal Analyzer and more.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -71,7 +71,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>REIPro</title>
-          <meta name="description" content="REIPro is the All-In-One Real Estate Investor Software CRM, Lead Generation, Deal Analyzer and more." />
+          <meta name="description" content={`REIPro is the All-In-One Real Estate Investor Software CRM, Lead Generation, Deal Analyzer and more.`} />
         </>
       ),
     },

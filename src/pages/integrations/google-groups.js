@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Google Groups"
-      description="Google Groups allows you to create and participate in online forums and email-based groups with a rich experience for community conversations."
+      description={`Google Groups allows you to create and participate in online forums and email-based groups with a rich experience for community conversations.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -67,7 +67,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Google Groups</title>
-          <meta name="description" content="Google Groups allows you to create and participate in online forums and email-based groups with a rich experience for community conversations." />
+          <meta name="description" content={`Google Groups allows you to create and participate in online forums and email-based groups with a rich experience for community conversations.`} />
         </>
       ),
     },

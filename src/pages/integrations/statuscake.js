@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="StatusCake"
-      description="StatusCake checks your website for uptime and performance"
+      description={`StatusCake checks your website for uptime and performance`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -62,7 +62,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>StatusCake</title>
-          <meta name="description" content="StatusCake checks your website for uptime and performance" />
+          <meta name="description" content={`StatusCake checks your website for uptime and performance`} />
         </>
       ),
     },

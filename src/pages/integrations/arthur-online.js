@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Arthur Online"
-      description="Arthur Online is a property management solution like no other. It brings together in one place property managers, tenants, contractors, agents and owners. Available on your phone, tablet, and computer, Arthur Online is accessible anywhere at any time giving you freedom and flexibility in how you manage your properties."
+      description={`Arthur Online is a property management solution like no other. It brings together in one place property managers, tenants, contractors, agents and owners. Available on your phone, tablet, and computer, Arthur Online is accessible anywhere at any time giving you freedom and flexibility in how you manage your properties.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -92,7 +92,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Arthur Online</title>
-          <meta name="description" content="Arthur Online is a property management solution like no other. It brings together in one place property managers, tenants, contractors, agents and owners. Available on your phone, tablet, and computer, Arthur Online is accessible anywhere at any time giving you freedom and flexibility in how you manage your properties." />
+          <meta name="description" content={`Arthur Online is a property management solution like no other. It brings together in one place property managers, tenants, contractors, agents and owners. Available on your phone, tablet, and computer, Arthur Online is accessible anywhere at any time giving you freedom and flexibility in how you manage your properties.`} />
         </>
       ),
     },

@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Trengo"
-      description="Trengo is a team collaboration tool to manage conversations from channels such as web chat, email and WhatsApp via one inbox."
+      description={`Trengo is a team collaboration tool to manage conversations from channels such as web chat, email and WhatsApp via one inbox.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -121,7 +121,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Trengo</title>
-          <meta name="description" content="Trengo is a team collaboration tool to manage conversations from channels such as web chat, email and WhatsApp via one inbox." />
+          <meta name="description" content={`Trengo is a team collaboration tool to manage conversations from channels such as web chat, email and WhatsApp via one inbox.`} />
         </>
       ),
     },

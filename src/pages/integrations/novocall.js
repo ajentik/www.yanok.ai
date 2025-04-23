@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Novocall"
-      description="Novocall is a callback app that make it easy for businesses communicate with their website visitors through calls and scheduling."
+      description={`Novocall is a callback app that make it easy for businesses communicate with their website visitors through calls and scheduling.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -91,7 +91,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Novocall</title>
-          <meta name="description" content="Novocall is a callback app that make it easy for businesses communicate with their website visitors through calls and scheduling." />
+          <meta name="description" content={`Novocall is a callback app that make it easy for businesses communicate with their website visitors through calls and scheduling.`} />
         </>
       ),
     },

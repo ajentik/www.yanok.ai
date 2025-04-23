@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Dotcal"
-      description="Dotcal makes scheduling easier with beautiful, customizable booking pages that help you make bookings with friends, colleagues, and clients in style."
+      description={`Dotcal makes scheduling easier with beautiful, customizable booking pages that help you make bookings with friends, colleagues, and clients in style.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -67,7 +67,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Dotcal</title>
-          <meta name="description" content="Dotcal makes scheduling easier with beautiful, customizable booking pages that help you make bookings with friends, colleagues, and clients in style." />
+          <meta name="description" content={`Dotcal makes scheduling easier with beautiful, customizable booking pages that help you make bookings with friends, colleagues, and clients in style.`} />
         </>
       ),
     },

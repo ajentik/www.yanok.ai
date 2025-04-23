@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="TIDY"
-      description="TIDY lets you book and manage cleaning and maintenance for homes, offices, or rental properties."
+      description={`TIDY lets you book and manage cleaning and maintenance for homes, offices, or rental properties.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -91,7 +91,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>TIDY</title>
-          <meta name="description" content="TIDY lets you book and manage cleaning and maintenance for homes, offices, or rental properties." />
+          <meta name="description" content={`TIDY lets you book and manage cleaning and maintenance for homes, offices, or rental properties.`} />
         </>
       ),
     },

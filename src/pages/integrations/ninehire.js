@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Ninehire"
-      description="Ninehire is a collaboration tool that helps you with recruitment and applicants management."
+      description={`Ninehire is a collaboration tool that helps you with recruitment and applicants management.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -61,7 +61,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Ninehire</title>
-          <meta name="description" content="Ninehire is a collaboration tool that helps you with recruitment and applicants management." />
+          <meta name="description" content={`Ninehire is a collaboration tool that helps you with recruitment and applicants management.`} />
         </>
       ),
     },

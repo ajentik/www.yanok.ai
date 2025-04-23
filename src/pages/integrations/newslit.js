@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Newslit"
-      description="Newslit is a next-generation news monitoring and research tool for PR professionals, investors, researchers, marketers, sales people, consultants, and business owners. Continuously tracking the most comprehensive set of important news sources, and integrating social signals from thousands of top business influencers."
+      description={`Newslit is a next-generation news monitoring and research tool for PR professionals, investors, researchers, marketers, sales people, consultants, and business owners. Continuously tracking the most comprehensive set of important news sources, and integrating social signals from thousands of top business influencers.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -62,7 +62,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Newslit</title>
-          <meta name="description" content="Newslit is a next-generation news monitoring and research tool for PR professionals, investors, researchers, marketers, sales people, consultants, and business owners. Continuously tracking the most comprehensive set of important news sources, and integrating social signals from thousands of top business influencers." />
+          <meta name="description" content={`Newslit is a next-generation news monitoring and research tool for PR professionals, investors, researchers, marketers, sales people, consultants, and business owners. Continuously tracking the most comprehensive set of important news sources, and integrating social signals from thousands of top business influencers.`} />
         </>
       ),
     },

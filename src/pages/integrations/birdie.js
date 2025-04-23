@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Birdie"
-      description="Birdie is a platform that allows people in product-related jobs to centralize and classify user feedback from many sources in a single place and get insights with the help of AI"
+      description={`Birdie is a platform that allows people in product-related jobs to centralize and classify user feedback from many sources in a single place and get insights with the help of AI`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Birdie</title>
-          <meta name="description" content="Birdie is a platform that allows people in product-related jobs to centralize and classify user feedback from many sources in a single place and get insights with the help of AI" />
+          <meta name="description" content={`Birdie is a platform that allows people in product-related jobs to centralize and classify user feedback from many sources in a single place and get insights with the help of AI`} />
         </>
       ),
     },

@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="TextSanity"
-      description="Connect TextSanity with apps you use everyday. Integrate with 3,000 apps on Zapier - it's the easiest way to automate your text marketing."
+      description={`Connect TextSanity with apps you use everyday. Integrate with 3,000 apps on Zapier - it's the easiest way to automate your text marketing.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -86,7 +86,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>TextSanity</title>
-          <meta name="description" content="Connect TextSanity with apps you use everyday. Integrate with 3,000 apps on Zapier - it's the easiest way to automate your text marketing." />
+          <meta name="description" content={`Connect TextSanity with apps you use everyday. Integrate with 3,000 apps on Zapier - it's the easiest way to automate your text marketing.`} />
         </>
       ),
     },

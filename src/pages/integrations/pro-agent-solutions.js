@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="ProAgentSolutions"
-      description="Pro Agent Solutions helps real estate agents and brokers manage their customer relationships, stay organized and generate leads so they can sell more homes."
+      description={`Pro Agent Solutions helps real estate agents and brokers manage their customer relationships, stay organized and generate leads so they can sell more homes.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -81,7 +81,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>ProAgentSolutions</title>
-          <meta name="description" content="Pro Agent Solutions helps real estate agents and brokers manage their customer relationships, stay organized and generate leads so they can sell more homes." />
+          <meta name="description" content={`Pro Agent Solutions helps real estate agents and brokers manage their customer relationships, stay organized and generate leads so they can sell more homes.`} />
         </>
       ),
     },

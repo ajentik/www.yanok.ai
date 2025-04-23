@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="NationBuilder"
-      description="NationBuilder is designed to power your organizations, movements, and campaigns."
+      description={`NationBuilder is designed to power your organizations, movements, and campaigns.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -171,7 +171,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>NationBuilder</title>
-          <meta name="description" content="NationBuilder is designed to power your organizations, movements, and campaigns." />
+          <meta name="description" content={`NationBuilder is designed to power your organizations, movements, and campaigns.`} />
         </>
       ),
     },

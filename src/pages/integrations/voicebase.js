@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Voicebase"
-      description="Provides simple APIs for automatic speech-to-text, speech analytics and predictive insights."
+      description={`Provides simple APIs for automatic speech-to-text, speech analytics and predictive insights.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +53,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Voicebase</title>
-          <meta name="description" content="Provides simple APIs for automatic speech-to-text, speech analytics and predictive insights." />
+          <meta name="description" content={`Provides simple APIs for automatic speech-to-text, speech analytics and predictive insights.`} />
         </>
       ),
     },

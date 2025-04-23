@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Viral Leads Ninja"
-      description="Viral Leads Ninja is a lead generation tool."
+      description={`Viral Leads Ninja is a lead generation tool.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Viral Leads Ninja</title>
-          <meta name="description" content="Viral Leads Ninja is a lead generation tool." />
+          <meta name="description" content={`Viral Leads Ninja is a lead generation tool.`} />
         </>
       ),
     },

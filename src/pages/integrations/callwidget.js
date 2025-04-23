@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="CallWidget"
-      description="CallWidget is an AI powered lead generation software designed to generate more prospects from your website."
+      description={`CallWidget is an AI powered lead generation software designed to generate more prospects from your website.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -96,7 +96,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>CallWidget</title>
-          <meta name="description" content="CallWidget is an AI powered lead generation software designed to generate more prospects from your website." />
+          <meta name="description" content={`CallWidget is an AI powered lead generation software designed to generate more prospects from your website.`} />
         </>
       ),
     },

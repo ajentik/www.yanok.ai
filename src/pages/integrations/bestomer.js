@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Bestomer"
-      description="Bestomer is a platform to help you build, share, engage and act to provide great experiences for your customers. Integrate with our Zapier API to automatically engage your Bestomers and get/give help when it's needed."
+      description={`Bestomer is a platform to help you build, share, engage and act to provide great experiences for your customers. Integrate with our Zapier API to automatically engage your Bestomers and get/give help when it's needed.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Bestomer</title>
-          <meta name="description" content="Bestomer is a platform to help you build, share, engage and act to provide great experiences for your customers. Integrate with our Zapier API to automatically engage your Bestomers and get/give help when it's needed." />
+          <meta name="description" content={`Bestomer is a platform to help you build, share, engage and act to provide great experiences for your customers. Integrate with our Zapier API to automatically engage your Bestomers and get/give help when it's needed.`} />
         </>
       ),
     },

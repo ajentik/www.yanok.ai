@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Microsoft Excel"
-      description="Microsoft's Excel is a spreadsheet application used by millions of users across the world. It is part of the Office ecosystem and is considered the industry standard for spreadsheets. Only files on OneDrive for Business (available with Office 365 and Sharepoint server) are supported at this time with Zapier."
+      description={`Microsoft's Excel is a spreadsheet application used by millions of users across the world. It is part of the Office ecosystem and is considered the industry standard for spreadsheets. Only files on OneDrive for Business (available with Office 365 and Sharepoint server) are supported at this time with Zapier.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -101,7 +101,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Microsoft Excel</title>
-          <meta name="description" content="Microsoft's Excel is a spreadsheet application used by millions of users across the world. It is part of the Office ecosystem and is considered the industry standard for spreadsheets. Only files on OneDrive for Business (available with Office 365 and Sharepoint server) are supported at this time with Zapier." />
+          <meta name="description" content={`Microsoft's Excel is a spreadsheet application used by millions of users across the world. It is part of the Office ecosystem and is considered the industry standard for spreadsheets. Only files on OneDrive for Business (available with Office 365 and Sharepoint server) are supported at this time with Zapier.`} />
         </>
       ),
     },

@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Relate"
-      description="Relate is a simple collaborative sales and CRM software."
+      description={`Relate is a simple collaborative sales and CRM software.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -136,7 +136,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Relate</title>
-          <meta name="description" content="Relate is a simple collaborative sales and CRM software." />
+          <meta name="description" content={`Relate is a simple collaborative sales and CRM software.`} />
         </>
       ),
     },

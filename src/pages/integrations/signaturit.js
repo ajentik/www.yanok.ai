@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Signaturit"
-      description="Signaturit allows to send and sign documents online with legally binding electronic signatures."
+      description={`Signaturit allows to send and sign documents online with legally binding electronic signatures.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -81,7 +81,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Signaturit</title>
-          <meta name="description" content="Signaturit allows to send and sign documents online with legally binding electronic signatures." />
+          <meta name="description" content={`Signaturit allows to send and sign documents online with legally binding electronic signatures.`} />
         </>
       ),
     },

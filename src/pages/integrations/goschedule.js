@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="GoSchedule"
-      description="GoSchedule is the appointment scheduling SaaS Software for SMB and Enterprise Segment to schedule resources, book online appointments, accept payments online and seamlessly integrates with websites and apps with API first notion."
+      description={`GoSchedule is the appointment scheduling SaaS Software for SMB and Enterprise Segment to schedule resources, book online appointments, accept payments online and seamlessly integrates with websites and apps with API first notion.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -66,7 +66,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>GoSchedule</title>
-          <meta name="description" content="GoSchedule is the appointment scheduling SaaS Software for SMB and Enterprise Segment to schedule resources, book online appointments, accept payments online and seamlessly integrates with websites and apps with API first notion." />
+          <meta name="description" content={`GoSchedule is the appointment scheduling SaaS Software for SMB and Enterprise Segment to schedule resources, book online appointments, accept payments online and seamlessly integrates with websites and apps with API first notion.`} />
         </>
       ),
     },

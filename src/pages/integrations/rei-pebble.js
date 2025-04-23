@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="REI Pebble"
-      description="Streamline & simplify your land Investing with REI Pebble."
+      description={`Streamline & simplify your land Investing with REI Pebble.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -67,7 +67,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>REI Pebble</title>
-          <meta name="description" content="Streamline & simplify your land Investing with REI Pebble." />
+          <meta name="description" content={`Streamline & simplify your land Investing with REI Pebble.`} />
         </>
       ),
     },

@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Pupsai"
-      description="Pupsai Platform allows you to provide Consistent 24/7 Customer Care, Marketing and Sales"
+      description={`Pupsai Platform allows you to provide Consistent 24/7 Customer Care, Marketing and Sales`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -71,7 +71,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Pupsai</title>
-          <meta name="description" content="Pupsai Platform allows you to provide Consistent 24/7 Customer Care, Marketing and Sales" />
+          <meta name="description" content={`Pupsai Platform allows you to provide Consistent 24/7 Customer Care, Marketing and Sales`} />
         </>
       ),
     },

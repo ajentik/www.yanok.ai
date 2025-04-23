@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="HireWho"
-      description="HireWho is a hiring platform that enables you to hire better by automating tedious tasks with simple yet powerful automations."
+      description={`HireWho is a hiring platform that enables you to hire better by automating tedious tasks with simple yet powerful automations.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -67,7 +67,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>HireWho</title>
-          <meta name="description" content="HireWho is a hiring platform that enables you to hire better by automating tedious tasks with simple yet powerful automations." />
+          <meta name="description" content={`HireWho is a hiring platform that enables you to hire better by automating tedious tasks with simple yet powerful automations.`} />
         </>
       ),
     },

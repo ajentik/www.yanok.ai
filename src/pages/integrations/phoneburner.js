@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="PhoneBurner"
-      description="PhoneBurner is an outbound sales dialing platform that increases live client interactions and overall team productivity and transparency."
+      description={`PhoneBurner is an outbound sales dialing platform that increases live client interactions and overall team productivity and transparency.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -62,7 +62,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>PhoneBurner</title>
-          <meta name="description" content="PhoneBurner is an outbound sales dialing platform that increases live client interactions and overall team productivity and transparency." />
+          <meta name="description" content={`PhoneBurner is an outbound sales dialing platform that increases live client interactions and overall team productivity and transparency.`} />
         </>
       ),
     },

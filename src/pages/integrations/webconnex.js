@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Webconnex"
-      description="Thousands of the world's biggest and most trusted brands use Webconnex products for their fundraising and events."
+      description={`Thousands of the world's biggest and most trusted brands use Webconnex products for their fundraising and events.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +53,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Webconnex</title>
-          <meta name="description" content="Thousands of the world's biggest and most trusted brands use Webconnex products for their fundraising and events." />
+          <meta name="description" content={`Thousands of the world's biggest and most trusted brands use Webconnex products for their fundraising and events.`} />
         </>
       ),
     },

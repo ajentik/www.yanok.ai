@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Knowork"
-      description="Knowork is a coworking space management and community engagement platform."
+      description={`Knowork is a coworking space management and community engagement platform.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -82,7 +82,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Knowork</title>
-          <meta name="description" content="Knowork is a coworking space management and community engagement platform." />
+          <meta name="description" content={`Knowork is a coworking space management and community engagement platform.`} />
         </>
       ),
     },

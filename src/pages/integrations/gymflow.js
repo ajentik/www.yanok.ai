@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="GymFlow"
-      description="Gymflow is an intuitive all-in-one business management platform for gyms and studios."
+      description={`Gymflow is an intuitive all-in-one business management platform for gyms and studios.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -86,7 +86,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>GymFlow</title>
-          <meta name="description" content="Gymflow is an intuitive all-in-one business management platform for gyms and studios." />
+          <meta name="description" content={`Gymflow is an intuitive all-in-one business management platform for gyms and studios.`} />
         </>
       ),
     },

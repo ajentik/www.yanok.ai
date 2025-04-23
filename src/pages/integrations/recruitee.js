@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Recruitee"
-      description="Recruitee is an all-in-one hiring platform for teams of all sizes, that includes employer branding, job promoting, talent sourcing, and applicant tracking."
+      description={`Recruitee is an all-in-one hiring platform for teams of all sizes, that includes employer branding, job promoting, talent sourcing, and applicant tracking.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -206,7 +206,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Recruitee</title>
-          <meta name="description" content="Recruitee is an all-in-one hiring platform for teams of all sizes, that includes employer branding, job promoting, talent sourcing, and applicant tracking." />
+          <meta name="description" content={`Recruitee is an all-in-one hiring platform for teams of all sizes, that includes employer branding, job promoting, talent sourcing, and applicant tracking.`} />
         </>
       ),
     },

@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="RingByName"
-      description="RingByName is a cloud-based phone service. It helps you build stronger relationships with your customers with CRM features."
+      description={`RingByName is a cloud-based phone service. It helps you build stronger relationships with your customers with CRM features.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -111,7 +111,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>RingByName</title>
-          <meta name="description" content="RingByName is a cloud-based phone service. It helps you build stronger relationships with your customers with CRM features." />
+          <meta name="description" content={`RingByName is a cloud-based phone service. It helps you build stronger relationships with your customers with CRM features.`} />
         </>
       ),
     },

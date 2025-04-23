@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Funnel-Tunnel"
-      description="Funnel-Tunnel is all-in-one software for small and medium-sized companies to successfully digitize. From design to marketing to sales, Funnel-Tunnel is a complete solution."
+      description={`Funnel-Tunnel is all-in-one software for small and medium-sized companies to successfully digitize. From design to marketing to sales, Funnel-Tunnel is a complete solution.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -106,7 +106,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Funnel-Tunnel</title>
-          <meta name="description" content="Funnel-Tunnel is all-in-one software for small and medium-sized companies to successfully digitize. From design to marketing to sales, Funnel-Tunnel is a complete solution." />
+          <meta name="description" content={`Funnel-Tunnel is all-in-one software for small and medium-sized companies to successfully digitize. From design to marketing to sales, Funnel-Tunnel is a complete solution.`} />
         </>
       ),
     },

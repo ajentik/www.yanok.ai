@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="RallyUp"
-      description="RallyUp.com provides nonprofit organizations with their own branded platform for launching amazing virtual fundraising experiences."
+      description={`RallyUp.com provides nonprofit organizations with their own branded platform for launching amazing virtual fundraising experiences.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -152,7 +152,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>RallyUp</title>
-          <meta name="description" content="RallyUp.com provides nonprofit organizations with their own branded platform for launching amazing virtual fundraising experiences." />
+          <meta name="description" content={`RallyUp.com provides nonprofit organizations with their own branded platform for launching amazing virtual fundraising experiences.`} />
         </>
       ),
     },

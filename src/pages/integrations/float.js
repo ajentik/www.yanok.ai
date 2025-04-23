@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Float"
-      description="Float is the fast and friendly resource scheduling app. Keep track of who's working on what and when."
+      description={`Float is the fast and friendly resource scheduling app. Keep track of who's working on what and when.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -176,7 +176,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Float</title>
-          <meta name="description" content="Float is the fast and friendly resource scheduling app. Keep track of who's working on what and when." />
+          <meta name="description" content={`Float is the fast and friendly resource scheduling app. Keep track of who's working on what and when.`} />
         </>
       ),
     },

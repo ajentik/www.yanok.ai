@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="DatHuis"
-      description="DatHuis is a marketing automation platform for professionals working in residental real estate. With DatHuis you can generate leads and turn leads into customers."
+      description={`DatHuis is a marketing automation platform for professionals working in residental real estate. With DatHuis you can generate leads and turn leads into customers.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -71,7 +71,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>DatHuis</title>
-          <meta name="description" content="DatHuis is a marketing automation platform for professionals working in residental real estate. With DatHuis you can generate leads and turn leads into customers." />
+          <meta name="description" content={`DatHuis is a marketing automation platform for professionals working in residental real estate. With DatHuis you can generate leads and turn leads into customers.`} />
         </>
       ),
     },

@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="NGP VAN"
-      description="NGP VAN is the leading technology provider to Democratic and progressive campaigns and organizations, nonprofits, municipalities, and others, offering an integrated platform of the best fundraising, compliance, field, organizing, digital, and social networking products."
+      description={`NGP VAN is the leading technology provider to Democratic and progressive campaigns and organizations, nonprofits, municipalities, and others, offering an integrated platform of the best fundraising, compliance, field, organizing, digital, and social networking products.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -127,7 +127,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>NGP VAN</title>
-          <meta name="description" content="NGP VAN is the leading technology provider to Democratic and progressive campaigns and organizations, nonprofits, municipalities, and others, offering an integrated platform of the best fundraising, compliance, field, organizing, digital, and social networking products." />
+          <meta name="description" content={`NGP VAN is the leading technology provider to Democratic and progressive campaigns and organizations, nonprofits, municipalities, and others, offering an integrated platform of the best fundraising, compliance, field, organizing, digital, and social networking products.`} />
         </>
       ),
     },

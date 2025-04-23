@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="JW Player"
-      description="JW Player helps you grow your business with its flexible platform of video services, powered by billions of signals from across our vast network."
+      description={`JW Player helps you grow your business with its flexible platform of video services, powered by billions of signals from across our vast network.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -76,7 +76,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>JW Player</title>
-          <meta name="description" content="JW Player helps you grow your business with its flexible platform of video services, powered by billions of signals from across our vast network." />
+          <meta name="description" content={`JW Player helps you grow your business with its flexible platform of video services, powered by billions of signals from across our vast network.`} />
         </>
       ),
     },

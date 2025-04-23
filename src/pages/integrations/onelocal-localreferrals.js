@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="OneLocal LocalReferrals"
-      description="LocalReferrals by OneLocal allows you to create a fully customized referral program so you can generate more business from your customers."
+      description={`LocalReferrals by OneLocal allows you to create a fully customized referral program so you can generate more business from your customers.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -76,7 +76,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>OneLocal LocalReferrals</title>
-          <meta name="description" content="LocalReferrals by OneLocal allows you to create a fully customized referral program so you can generate more business from your customers." />
+          <meta name="description" content={`LocalReferrals by OneLocal allows you to create a fully customized referral program so you can generate more business from your customers.`} />
         </>
       ),
     },

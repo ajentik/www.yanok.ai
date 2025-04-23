@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Delenta"
-      description="Delenta is an all-in-one digital platform for knowledge-based entrepreneurs, such as coaches, mentors, and consultants. Through our platform, you can launch, manage & market your practice with ease and effortless professionalism."
+      description={`Delenta is an all-in-one digital platform for knowledge-based entrepreneurs, such as coaches, mentors, and consultants. Through our platform, you can launch, manage & market your practice with ease and effortless professionalism.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -92,7 +92,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Delenta</title>
-          <meta name="description" content="Delenta is an all-in-one digital platform for knowledge-based entrepreneurs, such as coaches, mentors, and consultants. Through our platform, you can launch, manage & market your practice with ease and effortless professionalism." />
+          <meta name="description" content={`Delenta is an all-in-one digital platform for knowledge-based entrepreneurs, such as coaches, mentors, and consultants. Through our platform, you can launch, manage & market your practice with ease and effortless professionalism.`} />
         </>
       ),
     },

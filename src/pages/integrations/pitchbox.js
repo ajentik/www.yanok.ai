@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Pitchbox"
-      description="Link building, influencer outreach and content promotion platform for agencies, publishers, and brands."
+      description={`Link building, influencer outreach and content promotion platform for agencies, publishers, and brands.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +53,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Pitchbox</title>
-          <meta name="description" content="Link building, influencer outreach and content promotion platform for agencies, publishers, and brands." />
+          <meta name="description" content={`Link building, influencer outreach and content promotion platform for agencies, publishers, and brands.`} />
         </>
       ),
     },

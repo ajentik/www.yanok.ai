@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="WP SMS"
-      description="WP SMS is the most advanced SMS messaging and notification plugin for WordPress."
+      description={`WP SMS is the most advanced SMS messaging and notification plugin for WordPress.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -71,7 +71,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>WP SMS</title>
-          <meta name="description" content="WP SMS is the most advanced SMS messaging and notification plugin for WordPress." />
+          <meta name="description" content={`WP SMS is the most advanced SMS messaging and notification plugin for WordPress.`} />
         </>
       ),
     },

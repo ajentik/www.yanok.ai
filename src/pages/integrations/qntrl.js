@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Qntrl"
-      description="Qntrl is a business orchestration platform to design, automate, and analyze all your business processes. From everyday workflows to complex activities, Qntrl lets you plan every detail and track the progress of tasks as they move through your team."
+      description={`Qntrl is a business orchestration platform to design, automate, and analyze all your business processes. From everyday workflows to complex activities, Qntrl lets you plan every detail and track the progress of tasks as they move through your team.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -81,7 +81,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Qntrl</title>
-          <meta name="description" content="Qntrl is a business orchestration platform to design, automate, and analyze all your business processes. From everyday workflows to complex activities, Qntrl lets you plan every detail and track the progress of tasks as they move through your team." />
+          <meta name="description" content={`Qntrl is a business orchestration platform to design, automate, and analyze all your business processes. From everyday workflows to complex activities, Qntrl lets you plan every detail and track the progress of tasks as they move through your team.`} />
         </>
       ),
     },

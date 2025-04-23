@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="AdRoll"
-      description="AdRoll helps you advertise to potential customers (website visitors or email addresses) and make them come to your site and convert!"
+      description={`AdRoll helps you advertise to potential customers (website visitors or email addresses) and make them come to your site and convert!`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>AdRoll</title>
-          <meta name="description" content="AdRoll helps you advertise to potential customers (website visitors or email addresses) and make them come to your site and convert!" />
+          <meta name="description" content={`AdRoll helps you advertise to potential customers (website visitors or email addresses) and make them come to your site and convert!`} />
         </>
       ),
     },

@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="SYNDUIT"
-      description="SYNDUIT is the first marketing platform with content for your industry."
+      description={`SYNDUIT is the first marketing platform with content for your industry.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -61,7 +61,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>SYNDUIT</title>
-          <meta name="description" content="SYNDUIT is the first marketing platform with content for your industry." />
+          <meta name="description" content={`SYNDUIT is the first marketing platform with content for your industry.`} />
         </>
       ),
     },

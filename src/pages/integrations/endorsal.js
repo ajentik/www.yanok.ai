@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Endorsal"
-      description="Endorsal fully automates the collection and display of testimonials & reviews, boosting social proof on autopilot."
+      description={`Endorsal fully automates the collection and display of testimonials & reviews, boosting social proof on autopilot.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -71,7 +71,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Endorsal</title>
-          <meta name="description" content="Endorsal fully automates the collection and display of testimonials & reviews, boosting social proof on autopilot." />
+          <meta name="description" content={`Endorsal fully automates the collection and display of testimonials & reviews, boosting social proof on autopilot.`} />
         </>
       ),
     },

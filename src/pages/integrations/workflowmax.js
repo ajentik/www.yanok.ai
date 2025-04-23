@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="WorkflowMax"
-      description="Over 10,000 service business trust WorkflowMax for their quoting, time sheeting, job management, invoicing and workflow management."
+      description={`Over 10,000 service business trust WorkflowMax for their quoting, time sheeting, job management, invoicing and workflow management.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +53,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>WorkflowMax</title>
-          <meta name="description" content="Over 10,000 service business trust WorkflowMax for their quoting, time sheeting, job management, invoicing and workflow management." />
+          <meta name="description" content={`Over 10,000 service business trust WorkflowMax for their quoting, time sheeting, job management, invoicing and workflow management.`} />
         </>
       ),
     },

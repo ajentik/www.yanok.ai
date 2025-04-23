@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Simplicate"
-      description="All-in-one CRM and project software: CRM, sales, project management, planning, time registration & invoicing."
+      description={`All-in-one CRM and project software: CRM, sales, project management, planning, time registration & invoicing.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -231,7 +231,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Simplicate</title>
-          <meta name="description" content="All-in-one CRM and project software: CRM, sales, project management, planning, time registration & invoicing." />
+          <meta name="description" content={`All-in-one CRM and project software: CRM, sales, project management, planning, time registration & invoicing.`} />
         </>
       ),
     },

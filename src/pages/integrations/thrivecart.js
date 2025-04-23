@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="ThriveCart"
-      description="ThriveCart is the no. 1 cart software that grows your income from existing traffic."
+      description={`ThriveCart is the no. 1 cart software that grows your income from existing traffic.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -142,7 +142,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>ThriveCart</title>
-          <meta name="description" content="ThriveCart is the no. 1 cart software that grows your income from existing traffic." />
+          <meta name="description" content={`ThriveCart is the no. 1 cart software that grows your income from existing traffic.`} />
         </>
       ),
     },

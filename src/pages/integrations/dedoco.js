@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Dedoco"
-      description="Dedoco is a digital document and signing solution that transforms the way enterprises manage digital workflows, while issuing trusted, verifiable documents and credentials."
+      description={`Dedoco is a digital document and signing solution that transforms the way enterprises manage digital workflows, while issuing trusted, verifiable documents and credentials.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -67,7 +67,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Dedoco</title>
-          <meta name="description" content="Dedoco is a digital document and signing solution that transforms the way enterprises manage digital workflows, while issuing trusted, verifiable documents and credentials." />
+          <meta name="description" content={`Dedoco is a digital document and signing solution that transforms the way enterprises manage digital workflows, while issuing trusted, verifiable documents and credentials.`} />
         </>
       ),
     },

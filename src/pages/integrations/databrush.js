@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Databrush"
-      description="Databrush is the best way to generate lots of image with variations"
+      description={`Databrush is the best way to generate lots of image with variations`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Databrush</title>
-          <meta name="description" content="Databrush is the best way to generate lots of image with variations" />
+          <meta name="description" content={`Databrush is the best way to generate lots of image with variations`} />
         </>
       ),
     },

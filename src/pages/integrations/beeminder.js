@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Beeminder"
-      description="Beeminder is a goal-tracking tool with teeth. Use Zapier to send Beeminder data and let Beeminder plot your progress on a Yellow Brick Road to your goal. Keep all your datapoints on the road and Beeminder will always be free. Go off the road and you (literally) pay the price."
+      description={`Beeminder is a goal-tracking tool with teeth. Use Zapier to send Beeminder data and let Beeminder plot your progress on a Yellow Brick Road to your goal. Keep all your datapoints on the road and Beeminder will always be free. Go off the road and you (literally) pay the price.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Beeminder</title>
-          <meta name="description" content="Beeminder is a goal-tracking tool with teeth. Use Zapier to send Beeminder data and let Beeminder plot your progress on a Yellow Brick Road to your goal. Keep all your datapoints on the road and Beeminder will always be free. Go off the road and you (literally) pay the price." />
+          <meta name="description" content={`Beeminder is a goal-tracking tool with teeth. Use Zapier to send Beeminder data and let Beeminder plot your progress on a Yellow Brick Road to your goal. Keep all your datapoints on the road and Beeminder will always be free. Go off the road and you (literally) pay the price.`} />
         </>
       ),
     },

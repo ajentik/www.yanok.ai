@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Spincast"
-      description="PelotonZap allows you to integrate your Peloton Data into other services."
+      description={`PelotonZap allows you to integrate your Peloton Data into other services.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -62,7 +62,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Spincast</title>
-          <meta name="description" content="PelotonZap allows you to integrate your Peloton Data into other services." />
+          <meta name="description" content={`PelotonZap allows you to integrate your Peloton Data into other services.`} />
         </>
       ),
     },

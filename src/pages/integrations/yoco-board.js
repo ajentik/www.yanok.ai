@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="YoCo Board"
-      description="YoCo Board is an online time tracking application that lets you track employees work hours."
+      description={`YoCo Board is an online time tracking application that lets you track employees work hours.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -66,7 +66,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>YoCo Board</title>
-          <meta name="description" content="YoCo Board is an online time tracking application that lets you track employees work hours." />
+          <meta name="description" content={`YoCo Board is an online time tracking application that lets you track employees work hours.`} />
         </>
       ),
     },

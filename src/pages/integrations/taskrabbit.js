@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="TaskRabbit"
-      description="TaskRabbit is an online and mobile marketplace that matches freelance labor with local demand."
+      description={`TaskRabbit is an online and mobile marketplace that matches freelance labor with local demand.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +53,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>TaskRabbit</title>
-          <meta name="description" content="TaskRabbit is an online and mobile marketplace that matches freelance labor with local demand." />
+          <meta name="description" content={`TaskRabbit is an online and mobile marketplace that matches freelance labor with local demand.`} />
         </>
       ),
     },

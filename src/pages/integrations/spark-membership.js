@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Spark Membership"
-      description="Spark Membership is an online CRM and marketing automation platform for Martial Arts, Kickboxing, Gyms and MMA studios."
+      description={`Spark Membership is an online CRM and marketing automation platform for Martial Arts, Kickboxing, Gyms and MMA studios.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Spark Membership</title>
-          <meta name="description" content="Spark Membership is an online CRM and marketing automation platform for Martial Arts, Kickboxing, Gyms and MMA studios." />
+          <meta name="description" content={`Spark Membership is an online CRM and marketing automation platform for Martial Arts, Kickboxing, Gyms and MMA studios.`} />
         </>
       ),
     },

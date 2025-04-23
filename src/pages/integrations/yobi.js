@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Yobi"
-      description="With Yobi you can make calls, send SMS messages and respond to Social Media messages in one app."
+      description={`With Yobi you can make calls, send SMS messages and respond to Social Media messages in one app.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -91,7 +91,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Yobi</title>
-          <meta name="description" content="With Yobi you can make calls, send SMS messages and respond to Social Media messages in one app." />
+          <meta name="description" content={`With Yobi you can make calls, send SMS messages and respond to Social Media messages in one app.`} />
         </>
       ),
     },

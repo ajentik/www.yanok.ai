@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Serene"
-      description="Block distracting websites & apps, organised your day around one goal that matters, and focus on what matters with Serene, the macOS app for laser-focus."
+      description={`Block distracting websites & apps, organised your day around one goal that matters, and focus on what matters with Serene, the macOS app for laser-focus.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Serene</title>
-          <meta name="description" content="Block distracting websites & apps, organised your day around one goal that matters, and focus on what matters with Serene, the macOS app for laser-focus." />
+          <meta name="description" content={`Block distracting websites & apps, organised your day around one goal that matters, and focus on what matters with Serene, the macOS app for laser-focus.`} />
         </>
       ),
     },

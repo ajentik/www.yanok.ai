@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Leadpages"
-      description="Leadpages lets you build beautiful, high-converting landing pages, sign-up forms, and other conversion assets."
+      description={`Leadpages lets you build beautiful, high-converting landing pages, sign-up forms, and other conversion assets.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Leadpages</title>
-          <meta name="description" content="Leadpages lets you build beautiful, high-converting landing pages, sign-up forms, and other conversion assets." />
+          <meta name="description" content={`Leadpages lets you build beautiful, high-converting landing pages, sign-up forms, and other conversion assets.`} />
         </>
       ),
     },

@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Yeti Snow"
-      description="Snow management software to control and grow your snow management business."
+      description={`Snow management software to control and grow your snow management business.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -62,7 +62,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Yeti Snow</title>
-          <meta name="description" content="Snow management software to control and grow your snow management business." />
+          <meta name="description" content={`Snow management software to control and grow your snow management business.`} />
         </>
       ),
     },

@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Domo"
-      description="Domo, Inc. is a computer software company specializeing in business intelligence tools and data visualization."
+      description={`Domo, Inc. is a computer software company specializeing in business intelligence tools and data visualization.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +53,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Domo</title>
-          <meta name="description" content="Domo, Inc. is a computer software company specializeing in business intelligence tools and data visualization." />
+          <meta name="description" content={`Domo, Inc. is a computer software company specializeing in business intelligence tools and data visualization.`} />
         </>
       ),
     },

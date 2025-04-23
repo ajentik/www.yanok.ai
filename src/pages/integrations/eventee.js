@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Eventee"
-      description="Eventee is an intuitive mobile and web app that enhances attendee experience and engagement at in-person, virtual or hybrid events."
+      description={`Eventee is an intuitive mobile and web app that enhances attendee experience and engagement at in-person, virtual or hybrid events.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -71,7 +71,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Eventee</title>
-          <meta name="description" content="Eventee is an intuitive mobile and web app that enhances attendee experience and engagement at in-person, virtual or hybrid events." />
+          <meta name="description" content={`Eventee is an intuitive mobile and web app that enhances attendee experience and engagement at in-person, virtual or hybrid events.`} />
         </>
       ),
     },

@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="MapMyFitness"
-      description="Your workout, your device, anywhere, anytime. Plan, track, analyze and share your journey with MapMyFitness."
+      description={`Your workout, your device, anywhere, anytime. Plan, track, analyze and share your journey with MapMyFitness.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -61,7 +61,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>MapMyFitness</title>
-          <meta name="description" content="Your workout, your device, anywhere, anytime. Plan, track, analyze and share your journey with MapMyFitness." />
+          <meta name="description" content={`Your workout, your device, anywhere, anytime. Plan, track, analyze and share your journey with MapMyFitness.`} />
         </>
       ),
     },

@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="ARPADENT"
-      description="ARPADENT is a dental software accredited by EESZT. A dentist's best friend."
+      description={`ARPADENT is a dental software accredited by EESZT. A dentist's best friend.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>ARPADENT</title>
-          <meta name="description" content="ARPADENT is a dental software accredited by EESZT. A dentist's best friend." />
+          <meta name="description" content={`ARPADENT is a dental software accredited by EESZT. A dentist's best friend.`} />
         </>
       ),
     },

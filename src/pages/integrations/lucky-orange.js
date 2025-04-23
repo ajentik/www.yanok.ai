@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Lucky Orange"
-      description="Improve your website's conversion rate using a collection of tools including Dynamic Heatmaps, Session Recordings and Live Chat."
+      description={`Improve your website's conversion rate using a collection of tools including Dynamic Heatmaps, Session Recordings and Live Chat.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -66,7 +66,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Lucky Orange</title>
-          <meta name="description" content="Improve your website's conversion rate using a collection of tools including Dynamic Heatmaps, Session Recordings and Live Chat." />
+          <meta name="description" content={`Improve your website's conversion rate using a collection of tools including Dynamic Heatmaps, Session Recordings and Live Chat.`} />
         </>
       ),
     },

@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Inmoment"
-      description="InMoment provides SaaS-based customer survey and enterprise feedback management solutions for data collection activities."
+      description={`InMoment provides SaaS-based customer survey and enterprise feedback management solutions for data collection activities.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +53,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Inmoment</title>
-          <meta name="description" content="InMoment provides SaaS-based customer survey and enterprise feedback management solutions for data collection activities." />
+          <meta name="description" content={`InMoment provides SaaS-based customer survey and enterprise feedback management solutions for data collection activities.`} />
         </>
       ),
     },

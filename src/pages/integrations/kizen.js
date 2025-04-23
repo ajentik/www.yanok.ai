@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Kizen"
-      description="Kizen is a sales and marketing tool to collect, organize, and gain actionable insights on data."
+      description={`Kizen is a sales and marketing tool to collect, organize, and gain actionable insights on data.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -161,7 +161,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Kizen</title>
-          <meta name="description" content="Kizen is a sales and marketing tool to collect, organize, and gain actionable insights on data." />
+          <meta name="description" content={`Kizen is a sales and marketing tool to collect, organize, and gain actionable insights on data.`} />
         </>
       ),
     },

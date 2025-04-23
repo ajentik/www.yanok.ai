@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="ZapFloorHQ"
-      description="ZapFloorHQ really simplifies our billing process and allows us to easily generate all our monthly invoices and track the payments."
+      description={`ZapFloorHQ really simplifies our billing process and allows us to easily generate all our monthly invoices and track the payments.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -151,7 +151,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>ZapFloorHQ</title>
-          <meta name="description" content="ZapFloorHQ really simplifies our billing process and allows us to easily generate all our monthly invoices and track the payments." />
+          <meta name="description" content={`ZapFloorHQ really simplifies our billing process and allows us to easily generate all our monthly invoices and track the payments.`} />
         </>
       ),
     },

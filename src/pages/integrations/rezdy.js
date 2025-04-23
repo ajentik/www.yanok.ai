@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Rezdy"
-      description="Rezdy is a cloud-based reservation software and booking system, designed especially for tour, activity, shuttle bus, rental and sightseeing operators."
+      description={`Rezdy is a cloud-based reservation software and booking system, designed especially for tour, activity, shuttle bus, rental and sightseeing operators.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -67,7 +67,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Rezdy</title>
-          <meta name="description" content="Rezdy is a cloud-based reservation software and booking system, designed especially for tour, activity, shuttle bus, rental and sightseeing operators." />
+          <meta name="description" content={`Rezdy is a cloud-based reservation software and booking system, designed especially for tour, activity, shuttle bus, rental and sightseeing operators.`} />
         </>
       ),
     },

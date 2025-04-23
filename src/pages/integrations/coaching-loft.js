@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Coaching Loft"
-      description="Coaching Loft is a platform that helps coaches manage and organize their practices to deliver a fluent coaching experience to their clients."
+      description={`Coaching Loft is a platform that helps coaches manage and organize their practices to deliver a fluent coaching experience to their clients.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -106,7 +106,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Coaching Loft</title>
-          <meta name="description" content="Coaching Loft is a platform that helps coaches manage and organize their practices to deliver a fluent coaching experience to their clients." />
+          <meta name="description" content={`Coaching Loft is a platform that helps coaches manage and organize their practices to deliver a fluent coaching experience to their clients.`} />
         </>
       ),
     },

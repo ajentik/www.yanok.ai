@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Klutch"
-      description="Klutch is a credit card for techies that allows you to add different features to the card"
+      description={`Klutch is a credit card for techies that allows you to add different features to the card`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Klutch</title>
-          <meta name="description" content="Klutch is a credit card for techies that allows you to add different features to the card" />
+          <meta name="description" content={`Klutch is a credit card for techies that allows you to add different features to the card`} />
         </>
       ),
     },

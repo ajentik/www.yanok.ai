@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="CaptainBook.io"
-      description="CaptainBook.io is a booking and ticketing software for travel tours and experience companies."
+      description={`CaptainBook.io is a booking and ticketing software for travel tours and experience companies.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -77,7 +77,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>CaptainBook.io</title>
-          <meta name="description" content="CaptainBook.io is a booking and ticketing software for travel tours and experience companies." />
+          <meta name="description" content={`CaptainBook.io is a booking and ticketing software for travel tours and experience companies.`} />
         </>
       ),
     },

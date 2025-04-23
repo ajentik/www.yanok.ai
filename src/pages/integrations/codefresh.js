@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Codefresh"
-      description="Codefresh is a continuous delivery and collaboration platform for Docker. Codefresh helps teams improve quality and increase speed-to-market by facilitating rapid feedback and testing cycles."
+      description={`Codefresh is a continuous delivery and collaboration platform for Docker. Codefresh helps teams improve quality and increase speed-to-market by facilitating rapid feedback and testing cycles.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +53,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Codefresh</title>
-          <meta name="description" content="Codefresh is a continuous delivery and collaboration platform for Docker. Codefresh helps teams improve quality and increase speed-to-market by facilitating rapid feedback and testing cycles." />
+          <meta name="description" content={`Codefresh is a continuous delivery and collaboration platform for Docker. Codefresh helps teams improve quality and increase speed-to-market by facilitating rapid feedback and testing cycles.`} />
         </>
       ),
     },

@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Pics.io"
-      description="Pics.io is a cloud service for digital assets management built on top of Google Drive."
+      description={`Pics.io is a cloud service for digital assets management built on top of Google Drive.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -107,7 +107,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Pics.io</title>
-          <meta name="description" content="Pics.io is a cloud service for digital assets management built on top of Google Drive." />
+          <meta name="description" content={`Pics.io is a cloud service for digital assets management built on top of Google Drive.`} />
         </>
       ),
     },

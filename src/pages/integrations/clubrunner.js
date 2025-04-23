@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="ClubRunner"
-      description="ClubRunner is the award-winning membership management and communication platform for clubs and districts."
+      description={`ClubRunner is the award-winning membership management and communication platform for clubs and districts.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +53,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>ClubRunner</title>
-          <meta name="description" content="ClubRunner is the award-winning membership management and communication platform for clubs and districts." />
+          <meta name="description" content={`ClubRunner is the award-winning membership management and communication platform for clubs and districts.`} />
         </>
       ),
     },

@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Cosential"
-      description="Cosential is a CRM and Proposal Database solution that allows AEC firms the ability to access and act upon data specific to their role."
+      description={`Cosential is a CRM and Proposal Database solution that allows AEC firms the ability to access and act upon data specific to their role.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +53,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Cosential</title>
-          <meta name="description" content="Cosential is a CRM and Proposal Database solution that allows AEC firms the ability to access and act upon data specific to their role." />
+          <meta name="description" content={`Cosential is a CRM and Proposal Database solution that allows AEC firms the ability to access and act upon data specific to their role.`} />
         </>
       ),
     },

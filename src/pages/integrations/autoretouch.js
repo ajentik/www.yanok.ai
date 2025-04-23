@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="autoRetouch"
-      description="autoRetouch is an AI-powered image editing service by meero"
+      description={`autoRetouch is an AI-powered image editing service by meero`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -76,7 +76,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>autoRetouch</title>
-          <meta name="description" content="autoRetouch is an AI-powered image editing service by meero" />
+          <meta name="description" content={`autoRetouch is an AI-powered image editing service by meero`} />
         </>
       ),
     },

@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Pinterest"
-      description="Pinterest is the world’s catalog of ideas that more than 100 million people around the world use every month to get more creative in their everyday lives. Save images and videos ("Pins") to curated collections ("Boards") from any website, or upload your own. Build your online presence and grow your audience by sharing your visual catalog, and track what your audience thinks through their Likes and repins."
+      description={`Pinterest is the world’s catalog of ideas that more than 100 million people around the world use every month to get more creative in their everyday lives. Save images and videos (`}Pins") to curated collections ("Boards") from any website, or upload your own. Build your online presence and grow your audience by sharing your visual catalog, and track what your audience thinks through their Likes and repins."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -71,7 +71,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Pinterest</title>
-          <meta name="description" content="Pinterest is the world’s catalog of ideas that more than 100 million people around the world use every month to get more creative in their everyday lives. Save images and videos ("Pins") to curated collections ("Boards") from any website, or upload your own. Build your online presence and grow your audience by sharing your visual catalog, and track what your audience thinks through their Likes and repins." />
+          <meta name="description" content={`Pinterest is the world’s catalog of ideas that more than 100 million people around the world use every month to get more creative in their everyday lives. Save images and videos (`}Pins") to curated collections ("Boards") from any website, or upload your own. Build your online presence and grow your audience by sharing your visual catalog, and track what your audience thinks through their Likes and repins." />
         </>
       ),
     },

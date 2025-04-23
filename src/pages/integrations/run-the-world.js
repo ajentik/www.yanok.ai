@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Run the World"
-      description="Run The World enables your to organize interactive events for groups to learn and socialize."
+      description={`Run The World enables your to organize interactive events for groups to learn and socialize.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Run the World</title>
-          <meta name="description" content="Run The World enables your to organize interactive events for groups to learn and socialize." />
+          <meta name="description" content={`Run The World enables your to organize interactive events for groups to learn and socialize.`} />
         </>
       ),
     },

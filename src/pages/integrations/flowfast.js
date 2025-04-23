@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="FlowFast"
-      description="FlowFast is a modern task tracker for agile teams."
+      description={`FlowFast is a modern task tracker for agile teams.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -116,7 +116,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>FlowFast</title>
-          <meta name="description" content="FlowFast is a modern task tracker for agile teams." />
+          <meta name="description" content={`FlowFast is a modern task tracker for agile teams.`} />
         </>
       ),
     },

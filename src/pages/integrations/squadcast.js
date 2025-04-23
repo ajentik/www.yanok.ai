@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="SquadCast"
-      description="SquadCast is the cloud recording studio where you can connect and record audio and video to create content audiences love."
+      description={`SquadCast is the cloud recording studio where you can connect and record audio and video to create content audiences love.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -126,7 +126,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>SquadCast</title>
-          <meta name="description" content="SquadCast is the cloud recording studio where you can connect and record audio and video to create content audiences love." />
+          <meta name="description" content={`SquadCast is the cloud recording studio where you can connect and record audio and video to create content audiences love.`} />
         </>
       ),
     },

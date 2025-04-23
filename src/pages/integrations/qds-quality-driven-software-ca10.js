@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="QDS (Quality Driven Software)"
-      description="Quality Driven is a customer satisfaction and employee performance tracking app that will improve employee accountability and quality."
+      description={`Quality Driven is a customer satisfaction and employee performance tracking app that will improve employee accountability and quality.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>QDS (Quality Driven Software)</title>
-          <meta name="description" content="Quality Driven is a customer satisfaction and employee performance tracking app that will improve employee accountability and quality." />
+          <meta name="description" content={`Quality Driven is a customer satisfaction and employee performance tracking app that will improve employee accountability and quality.`} />
         </>
       ),
     },

@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="BoondManager"
-      description="BoondManager is an ERP made for Consultancy and Services company. It helps you manage your recruitment, HR, CRM, Projects, Timesheets, Expenses, Leaves Balance and Billing!"
+      description={`BoondManager is an ERP made for Consultancy and Services company. It helps you manage your recruitment, HR, CRM, Projects, Timesheets, Expenses, Leaves Balance and Billing!`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -236,7 +236,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>BoondManager</title>
-          <meta name="description" content="BoondManager is an ERP made for Consultancy and Services company. It helps you manage your recruitment, HR, CRM, Projects, Timesheets, Expenses, Leaves Balance and Billing!" />
+          <meta name="description" content={`BoondManager is an ERP made for Consultancy and Services company. It helps you manage your recruitment, HR, CRM, Projects, Timesheets, Expenses, Leaves Balance and Billing!`} />
         </>
       ),
     },

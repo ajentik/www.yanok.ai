@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="HomeManager"
-      description="HomeManager is a platform that makes it easy for homeowners to manage their home and keep their family safe."
+      description={`HomeManager is a platform that makes it easy for homeowners to manage their home and keep their family safe.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>HomeManager</title>
-          <meta name="description" content="HomeManager is a platform that makes it easy for homeowners to manage their home and keep their family safe." />
+          <meta name="description" content={`HomeManager is a platform that makes it easy for homeowners to manage their home and keep their family safe.`} />
         </>
       ),
     },

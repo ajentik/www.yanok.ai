@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Gmail"
-      description="One of the most popular email services, Gmail keeps track of all your emails with threaded conversations, tags, and Google-powered search to find any message you need."
+      description={`One of the most popular email services, Gmail keeps track of all your emails with threaded conversations, tags, and Google-powered search to find any message you need.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -131,7 +131,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Gmail</title>
-          <meta name="description" content="One of the most popular email services, Gmail keeps track of all your emails with threaded conversations, tags, and Google-powered search to find any message you need." />
+          <meta name="description" content={`One of the most popular email services, Gmail keeps track of all your emails with threaded conversations, tags, and Google-powered search to find any message you need.`} />
         </>
       ),
     },

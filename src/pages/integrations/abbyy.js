@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Abbyy"
-      description="ABBYY provides document conversion, optical character recognition, data capture, and linguistic software and services."
+      description={`ABBYY provides document conversion, optical character recognition, data capture, and linguistic software and services.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +53,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Abbyy</title>
-          <meta name="description" content="ABBYY provides document conversion, optical character recognition, data capture, and linguistic software and services." />
+          <meta name="description" content={`ABBYY provides document conversion, optical character recognition, data capture, and linguistic software and services.`} />
         </>
       ),
     },

@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="PlayFilm"
-      description="PlayFilm is the tool to easily create video tests and capture qualified contacts. Optimize your conversion rate and generate more leads."
+      description={`PlayFilm is the tool to easily create video tests and capture qualified contacts. Optimize your conversion rate and generate more leads.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -61,7 +61,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>PlayFilm</title>
-          <meta name="description" content="PlayFilm is the tool to easily create video tests and capture qualified contacts. Optimize your conversion rate and generate more leads." />
+          <meta name="description" content={`PlayFilm is the tool to easily create video tests and capture qualified contacts. Optimize your conversion rate and generate more leads.`} />
         </>
       ),
     },

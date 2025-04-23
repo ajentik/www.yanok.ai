@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Inflowcare"
-      description="Inflowcare is a CRM Platform for tracking and managing new patient referrals and Caregiver application tracking for Healthcare agencies."
+      description={`Inflowcare is a CRM Platform for tracking and managing new patient referrals and Caregiver application tracking for Healthcare agencies.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -71,7 +71,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Inflowcare</title>
-          <meta name="description" content="Inflowcare is a CRM Platform for tracking and managing new patient referrals and Caregiver application tracking for Healthcare agencies." />
+          <meta name="description" content={`Inflowcare is a CRM Platform for tracking and managing new patient referrals and Caregiver application tracking for Healthcare agencies.`} />
         </>
       ),
     },

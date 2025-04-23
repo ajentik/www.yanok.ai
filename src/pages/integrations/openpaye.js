@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Openpaye"
-      description="Openpaye is an online payroll software for SME, allowing you to produce your payroll quickly and reliably."
+      description={`Openpaye is an online payroll software for SME, allowing you to produce your payroll quickly and reliably.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -72,7 +72,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Openpaye</title>
-          <meta name="description" content="Openpaye is an online payroll software for SME, allowing you to produce your payroll quickly and reliably." />
+          <meta name="description" content={`Openpaye is an online payroll software for SME, allowing you to produce your payroll quickly and reliably.`} />
         </>
       ),
     },

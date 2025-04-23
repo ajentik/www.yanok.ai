@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Halp"
-      description="Halp is a conversational ticketing solution for operations teams to assign, prioritize, and answer requests from Slack in a message-based interface."
+      description={`Halp is a conversational ticketing solution for operations teams to assign, prioritize, and answer requests from Slack in a message-based interface.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Halp</title>
-          <meta name="description" content="Halp is a conversational ticketing solution for operations teams to assign, prioritize, and answer requests from Slack in a message-based interface." />
+          <meta name="description" content={`Halp is a conversational ticketing solution for operations teams to assign, prioritize, and answer requests from Slack in a message-based interface.`} />
         </>
       ),
     },

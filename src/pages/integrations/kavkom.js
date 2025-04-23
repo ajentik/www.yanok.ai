@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Kavkom"
-      description="Kavkom CRM is a cloud-based enterprise telephony solution with innovative, simple and intuitive features."
+      description={`Kavkom CRM is a cloud-based enterprise telephony solution with innovative, simple and intuitive features.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -62,7 +62,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Kavkom</title>
-          <meta name="description" content="Kavkom CRM is a cloud-based enterprise telephony solution with innovative, simple and intuitive features." />
+          <meta name="description" content={`Kavkom CRM is a cloud-based enterprise telephony solution with innovative, simple and intuitive features.`} />
         </>
       ),
     },

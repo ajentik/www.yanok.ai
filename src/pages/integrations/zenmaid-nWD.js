@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="ZenMaid"
-      description="ZenMaid is a simple scheduling software for maid services - including automated communication, GPS clock times, payroll, reporting and much more."
+      description={`ZenMaid is a simple scheduling software for maid services - including automated communication, GPS clock times, payroll, reporting and much more.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -111,7 +111,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>ZenMaid</title>
-          <meta name="description" content="ZenMaid is a simple scheduling software for maid services - including automated communication, GPS clock times, payroll, reporting and much more." />
+          <meta name="description" content={`ZenMaid is a simple scheduling software for maid services - including automated communication, GPS clock times, payroll, reporting and much more.`} />
         </>
       ),
     },

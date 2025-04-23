@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Docsndata"
-      description="Automate anything with Docsndata, increase daily efficiency and get better results."
+      description={`Automate anything with Docsndata, increase daily efficiency and get better results.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Docsndata</title>
-          <meta name="description" content="Automate anything with Docsndata, increase daily efficiency and get better results." />
+          <meta name="description" content={`Automate anything with Docsndata, increase daily efficiency and get better results.`} />
         </>
       ),
     },

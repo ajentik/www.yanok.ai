@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Naver"
-      description="Naver Corporation runs South Korea's #1 search engine and offers a large variety of online services for Asian users."
+      description={`Naver Corporation runs South Korea's #1 search engine and offers a large variety of online services for Asian users.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +53,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Naver</title>
-          <meta name="description" content="Naver Corporation runs South Korea's #1 search engine and offers a large variety of online services for Asian users." />
+          <meta name="description" content={`Naver Corporation runs South Korea's #1 search engine and offers a large variety of online services for Asian users.`} />
         </>
       ),
     },

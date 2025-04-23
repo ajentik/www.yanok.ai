@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Inspectlet"
-      description="Inspectlet records videos of your site visitors as they use your site, allowing you to see everything they do."
+      description={`Inspectlet records videos of your site visitors as they use your site, allowing you to see everything they do.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +53,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Inspectlet</title>
-          <meta name="description" content="Inspectlet records videos of your site visitors as they use your site, allowing you to see everything they do." />
+          <meta name="description" content={`Inspectlet records videos of your site visitors as they use your site, allowing you to see everything they do.`} />
         </>
       ),
     },

@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Omie"
-      description="Omie is a complete small business management system with CRM, Finance, Cash Flow, NF-e, Stocks and Store Front."
+      description={`Omie is a complete small business management system with CRM, Finance, Cash Flow, NF-e, Stocks and Store Front.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +53,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Omie</title>
-          <meta name="description" content="Omie is a complete small business management system with CRM, Finance, Cash Flow, NF-e, Stocks and Store Front." />
+          <meta name="description" content={`Omie is a complete small business management system with CRM, Finance, Cash Flow, NF-e, Stocks and Store Front.`} />
         </>
       ),
     },

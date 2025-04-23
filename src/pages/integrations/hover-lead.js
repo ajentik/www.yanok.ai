@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Hover Lead"
-      description="Hover Leads is a professional leads capture and management system for digital marketers."
+      description={`Hover Leads is a professional leads capture and management system for digital marketers.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -61,7 +61,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Hover Lead</title>
-          <meta name="description" content="Hover Leads is a professional leads capture and management system for digital marketers." />
+          <meta name="description" content={`Hover Leads is a professional leads capture and management system for digital marketers.`} />
         </>
       ),
     },

@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Influitive"
-      description="Influitive is an app that helps you motivate and mobilize your most valued customers and advocates. Give your advocates challenges so they can help your business. Track their progress, and reward them for their efforts."
+      description={`Influitive is an app that helps you motivate and mobilize your most valued customers and advocates. Give your advocates challenges so they can help your business. Track their progress, and reward them for their efforts.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -111,7 +111,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Influitive</title>
-          <meta name="description" content="Influitive is an app that helps you motivate and mobilize your most valued customers and advocates. Give your advocates challenges so they can help your business. Track their progress, and reward them for their efforts." />
+          <meta name="description" content={`Influitive is an app that helps you motivate and mobilize your most valued customers and advocates. Give your advocates challenges so they can help your business. Track their progress, and reward them for their efforts.`} />
         </>
       ),
     },

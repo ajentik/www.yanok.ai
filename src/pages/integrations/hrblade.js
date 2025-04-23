@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="HRBLADE"
-      description="HRBLADE is a user-friendly video interview service with powerful functionality."
+      description={`HRBLADE is a user-friendly video interview service with powerful functionality.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -61,7 +61,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>HRBLADE</title>
-          <meta name="description" content="HRBLADE is a user-friendly video interview service with powerful functionality." />
+          <meta name="description" content={`HRBLADE is a user-friendly video interview service with powerful functionality.`} />
         </>
       ),
     },

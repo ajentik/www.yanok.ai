@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Mixmax"
-      description="Mixmax’s mission is to do the impossible with email including scheduling meetings, completing surveys, making purchases, and more."
+      description={`Mixmax’s mission is to do the impossible with email including scheduling meetings, completing surveys, making purchases, and more.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +53,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Mixmax</title>
-          <meta name="description" content="Mixmax’s mission is to do the impossible with email including scheduling meetings, completing surveys, making purchases, and more." />
+          <meta name="description" content={`Mixmax’s mission is to do the impossible with email including scheduling meetings, completing surveys, making purchases, and more.`} />
         </>
       ),
     },

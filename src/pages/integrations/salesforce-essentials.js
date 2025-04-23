@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Salesforce Essentials"
-      description="Salesforce Essentials allows you to manage every customer conversation from anywhere. It's the fastest and easiest way to get started with CRM."
+      description={`Salesforce Essentials allows you to manage every customer conversation from anywhere. It's the fastest and easiest way to get started with CRM.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -111,7 +111,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Salesforce Essentials</title>
-          <meta name="description" content="Salesforce Essentials allows you to manage every customer conversation from anywhere. It's the fastest and easiest way to get started with CRM." />
+          <meta name="description" content={`Salesforce Essentials allows you to manage every customer conversation from anywhere. It's the fastest and easiest way to get started with CRM.`} />
         </>
       ),
     },

@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Leeway"
-      description="The new way to manage your contracts. Leeway helps companies reduce the time spent on contract management and gives them more control and visibility over legal and financial risks."
+      description={`The new way to manage your contracts. Leeway helps companies reduce the time spent on contract management and gives them more control and visibility over legal and financial risks.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Leeway</title>
-          <meta name="description" content="The new way to manage your contracts. Leeway helps companies reduce the time spent on contract management and gives them more control and visibility over legal and financial risks." />
+          <meta name="description" content={`The new way to manage your contracts. Leeway helps companies reduce the time spent on contract management and gives them more control and visibility over legal and financial risks.`} />
         </>
       ),
     },

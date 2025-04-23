@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Townscript"
-      description="Townscript is a SAAS platform for Event organizers and also marketplace for Event enthusiasts. Townscript provides comprehensive DIY tool for Event organizers across the globe."
+      description={`Townscript is a SAAS platform for Event organizers and also marketplace for Event enthusiasts. Townscript provides comprehensive DIY tool for Event organizers across the globe.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -66,7 +66,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Townscript</title>
-          <meta name="description" content="Townscript is a SAAS platform for Event organizers and also marketplace for Event enthusiasts. Townscript provides comprehensive DIY tool for Event organizers across the globe." />
+          <meta name="description" content={`Townscript is a SAAS platform for Event organizers and also marketplace for Event enthusiasts. Townscript provides comprehensive DIY tool for Event organizers across the globe.`} />
         </>
       ),
     },

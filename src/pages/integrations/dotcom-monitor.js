@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Dotcom Monitor"
-      description="Monitor websites, applications, servers - anything online. Gather performance and uptime reports and real-time alerts when something goes wrong. Synthetic transaction monitoring from dozens of locations around the world."
+      description={`Monitor websites, applications, servers - anything online. Gather performance and uptime reports and real-time alerts when something goes wrong. Synthetic transaction monitoring from dozens of locations around the world.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -67,7 +67,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Dotcom Monitor</title>
-          <meta name="description" content="Monitor websites, applications, servers - anything online. Gather performance and uptime reports and real-time alerts when something goes wrong. Synthetic transaction monitoring from dozens of locations around the world." />
+          <meta name="description" content={`Monitor websites, applications, servers - anything online. Gather performance and uptime reports and real-time alerts when something goes wrong. Synthetic transaction monitoring from dozens of locations around the world.`} />
         </>
       ),
     },

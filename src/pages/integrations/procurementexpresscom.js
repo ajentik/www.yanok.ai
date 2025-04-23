@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="ProcurementExpress.com"
-      description="ProcurementExpress.com is a purchase order management app that eliminates company spending mistakes and helps you stay on budget"
+      description={`ProcurementExpress.com is a purchase order management app that eliminates company spending mistakes and helps you stay on budget`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -96,7 +96,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>ProcurementExpress.com</title>
-          <meta name="description" content="ProcurementExpress.com is a purchase order management app that eliminates company spending mistakes and helps you stay on budget" />
+          <meta name="description" content={`ProcurementExpress.com is a purchase order management app that eliminates company spending mistakes and helps you stay on budget`} />
         </>
       ),
     },

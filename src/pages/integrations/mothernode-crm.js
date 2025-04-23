@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Mothernode CRM"
-      description="Mothernode CRM - manage your sales pipeline, improve customer retention and automate your business processes."
+      description={`Mothernode CRM - manage your sales pipeline, improve customer retention and automate your business processes.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -72,7 +72,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Mothernode CRM</title>
-          <meta name="description" content="Mothernode CRM - manage your sales pipeline, improve customer retention and automate your business processes." />
+          <meta name="description" content={`Mothernode CRM - manage your sales pipeline, improve customer retention and automate your business processes.`} />
         </>
       ),
     },

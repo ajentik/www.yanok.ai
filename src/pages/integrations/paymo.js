@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Paymo"
-      description="Simple online project management application that bundles task management, time tracking and invoicing"
+      description={`Simple online project management application that bundles task management, time tracking and invoicing`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -161,7 +161,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Paymo</title>
-          <meta name="description" content="Simple online project management application that bundles task management, time tracking and invoicing" />
+          <meta name="description" content={`Simple online project management application that bundles task management, time tracking and invoicing`} />
         </>
       ),
     },

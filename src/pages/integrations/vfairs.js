@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="vFairs"
-      description="vFairs is a virtual events platform. This integration will allow users to send users data within vFairs with external systems."
+      description={`vFairs is a virtual events platform. This integration will allow users to send users data within vFairs with external systems.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -61,7 +61,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>vFairs</title>
-          <meta name="description" content="vFairs is a virtual events platform. This integration will allow users to send users data within vFairs with external systems." />
+          <meta name="description" content={`vFairs is a virtual events platform. This integration will allow users to send users data within vFairs with external systems.`} />
         </>
       ),
     },

@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Wise Agent CRM"
-      description="Wise Agent CRM helps Realtor's become pros by automating their leads, responses, appointments, and transactions."
+      description={`Wise Agent CRM helps Realtor's become pros by automating their leads, responses, appointments, and transactions.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Wise Agent CRM</title>
-          <meta name="description" content="Wise Agent CRM helps Realtor's become pros by automating their leads, responses, appointments, and transactions." />
+          <meta name="description" content={`Wise Agent CRM helps Realtor's become pros by automating their leads, responses, appointments, and transactions.`} />
         </>
       ),
     },

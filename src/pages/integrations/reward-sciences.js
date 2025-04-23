@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Reward Sciences"
-      description="Reward Sciences is a loyalty system that lets you incentivize and reward your end users as they engage on one or more activities of your choice."
+      description={`Reward Sciences is a loyalty system that lets you incentivize and reward your end users as they engage on one or more activities of your choice.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -76,7 +76,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Reward Sciences</title>
-          <meta name="description" content="Reward Sciences is a loyalty system that lets you incentivize and reward your end users as they engage on one or more activities of your choice." />
+          <meta name="description" content={`Reward Sciences is a loyalty system that lets you incentivize and reward your end users as they engage on one or more activities of your choice.`} />
         </>
       ),
     },

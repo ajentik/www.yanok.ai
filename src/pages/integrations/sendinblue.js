@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Sendinblue"
-      description="Sendinblue powers advanced email marketing and automation. Send newsletter emails, manage your transactional emails, and send SMS on this all-in-one platform."
+      description={`Sendinblue powers advanced email marketing and automation. Send newsletter emails, manage your transactional emails, and send SMS on this all-in-one platform.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -76,7 +76,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Sendinblue</title>
-          <meta name="description" content="Sendinblue powers advanced email marketing and automation. Send newsletter emails, manage your transactional emails, and send SMS on this all-in-one platform." />
+          <meta name="description" content={`Sendinblue powers advanced email marketing and automation. Send newsletter emails, manage your transactional emails, and send SMS on this all-in-one platform.`} />
         </>
       ),
     },

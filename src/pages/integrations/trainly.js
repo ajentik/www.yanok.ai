@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Trainly"
-      description="Trainly helps companies achieve 100% HR compliance. It uses data to continuously produce ever-more-compelling training that drives behavior change."
+      description={`Trainly helps companies achieve 100% HR compliance. It uses data to continuously produce ever-more-compelling training that drives behavior change.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -72,7 +72,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Trainly</title>
-          <meta name="description" content="Trainly helps companies achieve 100% HR compliance. It uses data to continuously produce ever-more-compelling training that drives behavior change." />
+          <meta name="description" content={`Trainly helps companies achieve 100% HR compliance. It uses data to continuously produce ever-more-compelling training that drives behavior change.`} />
         </>
       ),
     },

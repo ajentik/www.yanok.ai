@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="LLN-Robot"
-      description="LLN Robot is a complete testing and support platform for developing Language, Literacy, and Numeracy in the education and VET sectors."
+      description={`LLN Robot is a complete testing and support platform for developing Language, Literacy, and Numeracy in the education and VET sectors.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -81,7 +81,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>LLN-Robot</title>
-          <meta name="description" content="LLN Robot is a complete testing and support platform for developing Language, Literacy, and Numeracy in the education and VET sectors." />
+          <meta name="description" content={`LLN Robot is a complete testing and support platform for developing Language, Literacy, and Numeracy in the education and VET sectors.`} />
         </>
       ),
     },

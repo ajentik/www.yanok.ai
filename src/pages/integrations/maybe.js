@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Maybe*"
-      description="Maybe* is a tool that helps organisations listen and engage with their customers through social media, benchmark their results, and optimise the ROI of their activity."
+      description={`Maybe* is a tool that helps organisations listen and engage with their customers through social media, benchmark their results, and optimise the ROI of their activity.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -61,7 +61,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Maybe*</title>
-          <meta name="description" content="Maybe* is a tool that helps organisations listen and engage with their customers through social media, benchmark their results, and optimise the ROI of their activity." />
+          <meta name="description" content={`Maybe* is a tool that helps organisations listen and engage with their customers through social media, benchmark their results, and optimise the ROI of their activity.`} />
         </>
       ),
     },

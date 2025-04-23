@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="CubApp"
-      description="CubApp is cloud-based loyalty software for marketing strategies."
+      description={`CubApp is cloud-based loyalty software for marketing strategies.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -62,7 +62,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>CubApp</title>
-          <meta name="description" content="CubApp is cloud-based loyalty software for marketing strategies." />
+          <meta name="description" content={`CubApp is cloud-based loyalty software for marketing strategies.`} />
         </>
       ),
     },

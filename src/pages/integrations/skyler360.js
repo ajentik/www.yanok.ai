@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="SkylerAI"
-      description="SkylerAI is a conversational AI platform"
+      description={`SkylerAI is a conversational AI platform`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -61,7 +61,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>SkylerAI</title>
-          <meta name="description" content="SkylerAI is a conversational AI platform" />
+          <meta name="description" content={`SkylerAI is a conversational AI platform`} />
         </>
       ),
     },

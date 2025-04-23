@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Brosix"
-      description="Brosix is a secure instant messenger for your team, offering unlimited file transfer, screen-sharing, audio and video calls, and many more collaboration features to improve your team performance."
+      description={`Brosix is a secure instant messenger for your team, offering unlimited file transfer, screen-sharing, audio and video calls, and many more collaboration features to improve your team performance.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Brosix</title>
-          <meta name="description" content="Brosix is a secure instant messenger for your team, offering unlimited file transfer, screen-sharing, audio and video calls, and many more collaboration features to improve your team performance." />
+          <meta name="description" content={`Brosix is a secure instant messenger for your team, offering unlimited file transfer, screen-sharing, audio and video calls, and many more collaboration features to improve your team performance.`} />
         </>
       ),
     },

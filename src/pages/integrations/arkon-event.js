@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Arkon Event"
-      description="Arkon Event is a Norwegian personnel management system for festivals and events."
+      description={`Arkon Event is a Norwegian personnel management system for festivals and events.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -61,7 +61,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Arkon Event</title>
-          <meta name="description" content="Arkon Event is a Norwegian personnel management system for festivals and events." />
+          <meta name="description" content={`Arkon Event is a Norwegian personnel management system for festivals and events.`} />
         </>
       ),
     },

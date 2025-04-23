@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Flash Lead"
-      description="Flash lead is a sales management and a Revenue growth software on a mission to help sales people close more deals in less time; its features varies from lead management, VoIP, Omni channel conversations and more all available in Mobile and Web App."
+      description={`Flash lead is a sales management and a Revenue growth software on a mission to help sales people close more deals in less time; its features varies from lead management, VoIP, Omni channel conversations and more all available in Mobile and Web App.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Flash Lead</title>
-          <meta name="description" content="Flash lead is a sales management and a Revenue growth software on a mission to help sales people close more deals in less time; its features varies from lead management, VoIP, Omni channel conversations and more all available in Mobile and Web App." />
+          <meta name="description" content={`Flash lead is a sales management and a Revenue growth software on a mission to help sales people close more deals in less time; its features varies from lead management, VoIP, Omni channel conversations and more all available in Mobile and Web App.`} />
         </>
       ),
     },

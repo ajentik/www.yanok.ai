@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Cakemail"
-      description="Cakemail provides all the tools you need to deliver the emails people want. Engage your audience and grow your business with the tools and ongoing support you need to send marketing emails."
+      description={`Cakemail provides all the tools you need to deliver the emails people want. Engage your audience and grow your business with the tools and ongoing support you need to send marketing emails.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -116,7 +116,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Cakemail</title>
-          <meta name="description" content="Cakemail provides all the tools you need to deliver the emails people want. Engage your audience and grow your business with the tools and ongoing support you need to send marketing emails." />
+          <meta name="description" content={`Cakemail provides all the tools you need to deliver the emails people want. Engage your audience and grow your business with the tools and ongoing support you need to send marketing emails.`} />
         </>
       ),
     },

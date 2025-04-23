@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="SocialPilot"
-      description="SocialPilot is a social media marketing tool which lets you create and schedules social media posts for your social media profiles."
+      description={`SocialPilot is a social media marketing tool which lets you create and schedules social media posts for your social media profiles.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -81,7 +81,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>SocialPilot</title>
-          <meta name="description" content="SocialPilot is a social media marketing tool which lets you create and schedules social media posts for your social media profiles." />
+          <meta name="description" content={`SocialPilot is a social media marketing tool which lets you create and schedules social media posts for your social media profiles.`} />
         </>
       ),
     },

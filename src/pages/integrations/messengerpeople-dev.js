@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="MessengerPeople.dev"
-      description="MessengerPeople API is a unified API that lets you send and receive messages through multiple channels, like WhatsApp Business (official partner), Telegram and Facebook Messenger."
+      description={`MessengerPeople API is a unified API that lets you send and receive messages through multiple channels, like WhatsApp Business (official partner), Telegram and Facebook Messenger.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -66,7 +66,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>MessengerPeople.dev</title>
-          <meta name="description" content="MessengerPeople API is a unified API that lets you send and receive messages through multiple channels, like WhatsApp Business (official partner), Telegram and Facebook Messenger." />
+          <meta name="description" content={`MessengerPeople API is a unified API that lets you send and receive messages through multiple channels, like WhatsApp Business (official partner), Telegram and Facebook Messenger.`} />
         </>
       ),
     },

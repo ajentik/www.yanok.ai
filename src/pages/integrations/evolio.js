@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Evolio"
-      description="Software for law firms. Helps in simple and well-arranged managing of law cases without redundant administration. Free license for small law firms."
+      description={`Software for law firms. Helps in simple and well-arranged managing of law cases without redundant administration. Free license for small law firms.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -81,7 +81,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Evolio</title>
-          <meta name="description" content="Software for law firms. Helps in simple and well-arranged managing of law cases without redundant administration. Free license for small law firms." />
+          <meta name="description" content={`Software for law firms. Helps in simple and well-arranged managing of law cases without redundant administration. Free license for small law firms.`} />
         </>
       ),
     },

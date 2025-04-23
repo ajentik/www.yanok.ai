@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="EZOfficeInventory"
-      description="EZOfficeInventory is asset tracking software that lets you track, maintain and report on your equipment so it's always available and lasts longer."
+      description={`EZOfficeInventory is asset tracking software that lets you track, maintain and report on your equipment so it's always available and lasts longer.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -67,7 +67,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>EZOfficeInventory</title>
-          <meta name="description" content="EZOfficeInventory is asset tracking software that lets you track, maintain and report on your equipment so it's always available and lasts longer." />
+          <meta name="description" content={`EZOfficeInventory is asset tracking software that lets you track, maintain and report on your equipment so it's always available and lasts longer.`} />
         </>
       ),
     },

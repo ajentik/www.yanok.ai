@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="OpenAI (ChatGPT)"
-      description="From the makers of ChatGPT, the OpenAI integration for GPT-3 or DALL-E. Build AI powered workflows with OpenAI’s powerful models."
+      description={`From the makers of ChatGPT, the OpenAI integration for GPT-3 or DALL-E. Build AI powered workflows with OpenAI’s powerful models.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -72,7 +72,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>OpenAI (ChatGPT)</title>
-          <meta name="description" content="From the makers of ChatGPT, the OpenAI integration for GPT-3 or DALL-E. Build AI powered workflows with OpenAI’s powerful models." />
+          <meta name="description" content={`From the makers of ChatGPT, the OpenAI integration for GPT-3 or DALL-E. Build AI powered workflows with OpenAI’s powerful models.`} />
         </>
       ),
     },

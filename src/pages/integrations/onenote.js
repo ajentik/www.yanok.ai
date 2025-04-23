@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="OneNote"
-      description="Microsoft OneNote is a note-taking app that makes it easy to capture and save ideas, images, audio recordings, and anything else you need to remember."
+      description={`Microsoft OneNote is a note-taking app that makes it easy to capture and save ideas, images, audio recordings, and anything else you need to remember.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -81,7 +81,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>OneNote</title>
-          <meta name="description" content="Microsoft OneNote is a note-taking app that makes it easy to capture and save ideas, images, audio recordings, and anything else you need to remember." />
+          <meta name="description" content={`Microsoft OneNote is a note-taking app that makes it easy to capture and save ideas, images, audio recordings, and anything else you need to remember.`} />
         </>
       ),
     },

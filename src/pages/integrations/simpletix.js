@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Simpletix"
-      description="SimpleTix is an e-commerce company that offers turn-key solutions for event websites and online ticketing."
+      description={`SimpleTix is an e-commerce company that offers turn-key solutions for event websites and online ticketing.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -92,7 +92,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Simpletix</title>
-          <meta name="description" content="SimpleTix is an e-commerce company that offers turn-key solutions for event websites and online ticketing." />
+          <meta name="description" content={`SimpleTix is an e-commerce company that offers turn-key solutions for event websites and online ticketing.`} />
         </>
       ),
     },

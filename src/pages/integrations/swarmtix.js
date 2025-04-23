@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Swarmtix"
-      description="The simplest event ticketing platform. Create, promote and sell your events in 10 minutes."
+      description={`The simplest event ticketing platform. Create, promote and sell your events in 10 minutes.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Swarmtix</title>
-          <meta name="description" content="The simplest event ticketing platform. Create, promote and sell your events in 10 minutes." />
+          <meta name="description" content={`The simplest event ticketing platform. Create, promote and sell your events in 10 minutes.`} />
         </>
       ),
     },

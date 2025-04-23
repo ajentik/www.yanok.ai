@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Space by Zapier"
-      description="Space is an experiment that helps you stay up to date on the latest space launches."
+      description={`Space is an experiment that helps you stay up to date on the latest space launches.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -62,7 +62,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Space by Zapier</title>
-          <meta name="description" content="Space is an experiment that helps you stay up to date on the latest space launches." />
+          <meta name="description" content={`Space is an experiment that helps you stay up to date on the latest space launches.`} />
         </>
       ),
     },

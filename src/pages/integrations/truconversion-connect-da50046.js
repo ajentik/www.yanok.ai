@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="TruConversion Connect"
-      description="Integrate TruConversion and get results in your favorite App. You get access to all the best conversion optimization and analytics tools including Heatmaps, Visitor Session Recordings, Conversion funnels, MicroSurvey, Customer Surveys and Form Analytics."
+      description={`Integrate TruConversion and get results in your favorite App. You get access to all the best conversion optimization and analytics tools including Heatmaps, Visitor Session Recordings, Conversion funnels, MicroSurvey, Customer Surveys and Form Analytics.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>TruConversion Connect</title>
-          <meta name="description" content="Integrate TruConversion and get results in your favorite App. You get access to all the best conversion optimization and analytics tools including Heatmaps, Visitor Session Recordings, Conversion funnels, MicroSurvey, Customer Surveys and Form Analytics." />
+          <meta name="description" content={`Integrate TruConversion and get results in your favorite App. You get access to all the best conversion optimization and analytics tools including Heatmaps, Visitor Session Recordings, Conversion funnels, MicroSurvey, Customer Surveys and Form Analytics.`} />
         </>
       ),
     },

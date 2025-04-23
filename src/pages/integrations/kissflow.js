@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="KiSSFLOW"
-      description="KiSSFLOW is a Business Process Workflow Automation Software. KiSSFLOW empowers normal users to build workflow automation on their own on a self-service basis without requiring sophisticated technical knowledge. KiSSFLOW is used by department heads of finance, operations and human resources to streamline their functions."
+      description={`KiSSFLOW is a Business Process Workflow Automation Software. KiSSFLOW empowers normal users to build workflow automation on their own on a self-service basis without requiring sophisticated technical knowledge. KiSSFLOW is used by department heads of finance, operations and human resources to streamline their functions.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -71,7 +71,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>KiSSFLOW</title>
-          <meta name="description" content="KiSSFLOW is a Business Process Workflow Automation Software. KiSSFLOW empowers normal users to build workflow automation on their own on a self-service basis without requiring sophisticated technical knowledge. KiSSFLOW is used by department heads of finance, operations and human resources to streamline their functions." />
+          <meta name="description" content={`KiSSFLOW is a Business Process Workflow Automation Software. KiSSFLOW empowers normal users to build workflow automation on their own on a self-service basis without requiring sophisticated technical knowledge. KiSSFLOW is used by department heads of finance, operations and human resources to streamline their functions.`} />
         </>
       ),
     },

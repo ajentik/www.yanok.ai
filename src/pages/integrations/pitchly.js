@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Pitchly"
-      description="Pitchly helps you collect and turn raw data into work assets, like pitch decks and proposals."
+      description={`Pitchly helps you collect and turn raw data into work assets, like pitch decks and proposals.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -81,7 +81,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Pitchly</title>
-          <meta name="description" content="Pitchly helps you collect and turn raw data into work assets, like pitch decks and proposals." />
+          <meta name="description" content={`Pitchly helps you collect and turn raw data into work assets, like pitch decks and proposals.`} />
         </>
       ),
     },

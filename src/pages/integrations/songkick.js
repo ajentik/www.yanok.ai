@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Songkick"
-      description="Songkick is a concert discovery and ticket sales service for live music events."
+      description={`Songkick is a concert discovery and ticket sales service for live music events.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -76,7 +76,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Songkick</title>
-          <meta name="description" content="Songkick is a concert discovery and ticket sales service for live music events." />
+          <meta name="description" content={`Songkick is a concert discovery and ticket sales service for live music events.`} />
         </>
       ),
     },

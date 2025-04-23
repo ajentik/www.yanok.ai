@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="iNCOM Canada"
-      description="iNCOM is a real estate website and marketing solution including all the tools you need - Lead Generation, Cultivation, IDX Website, CRM, and marketing services."
+      description={`iNCOM is a real estate website and marketing solution including all the tools you need - Lead Generation, Cultivation, IDX Website, CRM, and marketing services.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -66,7 +66,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>iNCOM Canada</title>
-          <meta name="description" content="iNCOM is a real estate website and marketing solution including all the tools you need - Lead Generation, Cultivation, IDX Website, CRM, and marketing services." />
+          <meta name="description" content={`iNCOM is a real estate website and marketing solution including all the tools you need - Lead Generation, Cultivation, IDX Website, CRM, and marketing services.`} />
         </>
       ),
     },

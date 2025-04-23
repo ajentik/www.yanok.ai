@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Alterdesk"
-      description="Alterdesk is a user-friendly, secure messenger for teams. Send messages and files to your co-workers and other business contacts, using any available device!"
+      description={`Alterdesk is a user-friendly, secure messenger for teams. Send messages and files to your co-workers and other business contacts, using any available device!`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -91,7 +91,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Alterdesk</title>
-          <meta name="description" content="Alterdesk is a user-friendly, secure messenger for teams. Send messages and files to your co-workers and other business contacts, using any available device!" />
+          <meta name="description" content={`Alterdesk is a user-friendly, secure messenger for teams. Send messages and files to your co-workers and other business contacts, using any available device!`} />
         </>
       ),
     },

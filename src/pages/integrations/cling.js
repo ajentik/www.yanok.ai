@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Cling"
-      description="Cling is a mini CRM that helps you win more deals by sending outstanding proposals and get paid faster!"
+      description={`Cling is a mini CRM that helps you win more deals by sending outstanding proposals and get paid faster!`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -91,7 +91,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Cling</title>
-          <meta name="description" content="Cling is a mini CRM that helps you win more deals by sending outstanding proposals and get paid faster!" />
+          <meta name="description" content={`Cling is a mini CRM that helps you win more deals by sending outstanding proposals and get paid faster!`} />
         </>
       ),
     },

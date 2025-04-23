@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Didacte"
-      description="Didacte is your strategic partner to create, distribute and sell your courses on an easy-to-use system, both for you and your students."
+      description={`Didacte is your strategic partner to create, distribute and sell your courses on an easy-to-use system, both for you and your students.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -97,7 +97,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Didacte</title>
-          <meta name="description" content="Didacte is your strategic partner to create, distribute and sell your courses on an easy-to-use system, both for you and your students." />
+          <meta name="description" content={`Didacte is your strategic partner to create, distribute and sell your courses on an easy-to-use system, both for you and your students.`} />
         </>
       ),
     },

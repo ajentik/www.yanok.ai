@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Mailerrrize"
-      description="Mailerrize is an email automation and engagement tool."
+      description={`Mailerrize is an email automation and engagement tool.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Mailerrrize</title>
-          <meta name="description" content="Mailerrize is an email automation and engagement tool." />
+          <meta name="description" content={`Mailerrize is an email automation and engagement tool.`} />
         </>
       ),
     },

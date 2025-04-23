@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Shorten.REST"
-      description="Shorten.REST is a flexible, robust, scale-able and transactional URL Shortening app."
+      description={`Shorten.REST is a flexible, robust, scale-able and transactional URL Shortening app.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -62,7 +62,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Shorten.REST</title>
-          <meta name="description" content="Shorten.REST is a flexible, robust, scale-able and transactional URL Shortening app." />
+          <meta name="description" content={`Shorten.REST is a flexible, robust, scale-able and transactional URL Shortening app.`} />
         </>
       ),
     },

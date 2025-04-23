@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Testlify"
-      description="#1 Talent Assessment Platform for Recruiting at scale. Find the best candidates with deep analysis that’s accurate, automated, and unbiased"
+      description={`#1 Talent Assessment Platform for Recruiting at scale. Find the best candidates with deep analysis that’s accurate, automated, and unbiased`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -61,7 +61,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Testlify</title>
-          <meta name="description" content="#1 Talent Assessment Platform for Recruiting at scale. Find the best candidates with deep analysis that’s accurate, automated, and unbiased" />
+          <meta name="description" content={`#1 Talent Assessment Platform for Recruiting at scale. Find the best candidates with deep analysis that’s accurate, automated, and unbiased`} />
         </>
       ),
     },

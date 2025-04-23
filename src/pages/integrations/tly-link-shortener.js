@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="TLY Link Shortener"
-      description="TLY Link Shortener is a platform to quickly generate a short URL to make it easier to share, track and manage your links."
+      description={`TLY Link Shortener is a platform to quickly generate a short URL to make it easier to share, track and manage your links.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>TLY Link Shortener</title>
-          <meta name="description" content="TLY Link Shortener is a platform to quickly generate a short URL to make it easier to share, track and manage your links." />
+          <meta name="description" content={`TLY Link Shortener is a platform to quickly generate a short URL to make it easier to share, track and manage your links.`} />
         </>
       ),
     },

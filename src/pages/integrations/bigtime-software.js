@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="BigTime Software"
-      description="BigTime Software develops integrated time and billing tools that help growing professional services firms track and manage their time."
+      description={`BigTime Software develops integrated time and billing tools that help growing professional services firms track and manage their time.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +53,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>BigTime Software</title>
-          <meta name="description" content="BigTime Software develops integrated time and billing tools that help growing professional services firms track and manage their time." />
+          <meta name="description" content={`BigTime Software develops integrated time and billing tools that help growing professional services firms track and manage their time.`} />
         </>
       ),
     },

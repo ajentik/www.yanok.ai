@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Mavenlink"
-      description="Mavenlink’s project collaboration suite allows you to manage your business relationships, share files, and track project activity online from anywhere in the world. Within a project workspace in Mavenlink, you can agree on budget & schedule, track time, send invoices, get paid via PayPal, and complete work."
+      description={`Mavenlink’s project collaboration suite allows you to manage your business relationships, share files, and track project activity online from anywhere in the world. Within a project workspace in Mavenlink, you can agree on budget & schedule, track time, send invoices, get paid via PayPal, and complete work.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -76,7 +76,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Mavenlink</title>
-          <meta name="description" content="Mavenlink’s project collaboration suite allows you to manage your business relationships, share files, and track project activity online from anywhere in the world. Within a project workspace in Mavenlink, you can agree on budget & schedule, track time, send invoices, get paid via PayPal, and complete work." />
+          <meta name="description" content={`Mavenlink’s project collaboration suite allows you to manage your business relationships, share files, and track project activity online from anywhere in the world. Within a project workspace in Mavenlink, you can agree on budget & schedule, track time, send invoices, get paid via PayPal, and complete work.`} />
         </>
       ),
     },

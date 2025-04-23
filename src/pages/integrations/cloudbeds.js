@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Cloudbeds"
-      description="Cloudbeds is a hospitality management software platform with a property management system (PMS), channel manager, and booking engine."
+      description={`Cloudbeds is a hospitality management software platform with a property management system (PMS), channel manager, and booking engine.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -82,7 +82,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Cloudbeds</title>
-          <meta name="description" content="Cloudbeds is a hospitality management software platform with a property management system (PMS), channel manager, and booking engine." />
+          <meta name="description" content={`Cloudbeds is a hospitality management software platform with a property management system (PMS), channel manager, and booking engine.`} />
         </>
       ),
     },

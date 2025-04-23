@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Crisp"
-      description="Crisp is a messaging app that unifies your user communication from Crisp Live Chat, Email, Messenger, Twitter, and SMS into one platform"
+      description={`Crisp is a messaging app that unifies your user communication from Crisp Live Chat, Email, Messenger, Twitter, and SMS into one platform`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -111,7 +111,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Crisp</title>
-          <meta name="description" content="Crisp is a messaging app that unifies your user communication from Crisp Live Chat, Email, Messenger, Twitter, and SMS into one platform" />
+          <meta name="description" content={`Crisp is a messaging app that unifies your user communication from Crisp Live Chat, Email, Messenger, Twitter, and SMS into one platform`} />
         </>
       ),
     },

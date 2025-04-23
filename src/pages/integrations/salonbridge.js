@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="SalonBridge"
-      description="SalonBridge lets you manage your appointments, accept online bookings, keep track of clients, payments, reports, and client reminders from the web, or from your smartphone."
+      description={`SalonBridge lets you manage your appointments, accept online bookings, keep track of clients, payments, reports, and client reminders from the web, or from your smartphone.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -101,7 +101,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>SalonBridge</title>
-          <meta name="description" content="SalonBridge lets you manage your appointments, accept online bookings, keep track of clients, payments, reports, and client reminders from the web, or from your smartphone." />
+          <meta name="description" content={`SalonBridge lets you manage your appointments, accept online bookings, keep track of clients, payments, reports, and client reminders from the web, or from your smartphone.`} />
         </>
       ),
     },

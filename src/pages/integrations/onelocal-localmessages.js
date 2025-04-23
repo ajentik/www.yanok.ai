@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="OneLocal LocalMessages"
-      description="LocalMessages by OneLocal allows you to integrate text messaging into your customer communications to increase response rates, reduce on-hold times and deliver a better overall customer experience. LocalMessages seamlessly connects with OneLocal's full product suite."
+      description={`LocalMessages by OneLocal allows you to integrate text messaging into your customer communications to increase response rates, reduce on-hold times and deliver a better overall customer experience. LocalMessages seamlessly connects with OneLocal's full product suite.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -111,7 +111,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>OneLocal LocalMessages</title>
-          <meta name="description" content="LocalMessages by OneLocal allows you to integrate text messaging into your customer communications to increase response rates, reduce on-hold times and deliver a better overall customer experience. LocalMessages seamlessly connects with OneLocal's full product suite." />
+          <meta name="description" content={`LocalMessages by OneLocal allows you to integrate text messaging into your customer communications to increase response rates, reduce on-hold times and deliver a better overall customer experience. LocalMessages seamlessly connects with OneLocal's full product suite.`} />
         </>
       ),
     },

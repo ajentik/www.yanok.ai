@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Mirabel's Marketing Manager"
-      description="Marketing Manager identifies who is visiting your website and who is most interested with marketing CRM software."
+      description={`Marketing Manager identifies who is visiting your website and who is most interested with marketing CRM software.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -61,7 +61,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Mirabel's Marketing Manager</title>
-          <meta name="description" content="Marketing Manager identifies who is visiting your website and who is most interested with marketing CRM software." />
+          <meta name="description" content={`Marketing Manager identifies who is visiting your website and who is most interested with marketing CRM software.`} />
         </>
       ),
     },

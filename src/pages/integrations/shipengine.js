@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="ShipEngine"
-      description="ShipEngine APIs empower ecommerce brands and platforms to shop rates, validate global addresses, print labels, track shipments, plus more."
+      description={`ShipEngine APIs empower ecommerce brands and platforms to shop rates, validate global addresses, print labels, track shipments, plus more.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -81,7 +81,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>ShipEngine</title>
-          <meta name="description" content="ShipEngine APIs empower ecommerce brands and platforms to shop rates, validate global addresses, print labels, track shipments, plus more." />
+          <meta name="description" content={`ShipEngine APIs empower ecommerce brands and platforms to shop rates, validate global addresses, print labels, track shipments, plus more.`} />
         </>
       ),
     },

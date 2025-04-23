@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Mailazy"
-      description="Mailazy is an email service provider focused exclusively on transactional email delivery. When you connect to Mailazy, you can automatically send emails for payments confirmation, purchase confirmation, onboarding, and more."
+      description={`Mailazy is an email service provider focused exclusively on transactional email delivery. When you connect to Mailazy, you can automatically send emails for payments confirmation, purchase confirmation, onboarding, and more.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Mailazy</title>
-          <meta name="description" content="Mailazy is an email service provider focused exclusively on transactional email delivery. When you connect to Mailazy, you can automatically send emails for payments confirmation, purchase confirmation, onboarding, and more." />
+          <meta name="description" content={`Mailazy is an email service provider focused exclusively on transactional email delivery. When you connect to Mailazy, you can automatically send emails for payments confirmation, purchase confirmation, onboarding, and more.`} />
         </>
       ),
     },

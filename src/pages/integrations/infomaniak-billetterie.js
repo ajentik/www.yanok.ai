@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Infomaniak Billetterie"
-      description="Infomaniak Billetterie is a ticketing solution for discerning organisers. From selling to checking tickets, calmly master all the aspects involved in organising your events."
+      description={`Infomaniak Billetterie is a ticketing solution for discerning organisers. From selling to checking tickets, calmly master all the aspects involved in organising your events.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -81,7 +81,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Infomaniak Billetterie</title>
-          <meta name="description" content="Infomaniak Billetterie is a ticketing solution for discerning organisers. From selling to checking tickets, calmly master all the aspects involved in organising your events." />
+          <meta name="description" content={`Infomaniak Billetterie is a ticketing solution for discerning organisers. From selling to checking tickets, calmly master all the aspects involved in organising your events.`} />
         </>
       ),
     },

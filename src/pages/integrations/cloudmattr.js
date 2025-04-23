@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Cloudmattr"
-      description="Cloudmattr is a platform that helps businesses by helping them manage user feedback, roadmaps, knowledge bases, automated campaigns, and changelogs."
+      description={`Cloudmattr is a platform that helps businesses by helping them manage user feedback, roadmaps, knowledge bases, automated campaigns, and changelogs.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -71,7 +71,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Cloudmattr</title>
-          <meta name="description" content="Cloudmattr is a platform that helps businesses by helping them manage user feedback, roadmaps, knowledge bases, automated campaigns, and changelogs." />
+          <meta name="description" content={`Cloudmattr is a platform that helps businesses by helping them manage user feedback, roadmaps, knowledge bases, automated campaigns, and changelogs.`} />
         </>
       ),
     },

@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="webCRM"
-      description="webCRM helps your sales team with the daily workflow and overview."
+      description={`webCRM helps your sales team with the daily workflow and overview.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -181,7 +181,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>webCRM</title>
-          <meta name="description" content="webCRM helps your sales team with the daily workflow and overview." />
+          <meta name="description" content={`webCRM helps your sales team with the daily workflow and overview.`} />
         </>
       ),
     },

@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Zenvia SMS"
-      description="Zenvia is a communication platform that simplifies the relationship between companies and consumers."
+      description={`Zenvia is a communication platform that simplifies the relationship between companies and consumers.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -61,7 +61,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Zenvia SMS</title>
-          <meta name="description" content="Zenvia is a communication platform that simplifies the relationship between companies and consumers." />
+          <meta name="description" content={`Zenvia is a communication platform that simplifies the relationship between companies and consumers.`} />
         </>
       ),
     },

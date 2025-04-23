@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Housecall Pro"
-      description="Housecall Pro is a top rated software to run your home service business. We make it easy to schedule, dispatch, estimate, invoice, accept credit cards and get booked online by customers."
+      description={`Housecall Pro is a top rated software to run your home service business. We make it easy to schedule, dispatch, estimate, invoice, accept credit cards and get booked online by customers.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -66,7 +66,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Housecall Pro</title>
-          <meta name="description" content="Housecall Pro is a top rated software to run your home service business. We make it easy to schedule, dispatch, estimate, invoice, accept credit cards and get booked online by customers." />
+          <meta name="description" content={`Housecall Pro is a top rated software to run your home service business. We make it easy to schedule, dispatch, estimate, invoice, accept credit cards and get booked online by customers.`} />
         </>
       ),
     },

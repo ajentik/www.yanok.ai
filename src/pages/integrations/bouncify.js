@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Bouncify"
-      description="With Bouncify email verification service, you'll be able to validate your emails and get rid of unwanted emails from your email database."
+      description={`With Bouncify email verification service, you'll be able to validate your emails and get rid of unwanted emails from your email database.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Bouncify</title>
-          <meta name="description" content="With Bouncify email verification service, you'll be able to validate your emails and get rid of unwanted emails from your email database." />
+          <meta name="description" content={`With Bouncify email verification service, you'll be able to validate your emails and get rid of unwanted emails from your email database.`} />
         </>
       ),
     },

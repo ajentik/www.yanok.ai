@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Pipeless Recommendations"
-      description="Power real-time personalized recommendations and activity feeds using a simple API."
+      description={`Power real-time personalized recommendations and activity feeds using a simple API.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -102,7 +102,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Pipeless Recommendations</title>
-          <meta name="description" content="Power real-time personalized recommendations and activity feeds using a simple API." />
+          <meta name="description" content={`Power real-time personalized recommendations and activity feeds using a simple API.`} />
         </>
       ),
     },

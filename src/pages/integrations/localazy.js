@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Localazy"
-      description="Localazy is a highly automated localization platform allowing anyone to translate their products and content into multiple languages easily."
+      description={`Localazy is a highly automated localization platform allowing anyone to translate their products and content into multiple languages easily.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -76,7 +76,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Localazy</title>
-          <meta name="description" content="Localazy is a highly automated localization platform allowing anyone to translate their products and content into multiple languages easily." />
+          <meta name="description" content={`Localazy is a highly automated localization platform allowing anyone to translate their products and content into multiple languages easily.`} />
         </>
       ),
     },

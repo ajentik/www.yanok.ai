@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Tarvent"
-      description="Tarvent marketing automation platform empowers businesses of all sizes by providing a great depth of features and customization to control every aspect of your customer's experience."
+      description={`Tarvent marketing automation platform empowers businesses of all sizes by providing a great depth of features and customization to control every aspect of your customer's experience.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -231,7 +231,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Tarvent</title>
-          <meta name="description" content="Tarvent marketing automation platform empowers businesses of all sizes by providing a great depth of features and customization to control every aspect of your customer's experience." />
+          <meta name="description" content={`Tarvent marketing automation platform empowers businesses of all sizes by providing a great depth of features and customization to control every aspect of your customer's experience.`} />
         </>
       ),
     },

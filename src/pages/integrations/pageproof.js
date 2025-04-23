@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="PageProof"
-      description="PageProof is a review and approval platform for all of your marketing content, including artwork, audio, video, HTML websites & banners."
+      description={`PageProof is a review and approval platform for all of your marketing content, including artwork, audio, video, HTML websites & banners.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -97,7 +97,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>PageProof</title>
-          <meta name="description" content="PageProof is a review and approval platform for all of your marketing content, including artwork, audio, video, HTML websites & banners." />
+          <meta name="description" content={`PageProof is a review and approval platform for all of your marketing content, including artwork, audio, video, HTML websites & banners.`} />
         </>
       ),
     },

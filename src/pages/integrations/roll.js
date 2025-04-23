@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Roll"
-      description="Roll is a platform with everything your business needs in one place. Manage projects, track sales, understand and grow your business."
+      description={`Roll is a platform with everything your business needs in one place. Manage projects, track sales, understand and grow your business.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -106,7 +106,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Roll</title>
-          <meta name="description" content="Roll is a platform with everything your business needs in one place. Manage projects, track sales, understand and grow your business." />
+          <meta name="description" content={`Roll is a platform with everything your business needs in one place. Manage projects, track sales, understand and grow your business.`} />
         </>
       ),
     },

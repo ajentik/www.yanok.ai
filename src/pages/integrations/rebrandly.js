@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Rebrandly"
-      description="Rebrandly is the easiest way to create and share branded links (short URLs using your own domain name)."
+      description={`Rebrandly is the easiest way to create and share branded links (short URLs using your own domain name).`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -81,7 +81,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Rebrandly</title>
-          <meta name="description" content="Rebrandly is the easiest way to create and share branded links (short URLs using your own domain name)." />
+          <meta name="description" content={`Rebrandly is the easiest way to create and share branded links (short URLs using your own domain name).`} />
         </>
       ),
     },

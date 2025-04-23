@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="OfficeClip"
-      description="OfficeClip is a team collaboration tool to organize CRM, HRM, Issue Tracker and keep projects on track."
+      description={`OfficeClip is a team collaboration tool to organize CRM, HRM, Issue Tracker and keep projects on track.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -61,7 +61,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>OfficeClip</title>
-          <meta name="description" content="OfficeClip is a team collaboration tool to organize CRM, HRM, Issue Tracker and keep projects on track." />
+          <meta name="description" content={`OfficeClip is a team collaboration tool to organize CRM, HRM, Issue Tracker and keep projects on track.`} />
         </>
       ),
     },

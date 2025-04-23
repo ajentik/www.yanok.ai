@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Porterhouse"
-      description="Porterhouse is the only bulk texting solution that sends iMessages to your entire list with a single click, from your own phone number."
+      description={`Porterhouse is the only bulk texting solution that sends iMessages to your entire list with a single click, from your own phone number.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Porterhouse</title>
-          <meta name="description" content="Porterhouse is the only bulk texting solution that sends iMessages to your entire list with a single click, from your own phone number." />
+          <meta name="description" content={`Porterhouse is the only bulk texting solution that sends iMessages to your entire list with a single click, from your own phone number.`} />
         </>
       ),
     },

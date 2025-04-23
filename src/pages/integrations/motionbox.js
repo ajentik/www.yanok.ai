@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Motionbox"
-      description="Motionbox is a service that provides blazing fast super robust video rendering. Design a template or select one from our library to get started."
+      description={`Motionbox is a service that provides blazing fast super robust video rendering. Design a template or select one from our library to get started.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Motionbox</title>
-          <meta name="description" content="Motionbox is a service that provides blazing fast super robust video rendering. Design a template or select one from our library to get started." />
+          <meta name="description" content={`Motionbox is a service that provides blazing fast super robust video rendering. Design a template or select one from our library to get started.`} />
         </>
       ),
     },

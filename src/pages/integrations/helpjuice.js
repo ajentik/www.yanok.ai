@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Helpjuice"
-      description="Helpjuice’s is a knowledge base software designed from the ground up to help you scale your customer support, and, collaborate better with your team."
+      description={`Helpjuice’s is a knowledge base software designed from the ground up to help you scale your customer support, and, collaborate better with your team.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -71,7 +71,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Helpjuice</title>
-          <meta name="description" content="Helpjuice’s is a knowledge base software designed from the ground up to help you scale your customer support, and, collaborate better with your team." />
+          <meta name="description" content={`Helpjuice’s is a knowledge base software designed from the ground up to help you scale your customer support, and, collaborate better with your team.`} />
         </>
       ),
     },

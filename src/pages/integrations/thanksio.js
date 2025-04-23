@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="thanks.io"
-      description="Thanks.io is a way to automatically send ‘handwritten’ postcards, letters, notecards, and giftcards at scale for as low as $.59 per card."
+      description={`Thanks.io is a way to automatically send ‘handwritten’ postcards, letters, notecards, and giftcards at scale for as low as $.59 per card.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -126,7 +126,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>thanks.io</title>
-          <meta name="description" content="Thanks.io is a way to automatically send ‘handwritten’ postcards, letters, notecards, and giftcards at scale for as low as $.59 per card." />
+          <meta name="description" content={`Thanks.io is a way to automatically send ‘handwritten’ postcards, letters, notecards, and giftcards at scale for as low as $.59 per card.`} />
         </>
       ),
     },

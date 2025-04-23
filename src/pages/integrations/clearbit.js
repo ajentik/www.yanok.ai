@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Clearbit"
-      description="Clearbit is a data API that lets you enrich your person and company records with social, demographic, and firmographic data."
+      description={`Clearbit is a data API that lets you enrich your person and company records with social, demographic, and firmographic data.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -72,7 +72,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Clearbit</title>
-          <meta name="description" content="Clearbit is a data API that lets you enrich your person and company records with social, demographic, and firmographic data." />
+          <meta name="description" content={`Clearbit is a data API that lets you enrich your person and company records with social, demographic, and firmographic data.`} />
         </>
       ),
     },

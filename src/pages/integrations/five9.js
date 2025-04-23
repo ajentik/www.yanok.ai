@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Five9"
-      description="Five9 is the leading cloud call center software. Trusted by 2000+ clients to accelerate sales and power customer service."
+      description={`Five9 is the leading cloud call center software. Trusted by 2000+ clients to accelerate sales and power customer service.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +53,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Five9</title>
-          <meta name="description" content="Five9 is the leading cloud call center software. Trusted by 2000+ clients to accelerate sales and power customer service." />
+          <meta name="description" content={`Five9 is the leading cloud call center software. Trusted by 2000+ clients to accelerate sales and power customer service.`} />
         </>
       ),
     },

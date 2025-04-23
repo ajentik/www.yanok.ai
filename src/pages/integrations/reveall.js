@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Reveall"
-      description="Reveall helps companies improve the customer and user experience by empowering teams to turn customer data from research and feedback into clearly prioritized actions."
+      description={`Reveall helps companies improve the customer and user experience by empowering teams to turn customer data from research and feedback into clearly prioritized actions.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -61,7 +61,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Reveall</title>
-          <meta name="description" content="Reveall helps companies improve the customer and user experience by empowering teams to turn customer data from research and feedback into clearly prioritized actions." />
+          <meta name="description" content={`Reveall helps companies improve the customer and user experience by empowering teams to turn customer data from research and feedback into clearly prioritized actions.`} />
         </>
       ),
     },

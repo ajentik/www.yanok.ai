@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="YouCan"
-      description="YouCan is an integrated platform specialized in e-commerce, offering a wide range of services needed by merchants and entrepreneurs."
+      description={`YouCan is an integrated platform specialized in e-commerce, offering a wide range of services needed by merchants and entrepreneurs.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -71,7 +71,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>YouCan</title>
-          <meta name="description" content="YouCan is an integrated platform specialized in e-commerce, offering a wide range of services needed by merchants and entrepreneurs." />
+          <meta name="description" content={`YouCan is an integrated platform specialized in e-commerce, offering a wide range of services needed by merchants and entrepreneurs.`} />
         </>
       ),
     },

@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Superpictor"
-      description="A true interface between the customer and production, Superpictor facilitates and accelerates the sales process of a personalized product, from customer acquisition to after-sales service. We have developed a unique, simple and automated SaaS software application that offers digital tools adapted to all the different trades of personalization companies (marketing, sales, graphics, production, after-sales service, etc.)."
+      description={`A true interface between the customer and production, Superpictor facilitates and accelerates the sales process of a personalized product, from customer acquisition to after-sales service. We have developed a unique, simple and automated SaaS software application that offers digital tools adapted to all the different trades of personalization companies (marketing, sales, graphics, production, after-sales service, etc.).`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Superpictor</title>
-          <meta name="description" content="A true interface between the customer and production, Superpictor facilitates and accelerates the sales process of a personalized product, from customer acquisition to after-sales service. We have developed a unique, simple and automated SaaS software application that offers digital tools adapted to all the different trades of personalization companies (marketing, sales, graphics, production, after-sales service, etc.)." />
+          <meta name="description" content={`A true interface between the customer and production, Superpictor facilitates and accelerates the sales process of a personalized product, from customer acquisition to after-sales service. We have developed a unique, simple and automated SaaS software application that offers digital tools adapted to all the different trades of personalization companies (marketing, sales, graphics, production, after-sales service, etc.).`} />
         </>
       ),
     },

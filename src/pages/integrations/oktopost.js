@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Oktopost"
-      description="Oktopost is a B2B social engagement suite that supports modern data-driven organizations."
+      description={`Oktopost is a B2B social engagement suite that supports modern data-driven organizations.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -141,7 +141,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Oktopost</title>
-          <meta name="description" content="Oktopost is a B2B social engagement suite that supports modern data-driven organizations." />
+          <meta name="description" content={`Oktopost is a B2B social engagement suite that supports modern data-driven organizations.`} />
         </>
       ),
     },

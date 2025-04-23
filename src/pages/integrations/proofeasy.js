@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Proofeasy"
-      description="ProofEasy provides an innovative way to secure, share and verify documents using blockchain & QR code technology."
+      description={`ProofEasy provides an innovative way to secure, share and verify documents using blockchain & QR code technology.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Proofeasy</title>
-          <meta name="description" content="ProofEasy provides an innovative way to secure, share and verify documents using blockchain & QR code technology." />
+          <meta name="description" content={`ProofEasy provides an innovative way to secure, share and verify documents using blockchain & QR code technology.`} />
         </>
       ),
     },

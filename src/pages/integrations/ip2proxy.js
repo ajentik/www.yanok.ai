@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="IP2Proxy"
-      description="IP2Proxy allows instant detection of anonymous proxy, VPN, TOR exit nodes, search engine robots (SES) and residential proxies (RES) by IP address."
+      description={`IP2Proxy allows instant detection of anonymous proxy, VPN, TOR exit nodes, search engine robots (SES) and residential proxies (RES) by IP address.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>IP2Proxy</title>
-          <meta name="description" content="IP2Proxy allows instant detection of anonymous proxy, VPN, TOR exit nodes, search engine robots (SES) and residential proxies (RES) by IP address." />
+          <meta name="description" content={`IP2Proxy allows instant detection of anonymous proxy, VPN, TOR exit nodes, search engine robots (SES) and residential proxies (RES) by IP address.`} />
         </>
       ),
     },

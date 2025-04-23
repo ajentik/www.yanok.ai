@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="InventoryLab"
-      description="List products, print labels, build FBA shipments or add to your Merchant Fulfilled inventory, track costs and your net profit as an Amazon Seller"
+      description={`List products, print labels, build FBA shipments or add to your Merchant Fulfilled inventory, track costs and your net profit as an Amazon Seller`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -72,7 +72,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>InventoryLab</title>
-          <meta name="description" content="List products, print labels, build FBA shipments or add to your Merchant Fulfilled inventory, track costs and your net profit as an Amazon Seller" />
+          <meta name="description" content={`List products, print labels, build FBA shipments or add to your Merchant Fulfilled inventory, track costs and your net profit as an Amazon Seller`} />
         </>
       ),
     },

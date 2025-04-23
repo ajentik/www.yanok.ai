@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Simply Budget"
-      description="Simply Budget is an easy and secure budgeting tool to make your budget predictions and achieve all business goals."
+      description={`Simply Budget is an easy and secure budgeting tool to make your budget predictions and achieve all business goals.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Simply Budget</title>
-          <meta name="description" content="Simply Budget is an easy and secure budgeting tool to make your budget predictions and achieve all business goals." />
+          <meta name="description" content={`Simply Budget is an easy and secure budgeting tool to make your budget predictions and achieve all business goals.`} />
         </>
       ),
     },

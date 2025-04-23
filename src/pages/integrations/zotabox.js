@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Zotabox"
-      description="Zotabox Marketing Tools."
+      description={`Zotabox Marketing Tools.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -62,7 +62,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Zotabox</title>
-          <meta name="description" content="Zotabox Marketing Tools." />
+          <meta name="description" content={`Zotabox Marketing Tools.`} />
         </>
       ),
     },

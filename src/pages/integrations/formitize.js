@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Formitize"
-      description="Formitize is an all around customizable solution for moving from paper based forms to electronic based solutions. The wide variety of uses include from dispatching jobs, to house inspections, sales and even call-quality assurance."
+      description={`Formitize is an all around customizable solution for moving from paper based forms to electronic based solutions. The wide variety of uses include from dispatching jobs, to house inspections, sales and even call-quality assurance.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -71,7 +71,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Formitize</title>
-          <meta name="description" content="Formitize is an all around customizable solution for moving from paper based forms to electronic based solutions. The wide variety of uses include from dispatching jobs, to house inspections, sales and even call-quality assurance." />
+          <meta name="description" content={`Formitize is an all around customizable solution for moving from paper based forms to electronic based solutions. The wide variety of uses include from dispatching jobs, to house inspections, sales and even call-quality assurance.`} />
         </>
       ),
     },

@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="TAYL"
-      description="TAYL is an app that turns text and web pages into podcast audio."
+      description={`TAYL is an app that turns text and web pages into podcast audio.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -66,7 +66,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>TAYL</title>
-          <meta name="description" content="TAYL is an app that turns text and web pages into podcast audio." />
+          <meta name="description" content={`TAYL is an app that turns text and web pages into podcast audio.`} />
         </>
       ),
     },

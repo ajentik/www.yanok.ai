@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="SimplyBook.me"
-      description="SimplyBook.me is online appointment and scheduling software, that allows to accept bookings 24/7 and offers variety of flexible features."
+      description={`SimplyBook.me is online appointment and scheduling software, that allows to accept bookings 24/7 and offers variety of flexible features.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -82,7 +82,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>SimplyBook.me</title>
-          <meta name="description" content="SimplyBook.me is online appointment and scheduling software, that allows to accept bookings 24/7 and offers variety of flexible features." />
+          <meta name="description" content={`SimplyBook.me is online appointment and scheduling software, that allows to accept bookings 24/7 and offers variety of flexible features.`} />
         </>
       ),
     },

@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Zoconut"
-      description="Online Clinic Software for Dietitians & Health Coaches"
+      description={`Online Clinic Software for Dietitians & Health Coaches`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Zoconut</title>
-          <meta name="description" content="Online Clinic Software for Dietitians & Health Coaches" />
+          <meta name="description" content={`Online Clinic Software for Dietitians & Health Coaches`} />
         </>
       ),
     },

@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="ProAgentWebsites.com"
-      description="ProAgentWebsites.com is an integrated Real Estate Website, CRM and Marketing Tools."
+      description={`ProAgentWebsites.com is an integrated Real Estate Website, CRM and Marketing Tools.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>ProAgentWebsites.com</title>
-          <meta name="description" content="ProAgentWebsites.com is an integrated Real Estate Website, CRM and Marketing Tools." />
+          <meta name="description" content={`ProAgentWebsites.com is an integrated Real Estate Website, CRM and Marketing Tools.`} />
         </>
       ),
     },

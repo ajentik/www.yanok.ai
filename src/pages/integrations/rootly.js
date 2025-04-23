@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Rootly"
-      description="Rootly is an incident management platform that automates tedious manual work during incidents. 1,000's of users around the world trust Rootly daily to create a simple, consistent, and delightful incident management process."
+      description={`Rootly is an incident management platform that automates tedious manual work during incidents. 1,000's of users around the world trust Rootly daily to create a simple, consistent, and delightful incident management process.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -96,7 +96,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Rootly</title>
-          <meta name="description" content="Rootly is an incident management platform that automates tedious manual work during incidents. 1,000's of users around the world trust Rootly daily to create a simple, consistent, and delightful incident management process." />
+          <meta name="description" content={`Rootly is an incident management platform that automates tedious manual work during incidents. 1,000's of users around the world trust Rootly daily to create a simple, consistent, and delightful incident management process.`} />
         </>
       ),
     },

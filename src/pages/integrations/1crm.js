@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="1CRM"
-      description="1CRM allows you to organize a large part of your business within a single web application, and access that information at any time or place."
+      description={`1CRM allows you to organize a large part of your business within a single web application, and access that information at any time or place.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -186,7 +186,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>1CRM</title>
-          <meta name="description" content="1CRM allows you to organize a large part of your business within a single web application, and access that information at any time or place." />
+          <meta name="description" content={`1CRM allows you to organize a large part of your business within a single web application, and access that information at any time or place.`} />
         </>
       ),
     },

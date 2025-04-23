@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Tenzo"
-      description="Tenzo is a data management platform for restaurant and retail. We aggregate all forms of data, and then help you turn it into value"
+      description={`Tenzo is a data management platform for restaurant and retail. We aggregate all forms of data, and then help you turn it into value`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -67,7 +67,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Tenzo</title>
-          <meta name="description" content="Tenzo is a data management platform for restaurant and retail. We aggregate all forms of data, and then help you turn it into value" />
+          <meta name="description" content={`Tenzo is a data management platform for restaurant and retail. We aggregate all forms of data, and then help you turn it into value`} />
         </>
       ),
     },

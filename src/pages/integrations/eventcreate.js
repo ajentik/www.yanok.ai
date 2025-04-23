@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="EventCreate"
-      description="EventCreate is a reliable, simple event marketing software for any occasion. Create a beautiful event website, sell tickets, and promote your event online."
+      description={`EventCreate is a reliable, simple event marketing software for any occasion. Create a beautiful event website, sell tickets, and promote your event online.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -62,7 +62,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>EventCreate</title>
-          <meta name="description" content="EventCreate is a reliable, simple event marketing software for any occasion. Create a beautiful event website, sell tickets, and promote your event online." />
+          <meta name="description" content={`EventCreate is a reliable, simple event marketing software for any occasion. Create a beautiful event website, sell tickets, and promote your event online.`} />
         </>
       ),
     },

@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Nitro"
-      description="Nitro makes document productivity easy, powerful, affordable, and available to all. This integration makes it even better enabling you to extend the power and features from Nitro to other services."
+      description={`Nitro makes document productivity easy, powerful, affordable, and available to all. This integration makes it even better enabling you to extend the power and features from Nitro to other services.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -61,7 +61,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Nitro</title>
-          <meta name="description" content="Nitro makes document productivity easy, powerful, affordable, and available to all. This integration makes it even better enabling you to extend the power and features from Nitro to other services." />
+          <meta name="description" content={`Nitro makes document productivity easy, powerful, affordable, and available to all. This integration makes it even better enabling you to extend the power and features from Nitro to other services.`} />
         </>
       ),
     },

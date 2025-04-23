@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="SMS Connexion"
-      description="SMS Connexion offers reliable, secure and cost-efficient SMS services. With this Zaper Integration you can transactional SMS, Bulk SMS, import contacts, get balance and more"
+      description={`SMS Connexion offers reliable, secure and cost-efficient SMS services. With this Zaper Integration you can transactional SMS, Bulk SMS, import contacts, get balance and more`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -77,7 +77,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>SMS Connexion</title>
-          <meta name="description" content="SMS Connexion offers reliable, secure and cost-efficient SMS services. With this Zaper Integration you can transactional SMS, Bulk SMS, import contacts, get balance and more" />
+          <meta name="description" content={`SMS Connexion offers reliable, secure and cost-efficient SMS services. With this Zaper Integration you can transactional SMS, Bulk SMS, import contacts, get balance and more`} />
         </>
       ),
     },

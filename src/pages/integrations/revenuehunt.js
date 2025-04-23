@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="RevenueHunt"
-      description="A product recommendation quiz for your eCommerce store."
+      description={`A product recommendation quiz for your eCommerce store.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>RevenueHunt</title>
-          <meta name="description" content="A product recommendation quiz for your eCommerce store." />
+          <meta name="description" content={`A product recommendation quiz for your eCommerce store.`} />
         </>
       ),
     },

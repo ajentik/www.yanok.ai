@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="CoinGate"
-      description="CoinGate is a payment gateway for Bitcoin, Litecoin, Ethereum and 50 other cryptocurrencies. With this integration you will be able to follow your orders and their statuses."
+      description={`CoinGate is a payment gateway for Bitcoin, Litecoin, Ethereum and 50 other cryptocurrencies. With this integration you will be able to follow your orders and their statuses.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -92,7 +92,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>CoinGate</title>
-          <meta name="description" content="CoinGate is a payment gateway for Bitcoin, Litecoin, Ethereum and 50 other cryptocurrencies. With this integration you will be able to follow your orders and their statuses." />
+          <meta name="description" content={`CoinGate is a payment gateway for Bitcoin, Litecoin, Ethereum and 50 other cryptocurrencies. With this integration you will be able to follow your orders and their statuses.`} />
         </>
       ),
     },

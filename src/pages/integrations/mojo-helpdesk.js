@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Mojo Helpdesk"
-      description="Help desk software that lets you centralize, assign, and track customer support requests as well as internal help desk tickets."
+      description={`Help desk software that lets you centralize, assign, and track customer support requests as well as internal help desk tickets.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -81,7 +81,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Mojo Helpdesk</title>
-          <meta name="description" content="Help desk software that lets you centralize, assign, and track customer support requests as well as internal help desk tickets." />
+          <meta name="description" content={`Help desk software that lets you centralize, assign, and track customer support requests as well as internal help desk tickets.`} />
         </>
       ),
     },

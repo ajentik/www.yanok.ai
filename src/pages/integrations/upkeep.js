@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="UpKeep"
-      description="UpKeep is a maintenance management application for facility management teams. Create work orders, prioritize requests, and collaborate with your team."
+      description={`UpKeep is a maintenance management application for facility management teams. Create work orders, prioritize requests, and collaborate with your team.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -131,7 +131,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>UpKeep</title>
-          <meta name="description" content="UpKeep is a maintenance management application for facility management teams. Create work orders, prioritize requests, and collaborate with your team." />
+          <meta name="description" content={`UpKeep is a maintenance management application for facility management teams. Create work orders, prioritize requests, and collaborate with your team.`} />
         </>
       ),
     },

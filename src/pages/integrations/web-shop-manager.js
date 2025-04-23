@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Web Shop Manager"
-      description="Web Shop Manager is an eCommerce platform which specializes in the Storage, Searching, and Display of complex product catalogs."
+      description={`Web Shop Manager is an eCommerce platform which specializes in the Storage, Searching, and Display of complex product catalogs.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -66,7 +66,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Web Shop Manager</title>
-          <meta name="description" content="Web Shop Manager is an eCommerce platform which specializes in the Storage, Searching, and Display of complex product catalogs." />
+          <meta name="description" content={`Web Shop Manager is an eCommerce platform which specializes in the Storage, Searching, and Display of complex product catalogs.`} />
         </>
       ),
     },

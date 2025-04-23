@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="CodeSubmit"
-      description="CodeSubmit helps you make better hiring decisions with take-home coding challenges."
+      description={`CodeSubmit helps you make better hiring decisions with take-home coding challenges.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -66,7 +66,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>CodeSubmit</title>
-          <meta name="description" content="CodeSubmit helps you make better hiring decisions with take-home coding challenges." />
+          <meta name="description" content={`CodeSubmit helps you make better hiring decisions with take-home coding challenges.`} />
         </>
       ),
     },

@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Adversus Dialer"
-      description="A web-based auto dialer solution used by professionals to streamline outbound outreach by phone."
+      description={`A web-based auto dialer solution used by professionals to streamline outbound outreach by phone.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -111,7 +111,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Adversus Dialer</title>
-          <meta name="description" content="A web-based auto dialer solution used by professionals to streamline outbound outreach by phone." />
+          <meta name="description" content={`A web-based auto dialer solution used by professionals to streamline outbound outreach by phone.`} />
         </>
       ),
     },

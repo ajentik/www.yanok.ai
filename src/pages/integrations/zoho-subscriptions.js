@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Zoho Subscriptions"
-      description="Zoho Subscriptions is a recurring billing and subscription management app that helps manage the entire life cycle of your customers - from billing and charging to managing their subscriptions."
+      description={`Zoho Subscriptions is a recurring billing and subscription management app that helps manage the entire life cycle of your customers - from billing and charging to managing their subscriptions.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -136,7 +136,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Zoho Subscriptions</title>
-          <meta name="description" content="Zoho Subscriptions is a recurring billing and subscription management app that helps manage the entire life cycle of your customers - from billing and charging to managing their subscriptions." />
+          <meta name="description" content={`Zoho Subscriptions is a recurring billing and subscription management app that helps manage the entire life cycle of your customers - from billing and charging to managing their subscriptions.`} />
         </>
       ),
     },

@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Approval Donkey"
-      description="Approval Donkey is an approval workflow tool that surfaces, automates and tracks all your approval, sign-off and decision requests."
+      description={`Approval Donkey is an approval workflow tool that surfaces, automates and tracks all your approval, sign-off and decision requests.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -61,7 +61,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Approval Donkey</title>
-          <meta name="description" content="Approval Donkey is an approval workflow tool that surfaces, automates and tracks all your approval, sign-off and decision requests." />
+          <meta name="description" content={`Approval Donkey is an approval workflow tool that surfaces, automates and tracks all your approval, sign-off and decision requests.`} />
         </>
       ),
     },

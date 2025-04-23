@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Google Tasks"
-      description="Google Tasks is a very simple task list. Works inside Gmail, Android, and Calendar seamlessly."
+      description={`Google Tasks is a very simple task list. Works inside Gmail, Android, and Calendar seamlessly.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -91,7 +91,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Google Tasks</title>
-          <meta name="description" content="Google Tasks is a very simple task list. Works inside Gmail, Android, and Calendar seamlessly." />
+          <meta name="description" content={`Google Tasks is a very simple task list. Works inside Gmail, Android, and Calendar seamlessly.`} />
         </>
       ),
     },

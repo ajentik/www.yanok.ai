@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="BSI"
-      description="Unsere Softwarelösungen vereinen das Beste von CRM und Marketing Automation und überzeugen als intelligente und benutzerfreundliche Helfer."
+      description={`Unsere Softwarelösungen vereinen das Beste von CRM und Marketing Automation und überzeugen als intelligente und benutzerfreundliche Helfer.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -91,7 +91,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>BSI</title>
-          <meta name="description" content="Unsere Softwarelösungen vereinen das Beste von CRM und Marketing Automation und überzeugen als intelligente und benutzerfreundliche Helfer." />
+          <meta name="description" content={`Unsere Softwarelösungen vereinen das Beste von CRM und Marketing Automation und überzeugen als intelligente und benutzerfreundliche Helfer.`} />
         </>
       ),
     },

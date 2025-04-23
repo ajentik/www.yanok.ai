@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="FogBugz"
-      description="FogBugz is powerful hosted bug tracking software used to make great software by great teams."
+      description={`FogBugz is powerful hosted bug tracking software used to make great software by great teams.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -131,7 +131,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>FogBugz</title>
-          <meta name="description" content="FogBugz is powerful hosted bug tracking software used to make great software by great teams." />
+          <meta name="description" content={`FogBugz is powerful hosted bug tracking software used to make great software by great teams.`} />
         </>
       ),
     },

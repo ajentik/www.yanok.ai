@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="DocketManager"
-      description="DocketManager is a complete print business management system offering a fully integrated cloud based MIS and Web to Print platform."
+      description={`DocketManager is a complete print business management system offering a fully integrated cloud based MIS and Web to Print platform.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -291,7 +291,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>DocketManager</title>
-          <meta name="description" content="DocketManager is a complete print business management system offering a fully integrated cloud based MIS and Web to Print platform." />
+          <meta name="description" content={`DocketManager is a complete print business management system offering a fully integrated cloud based MIS and Web to Print platform.`} />
         </>
       ),
     },

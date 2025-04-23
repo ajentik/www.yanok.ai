@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Followup CRM"
-      description="Followup CRM allows construction contractors to keep track of leads, jobs, and bids, upload photos and documents from anywhere with our cloud-based software."
+      description={`Followup CRM allows construction contractors to keep track of leads, jobs, and bids, upload photos and documents from anywhere with our cloud-based software.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -81,7 +81,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Followup CRM</title>
-          <meta name="description" content="Followup CRM allows construction contractors to keep track of leads, jobs, and bids, upload photos and documents from anywhere with our cloud-based software." />
+          <meta name="description" content={`Followup CRM allows construction contractors to keep track of leads, jobs, and bids, upload photos and documents from anywhere with our cloud-based software.`} />
         </>
       ),
     },

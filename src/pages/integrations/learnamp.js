@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Learn Amp"
-      description="Learn Amp is a People Development Platform. Engage with learning, connect with others in your business and track your performance."
+      description={`Learn Amp is a People Development Platform. Engage with learning, connect with others in your business and track your performance.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -96,7 +96,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Learn Amp</title>
-          <meta name="description" content="Learn Amp is a People Development Platform. Engage with learning, connect with others in your business and track your performance." />
+          <meta name="description" content={`Learn Amp is a People Development Platform. Engage with learning, connect with others in your business and track your performance.`} />
         </>
       ),
     },

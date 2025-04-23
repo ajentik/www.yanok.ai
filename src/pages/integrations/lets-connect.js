@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Let's Connect"
-      description="Connect with your customers via the Let's Connect widget to catch your customers when their interest is at it’s peak! Using live communication makes converting them into new customers super easy."
+      description={`Connect with your customers via the Let's Connect widget to catch your customers when their interest is at it’s peak! Using live communication makes converting them into new customers super easy.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -71,7 +71,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Let's Connect</title>
-          <meta name="description" content="Connect with your customers via the Let's Connect widget to catch your customers when their interest is at it’s peak! Using live communication makes converting them into new customers super easy." />
+          <meta name="description" content={`Connect with your customers via the Let's Connect widget to catch your customers when their interest is at it’s peak! Using live communication makes converting them into new customers super easy.`} />
         </>
       ),
     },

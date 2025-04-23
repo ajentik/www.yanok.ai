@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Modash"
-      description="Modash is an influencer tool helping you find creators who speak to your audience at scale."
+      description={`Modash is an influencer tool helping you find creators who speak to your audience at scale.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Modash</title>
-          <meta name="description" content="Modash is an influencer tool helping you find creators who speak to your audience at scale." />
+          <meta name="description" content={`Modash is an influencer tool helping you find creators who speak to your audience at scale.`} />
         </>
       ),
     },

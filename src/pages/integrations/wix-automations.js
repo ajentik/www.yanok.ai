@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Wix Automations"
-      description="Wix Automations uses actions visitors do on your site, like submit a form, sign up, or purchase, to trigger actions like sending an email or a chat message & more."
+      description={`Wix Automations uses actions visitors do on your site, like submit a form, sign up, or purchase, to trigger actions like sending an email or a chat message & more.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Wix Automations</title>
-          <meta name="description" content="Wix Automations uses actions visitors do on your site, like submit a form, sign up, or purchase, to trigger actions like sending an email or a chat message & more." />
+          <meta name="description" content={`Wix Automations uses actions visitors do on your site, like submit a form, sign up, or purchase, to trigger actions like sending an email or a chat message & more.`} />
         </>
       ),
     },

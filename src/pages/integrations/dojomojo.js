@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="DojoMojo"
-      description="DojoMojo is an online platform that helps its users grow their email list, increase social engagement, and generate sales by running sweepstakes along with performance analytics."
+      description={`DojoMojo is an online platform that helps its users grow their email list, increase social engagement, and generate sales by running sweepstakes along with performance analytics.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +53,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>DojoMojo</title>
-          <meta name="description" content="DojoMojo is an online platform that helps its users grow their email list, increase social engagement, and generate sales by running sweepstakes along with performance analytics." />
+          <meta name="description" content={`DojoMojo is an online platform that helps its users grow their email list, increase social engagement, and generate sales by running sweepstakes along with performance analytics.`} />
         </>
       ),
     },

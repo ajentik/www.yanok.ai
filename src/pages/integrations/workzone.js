@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Workzone"
-      description="Workzone is project management software with a careful balance of functionality and ease-of-use to make it useful and accessible to diverse teams."
+      description={`Workzone is project management software with a careful balance of functionality and ease-of-use to make it useful and accessible to diverse teams.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -91,7 +91,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Workzone</title>
-          <meta name="description" content="Workzone is project management software with a careful balance of functionality and ease-of-use to make it useful and accessible to diverse teams." />
+          <meta name="description" content={`Workzone is project management software with a careful balance of functionality and ease-of-use to make it useful and accessible to diverse teams.`} />
         </>
       ),
     },

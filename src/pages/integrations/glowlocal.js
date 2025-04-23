@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="GlowLocal"
-      description="GlowLocal helps law firms get the reviews they deserve through review automation and monitoring."
+      description={`GlowLocal helps law firms get the reviews they deserve through review automation and monitoring.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>GlowLocal</title>
-          <meta name="description" content="GlowLocal helps law firms get the reviews they deserve through review automation and monitoring." />
+          <meta name="description" content={`GlowLocal helps law firms get the reviews they deserve through review automation and monitoring.`} />
         </>
       ),
     },

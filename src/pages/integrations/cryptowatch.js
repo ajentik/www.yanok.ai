@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Cryptowatch"
-      description="Cryptowatch is the preferred crypto trading terminal for hodlers and active traders alike."
+      description={`Cryptowatch is the preferred crypto trading terminal for hodlers and active traders alike.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -66,7 +66,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Cryptowatch</title>
-          <meta name="description" content="Cryptowatch is the preferred crypto trading terminal for hodlers and active traders alike." />
+          <meta name="description" content={`Cryptowatch is the preferred crypto trading terminal for hodlers and active traders alike.`} />
         </>
       ),
     },

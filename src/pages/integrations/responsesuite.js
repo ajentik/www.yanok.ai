@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="ResponseSuite"
-      description="ResponseSuite uses the intelligence of surveys to get more of your customers buying more of your products, more often."
+      description={`ResponseSuite uses the intelligence of surveys to get more of your customers buying more of your products, more often.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>ResponseSuite</title>
-          <meta name="description" content="ResponseSuite uses the intelligence of surveys to get more of your customers buying more of your products, more often." />
+          <meta name="description" content={`ResponseSuite uses the intelligence of surveys to get more of your customers buying more of your products, more often.`} />
         </>
       ),
     },

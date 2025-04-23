@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Reftab"
-      description="Reftab is a fixed asset management service to help track items."
+      description={`Reftab is a fixed asset management service to help track items.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -76,7 +76,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Reftab</title>
-          <meta name="description" content="Reftab is a fixed asset management service to help track items." />
+          <meta name="description" content={`Reftab is a fixed asset management service to help track items.`} />
         </>
       ),
     },

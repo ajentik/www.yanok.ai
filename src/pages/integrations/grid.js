@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Grid"
-      description="Grid is a data collection tool which enables users to increase productivity."
+      description={`Grid is a data collection tool which enables users to increase productivity.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -61,7 +61,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Grid</title>
-          <meta name="description" content="Grid is a data collection tool which enables users to increase productivity." />
+          <meta name="description" content={`Grid is a data collection tool which enables users to increase productivity.`} />
         </>
       ),
     },

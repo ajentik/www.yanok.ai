@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Mobilo Card"
-      description="The Smart Business Card. Share your contact details with a tap and turn your meetings into leads. The only digital business card with data analytics and link tracking."
+      description={`The Smart Business Card. Share your contact details with a tap and turn your meetings into leads. The only digital business card with data analytics and link tracking.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -67,7 +67,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Mobilo Card</title>
-          <meta name="description" content="The Smart Business Card. Share your contact details with a tap and turn your meetings into leads. The only digital business card with data analytics and link tracking." />
+          <meta name="description" content={`The Smart Business Card. Share your contact details with a tap and turn your meetings into leads. The only digital business card with data analytics and link tracking.`} />
         </>
       ),
     },

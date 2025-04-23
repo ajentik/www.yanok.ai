@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Airmeet"
-      description="Airmeet is an all-in-one platform for communities & organizations to host immersive events and build real connections, online."
+      description={`Airmeet is an all-in-one platform for communities & organizations to host immersive events and build real connections, online.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -151,7 +151,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Airmeet</title>
-          <meta name="description" content="Airmeet is an all-in-one platform for communities & organizations to host immersive events and build real connections, online." />
+          <meta name="description" content={`Airmeet is an all-in-one platform for communities & organizations to host immersive events and build real connections, online.`} />
         </>
       ),
     },

@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Google BigQuery"
-      description="BigQuery is Google's serverless and highly scalable enterprise data warehouse, designed to make all your data analysts productive."
+      description={`BigQuery is Google's serverless and highly scalable enterprise data warehouse, designed to make all your data analysts productive.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -61,7 +61,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Google BigQuery</title>
-          <meta name="description" content="BigQuery is Google's serverless and highly scalable enterprise data warehouse, designed to make all your data analysts productive." />
+          <meta name="description" content={`BigQuery is Google's serverless and highly scalable enterprise data warehouse, designed to make all your data analysts productive.`} />
         </>
       ),
     },

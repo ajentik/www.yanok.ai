@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Dataclay QUE"
-      description="QUE is the optimal API that leverages the full capabilities of Templater for Adobe After Effects to produce dynamic video content."
+      description={`QUE is the optimal API that leverages the full capabilities of Templater for Adobe After Effects to produce dynamic video content.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -91,7 +91,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Dataclay QUE</title>
-          <meta name="description" content="QUE is the optimal API that leverages the full capabilities of Templater for Adobe After Effects to produce dynamic video content." />
+          <meta name="description" content={`QUE is the optimal API that leverages the full capabilities of Templater for Adobe After Effects to produce dynamic video content.`} />
         </>
       ),
     },

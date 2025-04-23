@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Atolia"
-      description="Atolia is an agile and secure workspace for teams."
+      description={`Atolia is an agile and secure workspace for teams.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -67,7 +67,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Atolia</title>
-          <meta name="description" content="Atolia is an agile and secure workspace for teams." />
+          <meta name="description" content={`Atolia is an agile and secure workspace for teams.`} />
         </>
       ),
     },

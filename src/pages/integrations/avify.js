@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Avify"
-      description="Engine for E-commerce automation. Manage inventories and orders from all your sales channels."
+      description={`Engine for E-commerce automation. Manage inventories and orders from all your sales channels.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -67,7 +67,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Avify</title>
-          <meta name="description" content="Engine for E-commerce automation. Manage inventories and orders from all your sales channels." />
+          <meta name="description" content={`Engine for E-commerce automation. Manage inventories and orders from all your sales channels.`} />
         </>
       ),
     },

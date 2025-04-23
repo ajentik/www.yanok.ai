@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="iFormBuilder"
-      description="iFormBuilder is a universal, cloud based mobile data collection ("forms") platform with an emphasis on security on mobile devices, and collecting data with or without an Internet connection."
+      description={`iFormBuilder is a universal, cloud based mobile data collection (`}forms") platform with an emphasis on security on mobile devices, and collecting data with or without an Internet connection."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -111,7 +111,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>iFormBuilder</title>
-          <meta name="description" content="iFormBuilder is a universal, cloud based mobile data collection ("forms") platform with an emphasis on security on mobile devices, and collecting data with or without an Internet connection." />
+          <meta name="description" content={`iFormBuilder is a universal, cloud based mobile data collection (`}forms") platform with an emphasis on security on mobile devices, and collecting data with or without an Internet connection." />
         </>
       ),
     },

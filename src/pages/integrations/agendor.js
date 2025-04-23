@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Agendor"
-      description="Agendor is a sales improvement platform with web and mobile version designed for Brazilian companies with long sales cycles."
+      description={`Agendor is a sales improvement platform with web and mobile version designed for Brazilian companies with long sales cycles.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -171,7 +171,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Agendor</title>
-          <meta name="description" content="Agendor is a sales improvement platform with web and mobile version designed for Brazilian companies with long sales cycles." />
+          <meta name="description" content={`Agendor is a sales improvement platform with web and mobile version designed for Brazilian companies with long sales cycles.`} />
         </>
       ),
     },

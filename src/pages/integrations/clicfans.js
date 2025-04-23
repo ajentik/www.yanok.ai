@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Clicfans"
-      description="Clicfans brinda un servicio de automatización (CRM) y además te permite crear páginas."
+      description={`Clicfans brinda un servicio de automatización (CRM) y además te permite crear páginas.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -77,7 +77,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Clicfans</title>
-          <meta name="description" content="Clicfans brinda un servicio de automatización (CRM) y además te permite crear páginas." />
+          <meta name="description" content={`Clicfans brinda un servicio de automatización (CRM) y además te permite crear páginas.`} />
         </>
       ),
     },

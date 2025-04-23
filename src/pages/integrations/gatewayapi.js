@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="GatewayAPI SMS"
-      description="GatewayAPI is an API service providing out- and ingoing SMS message services at competitive prices."
+      description={`GatewayAPI is an API service providing out- and ingoing SMS message services at competitive prices.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -72,7 +72,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>GatewayAPI SMS</title>
-          <meta name="description" content="GatewayAPI is an API service providing out- and ingoing SMS message services at competitive prices." />
+          <meta name="description" content={`GatewayAPI is an API service providing out- and ingoing SMS message services at competitive prices.`} />
         </>
       ),
     },

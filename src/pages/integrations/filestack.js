@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="FileStack"
-      description="The Super API for End User Content. Upload and store files, seamlessly apply transformations, & deliver via powerful CDN"
+      description={`The Super API for End User Content. Upload and store files, seamlessly apply transformations, & deliver via powerful CDN`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -67,7 +67,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>FileStack</title>
-          <meta name="description" content="The Super API for End User Content. Upload and store files, seamlessly apply transformations, & deliver via powerful CDN" />
+          <meta name="description" content={`The Super API for End User Content. Upload and store files, seamlessly apply transformations, & deliver via powerful CDN`} />
         </>
       ),
     },

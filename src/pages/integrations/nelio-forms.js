@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Nelio Forms"
-      description="Nelio Forms is an online form builder for WordPress to create contact forms to collect information, make content interactive, and generate conversions."
+      description={`Nelio Forms is an online form builder for WordPress to create contact forms to collect information, make content interactive, and generate conversions.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Nelio Forms</title>
-          <meta name="description" content="Nelio Forms is an online form builder for WordPress to create contact forms to collect information, make content interactive, and generate conversions." />
+          <meta name="description" content={`Nelio Forms is an online form builder for WordPress to create contact forms to collect information, make content interactive, and generate conversions.`} />
         </>
       ),
     },

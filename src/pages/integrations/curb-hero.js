@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Curb Hero"
-      description="Curb Hero (formerly Block Party) is a simple, yet powerful, digital Open House sign-in app + property marketing tool used by thousands of real estate agents and mortgage professionals. It's proven to save time and get better quality lead data. Using Curb Hero subscription-free app, Realtors can quickly create a digital open house sign-in that is a showcase for their brand. Their logo, photos, color palette, lead questions, and follow-up messaging are all customizable. Curb Hero's Zapier integration can be used to unlock infinite possibilities with the data collected at open houses or in property marketing!"
+      description={`Curb Hero (formerly Block Party) is a simple, yet powerful, digital Open House sign-in app + property marketing tool used by thousands of real estate agents and mortgage professionals. It's proven to save time and get better quality lead data. Using Curb Hero subscription-free app, Realtors can quickly create a digital open house sign-in that is a showcase for their brand. Their logo, photos, color palette, lead questions, and follow-up messaging are all customizable. Curb Hero's Zapier integration can be used to unlock infinite possibilities with the data collected at open houses or in property marketing!`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Curb Hero</title>
-          <meta name="description" content="Curb Hero (formerly Block Party) is a simple, yet powerful, digital Open House sign-in app + property marketing tool used by thousands of real estate agents and mortgage professionals. It's proven to save time and get better quality lead data. Using Curb Hero subscription-free app, Realtors can quickly create a digital open house sign-in that is a showcase for their brand. Their logo, photos, color palette, lead questions, and follow-up messaging are all customizable. Curb Hero's Zapier integration can be used to unlock infinite possibilities with the data collected at open houses or in property marketing!" />
+          <meta name="description" content={`Curb Hero (formerly Block Party) is a simple, yet powerful, digital Open House sign-in app + property marketing tool used by thousands of real estate agents and mortgage professionals. It's proven to save time and get better quality lead data. Using Curb Hero subscription-free app, Realtors can quickly create a digital open house sign-in that is a showcase for their brand. Their logo, photos, color palette, lead questions, and follow-up messaging are all customizable. Curb Hero's Zapier integration can be used to unlock infinite possibilities with the data collected at open houses or in property marketing!`} />
         </>
       ),
     },

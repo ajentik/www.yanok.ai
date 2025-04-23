@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Cinode"
-      description="Cinode is a way to run consultancies with support for sales, resourcing and skills management."
+      description={`Cinode is a way to run consultancies with support for sales, resourcing and skills management.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -151,7 +151,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Cinode</title>
-          <meta name="description" content="Cinode is a way to run consultancies with support for sales, resourcing and skills management." />
+          <meta name="description" content={`Cinode is a way to run consultancies with support for sales, resourcing and skills management.`} />
         </>
       ),
     },

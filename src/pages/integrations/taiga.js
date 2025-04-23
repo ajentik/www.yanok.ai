@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Taiga"
-      description="Taiga is the project management tool for multi-functional agile teams"
+      description={`Taiga is the project management tool for multi-functional agile teams`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -171,7 +171,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Taiga</title>
-          <meta name="description" content="Taiga is the project management tool for multi-functional agile teams" />
+          <meta name="description" content={`Taiga is the project management tool for multi-functional agile teams`} />
         </>
       ),
     },

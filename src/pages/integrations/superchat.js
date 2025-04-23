@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Superchat"
-      description="Superchat is a messaging platform that combines relevant communication channels, streamlines customer support and makes messenger marketing accessible to any business."
+      description={`Superchat is a messaging platform that combines relevant communication channels, streamlines customer support and makes messenger marketing accessible to any business.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Superchat</title>
-          <meta name="description" content="Superchat is a messaging platform that combines relevant communication channels, streamlines customer support and makes messenger marketing accessible to any business." />
+          <meta name="description" content={`Superchat is a messaging platform that combines relevant communication channels, streamlines customer support and makes messenger marketing accessible to any business.`} />
         </>
       ),
     },

@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Meetgeek.ai"
-      description="Meetgeek helps you record, transcribe, take notes, and share key highlights of your online calls. Automatic note-taking keeps you focused on the conversation while it writes down all the important details for you."
+      description={`Meetgeek helps you record, transcribe, take notes, and share key highlights of your online calls. Automatic note-taking keeps you focused on the conversation while it writes down all the important details for you.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -62,7 +62,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Meetgeek.ai</title>
-          <meta name="description" content="Meetgeek helps you record, transcribe, take notes, and share key highlights of your online calls. Automatic note-taking keeps you focused on the conversation while it writes down all the important details for you." />
+          <meta name="description" content={`Meetgeek helps you record, transcribe, take notes, and share key highlights of your online calls. Automatic note-taking keeps you focused on the conversation while it writes down all the important details for you.`} />
         </>
       ),
     },

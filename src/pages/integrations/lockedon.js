@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="LockedOn"
-      description="LockedOn is a feature-rich, automated real estate CRM and marketing platform built to help real estate agents list and sell."
+      description={`LockedOn is a feature-rich, automated real estate CRM and marketing platform built to help real estate agents list and sell.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -86,7 +86,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>LockedOn</title>
-          <meta name="description" content="LockedOn is a feature-rich, automated real estate CRM and marketing platform built to help real estate agents list and sell." />
+          <meta name="description" content={`LockedOn is a feature-rich, automated real estate CRM and marketing platform built to help real estate agents list and sell.`} />
         </>
       ),
     },

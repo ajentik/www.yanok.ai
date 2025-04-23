@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Vertask"
-      description="Vertask is a ticketing system and helpdesk solution to manage your assets, requests, and documentation."
+      description={`Vertask is a ticketing system and helpdesk solution to manage your assets, requests, and documentation.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -76,7 +76,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Vertask</title>
-          <meta name="description" content="Vertask is a ticketing system and helpdesk solution to manage your assets, requests, and documentation." />
+          <meta name="description" content={`Vertask is a ticketing system and helpdesk solution to manage your assets, requests, and documentation.`} />
         </>
       ),
     },

@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="PartnerStack"
-      description="PartnerStack (formerly GrowSumo) is a growth automation platform that helps your company automatically manage and reward partners for promoting your business. Fully equip your partners for marketing, referral, and sales success with custom referral links and company pages. Engage partners through automated email campaigns and challenges, and then track partner performance with detailed analytics. Use the centralized dashboard to support all of your partner channels, including reseller, marketing, and referral partner programs. You can even ensure global compliance by funnelling all rewards through PartnerStack."
+      description={`PartnerStack (formerly GrowSumo) is a growth automation platform that helps your company automatically manage and reward partners for promoting your business. Fully equip your partners for marketing, referral, and sales success with custom referral links and company pages. Engage partners through automated email campaigns and challenges, and then track partner performance with detailed analytics. Use the centralized dashboard to support all of your partner channels, including reseller, marketing, and referral partner programs. You can even ensure global compliance by funnelling all rewards through PartnerStack.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -176,7 +176,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>PartnerStack</title>
-          <meta name="description" content="PartnerStack (formerly GrowSumo) is a growth automation platform that helps your company automatically manage and reward partners for promoting your business. Fully equip your partners for marketing, referral, and sales success with custom referral links and company pages. Engage partners through automated email campaigns and challenges, and then track partner performance with detailed analytics. Use the centralized dashboard to support all of your partner channels, including reseller, marketing, and referral partner programs. You can even ensure global compliance by funnelling all rewards through PartnerStack." />
+          <meta name="description" content={`PartnerStack (formerly GrowSumo) is a growth automation platform that helps your company automatically manage and reward partners for promoting your business. Fully equip your partners for marketing, referral, and sales success with custom referral links and company pages. Engage partners through automated email campaigns and challenges, and then track partner performance with detailed analytics. Use the centralized dashboard to support all of your partner channels, including reseller, marketing, and referral partner programs. You can even ensure global compliance by funnelling all rewards through PartnerStack.`} />
         </>
       ),
     },

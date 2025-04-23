@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="4Degrees"
-      description="4Degrees is a relationship development tool that helps professionals build stronger, more rewarding networks."
+      description={`4Degrees is a relationship development tool that helps professionals build stronger, more rewarding networks.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -101,7 +101,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>4Degrees</title>
-          <meta name="description" content="4Degrees is a relationship development tool that helps professionals build stronger, more rewarding networks." />
+          <meta name="description" content={`4Degrees is a relationship development tool that helps professionals build stronger, more rewarding networks.`} />
         </>
       ),
     },

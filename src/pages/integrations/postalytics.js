@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Postalytics"
-      description="Postalytics turns direct mail into a digital channel providing tools to build, send and track postcards and letters."
+      description={`Postalytics turns direct mail into a digital channel providing tools to build, send and track postcards and letters.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -61,7 +61,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Postalytics</title>
-          <meta name="description" content="Postalytics turns direct mail into a digital channel providing tools to build, send and track postcards and letters." />
+          <meta name="description" content={`Postalytics turns direct mail into a digital channel providing tools to build, send and track postcards and letters.`} />
         </>
       ),
     },

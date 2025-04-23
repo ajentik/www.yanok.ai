@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Google Data Studio"
-      description="Google Data Studio allows you to create branded reports with data visualizations to share with your clients."
+      description={`Google Data Studio allows you to create branded reports with data visualizations to share with your clients.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +53,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Google Data Studio</title>
-          <meta name="description" content="Google Data Studio allows you to create branded reports with data visualizations to share with your clients." />
+          <meta name="description" content={`Google Data Studio allows you to create branded reports with data visualizations to share with your clients.`} />
         </>
       ),
     },

@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Content Snare"
-      description="Content Snare is a tool that helps collect content and files from clients on time without email"
+      description={`Content Snare is a tool that helps collect content and files from clients on time without email`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -106,7 +106,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Content Snare</title>
-          <meta name="description" content="Content Snare is a tool that helps collect content and files from clients on time without email" />
+          <meta name="description" content={`Content Snare is a tool that helps collect content and files from clients on time without email`} />
         </>
       ),
     },

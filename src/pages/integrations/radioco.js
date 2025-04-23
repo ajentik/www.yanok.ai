@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Radio.co"
-      description="Create your own radio station with Radio.co. Automate your schedule, broadcast live, and track listeners in no time."
+      description={`Create your own radio station with Radio.co. Automate your schedule, broadcast live, and track listeners in no time.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Radio.co</title>
-          <meta name="description" content="Create your own radio station with Radio.co. Automate your schedule, broadcast live, and track listeners in no time." />
+          <meta name="description" content={`Create your own radio station with Radio.co. Automate your schedule, broadcast live, and track listeners in no time.`} />
         </>
       ),
     },

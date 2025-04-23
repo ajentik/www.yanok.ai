@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="AdPage"
-      description="AdPage is a superfast landing page builder for agencies and small business owners."
+      description={`AdPage is a superfast landing page builder for agencies and small business owners.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -67,7 +67,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>AdPage</title>
-          <meta name="description" content="AdPage is a superfast landing page builder for agencies and small business owners." />
+          <meta name="description" content={`AdPage is a superfast landing page builder for agencies and small business owners.`} />
         </>
       ),
     },

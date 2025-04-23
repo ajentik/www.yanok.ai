@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Smith.ai Chat"
-      description="Smith.ai Chat is a live chat + AI chatbot service. Capture more quality leads for your businesses via web chat, text message, and Facebook."
+      description={`Smith.ai Chat is a live chat + AI chatbot service. Capture more quality leads for your businesses via web chat, text message, and Facebook.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Smith.ai Chat</title>
-          <meta name="description" content="Smith.ai Chat is a live chat + AI chatbot service. Capture more quality leads for your businesses via web chat, text message, and Facebook." />
+          <meta name="description" content={`Smith.ai Chat is a live chat + AI chatbot service. Capture more quality leads for your businesses via web chat, text message, and Facebook.`} />
         </>
       ),
     },

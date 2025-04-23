@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Zinrelo"
-      description="Zinrelo is a modern-day loyalty rewards platform that helps maximize repeat sales and per-customer revenue through 360-degree customer engagement."
+      description={`Zinrelo is a modern-day loyalty rewards platform that helps maximize repeat sales and per-customer revenue through 360-degree customer engagement.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -126,7 +126,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Zinrelo</title>
-          <meta name="description" content="Zinrelo is a modern-day loyalty rewards platform that helps maximize repeat sales and per-customer revenue through 360-degree customer engagement." />
+          <meta name="description" content={`Zinrelo is a modern-day loyalty rewards platform that helps maximize repeat sales and per-customer revenue through 360-degree customer engagement.`} />
         </>
       ),
     },

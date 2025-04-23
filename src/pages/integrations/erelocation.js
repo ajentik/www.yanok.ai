@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="eRelocation"
-      description="eRelocation is a web-based relocation department management solution for real estate brokerages."
+      description={`eRelocation is a web-based relocation department management solution for real estate brokerages.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -61,7 +61,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>eRelocation</title>
-          <meta name="description" content="eRelocation is a web-based relocation department management solution for real estate brokerages." />
+          <meta name="description" content={`eRelocation is a web-based relocation department management solution for real estate brokerages.`} />
         </>
       ),
     },

@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Click2Mail"
-      description="Click2Mail provides a printing and mailing service tool for you to add physical mail to your processes. Send everything from marketing letters to invoices, follow-up postcards, product alerts, and more."
+      description={`Click2Mail provides a printing and mailing service tool for you to add physical mail to your processes. Send everything from marketing letters to invoices, follow-up postcards, product alerts, and more.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -72,7 +72,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Click2Mail</title>
-          <meta name="description" content="Click2Mail provides a printing and mailing service tool for you to add physical mail to your processes. Send everything from marketing letters to invoices, follow-up postcards, product alerts, and more." />
+          <meta name="description" content={`Click2Mail provides a printing and mailing service tool for you to add physical mail to your processes. Send everything from marketing letters to invoices, follow-up postcards, product alerts, and more.`} />
         </>
       ),
     },

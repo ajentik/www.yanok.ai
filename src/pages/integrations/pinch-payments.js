@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Pinch Payments"
-      description="Pinch Payments is a PCI Compliant, Australian payments platform offering automated bank account, direct debit, and credit card payments for standard and repeating invoices or standalone transactions."
+      description={`Pinch Payments is a PCI Compliant, Australian payments platform offering automated bank account, direct debit, and credit card payments for standard and repeating invoices or standalone transactions.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -91,7 +91,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Pinch Payments</title>
-          <meta name="description" content="Pinch Payments is a PCI Compliant, Australian payments platform offering automated bank account, direct debit, and credit card payments for standard and repeating invoices or standalone transactions." />
+          <meta name="description" content={`Pinch Payments is a PCI Compliant, Australian payments platform offering automated bank account, direct debit, and credit card payments for standard and repeating invoices or standalone transactions.`} />
         </>
       ),
     },

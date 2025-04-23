@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Minut Smart Home Sensor"
-      description="Protect your home, your neighbors' peace and quiet and your guests' privacy with Minut. Get real-time home analytics on noise, motion, temperature, humidity in your property, from anywhere in the world."
+      description={`Protect your home, your neighbors' peace and quiet and your guests' privacy with Minut. Get real-time home analytics on noise, motion, temperature, humidity in your property, from anywhere in the world.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -112,7 +112,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Minut Smart Home Sensor</title>
-          <meta name="description" content="Protect your home, your neighbors' peace and quiet and your guests' privacy with Minut. Get real-time home analytics on noise, motion, temperature, humidity in your property, from anywhere in the world." />
+          <meta name="description" content={`Protect your home, your neighbors' peace and quiet and your guests' privacy with Minut. Get real-time home analytics on noise, motion, temperature, humidity in your property, from anywhere in the world.`} />
         </>
       ),
     },

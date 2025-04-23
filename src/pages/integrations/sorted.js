@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Sorted"
-      description="Sorted is a Digital Marketing Business management application providing social media marketing, Email marketing, Professional reporting, instant lead notification and more"
+      description={`Sorted is a Digital Marketing Business management application providing social media marketing, Email marketing, Professional reporting, instant lead notification and more`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Sorted</title>
-          <meta name="description" content="Sorted is a Digital Marketing Business management application providing social media marketing, Email marketing, Professional reporting, instant lead notification and more" />
+          <meta name="description" content={`Sorted is a Digital Marketing Business management application providing social media marketing, Email marketing, Professional reporting, instant lead notification and more`} />
         </>
       ),
     },

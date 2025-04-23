@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="ServiceM8"
-      description="ServiceM8 is a field service app and small business management platform for your computer, iPhone and iPad. Track staff locations, navigate to jobs, and control your estimates, invoicing, scheduling, safety reports, clients & more."
+      description={`ServiceM8 is a field service app and small business management platform for your computer, iPhone and iPad. Track staff locations, navigate to jobs, and control your estimates, invoicing, scheduling, safety reports, clients & more.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -86,7 +86,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>ServiceM8</title>
-          <meta name="description" content="ServiceM8 is a field service app and small business management platform for your computer, iPhone and iPad. Track staff locations, navigate to jobs, and control your estimates, invoicing, scheduling, safety reports, clients & more." />
+          <meta name="description" content={`ServiceM8 is a field service app and small business management platform for your computer, iPhone and iPad. Track staff locations, navigate to jobs, and control your estimates, invoicing, scheduling, safety reports, clients & more.`} />
         </>
       ),
     },

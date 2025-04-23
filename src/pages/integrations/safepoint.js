@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Safepoint"
-      description="Safepoint is a lone worker safety platform to keep your workers safe."
+      description={`Safepoint is a lone worker safety platform to keep your workers safe.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Safepoint</title>
-          <meta name="description" content="Safepoint is a lone worker safety platform to keep your workers safe." />
+          <meta name="description" content={`Safepoint is a lone worker safety platform to keep your workers safe.`} />
         </>
       ),
     },

@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Clockify"
-      description="Clockify is a completely free time tracking software for teams. It's a simple time tracker and timesheet app for tracking work hours on projects."
+      description={`Clockify is a completely free time tracking software for teams. It's a simple time tracker and timesheet app for tracking work hours on projects.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -181,7 +181,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Clockify</title>
-          <meta name="description" content="Clockify is a completely free time tracking software for teams. It's a simple time tracker and timesheet app for tracking work hours on projects." />
+          <meta name="description" content={`Clockify is a completely free time tracking software for teams. It's a simple time tracker and timesheet app for tracking work hours on projects.`} />
         </>
       ),
     },

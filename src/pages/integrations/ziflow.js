@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Ziflow"
-      description="Feedback and approval—but faster. Ziflow optimizes your creative workflow to get from design to decision more efficiently than ever before."
+      description={`Feedback and approval—but faster. Ziflow optimizes your creative workflow to get from design to decision more efficiently than ever before.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -76,7 +76,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Ziflow</title>
-          <meta name="description" content="Feedback and approval—but faster. Ziflow optimizes your creative workflow to get from design to decision more efficiently than ever before." />
+          <meta name="description" content={`Feedback and approval—but faster. Ziflow optimizes your creative workflow to get from design to decision more efficiently than ever before.`} />
         </>
       ),
     },

@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="OffAlerts"
-      description="Uptime Monitors & Status Pages. Get Immediate Email, SMS and Push Notifications (Off Alerts) When Your Website Or App Is Offline."
+      description={`Uptime Monitors & Status Pages. Get Immediate Email, SMS and Push Notifications (Off Alerts) When Your Website Or App Is Offline.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>OffAlerts</title>
-          <meta name="description" content="Uptime Monitors & Status Pages. Get Immediate Email, SMS and Push Notifications (Off Alerts) When Your Website Or App Is Offline." />
+          <meta name="description" content={`Uptime Monitors & Status Pages. Get Immediate Email, SMS and Push Notifications (Off Alerts) When Your Website Or App Is Offline.`} />
         </>
       ),
     },

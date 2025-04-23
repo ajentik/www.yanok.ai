@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Pushcut"
-      description="Pushcut is an app for iOS that lets you create smart notifications to kick off shortcuts, URLs, and online automations."
+      description={`Pushcut is an app for iOS that lets you create smart notifications to kick off shortcuts, URLs, and online automations.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -81,7 +81,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Pushcut</title>
-          <meta name="description" content="Pushcut is an app for iOS that lets you create smart notifications to kick off shortcuts, URLs, and online automations." />
+          <meta name="description" content={`Pushcut is an app for iOS that lets you create smart notifications to kick off shortcuts, URLs, and online automations.`} />
         </>
       ),
     },

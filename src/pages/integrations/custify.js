@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Custify"
-      description="Custify is a customer success platform that helps you better meet customers' needs, reducing churn and increasing lifetime value."
+      description={`Custify is a customer success platform that helps you better meet customers' needs, reducing churn and increasing lifetime value.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -131,7 +131,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Custify</title>
-          <meta name="description" content="Custify is a customer success platform that helps you better meet customers' needs, reducing churn and increasing lifetime value." />
+          <meta name="description" content={`Custify is a customer success platform that helps you better meet customers' needs, reducing churn and increasing lifetime value.`} />
         </>
       ),
     },

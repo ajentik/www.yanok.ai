@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="ArcSite"
-      description="ArcSite is the all-in-one drawing & mobile sales platform for service professionals including mobile drawing, estimation, and takeoff tools."
+      description={`ArcSite is the all-in-one drawing & mobile sales platform for service professionals including mobile drawing, estimation, and takeoff tools.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -86,7 +86,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>ArcSite</title>
-          <meta name="description" content="ArcSite is the all-in-one drawing & mobile sales platform for service professionals including mobile drawing, estimation, and takeoff tools." />
+          <meta name="description" content={`ArcSite is the all-in-one drawing & mobile sales platform for service professionals including mobile drawing, estimation, and takeoff tools.`} />
         </>
       ),
     },

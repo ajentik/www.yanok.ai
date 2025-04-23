@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Sinao"
-      description="Integration of Sinao Version 2 (Accounting Software)"
+      description={`Integration of Sinao Version 2 (Accounting Software)`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -137,7 +137,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Sinao</title>
-          <meta name="description" content="Integration of Sinao Version 2 (Accounting Software)" />
+          <meta name="description" content={`Integration of Sinao Version 2 (Accounting Software)`} />
         </>
       ),
     },

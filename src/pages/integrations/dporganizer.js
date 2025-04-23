@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="DPOrganizer"
-      description="DPOrganizer is privacy management software that helps map, visualize, and manage processing of personal data. We turn privacy professionals into privacy heroes."
+      description={`DPOrganizer is privacy management software that helps map, visualize, and manage processing of personal data. We turn privacy professionals into privacy heroes.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>DPOrganizer</title>
-          <meta name="description" content="DPOrganizer is privacy management software that helps map, visualize, and manage processing of personal data. We turn privacy professionals into privacy heroes." />
+          <meta name="description" content={`DPOrganizer is privacy management software that helps map, visualize, and manage processing of personal data. We turn privacy professionals into privacy heroes.`} />
         </>
       ),
     },

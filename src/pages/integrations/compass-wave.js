@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Compass Wave"
-      description="Compass Wave is an online estimate tool created to quickly and efficiently capture leads."
+      description={`Compass Wave is an online estimate tool created to quickly and efficiently capture leads.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -61,7 +61,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Compass Wave</title>
-          <meta name="description" content="Compass Wave is an online estimate tool created to quickly and efficiently capture leads." />
+          <meta name="description" content={`Compass Wave is an online estimate tool created to quickly and efficiently capture leads.`} />
         </>
       ),
     },

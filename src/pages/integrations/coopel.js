@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Coopel"
-      description="Coopel is a robotic process automation (RPA) tool that allows anyone to easily automate processes. The tool can be used on either the cloud or locally."
+      description={`Coopel is a robotic process automation (RPA) tool that allows anyone to easily automate processes. The tool can be used on either the cloud or locally.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -61,7 +61,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Coopel</title>
-          <meta name="description" content="Coopel is a robotic process automation (RPA) tool that allows anyone to easily automate processes. The tool can be used on either the cloud or locally." />
+          <meta name="description" content={`Coopel is a robotic process automation (RPA) tool that allows anyone to easily automate processes. The tool can be used on either the cloud or locally.`} />
         </>
       ),
     },

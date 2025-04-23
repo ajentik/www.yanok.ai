@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="RushAnswer"
-      description="RushAnswer enables user to connect to answer io notifications services."
+      description={`RushAnswer enables user to connect to answer io notifications services.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -61,7 +61,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>RushAnswer</title>
-          <meta name="description" content="RushAnswer enables user to connect to answer io notifications services." />
+          <meta name="description" content={`RushAnswer enables user to connect to answer io notifications services.`} />
         </>
       ),
     },

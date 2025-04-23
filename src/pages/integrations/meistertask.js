@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="MeisterTask"
-      description="MeisterTask is an incredibly intuitive online task manager that uses smart integrations and task automations to make your team more productive."
+      description={`MeisterTask is an incredibly intuitive online task manager that uses smart integrations and task automations to make your team more productive.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -156,7 +156,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>MeisterTask</title>
-          <meta name="description" content="MeisterTask is an incredibly intuitive online task manager that uses smart integrations and task automations to make your team more productive." />
+          <meta name="description" content={`MeisterTask is an incredibly intuitive online task manager that uses smart integrations and task automations to make your team more productive.`} />
         </>
       ),
     },

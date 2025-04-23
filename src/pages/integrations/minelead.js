@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Minelead"
-      description="Minelead is a free email finder and domain email finder. It's a free unlimited lead generation solution to find email addresses and company contact information."
+      description={`Minelead is a free email finder and domain email finder. It's a free unlimited lead generation solution to find email addresses and company contact information.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Minelead</title>
-          <meta name="description" content="Minelead is a free email finder and domain email finder. It's a free unlimited lead generation solution to find email addresses and company contact information." />
+          <meta name="description" content={`Minelead is a free email finder and domain email finder. It's a free unlimited lead generation solution to find email addresses and company contact information.`} />
         </>
       ),
     },

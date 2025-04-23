@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Appzi"
-      description="Appzi captures insightful user feedback and improves your website right inside your site, for free"
+      description={`Appzi captures insightful user feedback and improves your website right inside your site, for free`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Appzi</title>
-          <meta name="description" content="Appzi captures insightful user feedback and improves your website right inside your site, for free" />
+          <meta name="description" content={`Appzi captures insightful user feedback and improves your website right inside your site, for free`} />
         </>
       ),
     },

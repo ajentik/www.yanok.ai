@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Autotask"
-      description="Autotask provides an IT business management solution that combines service desk, CRM, projects, time and expense, billing and more."
+      description={`Autotask provides an IT business management solution that combines service desk, CRM, projects, time and expense, billing and more.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -221,7 +221,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Autotask</title>
-          <meta name="description" content="Autotask provides an IT business management solution that combines service desk, CRM, projects, time and expense, billing and more." />
+          <meta name="description" content={`Autotask provides an IT business management solution that combines service desk, CRM, projects, time and expense, billing and more.`} />
         </>
       ),
     },

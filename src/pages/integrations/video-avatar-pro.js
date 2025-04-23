@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Video Avatar Pro"
-      description="Video Avatar Pro is a video app that allows our users to integrate opt-in box with multiple Social Media Platforms of their choosing."
+      description={`Video Avatar Pro is a video app that allows our users to integrate opt-in box with multiple Social Media Platforms of their choosing.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Video Avatar Pro</title>
-          <meta name="description" content="Video Avatar Pro is a video app that allows our users to integrate opt-in box with multiple Social Media Platforms of their choosing." />
+          <meta name="description" content={`Video Avatar Pro is a video app that allows our users to integrate opt-in box with multiple Social Media Platforms of their choosing.`} />
         </>
       ),
     },

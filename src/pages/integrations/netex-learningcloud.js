@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Netex learningCloud"
-      description="Netex learningCloud is a learning platform designed for the modern workforce."
+      description={`Netex learningCloud is a learning platform designed for the modern workforce.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -111,7 +111,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Netex learningCloud</title>
-          <meta name="description" content="Netex learningCloud is a learning platform designed for the modern workforce." />
+          <meta name="description" content={`Netex learningCloud is a learning platform designed for the modern workforce.`} />
         </>
       ),
     },

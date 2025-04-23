@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Really Simple Systems CRM"
-      description="Really Simple Systems CRM provides everything that a small business needs to automate their sales, marketing and customer services."
+      description={`Really Simple Systems CRM provides everything that a small business needs to automate their sales, marketing and customer services.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -126,7 +126,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Really Simple Systems CRM</title>
-          <meta name="description" content="Really Simple Systems CRM provides everything that a small business needs to automate their sales, marketing and customer services." />
+          <meta name="description" content={`Really Simple Systems CRM provides everything that a small business needs to automate their sales, marketing and customer services.`} />
         </>
       ),
     },

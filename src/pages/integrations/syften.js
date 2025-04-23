@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Syften"
-      description="Syften is a keyword monitor and notifier. It will alert you whenever one of your keywords is mentioned on Reddit, Stack Exchange, Hacker News or others."
+      description={`Syften is a keyword monitor and notifier. It will alert you whenever one of your keywords is mentioned on Reddit, Stack Exchange, Hacker News or others.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Syften</title>
-          <meta name="description" content="Syften is a keyword monitor and notifier. It will alert you whenever one of your keywords is mentioned on Reddit, Stack Exchange, Hacker News or others." />
+          <meta name="description" content={`Syften is a keyword monitor and notifier. It will alert you whenever one of your keywords is mentioned on Reddit, Stack Exchange, Hacker News or others.`} />
         </>
       ),
     },

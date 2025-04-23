@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Pipeliner Cloud"
-      description="Next generation sales CRM software designed to empower sales teams and grow profitable customer relationships."
+      description={`Next generation sales CRM software designed to empower sales teams and grow profitable customer relationships.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -236,7 +236,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Pipeliner Cloud</title>
-          <meta name="description" content="Next generation sales CRM software designed to empower sales teams and grow profitable customer relationships." />
+          <meta name="description" content={`Next generation sales CRM software designed to empower sales teams and grow profitable customer relationships.`} />
         </>
       ),
     },

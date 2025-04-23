@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Beagle Security"
-      description="Beagle Security is a web application penetration testing tool that helps you to identify vulnerabilities on your website before hackers exploit them."
+      description={`Beagle Security is a web application penetration testing tool that helps you to identify vulnerabilities on your website before hackers exploit them.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -76,7 +76,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Beagle Security</title>
-          <meta name="description" content="Beagle Security is a web application penetration testing tool that helps you to identify vulnerabilities on your website before hackers exploit them." />
+          <meta name="description" content={`Beagle Security is a web application penetration testing tool that helps you to identify vulnerabilities on your website before hackers exploit them.`} />
         </>
       ),
     },

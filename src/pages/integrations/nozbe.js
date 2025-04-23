@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Nozbe Personal"
-      description="Nozbe is an online to-do list style project management tool for your team."
+      description={`Nozbe is an online to-do list style project management tool for your team.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -77,7 +77,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Nozbe Personal</title>
-          <meta name="description" content="Nozbe is an online to-do list style project management tool for your team." />
+          <meta name="description" content={`Nozbe is an online to-do list style project management tool for your team.`} />
         </>
       ),
     },

@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="AccountingBox"
-      description="AccountingBox is a modern business management system that provides accounting services and businesses with effective business monitoring and easy collaboration. It also includes an intelligent system for automatic data capture and virtual business assistance."
+      description={`AccountingBox is a modern business management system that provides accounting services and businesses with effective business monitoring and easy collaboration. It also includes an intelligent system for automatic data capture and virtual business assistance.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>AccountingBox</title>
-          <meta name="description" content="AccountingBox is a modern business management system that provides accounting services and businesses with effective business monitoring and easy collaboration. It also includes an intelligent system for automatic data capture and virtual business assistance." />
+          <meta name="description" content={`AccountingBox is a modern business management system that provides accounting services and businesses with effective business monitoring and easy collaboration. It also includes an intelligent system for automatic data capture and virtual business assistance.`} />
         </>
       ),
     },

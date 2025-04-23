@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="BIGContacts"
-      description="BIGContacts by ProProfs is designed for teams to grow their business through improved contact management. Sort and view contacts by pending or upcoming activity, opportunity, last contact, or last communication."
+      description={`BIGContacts by ProProfs is designed for teams to grow their business through improved contact management. Sort and view contacts by pending or upcoming activity, opportunity, last contact, or last communication.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -82,7 +82,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>BIGContacts</title>
-          <meta name="description" content="BIGContacts by ProProfs is designed for teams to grow their business through improved contact management. Sort and view contacts by pending or upcoming activity, opportunity, last contact, or last communication." />
+          <meta name="description" content={`BIGContacts by ProProfs is designed for teams to grow their business through improved contact management. Sort and view contacts by pending or upcoming activity, opportunity, last contact, or last communication.`} />
         </>
       ),
     },

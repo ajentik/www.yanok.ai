@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="PST"
-      description="Process Server's Toolbox (PST) provides a complete set of power tools for process serving companies, their Clients, and their servers in the field - all designed to streamline service of process."
+      description={`Process Server's Toolbox (PST) provides a complete set of power tools for process serving companies, their Clients, and their servers in the field - all designed to streamline service of process.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -202,7 +202,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>PST</title>
-          <meta name="description" content="Process Server's Toolbox (PST) provides a complete set of power tools for process serving companies, their Clients, and their servers in the field - all designed to streamline service of process." />
+          <meta name="description" content={`Process Server's Toolbox (PST) provides a complete set of power tools for process serving companies, their Clients, and their servers in the field - all designed to streamline service of process.`} />
         </>
       ),
     },

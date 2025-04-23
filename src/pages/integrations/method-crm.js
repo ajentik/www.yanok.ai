@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Method CRM"
-      description="Method CRM™ is a QuickBooks CRM that streamlines your business from lead to repeat and everything in between."
+      description={`Method CRM™ is a QuickBooks CRM that streamlines your business from lead to repeat and everything in between.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -146,7 +146,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Method CRM</title>
-          <meta name="description" content="Method CRM™ is a QuickBooks CRM that streamlines your business from lead to repeat and everything in between." />
+          <meta name="description" content={`Method CRM™ is a QuickBooks CRM that streamlines your business from lead to repeat and everything in between.`} />
         </>
       ),
     },

@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Sifter"
-      description="Sifter is a simple hosted bug and issue tracker."
+      description={`Sifter is a simple hosted bug and issue tracker.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Sifter</title>
-          <meta name="description" content="Sifter is a simple hosted bug and issue tracker." />
+          <meta name="description" content={`Sifter is a simple hosted bug and issue tracker.`} />
         </>
       ),
     },

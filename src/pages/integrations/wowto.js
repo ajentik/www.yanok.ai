@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="WowTo"
-      description="Easily create automated How-to videos with WowTo for support, training and education purposes."
+      description={`Easily create automated How-to videos with WowTo for support, training and education purposes.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -66,7 +66,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>WowTo</title>
-          <meta name="description" content="Easily create automated How-to videos with WowTo for support, training and education purposes." />
+          <meta name="description" content={`Easily create automated How-to videos with WowTo for support, training and education purposes.`} />
         </>
       ),
     },

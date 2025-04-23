@@ -8,17 +8,18 @@ fs.readdirSync(integrationsDir).forEach((file) => {
     const filePath = path.join(integrationsDir, file);
     let content = fs.readFileSync(filePath, 'utf8');
 
-    content = content.replace(
-      /description="([\\s\\S]*?)"/g,
-      (match, inner) => {
+    content = content
+      .replace(/description="([\\s\\S]*?)"/g, (match, inner) => {
         const escaped = inner.replace(/`/g, '\\`');
-        // Wrap in JSX template literal without nested backticks in this script
-        return 'description={`' + escaped + '`}';
-      }
-    );
+        return 'description={' + '`' + escaped + '`' + '}';
+      })
+      .replace(/content="([\\s\\S]*?)"/g, (match, inner) => {
+        const escaped = inner.replace(/`/g, '\\`');
+        return 'content={' + '`' + escaped + '`' + '}';
+      });
 
     fs.writeFileSync(filePath, content, 'utf8');
   }
 });
 
-console.log('Descriptions fixed');
+console.log('Descriptions and content props fixed');

@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="QuoteMachine"
-      description="QuoteMachine is online quotes and invoices that help you sell and get paid."
+      description={`QuoteMachine is online quotes and invoices that help you sell and get paid.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -116,7 +116,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>QuoteMachine</title>
-          <meta name="description" content="QuoteMachine is online quotes and invoices that help you sell and get paid." />
+          <meta name="description" content={`QuoteMachine is online quotes and invoices that help you sell and get paid.`} />
         </>
       ),
     },

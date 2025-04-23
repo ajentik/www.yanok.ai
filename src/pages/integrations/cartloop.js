@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Cartloop"
-      description="Delight customers and turn real-time conversations into sales using the power of text marketing."
+      description={`Delight customers and turn real-time conversations into sales using the power of text marketing.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -62,7 +62,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Cartloop</title>
-          <meta name="description" content="Delight customers and turn real-time conversations into sales using the power of text marketing." />
+          <meta name="description" content={`Delight customers and turn real-time conversations into sales using the power of text marketing.`} />
         </>
       ),
     },

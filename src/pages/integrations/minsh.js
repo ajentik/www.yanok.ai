@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Minsh"
-      description="Learn when users sign up, post messages, create events in a Minsh app"
+      description={`Learn when users sign up, post messages, create events in a Minsh app`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -71,7 +71,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Minsh</title>
-          <meta name="description" content="Learn when users sign up, post messages, create events in a Minsh app" />
+          <meta name="description" content={`Learn when users sign up, post messages, create events in a Minsh app`} />
         </>
       ),
     },

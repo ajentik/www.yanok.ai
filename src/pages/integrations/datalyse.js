@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Datalyse"
-      description="Datalyse is the all-in-one Cloud-based CRM, VoIP and Marketing solution your modern Engagement Contact Centre needs."
+      description={`Datalyse is the all-in-one Cloud-based CRM, VoIP and Marketing solution your modern Engagement Contact Centre needs.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -106,7 +106,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Datalyse</title>
-          <meta name="description" content="Datalyse is the all-in-one Cloud-based CRM, VoIP and Marketing solution your modern Engagement Contact Centre needs." />
+          <meta name="description" content={`Datalyse is the all-in-one Cloud-based CRM, VoIP and Marketing solution your modern Engagement Contact Centre needs.`} />
         </>
       ),
     },

@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Yapla"
-      description="Yapla is a payment and an all-in-one management platform designed by and for non-profit organizations."
+      description={`Yapla is a payment and an all-in-one management platform designed by and for non-profit organizations.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -72,7 +72,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Yapla</title>
-          <meta name="description" content="Yapla is a payment and an all-in-one management platform designed by and for non-profit organizations." />
+          <meta name="description" content={`Yapla is a payment and an all-in-one management platform designed by and for non-profit organizations.`} />
         </>
       ),
     },

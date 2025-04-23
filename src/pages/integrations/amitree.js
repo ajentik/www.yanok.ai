@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Amitree"
-      description="Amitree is an online platform that helps home buyers navigate the process of buying a house."
+      description={`Amitree is an online platform that helps home buyers navigate the process of buying a house.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +53,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Amitree</title>
-          <meta name="description" content="Amitree is an online platform that helps home buyers navigate the process of buying a house." />
+          <meta name="description" content={`Amitree is an online platform that helps home buyers navigate the process of buying a house.`} />
         </>
       ),
     },

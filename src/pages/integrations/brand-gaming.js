@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Brand Gaming"
-      description="Brand Gaming is an Instant Win application for lead generation and engagement. Offering odds and inventory controls. Games include Virtual Prize Wheel, Scratch Off, Slot Machine and others."
+      description={`Brand Gaming is an Instant Win application for lead generation and engagement. Offering odds and inventory controls. Games include Virtual Prize Wheel, Scratch Off, Slot Machine and others.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Brand Gaming</title>
-          <meta name="description" content="Brand Gaming is an Instant Win application for lead generation and engagement. Offering odds and inventory controls. Games include Virtual Prize Wheel, Scratch Off, Slot Machine and others." />
+          <meta name="description" content={`Brand Gaming is an Instant Win application for lead generation and engagement. Offering odds and inventory controls. Games include Virtual Prize Wheel, Scratch Off, Slot Machine and others.`} />
         </>
       ),
     },

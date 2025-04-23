@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Elevio"
-      description="Used by Fortune 500 companies right through to small SaaS sites, elevio helps you increase user engagement and loyalty, while dropping support costs."
+      description={`Used by Fortune 500 companies right through to small SaaS sites, elevio helps you increase user engagement and loyalty, while dropping support costs.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +53,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Elevio</title>
-          <meta name="description" content="Used by Fortune 500 companies right through to small SaaS sites, elevio helps you increase user engagement and loyalty, while dropping support costs." />
+          <meta name="description" content={`Used by Fortune 500 companies right through to small SaaS sites, elevio helps you increase user engagement and loyalty, while dropping support costs.`} />
         </>
       ),
     },

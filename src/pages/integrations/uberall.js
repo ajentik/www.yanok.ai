@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Uberall"
-      description="Uberall enables the world's brands and businesses to deliver a relevant and memorable 'Near Me' Brand Experience at every step of today's customer journey!"
+      description={`Uberall enables the world's brands and businesses to deliver a relevant and memorable 'Near Me' Brand Experience at every step of today's customer journey!`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -101,7 +101,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Uberall</title>
-          <meta name="description" content="Uberall enables the world's brands and businesses to deliver a relevant and memorable 'Near Me' Brand Experience at every step of today's customer journey!" />
+          <meta name="description" content={`Uberall enables the world's brands and businesses to deliver a relevant and memorable 'Near Me' Brand Experience at every step of today's customer journey!`} />
         </>
       ),
     },

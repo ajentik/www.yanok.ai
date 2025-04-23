@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Rev.io"
-      description="Rev.io is an IoT billing platform with the tools needed to accurately manage billing from quote-to-cash. Save time by leveraging existing integrations with your applications and processes, so you can focus on long-term growth."
+      description={`Rev.io is an IoT billing platform with the tools needed to accurately manage billing from quote-to-cash. Save time by leveraging existing integrations with your applications and processes, so you can focus on long-term growth.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -246,7 +246,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Rev.io</title>
-          <meta name="description" content="Rev.io is an IoT billing platform with the tools needed to accurately manage billing from quote-to-cash. Save time by leveraging existing integrations with your applications and processes, so you can focus on long-term growth." />
+          <meta name="description" content={`Rev.io is an IoT billing platform with the tools needed to accurately manage billing from quote-to-cash. Save time by leveraging existing integrations with your applications and processes, so you can focus on long-term growth.`} />
         </>
       ),
     },

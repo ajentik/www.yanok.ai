@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Shuffle by Elify"
-      description="Shuffle helps you elevate your brand, build your network and keep track of all your customers."
+      description={`Shuffle helps you elevate your brand, build your network and keep track of all your customers.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -67,7 +67,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Shuffle by Elify</title>
-          <meta name="description" content="Shuffle helps you elevate your brand, build your network and keep track of all your customers." />
+          <meta name="description" content={`Shuffle helps you elevate your brand, build your network and keep track of all your customers.`} />
         </>
       ),
     },

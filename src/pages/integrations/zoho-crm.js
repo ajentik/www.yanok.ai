@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Zoho CRM"
-      description="Zoho CRM is a web-based CRM designed to attract, retain, and satisfy customers to grow your business."
+      description={`Zoho CRM is a web-based CRM designed to attract, retain, and satisfy customers to grow your business.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -146,7 +146,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Zoho CRM</title>
-          <meta name="description" content="Zoho CRM is a web-based CRM designed to attract, retain, and satisfy customers to grow your business." />
+          <meta name="description" content={`Zoho CRM is a web-based CRM designed to attract, retain, and satisfy customers to grow your business.`} />
         </>
       ),
     },

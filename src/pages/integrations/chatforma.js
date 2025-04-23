@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Chatforma"
-      description="Chatforma is messenger marketing platform that lets you build chatbots and automated messenger sales with no coding."
+      description={`Chatforma is messenger marketing platform that lets you build chatbots and automated messenger sales with no coding.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -66,7 +66,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Chatforma</title>
-          <meta name="description" content="Chatforma is messenger marketing platform that lets you build chatbots and automated messenger sales with no coding." />
+          <meta name="description" content={`Chatforma is messenger marketing platform that lets you build chatbots and automated messenger sales with no coding.`} />
         </>
       ),
     },

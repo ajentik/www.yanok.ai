@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Storeplum"
-      description="Storeplum is an e-commerce platform for SMBs and agencies to sell physical and digital products while maximizing on profits."
+      description={`Storeplum is an e-commerce platform for SMBs and agencies to sell physical and digital products while maximizing on profits.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -72,7 +72,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Storeplum</title>
-          <meta name="description" content="Storeplum is an e-commerce platform for SMBs and agencies to sell physical and digital products while maximizing on profits." />
+          <meta name="description" content={`Storeplum is an e-commerce platform for SMBs and agencies to sell physical and digital products while maximizing on profits.`} />
         </>
       ),
     },

@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Smoove"
-      description="Smoove is an all-in-one tool for marketing processes, including email and SMS marketing, landing page creation, marketing automation, and more."
+      description={`Smoove is an all-in-one tool for marketing processes, including email and SMS marketing, landing page creation, marketing automation, and more.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -106,7 +106,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Smoove</title>
-          <meta name="description" content="Smoove is an all-in-one tool for marketing processes, including email and SMS marketing, landing page creation, marketing automation, and more." />
+          <meta name="description" content={`Smoove is an all-in-one tool for marketing processes, including email and SMS marketing, landing page creation, marketing automation, and more.`} />
         </>
       ),
     },

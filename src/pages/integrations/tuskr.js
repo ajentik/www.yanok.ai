@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Tuskr"
-      description="Tuskr is a cloud-based test management software."
+      description={`Tuskr is a cloud-based test management software.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -66,7 +66,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Tuskr</title>
-          <meta name="description" content="Tuskr is a cloud-based test management software." />
+          <meta name="description" content={`Tuskr is a cloud-based test management software.`} />
         </>
       ),
     },

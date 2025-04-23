@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="SleekFlow"
-      description="SleekFlow is your centralised messaging platform with customers, enabling your sales, support and marketing teams to do their best work - so you can create an experience you customers will never forget."
+      description={`SleekFlow is your centralised messaging platform with customers, enabling your sales, support and marketing teams to do their best work - so you can create an experience you customers will never forget.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -71,7 +71,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>SleekFlow</title>
-          <meta name="description" content="SleekFlow is your centralised messaging platform with customers, enabling your sales, support and marketing teams to do their best work - so you can create an experience you customers will never forget." />
+          <meta name="description" content={`SleekFlow is your centralised messaging platform with customers, enabling your sales, support and marketing teams to do their best work - so you can create an experience you customers will never forget.`} />
         </>
       ),
     },

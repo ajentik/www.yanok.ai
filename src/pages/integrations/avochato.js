@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Avochato"
-      description="Avochato is the text messaging solution for sales, marketing, and customer support teams."
+      description={`Avochato is the text messaging solution for sales, marketing, and customer support teams.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -81,7 +81,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Avochato</title>
-          <meta name="description" content="Avochato is the text messaging solution for sales, marketing, and customer support teams." />
+          <meta name="description" content={`Avochato is the text messaging solution for sales, marketing, and customer support teams.`} />
         </>
       ),
     },

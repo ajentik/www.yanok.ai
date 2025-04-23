@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Urlbox"
-      description="Urlbox is a screenshot API that allows you to generate images from a URL or HTML"
+      description={`Urlbox is a screenshot API that allows you to generate images from a URL or HTML`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -66,7 +66,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Urlbox</title>
-          <meta name="description" content="Urlbox is a screenshot API that allows you to generate images from a URL or HTML" />
+          <meta name="description" content={`Urlbox is a screenshot API that allows you to generate images from a URL or HTML`} />
         </>
       ),
     },

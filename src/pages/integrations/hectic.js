@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Hectic"
-      description="Hectic is a single digital workspace with all the tools needed to start, manage and grow a freelancing business."
+      description={`Hectic is a single digital workspace with all the tools needed to start, manage and grow a freelancing business.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -181,7 +181,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Hectic</title>
-          <meta name="description" content="Hectic is a single digital workspace with all the tools needed to start, manage and grow a freelancing business." />
+          <meta name="description" content={`Hectic is a single digital workspace with all the tools needed to start, manage and grow a freelancing business.`} />
         </>
       ),
     },

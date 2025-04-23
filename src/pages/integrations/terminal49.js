@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Terminal49"
-      description="Terminal49 is an all-in-one Shipment and Container tracking platform that lets you track your ocean shipments and containers in real-time across all major ocean carriers and terminals."
+      description={`Terminal49 is an all-in-one Shipment and Container tracking platform that lets you track your ocean shipments and containers in real-time across all major ocean carriers and terminals.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -76,7 +76,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Terminal49</title>
-          <meta name="description" content="Terminal49 is an all-in-one Shipment and Container tracking platform that lets you track your ocean shipments and containers in real-time across all major ocean carriers and terminals." />
+          <meta name="description" content={`Terminal49 is an all-in-one Shipment and Container tracking platform that lets you track your ocean shipments and containers in real-time across all major ocean carriers and terminals.`} />
         </>
       ),
     },

@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Mindee OCR"
-      description="Mindee OCR extracts data from the documents you use most. Included in this package are Receipt, Invoice and Passport text extraction APIs."
+      description={`Mindee OCR extracts data from the documents you use most. Included in this package are Receipt, Invoice and Passport text extraction APIs.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -77,7 +77,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Mindee OCR</title>
-          <meta name="description" content="Mindee OCR extracts data from the documents you use most. Included in this package are Receipt, Invoice and Passport text extraction APIs." />
+          <meta name="description" content={`Mindee OCR extracts data from the documents you use most. Included in this package are Receipt, Invoice and Passport text extraction APIs.`} />
         </>
       ),
     },

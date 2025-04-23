@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="tawk.to"
-      description="tawk.to is a free live chat app that lets you monitor and chat with visitors on your website or from a free customizable page."
+      description={`tawk.to is a free live chat app that lets you monitor and chat with visitors on your website or from a free customizable page.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -67,7 +67,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>tawk.to</title>
-          <meta name="description" content="tawk.to is a free live chat app that lets you monitor and chat with visitors on your website or from a free customizable page." />
+          <meta name="description" content={`tawk.to is a free live chat app that lets you monitor and chat with visitors on your website or from a free customizable page.`} />
         </>
       ),
     },

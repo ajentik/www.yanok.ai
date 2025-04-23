@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Blipboard"
-      description="Blipboard is a unique event display that gives makes the recent past accessible at a glance."
+      description={`Blipboard is a unique event display that gives makes the recent past accessible at a glance.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -61,7 +61,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Blipboard</title>
-          <meta name="description" content="Blipboard is a unique event display that gives makes the recent past accessible at a glance." />
+          <meta name="description" content={`Blipboard is a unique event display that gives makes the recent past accessible at a glance.`} />
         </>
       ),
     },

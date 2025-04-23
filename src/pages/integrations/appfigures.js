@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Appfigures"
-      description="Appfigures provides actionable insights and analytics to hundreds of thousands of app publishers, marketers, analysts, and mobile service providers world wide."
+      description={`Appfigures provides actionable insights and analytics to hundreds of thousands of app publishers, marketers, analysts, and mobile service providers world wide.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +53,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Appfigures</title>
-          <meta name="description" content="Appfigures provides actionable insights and analytics to hundreds of thousands of app publishers, marketers, analysts, and mobile service providers world wide." />
+          <meta name="description" content={`Appfigures provides actionable insights and analytics to hundreds of thousands of app publishers, marketers, analysts, and mobile service providers world wide.`} />
         </>
       ),
     },

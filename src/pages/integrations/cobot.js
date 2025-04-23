@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Cobot"
-      description="Cobot is a management software for coworking spaces and shared offices. Cobot helps you with billing, invoicing, bookings and member management so that you have more time for your coworkers."
+      description={`Cobot is a management software for coworking spaces and shared offices. Cobot helps you with billing, invoicing, bookings and member management so that you have more time for your coworkers.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -92,7 +92,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Cobot</title>
-          <meta name="description" content="Cobot is a management software for coworking spaces and shared offices. Cobot helps you with billing, invoicing, bookings and member management so that you have more time for your coworkers." />
+          <meta name="description" content={`Cobot is a management software for coworking spaces and shared offices. Cobot helps you with billing, invoicing, bookings and member management so that you have more time for your coworkers.`} />
         </>
       ),
     },

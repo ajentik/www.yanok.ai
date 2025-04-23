@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Active Network"
-      description="Software management solutions for the full scope of event planning needs."
+      description={`Software management solutions for the full scope of event planning needs.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +53,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Active Network</title>
-          <meta name="description" content="Software management solutions for the full scope of event planning needs." />
+          <meta name="description" content={`Software management solutions for the full scope of event planning needs.`} />
         </>
       ),
     },

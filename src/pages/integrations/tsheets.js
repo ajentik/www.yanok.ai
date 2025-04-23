@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="QuickBooks Time (TSheets)"
-      description="TSheets is a web-based and mobile time tracking and employee scheduling app for companies needing to track, manage, and report time."
+      description={`TSheets is a web-based and mobile time tracking and employee scheduling app for companies needing to track, manage, and report time.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +53,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>QuickBooks Time (TSheets)</title>
-          <meta name="description" content="TSheets is a web-based and mobile time tracking and employee scheduling app for companies needing to track, manage, and report time." />
+          <meta name="description" content={`TSheets is a web-based and mobile time tracking and employee scheduling app for companies needing to track, manage, and report time.`} />
         </>
       ),
     },

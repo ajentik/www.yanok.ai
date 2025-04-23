@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Pipedrive"
-      description="Pipedrive is sales pipeline and CRM software for deal makers. Get super-organized. Close deals in less time. iOS and Android apps let you take your pipeline with you anywhere."
+      description={`Pipedrive is sales pipeline and CRM software for deal makers. Get super-organized. Close deals in less time. iOS and Android apps let you take your pipeline with you anywhere.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -266,7 +266,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Pipedrive</title>
-          <meta name="description" content="Pipedrive is sales pipeline and CRM software for deal makers. Get super-organized. Close deals in less time. iOS and Android apps let you take your pipeline with you anywhere." />
+          <meta name="description" content={`Pipedrive is sales pipeline and CRM software for deal makers. Get super-organized. Close deals in less time. iOS and Android apps let you take your pipeline with you anywhere.`} />
         </>
       ),
     },

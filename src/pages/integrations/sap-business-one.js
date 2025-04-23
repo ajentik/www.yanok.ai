@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="SAP Business One"
-      description="SAP Business One is business management software designed for small and medium-sized enterprises."
+      description={`SAP Business One is business management software designed for small and medium-sized enterprises.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +53,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>SAP Business One</title>
-          <meta name="description" content="SAP Business One is business management software designed for small and medium-sized enterprises." />
+          <meta name="description" content={`SAP Business One is business management software designed for small and medium-sized enterprises.`} />
         </>
       ),
     },

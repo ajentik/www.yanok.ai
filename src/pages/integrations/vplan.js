@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="vPlan"
-      description="vPlan is a planning tool to plan and track your work."
+      description={`vPlan is a planning tool to plan and track your work.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -101,7 +101,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>vPlan</title>
-          <meta name="description" content="vPlan is a planning tool to plan and track your work." />
+          <meta name="description" content={`vPlan is a planning tool to plan and track your work.`} />
         </>
       ),
     },

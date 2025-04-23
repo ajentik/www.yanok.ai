@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Shipwire"
-      description="Shipwire makes it simple to outsource ecommerce order fulfillment and logistics services for businesses. They have warehouses located in the US, Canada, UK, and Hong Kong."
+      description={`Shipwire makes it simple to outsource ecommerce order fulfillment and logistics services for businesses. They have warehouses located in the US, Canada, UK, and Hong Kong.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +53,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Shipwire</title>
-          <meta name="description" content="Shipwire makes it simple to outsource ecommerce order fulfillment and logistics services for businesses. They have warehouses located in the US, Canada, UK, and Hong Kong." />
+          <meta name="description" content={`Shipwire makes it simple to outsource ecommerce order fulfillment and logistics services for businesses. They have warehouses located in the US, Canada, UK, and Hong Kong.`} />
         </>
       ),
     },

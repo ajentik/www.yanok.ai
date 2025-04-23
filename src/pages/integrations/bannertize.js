@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Bannertize"
-      description="Bannertize is a tool to generate Dynamic Images & PDFs on the fly. Supports dark mode, retina & transparent images."
+      description={`Bannertize is a tool to generate Dynamic Images & PDFs on the fly. Supports dark mode, retina & transparent images.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -66,7 +66,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Bannertize</title>
-          <meta name="description" content="Bannertize is a tool to generate Dynamic Images & PDFs on the fly. Supports dark mode, retina & transparent images." />
+          <meta name="description" content={`Bannertize is a tool to generate Dynamic Images & PDFs on the fly. Supports dark mode, retina & transparent images.`} />
         </>
       ),
     },

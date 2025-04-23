@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="BulkGate"
-      description="BulkGate is a messaging platform that enables companies and individuals to spread their message to anyone, anywhere in the world with personalized bulk SMS and SMS notifications."
+      description={`BulkGate is a messaging platform that enables companies and individuals to spread their message to anyone, anywhere in the world with personalized bulk SMS and SMS notifications.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -147,7 +147,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>BulkGate</title>
-          <meta name="description" content="BulkGate is a messaging platform that enables companies and individuals to spread their message to anyone, anywhere in the world with personalized bulk SMS and SMS notifications." />
+          <meta name="description" content={`BulkGate is a messaging platform that enables companies and individuals to spread their message to anyone, anywhere in the world with personalized bulk SMS and SMS notifications.`} />
         </>
       ),
     },

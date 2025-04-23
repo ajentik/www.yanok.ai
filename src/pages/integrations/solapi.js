@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="SOLAPI"
-      description="SOLAPI is a Korean version of Twilio providing services for SMS and local messenger like Kakao Talk."
+      description={`SOLAPI is a Korean version of Twilio providing services for SMS and local messenger like Kakao Talk.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -87,7 +87,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>SOLAPI</title>
-          <meta name="description" content="SOLAPI is a Korean version of Twilio providing services for SMS and local messenger like Kakao Talk." />
+          <meta name="description" content={`SOLAPI is a Korean version of Twilio providing services for SMS and local messenger like Kakao Talk.`} />
         </>
       ),
     },

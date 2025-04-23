@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Corporategift"
-      description="CorporateGift.com makes sending gifts, swag, and other incentives at scale easy by allowing you to setup events or triggers to send physical gifts using just an email."
+      description={`CorporateGift.com makes sending gifts, swag, and other incentives at scale easy by allowing you to setup events or triggers to send physical gifts using just an email.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -67,7 +67,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Corporategift</title>
-          <meta name="description" content="CorporateGift.com makes sending gifts, swag, and other incentives at scale easy by allowing you to setup events or triggers to send physical gifts using just an email." />
+          <meta name="description" content={`CorporateGift.com makes sending gifts, swag, and other incentives at scale easy by allowing you to setup events or triggers to send physical gifts using just an email.`} />
         </>
       ),
     },

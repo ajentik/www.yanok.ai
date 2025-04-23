@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Mattermix"
-      description="Mattermix automates image creation with a drag-and-drop design editor and API."
+      description={`Mattermix automates image creation with a drag-and-drop design editor and API.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Mattermix</title>
-          <meta name="description" content="Mattermix automates image creation with a drag-and-drop design editor and API." />
+          <meta name="description" content={`Mattermix automates image creation with a drag-and-drop design editor and API.`} />
         </>
       ),
     },

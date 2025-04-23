@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Ediware"
-      description="Ediware is an email and SMS marketing platform. This integration enables users to pull and retrieve data and behaviors with their CRM."
+      description={`Ediware is an email and SMS marketing platform. This integration enables users to pull and retrieve data and behaviors with their CRM.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -91,7 +91,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Ediware</title>
-          <meta name="description" content="Ediware is an email and SMS marketing platform. This integration enables users to pull and retrieve data and behaviors with their CRM." />
+          <meta name="description" content={`Ediware is an email and SMS marketing platform. This integration enables users to pull and retrieve data and behaviors with their CRM.`} />
         </>
       ),
     },

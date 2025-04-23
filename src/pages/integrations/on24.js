@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="ON24"
-      description="ON24 is a webinar-based marketing platform that drives demand generation and customer engagement."
+      description={`ON24 is a webinar-based marketing platform that drives demand generation and customer engagement.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -101,7 +101,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>ON24</title>
-          <meta name="description" content="ON24 is a webinar-based marketing platform that drives demand generation and customer engagement." />
+          <meta name="description" content={`ON24 is a webinar-based marketing platform that drives demand generation and customer engagement.`} />
         </>
       ),
     },

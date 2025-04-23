@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Legalesign"
-      description="Legalesign is electronic signature software where you can receive updates of contract signing events linked to your CRM database and upload or download signed documents between Legalesign and your favourite software."
+      description={`Legalesign is electronic signature software where you can receive updates of contract signing events linked to your CRM database and upload or download signed documents between Legalesign and your favourite software.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -86,7 +86,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Legalesign</title>
-          <meta name="description" content="Legalesign is electronic signature software where you can receive updates of contract signing events linked to your CRM database and upload or download signed documents between Legalesign and your favourite software." />
+          <meta name="description" content={`Legalesign is electronic signature software where you can receive updates of contract signing events linked to your CRM database and upload or download signed documents between Legalesign and your favourite software.`} />
         </>
       ),
     },

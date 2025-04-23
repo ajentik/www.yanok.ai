@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Messaggio"
-      description="Messaggio is a multichannel messaging platform to help businesses notify customers via SMS, Viber, WhatsApp and VKontakte."
+      description={`Messaggio is a multichannel messaging platform to help businesses notify customers via SMS, Viber, WhatsApp and VKontakte.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -62,7 +62,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Messaggio</title>
-          <meta name="description" content="Messaggio is a multichannel messaging platform to help businesses notify customers via SMS, Viber, WhatsApp and VKontakte." />
+          <meta name="description" content={`Messaggio is a multichannel messaging platform to help businesses notify customers via SMS, Viber, WhatsApp and VKontakte.`} />
         </>
       ),
     },

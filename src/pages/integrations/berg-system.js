@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Berg System"
-      description="Berg System is a CRM tool dedicated to sales teams in the financial, insurance, investment and photovoltaic industries."
+      description={`Berg System is a CRM tool dedicated to sales teams in the financial, insurance, investment and photovoltaic industries.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -76,7 +76,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Berg System</title>
-          <meta name="description" content="Berg System is a CRM tool dedicated to sales teams in the financial, insurance, investment and photovoltaic industries." />
+          <meta name="description" content={`Berg System is a CRM tool dedicated to sales teams in the financial, insurance, investment and photovoltaic industries.`} />
         </>
       ),
     },

@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Breeze"
-      description="Breeze is a simple project management tool that enables teams to plan, track and organize their work."
+      description={`Breeze is a simple project management tool that enables teams to plan, track and organize their work.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -101,7 +101,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Breeze</title>
-          <meta name="description" content="Breeze is a simple project management tool that enables teams to plan, track and organize their work." />
+          <meta name="description" content={`Breeze is a simple project management tool that enables teams to plan, track and organize their work.`} />
         </>
       ),
     },

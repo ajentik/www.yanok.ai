@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Taxamo"
-      description="Taxamo offers global VAT/GST compliance designed to grow your business. With our Taxamo Advantage service you can manage your cross-border digital VAT/GST compliance globally, in real-time."
+      description={`Taxamo offers global VAT/GST compliance designed to grow your business. With our Taxamo Advantage service you can manage your cross-border digital VAT/GST compliance globally, in real-time.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +53,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Taxamo</title>
-          <meta name="description" content="Taxamo offers global VAT/GST compliance designed to grow your business. With our Taxamo Advantage service you can manage your cross-border digital VAT/GST compliance globally, in real-time." />
+          <meta name="description" content={`Taxamo offers global VAT/GST compliance designed to grow your business. With our Taxamo Advantage service you can manage your cross-border digital VAT/GST compliance globally, in real-time.`} />
         </>
       ),
     },

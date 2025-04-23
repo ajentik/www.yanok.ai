@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Hnry"
-      description="Hnry is a service for contractors, freelancers, sole traders, and self-employed individuals that takes away all the hassle of tax and compliance as well as providing you with the necessary tools to manage any additional financial admin."
+      description={`Hnry is a service for contractors, freelancers, sole traders, and self-employed individuals that takes away all the hassle of tax and compliance as well as providing you with the necessary tools to manage any additional financial admin.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -92,7 +92,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Hnry</title>
-          <meta name="description" content="Hnry is a service for contractors, freelancers, sole traders, and self-employed individuals that takes away all the hassle of tax and compliance as well as providing you with the necessary tools to manage any additional financial admin." />
+          <meta name="description" content={`Hnry is a service for contractors, freelancers, sole traders, and self-employed individuals that takes away all the hassle of tax and compliance as well as providing you with the necessary tools to manage any additional financial admin.`} />
         </>
       ),
     },

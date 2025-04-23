@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="HeySummit"
-      description="HeySummit is a platform to help you increase engagement, conversions and revenue for your online summits."
+      description={`HeySummit is a platform to help you increase engagement, conversions and revenue for your online summits.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -67,7 +67,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>HeySummit</title>
-          <meta name="description" content="HeySummit is a platform to help you increase engagement, conversions and revenue for your online summits." />
+          <meta name="description" content={`HeySummit is a platform to help you increase engagement, conversions and revenue for your online summits.`} />
         </>
       ),
     },

@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="IgnitePost"
-      description="IgnitePost is a handwritten mail and analytics service. Send real pen & ink handwritten cards as easily as sending an email!"
+      description={`IgnitePost is a handwritten mail and analytics service. Send real pen & ink handwritten cards as easily as sending an email!`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>IgnitePost</title>
-          <meta name="description" content="IgnitePost is a handwritten mail and analytics service. Send real pen & ink handwritten cards as easily as sending an email!" />
+          <meta name="description" content={`IgnitePost is a handwritten mail and analytics service. Send real pen & ink handwritten cards as easily as sending an email!`} />
         </>
       ),
     },

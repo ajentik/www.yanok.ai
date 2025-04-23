@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Boomset"
-      description="Boomset is an all-in-one platform to streamline your event management. Power events with features like online and onsite registration, self-check-in, facial recognition, on-demand printing, gamification, RFID tracking, lead retrieval and more."
+      description={`Boomset is an all-in-one platform to streamline your event management. Power events with features like online and onsite registration, self-check-in, facial recognition, on-demand printing, gamification, RFID tracking, lead retrieval and more.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -62,7 +62,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Boomset</title>
-          <meta name="description" content="Boomset is an all-in-one platform to streamline your event management. Power events with features like online and onsite registration, self-check-in, facial recognition, on-demand printing, gamification, RFID tracking, lead retrieval and more." />
+          <meta name="description" content={`Boomset is an all-in-one platform to streamline your event management. Power events with features like online and onsite registration, self-check-in, facial recognition, on-demand printing, gamification, RFID tracking, lead retrieval and more.`} />
         </>
       ),
     },

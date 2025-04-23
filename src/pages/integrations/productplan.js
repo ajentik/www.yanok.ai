@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="ProductPlan"
-      description="ProductPlan is a roadmap platform that aligns your team so you can build what matters."
+      description={`ProductPlan is a roadmap platform that aligns your team so you can build what matters.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -91,7 +91,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>ProductPlan</title>
-          <meta name="description" content="ProductPlan is a roadmap platform that aligns your team so you can build what matters." />
+          <meta name="description" content={`ProductPlan is a roadmap platform that aligns your team so you can build what matters.`} />
         </>
       ),
     },

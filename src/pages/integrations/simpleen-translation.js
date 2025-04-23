@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Simpleen Translation"
-      description="Simpleen enables you to customize translations from your machine translation service."
+      description={`Simpleen enables you to customize translations from your machine translation service.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Simpleen Translation</title>
-          <meta name="description" content="Simpleen enables you to customize translations from your machine translation service." />
+          <meta name="description" content={`Simpleen enables you to customize translations from your machine translation service.`} />
         </>
       ),
     },

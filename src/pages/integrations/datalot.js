@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Datalot"
-      description="Datalot is the industry leader in pay-per-call advertising. We make your phone ring with qualified customers."
+      description={`Datalot is the industry leader in pay-per-call advertising. We make your phone ring with qualified customers.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +53,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Datalot</title>
-          <meta name="description" content="Datalot is the industry leader in pay-per-call advertising. We make your phone ring with qualified customers." />
+          <meta name="description" content={`Datalot is the industry leader in pay-per-call advertising. We make your phone ring with qualified customers.`} />
         </>
       ),
     },

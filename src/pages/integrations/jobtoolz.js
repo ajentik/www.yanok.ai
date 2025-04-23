@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Jobtoolz"
-      description="Jobtoolz is an intuitive cloud-based recruitment platform on which you can build and show your employer branding, which automates your recruitment processes (ATS) and also attracts the right talent by data-driven recruitment marketing."
+      description={`Jobtoolz is an intuitive cloud-based recruitment platform on which you can build and show your employer branding, which automates your recruitment processes (ATS) and also attracts the right talent by data-driven recruitment marketing.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -86,7 +86,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Jobtoolz</title>
-          <meta name="description" content="Jobtoolz is an intuitive cloud-based recruitment platform on which you can build and show your employer branding, which automates your recruitment processes (ATS) and also attracts the right talent by data-driven recruitment marketing." />
+          <meta name="description" content={`Jobtoolz is an intuitive cloud-based recruitment platform on which you can build and show your employer branding, which automates your recruitment processes (ATS) and also attracts the right talent by data-driven recruitment marketing.`} />
         </>
       ),
     },

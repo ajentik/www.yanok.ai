@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Celestory"
-      description="Celestory is an app to create your no-code interactive stories."
+      description={`Celestory is an app to create your no-code interactive stories.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -62,7 +62,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Celestory</title>
-          <meta name="description" content="Celestory is an app to create your no-code interactive stories." />
+          <meta name="description" content={`Celestory is an app to create your no-code interactive stories.`} />
         </>
       ),
     },

@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Raklet"
-      description="Raklet is a CRM to help manage contacts, messages and payments. Schedule email and SMS, collect payments online and more."
+      description={`Raklet is a CRM to help manage contacts, messages and payments. Schedule email and SMS, collect payments online and more.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -76,7 +76,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Raklet</title>
-          <meta name="description" content="Raklet is a CRM to help manage contacts, messages and payments. Schedule email and SMS, collect payments online and more." />
+          <meta name="description" content={`Raklet is a CRM to help manage contacts, messages and payments. Schedule email and SMS, collect payments online and more.`} />
         </>
       ),
     },

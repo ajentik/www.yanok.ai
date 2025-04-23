@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="OnePageCRM"
-      description="OnePageCRM converts the complexity of CRM into a simple to-do list. Built using GTD (Getting Things Done) productivity principles, its streamlined approach to sales helps you convert leads to customers, reach targets and grow your business fast. By focusing on that one Next Action, your sales team are organized and empowered to move a deal forward. OnePageCRM strives to offer a product that is as easy to use as email and helps your company achieve zero admin."
+      description={`OnePageCRM converts the complexity of CRM into a simple to-do list. Built using GTD (Getting Things Done) productivity principles, its streamlined approach to sales helps you convert leads to customers, reach targets and grow your business fast. By focusing on that one Next Action, your sales team are organized and empowered to move a deal forward. OnePageCRM strives to offer a product that is as easy to use as email and helps your company achieve zero admin.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -156,7 +156,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>OnePageCRM</title>
-          <meta name="description" content="OnePageCRM converts the complexity of CRM into a simple to-do list. Built using GTD (Getting Things Done) productivity principles, its streamlined approach to sales helps you convert leads to customers, reach targets and grow your business fast. By focusing on that one Next Action, your sales team are organized and empowered to move a deal forward. OnePageCRM strives to offer a product that is as easy to use as email and helps your company achieve zero admin." />
+          <meta name="description" content={`OnePageCRM converts the complexity of CRM into a simple to-do list. Built using GTD (Getting Things Done) productivity principles, its streamlined approach to sales helps you convert leads to customers, reach targets and grow your business fast. By focusing on that one Next Action, your sales team are organized and empowered to move a deal forward. OnePageCRM strives to offer a product that is as easy to use as email and helps your company achieve zero admin.`} />
         </>
       ),
     },

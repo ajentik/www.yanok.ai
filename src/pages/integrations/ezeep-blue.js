@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="ezeep Blue printing"
-      description="ezeep Blue printing automates printing of labels, checks, packing slips, reports and all other purposes."
+      description={`ezeep Blue printing automates printing of labels, checks, packing slips, reports and all other purposes.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -61,7 +61,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>ezeep Blue printing</title>
-          <meta name="description" content="ezeep Blue printing automates printing of labels, checks, packing slips, reports and all other purposes." />
+          <meta name="description" content={`ezeep Blue printing automates printing of labels, checks, packing slips, reports and all other purposes.`} />
         </>
       ),
     },

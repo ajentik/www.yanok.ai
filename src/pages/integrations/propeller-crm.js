@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Propeller CRM"
-      description="A powerful, minimalist CRM tool designed for sales and marketing teams to work directly inside Gmail and Google Suite. Manage emails and contacts directly inside your inbox."
+      description={`A powerful, minimalist CRM tool designed for sales and marketing teams to work directly inside Gmail and Google Suite. Manage emails and contacts directly inside your inbox.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +53,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Propeller CRM</title>
-          <meta name="description" content="A powerful, minimalist CRM tool designed for sales and marketing teams to work directly inside Gmail and Google Suite. Manage emails and contacts directly inside your inbox." />
+          <meta name="description" content={`A powerful, minimalist CRM tool designed for sales and marketing teams to work directly inside Gmail and Google Suite. Manage emails and contacts directly inside your inbox.`} />
         </>
       ),
     },

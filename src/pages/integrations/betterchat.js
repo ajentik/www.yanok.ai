@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="BetterChat"
-      description="Send & receive WhatsApp messages. Create no-code WhatsApp chatbots! Use BetterChat and automate customer support through WhatsApp."
+      description={`Send & receive WhatsApp messages. Create no-code WhatsApp chatbots! Use BetterChat and automate customer support through WhatsApp.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>BetterChat</title>
-          <meta name="description" content="Send & receive WhatsApp messages. Create no-code WhatsApp chatbots! Use BetterChat and automate customer support through WhatsApp." />
+          <meta name="description" content={`Send & receive WhatsApp messages. Create no-code WhatsApp chatbots! Use BetterChat and automate customer support through WhatsApp.`} />
         </>
       ),
     },

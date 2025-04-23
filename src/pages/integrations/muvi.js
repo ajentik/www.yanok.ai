@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Muvi"
-      description="Muvi is a SaaS-based OTT Platform Provider that allows Content owners to launch Audio/Video Streaming Platforms (On Demand/Live) for Web/Mobile/TV."
+      description={`Muvi is a SaaS-based OTT Platform Provider that allows Content owners to launch Audio/Video Streaming Platforms (On Demand/Live) for Web/Mobile/TV.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -61,7 +61,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Muvi</title>
-          <meta name="description" content="Muvi is a SaaS-based OTT Platform Provider that allows Content owners to launch Audio/Video Streaming Platforms (On Demand/Live) for Web/Mobile/TV." />
+          <meta name="description" content={`Muvi is a SaaS-based OTT Platform Provider that allows Content owners to launch Audio/Video Streaming Platforms (On Demand/Live) for Web/Mobile/TV.`} />
         </>
       ),
     },

@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Catchpoint"
-      description="Catchpoint is a leading digital performance intelligence company that provides unparalleled insights to help you consistently deliver amazing digital experiences."
+      description={`Catchpoint is a leading digital performance intelligence company that provides unparalleled insights to help you consistently deliver amazing digital experiences.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +53,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Catchpoint</title>
-          <meta name="description" content="Catchpoint is a leading digital performance intelligence company that provides unparalleled insights to help you consistently deliver amazing digital experiences." />
+          <meta name="description" content={`Catchpoint is a leading digital performance intelligence company that provides unparalleled insights to help you consistently deliver amazing digital experiences.`} />
         </>
       ),
     },

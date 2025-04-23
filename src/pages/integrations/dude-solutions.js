@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Dude Solutions"
-      description="Dude Solutions is a leading SaaS provider of operations management solutions to education, government, healthcare, manufacturing and membership-based organizations."
+      description={`Dude Solutions is a leading SaaS provider of operations management solutions to education, government, healthcare, manufacturing and membership-based organizations.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +53,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Dude Solutions</title>
-          <meta name="description" content="Dude Solutions is a leading SaaS provider of operations management solutions to education, government, healthcare, manufacturing and membership-based organizations." />
+          <meta name="description" content={`Dude Solutions is a leading SaaS provider of operations management solutions to education, government, healthcare, manufacturing and membership-based organizations.`} />
         </>
       ),
     },

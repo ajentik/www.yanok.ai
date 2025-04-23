@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="HrFlow.ai"
-      description="HrFlow.ai is the 1st multi-layer AI powered API that brings intelligence to your HR Data and bridges the gap between all your data Sources and Destinations."
+      description={`HrFlow.ai is the 1st multi-layer AI powered API that brings intelligence to your HR Data and bridges the gap between all your data Sources and Destinations.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -62,7 +62,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>HrFlow.ai</title>
-          <meta name="description" content="HrFlow.ai is the 1st multi-layer AI powered API that brings intelligence to your HR Data and bridges the gap between all your data Sources and Destinations." />
+          <meta name="description" content={`HrFlow.ai is the 1st multi-layer AI powered API that brings intelligence to your HR Data and bridges the gap between all your data Sources and Destinations.`} />
         </>
       ),
     },

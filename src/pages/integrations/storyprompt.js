@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="StoryPrompt"
-      description="StoryPrompt is an easy way to send and collect personal videos from customers, employees, and your community. Capturing stories, testimonials, and updates is as simple as sharing a link."
+      description={`StoryPrompt is an easy way to send and collect personal videos from customers, employees, and your community. Capturing stories, testimonials, and updates is as simple as sharing a link.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -102,7 +102,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>StoryPrompt</title>
-          <meta name="description" content="StoryPrompt is an easy way to send and collect personal videos from customers, employees, and your community. Capturing stories, testimonials, and updates is as simple as sharing a link." />
+          <meta name="description" content={`StoryPrompt is an easy way to send and collect personal videos from customers, employees, and your community. Capturing stories, testimonials, and updates is as simple as sharing a link.`} />
         </>
       ),
     },

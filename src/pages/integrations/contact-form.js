@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Contact Form 7"
-      description="Contact Form 7 can manage multiple contact forms, plus you can customise the form and the mail contents flexibly with simple markup."
+      description={`Contact Form 7 can manage multiple contact forms, plus you can customise the form and the mail contents flexibly with simple markup.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +53,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Contact Form 7</title>
-          <meta name="description" content="Contact Form 7 can manage multiple contact forms, plus you can customise the form and the mail contents flexibly with simple markup." />
+          <meta name="description" content={`Contact Form 7 can manage multiple contact forms, plus you can customise the form and the mail contents flexibly with simple markup.`} />
         </>
       ),
     },

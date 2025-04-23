@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="CareTree"
-      description="CareTree is used by both professionals and families to create a central healthcare record for a patient and have one place for everyone to communicate about that patient’s care needs."
+      description={`CareTree is used by both professionals and families to create a central healthcare record for a patient and have one place for everyone to communicate about that patient’s care needs.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>CareTree</title>
-          <meta name="description" content="CareTree is used by both professionals and families to create a central healthcare record for a patient and have one place for everyone to communicate about that patient’s care needs." />
+          <meta name="description" content={`CareTree is used by both professionals and families to create a central healthcare record for a patient and have one place for everyone to communicate about that patient’s care needs.`} />
         </>
       ),
     },

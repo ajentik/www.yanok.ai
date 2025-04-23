@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="ScrumGenius"
-      description="Automate your team status meetings. ScrumGenius runs automatic check-ins and stand-ups to help managers to track the engagement and performance of their employees."
+      description={`Automate your team status meetings. ScrumGenius runs automatic check-ins and stand-ups to help managers to track the engagement and performance of their employees.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -62,7 +62,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>ScrumGenius</title>
-          <meta name="description" content="Automate your team status meetings. ScrumGenius runs automatic check-ins and stand-ups to help managers to track the engagement and performance of their employees." />
+          <meta name="description" content={`Automate your team status meetings. ScrumGenius runs automatic check-ins and stand-ups to help managers to track the engagement and performance of their employees.`} />
         </>
       ),
     },

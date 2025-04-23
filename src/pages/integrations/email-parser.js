@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Email Parser by Zapier"
-      description="Send emails to your custom "@robot.zapier.com" address and extract any data! Visit http://parser.zapier.com/ for more information!"
+      description={`Send emails to your custom `}@robot.zapier.com" address and extract any data! Visit http://parser.zapier.com/ for more information!"
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -62,7 +62,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Email Parser by Zapier</title>
-          <meta name="description" content="Send emails to your custom "@robot.zapier.com" address and extract any data! Visit http://parser.zapier.com/ for more information!" />
+          <meta name="description" content={`Send emails to your custom `}@robot.zapier.com" address and extract any data! Visit http://parser.zapier.com/ for more information!" />
         </>
       ),
     },

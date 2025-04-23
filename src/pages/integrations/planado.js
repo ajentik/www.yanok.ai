@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Planado"
-      description="Planado is a cloud service for the company’s fieldwork management and performance quality control of mobile workers"
+      description={`Planado is a cloud service for the company’s fieldwork management and performance quality control of mobile workers`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -61,7 +61,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Planado</title>
-          <meta name="description" content="Planado is a cloud service for the company’s fieldwork management and performance quality control of mobile workers" />
+          <meta name="description" content={`Planado is a cloud service for the company’s fieldwork management and performance quality control of mobile workers`} />
         </>
       ),
     },

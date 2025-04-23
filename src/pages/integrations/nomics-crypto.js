@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Nomics Crypto"
-      description="Nomics crypto is a cryptocurrency market data provider. Get current & historical crypto price and exchange data for Bitcoin, Ethereum, etc."
+      description={`Nomics crypto is a cryptocurrency market data provider. Get current & historical crypto price and exchange data for Bitcoin, Ethereum, etc.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -77,7 +77,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Nomics Crypto</title>
-          <meta name="description" content="Nomics crypto is a cryptocurrency market data provider. Get current & historical crypto price and exchange data for Bitcoin, Ethereum, etc." />
+          <meta name="description" content={`Nomics crypto is a cryptocurrency market data provider. Get current & historical crypto price and exchange data for Bitcoin, Ethereum, etc.`} />
         </>
       ),
     },

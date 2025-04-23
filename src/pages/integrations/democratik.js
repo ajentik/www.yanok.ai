@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Democratik"
-      description="Democratik is a mobilization tool for political party and organization."
+      description={`Democratik is a mobilization tool for political party and organization.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -82,7 +82,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Democratik</title>
-          <meta name="description" content="Democratik is a mobilization tool for political party and organization." />
+          <meta name="description" content={`Democratik is a mobilization tool for political party and organization.`} />
         </>
       ),
     },

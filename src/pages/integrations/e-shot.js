@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="e-shot"
-      description="e-shot™ is an intuitive marketing automation platform offering intelligent automation & a team that cares. We help your email marketing deliver beyond the click."
+      description={`e-shot™ is an intuitive marketing automation platform offering intelligent automation & a team that cares. We help your email marketing deliver beyond the click.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -161,7 +161,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>e-shot</title>
-          <meta name="description" content="e-shot™ is an intuitive marketing automation platform offering intelligent automation & a team that cares. We help your email marketing deliver beyond the click." />
+          <meta name="description" content={`e-shot™ is an intuitive marketing automation platform offering intelligent automation & a team that cares. We help your email marketing deliver beyond the click.`} />
         </>
       ),
     },

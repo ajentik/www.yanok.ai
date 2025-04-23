@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="SweepBright"
-      description="SweepBright lets real estate professionals organize and promote listings, match them with leads, and close the deal—all from their phone."
+      description={`SweepBright lets real estate professionals organize and promote listings, match them with leads, and close the deal—all from their phone.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -231,7 +231,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>SweepBright</title>
-          <meta name="description" content="SweepBright lets real estate professionals organize and promote listings, match them with leads, and close the deal—all from their phone." />
+          <meta name="description" content={`SweepBright lets real estate professionals organize and promote listings, match them with leads, and close the deal—all from their phone.`} />
         </>
       ),
     },

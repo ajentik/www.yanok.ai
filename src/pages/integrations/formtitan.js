@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="FormTitan"
-      description="FormTitan is an online form builder that allows you to easily create powerful forms without a single line of code. Improve your conversions with our innovative CRO engine, integration with many services, custom logic, ui logic and much more!"
+      description={`FormTitan is an online form builder that allows you to easily create powerful forms without a single line of code. Improve your conversions with our innovative CRO engine, integration with many services, custom logic, ui logic and much more!`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -61,7 +61,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>FormTitan</title>
-          <meta name="description" content="FormTitan is an online form builder that allows you to easily create powerful forms without a single line of code. Improve your conversions with our innovative CRO engine, integration with many services, custom logic, ui logic and much more!" />
+          <meta name="description" content={`FormTitan is an online form builder that allows you to easily create powerful forms without a single line of code. Improve your conversions with our innovative CRO engine, integration with many services, custom logic, ui logic and much more!`} />
         </>
       ),
     },

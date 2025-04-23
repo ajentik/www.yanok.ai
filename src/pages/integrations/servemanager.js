@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="ServeManager"
-      description="ServeManager provides process servers with the tools they need run their business, while giving their law firm clients a dashboard to track the status and activity associated with service of process."
+      description={`ServeManager provides process servers with the tools they need run their business, while giving their law firm clients a dashboard to track the status and activity associated with service of process.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -131,7 +131,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>ServeManager</title>
-          <meta name="description" content="ServeManager provides process servers with the tools they need run their business, while giving their law firm clients a dashboard to track the status and activity associated with service of process." />
+          <meta name="description" content={`ServeManager provides process servers with the tools they need run their business, while giving their law firm clients a dashboard to track the status and activity associated with service of process.`} />
         </>
       ),
     },

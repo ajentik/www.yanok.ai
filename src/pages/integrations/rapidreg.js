@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="RapidReg"
-      description="RapidReg is a data capture tool for registrations, check-ins, and events."
+      description={`RapidReg is a data capture tool for registrations, check-ins, and events.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>RapidReg</title>
-          <meta name="description" content="RapidReg is a data capture tool for registrations, check-ins, and events." />
+          <meta name="description" content={`RapidReg is a data capture tool for registrations, check-ins, and events.`} />
         </>
       ),
     },

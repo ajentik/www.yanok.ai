@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="shipit Product Planning"
-      description="Shipit is a product roadmap planning app. It provides a quarterly roadmap framework. You can manage and prioritise roadmap items for upcoming calendar quarters and for various product lines."
+      description={`Shipit is a product roadmap planning app. It provides a quarterly roadmap framework. You can manage and prioritise roadmap items for upcoming calendar quarters and for various product lines.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -62,7 +62,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>shipit Product Planning</title>
-          <meta name="description" content="Shipit is a product roadmap planning app. It provides a quarterly roadmap framework. You can manage and prioritise roadmap items for upcoming calendar quarters and for various product lines." />
+          <meta name="description" content={`Shipit is a product roadmap planning app. It provides a quarterly roadmap framework. You can manage and prioritise roadmap items for upcoming calendar quarters and for various product lines.`} />
         </>
       ),
     },

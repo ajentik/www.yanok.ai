@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Communi App"
-      description="Communi is an app for all communities are looking for ways to better connect and integrate new people."
+      description={`Communi is an app for all communities are looking for ways to better connect and integrate new people.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -121,7 +121,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Communi App</title>
-          <meta name="description" content="Communi is an app for all communities are looking for ways to better connect and integrate new people." />
+          <meta name="description" content={`Communi is an app for all communities are looking for ways to better connect and integrate new people.`} />
         </>
       ),
     },

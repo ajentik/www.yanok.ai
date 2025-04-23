@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Scheduling Suite"
-      description="Scheduling Suite is a powerful solution for small businesses to schedule and organize their day-to-day jobs and projects."
+      description={`Scheduling Suite is a powerful solution for small businesses to schedule and organize their day-to-day jobs and projects.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Scheduling Suite</title>
-          <meta name="description" content="Scheduling Suite is a powerful solution for small businesses to schedule and organize their day-to-day jobs and projects." />
+          <meta name="description" content={`Scheduling Suite is a powerful solution for small businesses to schedule and organize their day-to-day jobs and projects.`} />
         </>
       ),
     },

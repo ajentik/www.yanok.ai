@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Biztera"
-      description="Biztera is a service for organizations to keep track of approval requests between members. For example, CFOs use Biztera to approve big ticket items, and keep track of expenses versus budget. IT managers use Biztera to request approval for expensive services to beef up security. By streamlining the approval process, Biztera eliminates ambiguity in the workplace and speeds up decision-making."
+      description={`Biztera is a service for organizations to keep track of approval requests between members. For example, CFOs use Biztera to approve big ticket items, and keep track of expenses versus budget. IT managers use Biztera to request approval for expensive services to beef up security. By streamlining the approval process, Biztera eliminates ambiguity in the workplace and speeds up decision-making.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -71,7 +71,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Biztera</title>
-          <meta name="description" content="Biztera is a service for organizations to keep track of approval requests between members. For example, CFOs use Biztera to approve big ticket items, and keep track of expenses versus budget. IT managers use Biztera to request approval for expensive services to beef up security. By streamlining the approval process, Biztera eliminates ambiguity in the workplace and speeds up decision-making." />
+          <meta name="description" content={`Biztera is a service for organizations to keep track of approval requests between members. For example, CFOs use Biztera to approve big ticket items, and keep track of expenses versus budget. IT managers use Biztera to request approval for expensive services to beef up security. By streamlining the approval process, Biztera eliminates ambiguity in the workplace and speeds up decision-making.`} />
         </>
       ),
     },

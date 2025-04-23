@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="IPQualityScore"
-      description="IPQualityScore prevents fraud across any industry, catching high risk users & transactions in real-time without impacting your legitimate audience."
+      description={`IPQualityScore prevents fraud across any industry, catching high risk users & transactions in real-time without impacting your legitimate audience.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -72,7 +72,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>IPQualityScore</title>
-          <meta name="description" content="IPQualityScore prevents fraud across any industry, catching high risk users & transactions in real-time without impacting your legitimate audience." />
+          <meta name="description" content={`IPQualityScore prevents fraud across any industry, catching high risk users & transactions in real-time without impacting your legitimate audience.`} />
         </>
       ),
     },

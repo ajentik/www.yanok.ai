@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Arbox"
-      description="Arbox is a sleek and easy-to-use fitness management platform offering a suite of tools for gyms and fitness studios."
+      description={`Arbox is a sleek and easy-to-use fitness management platform offering a suite of tools for gyms and fitness studios.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -101,7 +101,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Arbox</title>
-          <meta name="description" content="Arbox is a sleek and easy-to-use fitness management platform offering a suite of tools for gyms and fitness studios." />
+          <meta name="description" content={`Arbox is a sleek and easy-to-use fitness management platform offering a suite of tools for gyms and fitness studios.`} />
         </>
       ),
     },

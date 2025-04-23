@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Evervault"
-      description="Evervault provides secure encryption infrastructure for developers."
+      description={`Evervault provides secure encryption infrastructure for developers.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Evervault</title>
-          <meta name="description" content="Evervault provides secure encryption infrastructure for developers." />
+          <meta name="description" content={`Evervault provides secure encryption infrastructure for developers.`} />
         </>
       ),
     },

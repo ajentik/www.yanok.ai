@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Powrbot"
-      description="Powrbot automates searching the web for company data."
+      description={`Powrbot automates searching the web for company data.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Powrbot</title>
-          <meta name="description" content="Powrbot automates searching the web for company data." />
+          <meta name="description" content={`Powrbot automates searching the web for company data.`} />
         </>
       ),
     },

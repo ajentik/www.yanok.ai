@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Chatfuel"
-      description="Chatfuel allows anyone to create their own bots on Facebook Messenger for free, without coding. Using this app you'll be able to automatically update content in your bot."
+      description={`Chatfuel allows anyone to create their own bots on Facebook Messenger for free, without coding. Using this app you'll be able to automatically update content in your bot.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -111,7 +111,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Chatfuel</title>
-          <meta name="description" content="Chatfuel allows anyone to create their own bots on Facebook Messenger for free, without coding. Using this app you'll be able to automatically update content in your bot." />
+          <meta name="description" content={`Chatfuel allows anyone to create their own bots on Facebook Messenger for free, without coding. Using this app you'll be able to automatically update content in your bot.`} />
         </>
       ),
     },

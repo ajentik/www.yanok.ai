@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Quill Forms"
-      description="Quill Forms is a top WordPress plugin that lets you create conversational forms easily."
+      description={`Quill Forms is a top WordPress plugin that lets you create conversational forms easily.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Quill Forms</title>
-          <meta name="description" content="Quill Forms is a top WordPress plugin that lets you create conversational forms easily." />
+          <meta name="description" content={`Quill Forms is a top WordPress plugin that lets you create conversational forms easily.`} />
         </>
       ),
     },

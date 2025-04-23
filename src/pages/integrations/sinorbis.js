@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Sinorbis"
-      description="Sinorbis is an all-in-one marketing platform that lets you manage, measure and optimise your digital marketing in China. Create your Chinese website and WeChat content, generate leads, manage your followers and integrate the tool with your CRM or other marketing channels."
+      description={`Sinorbis is an all-in-one marketing platform that lets you manage, measure and optimise your digital marketing in China. Create your Chinese website and WeChat content, generate leads, manage your followers and integrate the tool with your CRM or other marketing channels.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Sinorbis</title>
-          <meta name="description" content="Sinorbis is an all-in-one marketing platform that lets you manage, measure and optimise your digital marketing in China. Create your Chinese website and WeChat content, generate leads, manage your followers and integrate the tool with your CRM or other marketing channels." />
+          <meta name="description" content={`Sinorbis is an all-in-one marketing platform that lets you manage, measure and optimise your digital marketing in China. Create your Chinese website and WeChat content, generate leads, manage your followers and integrate the tool with your CRM or other marketing channels.`} />
         </>
       ),
     },

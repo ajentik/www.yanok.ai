@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Bloom"
-      description="The all-encompassing business solution. See how Bloom's marketing CRM + project management software makes managing your business 10x easier."
+      description={`The all-encompassing business solution. See how Bloom's marketing CRM + project management software makes managing your business 10x easier.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -92,7 +92,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Bloom</title>
-          <meta name="description" content="The all-encompassing business solution. See how Bloom's marketing CRM + project management software makes managing your business 10x easier." />
+          <meta name="description" content={`The all-encompassing business solution. See how Bloom's marketing CRM + project management software makes managing your business 10x easier.`} />
         </>
       ),
     },

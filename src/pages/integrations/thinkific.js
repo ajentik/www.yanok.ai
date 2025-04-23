@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Thinkific"
-      description="The all-in-one platform to create, market & sell your online courses. Deliver beautiful courses on your own site, with no technical or design experience required!"
+      description={`The all-in-one platform to create, market & sell your online courses. Deliver beautiful courses on your own site, with no technical or design experience required!`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -101,7 +101,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Thinkific</title>
-          <meta name="description" content="The all-in-one platform to create, market & sell your online courses. Deliver beautiful courses on your own site, with no technical or design experience required!" />
+          <meta name="description" content={`The all-in-one platform to create, market & sell your online courses. Deliver beautiful courses on your own site, with no technical or design experience required!`} />
         </>
       ),
     },

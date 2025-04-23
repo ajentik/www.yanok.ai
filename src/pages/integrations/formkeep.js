@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="FormKeep"
-      description="Form endpoints for designers and developers. You control the form look and feel, and FormKeep handles the data."
+      description={`Form endpoints for designers and developers. You control the form look and feel, and FormKeep handles the data.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>FormKeep</title>
-          <meta name="description" content="Form endpoints for designers and developers. You control the form look and feel, and FormKeep handles the data." />
+          <meta name="description" content={`Form endpoints for designers and developers. You control the form look and feel, and FormKeep handles the data.`} />
         </>
       ),
     },

@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="MAILINGWORK"
-      description="MAILINGWORK is your professional platform for marketing automation, email marketing & lead management."
+      description={`MAILINGWORK is your professional platform for marketing automation, email marketing & lead management.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -91,7 +91,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>MAILINGWORK</title>
-          <meta name="description" content="MAILINGWORK is your professional platform for marketing automation, email marketing & lead management." />
+          <meta name="description" content={`MAILINGWORK is your professional platform for marketing automation, email marketing & lead management.`} />
         </>
       ),
     },

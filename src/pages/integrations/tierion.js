@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Tierion"
-      description="Tierion turns the blockchain into a global platform for verifying any data, file, or business process."
+      description={`Tierion turns the blockchain into a global platform for verifying any data, file, or business process.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +53,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Tierion</title>
-          <meta name="description" content="Tierion turns the blockchain into a global platform for verifying any data, file, or business process." />
+          <meta name="description" content={`Tierion turns the blockchain into a global platform for verifying any data, file, or business process.`} />
         </>
       ),
     },

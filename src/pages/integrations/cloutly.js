@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Cloutly"
-      description="Cloutly is a review management tool that helps you collect, respond to and showcase your online reviews."
+      description={`Cloutly is a review management tool that helps you collect, respond to and showcase your online reviews.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -61,7 +61,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Cloutly</title>
-          <meta name="description" content="Cloutly is a review management tool that helps you collect, respond to and showcase your online reviews." />
+          <meta name="description" content={`Cloutly is a review management tool that helps you collect, respond to and showcase your online reviews.`} />
         </>
       ),
     },

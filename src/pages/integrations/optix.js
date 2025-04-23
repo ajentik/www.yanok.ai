@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Optix"
-      description="Optix is a platform for on-demand work and meeting spaces."
+      description={`Optix is a platform for on-demand work and meeting spaces.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -151,7 +151,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Optix</title>
-          <meta name="description" content="Optix is a platform for on-demand work and meeting spaces." />
+          <meta name="description" content={`Optix is a platform for on-demand work and meeting spaces.`} />
         </>
       ),
     },

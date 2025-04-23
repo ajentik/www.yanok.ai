@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Eshopbox"
-      description="Eshopbox offers simple, fast, and tech-enabled fulfillment for ambitious e-commerce businesses with its network of fulfillment centers across India."
+      description={`Eshopbox offers simple, fast, and tech-enabled fulfillment for ambitious e-commerce businesses with its network of fulfillment centers across India.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -316,7 +316,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Eshopbox</title>
-          <meta name="description" content="Eshopbox offers simple, fast, and tech-enabled fulfillment for ambitious e-commerce businesses with its network of fulfillment centers across India." />
+          <meta name="description" content={`Eshopbox offers simple, fast, and tech-enabled fulfillment for ambitious e-commerce businesses with its network of fulfillment centers across India.`} />
         </>
       ),
     },

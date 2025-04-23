@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="indemandly"
-      description="indemandly is a messaging app for your website & social media that helps convert visitors into customers."
+      description={`indemandly is a messaging app for your website & social media that helps convert visitors into customers.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -67,7 +67,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>indemandly</title>
-          <meta name="description" content="indemandly is a messaging app for your website & social media that helps convert visitors into customers." />
+          <meta name="description" content={`indemandly is a messaging app for your website & social media that helps convert visitors into customers.`} />
         </>
       ),
     },

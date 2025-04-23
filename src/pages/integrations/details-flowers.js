@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Details Flowers"
-      description="Details Flowers is an all-in-one solution for florists and event designers to manage their events."
+      description={`Details Flowers is an all-in-one solution for florists and event designers to manage their events.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -86,7 +86,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Details Flowers</title>
-          <meta name="description" content="Details Flowers is an all-in-one solution for florists and event designers to manage their events." />
+          <meta name="description" content={`Details Flowers is an all-in-one solution for florists and event designers to manage their events.`} />
         </>
       ),
     },

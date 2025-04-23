@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Suiteshare"
-      description="Suiteshare is a digital marketing platform for lead capture, sales conversion, and analysis of results through WhatsApp."
+      description={`Suiteshare is a digital marketing platform for lead capture, sales conversion, and analysis of results through WhatsApp.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Suiteshare</title>
-          <meta name="description" content="Suiteshare is a digital marketing platform for lead capture, sales conversion, and analysis of results through WhatsApp." />
+          <meta name="description" content={`Suiteshare is a digital marketing platform for lead capture, sales conversion, and analysis of results through WhatsApp.`} />
         </>
       ),
     },

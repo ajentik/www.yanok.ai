@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Celoxis"
-      description="Celoxis is an all-in-one platform for project management, work collaboration and workflow automation."
+      description={`Celoxis is an all-in-one platform for project management, work collaboration and workflow automation.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -146,7 +146,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Celoxis</title>
-          <meta name="description" content="Celoxis is an all-in-one platform for project management, work collaboration and workflow automation." />
+          <meta name="description" content={`Celoxis is an all-in-one platform for project management, work collaboration and workflow automation.`} />
         </>
       ),
     },

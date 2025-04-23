@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="CozyCal"
-      description="CozyCal is a friendly appointment scheduling service that easily integrates with your website."
+      description={`CozyCal is a friendly appointment scheduling service that easily integrates with your website.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -62,7 +62,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>CozyCal</title>
-          <meta name="description" content="CozyCal is a friendly appointment scheduling service that easily integrates with your website." />
+          <meta name="description" content={`CozyCal is a friendly appointment scheduling service that easily integrates with your website.`} />
         </>
       ),
     },

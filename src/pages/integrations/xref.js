@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Xref"
-      description="Use Xref's online reference checking platform to gather valuable candidate insights quickly and with ease."
+      description={`Use Xref's online reference checking platform to gather valuable candidate insights quickly and with ease.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +53,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Xref</title>
-          <meta name="description" content="Use Xref's online reference checking platform to gather valuable candidate insights quickly and with ease." />
+          <meta name="description" content={`Use Xref's online reference checking platform to gather valuable candidate insights quickly and with ease.`} />
         </>
       ),
     },

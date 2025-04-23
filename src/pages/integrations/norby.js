@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Norby"
-      description="Build your brand, grow your community, and activate your audience through Norby, your all-in-one marketing tool."
+      description={`Build your brand, grow your community, and activate your audience through Norby, your all-in-one marketing tool.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -97,7 +97,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Norby</title>
-          <meta name="description" content="Build your brand, grow your community, and activate your audience through Norby, your all-in-one marketing tool." />
+          <meta name="description" content={`Build your brand, grow your community, and activate your audience through Norby, your all-in-one marketing tool.`} />
         </>
       ),
     },

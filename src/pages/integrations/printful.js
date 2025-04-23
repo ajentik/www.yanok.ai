@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Printful"
-      description="Printful offers on-demand online printing, fulfillment and shipping."
+      description={`Printful offers on-demand online printing, fulfillment and shipping.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -71,7 +71,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Printful</title>
-          <meta name="description" content="Printful offers on-demand online printing, fulfillment and shipping." />
+          <meta name="description" content={`Printful offers on-demand online printing, fulfillment and shipping.`} />
         </>
       ),
     },

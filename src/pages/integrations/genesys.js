@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Genesys"
-      description="Genesys is an omnichannel customer experience (CX) and contact center solutions in the cloud and on-premises."
+      description={`Genesys is an omnichannel customer experience (CX) and contact center solutions in the cloud and on-premises.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +53,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Genesys</title>
-          <meta name="description" content="Genesys is an omnichannel customer experience (CX) and contact center solutions in the cloud and on-premises." />
+          <meta name="description" content={`Genesys is an omnichannel customer experience (CX) and contact center solutions in the cloud and on-premises.`} />
         </>
       ),
     },

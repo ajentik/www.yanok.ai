@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Daily.co"
-      description="Daily.co lets you add video calls to any web page or app."
+      description={`Daily.co lets you add video calls to any web page or app.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -66,7 +66,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Daily.co</title>
-          <meta name="description" content="Daily.co lets you add video calls to any web page or app." />
+          <meta name="description" content={`Daily.co lets you add video calls to any web page or app.`} />
         </>
       ),
     },

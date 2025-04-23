@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Fingbox"
-      description="Fingbox is network detection technology that plugs into your WiFi router to alert you of network threats, identify poor connectivity, control screentime, and more."
+      description={`Fingbox is network detection technology that plugs into your WiFi router to alert you of network threats, identify poor connectivity, control screentime, and more.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -116,7 +116,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Fingbox</title>
-          <meta name="description" content="Fingbox is network detection technology that plugs into your WiFi router to alert you of network threats, identify poor connectivity, control screentime, and more." />
+          <meta name="description" content={`Fingbox is network detection technology that plugs into your WiFi router to alert you of network threats, identify poor connectivity, control screentime, and more.`} />
         </>
       ),
     },

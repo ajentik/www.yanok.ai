@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Modern Events Calendar (MEC)"
-      description="Modern Events Calendar is a responsive, mobile-friendly, FREE, and comprehensive events management plugin which is extremely user-friendly and well-designed for displaying the events calendar on the websites, ever easier."
+      description={`Modern Events Calendar is a responsive, mobile-friendly, FREE, and comprehensive events management plugin which is extremely user-friendly and well-designed for displaying the events calendar on the websites, ever easier.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -82,7 +82,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Modern Events Calendar (MEC)</title>
-          <meta name="description" content="Modern Events Calendar is a responsive, mobile-friendly, FREE, and comprehensive events management plugin which is extremely user-friendly and well-designed for displaying the events calendar on the websites, ever easier." />
+          <meta name="description" content={`Modern Events Calendar is a responsive, mobile-friendly, FREE, and comprehensive events management plugin which is extremely user-friendly and well-designed for displaying the events calendar on the websites, ever easier.`} />
         </>
       ),
     },

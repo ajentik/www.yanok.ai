@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Range"
-      description="Range is an app that takes the work out of daily team check-ins by running virtual stand-ups and connecting all your tools so you can stay in sync, and feel more like a team."
+      description={`Range is an app that takes the work out of daily team check-ins by running virtual stand-ups and connecting all your tools so you can stay in sync, and feel more like a team.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -91,7 +91,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Range</title>
-          <meta name="description" content="Range is an app that takes the work out of daily team check-ins by running virtual stand-ups and connecting all your tools so you can stay in sync, and feel more like a team." />
+          <meta name="description" content={`Range is an app that takes the work out of daily team check-ins by running virtual stand-ups and connecting all your tools so you can stay in sync, and feel more like a team.`} />
         </>
       ),
     },

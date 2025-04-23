@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Donsplus"
-      description="Donsplus is a powerful in-web donation widget for nonprofits designed to convert website visitors into valuable donors."
+      description={`Donsplus is a powerful in-web donation widget for nonprofits designed to convert website visitors into valuable donors.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -67,7 +67,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Donsplus</title>
-          <meta name="description" content="Donsplus is a powerful in-web donation widget for nonprofits designed to convert website visitors into valuable donors." />
+          <meta name="description" content={`Donsplus is a powerful in-web donation widget for nonprofits designed to convert website visitors into valuable donors.`} />
         </>
       ),
     },

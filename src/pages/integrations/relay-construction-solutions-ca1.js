@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Relay Construction Solutions"
-      description="Relay is a bid-leveling software for the commercial construction industry, connecting project owners, general contractors, and sub-contractors in one tool."
+      description={`Relay is a bid-leveling software for the commercial construction industry, connecting project owners, general contractors, and sub-contractors in one tool.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -72,7 +72,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Relay Construction Solutions</title>
-          <meta name="description" content="Relay is a bid-leveling software for the commercial construction industry, connecting project owners, general contractors, and sub-contractors in one tool." />
+          <meta name="description" content={`Relay is a bid-leveling software for the commercial construction industry, connecting project owners, general contractors, and sub-contractors in one tool.`} />
         </>
       ),
     },

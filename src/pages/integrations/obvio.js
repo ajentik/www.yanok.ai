@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="OBVIO"
-      description="OBVIO is a virtual event platform, allowing our users to host virtual events for hundreds of attendees, all the way up to hundreds of thousands."
+      description={`OBVIO is a virtual event platform, allowing our users to host virtual events for hundreds of attendees, all the way up to hundreds of thousands.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -81,7 +81,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>OBVIO</title>
-          <meta name="description" content="OBVIO is a virtual event platform, allowing our users to host virtual events for hundreds of attendees, all the way up to hundreds of thousands." />
+          <meta name="description" content={`OBVIO is a virtual event platform, allowing our users to host virtual events for hundreds of attendees, all the way up to hundreds of thousands.`} />
         </>
       ),
     },

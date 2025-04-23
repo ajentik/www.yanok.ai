@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="CartonCloud"
-      description="CartonCloud Warehouse and Transport Management System."
+      description={`CartonCloud Warehouse and Transport Management System.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -72,7 +72,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>CartonCloud</title>
-          <meta name="description" content="CartonCloud Warehouse and Transport Management System." />
+          <meta name="description" content={`CartonCloud Warehouse and Transport Management System.`} />
         </>
       ),
     },

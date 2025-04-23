@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Flock"
-      description="Flock is a communication app for teams that speeds up and simplifies your work life. It lets you connect with your team, get on video calls, manage projects with to-dos, polls and reminders. All of this and more over an interface that's polished-to-perfection!"
+      description={`Flock is a communication app for teams that speeds up and simplifies your work life. It lets you connect with your team, get on video calls, manage projects with to-dos, polls and reminders. All of this and more over an interface that's polished-to-perfection!`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -62,7 +62,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Flock</title>
-          <meta name="description" content="Flock is a communication app for teams that speeds up and simplifies your work life. It lets you connect with your team, get on video calls, manage projects with to-dos, polls and reminders. All of this and more over an interface that's polished-to-perfection!" />
+          <meta name="description" content={`Flock is a communication app for teams that speeds up and simplifies your work life. It lets you connect with your team, get on video calls, manage projects with to-dos, polls and reminders. All of this and more over an interface that's polished-to-perfection!`} />
         </>
       ),
     },

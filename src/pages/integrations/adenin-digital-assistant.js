@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Adaptive Card Maker by adenin"
-      description="Easily monitor your other work apps by creating Adaptive Cards for free. Never miss another update simply by placing them on your own Board, SharePoint, intranet or chatbot."
+      description={`Easily monitor your other work apps by creating Adaptive Cards for free. Never miss another update simply by placing them on your own Board, SharePoint, intranet or chatbot.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Adaptive Card Maker by adenin</title>
-          <meta name="description" content="Easily monitor your other work apps by creating Adaptive Cards for free. Never miss another update simply by placing them on your own Board, SharePoint, intranet or chatbot." />
+          <meta name="description" content={`Easily monitor your other work apps by creating Adaptive Cards for free. Never miss another update simply by placing them on your own Board, SharePoint, intranet or chatbot.`} />
         </>
       ),
     },

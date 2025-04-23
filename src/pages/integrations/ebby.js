@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Ebby"
-      description="Ebby is an automated transcription platform which accurately transcribes any audio or video. Supporting more than 100 languages and providing feature-rich editing tools to get your transcription or subtitling done quickly and accurately."
+      description={`Ebby is an automated transcription platform which accurately transcribes any audio or video. Supporting more than 100 languages and providing feature-rich editing tools to get your transcription or subtitling done quickly and accurately.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -61,7 +61,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Ebby</title>
-          <meta name="description" content="Ebby is an automated transcription platform which accurately transcribes any audio or video. Supporting more than 100 languages and providing feature-rich editing tools to get your transcription or subtitling done quickly and accurately." />
+          <meta name="description" content={`Ebby is an automated transcription platform which accurately transcribes any audio or video. Supporting more than 100 languages and providing feature-rich editing tools to get your transcription or subtitling done quickly and accurately.`} />
         </>
       ),
     },

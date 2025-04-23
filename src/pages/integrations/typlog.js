@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Typlog"
-      description="Typlog is a blogging and podcasting platform for your stories and voices."
+      description={`Typlog is a blogging and podcasting platform for your stories and voices.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -81,7 +81,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Typlog</title>
-          <meta name="description" content="Typlog is a blogging and podcasting platform for your stories and voices." />
+          <meta name="description" content={`Typlog is a blogging and podcasting platform for your stories and voices.`} />
         </>
       ),
     },

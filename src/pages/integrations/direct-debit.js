@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Direct Debit"
-      description="Direct Debit is a debt order collection software system in South Africa."
+      description={`Direct Debit is a debt order collection software system in South Africa.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -77,7 +77,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Direct Debit</title>
-          <meta name="description" content="Direct Debit is a debt order collection software system in South Africa." />
+          <meta name="description" content={`Direct Debit is a debt order collection software system in South Africa.`} />
         </>
       ),
     },

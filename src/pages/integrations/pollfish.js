@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Pollfish"
-      description="Pollfish is a modern survey platform providing authentic responses in real-time, leading to better quality insights."
+      description={`Pollfish is a modern survey platform providing authentic responses in real-time, leading to better quality insights.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +53,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Pollfish</title>
-          <meta name="description" content="Pollfish is a modern survey platform providing authentic responses in real-time, leading to better quality insights." />
+          <meta name="description" content={`Pollfish is a modern survey platform providing authentic responses in real-time, leading to better quality insights.`} />
         </>
       ),
     },

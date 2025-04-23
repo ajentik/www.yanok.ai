@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="WebTotem"
-      description="WebTotem is your personal AI-inspired web application security assistant that protects your web page from cyber threats and monitors its security"
+      description={`WebTotem is your personal AI-inspired web application security assistant that protects your web page from cyber threats and monitors its security`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -76,7 +76,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>WebTotem</title>
-          <meta name="description" content="WebTotem is your personal AI-inspired web application security assistant that protects your web page from cyber threats and monitors its security" />
+          <meta name="description" content={`WebTotem is your personal AI-inspired web application security assistant that protects your web page from cyber threats and monitors its security`} />
         </>
       ),
     },

@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Databox"
-      description="Databox is a business analytics platform built to help you understand what's going on with your business and keep KPIs from cloud services, spreadsheets, databases in one place."
+      description={`Databox is a business analytics platform built to help you understand what's going on with your business and keep KPIs from cloud services, spreadsheets, databases in one place.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -62,7 +62,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Databox</title>
-          <meta name="description" content="Databox is a business analytics platform built to help you understand what's going on with your business and keep KPIs from cloud services, spreadsheets, databases in one place." />
+          <meta name="description" content={`Databox is a business analytics platform built to help you understand what's going on with your business and keep KPIs from cloud services, spreadsheets, databases in one place.`} />
         </>
       ),
     },

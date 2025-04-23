@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="TDox"
-      description="TDox turns business processes and paper forms in mobile apps. The designer allows creating forms, which are filled in using the mobile app."
+      description={`TDox turns business processes and paper forms in mobile apps. The designer allows creating forms, which are filled in using the mobile app.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -86,7 +86,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>TDox</title>
-          <meta name="description" content="TDox turns business processes and paper forms in mobile apps. The designer allows creating forms, which are filled in using the mobile app." />
+          <meta name="description" content={`TDox turns business processes and paper forms in mobile apps. The designer allows creating forms, which are filled in using the mobile app.`} />
         </>
       ),
     },

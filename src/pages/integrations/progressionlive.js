@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="ProgressionLIVE"
-      description="ProgressionLIVE is a dispatch software and a mobile task management application for your employees on the road."
+      description={`ProgressionLIVE is a dispatch software and a mobile task management application for your employees on the road.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +53,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>ProgressionLIVE</title>
-          <meta name="description" content="ProgressionLIVE is a dispatch software and a mobile task management application for your employees on the road." />
+          <meta name="description" content={`ProgressionLIVE is a dispatch software and a mobile task management application for your employees on the road.`} />
         </>
       ),
     },

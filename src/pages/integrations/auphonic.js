@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Auphonic"
-      description="Auphonic is an automatic audio post production web service for podcasts, broadcasters, radio shows, movies, screencasts and more."
+      description={`Auphonic is an automatic audio post production web service for podcasts, broadcasters, radio shows, movies, screencasts and more.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -61,7 +61,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Auphonic</title>
-          <meta name="description" content="Auphonic is an automatic audio post production web service for podcasts, broadcasters, radio shows, movies, screencasts and more." />
+          <meta name="description" content={`Auphonic is an automatic audio post production web service for podcasts, broadcasters, radio shows, movies, screencasts and more.`} />
         </>
       ),
     },

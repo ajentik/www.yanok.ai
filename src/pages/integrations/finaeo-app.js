@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Finaeo"
-      description="Finaeo is a digital marketplace empowering independent life and health insurance brokers to increase efficiency and take clients from prospect-to-policy."
+      description={`Finaeo is a digital marketplace empowering independent life and health insurance brokers to increase efficiency and take clients from prospect-to-policy.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -126,7 +126,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Finaeo</title>
-          <meta name="description" content="Finaeo is a digital marketplace empowering independent life and health insurance brokers to increase efficiency and take clients from prospect-to-policy." />
+          <meta name="description" content={`Finaeo is a digital marketplace empowering independent life and health insurance brokers to increase efficiency and take clients from prospect-to-policy.`} />
         </>
       ),
     },

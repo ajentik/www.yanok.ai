@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Siteleaf"
-      description="Send invitations to clients, colleagues, and others to edit and review sites. Managing content in Siteleaf is easy enough anyone can do it, with nothing to install."
+      description={`Send invitations to clients, colleagues, and others to edit and review sites. Managing content in Siteleaf is easy enough anyone can do it, with nothing to install.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -86,7 +86,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Siteleaf</title>
-          <meta name="description" content="Send invitations to clients, colleagues, and others to edit and review sites. Managing content in Siteleaf is easy enough anyone can do it, with nothing to install." />
+          <meta name="description" content={`Send invitations to clients, colleagues, and others to edit and review sites. Managing content in Siteleaf is easy enough anyone can do it, with nothing to install.`} />
         </>
       ),
     },

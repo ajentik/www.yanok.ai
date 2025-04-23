@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Exceed.ai"
-      description="Exceed.ai helps companies engage, nurture, and qualify more leads at scale, using a two-way conversational AI engine"
+      description={`Exceed.ai helps companies engage, nurture, and qualify more leads at scale, using a two-way conversational AI engine`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -67,7 +67,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Exceed.ai</title>
-          <meta name="description" content="Exceed.ai helps companies engage, nurture, and qualify more leads at scale, using a two-way conversational AI engine" />
+          <meta name="description" content={`Exceed.ai helps companies engage, nurture, and qualify more leads at scale, using a two-way conversational AI engine`} />
         </>
       ),
     },

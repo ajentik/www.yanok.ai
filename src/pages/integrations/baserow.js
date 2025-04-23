@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Baserow"
-      description="Baserow is an open source no-code database tool and Airtable alternative."
+      description={`Baserow is an open source no-code database tool and Airtable alternative.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -91,7 +91,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Baserow</title>
-          <meta name="description" content="Baserow is an open source no-code database tool and Airtable alternative." />
+          <meta name="description" content={`Baserow is an open source no-code database tool and Airtable alternative.`} />
         </>
       ),
     },

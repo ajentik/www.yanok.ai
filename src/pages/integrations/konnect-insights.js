@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Konnect Insights"
-      description="Konnect Insights is a social listening and analytics platform that gives you data from social platforms and web. Data is fetched based on keywords and social profiles. Get the power of social Listening with this integration."
+      description={`Konnect Insights is a social listening and analytics platform that gives you data from social platforms and web. Data is fetched based on keywords and social profiles. Get the power of social Listening with this integration.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -91,7 +91,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Konnect Insights</title>
-          <meta name="description" content="Konnect Insights is a social listening and analytics platform that gives you data from social platforms and web. Data is fetched based on keywords and social profiles. Get the power of social Listening with this integration." />
+          <meta name="description" content={`Konnect Insights is a social listening and analytics platform that gives you data from social platforms and web. Data is fetched based on keywords and social profiles. Get the power of social Listening with this integration.`} />
         </>
       ),
     },

@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Flickr"
-      description="Flickr is a photo sharing and social media platform that allows you to host images online, and check out other users' images."
+      description={`Flickr is a photo sharing and social media platform that allows you to host images online, and check out other users' images.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -72,7 +72,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Flickr</title>
-          <meta name="description" content="Flickr is a photo sharing and social media platform that allows you to host images online, and check out other users' images." />
+          <meta name="description" content={`Flickr is a photo sharing and social media platform that allows you to host images online, and check out other users' images.`} />
         </>
       ),
     },

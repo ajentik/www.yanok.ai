@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Verint"
-      description="Verint Systems is a provider of Actionable Intelligence solutions for enterprise workforce optimization and security intelligence."
+      description={`Verint Systems is a provider of Actionable Intelligence solutions for enterprise workforce optimization and security intelligence.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +53,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Verint</title>
-          <meta name="description" content="Verint Systems is a provider of Actionable Intelligence solutions for enterprise workforce optimization and security intelligence." />
+          <meta name="description" content={`Verint Systems is a provider of Actionable Intelligence solutions for enterprise workforce optimization and security intelligence.`} />
         </>
       ),
     },

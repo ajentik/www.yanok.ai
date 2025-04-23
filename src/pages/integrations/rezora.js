@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="rezora"
-      description="Rezora is a digital marketing platform for real estate marketing managers and agents to market their companies, themselves and listings."
+      description={`Rezora is a digital marketing platform for real estate marketing managers and agents to market their companies, themselves and listings.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -76,7 +76,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>rezora</title>
-          <meta name="description" content="Rezora is a digital marketing platform for real estate marketing managers and agents to market their companies, themselves and listings." />
+          <meta name="description" content={`Rezora is a digital marketing platform for real estate marketing managers and agents to market their companies, themselves and listings.`} />
         </>
       ),
     },

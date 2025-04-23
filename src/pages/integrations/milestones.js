@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Milestones"
-      description="Milestones allows law firms and attorneys the ability to keep their clients in the know with automatic updates on their case. With no additional work on the legal staff, Milestones helps deliver an exceptional client experience while also limiting unnecessary communication."
+      description={`Milestones allows law firms and attorneys the ability to keep their clients in the know with automatic updates on their case. With no additional work on the legal staff, Milestones helps deliver an exceptional client experience while also limiting unnecessary communication.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Milestones</title>
-          <meta name="description" content="Milestones allows law firms and attorneys the ability to keep their clients in the know with automatic updates on their case. With no additional work on the legal staff, Milestones helps deliver an exceptional client experience while also limiting unnecessary communication." />
+          <meta name="description" content={`Milestones allows law firms and attorneys the ability to keep their clients in the know with automatic updates on their case. With no additional work on the legal staff, Milestones helps deliver an exceptional client experience while also limiting unnecessary communication.`} />
         </>
       ),
     },

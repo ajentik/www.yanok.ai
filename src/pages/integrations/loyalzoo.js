@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Loyalzoo"
-      description="Loyalzoo provides independent retailers an affordable digital loyalty system to run their own in-store loyalty program."
+      description={`Loyalzoo provides independent retailers an affordable digital loyalty system to run their own in-store loyalty program.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +53,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Loyalzoo</title>
-          <meta name="description" content="Loyalzoo provides independent retailers an affordable digital loyalty system to run their own in-store loyalty program." />
+          <meta name="description" content={`Loyalzoo provides independent retailers an affordable digital loyalty system to run their own in-store loyalty program.`} />
         </>
       ),
     },

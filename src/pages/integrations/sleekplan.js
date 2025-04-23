@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Sleekplan"
-      description="Sleekplan is a customer feedback management tool that can easily be embedded in any web application. Use the widget to track suggestions, feedback, and bugs and discuss them with your customers. Plus, it' s easy to share a roadmap and keep a changelog."
+      description={`Sleekplan is a customer feedback management tool that can easily be embedded in any web application. Use the widget to track suggestions, feedback, and bugs and discuss them with your customers. Plus, it' s easy to share a roadmap and keep a changelog.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -136,7 +136,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Sleekplan</title>
-          <meta name="description" content="Sleekplan is a customer feedback management tool that can easily be embedded in any web application. Use the widget to track suggestions, feedback, and bugs and discuss them with your customers. Plus, it' s easy to share a roadmap and keep a changelog." />
+          <meta name="description" content={`Sleekplan is a customer feedback management tool that can easily be embedded in any web application. Use the widget to track suggestions, feedback, and bugs and discuss them with your customers. Plus, it' s easy to share a roadmap and keep a changelog.`} />
         </>
       ),
     },

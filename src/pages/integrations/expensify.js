@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Expensify"
-      description="Expensify is an application that makes it easy to import expenses directly from a credit card to create expense reports quickly and easily."
+      description={`Expensify is an application that makes it easy to import expenses directly from a credit card to create expense reports quickly and easily.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -71,7 +71,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Expensify</title>
-          <meta name="description" content="Expensify is an application that makes it easy to import expenses directly from a credit card to create expense reports quickly and easily." />
+          <meta name="description" content={`Expensify is an application that makes it easy to import expenses directly from a credit card to create expense reports quickly and easily.`} />
         </>
       ),
     },

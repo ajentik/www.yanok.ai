@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Workamajig"
-      description="Workamajig Creative Manager now allows you to add contacts, companies, opportunities and activities to the CRM module."
+      description={`Workamajig Creative Manager now allows you to add contacts, companies, opportunities and activities to the CRM module.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -136,7 +136,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Workamajig</title>
-          <meta name="description" content="Workamajig Creative Manager now allows you to add contacts, companies, opportunities and activities to the CRM module." />
+          <meta name="description" content={`Workamajig Creative Manager now allows you to add contacts, companies, opportunities and activities to the CRM module.`} />
         </>
       ),
     },

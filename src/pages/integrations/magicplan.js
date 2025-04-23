@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="magicplan"
-      description="magicplan lets you instantly create and share floor plans, field reports, and estimates with one easy-to-use application."
+      description={`magicplan lets you instantly create and share floor plans, field reports, and estimates with one easy-to-use application.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -71,7 +71,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>magicplan</title>
-          <meta name="description" content="magicplan lets you instantly create and share floor plans, field reports, and estimates with one easy-to-use application." />
+          <meta name="description" content={`magicplan lets you instantly create and share floor plans, field reports, and estimates with one easy-to-use application.`} />
         </>
       ),
     },

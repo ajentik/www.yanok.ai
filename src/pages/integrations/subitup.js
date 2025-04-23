@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Subitup"
-      description="SubItUp is an employee management solution designed to streamline staff scheduling, timekeeping, attendance tracking and more."
+      description={`SubItUp is an employee management solution designed to streamline staff scheduling, timekeeping, attendance tracking and more.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +53,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Subitup</title>
-          <meta name="description" content="SubItUp is an employee management solution designed to streamline staff scheduling, timekeeping, attendance tracking and more." />
+          <meta name="description" content={`SubItUp is an employee management solution designed to streamline staff scheduling, timekeeping, attendance tracking and more.`} />
         </>
       ),
     },

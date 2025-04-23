@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Divi Checkout"
-      description="North Checkout is a customizable checkout module for Divi. Easily add any product to any page and start selling! We focus on adding, upsells and order bumps."
+      description={`North Checkout is a customizable checkout module for Divi. Easily add any product to any page and start selling! We focus on adding, upsells and order bumps.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -62,7 +62,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Divi Checkout</title>
-          <meta name="description" content="North Checkout is a customizable checkout module for Divi. Easily add any product to any page and start selling! We focus on adding, upsells and order bumps." />
+          <meta name="description" content={`North Checkout is a customizable checkout module for Divi. Easily add any product to any page and start selling! We focus on adding, upsells and order bumps.`} />
         </>
       ),
     },

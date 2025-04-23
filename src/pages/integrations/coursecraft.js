@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="CourseCraft"
-      description="Our easy-to-use tool makes creating an online class a fun experience. Add photos, videos or any other type of media. We host it all for you."
+      description={`Our easy-to-use tool makes creating an online class a fun experience. Add photos, videos or any other type of media. We host it all for you.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +53,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>CourseCraft</title>
-          <meta name="description" content="Our easy-to-use tool makes creating an online class a fun experience. Add photos, videos or any other type of media. We host it all for you." />
+          <meta name="description" content={`Our easy-to-use tool makes creating an online class a fun experience. Add photos, videos or any other type of media. We host it all for you.`} />
         </>
       ),
     },

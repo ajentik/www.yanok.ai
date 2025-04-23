@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="FanBridge"
-      description="Email marketing and newsletter solutions for musicians, comedians, influencers, and anyone with a fanbase."
+      description={`Email marketing and newsletter solutions for musicians, comedians, influencers, and anyone with a fanbase.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +53,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>FanBridge</title>
-          <meta name="description" content="Email marketing and newsletter solutions for musicians, comedians, influencers, and anyone with a fanbase." />
+          <meta name="description" content={`Email marketing and newsletter solutions for musicians, comedians, influencers, and anyone with a fanbase.`} />
         </>
       ),
     },

@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Plumsail Documents"
-      description="Generate documents from DOCX, XLSX, PPTX, HTML templates and populate fillable PDF forms. Automate your contracts, invoices, reports, tickets and more."
+      description={`Generate documents from DOCX, XLSX, PPTX, HTML templates and populate fillable PDF forms. Automate your contracts, invoices, reports, tickets and more.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -61,7 +61,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Plumsail Documents</title>
-          <meta name="description" content="Generate documents from DOCX, XLSX, PPTX, HTML templates and populate fillable PDF forms. Automate your contracts, invoices, reports, tickets and more." />
+          <meta name="description" content={`Generate documents from DOCX, XLSX, PPTX, HTML templates and populate fillable PDF forms. Automate your contracts, invoices, reports, tickets and more.`} />
         </>
       ),
     },

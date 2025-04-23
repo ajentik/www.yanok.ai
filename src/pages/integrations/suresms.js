@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="SureSMS"
-      description="SureSMS is a SMS gateway. It allow our customers to integrate with many platforms and send SMS on particular events."
+      description={`SureSMS is a SMS gateway. It allow our customers to integrate with many platforms and send SMS on particular events.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -77,7 +77,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>SureSMS</title>
-          <meta name="description" content="SureSMS is a SMS gateway. It allow our customers to integrate with many platforms and send SMS on particular events." />
+          <meta name="description" content={`SureSMS is a SMS gateway. It allow our customers to integrate with many platforms and send SMS on particular events.`} />
         </>
       ),
     },

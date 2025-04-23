@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="LambdaTest"
-      description="LambdaTest is a platform to perform Automated and Live Interactive Cross Browser Testing on 3000+ Real Browsers and Operating Systems Online"
+      description={`LambdaTest is a platform to perform Automated and Live Interactive Cross Browser Testing on 3000+ Real Browsers and Operating Systems Online`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -67,7 +67,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>LambdaTest</title>
-          <meta name="description" content="LambdaTest is a platform to perform Automated and Live Interactive Cross Browser Testing on 3000+ Real Browsers and Operating Systems Online" />
+          <meta name="description" content={`LambdaTest is a platform to perform Automated and Live Interactive Cross Browser Testing on 3000+ Real Browsers and Operating Systems Online`} />
         </>
       ),
     },

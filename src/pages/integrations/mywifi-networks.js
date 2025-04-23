@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="MyWiFi Networks"
-      description="MyWiFi Networks operates a Guest Wi-Fi Monetization Platform with social data capture, marketing automation & real-time analytics."
+      description={`MyWiFi Networks operates a Guest Wi-Fi Monetization Platform with social data capture, marketing automation & real-time analytics.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -72,7 +72,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>MyWiFi Networks</title>
-          <meta name="description" content="MyWiFi Networks operates a Guest Wi-Fi Monetization Platform with social data capture, marketing automation & real-time analytics." />
+          <meta name="description" content={`MyWiFi Networks operates a Guest Wi-Fi Monetization Platform with social data capture, marketing automation & real-time analytics.`} />
         </>
       ),
     },

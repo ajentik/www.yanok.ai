@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Sweap"
-      description="Automate time-consuming tasks that remove focus from the impact of your event. For in-person & online events."
+      description={`Automate time-consuming tasks that remove focus from the impact of your event. For in-person & online events.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -101,7 +101,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Sweap</title>
-          <meta name="description" content="Automate time-consuming tasks that remove focus from the impact of your event. For in-person & online events." />
+          <meta name="description" content={`Automate time-consuming tasks that remove focus from the impact of your event. For in-person & online events.`} />
         </>
       ),
     },

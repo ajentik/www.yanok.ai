@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Proposify"
-      description="Streamline your proposals in the cloud with designer-friendly proposal software."
+      description={`Streamline your proposals in the cloud with designer-friendly proposal software.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -106,7 +106,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Proposify</title>
-          <meta name="description" content="Streamline your proposals in the cloud with designer-friendly proposal software." />
+          <meta name="description" content={`Streamline your proposals in the cloud with designer-friendly proposal software.`} />
         </>
       ),
     },

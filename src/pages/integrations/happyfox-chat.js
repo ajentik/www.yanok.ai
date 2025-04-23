@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="HappyFox Chat"
-      description="Powerful live chat software built from ground-up for super fast customer support."
+      description={`Powerful live chat software built from ground-up for super fast customer support.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -67,7 +67,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>HappyFox Chat</title>
-          <meta name="description" content="Powerful live chat software built from ground-up for super fast customer support." />
+          <meta name="description" content={`Powerful live chat software built from ground-up for super fast customer support.`} />
         </>
       ),
     },

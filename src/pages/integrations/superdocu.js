@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Superdocu"
-      description="Superdocu helps people collect documents and information easily, and follow-up in case of missing data."
+      description={`Superdocu helps people collect documents and information easily, and follow-up in case of missing data.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -81,7 +81,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Superdocu</title>
-          <meta name="description" content="Superdocu helps people collect documents and information easily, and follow-up in case of missing data." />
+          <meta name="description" content={`Superdocu helps people collect documents and information easily, and follow-up in case of missing data.`} />
         </>
       ),
     },

@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Guestmeter"
-      description="Guestmeter is a hotel reputation management tool to boost your positive reviews."
+      description={`Guestmeter is a hotel reputation management tool to boost your positive reviews.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -62,7 +62,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Guestmeter</title>
-          <meta name="description" content="Guestmeter is a hotel reputation management tool to boost your positive reviews." />
+          <meta name="description" content={`Guestmeter is a hotel reputation management tool to boost your positive reviews.`} />
         </>
       ),
     },

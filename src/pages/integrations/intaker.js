@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Intaker"
-      description="Intaker is a website chat, two-way texting, follow-up automation, client intake and lead management tool built for forward looking law firms"
+      description={`Intaker is a website chat, two-way texting, follow-up automation, client intake and lead management tool built for forward looking law firms`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -62,7 +62,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Intaker</title>
-          <meta name="description" content="Intaker is a website chat, two-way texting, follow-up automation, client intake and lead management tool built for forward looking law firms" />
+          <meta name="description" content={`Intaker is a website chat, two-way texting, follow-up automation, client intake and lead management tool built for forward looking law firms`} />
         </>
       ),
     },

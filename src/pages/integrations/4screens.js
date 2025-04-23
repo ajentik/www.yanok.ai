@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="4screens"
-      description="4screens is Interactive Content Creation Platform. Easily create every type of interactive experience — quizzes, surveys, assessments, polls, live Q&A, marketing contests."
+      description={`4screens is Interactive Content Creation Platform. Easily create every type of interactive experience — quizzes, surveys, assessments, polls, live Q&A, marketing contests.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>4screens</title>
-          <meta name="description" content="4screens is Interactive Content Creation Platform. Easily create every type of interactive experience — quizzes, surveys, assessments, polls, live Q&A, marketing contests." />
+          <meta name="description" content={`4screens is Interactive Content Creation Platform. Easily create every type of interactive experience — quizzes, surveys, assessments, polls, live Q&A, marketing contests.`} />
         </>
       ),
     },

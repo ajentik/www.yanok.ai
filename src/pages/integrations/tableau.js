@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Tableau"
-      description="Tableau helps global organizations unleash the power of their most valuable assets: their data and their people."
+      description={`Tableau helps global organizations unleash the power of their most valuable assets: their data and their people.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +53,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Tableau</title>
-          <meta name="description" content="Tableau helps global organizations unleash the power of their most valuable assets: their data and their people." />
+          <meta name="description" content={`Tableau helps global organizations unleash the power of their most valuable assets: their data and their people.`} />
         </>
       ),
     },

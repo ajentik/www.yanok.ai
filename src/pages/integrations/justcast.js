@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="JustCast"
-      description="JustCast is a podcast hosting platform that offers a private podcast option. Great for courses, ebooks, and journey podcasts."
+      description={`JustCast is a podcast hosting platform that offers a private podcast option. Great for courses, ebooks, and journey podcasts.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -66,7 +66,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>JustCast</title>
-          <meta name="description" content="JustCast is a podcast hosting platform that offers a private podcast option. Great for courses, ebooks, and journey podcasts." />
+          <meta name="description" content={`JustCast is a podcast hosting platform that offers a private podcast option. Great for courses, ebooks, and journey podcasts.`} />
         </>
       ),
     },

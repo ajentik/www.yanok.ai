@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Autohost"
-      description="Autohost is an automated identity verification and fraud prevention platform integrated with multiple property management systems."
+      description={`Autohost is an automated identity verification and fraud prevention platform integrated with multiple property management systems.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -91,7 +91,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Autohost</title>
-          <meta name="description" content="Autohost is an automated identity verification and fraud prevention platform integrated with multiple property management systems." />
+          <meta name="description" content={`Autohost is an automated identity verification and fraud prevention platform integrated with multiple property management systems.`} />
         </>
       ),
     },

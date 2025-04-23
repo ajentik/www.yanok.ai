@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Telegram"
-      description="Telegram is a cloud-based instant messaging and voice over IP service developed by Telegram Messenger LLP."
+      description={`Telegram is a cloud-based instant messaging and voice over IP service developed by Telegram Messenger LLP.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +53,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Telegram</title>
-          <meta name="description" content="Telegram is a cloud-based instant messaging and voice over IP service developed by Telegram Messenger LLP." />
+          <meta name="description" content={`Telegram is a cloud-based instant messaging and voice over IP service developed by Telegram Messenger LLP.`} />
         </>
       ),
     },

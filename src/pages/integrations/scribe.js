@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Scribe"
-      description="Scribe lets you convert all your favorite apps into completely customizable Slack Bots, within 5 minutes."
+      description={`Scribe lets you convert all your favorite apps into completely customizable Slack Bots, within 5 minutes.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +53,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Scribe</title>
-          <meta name="description" content="Scribe lets you convert all your favorite apps into completely customizable Slack Bots, within 5 minutes." />
+          <meta name="description" content={`Scribe lets you convert all your favorite apps into completely customizable Slack Bots, within 5 minutes.`} />
         </>
       ),
     },

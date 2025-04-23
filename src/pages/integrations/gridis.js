@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="GRID.is"
-      description="GRID is a cloud-based web platform that allows anyone to create and share professional looking interactive documents online."
+      description={`GRID is a cloud-based web platform that allows anyone to create and share professional looking interactive documents online.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>GRID.is</title>
-          <meta name="description" content="GRID is a cloud-based web platform that allows anyone to create and share professional looking interactive documents online." />
+          <meta name="description" content={`GRID is a cloud-based web platform that allows anyone to create and share professional looking interactive documents online.`} />
         </>
       ),
     },

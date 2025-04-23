@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Coworks"
-      description="Coworks is a coworking management platform solution for automating running a coworking space."
+      description={`Coworks is a coworking management platform solution for automating running a coworking space.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -126,7 +126,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Coworks</title>
-          <meta name="description" content="Coworks is a coworking management platform solution for automating running a coworking space." />
+          <meta name="description" content={`Coworks is a coworking management platform solution for automating running a coworking space.`} />
         </>
       ),
     },

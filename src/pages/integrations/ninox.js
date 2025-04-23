@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Ninox"
-      description="Ninox is a low code database that empowers your team to quickly build custom business applications."
+      description={`Ninox is a low code database that empowers your team to quickly build custom business applications.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -86,7 +86,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Ninox</title>
-          <meta name="description" content="Ninox is a low code database that empowers your team to quickly build custom business applications." />
+          <meta name="description" content={`Ninox is a low code database that empowers your team to quickly build custom business applications.`} />
         </>
       ),
     },

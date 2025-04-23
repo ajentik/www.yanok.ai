@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Jumper.ai"
-      description="Jumper.ai is a conversational commerce solution that turns digital marketing efforts into direct point of sales."
+      description={`Jumper.ai is a conversational commerce solution that turns digital marketing efforts into direct point of sales.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -67,7 +67,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Jumper.ai</title>
-          <meta name="description" content="Jumper.ai is a conversational commerce solution that turns digital marketing efforts into direct point of sales." />
+          <meta name="description" content={`Jumper.ai is a conversational commerce solution that turns digital marketing efforts into direct point of sales.`} />
         </>
       ),
     },

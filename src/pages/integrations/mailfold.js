@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Mailfold"
-      description="Mailfold sends an environmentally friendly direct mail campaign to customers anywhere in the United States. Delivery typically occurs within 3-5 business days."
+      description={`Mailfold sends an environmentally friendly direct mail campaign to customers anywhere in the United States. Delivery typically occurs within 3-5 business days.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -66,7 +66,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Mailfold</title>
-          <meta name="description" content="Mailfold sends an environmentally friendly direct mail campaign to customers anywhere in the United States. Delivery typically occurs within 3-5 business days." />
+          <meta name="description" content={`Mailfold sends an environmentally friendly direct mail campaign to customers anywhere in the United States. Delivery typically occurs within 3-5 business days.`} />
         </>
       ),
     },

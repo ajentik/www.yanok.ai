@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Metatask"
-      description="Metatask is a simple tool to organize and control internal processes that lets normal users quickly build and execute business workflows."
+      description={`Metatask is a simple tool to organize and control internal processes that lets normal users quickly build and execute business workflows.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -86,7 +86,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Metatask</title>
-          <meta name="description" content="Metatask is a simple tool to organize and control internal processes that lets normal users quickly build and execute business workflows." />
+          <meta name="description" content={`Metatask is a simple tool to organize and control internal processes that lets normal users quickly build and execute business workflows.`} />
         </>
       ),
     },

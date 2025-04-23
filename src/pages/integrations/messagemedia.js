@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="MessageMedia SMS"
-      description="MessageMedia SMS is a leading provider of SMS for business. Our reliable service includes reporting, 24/7 support, and competitive pricing."
+      description={`MessageMedia SMS is a leading provider of SMS for business. Our reliable service includes reporting, 24/7 support, and competitive pricing.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -61,7 +61,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>MessageMedia SMS</title>
-          <meta name="description" content="MessageMedia SMS is a leading provider of SMS for business. Our reliable service includes reporting, 24/7 support, and competitive pricing." />
+          <meta name="description" content={`MessageMedia SMS is a leading provider of SMS for business. Our reliable service includes reporting, 24/7 support, and competitive pricing.`} />
         </>
       ),
     },

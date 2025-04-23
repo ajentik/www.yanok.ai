@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Bambelo"
-      description="Bambelo is a platform which helps connect consumers with the right partners for their services."
+      description={`Bambelo is a platform which helps connect consumers with the right partners for their services.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Bambelo</title>
-          <meta name="description" content="Bambelo is a platform which helps connect consumers with the right partners for their services." />
+          <meta name="description" content={`Bambelo is a platform which helps connect consumers with the right partners for their services.`} />
         </>
       ),
     },

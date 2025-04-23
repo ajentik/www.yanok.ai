@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="AutoRefs"
-      description="AutoRefs is a cloud-based reference checking system that automates the communication process between a company, their applicant, and the referee, cutting out paper-based reference checking and calls from your HR process."
+      description={`AutoRefs is a cloud-based reference checking system that automates the communication process between a company, their applicant, and the referee, cutting out paper-based reference checking and calls from your HR process.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>AutoRefs</title>
-          <meta name="description" content="AutoRefs is a cloud-based reference checking system that automates the communication process between a company, their applicant, and the referee, cutting out paper-based reference checking and calls from your HR process." />
+          <meta name="description" content={`AutoRefs is a cloud-based reference checking system that automates the communication process between a company, their applicant, and the referee, cutting out paper-based reference checking and calls from your HR process.`} />
         </>
       ),
     },

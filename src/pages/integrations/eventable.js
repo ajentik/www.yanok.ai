@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Eventable"
-      description="Eventable is a calendar communication platform that makes it easy for anyone to create, send, and share calendar events on the web."
+      description={`Eventable is a calendar communication platform that makes it easy for anyone to create, send, and share calendar events on the web.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -96,7 +96,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Eventable</title>
-          <meta name="description" content="Eventable is a calendar communication platform that makes it easy for anyone to create, send, and share calendar events on the web." />
+          <meta name="description" content={`Eventable is a calendar communication platform that makes it easy for anyone to create, send, and share calendar events on the web.`} />
         </>
       ),
     },

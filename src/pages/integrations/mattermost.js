@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Mattermost"
-      description="Mattermost offers modern team communication, behind your firewall. Share messages and files across phones and PCs, with archiving and instant search."
+      description={`Mattermost offers modern team communication, behind your firewall. Share messages and files across phones and PCs, with archiving and instant search.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Mattermost</title>
-          <meta name="description" content="Mattermost offers modern team communication, behind your firewall. Share messages and files across phones and PCs, with archiving and instant search." />
+          <meta name="description" content={`Mattermost offers modern team communication, behind your firewall. Share messages and files across phones and PCs, with archiving and instant search.`} />
         </>
       ),
     },

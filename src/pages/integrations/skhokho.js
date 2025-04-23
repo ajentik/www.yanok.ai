@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Skhokho"
-      description="Skhokho Business Management Software, HRMS, Sales and CRM, OKR, Accounting Software, Project Management Software, Meeting Software, Notes Software"
+      description={`Skhokho Business Management Software, HRMS, Sales and CRM, OKR, Accounting Software, Project Management Software, Meeting Software, Notes Software`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -161,7 +161,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Skhokho</title>
-          <meta name="description" content="Skhokho Business Management Software, HRMS, Sales and CRM, OKR, Accounting Software, Project Management Software, Meeting Software, Notes Software" />
+          <meta name="description" content={`Skhokho Business Management Software, HRMS, Sales and CRM, OKR, Accounting Software, Project Management Software, Meeting Software, Notes Software`} />
         </>
       ),
     },

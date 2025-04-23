@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="JobRouter"
-      description="JobRouter® links your processes, documents and data in one feature-rich platform."
+      description={`JobRouter® links your processes, documents and data in one feature-rich platform.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -66,7 +66,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>JobRouter</title>
-          <meta name="description" content="JobRouter® links your processes, documents and data in one feature-rich platform." />
+          <meta name="description" content={`JobRouter® links your processes, documents and data in one feature-rich platform.`} />
         </>
       ),
     },

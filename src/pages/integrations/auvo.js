@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Auvo"
-      description="Auvo is an external teams management software that allows anyone to know real-time the location of your team, schedule tasks, have an online system, and much more."
+      description={`Auvo is an external teams management software that allows anyone to know real-time the location of your team, schedule tasks, have an online system, and much more.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +53,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Auvo</title>
-          <meta name="description" content="Auvo is an external teams management software that allows anyone to know real-time the location of your team, schedule tasks, have an online system, and much more." />
+          <meta name="description" content={`Auvo is an external teams management software that allows anyone to know real-time the location of your team, schedule tasks, have an online system, and much more.`} />
         </>
       ),
     },

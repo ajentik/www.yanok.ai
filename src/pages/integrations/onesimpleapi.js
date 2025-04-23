@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="OneSimpleApi"
-      description="OneSimpleApi is a no-code API designed with all the things you need to get your no-code project to success: PDF generation, Currency Exchange, QR codes, Screenshots, and more."
+      description={`OneSimpleApi is a no-code API designed with all the things you need to get your no-code project to success: PDF generation, Currency Exchange, QR codes, Screenshots, and more.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -117,7 +117,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>OneSimpleApi</title>
-          <meta name="description" content="OneSimpleApi is a no-code API designed with all the things you need to get your no-code project to success: PDF generation, Currency Exchange, QR codes, Screenshots, and more." />
+          <meta name="description" content={`OneSimpleApi is a no-code API designed with all the things you need to get your no-code project to success: PDF generation, Currency Exchange, QR codes, Screenshots, and more.`} />
         </>
       ),
     },

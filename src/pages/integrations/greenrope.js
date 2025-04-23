@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="GreenRope"
-      description="Small business marketing software providing powerful and easy to use CRM, email marketing, and social media integration."
+      description={`Small business marketing software providing powerful and easy to use CRM, email marketing, and social media integration.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -136,7 +136,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>GreenRope</title>
-          <meta name="description" content="Small business marketing software providing powerful and easy to use CRM, email marketing, and social media integration." />
+          <meta name="description" content={`Small business marketing software providing powerful and easy to use CRM, email marketing, and social media integration.`} />
         </>
       ),
     },

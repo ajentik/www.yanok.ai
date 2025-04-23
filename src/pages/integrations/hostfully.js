@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Hostfully"
-      description="Hostfully is a complete, end-to-end property management platform that helps vacation rental PMs boost revenues."
+      description={`Hostfully is a complete, end-to-end property management platform that helps vacation rental PMs boost revenues.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -67,7 +67,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Hostfully</title>
-          <meta name="description" content="Hostfully is a complete, end-to-end property management platform that helps vacation rental PMs boost revenues." />
+          <meta name="description" content={`Hostfully is a complete, end-to-end property management platform that helps vacation rental PMs boost revenues.`} />
         </>
       ),
     },

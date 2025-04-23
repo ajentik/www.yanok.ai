@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Lob"
-      description="Lob makes it easy to seamlessly print and mail letters, postcards, photos, posters and more via a web API."
+      description={`Lob makes it easy to seamlessly print and mail letters, postcards, photos, posters and more via a web API.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -77,7 +77,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Lob</title>
-          <meta name="description" content="Lob makes it easy to seamlessly print and mail letters, postcards, photos, posters and more via a web API." />
+          <meta name="description" content={`Lob makes it easy to seamlessly print and mail letters, postcards, photos, posters and more via a web API.`} />
         </>
       ),
     },

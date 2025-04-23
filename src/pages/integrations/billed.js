@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Billed"
-      description="Online Invoicing Made Easy. With our clean, simple design, creating an invoice couldn’t be easier. Choose from our ready-made templates or start with a blank canvas to create something unique."
+      description={`Online Invoicing Made Easy. With our clean, simple design, creating an invoice couldn’t be easier. Choose from our ready-made templates or start with a blank canvas to create something unique.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -331,7 +331,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Billed</title>
-          <meta name="description" content="Online Invoicing Made Easy. With our clean, simple design, creating an invoice couldn’t be easier. Choose from our ready-made templates or start with a blank canvas to create something unique." />
+          <meta name="description" content={`Online Invoicing Made Easy. With our clean, simple design, creating an invoice couldn’t be easier. Choose from our ready-made templates or start with a blank canvas to create something unique.`} />
         </>
       ),
     },

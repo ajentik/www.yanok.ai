@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Swell Rewards"
-      description="Swell is a SaaS-based platform designed to help omnichannel merchants better understand, engage, and retain their existing customers through a variety of automated and proven-effective marketing campaigns."
+      description={`Swell is a SaaS-based platform designed to help omnichannel merchants better understand, engage, and retain their existing customers through a variety of automated and proven-effective marketing campaigns.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +53,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Swell Rewards</title>
-          <meta name="description" content="Swell is a SaaS-based platform designed to help omnichannel merchants better understand, engage, and retain their existing customers through a variety of automated and proven-effective marketing campaigns." />
+          <meta name="description" content={`Swell is a SaaS-based platform designed to help omnichannel merchants better understand, engage, and retain their existing customers through a variety of automated and proven-effective marketing campaigns.`} />
         </>
       ),
     },

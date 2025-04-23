@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="commonsku"
-      description="commonsku was created to empower your business: to streamline your workflow, connect your team, impress your clients, and allow you to close deals faster."
+      description={`commonsku was created to empower your business: to streamline your workflow, connect your team, impress your clients, and allow you to close deals faster.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +53,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>commonsku</title>
-          <meta name="description" content="commonsku was created to empower your business: to streamline your workflow, connect your team, impress your clients, and allow you to close deals faster." />
+          <meta name="description" content={`commonsku was created to empower your business: to streamline your workflow, connect your team, impress your clients, and allow you to close deals faster.`} />
         </>
       ),
     },

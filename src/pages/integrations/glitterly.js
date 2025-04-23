@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Glitterly"
-      description="Glitterly is an image generation platform with simple tools and an image generation API to help you automatically create beautiful images for social media, banners, ecommerce, or publishing."
+      description={`Glitterly is an image generation platform with simple tools and an image generation API to help you automatically create beautiful images for social media, banners, ecommerce, or publishing.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Glitterly</title>
-          <meta name="description" content="Glitterly is an image generation platform with simple tools and an image generation API to help you automatically create beautiful images for social media, banners, ecommerce, or publishing." />
+          <meta name="description" content={`Glitterly is an image generation platform with simple tools and an image generation API to help you automatically create beautiful images for social media, banners, ecommerce, or publishing.`} />
         </>
       ),
     },

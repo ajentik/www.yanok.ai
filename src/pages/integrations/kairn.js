@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Kairn"
-      description="Kairn is a task manager to help manage your days."
+      description={`Kairn is a task manager to help manage your days.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -61,7 +61,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Kairn</title>
-          <meta name="description" content="Kairn is a task manager to help manage your days." />
+          <meta name="description" content={`Kairn is a task manager to help manage your days.`} />
         </>
       ),
     },

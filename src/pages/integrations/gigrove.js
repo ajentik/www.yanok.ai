@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Gigrove"
-      description="Gigrove is an eCommerce platform to get you online and selling directly to your customers within minutes with your ready-made gig store."
+      description={`Gigrove is an eCommerce platform to get you online and selling directly to your customers within minutes with your ready-made gig store.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Gigrove</title>
-          <meta name="description" content="Gigrove is an eCommerce platform to get you online and selling directly to your customers within minutes with your ready-made gig store." />
+          <meta name="description" content={`Gigrove is an eCommerce platform to get you online and selling directly to your customers within minutes with your ready-made gig store.`} />
         </>
       ),
     },

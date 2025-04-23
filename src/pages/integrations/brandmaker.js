@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="BrandMaker"
-      description="BrandMaker is a modular solution suite which is designed to manage the entire marketing process. It enables the planning, budgeting, execution and measurement of all your marketing efforts."
+      description={`BrandMaker is a modular solution suite which is designed to manage the entire marketing process. It enables the planning, budgeting, execution and measurement of all your marketing efforts.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -62,7 +62,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>BrandMaker</title>
-          <meta name="description" content="BrandMaker is a modular solution suite which is designed to manage the entire marketing process. It enables the planning, budgeting, execution and measurement of all your marketing efforts." />
+          <meta name="description" content={`BrandMaker is a modular solution suite which is designed to manage the entire marketing process. It enables the planning, budgeting, execution and measurement of all your marketing efforts.`} />
         </>
       ),
     },

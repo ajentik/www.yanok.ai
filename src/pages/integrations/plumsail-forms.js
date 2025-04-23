@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Plumsail Forms"
-      description="Plumsail Forms allows you to design fully responsive web forms containing wizards, tabs, data tables, hand-written notes and publish them to any websites."
+      description={`Plumsail Forms allows you to design fully responsive web forms containing wizards, tabs, data tables, hand-written notes and publish them to any websites.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Plumsail Forms</title>
-          <meta name="description" content="Plumsail Forms allows you to design fully responsive web forms containing wizards, tabs, data tables, hand-written notes and publish them to any websites." />
+          <meta name="description" content={`Plumsail Forms allows you to design fully responsive web forms containing wizards, tabs, data tables, hand-written notes and publish them to any websites.`} />
         </>
       ),
     },

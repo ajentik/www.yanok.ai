@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="ISMS.online"
-      description="ISMS.online is a cloud-based compliance management system for your information security, privacy and other compliance work."
+      description={`ISMS.online is a cloud-based compliance management system for your information security, privacy and other compliance work.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>ISMS.online</title>
-          <meta name="description" content="ISMS.online is a cloud-based compliance management system for your information security, privacy and other compliance work." />
+          <meta name="description" content={`ISMS.online is a cloud-based compliance management system for your information security, privacy and other compliance work.`} />
         </>
       ),
     },

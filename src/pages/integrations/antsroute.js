@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="AntsRoute"
-      description="AntsRoute is an innovative software that smartly schedules deliveries, operations and appointments, optimizes routes and improves customer relations. The needed solutions to boost your performance and improve your team productivity."
+      description={`AntsRoute is an innovative software that smartly schedules deliveries, operations and appointments, optimizes routes and improves customer relations. The needed solutions to boost your performance and improve your team productivity.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -92,7 +92,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>AntsRoute</title>
-          <meta name="description" content="AntsRoute is an innovative software that smartly schedules deliveries, operations and appointments, optimizes routes and improves customer relations. The needed solutions to boost your performance and improve your team productivity." />
+          <meta name="description" content={`AntsRoute is an innovative software that smartly schedules deliveries, operations and appointments, optimizes routes and improves customer relations. The needed solutions to boost your performance and improve your team productivity.`} />
         </>
       ),
     },

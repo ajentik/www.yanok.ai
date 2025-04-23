@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Contele Gestor de Equipes"
-      description="Contele Gestor de Equipes is an app for any type of field team manager for companies with Check-in/out, Routing, Checklists, Forms, Refund register, Tracking, Digital Service Order, Plan and Scheduler visits and reports."
+      description={`Contele Gestor de Equipes is an app for any type of field team manager for companies with Check-in/out, Routing, Checklists, Forms, Refund register, Tracking, Digital Service Order, Plan and Scheduler visits and reports.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -106,7 +106,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Contele Gestor de Equipes</title>
-          <meta name="description" content="Contele Gestor de Equipes is an app for any type of field team manager for companies with Check-in/out, Routing, Checklists, Forms, Refund register, Tracking, Digital Service Order, Plan and Scheduler visits and reports." />
+          <meta name="description" content={`Contele Gestor de Equipes is an app for any type of field team manager for companies with Check-in/out, Routing, Checklists, Forms, Refund register, Tracking, Digital Service Order, Plan and Scheduler visits and reports.`} />
         </>
       ),
     },

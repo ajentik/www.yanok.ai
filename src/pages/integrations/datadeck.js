@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Datadeck"
-      description="Datadeck is a data integration, visualization and collaboration tool that lets you get data from different sources all into one place and keep track of important metrics with ease."
+      description={`Datadeck is a data integration, visualization and collaboration tool that lets you get data from different sources all into one place and keep track of important metrics with ease.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Datadeck</title>
-          <meta name="description" content="Datadeck is a data integration, visualization and collaboration tool that lets you get data from different sources all into one place and keep track of important metrics with ease." />
+          <meta name="description" content={`Datadeck is a data integration, visualization and collaboration tool that lets you get data from different sources all into one place and keep track of important metrics with ease.`} />
         </>
       ),
     },

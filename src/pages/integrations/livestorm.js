@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Livestorm"
-      description="Livestorm is an end-to-end engagement platform that enables you to connect, engage, and capture actionable insights in one place."
+      description={`Livestorm is an end-to-end engagement platform that enables you to connect, engage, and capture actionable insights in one place.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -126,7 +126,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Livestorm</title>
-          <meta name="description" content="Livestorm is an end-to-end engagement platform that enables you to connect, engage, and capture actionable insights in one place." />
+          <meta name="description" content={`Livestorm is an end-to-end engagement platform that enables you to connect, engage, and capture actionable insights in one place.`} />
         </>
       ),
     },

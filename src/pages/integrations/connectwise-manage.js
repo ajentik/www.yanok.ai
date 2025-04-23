@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="ConnectWise Manage"
-      description="ConnectWise Manage is a business management platform designed to successfully run and grow your technology business."
+      description={`ConnectWise Manage is a business management platform designed to successfully run and grow your technology business.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -131,7 +131,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>ConnectWise Manage</title>
-          <meta name="description" content="ConnectWise Manage is a business management platform designed to successfully run and grow your technology business." />
+          <meta name="description" content={`ConnectWise Manage is a business management platform designed to successfully run and grow your technology business.`} />
         </>
       ),
     },

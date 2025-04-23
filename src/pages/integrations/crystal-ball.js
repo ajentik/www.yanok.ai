@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Crystal Ball"
-      description="Crystal Ball helps highlight valuable data insights by simplifying and automating the tracking of actions and events"
+      description={`Crystal Ball helps highlight valuable data insights by simplifying and automating the tracking of actions and events`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -66,7 +66,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Crystal Ball</title>
-          <meta name="description" content="Crystal Ball helps highlight valuable data insights by simplifying and automating the tracking of actions and events" />
+          <meta name="description" content={`Crystal Ball helps highlight valuable data insights by simplifying and automating the tracking of actions and events`} />
         </>
       ),
     },

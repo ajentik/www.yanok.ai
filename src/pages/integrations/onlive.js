@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Onlive"
-      description="Onlive event management system for managing your guests and checkins."
+      description={`Onlive event management system for managing your guests and checkins.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -61,7 +61,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Onlive</title>
-          <meta name="description" content="Onlive event management system for managing your guests and checkins." />
+          <meta name="description" content={`Onlive event management system for managing your guests and checkins.`} />
         </>
       ),
     },

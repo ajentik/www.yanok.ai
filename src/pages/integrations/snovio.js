@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Snov.io"
-      description="Snov.io is an easy and powerful CRM. Find leads, manage your database, and send converting automated emails."
+      description={`Snov.io is an easy and powerful CRM. Find leads, manage your database, and send converting automated emails.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -121,7 +121,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Snov.io</title>
-          <meta name="description" content="Snov.io is an easy and powerful CRM. Find leads, manage your database, and send converting automated emails." />
+          <meta name="description" content={`Snov.io is an easy and powerful CRM. Find leads, manage your database, and send converting automated emails.`} />
         </>
       ),
     },

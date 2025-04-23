@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="KonnektiveCRM"
-      description="Konnektive CRM is a customer transaction and campaign management platform that helps marketers dominate."
+      description={`Konnektive CRM is a customer transaction and campaign management platform that helps marketers dominate.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -81,7 +81,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>KonnektiveCRM</title>
-          <meta name="description" content="Konnektive CRM is a customer transaction and campaign management platform that helps marketers dominate." />
+          <meta name="description" content={`Konnektive CRM is a customer transaction and campaign management platform that helps marketers dominate.`} />
         </>
       ),
     },

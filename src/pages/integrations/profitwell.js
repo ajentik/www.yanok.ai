@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="ProfitWell"
-      description="ProfitWell provides free subscription metrics to help you identify opportunities and then tools to help you reduce churn, optimize pricing, and grow your subscription business end-to-end."
+      description={`ProfitWell provides free subscription metrics to help you identify opportunities and then tools to help you reduce churn, optimize pricing, and grow your subscription business end-to-end.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -72,7 +72,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>ProfitWell</title>
-          <meta name="description" content="ProfitWell provides free subscription metrics to help you identify opportunities and then tools to help you reduce churn, optimize pricing, and grow your subscription business end-to-end." />
+          <meta name="description" content={`ProfitWell provides free subscription metrics to help you identify opportunities and then tools to help you reduce churn, optimize pricing, and grow your subscription business end-to-end.`} />
         </>
       ),
     },

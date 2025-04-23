@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="StreamSend"
-      description="Email marketing integration and automation - the path to more sales."
+      description={`Email marketing integration and automation - the path to more sales.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -61,7 +61,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>StreamSend</title>
-          <meta name="description" content="Email marketing integration and automation - the path to more sales." />
+          <meta name="description" content={`Email marketing integration and automation - the path to more sales.`} />
         </>
       ),
     },

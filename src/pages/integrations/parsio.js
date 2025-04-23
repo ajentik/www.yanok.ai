@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Parsio"
-      description="Parsio is a tool to extract & export any data from your emails: order info, customer details etc."
+      description={`Parsio is a tool to extract & export any data from your emails: order info, customer details etc.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -72,7 +72,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Parsio</title>
-          <meta name="description" content="Parsio is a tool to extract & export any data from your emails: order info, customer details etc." />
+          <meta name="description" content={`Parsio is a tool to extract & export any data from your emails: order info, customer details etc.`} />
         </>
       ),
     },

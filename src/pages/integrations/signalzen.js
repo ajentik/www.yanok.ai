@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="SignalZen"
-      description="SignalZen is a simple but powerful cloud SaaS live support product that focuses on Slack integration."
+      description={`SignalZen is a simple but powerful cloud SaaS live support product that focuses on Slack integration.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -67,7 +67,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>SignalZen</title>
-          <meta name="description" content="SignalZen is a simple but powerful cloud SaaS live support product that focuses on Slack integration." />
+          <meta name="description" content={`SignalZen is a simple but powerful cloud SaaS live support product that focuses on Slack integration.`} />
         </>
       ),
     },

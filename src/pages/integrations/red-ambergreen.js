@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="red-amber.green"
-      description="Red amber green is a service that allows you to "monitor" business process health and current status."
+      description={`Red amber green is a service that allows you to `}monitor" business process health and current status."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -76,7 +76,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>red-amber.green</title>
-          <meta name="description" content="Red amber green is a service that allows you to "monitor" business process health and current status." />
+          <meta name="description" content={`Red amber green is a service that allows you to `}monitor" business process health and current status." />
         </>
       ),
     },

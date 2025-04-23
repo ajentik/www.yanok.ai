@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Refiner"
-      description="Refiner is a customer survey tool for data driven SaaS teams."
+      description={`Refiner is a customer survey tool for data driven SaaS teams.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -71,7 +71,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Refiner</title>
-          <meta name="description" content="Refiner is a customer survey tool for data driven SaaS teams." />
+          <meta name="description" content={`Refiner is a customer survey tool for data driven SaaS teams.`} />
         </>
       ),
     },

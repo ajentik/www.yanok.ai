@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Elevated CRM"
-      description="Elevated CRM is a contact management tool that manages your contacts presence on the internet."
+      description={`Elevated CRM is a contact management tool that manages your contacts presence on the internet.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -101,7 +101,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Elevated CRM</title>
-          <meta name="description" content="Elevated CRM is a contact management tool that manages your contacts presence on the internet." />
+          <meta name="description" content={`Elevated CRM is a contact management tool that manages your contacts presence on the internet.`} />
         </>
       ),
     },

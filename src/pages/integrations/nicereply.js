@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Nicereply"
-      description="Improve customer service and customer experience with Nicereply - online customer satisfaction survey software, including CSAT, NPS & CES 2.0."
+      description={`Improve customer service and customer experience with Nicereply - online customer satisfaction survey software, including CSAT, NPS & CES 2.0.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Nicereply</title>
-          <meta name="description" content="Improve customer service and customer experience with Nicereply - online customer satisfaction survey software, including CSAT, NPS & CES 2.0." />
+          <meta name="description" content={`Improve customer service and customer experience with Nicereply - online customer satisfaction survey software, including CSAT, NPS & CES 2.0.`} />
         </>
       ),
     },

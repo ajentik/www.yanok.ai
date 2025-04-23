@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Cronofy"
-      description="Cronofy is a product that allows you to embed real-time scheduling into your workflows with personalized booking links for your customers and prospects."
+      description={`Cronofy is a product that allows you to embed real-time scheduling into your workflows with personalized booking links for your customers and prospects.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Cronofy</title>
-          <meta name="description" content="Cronofy is a product that allows you to embed real-time scheduling into your workflows with personalized booking links for your customers and prospects." />
+          <meta name="description" content={`Cronofy is a product that allows you to embed real-time scheduling into your workflows with personalized booking links for your customers and prospects.`} />
         </>
       ),
     },

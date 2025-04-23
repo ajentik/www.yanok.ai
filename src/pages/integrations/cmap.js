@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Cmap"
-      description="Cloud platform for creating and embedding Location Analytics into enterprise apps and Business Intelligence."
+      description={`Cloud platform for creating and embedding Location Analytics into enterprise apps and Business Intelligence.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +53,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Cmap</title>
-          <meta name="description" content="Cloud platform for creating and embedding Location Analytics into enterprise apps and Business Intelligence." />
+          <meta name="description" content={`Cloud platform for creating and embedding Location Analytics into enterprise apps and Business Intelligence.`} />
         </>
       ),
     },

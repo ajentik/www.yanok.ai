@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Tandora Changelog"
-      description="Tandora Changelog - Shout loud to your customers. Let your customers know about your website updates, changelog and much more through Tandora."
+      description={`Tandora Changelog - Shout loud to your customers. Let your customers know about your website updates, changelog and much more through Tandora.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -61,7 +61,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Tandora Changelog</title>
-          <meta name="description" content="Tandora Changelog - Shout loud to your customers. Let your customers know about your website updates, changelog and much more through Tandora." />
+          <meta name="description" content={`Tandora Changelog - Shout loud to your customers. Let your customers know about your website updates, changelog and much more through Tandora.`} />
         </>
       ),
     },

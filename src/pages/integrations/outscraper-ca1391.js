@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Outscraper"
-      description="Outscraper is a service that allows you to scraper the data and reviews from Google Maps in real-time. Use simple queries and extract any amount of local businesses into JSON."
+      description={`Outscraper is a service that allows you to scraper the data and reviews from Google Maps in real-time. Use simple queries and extract any amount of local businesses into JSON.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -81,7 +81,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Outscraper</title>
-          <meta name="description" content="Outscraper is a service that allows you to scraper the data and reviews from Google Maps in real-time. Use simple queries and extract any amount of local businesses into JSON." />
+          <meta name="description" content={`Outscraper is a service that allows you to scraper the data and reviews from Google Maps in real-time. Use simple queries and extract any amount of local businesses into JSON.`} />
         </>
       ),
     },

@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Amilia"
-      description="Whether you're just starting out or looking to scale, Amilia's Recreation Management Software helps you sell, manage, & grow your business."
+      description={`Whether you're just starting out or looking to scale, Amilia's Recreation Management Software helps you sell, manage, & grow your business.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -116,7 +116,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Amilia</title>
-          <meta name="description" content="Whether you're just starting out or looking to scale, Amilia's Recreation Management Software helps you sell, manage, & grow your business." />
+          <meta name="description" content={`Whether you're just starting out or looking to scale, Amilia's Recreation Management Software helps you sell, manage, & grow your business.`} />
         </>
       ),
     },

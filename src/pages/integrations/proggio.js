@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Proggio"
-      description="Proggio is a collaborative project management solution for teams."
+      description={`Proggio is a collaborative project management solution for teams.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -71,7 +71,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Proggio</title>
-          <meta name="description" content="Proggio is a collaborative project management solution for teams." />
+          <meta name="description" content={`Proggio is a collaborative project management solution for teams.`} />
         </>
       ),
     },

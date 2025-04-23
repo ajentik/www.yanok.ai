@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="essensys Operate"
-      description="essensys Operate is a workspace management platform that helps space-as-a-service operators run their workspace from lead to cash and everything in between."
+      description={`essensys Operate is a workspace management platform that helps space-as-a-service operators run their workspace from lead to cash and everything in between.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -181,7 +181,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>essensys Operate</title>
-          <meta name="description" content="essensys Operate is a workspace management platform that helps space-as-a-service operators run their workspace from lead to cash and everything in between." />
+          <meta name="description" content={`essensys Operate is a workspace management platform that helps space-as-a-service operators run their workspace from lead to cash and everything in between.`} />
         </>
       ),
     },

@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Chili Piper"
-      description="Chili Piper helps businesses help their buyers. Book or connect your prospects in real time from web forms."
+      description={`Chili Piper helps businesses help their buyers. Book or connect your prospects in real time from web forms.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -62,7 +62,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Chili Piper</title>
-          <meta name="description" content="Chili Piper helps businesses help their buyers. Book or connect your prospects in real time from web forms." />
+          <meta name="description" content={`Chili Piper helps businesses help their buyers. Book or connect your prospects in real time from web forms.`} />
         </>
       ),
     },

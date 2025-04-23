@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Venue"
-      description="Venue makes your live streaming events memorable."
+      description={`Venue makes your live streaming events memorable.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -61,7 +61,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Venue</title>
-          <meta name="description" content="Venue makes your live streaming events memorable." />
+          <meta name="description" content={`Venue makes your live streaming events memorable.`} />
         </>
       ),
     },

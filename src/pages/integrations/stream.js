@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Stream"
-      description="Stream helps you to plan & manage your delivery routes & logistics operation. Intuitive mobile app for barcode scanning & Proof of Delivery"
+      description={`Stream helps you to plan & manage your delivery routes & logistics operation. Intuitive mobile app for barcode scanning & Proof of Delivery`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -92,7 +92,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Stream</title>
-          <meta name="description" content="Stream helps you to plan & manage your delivery routes & logistics operation. Intuitive mobile app for barcode scanning & Proof of Delivery" />
+          <meta name="description" content={`Stream helps you to plan & manage your delivery routes & logistics operation. Intuitive mobile app for barcode scanning & Proof of Delivery`} />
         </>
       ),
     },

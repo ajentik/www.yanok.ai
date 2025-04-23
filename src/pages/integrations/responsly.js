@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Responsly"
-      description="Responsly is a digital feedback platform that get you the right answers."
+      description={`Responsly is a digital feedback platform that get you the right answers.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Responsly</title>
-          <meta name="description" content="Responsly is a digital feedback platform that get you the right answers." />
+          <meta name="description" content={`Responsly is a digital feedback platform that get you the right answers.`} />
         </>
       ),
     },

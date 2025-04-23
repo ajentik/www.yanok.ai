@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Spike.sh"
-      description="Spike is an incident management system with unlimited alerts and on-call schedules"
+      description={`Spike is an incident management system with unlimited alerts and on-call schedules`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -61,7 +61,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Spike.sh</title>
-          <meta name="description" content="Spike is an incident management system with unlimited alerts and on-call schedules" />
+          <meta name="description" content={`Spike is an incident management system with unlimited alerts and on-call schedules`} />
         </>
       ),
     },

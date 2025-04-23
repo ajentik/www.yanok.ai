@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="SurveyMonkey"
-      description="SurveyMonkey is the easiest way to create surveys and get answers. SurveyMonkey lets you whip up a survey quickly and get targeted answers from the audience you want to ask."
+      description={`SurveyMonkey is the easiest way to create surveys and get answers. SurveyMonkey lets you whip up a survey quickly and get targeted answers from the audience you want to ask.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -86,7 +86,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>SurveyMonkey</title>
-          <meta name="description" content="SurveyMonkey is the easiest way to create surveys and get answers. SurveyMonkey lets you whip up a survey quickly and get targeted answers from the audience you want to ask." />
+          <meta name="description" content={`SurveyMonkey is the easiest way to create surveys and get answers. SurveyMonkey lets you whip up a survey quickly and get targeted answers from the audience you want to ask.`} />
         </>
       ),
     },

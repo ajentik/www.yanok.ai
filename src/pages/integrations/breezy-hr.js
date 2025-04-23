@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Breezy HR"
-      description="A uniquely simple, visual recruiting tool and applicant tracking system."
+      description={`A uniquely simple, visual recruiting tool and applicant tracking system.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -71,7 +71,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Breezy HR</title>
-          <meta name="description" content="A uniquely simple, visual recruiting tool and applicant tracking system." />
+          <meta name="description" content={`A uniquely simple, visual recruiting tool and applicant tracking system.`} />
         </>
       ),
     },

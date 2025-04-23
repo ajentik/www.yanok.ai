@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Marketo"
-      description="Marketo's marketing automation software helps marketers engage customers and prospects."
+      description={`Marketo's marketing automation software helps marketers engage customers and prospects.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -76,7 +76,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Marketo</title>
-          <meta name="description" content="Marketo's marketing automation software helps marketers engage customers and prospects." />
+          <meta name="description" content={`Marketo's marketing automation software helps marketers engage customers and prospects.`} />
         </>
       ),
     },

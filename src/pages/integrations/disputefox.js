@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="DisputeFox"
-      description="DisputeFox was designed from the ground up to be the World's Most Advanced All-in-One Credit Dispute Software."
+      description={`DisputeFox was designed from the ground up to be the World's Most Advanced All-in-One Credit Dispute Software.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -121,7 +121,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>DisputeFox</title>
-          <meta name="description" content="DisputeFox was designed from the ground up to be the World's Most Advanced All-in-One Credit Dispute Software." />
+          <meta name="description" content={`DisputeFox was designed from the ground up to be the World's Most Advanced All-in-One Credit Dispute Software.`} />
         </>
       ),
     },

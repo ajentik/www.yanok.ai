@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Adalo"
-      description="Adalo is a platform where anyone can create apps without code."
+      description={`Adalo is a platform where anyone can create apps without code.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -71,7 +71,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Adalo</title>
-          <meta name="description" content="Adalo is a platform where anyone can create apps without code." />
+          <meta name="description" content={`Adalo is a platform where anyone can create apps without code.`} />
         </>
       ),
     },

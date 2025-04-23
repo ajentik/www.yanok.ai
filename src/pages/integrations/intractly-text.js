@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Intractly (Text)"
-      description="Intractly provides a service to send instant messages to users on WhatsApp."
+      description={`Intractly provides a service to send instant messages to users on WhatsApp.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Intractly (Text)</title>
-          <meta name="description" content="Intractly provides a service to send instant messages to users on WhatsApp." />
+          <meta name="description" content={`Intractly provides a service to send instant messages to users on WhatsApp.`} />
         </>
       ),
     },

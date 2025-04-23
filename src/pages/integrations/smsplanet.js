@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="SMSPLANET"
-      description="SMSPLANET is a Polish mobile marketing platform which provides bulk SMS, MMS & EMAIL services."
+      description={`SMSPLANET is a Polish mobile marketing platform which provides bulk SMS, MMS & EMAIL services.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -66,7 +66,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>SMSPLANET</title>
-          <meta name="description" content="SMSPLANET is a Polish mobile marketing platform which provides bulk SMS, MMS & EMAIL services." />
+          <meta name="description" content={`SMSPLANET is a Polish mobile marketing platform which provides bulk SMS, MMS & EMAIL services.`} />
         </>
       ),
     },

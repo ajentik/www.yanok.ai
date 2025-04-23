@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Setster"
-      description="Setster is an online appointment scheduling software built for complex enterprise booking needs, yet simple enough to use by smaller teams."
+      description={`Setster is an online appointment scheduling software built for complex enterprise booking needs, yet simple enough to use by smaller teams.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -76,7 +76,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Setster</title>
-          <meta name="description" content="Setster is an online appointment scheduling software built for complex enterprise booking needs, yet simple enough to use by smaller teams." />
+          <meta name="description" content={`Setster is an online appointment scheduling software built for complex enterprise booking needs, yet simple enough to use by smaller teams.`} />
         </>
       ),
     },

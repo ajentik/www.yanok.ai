@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Pulseem"
-      description="Pulseem is a marketing platform that helps you automate your marketing processes. It allows you to send Email, SMS, MMS, Push Notifications and create stunning Landing Pages."
+      description={`Pulseem is a marketing platform that helps you automate your marketing processes. It allows you to send Email, SMS, MMS, Push Notifications and create stunning Landing Pages.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -96,7 +96,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Pulseem</title>
-          <meta name="description" content="Pulseem is a marketing platform that helps you automate your marketing processes. It allows you to send Email, SMS, MMS, Push Notifications and create stunning Landing Pages." />
+          <meta name="description" content={`Pulseem is a marketing platform that helps you automate your marketing processes. It allows you to send Email, SMS, MMS, Push Notifications and create stunning Landing Pages.`} />
         </>
       ),
     },

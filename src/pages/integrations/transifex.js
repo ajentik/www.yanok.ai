@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Transifex"
-      description="Transifex is a localization platform service."
+      description={`Transifex is a localization platform service.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -71,7 +71,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Transifex</title>
-          <meta name="description" content="Transifex is a localization platform service." />
+          <meta name="description" content={`Transifex is a localization platform service.`} />
         </>
       ),
     },

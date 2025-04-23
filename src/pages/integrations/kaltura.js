@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Kaltura"
-      description="Kaltura is the leading video platform powering any video experience for any organization."
+      description={`Kaltura is the leading video platform powering any video experience for any organization.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +53,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Kaltura</title>
-          <meta name="description" content="Kaltura is the leading video platform powering any video experience for any organization." />
+          <meta name="description" content={`Kaltura is the leading video platform powering any video experience for any organization.`} />
         </>
       ),
     },

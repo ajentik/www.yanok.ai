@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Pinata"
-      description="Pinata is the simplest way to upload and manage files on IPFS."
+      description={`Pinata is the simplest way to upload and manage files on IPFS.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -71,7 +71,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Pinata</title>
-          <meta name="description" content="Pinata is the simplest way to upload and manage files on IPFS." />
+          <meta name="description" content={`Pinata is the simplest way to upload and manage files on IPFS.`} />
         </>
       ),
     },

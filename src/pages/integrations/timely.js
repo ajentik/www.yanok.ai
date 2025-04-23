@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Timely"
-      description="Timely is appointment software. Designed to manage every aspect of your business. Clients, schedule, staff, stock, sales, reporting & more."
+      description={`Timely is appointment software. Designed to manage every aspect of your business. Clients, schedule, staff, stock, sales, reporting & more.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Timely</title>
-          <meta name="description" content="Timely is appointment software. Designed to manage every aspect of your business. Clients, schedule, staff, stock, sales, reporting & more." />
+          <meta name="description" content={`Timely is appointment software. Designed to manage every aspect of your business. Clients, schedule, staff, stock, sales, reporting & more.`} />
         </>
       ),
     },

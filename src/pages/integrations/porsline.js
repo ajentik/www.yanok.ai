@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Porsline"
-      description="Porsline is an Online Survey Software dedicated to help companies of all sizes doing effective market research, customer experience, and employee surveys. We help companies cut their costs and get more by real-time decision making."
+      description={`Porsline is an Online Survey Software dedicated to help companies of all sizes doing effective market research, customer experience, and employee surveys. We help companies cut their costs and get more by real-time decision making.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Porsline</title>
-          <meta name="description" content="Porsline is an Online Survey Software dedicated to help companies of all sizes doing effective market research, customer experience, and employee surveys. We help companies cut their costs and get more by real-time decision making." />
+          <meta name="description" content={`Porsline is an Online Survey Software dedicated to help companies of all sizes doing effective market research, customer experience, and employee surveys. We help companies cut their costs and get more by real-time decision making.`} />
         </>
       ),
     },

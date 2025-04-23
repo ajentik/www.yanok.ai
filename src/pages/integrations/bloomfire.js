@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Bloomfire"
-      description="Bloomfire creates web-based software applications that aim to increase virtual knowledge-and-information-sharing in the workplace."
+      description={`Bloomfire creates web-based software applications that aim to increase virtual knowledge-and-information-sharing in the workplace.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +53,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Bloomfire</title>
-          <meta name="description" content="Bloomfire creates web-based software applications that aim to increase virtual knowledge-and-information-sharing in the workplace." />
+          <meta name="description" content={`Bloomfire creates web-based software applications that aim to increase virtual knowledge-and-information-sharing in the workplace.`} />
         </>
       ),
     },

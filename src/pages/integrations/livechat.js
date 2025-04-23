@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="LiveChat"
-      description="LiveChat is the faster way to contact your customers. It is a web-based chat tool that lets you chat with your website visitors."
+      description={`LiveChat is the faster way to contact your customers. It is a web-based chat tool that lets you chat with your website visitors.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -77,7 +77,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>LiveChat</title>
-          <meta name="description" content="LiveChat is the faster way to contact your customers. It is a web-based chat tool that lets you chat with your website visitors." />
+          <meta name="description" content={`LiveChat is the faster way to contact your customers. It is a web-based chat tool that lets you chat with your website visitors.`} />
         </>
       ),
     },

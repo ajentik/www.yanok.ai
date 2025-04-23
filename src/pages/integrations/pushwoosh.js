@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Pushwoosh"
-      description="Cross-platform push notifications with Pushwoosh!"
+      description={`Cross-platform push notifications with Pushwoosh!`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Pushwoosh</title>
-          <meta name="description" content="Cross-platform push notifications with Pushwoosh!" />
+          <meta name="description" content={`Cross-platform push notifications with Pushwoosh!`} />
         </>
       ),
     },

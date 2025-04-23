@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="TweetPik"
-      description="Tweetpik is a free, simple tool that makes it easy to capture and share professional screenshots of your tweets."
+      description={`Tweetpik is a free, simple tool that makes it easy to capture and share professional screenshots of your tweets.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>TweetPik</title>
-          <meta name="description" content="Tweetpik is a free, simple tool that makes it easy to capture and share professional screenshots of your tweets." />
+          <meta name="description" content={`Tweetpik is a free, simple tool that makes it easy to capture and share professional screenshots of your tweets.`} />
         </>
       ),
     },

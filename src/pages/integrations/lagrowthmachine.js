@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="LaGrowthMachine"
-      description="LaGrowthMachine let Sales team get more meetings. Create multi-channel workflows to engage with your leads on LinkedIn, Twitter & by Email."
+      description={`LaGrowthMachine let Sales team get more meetings. Create multi-channel workflows to engage with your leads on LinkedIn, Twitter & by Email.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -161,7 +161,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>LaGrowthMachine</title>
-          <meta name="description" content="LaGrowthMachine let Sales team get more meetings. Create multi-channel workflows to engage with your leads on LinkedIn, Twitter & by Email." />
+          <meta name="description" content={`LaGrowthMachine let Sales team get more meetings. Create multi-channel workflows to engage with your leads on LinkedIn, Twitter & by Email.`} />
         </>
       ),
     },

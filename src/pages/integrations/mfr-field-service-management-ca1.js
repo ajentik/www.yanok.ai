@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="mfr - field service management"
-      description="Field Service Management platform for dispatching efficiently technicians. This platform helps customers to provide the best service onsite."
+      description={`Field Service Management platform for dispatching efficiently technicians. This platform helps customers to provide the best service onsite.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -151,7 +151,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>mfr - field service management</title>
-          <meta name="description" content="Field Service Management platform for dispatching efficiently technicians. This platform helps customers to provide the best service onsite." />
+          <meta name="description" content={`Field Service Management platform for dispatching efficiently technicians. This platform helps customers to provide the best service onsite.`} />
         </>
       ),
     },

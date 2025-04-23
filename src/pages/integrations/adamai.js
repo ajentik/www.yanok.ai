@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="adam.ai"
-      description="An all-in-one intelligent meeting management solution that handles the entire meeting content lifecycle."
+      description={`An all-in-one intelligent meeting management solution that handles the entire meeting content lifecycle.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -101,7 +101,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>adam.ai</title>
-          <meta name="description" content="An all-in-one intelligent meeting management solution that handles the entire meeting content lifecycle." />
+          <meta name="description" content={`An all-in-one intelligent meeting management solution that handles the entire meeting content lifecycle.`} />
         </>
       ),
     },

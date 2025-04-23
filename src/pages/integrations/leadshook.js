@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="LeadsHook"
-      description="LeadsHook is an app for creating personalized marketing including lead magnets and sales letters using decision trees."
+      description={`LeadsHook is an app for creating personalized marketing including lead magnets and sales letters using decision trees.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>LeadsHook</title>
-          <meta name="description" content="LeadsHook is an app for creating personalized marketing including lead magnets and sales letters using decision trees." />
+          <meta name="description" content={`LeadsHook is an app for creating personalized marketing including lead magnets and sales letters using decision trees.`} />
         </>
       ),
     },

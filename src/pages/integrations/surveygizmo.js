@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Alchemer"
-      description="Build surveys, online forms, evaluations, and event registrations quickly, easily, and professionally."
+      description={`Build surveys, online forms, evaluations, and event registrations quickly, easily, and professionally.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Alchemer</title>
-          <meta name="description" content="Build surveys, online forms, evaluations, and event registrations quickly, easily, and professionally." />
+          <meta name="description" content={`Build surveys, online forms, evaluations, and event registrations quickly, easily, and professionally.`} />
         </>
       ),
     },

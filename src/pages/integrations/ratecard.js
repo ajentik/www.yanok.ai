@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Ratecard"
-      description="Ratecard is the online feedback and reputation management tool that helps you to collect feedback and reviews on autopilot."
+      description={`Ratecard is the online feedback and reputation management tool that helps you to collect feedback and reviews on autopilot.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -61,7 +61,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Ratecard</title>
-          <meta name="description" content="Ratecard is the online feedback and reputation management tool that helps you to collect feedback and reviews on autopilot." />
+          <meta name="description" content={`Ratecard is the online feedback and reputation management tool that helps you to collect feedback and reviews on autopilot.`} />
         </>
       ),
     },

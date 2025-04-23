@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="ServiceWorks"
-      description="ServiceWorks is a Field Service Management Platform"
+      description={`ServiceWorks is a Field Service Management Platform`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -66,7 +66,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>ServiceWorks</title>
-          <meta name="description" content="ServiceWorks is a Field Service Management Platform" />
+          <meta name="description" content={`ServiceWorks is a Field Service Management Platform`} />
         </>
       ),
     },

@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Chat Agents"
-      description="Chat Agents is a true human-managed 24/7 website live chat service provider."
+      description={`Chat Agents is a true human-managed 24/7 website live chat service provider.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -62,7 +62,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Chat Agents</title>
-          <meta name="description" content="Chat Agents is a true human-managed 24/7 website live chat service provider." />
+          <meta name="description" content={`Chat Agents is a true human-managed 24/7 website live chat service provider.`} />
         </>
       ),
     },

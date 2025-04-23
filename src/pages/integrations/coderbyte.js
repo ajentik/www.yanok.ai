@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Coderbyte"
-      description="Coderbyte is the #1 coding assessment platform for qualifying engineering talent in your pipeline."
+      description={`Coderbyte is the #1 coding assessment platform for qualifying engineering talent in your pipeline.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -71,7 +71,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Coderbyte</title>
-          <meta name="description" content="Coderbyte is the #1 coding assessment platform for qualifying engineering talent in your pipeline." />
+          <meta name="description" content={`Coderbyte is the #1 coding assessment platform for qualifying engineering talent in your pipeline.`} />
         </>
       ),
     },

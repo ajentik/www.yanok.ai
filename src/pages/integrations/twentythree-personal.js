@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="TwentyThree Personal"
-      description="TwentyThree Personal is a video marketing platform with comprehensive capabilities to engage your audience, create an on-brand experience, scale to fit you as you grow and provide analytics to help you drive better results."
+      description={`TwentyThree Personal is a video marketing platform with comprehensive capabilities to engage your audience, create an on-brand experience, scale to fit you as you grow and provide analytics to help you drive better results.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>TwentyThree Personal</title>
-          <meta name="description" content="TwentyThree Personal is a video marketing platform with comprehensive capabilities to engage your audience, create an on-brand experience, scale to fit you as you grow and provide analytics to help you drive better results." />
+          <meta name="description" content={`TwentyThree Personal is a video marketing platform with comprehensive capabilities to engage your audience, create an on-brand experience, scale to fit you as you grow and provide analytics to help you drive better results.`} />
         </>
       ),
     },

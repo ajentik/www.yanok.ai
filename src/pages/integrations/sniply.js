@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Sniply"
-      description="Sniply is the only link shortener that drives conversion. Convert your followers into users and customers. Embed Call-to-Actions into every page you share. Display your message on Forbes, TechCrunch, Mashable, Fast Company, BuzzFeed, anywhere. For free."
+      description={`Sniply is the only link shortener that drives conversion. Convert your followers into users and customers. Embed Call-to-Actions into every page you share. Display your message on Forbes, TechCrunch, Mashable, Fast Company, BuzzFeed, anywhere. For free.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Sniply</title>
-          <meta name="description" content="Sniply is the only link shortener that drives conversion. Convert your followers into users and customers. Embed Call-to-Actions into every page you share. Display your message on Forbes, TechCrunch, Mashable, Fast Company, BuzzFeed, anywhere. For free." />
+          <meta name="description" content={`Sniply is the only link shortener that drives conversion. Convert your followers into users and customers. Embed Call-to-Actions into every page you share. Display your message on Forbes, TechCrunch, Mashable, Fast Company, BuzzFeed, anywhere. For free.`} />
         </>
       ),
     },

@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Gust"
-      description="Gust is the world’s largest network connecting the early stage ecosystem, with tools for founders, accelerators, and investment organizations to create or find promising startups."
+      description={`Gust is the world’s largest network connecting the early stage ecosystem, with tools for founders, accelerators, and investment organizations to create or find promising startups.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -67,7 +67,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Gust</title>
-          <meta name="description" content="Gust is the world’s largest network connecting the early stage ecosystem, with tools for founders, accelerators, and investment organizations to create or find promising startups." />
+          <meta name="description" content={`Gust is the world’s largest network connecting the early stage ecosystem, with tools for founders, accelerators, and investment organizations to create or find promising startups.`} />
         </>
       ),
     },

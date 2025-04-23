@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="SuiteCRM"
-      description="SuiteCRM is a free and open source Customer Relationship Management application. Open source CRM is often used as an alternative to proprietary CRM software from major corporations."
+      description={`SuiteCRM is a free and open source Customer Relationship Management application. Open source CRM is often used as an alternative to proprietary CRM software from major corporations.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +53,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>SuiteCRM</title>
-          <meta name="description" content="SuiteCRM is a free and open source Customer Relationship Management application. Open source CRM is often used as an alternative to proprietary CRM software from major corporations." />
+          <meta name="description" content={`SuiteCRM is a free and open source Customer Relationship Management application. Open source CRM is often used as an alternative to proprietary CRM software from major corporations.`} />
         </>
       ),
     },

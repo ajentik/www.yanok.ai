@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="IXACT Contact CRM"
-      description="IXACT Contact is a real estate CRM that helps agents stay organized and build relationships with clients, prospects and referral sources."
+      description={`IXACT Contact is a real estate CRM that helps agents stay organized and build relationships with clients, prospects and referral sources.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -62,7 +62,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>IXACT Contact CRM</title>
-          <meta name="description" content="IXACT Contact is a real estate CRM that helps agents stay organized and build relationships with clients, prospects and referral sources." />
+          <meta name="description" content={`IXACT Contact is a real estate CRM that helps agents stay organized and build relationships with clients, prospects and referral sources.`} />
         </>
       ),
     },

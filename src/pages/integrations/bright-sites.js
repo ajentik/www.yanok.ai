@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Bright Sites"
-      description="Bright Sites is a SaaS eCommerce platform designed for promotional product Distributors and Suppliers."
+      description={`Bright Sites is a SaaS eCommerce platform designed for promotional product Distributors and Suppliers.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -91,7 +91,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Bright Sites</title>
-          <meta name="description" content="Bright Sites is a SaaS eCommerce platform designed for promotional product Distributors and Suppliers." />
+          <meta name="description" content={`Bright Sites is a SaaS eCommerce platform designed for promotional product Distributors and Suppliers.`} />
         </>
       ),
     },

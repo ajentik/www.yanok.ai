@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Instabot: Chatbot Platform"
-      description="Instabot is a conversion chatbot for your website, mobile app & emails."
+      description={`Instabot is a conversion chatbot for your website, mobile app & emails.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -76,7 +76,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Instabot: Chatbot Platform</title>
-          <meta name="description" content="Instabot is a conversion chatbot for your website, mobile app & emails." />
+          <meta name="description" content={`Instabot is a conversion chatbot for your website, mobile app & emails.`} />
         </>
       ),
     },

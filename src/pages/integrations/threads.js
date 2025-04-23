@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Threads"
-      description="Threads is a modern forum for work designed to help teams inform, discuss, and make decisions at scale."
+      description={`Threads is a modern forum for work designed to help teams inform, discuss, and make decisions at scale.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -72,7 +72,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Threads</title>
-          <meta name="description" content="Threads is a modern forum for work designed to help teams inform, discuss, and make decisions at scale." />
+          <meta name="description" content={`Threads is a modern forum for work designed to help teams inform, discuss, and make decisions at scale.`} />
         </>
       ),
     },

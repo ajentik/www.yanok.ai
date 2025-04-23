@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Fiveoak"
-      description="Fiveoak is a service that allows users to manage their reviews and send review invites to their customers."
+      description={`Fiveoak is a service that allows users to manage their reviews and send review invites to their customers.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -62,7 +62,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Fiveoak</title>
-          <meta name="description" content="Fiveoak is a service that allows users to manage their reviews and send review invites to their customers." />
+          <meta name="description" content={`Fiveoak is a service that allows users to manage their reviews and send review invites to their customers.`} />
         </>
       ),
     },

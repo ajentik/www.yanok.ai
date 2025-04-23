@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Zingle"
-      description="Zingle provides real-time business text messaging solutions in both SMS and MMS to increase customer engagement and loyalty."
+      description={`Zingle provides real-time business text messaging solutions in both SMS and MMS to increase customer engagement and loyalty.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +53,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Zingle</title>
-          <meta name="description" content="Zingle provides real-time business text messaging solutions in both SMS and MMS to increase customer engagement and loyalty." />
+          <meta name="description" content={`Zingle provides real-time business text messaging solutions in both SMS and MMS to increase customer engagement and loyalty.`} />
         </>
       ),
     },

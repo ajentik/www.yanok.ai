@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Strava"
-      description="Strava is a fitness tracking application."
+      description={`Strava is a fitness tracking application.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -76,7 +76,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Strava</title>
-          <meta name="description" content="Strava is a fitness tracking application." />
+          <meta name="description" content={`Strava is a fitness tracking application.`} />
         </>
       ),
     },

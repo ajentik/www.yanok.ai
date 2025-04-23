@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Salescamp"
-      description="Salescamp app help to simplify your sales workflow and increase sales productivity. Salescamp is built to thrive your sales. Maximise your sales up to 2x."
+      description={`Salescamp app help to simplify your sales workflow and increase sales productivity. Salescamp is built to thrive your sales. Maximise your sales up to 2x.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -61,7 +61,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Salescamp</title>
-          <meta name="description" content="Salescamp app help to simplify your sales workflow and increase sales productivity. Salescamp is built to thrive your sales. Maximise your sales up to 2x." />
+          <meta name="description" content={`Salescamp app help to simplify your sales workflow and increase sales productivity. Salescamp is built to thrive your sales. Maximise your sales up to 2x.`} />
         </>
       ),
     },

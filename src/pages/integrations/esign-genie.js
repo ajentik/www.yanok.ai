@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="eSign Genie"
-      description="eSign Genie is an easy, cost-effective, comprehensive and legally binding end-to-end esignature solution with Templates, Bulk Signing, Online Forms, APIs."
+      description={`eSign Genie is an easy, cost-effective, comprehensive and legally binding end-to-end esignature solution with Templates, Bulk Signing, Online Forms, APIs.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -86,7 +86,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>eSign Genie</title>
-          <meta name="description" content="eSign Genie is an easy, cost-effective, comprehensive and legally binding end-to-end esignature solution with Templates, Bulk Signing, Online Forms, APIs." />
+          <meta name="description" content={`eSign Genie is an easy, cost-effective, comprehensive and legally binding end-to-end esignature solution with Templates, Bulk Signing, Online Forms, APIs.`} />
         </>
       ),
     },

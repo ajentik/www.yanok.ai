@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Webinar Connecter"
-      description="Webinar Connecter is a tool that can be used to connect webinar software to thousands of other applications."
+      description={`Webinar Connecter is a tool that can be used to connect webinar software to thousands of other applications.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -61,7 +61,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Webinar Connecter</title>
-          <meta name="description" content="Webinar Connecter is a tool that can be used to connect webinar software to thousands of other applications." />
+          <meta name="description" content={`Webinar Connecter is a tool that can be used to connect webinar software to thousands of other applications.`} />
         </>
       ),
     },

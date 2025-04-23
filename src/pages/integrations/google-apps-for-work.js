@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Google Apps For Work"
-      description="Google Apps for Work is a brand of cloud computing, productivity and collaboration tools, software and products developed by Google."
+      description={`Google Apps for Work is a brand of cloud computing, productivity and collaboration tools, software and products developed by Google.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +53,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Google Apps For Work</title>
-          <meta name="description" content="Google Apps for Work is a brand of cloud computing, productivity and collaboration tools, software and products developed by Google." />
+          <meta name="description" content={`Google Apps for Work is a brand of cloud computing, productivity and collaboration tools, software and products developed by Google.`} />
         </>
       ),
     },

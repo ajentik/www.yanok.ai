@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Bizneo HR"
-      description="Bizneo is a set of cloud-based web tools that makes your day-to-day HR admin tasks a breeze."
+      description={`Bizneo is a set of cloud-based web tools that makes your day-to-day HR admin tasks a breeze.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Bizneo HR</title>
-          <meta name="description" content="Bizneo is a set of cloud-based web tools that makes your day-to-day HR admin tasks a breeze." />
+          <meta name="description" content={`Bizneo is a set of cloud-based web tools that makes your day-to-day HR admin tasks a breeze.`} />
         </>
       ),
     },

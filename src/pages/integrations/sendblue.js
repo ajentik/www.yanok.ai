@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Sendblue"
-      description="iMessage and SMS for business. Interact with your users, leads, and customers with our powerful messaging platform."
+      description={`iMessage and SMS for business. Interact with your users, leads, and customers with our powerful messaging platform.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -66,7 +66,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Sendblue</title>
-          <meta name="description" content="iMessage and SMS for business. Interact with your users, leads, and customers with our powerful messaging platform." />
+          <meta name="description" content={`iMessage and SMS for business. Interact with your users, leads, and customers with our powerful messaging platform.`} />
         </>
       ),
     },

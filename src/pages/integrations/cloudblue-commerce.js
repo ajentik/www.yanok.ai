@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="CloudBlue Commerce"
-      description="CloudBlue is a modular, scalable, extensible and secure carrier-grade platform that enables the profitable, end-to-end delivery of services, including onboarding, automation, aggregation, distribution, go-to-market and support."
+      description={`CloudBlue is a modular, scalable, extensible and secure carrier-grade platform that enables the profitable, end-to-end delivery of services, including onboarding, automation, aggregation, distribution, go-to-market and support.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -176,7 +176,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>CloudBlue Commerce</title>
-          <meta name="description" content="CloudBlue is a modular, scalable, extensible and secure carrier-grade platform that enables the profitable, end-to-end delivery of services, including onboarding, automation, aggregation, distribution, go-to-market and support." />
+          <meta name="description" content={`CloudBlue is a modular, scalable, extensible and secure carrier-grade platform that enables the profitable, end-to-end delivery of services, including onboarding, automation, aggregation, distribution, go-to-market and support.`} />
         </>
       ),
     },

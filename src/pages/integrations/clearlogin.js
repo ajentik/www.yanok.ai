@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Clearlogin"
-      description="Clearlogin's Identity Management Platform and Application Dashboard make secure access to the cloud easy for users, IT administrators, and developers."
+      description={`Clearlogin's Identity Management Platform and Application Dashboard make secure access to the cloud easy for users, IT administrators, and developers.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +53,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Clearlogin</title>
-          <meta name="description" content="Clearlogin's Identity Management Platform and Application Dashboard make secure access to the cloud easy for users, IT administrators, and developers." />
+          <meta name="description" content={`Clearlogin's Identity Management Platform and Application Dashboard make secure access to the cloud easy for users, IT administrators, and developers.`} />
         </>
       ),
     },

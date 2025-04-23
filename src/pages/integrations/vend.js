@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Vend"
-      description="Vend is cloud-based point-of-sale and retail management software that lets retailers run their business in-store, online, and via mobile."
+      description={`Vend is cloud-based point-of-sale and retail management software that lets retailers run their business in-store, online, and via mobile.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +53,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Vend</title>
-          <meta name="description" content="Vend is cloud-based point-of-sale and retail management software that lets retailers run their business in-store, online, and via mobile." />
+          <meta name="description" content={`Vend is cloud-based point-of-sale and retail management software that lets retailers run their business in-store, online, and via mobile.`} />
         </>
       ),
     },

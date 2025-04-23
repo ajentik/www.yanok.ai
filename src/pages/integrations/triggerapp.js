@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Trigger"
-      description="Trigger is cloud software for project management, collaboration, and time tracking. Closely integrated with Xero, you can import your customers, accounts and tracking categories, then send invoices. Task titles become line-items, timesheets become invoices - our workflow is coherent, and saves you time."
+      description={`Trigger is cloud software for project management, collaboration, and time tracking. Closely integrated with Xero, you can import your customers, accounts and tracking categories, then send invoices. Task titles become line-items, timesheets become invoices - our workflow is coherent, and saves you time.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -81,7 +81,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Trigger</title>
-          <meta name="description" content="Trigger is cloud software for project management, collaboration, and time tracking. Closely integrated with Xero, you can import your customers, accounts and tracking categories, then send invoices. Task titles become line-items, timesheets become invoices - our workflow is coherent, and saves you time." />
+          <meta name="description" content={`Trigger is cloud software for project management, collaboration, and time tracking. Closely integrated with Xero, you can import your customers, accounts and tracking categories, then send invoices. Task titles become line-items, timesheets become invoices - our workflow is coherent, and saves you time.`} />
         </>
       ),
     },

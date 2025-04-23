@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Anapro"
-      description="From the customer service to the signing of the contract., Anapro offers complete commercial management for small, medium and large businesses."
+      description={`From the customer service to the signing of the contract., Anapro offers complete commercial management for small, medium and large businesses.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +53,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Anapro</title>
-          <meta name="description" content="From the customer service to the signing of the contract., Anapro offers complete commercial management for small, medium and large businesses." />
+          <meta name="description" content={`From the customer service to the signing of the contract., Anapro offers complete commercial management for small, medium and large businesses.`} />
         </>
       ),
     },

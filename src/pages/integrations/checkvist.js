@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Checkvist"
-      description="Keyboard driven online outliner and task manager for teams and individuals. Capture your ideas and notes, create checklists and plans, share with colleagues, and get everything done — together."
+      description={`Keyboard driven online outliner and task manager for teams and individuals. Capture your ideas and notes, create checklists and plans, share with colleagues, and get everything done — together.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -76,7 +76,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Checkvist</title>
-          <meta name="description" content="Keyboard driven online outliner and task manager for teams and individuals. Capture your ideas and notes, create checklists and plans, share with colleagues, and get everything done — together." />
+          <meta name="description" content={`Keyboard driven online outliner and task manager for teams and individuals. Capture your ideas and notes, create checklists and plans, share with colleagues, and get everything done — together.`} />
         </>
       ),
     },

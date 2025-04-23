@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Remindee"
-      description="Remindee is an all-in-one popup and email solution for SMBs and eCommerce sites, to capture and convert more visitors."
+      description={`Remindee is an all-in-one popup and email solution for SMBs and eCommerce sites, to capture and convert more visitors.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -62,7 +62,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Remindee</title>
-          <meta name="description" content="Remindee is an all-in-one popup and email solution for SMBs and eCommerce sites, to capture and convert more visitors." />
+          <meta name="description" content={`Remindee is an all-in-one popup and email solution for SMBs and eCommerce sites, to capture and convert more visitors.`} />
         </>
       ),
     },

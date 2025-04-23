@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Donation Manager RedCloud"
-      description="Donation Manager RedCloud enables charities to manage all online and offline donations."
+      description={`Donation Manager RedCloud enables charities to manage all online and offline donations.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -72,7 +72,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Donation Manager RedCloud</title>
-          <meta name="description" content="Donation Manager RedCloud enables charities to manage all online and offline donations." />
+          <meta name="description" content={`Donation Manager RedCloud enables charities to manage all online and offline donations.`} />
         </>
       ),
     },

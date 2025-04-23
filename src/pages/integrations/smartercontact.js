@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="smartercontact"
-      description="Smarter Contact is an SMS provider that helps professionals close more deals. In addition, the software serves as an efficient and flexible CRM that allows clients to track their customers from initial contact to close!"
+      description={`Smarter Contact is an SMS provider that helps professionals close more deals. In addition, the software serves as an efficient and flexible CRM that allows clients to track their customers from initial contact to close!`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>smartercontact</title>
-          <meta name="description" content="Smarter Contact is an SMS provider that helps professionals close more deals. In addition, the software serves as an efficient and flexible CRM that allows clients to track their customers from initial contact to close!" />
+          <meta name="description" content={`Smarter Contact is an SMS provider that helps professionals close more deals. In addition, the software serves as an efficient and flexible CRM that allows clients to track their customers from initial contact to close!`} />
         </>
       ),
     },

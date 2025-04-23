@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Easyship"
-      description="Easyship is a shipping platform that allows eCommerce merchants to connect to 250+ courier solutions to help them grow internationally"
+      description={`Easyship is a shipping platform that allows eCommerce merchants to connect to 250+ courier solutions to help them grow internationally`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -81,7 +81,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Easyship</title>
-          <meta name="description" content="Easyship is a shipping platform that allows eCommerce merchants to connect to 250+ courier solutions to help them grow internationally" />
+          <meta name="description" content={`Easyship is a shipping platform that allows eCommerce merchants to connect to 250+ courier solutions to help them grow internationally`} />
         </>
       ),
     },

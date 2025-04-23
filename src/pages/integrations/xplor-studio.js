@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Xplor Studio"
-      description="Xplor Studio is a studio management platform with all the tools to make life easier, discover new revenue streams, and build unique fitness experiences from anywhere."
+      description={`Xplor Studio is a studio management platform with all the tools to make life easier, discover new revenue streams, and build unique fitness experiences from anywhere.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -116,7 +116,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Xplor Studio</title>
-          <meta name="description" content="Xplor Studio is a studio management platform with all the tools to make life easier, discover new revenue streams, and build unique fitness experiences from anywhere." />
+          <meta name="description" content={`Xplor Studio is a studio management platform with all the tools to make life easier, discover new revenue streams, and build unique fitness experiences from anywhere.`} />
         </>
       ),
     },

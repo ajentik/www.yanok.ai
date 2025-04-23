@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Beau"
-      description="Turn client-facing workflows into client portals: collect form submissions, documents and files, accept payments, send messages and reminders, approve steps or request changes."
+      description={`Turn client-facing workflows into client portals: collect form submissions, documents and files, accept payments, send messages and reminders, approve steps or request changes.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -72,7 +72,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Beau</title>
-          <meta name="description" content="Turn client-facing workflows into client portals: collect form submissions, documents and files, accept payments, send messages and reminders, approve steps or request changes." />
+          <meta name="description" content={`Turn client-facing workflows into client portals: collect form submissions, documents and files, accept payments, send messages and reminders, approve steps or request changes.`} />
         </>
       ),
     },

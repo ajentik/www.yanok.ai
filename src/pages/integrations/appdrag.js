@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="AppDrag"
-      description="AppDrag is a website and web app builder."
+      description={`AppDrag is a website and web app builder.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -101,7 +101,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>AppDrag</title>
-          <meta name="description" content="AppDrag is a website and web app builder." />
+          <meta name="description" content={`AppDrag is a website and web app builder.`} />
         </>
       ),
     },

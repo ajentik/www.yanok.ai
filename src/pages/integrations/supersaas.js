@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="SuperSaaS"
-      description="Online appointment scheduling for any type of business. Flexible and affordable booking software that can be integrated into any site."
+      description={`Online appointment scheduling for any type of business. Flexible and affordable booking software that can be integrated into any site.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -92,7 +92,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>SuperSaaS</title>
-          <meta name="description" content="Online appointment scheduling for any type of business. Flexible and affordable booking software that can be integrated into any site." />
+          <meta name="description" content={`Online appointment scheduling for any type of business. Flexible and affordable booking software that can be integrated into any site.`} />
         </>
       ),
     },

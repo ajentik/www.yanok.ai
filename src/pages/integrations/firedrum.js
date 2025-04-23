@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="FireDrum Email Marketing"
-      description="FireDrum is a robust, affordable email marketing platform. From simple newsletters to enterprise white-label solutions, we’ve got you covered."
+      description={`FireDrum is a robust, affordable email marketing platform. From simple newsletters to enterprise white-label solutions, we’ve got you covered.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -151,7 +151,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>FireDrum Email Marketing</title>
-          <meta name="description" content="FireDrum is a robust, affordable email marketing platform. From simple newsletters to enterprise white-label solutions, we’ve got you covered." />
+          <meta name="description" content={`FireDrum is a robust, affordable email marketing platform. From simple newsletters to enterprise white-label solutions, we’ve got you covered.`} />
         </>
       ),
     },

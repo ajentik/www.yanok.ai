@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Swordfish.ai"
-      description="Swordfish AI is a contact finding tool for cell/mobile phone numbers and email addresses."
+      description={`Swordfish AI is a contact finding tool for cell/mobile phone numbers and email addresses.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -71,7 +71,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Swordfish.ai</title>
-          <meta name="description" content="Swordfish AI is a contact finding tool for cell/mobile phone numbers and email addresses." />
+          <meta name="description" content={`Swordfish AI is a contact finding tool for cell/mobile phone numbers and email addresses.`} />
         </>
       ),
     },

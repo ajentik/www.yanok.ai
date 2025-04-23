@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Vista Social"
-      description="Vista Social is an all-in-one social media management platform for brands and agencies"
+      description={`Vista Social is an all-in-one social media management platform for brands and agencies`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -91,7 +91,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Vista Social</title>
-          <meta name="description" content="Vista Social is an all-in-one social media management platform for brands and agencies" />
+          <meta name="description" content={`Vista Social is an all-in-one social media management platform for brands and agencies`} />
         </>
       ),
     },

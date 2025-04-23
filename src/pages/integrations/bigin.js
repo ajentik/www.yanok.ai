@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Bigin by Zoho CRM"
-      description="Bigin is a sales pipeline management software that lets you manage deals, track activities and keep all the interactions with your contacts at one place."
+      description={`Bigin is a sales pipeline management software that lets you manage deals, track activities and keep all the interactions with your contacts at one place.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -216,7 +216,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Bigin by Zoho CRM</title>
-          <meta name="description" content="Bigin is a sales pipeline management software that lets you manage deals, track activities and keep all the interactions with your contacts at one place." />
+          <meta name="description" content={`Bigin is a sales pipeline management software that lets you manage deals, track activities and keep all the interactions with your contacts at one place.`} />
         </>
       ),
     },

@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="WIP"
-      description="WIP is an invite-only social network of makers."
+      description={`WIP is an invite-only social network of makers.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -62,7 +62,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>WIP</title>
-          <meta name="description" content="WIP is an invite-only social network of makers." />
+          <meta name="description" content={`WIP is an invite-only social network of makers.`} />
         </>
       ),
     },

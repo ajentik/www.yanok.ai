@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Fomo"
-      description="Fomo is a social proof marketing platform that streams recent customer behaviors on your website to build trust and increase conversions."
+      description={`Fomo is a social proof marketing platform that streams recent customer behaviors on your website to build trust and increase conversions.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Fomo</title>
-          <meta name="description" content="Fomo is a social proof marketing platform that streams recent customer behaviors on your website to build trust and increase conversions." />
+          <meta name="description" content={`Fomo is a social proof marketing platform that streams recent customer behaviors on your website to build trust and increase conversions.`} />
         </>
       ),
     },

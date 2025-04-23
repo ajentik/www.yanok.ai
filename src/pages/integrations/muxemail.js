@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="MuxEmail"
-      description="MuxEmail allows you to send unlimited email newsletters and marketing campaigns to unlimited subscribers via Amazon SES."
+      description={`MuxEmail allows you to send unlimited email newsletters and marketing campaigns to unlimited subscribers via Amazon SES.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -72,7 +72,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>MuxEmail</title>
-          <meta name="description" content="MuxEmail allows you to send unlimited email newsletters and marketing campaigns to unlimited subscribers via Amazon SES." />
+          <meta name="description" content={`MuxEmail allows you to send unlimited email newsletters and marketing campaigns to unlimited subscribers via Amazon SES.`} />
         </>
       ),
     },

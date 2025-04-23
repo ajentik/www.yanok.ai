@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Magento 2.X"
-      description="Magento 2.X is the premier open source e-commerce app used by millions of customers each and every day."
+      description={`Magento 2.X is the premier open source e-commerce app used by millions of customers each and every day.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -106,7 +106,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Magento 2.X</title>
-          <meta name="description" content="Magento 2.X is the premier open source e-commerce app used by millions of customers each and every day." />
+          <meta name="description" content={`Magento 2.X is the premier open source e-commerce app used by millions of customers each and every day.`} />
         </>
       ),
     },

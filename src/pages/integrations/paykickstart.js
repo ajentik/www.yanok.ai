@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="PayKickstart"
-      description="PayKickstart is a shopping cart and affiliate management platform, empowering online entrepreneurs and digital publishers with the tools to sell their products online."
+      description={`PayKickstart is a shopping cart and affiliate management platform, empowering online entrepreneurs and digital publishers with the tools to sell their products online.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -142,7 +142,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>PayKickstart</title>
-          <meta name="description" content="PayKickstart is a shopping cart and affiliate management platform, empowering online entrepreneurs and digital publishers with the tools to sell their products online." />
+          <meta name="description" content={`PayKickstart is a shopping cart and affiliate management platform, empowering online entrepreneurs and digital publishers with the tools to sell their products online.`} />
         </>
       ),
     },

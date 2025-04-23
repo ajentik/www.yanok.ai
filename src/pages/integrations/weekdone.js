@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Weekdone"
-      description="Weekdone weekly progress reports for managers and internal communication for teams."
+      description={`Weekdone weekly progress reports for managers and internal communication for teams.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -81,7 +81,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Weekdone</title>
-          <meta name="description" content="Weekdone weekly progress reports for managers and internal communication for teams." />
+          <meta name="description" content={`Weekdone weekly progress reports for managers and internal communication for teams.`} />
         </>
       ),
     },

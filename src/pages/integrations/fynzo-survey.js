@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Fynzo Survey"
-      description="Build survey forms in different ways ranging from multiple choice, simple text, numeric data, Image, audio and geolocation all on your phone, tablet and web dashboard."
+      description={`Build survey forms in different ways ranging from multiple choice, simple text, numeric data, Image, audio and geolocation all on your phone, tablet and web dashboard.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Fynzo Survey</title>
-          <meta name="description" content="Build survey forms in different ways ranging from multiple choice, simple text, numeric data, Image, audio and geolocation all on your phone, tablet and web dashboard." />
+          <meta name="description" content={`Build survey forms in different ways ranging from multiple choice, simple text, numeric data, Image, audio and geolocation all on your phone, tablet and web dashboard.`} />
         </>
       ),
     },

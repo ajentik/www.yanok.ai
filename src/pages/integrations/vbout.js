@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="VBOUT"
-      description="VBOUT is a marketing platform which helps you optimize the customer journey with powerful email, social media and lead intelligence tools."
+      description={`VBOUT is a marketing platform which helps you optimize the customer journey with powerful email, social media and lead intelligence tools.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -126,7 +126,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>VBOUT</title>
-          <meta name="description" content="VBOUT is a marketing platform which helps you optimize the customer journey with powerful email, social media and lead intelligence tools." />
+          <meta name="description" content={`VBOUT is a marketing platform which helps you optimize the customer journey with powerful email, social media and lead intelligence tools.`} />
         </>
       ),
     },

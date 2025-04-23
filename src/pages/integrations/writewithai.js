@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="WriteWith.AI"
-      description="Writewith.AI is an ad description generator. It uses AI and a database of high-performance PPC ads to write a copy that converts."
+      description={`Writewith.AI is an ad description generator. It uses AI and a database of high-performance PPC ads to write a copy that converts.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>WriteWith.AI</title>
-          <meta name="description" content="Writewith.AI is an ad description generator. It uses AI and a database of high-performance PPC ads to write a copy that converts." />
+          <meta name="description" content={`Writewith.AI is an ad description generator. It uses AI and a database of high-performance PPC ads to write a copy that converts.`} />
         </>
       ),
     },

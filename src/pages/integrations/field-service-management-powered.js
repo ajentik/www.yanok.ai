@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Field Service Management | Powered by GPS Insight"
-      description="Field Service Management powered by GPS Insight supports your organization’s daily workflow. It eliminates paper, automates your processes, connects your technicians and office team, and ensures a smooth customer journey."
+      description={`Field Service Management powered by GPS Insight supports your organization’s daily workflow. It eliminates paper, automates your processes, connects your technicians and office team, and ensures a smooth customer journey.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -67,7 +67,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Field Service Management | Powered by GPS Insight</title>
-          <meta name="description" content="Field Service Management powered by GPS Insight supports your organization’s daily workflow. It eliminates paper, automates your processes, connects your technicians and office team, and ensures a smooth customer journey." />
+          <meta name="description" content={`Field Service Management powered by GPS Insight supports your organization’s daily workflow. It eliminates paper, automates your processes, connects your technicians and office team, and ensures a smooth customer journey.`} />
         </>
       ),
     },

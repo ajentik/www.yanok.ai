@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Signalize"
-      description="Send push notifications to your subscribers"
+      description={`Send push notifications to your subscribers`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -72,7 +72,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Signalize</title>
-          <meta name="description" content="Send push notifications to your subscribers" />
+          <meta name="description" content={`Send push notifications to your subscribers`} />
         </>
       ),
     },

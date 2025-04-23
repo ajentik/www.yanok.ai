@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Trello"
-      description="Trello is a team collaboration tool that lets you organize anything and everything to keep your projects on task."
+      description={`Trello is a team collaboration tool that lets you organize anything and everything to keep your projects on task.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -271,7 +271,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Trello</title>
-          <meta name="description" content="Trello is a team collaboration tool that lets you organize anything and everything to keep your projects on task." />
+          <meta name="description" content={`Trello is a team collaboration tool that lets you organize anything and everything to keep your projects on task.`} />
         </>
       ),
     },

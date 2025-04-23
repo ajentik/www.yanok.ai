@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Linguin AI"
-      description="Linguin AI is a language detection service powered by humans and AI."
+      description={`Linguin AI is a language detection service powered by humans and AI.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -62,7 +62,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Linguin AI</title>
-          <meta name="description" content="Linguin AI is a language detection service powered by humans and AI." />
+          <meta name="description" content={`Linguin AI is a language detection service powered by humans and AI.`} />
         </>
       ),
     },

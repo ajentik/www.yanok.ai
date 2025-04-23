@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Grit Seed"
-      description="Grit Seed is a conversational texting engine."
+      description={`Grit Seed is a conversational texting engine.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -71,7 +71,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Grit Seed</title>
-          <meta name="description" content="Grit Seed is a conversational texting engine." />
+          <meta name="description" content={`Grit Seed is a conversational texting engine.`} />
         </>
       ),
     },

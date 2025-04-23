@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Solar CRM"
-      description="Solar CRM is a CRM tool designed specifically for the Solar sales individual."
+      description={`Solar CRM is a CRM tool designed specifically for the Solar sales individual.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -71,7 +71,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Solar CRM</title>
-          <meta name="description" content="Solar CRM is a CRM tool designed specifically for the Solar sales individual." />
+          <meta name="description" content={`Solar CRM is a CRM tool designed specifically for the Solar sales individual.`} />
         </>
       ),
     },

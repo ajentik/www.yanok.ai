@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Seamlss"
-      description="Seamlss allows you to onboard your clients with ease to collect and collate data. Make life seamless with Seamlss."
+      description={`Seamlss allows you to onboard your clients with ease to collect and collate data. Make life seamless with Seamlss.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Seamlss</title>
-          <meta name="description" content="Seamlss allows you to onboard your clients with ease to collect and collate data. Make life seamless with Seamlss." />
+          <meta name="description" content={`Seamlss allows you to onboard your clients with ease to collect and collate data. Make life seamless with Seamlss.`} />
         </>
       ),
     },

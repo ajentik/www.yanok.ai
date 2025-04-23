@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Order Desk"
-      description="Order Desk's order management software allows you to customize your order management workflow."
+      description={`Order Desk's order management software allows you to customize your order management workflow.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -96,7 +96,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Order Desk</title>
-          <meta name="description" content="Order Desk's order management software allows you to customize your order management workflow." />
+          <meta name="description" content={`Order Desk's order management software allows you to customize your order management workflow.`} />
         </>
       ),
     },

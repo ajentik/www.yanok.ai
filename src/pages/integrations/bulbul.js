@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Bulbul"
-      description="Bulbul is a CRM that helps you organize and track your deals. Everything is stored in a tidy timeline so that you don’t miss anything about a deal."
+      description={`Bulbul is a CRM that helps you organize and track your deals. Everything is stored in a tidy timeline so that you don’t miss anything about a deal.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Bulbul</title>
-          <meta name="description" content="Bulbul is a CRM that helps you organize and track your deals. Everything is stored in a tidy timeline so that you don’t miss anything about a deal." />
+          <meta name="description" content={`Bulbul is a CRM that helps you organize and track your deals. Everything is stored in a tidy timeline so that you don’t miss anything about a deal.`} />
         </>
       ),
     },

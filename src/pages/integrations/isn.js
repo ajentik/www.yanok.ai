@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="ISN"
-      description="The Inspection Support Network is the industry’s most trusted home inspection software solution."
+      description={`The Inspection Support Network is the industry’s most trusted home inspection software solution.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -67,7 +67,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>ISN</title>
-          <meta name="description" content="The Inspection Support Network is the industry’s most trusted home inspection software solution." />
+          <meta name="description" content={`The Inspection Support Network is the industry’s most trusted home inspection software solution.`} />
         </>
       ),
     },

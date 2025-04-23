@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Checkin.no"
-      description="Integration with checkin.no Trigger events when a ticket is bought. Add information from the ticket to ex. a CRM or a mailinglist"
+      description={`Integration with checkin.no Trigger events when a ticket is bought. Add information from the ticket to ex. a CRM or a mailinglist`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -62,7 +62,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Checkin.no</title>
-          <meta name="description" content="Integration with checkin.no Trigger events when a ticket is bought. Add information from the ticket to ex. a CRM or a mailinglist" />
+          <meta name="description" content={`Integration with checkin.no Trigger events when a ticket is bought. Add information from the ticket to ex. a CRM or a mailinglist`} />
         </>
       ),
     },

@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Quatrix"
-      description="Download and upload files or folders, share them with predefined security options and a lot more functionalities can be easily integrated into your application using our [Quatrix APIs](https://docs.maytech.net/display/MD/Quatrix+API)."
+      description={`Download and upload files or folders, share them with predefined security options and a lot more functionalities can be easily integrated into your application using our [Quatrix APIs](https://docs.maytech.net/display/MD/Quatrix+API).`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -81,7 +81,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Quatrix</title>
-          <meta name="description" content="Download and upload files or folders, share them with predefined security options and a lot more functionalities can be easily integrated into your application using our [Quatrix APIs](https://docs.maytech.net/display/MD/Quatrix+API)." />
+          <meta name="description" content={`Download and upload files or folders, share them with predefined security options and a lot more functionalities can be easily integrated into your application using our [Quatrix APIs](https://docs.maytech.net/display/MD/Quatrix+API).`} />
         </>
       ),
     },

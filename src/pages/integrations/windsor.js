@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Windsor"
-      description="Windsor is an AI marketing platform for e-commerce brands to automate and scale personal videos to acquire, retain and grow customers."
+      description={`Windsor is an AI marketing platform for e-commerce brands to automate and scale personal videos to acquire, retain and grow customers.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -61,7 +61,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Windsor</title>
-          <meta name="description" content="Windsor is an AI marketing platform for e-commerce brands to automate and scale personal videos to acquire, retain and grow customers." />
+          <meta name="description" content={`Windsor is an AI marketing platform for e-commerce brands to automate and scale personal videos to acquire, retain and grow customers.`} />
         </>
       ),
     },

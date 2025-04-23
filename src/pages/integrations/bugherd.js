@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="BugHerd"
-      description="A visual feedback tool for websites. It's like using sticky-notes to pin client feedback and track bugs directly on a page."
+      description={`A visual feedback tool for websites. It's like using sticky-notes to pin client feedback and track bugs directly on a page.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -101,7 +101,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>BugHerd</title>
-          <meta name="description" content="A visual feedback tool for websites. It's like using sticky-notes to pin client feedback and track bugs directly on a page." />
+          <meta name="description" content={`A visual feedback tool for websites. It's like using sticky-notes to pin client feedback and track bugs directly on a page.`} />
         </>
       ),
     },

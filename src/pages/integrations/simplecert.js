@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="SimpleCert"
-      description="The SimpleCert application allows for the automatic creation of contacts and certificates within the SimpleCert framework."
+      description={`The SimpleCert application allows for the automatic creation of contacts and certificates within the SimpleCert framework.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -62,7 +62,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>SimpleCert</title>
-          <meta name="description" content="The SimpleCert application allows for the automatic creation of contacts and certificates within the SimpleCert framework." />
+          <meta name="description" content={`The SimpleCert application allows for the automatic creation of contacts and certificates within the SimpleCert framework.`} />
         </>
       ),
     },

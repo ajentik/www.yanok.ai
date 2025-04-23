@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Cisco Webex Meetings"
-      description="Cisco Webex Meetings is the leading enterprise solution for video conferencing, online meetings, screen share, and webinars."
+      description={`Cisco Webex Meetings is the leading enterprise solution for video conferencing, online meetings, screen share, and webinars.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Cisco Webex Meetings</title>
-          <meta name="description" content="Cisco Webex Meetings is the leading enterprise solution for video conferencing, online meetings, screen share, and webinars." />
+          <meta name="description" content={`Cisco Webex Meetings is the leading enterprise solution for video conferencing, online meetings, screen share, and webinars.`} />
         </>
       ),
     },

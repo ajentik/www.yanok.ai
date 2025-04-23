@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Shopia"
-      description="Content scheduling for blog & social media."
+      description={`Content scheduling for blog & social media.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -91,7 +91,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Shopia</title>
-          <meta name="description" content="Content scheduling for blog & social media." />
+          <meta name="description" content={`Content scheduling for blog & social media.`} />
         </>
       ),
     },

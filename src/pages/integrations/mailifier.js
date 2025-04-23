@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Mailifier"
-      description="Mailifier is a full-feature email verification service, which allows you to get rid of problems with email campaigns, increase the deliverability of emails and avoid blocking by the email provider."
+      description={`Mailifier is a full-feature email verification service, which allows you to get rid of problems with email campaigns, increase the deliverability of emails and avoid blocking by the email provider.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Mailifier</title>
-          <meta name="description" content="Mailifier is a full-feature email verification service, which allows you to get rid of problems with email campaigns, increase the deliverability of emails and avoid blocking by the email provider." />
+          <meta name="description" content={`Mailifier is a full-feature email verification service, which allows you to get rid of problems with email campaigns, increase the deliverability of emails and avoid blocking by the email provider.`} />
         </>
       ),
     },

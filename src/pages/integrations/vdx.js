@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="VDX"
-      description="Plug & Play API empowering companies & developers to easily turn any portal, application or web interface into a blockchain powerhouse."
+      description={`Plug & Play API empowering companies & developers to easily turn any portal, application or web interface into a blockchain powerhouse.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -62,7 +62,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>VDX</title>
-          <meta name="description" content="Plug & Play API empowering companies & developers to easily turn any portal, application or web interface into a blockchain powerhouse." />
+          <meta name="description" content={`Plug & Play API empowering companies & developers to easily turn any portal, application or web interface into a blockchain powerhouse.`} />
         </>
       ),
     },

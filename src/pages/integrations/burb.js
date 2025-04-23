@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Burb"
-      description="Burb is a tool that helps to optimize, support, and grow communities."
+      description={`Burb is a tool that helps to optimize, support, and grow communities.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -86,7 +86,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Burb</title>
-          <meta name="description" content="Burb is a tool that helps to optimize, support, and grow communities." />
+          <meta name="description" content={`Burb is a tool that helps to optimize, support, and grow communities.`} />
         </>
       ),
     },

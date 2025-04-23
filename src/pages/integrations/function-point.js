@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Function Point"
-      description="Productivity tools built for creative agencies. Function Point combines project management, time tracking, budgeting, resourcing, reporting, and much more."
+      description={`Productivity tools built for creative agencies. Function Point combines project management, time tracking, budgeting, resourcing, reporting, and much more.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +53,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Function Point</title>
-          <meta name="description" content="Productivity tools built for creative agencies. Function Point combines project management, time tracking, budgeting, resourcing, reporting, and much more." />
+          <meta name="description" content={`Productivity tools built for creative agencies. Function Point combines project management, time tracking, budgeting, resourcing, reporting, and much more.`} />
         </>
       ),
     },

@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Disparo PRO"
-      description="Disparo PRO is a tool for sending SMS messages through intelligent integration."
+      description={`Disparo PRO is a tool for sending SMS messages through intelligent integration.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -66,7 +66,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Disparo PRO</title>
-          <meta name="description" content="Disparo PRO is a tool for sending SMS messages through intelligent integration." />
+          <meta name="description" content={`Disparo PRO is a tool for sending SMS messages through intelligent integration.`} />
         </>
       ),
     },

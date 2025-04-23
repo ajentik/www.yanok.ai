@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="InvoiceXpress"
-      description="InvoiceXpress is online invoicing software that helps all businesses issue invoices in seconds, hassle free."
+      description={`InvoiceXpress is online invoicing software that helps all businesses issue invoices in seconds, hassle free.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -157,7 +157,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>InvoiceXpress</title>
-          <meta name="description" content="InvoiceXpress is online invoicing software that helps all businesses issue invoices in seconds, hassle free." />
+          <meta name="description" content={`InvoiceXpress is online invoicing software that helps all businesses issue invoices in seconds, hassle free.`} />
         </>
       ),
     },

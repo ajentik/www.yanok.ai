@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Formaloo"
-      description="Formaloo is a Customer Analytics & Customer Data Platform that translates your data into clear actions."
+      description={`Formaloo is a Customer Analytics & Customer Data Platform that translates your data into clear actions.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -71,7 +71,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Formaloo</title>
-          <meta name="description" content="Formaloo is a Customer Analytics & Customer Data Platform that translates your data into clear actions." />
+          <meta name="description" content={`Formaloo is a Customer Analytics & Customer Data Platform that translates your data into clear actions.`} />
         </>
       ),
     },

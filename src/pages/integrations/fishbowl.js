@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Fishbowl"
-      description="Fishbowl, the #1 inventory management software for QuickBooks, offers multi-location tracking, manufacturing, barcoding and more."
+      description={`Fishbowl, the #1 inventory management software for QuickBooks, offers multi-location tracking, manufacturing, barcoding and more.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +53,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Fishbowl</title>
-          <meta name="description" content="Fishbowl, the #1 inventory management software for QuickBooks, offers multi-location tracking, manufacturing, barcoding and more." />
+          <meta name="description" content={`Fishbowl, the #1 inventory management software for QuickBooks, offers multi-location tracking, manufacturing, barcoding and more.`} />
         </>
       ),
     },

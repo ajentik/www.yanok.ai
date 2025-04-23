@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Runsensible"
-      description="RunSensible is a CRM, sales, and marketing tool to help you get more done with less work so you can grow your business."
+      description={`RunSensible is a CRM, sales, and marketing tool to help you get more done with less work so you can grow your business.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Runsensible</title>
-          <meta name="description" content="RunSensible is a CRM, sales, and marketing tool to help you get more done with less work so you can grow your business." />
+          <meta name="description" content={`RunSensible is a CRM, sales, and marketing tool to help you get more done with less work so you can grow your business.`} />
         </>
       ),
     },

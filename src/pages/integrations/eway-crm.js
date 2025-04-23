@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="eWay-CRM"
-      description="eWay-CRM is a CRM software embedded right into Microsoft Outlook. It helps companies all around the world efficiently manage contacts, customers, deals, projects, and marketing campaigns."
+      description={`eWay-CRM is a CRM software embedded right into Microsoft Outlook. It helps companies all around the world efficiently manage contacts, customers, deals, projects, and marketing campaigns.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -117,7 +117,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>eWay-CRM</title>
-          <meta name="description" content="eWay-CRM is a CRM software embedded right into Microsoft Outlook. It helps companies all around the world efficiently manage contacts, customers, deals, projects, and marketing campaigns." />
+          <meta name="description" content={`eWay-CRM is a CRM software embedded right into Microsoft Outlook. It helps companies all around the world efficiently manage contacts, customers, deals, projects, and marketing campaigns.`} />
         </>
       ),
     },

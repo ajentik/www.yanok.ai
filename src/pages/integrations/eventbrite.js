@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Eventbrite"
-      description="Eventbrite is an event management tool that makes it simple to create, manage, promote, and sell out your event."
+      description={`Eventbrite is an event management tool that makes it simple to create, manage, promote, and sell out your event.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -86,7 +86,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Eventbrite</title>
-          <meta name="description" content="Eventbrite is an event management tool that makes it simple to create, manage, promote, and sell out your event." />
+          <meta name="description" content={`Eventbrite is an event management tool that makes it simple to create, manage, promote, and sell out your event.`} />
         </>
       ),
     },

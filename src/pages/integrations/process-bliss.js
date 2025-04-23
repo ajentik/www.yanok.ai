@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="beSlick"
-      description="beSlick is a business process and task management platform to help teams save time and keep everything on track."
+      description={`beSlick is a business process and task management platform to help teams save time and keep everything on track.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -81,7 +81,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>beSlick</title>
-          <meta name="description" content="beSlick is a business process and task management platform to help teams save time and keep everything on track." />
+          <meta name="description" content={`beSlick is a business process and task management platform to help teams save time and keep everything on track.`} />
         </>
       ),
     },

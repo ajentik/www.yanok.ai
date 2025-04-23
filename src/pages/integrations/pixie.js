@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Pixie"
-      description="Pixie is practice management for accountants and bookkeepers. Improve visibility, collaboration and automation for your team and clients."
+      description={`Pixie is practice management for accountants and bookkeepers. Improve visibility, collaboration and automation for your team and clients.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -116,7 +116,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Pixie</title>
-          <meta name="description" content="Pixie is practice management for accountants and bookkeepers. Improve visibility, collaboration and automation for your team and clients." />
+          <meta name="description" content={`Pixie is practice management for accountants and bookkeepers. Improve visibility, collaboration and automation for your team and clients.`} />
         </>
       ),
     },

@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Billomat"
-      description="Billomat is a simple and efficient cloud accounting software and invoicing program for startups, freelancers and small businesses."
+      description={`Billomat is a simple and efficient cloud accounting software and invoicing program for startups, freelancers and small businesses.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +53,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Billomat</title>
-          <meta name="description" content="Billomat is a simple and efficient cloud accounting software and invoicing program for startups, freelancers and small businesses." />
+          <meta name="description" content={`Billomat is a simple and efficient cloud accounting software and invoicing program for startups, freelancers and small businesses.`} />
         </>
       ),
     },

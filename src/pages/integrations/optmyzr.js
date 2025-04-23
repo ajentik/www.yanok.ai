@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Optmyzr"
-      description="Optmyzr is the most advanced and world's leading PPC Optmization Tool."
+      description={`Optmyzr is the most advanced and world's leading PPC Optmization Tool.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -62,7 +62,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Optmyzr</title>
-          <meta name="description" content="Optmyzr is the most advanced and world's leading PPC Optmization Tool." />
+          <meta name="description" content={`Optmyzr is the most advanced and world's leading PPC Optmization Tool.`} />
         </>
       ),
     },

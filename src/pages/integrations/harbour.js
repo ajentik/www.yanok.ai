@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Harbour"
-      description="Harbour is a fast and modern e-signature and contract management platform that unlocks the creator economy. We turn agreements into fast, branded, mobile-friendly links and QR codes for seamless e-signatures."
+      description={`Harbour is a fast and modern e-signature and contract management platform that unlocks the creator economy. We turn agreements into fast, branded, mobile-friendly links and QR codes for seamless e-signatures.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Harbour</title>
-          <meta name="description" content="Harbour is a fast and modern e-signature and contract management platform that unlocks the creator economy. We turn agreements into fast, branded, mobile-friendly links and QR codes for seamless e-signatures." />
+          <meta name="description" content={`Harbour is a fast and modern e-signature and contract management platform that unlocks the creator economy. We turn agreements into fast, branded, mobile-friendly links and QR codes for seamless e-signatures.`} />
         </>
       ),
     },

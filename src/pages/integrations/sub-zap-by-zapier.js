@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Sub-Zap by Zapier"
-      description="Build reusable Zap components and systems by building and calling "Sub-Zaps"."
+      description={`Build reusable Zap components and systems by building and calling `}Sub-Zaps"."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -66,7 +66,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Sub-Zap by Zapier</title>
-          <meta name="description" content="Build reusable Zap components and systems by building and calling "Sub-Zaps"." />
+          <meta name="description" content={`Build reusable Zap components and systems by building and calling `}Sub-Zaps"." />
         </>
       ),
     },

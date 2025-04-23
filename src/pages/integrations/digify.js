@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Digify"
-      description="Digify is a document security platform for businesses to share, manage and track confidential documents."
+      description={`Digify is a document security platform for businesses to share, manage and track confidential documents.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -81,7 +81,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Digify</title>
-          <meta name="description" content="Digify is a document security platform for businesses to share, manage and track confidential documents." />
+          <meta name="description" content={`Digify is a document security platform for businesses to share, manage and track confidential documents.`} />
         </>
       ),
     },

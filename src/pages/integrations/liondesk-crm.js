@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="LionDesk"
-      description="LionDesk is the hub for Sales Professionals to help manage clients, transactions, automate marketing and more."
+      description={`LionDesk is the hub for Sales Professionals to help manage clients, transactions, automate marketing and more.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -76,7 +76,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>LionDesk</title>
-          <meta name="description" content="LionDesk is the hub for Sales Professionals to help manage clients, transactions, automate marketing and more." />
+          <meta name="description" content={`LionDesk is the hub for Sales Professionals to help manage clients, transactions, automate marketing and more.`} />
         </>
       ),
     },

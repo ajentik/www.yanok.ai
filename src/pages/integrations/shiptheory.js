@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Shiptheory"
-      description="Automate your shipping processes for more efficient and reliable shipping using Shiptheory to access carrier APIs."
+      description={`Automate your shipping processes for more efficient and reliable shipping using Shiptheory to access carrier APIs.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Shiptheory</title>
-          <meta name="description" content="Automate your shipping processes for more efficient and reliable shipping using Shiptheory to access carrier APIs." />
+          <meta name="description" content={`Automate your shipping processes for more efficient and reliable shipping using Shiptheory to access carrier APIs.`} />
         </>
       ),
     },

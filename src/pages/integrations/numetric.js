@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="NuMetric"
-      description="NuMetric is a one stop accounting platform for your business"
+      description={`NuMetric is a one stop accounting platform for your business`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -141,7 +141,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>NuMetric</title>
-          <meta name="description" content="NuMetric is a one stop accounting platform for your business" />
+          <meta name="description" content={`NuMetric is a one stop accounting platform for your business`} />
         </>
       ),
     },

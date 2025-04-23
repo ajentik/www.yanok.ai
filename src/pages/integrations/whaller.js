@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Whaller"
-      description="Whaller allows anyone to create their own private social networks. Very usefull for families, companies, schools and any other organizations."
+      description={`Whaller allows anyone to create their own private social networks. Very usefull for families, companies, schools and any other organizations.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -62,7 +62,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Whaller</title>
-          <meta name="description" content="Whaller allows anyone to create their own private social networks. Very usefull for families, companies, schools and any other organizations." />
+          <meta name="description" content={`Whaller allows anyone to create their own private social networks. Very usefull for families, companies, schools and any other organizations.`} />
         </>
       ),
     },

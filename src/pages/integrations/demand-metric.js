@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Demand Metric"
-      description="Demand Metric is agile task management & marketing calendar software powered by 1,000+ tools, training, reports and other resources for marketers."
+      description={`Demand Metric is agile task management & marketing calendar software powered by 1,000+ tools, training, reports and other resources for marketers.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -86,7 +86,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Demand Metric</title>
-          <meta name="description" content="Demand Metric is agile task management & marketing calendar software powered by 1,000+ tools, training, reports and other resources for marketers." />
+          <meta name="description" content={`Demand Metric is agile task management & marketing calendar software powered by 1,000+ tools, training, reports and other resources for marketers.`} />
         </>
       ),
     },

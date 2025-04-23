@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Cardconnect"
-      description="CardConnect provides simple payment processing, seamless integrations and powerful security solutions for SMBs, software companies and enterprise businesses."
+      description={`CardConnect provides simple payment processing, seamless integrations and powerful security solutions for SMBs, software companies and enterprise businesses.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +53,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Cardconnect</title>
-          <meta name="description" content="CardConnect provides simple payment processing, seamless integrations and powerful security solutions for SMBs, software companies and enterprise businesses." />
+          <meta name="description" content={`CardConnect provides simple payment processing, seamless integrations and powerful security solutions for SMBs, software companies and enterprise businesses.`} />
         </>
       ),
     },

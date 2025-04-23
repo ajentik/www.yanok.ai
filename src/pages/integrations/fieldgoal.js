@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="FieldGoal"
-      description="FieldGoal provides form endpoints as a service, so your simple sites can stay simple."
+      description={`FieldGoal provides form endpoints as a service, so your simple sites can stay simple.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>FieldGoal</title>
-          <meta name="description" content="FieldGoal provides form endpoints as a service, so your simple sites can stay simple." />
+          <meta name="description" content={`FieldGoal provides form endpoints as a service, so your simple sites can stay simple.`} />
         </>
       ),
     },

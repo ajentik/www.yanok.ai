@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="SendOwl"
-      description="SendOwl's mission is to increase digital product sales globally. Sell your digital products how and where you want."
+      description={`SendOwl's mission is to increase digital product sales globally. Sell your digital products how and where you want.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -72,7 +72,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>SendOwl</title>
-          <meta name="description" content="SendOwl's mission is to increase digital product sales globally. Sell your digital products how and where you want." />
+          <meta name="description" content={`SendOwl's mission is to increase digital product sales globally. Sell your digital products how and where you want.`} />
         </>
       ),
     },

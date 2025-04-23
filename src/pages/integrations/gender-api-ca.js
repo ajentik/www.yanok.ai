@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Gender-API.com"
-      description="Gender API is an API which returns if a first name (like Mike, Barbara, Sam) or a full name (like Vanessa Campbell) is either male or female."
+      description={`Gender API is an API which returns if a first name (like Mike, Barbara, Sam) or a full name (like Vanessa Campbell) is either male or female.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -67,7 +67,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Gender-API.com</title>
-          <meta name="description" content="Gender API is an API which returns if a first name (like Mike, Barbara, Sam) or a full name (like Vanessa Campbell) is either male or female." />
+          <meta name="description" content={`Gender API is an API which returns if a first name (like Mike, Barbara, Sam) or a full name (like Vanessa Campbell) is either male or female.`} />
         </>
       ),
     },

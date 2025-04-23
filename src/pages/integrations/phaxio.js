@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Phaxio"
-      description="Super simple fax API for developers. Send and receive faxes, and pay as you go."
+      description={`Super simple fax API for developers. Send and receive faxes, and pay as you go.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -66,7 +66,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Phaxio</title>
-          <meta name="description" content="Super simple fax API for developers. Send and receive faxes, and pay as you go." />
+          <meta name="description" content={`Super simple fax API for developers. Send and receive faxes, and pay as you go.`} />
         </>
       ),
     },

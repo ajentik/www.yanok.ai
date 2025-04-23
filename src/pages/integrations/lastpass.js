@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="LastPass"
-      description="LastPass (a product of LogMeIn) is a freemium password manager that stores encrypted passwords online."
+      description={`LastPass (a product of LogMeIn) is a freemium password manager that stores encrypted passwords online.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>LastPass</title>
-          <meta name="description" content="LastPass (a product of LogMeIn) is a freemium password manager that stores encrypted passwords online." />
+          <meta name="description" content={`LastPass (a product of LogMeIn) is a freemium password manager that stores encrypted passwords online.`} />
         </>
       ),
     },

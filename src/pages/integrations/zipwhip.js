@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Zipwhip"
-      description="Zipwhip is a text messaging platform which enables you to send and receive texts to and from an existing landline or toll free number."
+      description={`Zipwhip is a text messaging platform which enables you to send and receive texts to and from an existing landline or toll free number.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -71,7 +71,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Zipwhip</title>
-          <meta name="description" content="Zipwhip is a text messaging platform which enables you to send and receive texts to and from an existing landline or toll free number." />
+          <meta name="description" content={`Zipwhip is a text messaging platform which enables you to send and receive texts to and from an existing landline or toll free number.`} />
         </>
       ),
     },

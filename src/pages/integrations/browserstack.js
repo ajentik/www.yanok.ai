@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="BrowserStack"
-      description="BrowserStack is a reliable cross-browser and device testing platform helping you test across 2000+ combinations."
+      description={`BrowserStack is a reliable cross-browser and device testing platform helping you test across 2000+ combinations.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -66,7 +66,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>BrowserStack</title>
-          <meta name="description" content="BrowserStack is a reliable cross-browser and device testing platform helping you test across 2000+ combinations." />
+          <meta name="description" content={`BrowserStack is a reliable cross-browser and device testing platform helping you test across 2000+ combinations.`} />
         </>
       ),
     },

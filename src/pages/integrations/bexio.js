@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="bexio"
-      description="Bexio is a business platform for offering accounting, invoices, payroll, and more for small companies in Switzerland."
+      description={`Bexio is a business platform for offering accounting, invoices, payroll, and more for small companies in Switzerland.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -226,7 +226,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>bexio</title>
-          <meta name="description" content="Bexio is a business platform for offering accounting, invoices, payroll, and more for small companies in Switzerland." />
+          <meta name="description" content={`Bexio is a business platform for offering accounting, invoices, payroll, and more for small companies in Switzerland.`} />
         </>
       ),
     },

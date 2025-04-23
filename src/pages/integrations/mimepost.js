@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="MimePost"
-      description="Secure SMTP & Email API Service. Inject, Process and Deliver. Nothing gets stored"
+      description={`Secure SMTP & Email API Service. Inject, Process and Deliver. Nothing gets stored`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>MimePost</title>
-          <meta name="description" content="Secure SMTP & Email API Service. Inject, Process and Deliver. Nothing gets stored" />
+          <meta name="description" content={`Secure SMTP & Email API Service. Inject, Process and Deliver. Nothing gets stored`} />
         </>
       ),
     },

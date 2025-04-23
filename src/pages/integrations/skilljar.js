@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Skilljar"
-      description="Skilljar's learning management system (LMS) enables businesses to create, deliver, and track online training courses."
+      description={`Skilljar's learning management system (LMS) enables businesses to create, deliver, and track online training courses.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -67,7 +67,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Skilljar</title>
-          <meta name="description" content="Skilljar's learning management system (LMS) enables businesses to create, deliver, and track online training courses." />
+          <meta name="description" content={`Skilljar's learning management system (LMS) enables businesses to create, deliver, and track online training courses.`} />
         </>
       ),
     },

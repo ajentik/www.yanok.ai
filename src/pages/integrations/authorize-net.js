@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Authorize.net"
-      description="Authorize.net is a world leading payment system."
+      description={`Authorize.net is a world leading payment system.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +53,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Authorize.net</title>
-          <meta name="description" content="Authorize.net is a world leading payment system." />
+          <meta name="description" content={`Authorize.net is a world leading payment system.`} />
         </>
       ),
     },

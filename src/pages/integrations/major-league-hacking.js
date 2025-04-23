@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Major League Hacking"
-      description="Major League Hacking (MLH) is the official student hackathon league. Each year MLH supports over 65.000 students around the world."
+      description={`Major League Hacking (MLH) is the official student hackathon league. Each year MLH supports over 65.000 students around the world.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +53,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Major League Hacking</title>
-          <meta name="description" content="Major League Hacking (MLH) is the official student hackathon league. Each year MLH supports over 65.000 students around the world." />
+          <meta name="description" content={`Major League Hacking (MLH) is the official student hackathon league. Each year MLH supports over 65.000 students around the world.`} />
         </>
       ),
     },

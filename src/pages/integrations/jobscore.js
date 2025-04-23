@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="JobScore"
-      description="JobScore is a powerful, modern applicant tracking system that helps employers get better at recruiting. JobScore includes a branded careers site, tools to build candidate pipeline by posting and sharing jobs and features to review, interview and hire great people."
+      description={`JobScore is a powerful, modern applicant tracking system that helps employers get better at recruiting. JobScore includes a branded careers site, tools to build candidate pipeline by posting and sharing jobs and features to review, interview and hire great people.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -77,7 +77,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>JobScore</title>
-          <meta name="description" content="JobScore is a powerful, modern applicant tracking system that helps employers get better at recruiting. JobScore includes a branded careers site, tools to build candidate pipeline by posting and sharing jobs and features to review, interview and hire great people." />
+          <meta name="description" content={`JobScore is a powerful, modern applicant tracking system that helps employers get better at recruiting. JobScore includes a branded careers site, tools to build candidate pipeline by posting and sharing jobs and features to review, interview and hire great people.`} />
         </>
       ),
     },

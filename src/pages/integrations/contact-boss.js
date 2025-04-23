@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Contact Boss"
-      description="Contact Boss is one of your best options for client management software, offering a better way to track your clients. Contact Boss is the best client management software for Small to Medium Size Businesses, Entrepreneurs, Volunteer or Service Organizations etc."
+      description={`Contact Boss is one of your best options for client management software, offering a better way to track your clients. Contact Boss is the best client management software for Small to Medium Size Businesses, Entrepreneurs, Volunteer or Service Organizations etc.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -62,7 +62,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Contact Boss</title>
-          <meta name="description" content="Contact Boss is one of your best options for client management software, offering a better way to track your clients. Contact Boss is the best client management software for Small to Medium Size Businesses, Entrepreneurs, Volunteer or Service Organizations etc." />
+          <meta name="description" content={`Contact Boss is one of your best options for client management software, offering a better way to track your clients. Contact Boss is the best client management software for Small to Medium Size Businesses, Entrepreneurs, Volunteer or Service Organizations etc.`} />
         </>
       ),
     },

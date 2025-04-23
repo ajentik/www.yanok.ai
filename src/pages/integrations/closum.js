@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="CLOSUM"
-      description="Closum is a inbound marketing platform, focused on small and medium companies to do their own landing pages, newsletters and send sms marketing in a simple way."
+      description={`Closum is a inbound marketing platform, focused on small and medium companies to do their own landing pages, newsletters and send sms marketing in a simple way.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -66,7 +66,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>CLOSUM</title>
-          <meta name="description" content="Closum is a inbound marketing platform, focused on small and medium companies to do their own landing pages, newsletters and send sms marketing in a simple way." />
+          <meta name="description" content={`Closum is a inbound marketing platform, focused on small and medium companies to do their own landing pages, newsletters and send sms marketing in a simple way.`} />
         </>
       ),
     },

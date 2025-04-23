@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="DigitalChalk"
-      description="DigitalChalk by Sciolytix is an award-winning LMS for delivering corporate training and powering profitable continuing education businesses."
+      description={`DigitalChalk by Sciolytix is an award-winning LMS for delivering corporate training and powering profitable continuing education businesses.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -81,7 +81,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>DigitalChalk</title>
-          <meta name="description" content="DigitalChalk by Sciolytix is an award-winning LMS for delivering corporate training and powering profitable continuing education businesses." />
+          <meta name="description" content={`DigitalChalk by Sciolytix is an award-winning LMS for delivering corporate training and powering profitable continuing education businesses.`} />
         </>
       ),
     },

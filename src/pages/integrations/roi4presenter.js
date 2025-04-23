@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Roi4Presenter"
-      description="Roi4Presenter is a web service and mobile application for online presentations and product demo, lead generation and outreach."
+      description={`Roi4Presenter is a web service and mobile application for online presentations and product demo, lead generation and outreach.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -76,7 +76,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Roi4Presenter</title>
-          <meta name="description" content="Roi4Presenter is a web service and mobile application for online presentations and product demo, lead generation and outreach." />
+          <meta name="description" content={`Roi4Presenter is a web service and mobile application for online presentations and product demo, lead generation and outreach.`} />
         </>
       ),
     },

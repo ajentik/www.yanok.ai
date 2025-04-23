@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="UpdaterCloud"
-      description="UpdaterCloud is a fast and flexible way to integrate web updates support with optional license key authorization to your free or premium web applications."
+      description={`UpdaterCloud is a fast and flexible way to integrate web updates support with optional license key authorization to your free or premium web applications.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -176,7 +176,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>UpdaterCloud</title>
-          <meta name="description" content="UpdaterCloud is a fast and flexible way to integrate web updates support with optional license key authorization to your free or premium web applications." />
+          <meta name="description" content={`UpdaterCloud is a fast and flexible way to integrate web updates support with optional license key authorization to your free or premium web applications.`} />
         </>
       ),
     },

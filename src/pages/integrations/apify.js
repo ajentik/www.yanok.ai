@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Apify"
-      description="Apify is a serverless computing platform built for web automation. Turn any website into an API in a few minutes."
+      description={`Apify is a serverless computing platform built for web automation. Turn any website into an API in a few minutes.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -96,7 +96,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Apify</title>
-          <meta name="description" content="Apify is a serverless computing platform built for web automation. Turn any website into an API in a few minutes." />
+          <meta name="description" content={`Apify is a serverless computing platform built for web automation. Turn any website into an API in a few minutes.`} />
         </>
       ),
     },

@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="VoIP.ms"
-      description="VoIP.ms is a cloud-based, self-serve and contract-free communication platform. It enables business and home users with voice, SMS, and fax."
+      description={`VoIP.ms is a cloud-based, self-serve and contract-free communication platform. It enables business and home users with voice, SMS, and fax.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -141,7 +141,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>VoIP.ms</title>
-          <meta name="description" content="VoIP.ms is a cloud-based, self-serve and contract-free communication platform. It enables business and home users with voice, SMS, and fax." />
+          <meta name="description" content={`VoIP.ms is a cloud-based, self-serve and contract-free communication platform. It enables business and home users with voice, SMS, and fax.`} />
         </>
       ),
     },

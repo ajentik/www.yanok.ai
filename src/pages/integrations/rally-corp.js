@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Rally Corp"
-      description="Rally is for Charities & Causes Who Make a Lasting Impact. Use conversational text messaging to forge unbreakable relationships with donors and volunteers."
+      description={`Rally is for Charities & Causes Who Make a Lasting Impact. Use conversational text messaging to forge unbreakable relationships with donors and volunteers.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -71,7 +71,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Rally Corp</title>
-          <meta name="description" content="Rally is for Charities & Causes Who Make a Lasting Impact. Use conversational text messaging to forge unbreakable relationships with donors and volunteers." />
+          <meta name="description" content={`Rally is for Charities & Causes Who Make a Lasting Impact. Use conversational text messaging to forge unbreakable relationships with donors and volunteers.`} />
         </>
       ),
     },

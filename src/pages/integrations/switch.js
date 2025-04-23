@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Switch"
-      description="Easily and securely send business mail online. Switch eliminates your mail preparation time and helps you avoid trips to the Post Office."
+      description={`Easily and securely send business mail online. Switch eliminates your mail preparation time and helps you avoid trips to the Post Office.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Switch</title>
-          <meta name="description" content="Easily and securely send business mail online. Switch eliminates your mail preparation time and helps you avoid trips to the Post Office." />
+          <meta name="description" content={`Easily and securely send business mail online. Switch eliminates your mail preparation time and helps you avoid trips to the Post Office.`} />
         </>
       ),
     },

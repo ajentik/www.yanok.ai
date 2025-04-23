@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="LogiONE Document"
-      description="LogiONE Document is a secure cloud base solution to store and share files"
+      description={`LogiONE Document is a secure cloud base solution to store and share files`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -86,7 +86,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>LogiONE Document</title>
-          <meta name="description" content="LogiONE Document is a secure cloud base solution to store and share files" />
+          <meta name="description" content={`LogiONE Document is a secure cloud base solution to store and share files`} />
         </>
       ),
     },

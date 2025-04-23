@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="RescueTime"
-      description="RescueTime helps you understand how you spend your time on the computer by automatically keeping a log of the time you spend on different applications and websites. Having an accurate idea of how you time is spent makes it easy to stay productive and balanced."
+      description={`RescueTime helps you understand how you spend your time on the computer by automatically keeping a log of the time you spend on different applications and websites. Having an accurate idea of how you time is spent makes it easy to stay productive and balanced.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -96,7 +96,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>RescueTime</title>
-          <meta name="description" content="RescueTime helps you understand how you spend your time on the computer by automatically keeping a log of the time you spend on different applications and websites. Having an accurate idea of how you time is spent makes it easy to stay productive and balanced." />
+          <meta name="description" content={`RescueTime helps you understand how you spend your time on the computer by automatically keeping a log of the time you spend on different applications and websites. Having an accurate idea of how you time is spent makes it easy to stay productive and balanced.`} />
         </>
       ),
     },

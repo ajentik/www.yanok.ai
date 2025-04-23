@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Snowflake Computing"
-      description="Snowflake Elastic Data Warehouse allows corporate users to store and analyze data using cloud-based hardware and software."
+      description={`Snowflake Elastic Data Warehouse allows corporate users to store and analyze data using cloud-based hardware and software.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +53,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Snowflake Computing</title>
-          <meta name="description" content="Snowflake Elastic Data Warehouse allows corporate users to store and analyze data using cloud-based hardware and software." />
+          <meta name="description" content={`Snowflake Elastic Data Warehouse allows corporate users to store and analyze data using cloud-based hardware and software.`} />
         </>
       ),
     },

@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Weather by Zapier"
-      description="Trigger off weather conditions in your local area. (Powered by Dark Sky)"
+      description={`Trigger off weather conditions in your local area. (Powered by Dark Sky)`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -71,7 +71,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Weather by Zapier</title>
-          <meta name="description" content="Trigger off weather conditions in your local area. (Powered by Dark Sky)" />
+          <meta name="description" content={`Trigger off weather conditions in your local area. (Powered by Dark Sky)`} />
         </>
       ),
     },

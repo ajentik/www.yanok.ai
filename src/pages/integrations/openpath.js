@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Openpath"
-      description="Openpath provides mobile enabled cloud-based access control system solutions that support mobile phone, badge, and key card credentials, and PIN codes."
+      description={`Openpath provides mobile enabled cloud-based access control system solutions that support mobile phone, badge, and key card credentials, and PIN codes.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +53,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Openpath</title>
-          <meta name="description" content="Openpath provides mobile enabled cloud-based access control system solutions that support mobile phone, badge, and key card credentials, and PIN codes." />
+          <meta name="description" content={`Openpath provides mobile enabled cloud-based access control system solutions that support mobile phone, badge, and key card credentials, and PIN codes.`} />
         </>
       ),
     },

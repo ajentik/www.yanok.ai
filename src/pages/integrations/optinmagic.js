@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="OptinMagic"
-      description="Grow your mailing list. Turn traffics into sales and keeps them coming back to you with new offers and promotional emails."
+      description={`Grow your mailing list. Turn traffics into sales and keeps them coming back to you with new offers and promotional emails.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>OptinMagic</title>
-          <meta name="description" content="Grow your mailing list. Turn traffics into sales and keeps them coming back to you with new offers and promotional emails." />
+          <meta name="description" content={`Grow your mailing list. Turn traffics into sales and keeps them coming back to you with new offers and promotional emails.`} />
         </>
       ),
     },

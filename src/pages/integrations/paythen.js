@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Paythen"
-      description="Paythen lets businesses offer payment plans, one time payments, or a choice of both to their customers in under 60 seconds."
+      description={`Paythen lets businesses offer payment plans, one time payments, or a choice of both to their customers in under 60 seconds.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Paythen</title>
-          <meta name="description" content="Paythen lets businesses offer payment plans, one time payments, or a choice of both to their customers in under 60 seconds." />
+          <meta name="description" content={`Paythen lets businesses offer payment plans, one time payments, or a choice of both to their customers in under 60 seconds.`} />
         </>
       ),
     },

@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Textiful"
-      description="Textiful is a "text to join" service that captures email addresses and other information at live events using SMS text messages."
+      description={`Textiful is a `}text to join" service that captures email addresses and other information at live events using SMS text messages."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -71,7 +71,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Textiful</title>
-          <meta name="description" content="Textiful is a "text to join" service that captures email addresses and other information at live events using SMS text messages." />
+          <meta name="description" content={`Textiful is a `}text to join" service that captures email addresses and other information at live events using SMS text messages." />
         </>
       ),
     },

@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="ATS Anywhere"
-      description="ATS Anywhere allows API usage of our applicant tracking system, which companies can use to post jobs online, manage applicants and hire great employees."
+      description={`ATS Anywhere allows API usage of our applicant tracking system, which companies can use to post jobs online, manage applicants and hire great employees.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -62,7 +62,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>ATS Anywhere</title>
-          <meta name="description" content="ATS Anywhere allows API usage of our applicant tracking system, which companies can use to post jobs online, manage applicants and hire great employees." />
+          <meta name="description" content={`ATS Anywhere allows API usage of our applicant tracking system, which companies can use to post jobs online, manage applicants and hire great employees.`} />
         </>
       ),
     },

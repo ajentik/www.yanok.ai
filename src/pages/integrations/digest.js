@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Digest by Zapier"
-      description="Digest captures info from multiple events in your workflows and collects them in a single easily consumed summary that can be sent to any app."
+      description={`Digest captures info from multiple events in your workflows and collects them in a single easily consumed summary that can be sent to any app.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -67,7 +67,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Digest by Zapier</title>
-          <meta name="description" content="Digest captures info from multiple events in your workflows and collects them in a single easily consumed summary that can be sent to any app." />
+          <meta name="description" content={`Digest captures info from multiple events in your workflows and collects them in a single easily consumed summary that can be sent to any app.`} />
         </>
       ),
     },

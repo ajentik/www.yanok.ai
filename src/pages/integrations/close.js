@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Close"
-      description="Close is a sales productivity platform built to help you close more deals. With built-in calling, SMS, and email—your team can communicate with prospects and customers all in one place. It’s an "all-in-one" platform which you can use standalone without needing any other sales emails tools or calling products."
+      description={`Close is a sales productivity platform built to help you close more deals. With built-in calling, SMS, and email—your team can communicate with prospects and customers all in one place. It’s an `}all-in-one" platform which you can use standalone without needing any other sales emails tools or calling products."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -426,7 +426,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Close</title>
-          <meta name="description" content="Close is a sales productivity platform built to help you close more deals. With built-in calling, SMS, and email—your team can communicate with prospects and customers all in one place. It’s an "all-in-one" platform which you can use standalone without needing any other sales emails tools or calling products." />
+          <meta name="description" content={`Close is a sales productivity platform built to help you close more deals. With built-in calling, SMS, and email—your team can communicate with prospects and customers all in one place. It’s an `}all-in-one" platform which you can use standalone without needing any other sales emails tools or calling products." />
         </>
       ),
     },

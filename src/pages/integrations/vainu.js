@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Vainu"
-      description="Platform for updating your CRM or marketing automation tool with real-time company information."
+      description={`Platform for updating your CRM or marketing automation tool with real-time company information.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -66,7 +66,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Vainu</title>
-          <meta name="description" content="Platform for updating your CRM or marketing automation tool with real-time company information." />
+          <meta name="description" content={`Platform for updating your CRM or marketing automation tool with real-time company information.`} />
         </>
       ),
     },

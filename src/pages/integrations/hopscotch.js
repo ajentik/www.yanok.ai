@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Hopscotch"
-      description="The only all-in-one social media management platform built to save you time."
+      description={`The only all-in-one social media management platform built to save you time.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -111,7 +111,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Hopscotch</title>
-          <meta name="description" content="The only all-in-one social media management platform built to save you time." />
+          <meta name="description" content={`The only all-in-one social media management platform built to save you time.`} />
         </>
       ),
     },

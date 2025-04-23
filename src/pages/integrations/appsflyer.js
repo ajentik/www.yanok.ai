@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Appsflyer"
-      description="AppsFlyer is the global leading platform for Mobile Attribution & Marketing Analytics."
+      description={`AppsFlyer is the global leading platform for Mobile Attribution & Marketing Analytics.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +53,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Appsflyer</title>
-          <meta name="description" content="AppsFlyer is the global leading platform for Mobile Attribution & Marketing Analytics." />
+          <meta name="description" content={`AppsFlyer is the global leading platform for Mobile Attribution & Marketing Analytics.`} />
         </>
       ),
     },

@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Ivanti Service Desk"
-      description="Ivanti Service Desk is IT service desk software designed to be configurable and requires no coding in order to implement."
+      description={`Ivanti Service Desk is IT service desk software designed to be configurable and requires no coding in order to implement.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -77,7 +77,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Ivanti Service Desk</title>
-          <meta name="description" content="Ivanti Service Desk is IT service desk software designed to be configurable and requires no coding in order to implement." />
+          <meta name="description" content={`Ivanti Service Desk is IT service desk software designed to be configurable and requires no coding in order to implement.`} />
         </>
       ),
     },

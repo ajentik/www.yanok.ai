@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Meethue"
-      description="Your personal wireless lighting that lets you easily control your light from your device and create the right ambiance for your every moments."
+      description={`Your personal wireless lighting that lets you easily control your light from your device and create the right ambiance for your every moments.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +53,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Meethue</title>
-          <meta name="description" content="Your personal wireless lighting that lets you easily control your light from your device and create the right ambiance for your every moments." />
+          <meta name="description" content={`Your personal wireless lighting that lets you easily control your light from your device and create the right ambiance for your every moments.`} />
         </>
       ),
     },

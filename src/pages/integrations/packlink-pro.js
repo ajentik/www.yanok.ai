@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Packlink PRO"
-      description="Packlink Pro is a professional shipping platform that allows you to automate your shipment process."
+      description={`Packlink Pro is a professional shipping platform that allows you to automate your shipment process.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -71,7 +71,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Packlink PRO</title>
-          <meta name="description" content="Packlink Pro is a professional shipping platform that allows you to automate your shipment process." />
+          <meta name="description" content={`Packlink Pro is a professional shipping platform that allows you to automate your shipment process.`} />
         </>
       ),
     },

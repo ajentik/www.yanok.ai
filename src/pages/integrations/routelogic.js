@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="RouteLogic"
-      description="RouteLogic helps you make the most efficient routes and provides everything you need for a seamless customer experience."
+      description={`RouteLogic helps you make the most efficient routes and provides everything you need for a seamless customer experience.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -86,7 +86,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>RouteLogic</title>
-          <meta name="description" content="RouteLogic helps you make the most efficient routes and provides everything you need for a seamless customer experience." />
+          <meta name="description" content={`RouteLogic helps you make the most efficient routes and provides everything you need for a seamless customer experience.`} />
         </>
       ),
     },

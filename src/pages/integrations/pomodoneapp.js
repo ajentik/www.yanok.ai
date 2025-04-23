@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="PomoDoneApp"
-      description="Pomodone app enhances your task management by using the Pomodoro technique to boost your efficiency with controlled chunks of productivity. Prioritize your tasks, gain focus on them, and get more work done."
+      description={`Pomodone app enhances your task management by using the Pomodoro technique to boost your efficiency with controlled chunks of productivity. Prioritize your tasks, gain focus on them, and get more work done.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -71,7 +71,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>PomoDoneApp</title>
-          <meta name="description" content="Pomodone app enhances your task management by using the Pomodoro technique to boost your efficiency with controlled chunks of productivity. Prioritize your tasks, gain focus on them, and get more work done." />
+          <meta name="description" content={`Pomodone app enhances your task management by using the Pomodoro technique to boost your efficiency with controlled chunks of productivity. Prioritize your tasks, gain focus on them, and get more work done.`} />
         </>
       ),
     },

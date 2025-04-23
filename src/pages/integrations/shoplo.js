@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Shoplo"
-      description="Sell your products via your own online store and multiple sales channels. Beautiful store themes and multichannel selling all in one place."
+      description={`Sell your products via your own online store and multiple sales channels. Beautiful store themes and multichannel selling all in one place.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +53,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Shoplo</title>
-          <meta name="description" content="Sell your products via your own online store and multiple sales channels. Beautiful store themes and multichannel selling all in one place." />
+          <meta name="description" content={`Sell your products via your own online store and multiple sales channels. Beautiful store themes and multichannel selling all in one place.`} />
         </>
       ),
     },

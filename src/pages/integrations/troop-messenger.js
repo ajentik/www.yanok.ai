@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Troop Messenger"
-      description="Troop Messenger is a business instant messaging & team collaboration application."
+      description={`Troop Messenger is a business instant messaging & team collaboration application.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -76,7 +76,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Troop Messenger</title>
-          <meta name="description" content="Troop Messenger is a business instant messaging & team collaboration application." />
+          <meta name="description" content={`Troop Messenger is a business instant messaging & team collaboration application.`} />
         </>
       ),
     },

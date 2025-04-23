@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Fliplet"
-      description="Fliplet empowers businesses to operate multiple apps without a large development team. Avoid the development delays, infrequent updates and spiralling maintenance costs that kill good app ideas."
+      description={`Fliplet empowers businesses to operate multiple apps without a large development team. Avoid the development delays, infrequent updates and spiralling maintenance costs that kill good app ideas.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -76,7 +76,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Fliplet</title>
-          <meta name="description" content="Fliplet empowers businesses to operate multiple apps without a large development team. Avoid the development delays, infrequent updates and spiralling maintenance costs that kill good app ideas." />
+          <meta name="description" content={`Fliplet empowers businesses to operate multiple apps without a large development team. Avoid the development delays, infrequent updates and spiralling maintenance costs that kill good app ideas.`} />
         </>
       ),
     },

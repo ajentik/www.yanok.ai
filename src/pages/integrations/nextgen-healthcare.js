@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Nextgen Healthcare"
-      description="NextGen Healthcare Information Systems provides electronic practice management and medical record systems for physician practices."
+      description={`NextGen Healthcare Information Systems provides electronic practice management and medical record systems for physician practices.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +53,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Nextgen Healthcare</title>
-          <meta name="description" content="NextGen Healthcare Information Systems provides electronic practice management and medical record systems for physician practices." />
+          <meta name="description" content={`NextGen Healthcare Information Systems provides electronic practice management and medical record systems for physician practices.`} />
         </>
       ),
     },

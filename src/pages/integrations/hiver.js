@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Hiver"
-      description="Hiver is a Gmail-based helpdesk that helps customer service teams easily access, assign and track customer emails on shared mailboxes."
+      description={`Hiver is a Gmail-based helpdesk that helps customer service teams easily access, assign and track customer emails on shared mailboxes.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -92,7 +92,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Hiver</title>
-          <meta name="description" content="Hiver is a Gmail-based helpdesk that helps customer service teams easily access, assign and track customer emails on shared mailboxes." />
+          <meta name="description" content={`Hiver is a Gmail-based helpdesk that helps customer service teams easily access, assign and track customer emails on shared mailboxes.`} />
         </>
       ),
     },

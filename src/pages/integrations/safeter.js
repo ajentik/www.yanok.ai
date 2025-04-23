@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Safeter"
-      description="Safeter is a system for employers to manage the reopening of their workplaces, and to keep employees safe."
+      description={`Safeter is a system for employers to manage the reopening of their workplaces, and to keep employees safe.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -71,7 +71,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Safeter</title>
-          <meta name="description" content="Safeter is a system for employers to manage the reopening of their workplaces, and to keep employees safe." />
+          <meta name="description" content={`Safeter is a system for employers to manage the reopening of their workplaces, and to keep employees safe.`} />
         </>
       ),
     },

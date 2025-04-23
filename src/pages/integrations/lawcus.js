@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Lawcus"
-      description="Lawcus is a practice management tool that enables lawyers to organize matters and automate consistent processes to help deliver more with transparency and less effort."
+      description={`Lawcus is a practice management tool that enables lawyers to organize matters and automate consistent processes to help deliver more with transparency and less effort.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -171,7 +171,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Lawcus</title>
-          <meta name="description" content="Lawcus is a practice management tool that enables lawyers to organize matters and automate consistent processes to help deliver more with transparency and less effort." />
+          <meta name="description" content={`Lawcus is a practice management tool that enables lawyers to organize matters and automate consistent processes to help deliver more with transparency and less effort.`} />
         </>
       ),
     },

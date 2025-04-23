@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Heyhack"
-      description="Heyhack automatically scans web applications for common vulnerabilities such as broken access control, cross-site scripting, and SQL injection."
+      description={`Heyhack automatically scans web applications for common vulnerabilities such as broken access control, cross-site scripting, and SQL injection.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -71,7 +71,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Heyhack</title>
-          <meta name="description" content="Heyhack automatically scans web applications for common vulnerabilities such as broken access control, cross-site scripting, and SQL injection." />
+          <meta name="description" content={`Heyhack automatically scans web applications for common vulnerabilities such as broken access control, cross-site scripting, and SQL injection.`} />
         </>
       ),
     },

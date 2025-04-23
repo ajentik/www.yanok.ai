@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="pdfFiller"
-      description="pdfFiller is an online PDF editor, form builder and eSignature solution that makes it fast, easy and secure to manage your documents on any computer or mobile device."
+      description={`pdfFiller is an online PDF editor, form builder and eSignature solution that makes it fast, easy and secure to manage your documents on any computer or mobile device.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -101,7 +101,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>pdfFiller</title>
-          <meta name="description" content="pdfFiller is an online PDF editor, form builder and eSignature solution that makes it fast, easy and secure to manage your documents on any computer or mobile device." />
+          <meta name="description" content={`pdfFiller is an online PDF editor, form builder and eSignature solution that makes it fast, easy and secure to manage your documents on any computer or mobile device.`} />
         </>
       ),
     },

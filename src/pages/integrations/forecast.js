@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Forecast"
-      description="Forecast is a full-suite business platform that enables professional service organizations to run efficiently and predictably in one AI-powered software."
+      description={`Forecast is a full-suite business platform that enables professional service organizations to run efficiently and predictably in one AI-powered software.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -72,7 +72,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Forecast</title>
-          <meta name="description" content="Forecast is a full-suite business platform that enables professional service organizations to run efficiently and predictably in one AI-powered software." />
+          <meta name="description" content={`Forecast is a full-suite business platform that enables professional service organizations to run efficiently and predictably in one AI-powered software.`} />
         </>
       ),
     },

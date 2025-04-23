@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Mindstamp"
-      description="Mindstamp is an interactive video solution that helps you increase customer engagement, collect data, drive actions, and automate workflows"
+      description={`Mindstamp is an interactive video solution that helps you increase customer engagement, collect data, drive actions, and automate workflows`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -67,7 +67,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Mindstamp</title>
-          <meta name="description" content="Mindstamp is an interactive video solution that helps you increase customer engagement, collect data, drive actions, and automate workflows" />
+          <meta name="description" content={`Mindstamp is an interactive video solution that helps you increase customer engagement, collect data, drive actions, and automate workflows`} />
         </>
       ),
     },

@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Avvo"
-      description="An online marketplace for legal services, that provides lawyer referrals and access to a database of legal information consisting primarily of previously answered questions."
+      description={`An online marketplace for legal services, that provides lawyer referrals and access to a database of legal information consisting primarily of previously answered questions.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +53,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Avvo</title>
-          <meta name="description" content="An online marketplace for legal services, that provides lawyer referrals and access to a database of legal information consisting primarily of previously answered questions." />
+          <meta name="description" content={`An online marketplace for legal services, that provides lawyer referrals and access to a database of legal information consisting primarily of previously answered questions.`} />
         </>
       ),
     },

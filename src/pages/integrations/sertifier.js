@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Sertifier"
-      description="Sertifier is a full-stack solution that enables its users to design, send and store smart certificates using blockchain."
+      description={`Sertifier is a full-stack solution that enables its users to design, send and store smart certificates using blockchain.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -106,7 +106,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Sertifier</title>
-          <meta name="description" content="Sertifier is a full-stack solution that enables its users to design, send and store smart certificates using blockchain." />
+          <meta name="description" content={`Sertifier is a full-stack solution that enables its users to design, send and store smart certificates using blockchain.`} />
         </>
       ),
     },

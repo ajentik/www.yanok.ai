@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Referrizer"
-      description="Referrizer combines CRM and all aspects of marketing automation into a single and easy-to-use platform, making customer acquisition and retention easy."
+      description={`Referrizer combines CRM and all aspects of marketing automation into a single and easy-to-use platform, making customer acquisition and retention easy.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -66,7 +66,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Referrizer</title>
-          <meta name="description" content="Referrizer combines CRM and all aspects of marketing automation into a single and easy-to-use platform, making customer acquisition and retention easy." />
+          <meta name="description" content={`Referrizer combines CRM and all aspects of marketing automation into a single and easy-to-use platform, making customer acquisition and retention easy.`} />
         </>
       ),
     },

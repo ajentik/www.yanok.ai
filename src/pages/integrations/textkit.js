@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="TextKit"
-      description="TextKit provides ready-to-use APIs for Natural Language Processing and Text Analysis without the hassles of running your own models"
+      description={`TextKit provides ready-to-use APIs for Natural Language Processing and Text Analysis without the hassles of running your own models`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>TextKit</title>
-          <meta name="description" content="TextKit provides ready-to-use APIs for Natural Language Processing and Text Analysis without the hassles of running your own models" />
+          <meta name="description" content={`TextKit provides ready-to-use APIs for Natural Language Processing and Text Analysis without the hassles of running your own models`} />
         </>
       ),
     },

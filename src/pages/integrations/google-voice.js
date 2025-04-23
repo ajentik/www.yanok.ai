@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Google Voice"
-      description="Google Voice is a telephone service that provides call forwarding and voicemail services, voice and text messaging."
+      description={`Google Voice is a telephone service that provides call forwarding and voicemail services, voice and text messaging.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +53,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Google Voice</title>
-          <meta name="description" content="Google Voice is a telephone service that provides call forwarding and voicemail services, voice and text messaging." />
+          <meta name="description" content={`Google Voice is a telephone service that provides call forwarding and voicemail services, voice and text messaging.`} />
         </>
       ),
     },

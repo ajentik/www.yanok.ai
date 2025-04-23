@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Net-Results"
-      description="Net-Results helps companies increase revenue growth and improve sales efficiency with powerful lead management solutions for marketing and sales."
+      description={`Net-Results helps companies increase revenue growth and improve sales efficiency with powerful lead management solutions for marketing and sales.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +53,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Net-Results</title>
-          <meta name="description" content="Net-Results helps companies increase revenue growth and improve sales efficiency with powerful lead management solutions for marketing and sales." />
+          <meta name="description" content={`Net-Results helps companies increase revenue growth and improve sales efficiency with powerful lead management solutions for marketing and sales.`} />
         </>
       ),
     },

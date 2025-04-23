@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="CloudBlue Connect"
-      description="CloudBlue Connect is a supply automation platform that manages your products and services, contracts, ordering and fulfillment, usage and subscriptions."
+      description={`CloudBlue Connect is a supply automation platform that manages your products and services, contracts, ordering and fulfillment, usage and subscriptions.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -381,7 +381,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>CloudBlue Connect</title>
-          <meta name="description" content="CloudBlue Connect is a supply automation platform that manages your products and services, contracts, ordering and fulfillment, usage and subscriptions." />
+          <meta name="description" content={`CloudBlue Connect is a supply automation platform that manages your products and services, contracts, ordering and fulfillment, usage and subscriptions.`} />
         </>
       ),
     },

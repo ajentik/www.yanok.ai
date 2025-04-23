@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Discord"
-      description="Discord is an all-in-one voice and text chat for gamers."
+      description={`Discord is an all-in-one voice and text chat for gamers.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -96,7 +96,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Discord</title>
-          <meta name="description" content="Discord is an all-in-one voice and text chat for gamers." />
+          <meta name="description" content={`Discord is an all-in-one voice and text chat for gamers.`} />
         </>
       ),
     },

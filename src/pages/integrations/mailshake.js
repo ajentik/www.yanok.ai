@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Mailshake"
-      description="Mailshake is a simple outreach tool that works with any Google account."
+      description={`Mailshake is a simple outreach tool that works with any Google account.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -121,7 +121,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Mailshake</title>
-          <meta name="description" content="Mailshake is a simple outreach tool that works with any Google account." />
+          <meta name="description" content={`Mailshake is a simple outreach tool that works with any Google account.`} />
         </>
       ),
     },

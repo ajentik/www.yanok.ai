@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="ProPet"
-      description="ProPet Software is full-service kennel software that streamlines the day-to-day operations of a dog boarding kennel, daycare, training and/or grooming business."
+      description={`ProPet Software is full-service kennel software that streamlines the day-to-day operations of a dog boarding kennel, daycare, training and/or grooming business.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +53,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>ProPet</title>
-          <meta name="description" content="ProPet Software is full-service kennel software that streamlines the day-to-day operations of a dog boarding kennel, daycare, training and/or grooming business." />
+          <meta name="description" content={`ProPet Software is full-service kennel software that streamlines the day-to-day operations of a dog boarding kennel, daycare, training and/or grooming business.`} />
         </>
       ),
     },

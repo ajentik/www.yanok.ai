@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Cloudi-Fi"
-      description="Cloudi-Fi enhance your Guest experience while accessing your Wifi networks."
+      description={`Cloudi-Fi enhance your Guest experience while accessing your Wifi networks.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Cloudi-Fi</title>
-          <meta name="description" content="Cloudi-Fi enhance your Guest experience while accessing your Wifi networks." />
+          <meta name="description" content={`Cloudi-Fi enhance your Guest experience while accessing your Wifi networks.`} />
         </>
       ),
     },

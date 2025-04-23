@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Oracle Database"
-      description="Oracle Database is a commercial relational or SQL database offering from Oracle. This database backs many critical operations and is in wide use amongst the enterprise."
+      description={`Oracle Database is a commercial relational or SQL database offering from Oracle. This database backs many critical operations and is in wide use amongst the enterprise.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +53,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Oracle Database</title>
-          <meta name="description" content="Oracle Database is a commercial relational or SQL database offering from Oracle. This database backs many critical operations and is in wide use amongst the enterprise." />
+          <meta name="description" content={`Oracle Database is a commercial relational or SQL database offering from Oracle. This database backs many critical operations and is in wide use amongst the enterprise.`} />
         </>
       ),
     },

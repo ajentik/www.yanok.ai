@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Advantage Anywhere"
-      description="The leads, sales & marketing automation machine: CRM, email, video, print, text, landing pages, social, events, sales funnel…all-in-one!"
+      description={`The leads, sales & marketing automation machine: CRM, email, video, print, text, landing pages, social, events, sales funnel…all-in-one!`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -76,7 +76,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Advantage Anywhere</title>
-          <meta name="description" content="The leads, sales & marketing automation machine: CRM, email, video, print, text, landing pages, social, events, sales funnel…all-in-one!" />
+          <meta name="description" content={`The leads, sales & marketing automation machine: CRM, email, video, print, text, landing pages, social, events, sales funnel…all-in-one!`} />
         </>
       ),
     },

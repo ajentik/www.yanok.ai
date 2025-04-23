@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="IP2Location"
-      description="IP2Location is a non-intrusive geo IP solution to help you to identify a visitor's geographical location."
+      description={`IP2Location is a non-intrusive geo IP solution to help you to identify a visitor's geographical location.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>IP2Location</title>
-          <meta name="description" content="IP2Location is a non-intrusive geo IP solution to help you to identify a visitor's geographical location." />
+          <meta name="description" content={`IP2Location is a non-intrusive geo IP solution to help you to identify a visitor's geographical location.`} />
         </>
       ),
     },

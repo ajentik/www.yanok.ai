@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Paths by Zapier"
-      description="Conditional logic for your Zapier workflows. Paths let your apps take different actions based on conditions you choose."
+      description={`Conditional logic for your Zapier workflows. Paths let your apps take different actions based on conditions you choose.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -62,7 +62,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Paths by Zapier</title>
-          <meta name="description" content="Conditional logic for your Zapier workflows. Paths let your apps take different actions based on conditions you choose." />
+          <meta name="description" content={`Conditional logic for your Zapier workflows. Paths let your apps take different actions based on conditions you choose.`} />
         </>
       ),
     },

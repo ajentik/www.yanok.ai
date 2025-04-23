@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Appointible"
-      description="Appointments scheduling made easy. Appointible supports your service business with a simple to use appointment and booking management system."
+      description={`Appointments scheduling made easy. Appointible supports your service business with a simple to use appointment and booking management system.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -86,7 +86,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Appointible</title>
-          <meta name="description" content="Appointments scheduling made easy. Appointible supports your service business with a simple to use appointment and booking management system." />
+          <meta name="description" content={`Appointments scheduling made easy. Appointible supports your service business with a simple to use appointment and booking management system.`} />
         </>
       ),
     },

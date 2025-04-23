@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Any.do"
-      description="Any.do is a simple & powerful way to manage Projects, To-do lists & Reminders. Available on Web, iPhone, Android, Mac, Windows & More."
+      description={`Any.do is a simple & powerful way to manage Projects, To-do lists & Reminders. Available on Web, iPhone, Android, Mac, Windows & More.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -86,7 +86,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Any.do</title>
-          <meta name="description" content="Any.do is a simple & powerful way to manage Projects, To-do lists & Reminders. Available on Web, iPhone, Android, Mac, Windows & More." />
+          <meta name="description" content={`Any.do is a simple & powerful way to manage Projects, To-do lists & Reminders. Available on Web, iPhone, Android, Mac, Windows & More.`} />
         </>
       ),
     },

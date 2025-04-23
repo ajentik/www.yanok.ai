@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Zulip"
-      description="Zulip provides a rich chat interface for real-time and asynchronous team communication."
+      description={`Zulip provides a rich chat interface for real-time and asynchronous team communication.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -62,7 +62,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Zulip</title>
-          <meta name="description" content="Zulip provides a rich chat interface for real-time and asynchronous team communication." />
+          <meta name="description" content={`Zulip provides a rich chat interface for real-time and asynchronous team communication.`} />
         </>
       ),
     },

@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Surefire CRM"
-      description="Surefire CRM is a multi-faceted mortgage industry CRM marketing platform that offers personalized database marketing with unique content."
+      description={`Surefire CRM is a multi-faceted mortgage industry CRM marketing platform that offers personalized database marketing with unique content.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Surefire CRM</title>
-          <meta name="description" content="Surefire CRM is a multi-faceted mortgage industry CRM marketing platform that offers personalized database marketing with unique content." />
+          <meta name="description" content={`Surefire CRM is a multi-faceted mortgage industry CRM marketing platform that offers personalized database marketing with unique content.`} />
         </>
       ),
     },

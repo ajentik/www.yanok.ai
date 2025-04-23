@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Mingdao"
-      description="Mingdao is the leading social collaboration suite for China market, covering messaging, social, task, calendar to file sharing."
+      description={`Mingdao is the leading social collaboration suite for China market, covering messaging, social, task, calendar to file sharing.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -96,7 +96,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Mingdao</title>
-          <meta name="description" content="Mingdao is the leading social collaboration suite for China market, covering messaging, social, task, calendar to file sharing." />
+          <meta name="description" content={`Mingdao is the leading social collaboration suite for China market, covering messaging, social, task, calendar to file sharing.`} />
         </>
       ),
     },

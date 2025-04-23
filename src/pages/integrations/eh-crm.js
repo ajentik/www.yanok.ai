@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="EH CRM"
-      description="EH CRM is a lead CRM made proudly in Mexico. It helps you improve sales pipelines"
+      description={`EH CRM is a lead CRM made proudly in Mexico. It helps you improve sales pipelines`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>EH CRM</title>
-          <meta name="description" content="EH CRM is a lead CRM made proudly in Mexico. It helps you improve sales pipelines" />
+          <meta name="description" content={`EH CRM is a lead CRM made proudly in Mexico. It helps you improve sales pipelines`} />
         </>
       ),
     },

@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="SKILL-LYNC Sales CRM"
-      description="SKILL-LYNC Sales CRM helps to capture leads from different sources."
+      description={`SKILL-LYNC Sales CRM helps to capture leads from different sources.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +53,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>SKILL-LYNC Sales CRM</title>
-          <meta name="description" content="SKILL-LYNC Sales CRM helps to capture leads from different sources." />
+          <meta name="description" content={`SKILL-LYNC Sales CRM helps to capture leads from different sources.`} />
         </>
       ),
     },

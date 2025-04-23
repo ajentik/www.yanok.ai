@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Revaluate"
-      description="Revaluate is an artificial intelligence platform for the real estate and mortgage industries that helps agents and loan officers know when they contacts are likely to move."
+      description={`Revaluate is an artificial intelligence platform for the real estate and mortgage industries that helps agents and loan officers know when they contacts are likely to move.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -71,7 +71,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Revaluate</title>
-          <meta name="description" content="Revaluate is an artificial intelligence platform for the real estate and mortgage industries that helps agents and loan officers know when they contacts are likely to move." />
+          <meta name="description" content={`Revaluate is an artificial intelligence platform for the real estate and mortgage industries that helps agents and loan officers know when they contacts are likely to move.`} />
         </>
       ),
     },

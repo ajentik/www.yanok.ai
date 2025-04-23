@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Trackado"
-      description="Trackado is an easy-to-use contract management platform allowing you to sign, store and monitor your contracts."
+      description={`Trackado is an easy-to-use contract management platform allowing you to sign, store and monitor your contracts.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -61,7 +61,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Trackado</title>
-          <meta name="description" content="Trackado is an easy-to-use contract management platform allowing you to sign, store and monitor your contracts." />
+          <meta name="description" content={`Trackado is an easy-to-use contract management platform allowing you to sign, store and monitor your contracts.`} />
         </>
       ),
     },

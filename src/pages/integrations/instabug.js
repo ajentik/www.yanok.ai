@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Instabug"
-      description="Instabug is a software company that provides bug reporting, crash reporting, in-app chats, and user surveys for mobile apps."
+      description={`Instabug is a software company that provides bug reporting, crash reporting, in-app chats, and user surveys for mobile apps.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +53,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Instabug</title>
-          <meta name="description" content="Instabug is a software company that provides bug reporting, crash reporting, in-app chats, and user surveys for mobile apps." />
+          <meta name="description" content={`Instabug is a software company that provides bug reporting, crash reporting, in-app chats, and user surveys for mobile apps.`} />
         </>
       ),
     },

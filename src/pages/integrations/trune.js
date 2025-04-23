@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="trune"
-      description="TRUNE IS A STRUCTURED ONLINE RETROSPECTIVE TOOL & TEAM FEEDBACK SOFTWARE"
+      description={`TRUNE IS A STRUCTURED ONLINE RETROSPECTIVE TOOL & TEAM FEEDBACK SOFTWARE`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>trune</title>
-          <meta name="description" content="TRUNE IS A STRUCTURED ONLINE RETROSPECTIVE TOOL & TEAM FEEDBACK SOFTWARE" />
+          <meta name="description" content={`TRUNE IS A STRUCTURED ONLINE RETROSPECTIVE TOOL & TEAM FEEDBACK SOFTWARE`} />
         </>
       ),
     },

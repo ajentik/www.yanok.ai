@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="ADP"
-      description="ADP is an American provider of human resources management software and services."
+      description={`ADP is an American provider of human resources management software and services.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +53,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>ADP</title>
-          <meta name="description" content="ADP is an American provider of human resources management software and services." />
+          <meta name="description" content={`ADP is an American provider of human resources management software and services.`} />
         </>
       ),
     },

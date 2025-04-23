@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Zaxaa"
-      description="Zaxaa is a platform that helps online course creators, coaches, and small businesses selling digital products to grow their sales."
+      description={`Zaxaa is a platform that helps online course creators, coaches, and small businesses selling digital products to grow their sales.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -67,7 +67,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Zaxaa</title>
-          <meta name="description" content="Zaxaa is a platform that helps online course creators, coaches, and small businesses selling digital products to grow their sales." />
+          <meta name="description" content={`Zaxaa is a platform that helps online course creators, coaches, and small businesses selling digital products to grow their sales.`} />
         </>
       ),
     },

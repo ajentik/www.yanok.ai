@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Outplay"
-      description="Outplay is a sales engagement tool which helps in adding a personalized touch to the Emails, Calls and Social Actions."
+      description={`Outplay is a sales engagement tool which helps in adding a personalized touch to the Emails, Calls and Social Actions.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -71,7 +71,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Outplay</title>
-          <meta name="description" content="Outplay is a sales engagement tool which helps in adding a personalized touch to the Emails, Calls and Social Actions." />
+          <meta name="description" content={`Outplay is a sales engagement tool which helps in adding a personalized touch to the Emails, Calls and Social Actions.`} />
         </>
       ),
     },

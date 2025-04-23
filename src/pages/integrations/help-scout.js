@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Help Scout"
-      description="Help Scout is the ideal small business help desk. You can deliver great email support and get setup in minutes, without any of the typical help desk complexities."
+      description={`Help Scout is the ideal small business help desk. You can deliver great email support and get setup in minutes, without any of the typical help desk complexities.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -141,7 +141,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Help Scout</title>
-          <meta name="description" content="Help Scout is the ideal small business help desk. You can deliver great email support and get setup in minutes, without any of the typical help desk complexities." />
+          <meta name="description" content={`Help Scout is the ideal small business help desk. You can deliver great email support and get setup in minutes, without any of the typical help desk complexities.`} />
         </>
       ),
     },

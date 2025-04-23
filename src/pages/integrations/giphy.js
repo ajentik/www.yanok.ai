@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Giphy"
-      description="Giphy is the best way to search, share, and discover GIFs on the Internet."
+      description={`Giphy is the best way to search, share, and discover GIFs on the Internet.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Giphy</title>
-          <meta name="description" content="Giphy is the best way to search, share, and discover GIFs on the Internet." />
+          <meta name="description" content={`Giphy is the best way to search, share, and discover GIFs on the Internet.`} />
         </>
       ),
     },

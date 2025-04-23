@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Call Assist"
-      description="Call Assist connect your sales team with new leads instantly and follow up with aging leads automatically through the phone."
+      description={`Call Assist connect your sales team with new leads instantly and follow up with aging leads automatically through the phone.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -81,7 +81,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Call Assist</title>
-          <meta name="description" content="Call Assist connect your sales team with new leads instantly and follow up with aging leads automatically through the phone." />
+          <meta name="description" content={`Call Assist connect your sales team with new leads instantly and follow up with aging leads automatically through the phone.`} />
         </>
       ),
     },

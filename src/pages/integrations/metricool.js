@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Metricool"
-      description="Metricool is an all-in-one social media platform for analyzing, managing, and growing your socials."
+      description={`Metricool is an all-in-one social media platform for analyzing, managing, and growing your socials.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -101,7 +101,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Metricool</title>
-          <meta name="description" content="Metricool is an all-in-one social media platform for analyzing, managing, and growing your socials." />
+          <meta name="description" content={`Metricool is an all-in-one social media platform for analyzing, managing, and growing your socials.`} />
         </>
       ),
     },

@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Leadfox"
-      description="Leadfox is lead management web software that allows you to increase sales."
+      description={`Leadfox is lead management web software that allows you to increase sales.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -76,7 +76,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Leadfox</title>
-          <meta name="description" content="Leadfox is lead management web software that allows you to increase sales." />
+          <meta name="description" content={`Leadfox is lead management web software that allows you to increase sales.`} />
         </>
       ),
     },

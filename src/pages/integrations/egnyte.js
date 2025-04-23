@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Egnyte"
-      description="Egnyte enables users to easily and securely share files on-premises and in the cloud. Egnyte’s award-winning platform integrates with any cloud, storage, device and business application to enable customers to optimize their collaboration environments through secure access, centralized control and unified visibility."
+      description={`Egnyte enables users to easily and securely share files on-premises and in the cloud. Egnyte’s award-winning platform integrates with any cloud, storage, device and business application to enable customers to optimize their collaboration environments through secure access, centralized control and unified visibility.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -66,7 +66,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Egnyte</title>
-          <meta name="description" content="Egnyte enables users to easily and securely share files on-premises and in the cloud. Egnyte’s award-winning platform integrates with any cloud, storage, device and business application to enable customers to optimize their collaboration environments through secure access, centralized control and unified visibility." />
+          <meta name="description" content={`Egnyte enables users to easily and securely share files on-premises and in the cloud. Egnyte’s award-winning platform integrates with any cloud, storage, device and business application to enable customers to optimize their collaboration environments through secure access, centralized control and unified visibility.`} />
         </>
       ),
     },

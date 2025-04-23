@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Formsite"
-      description="Formsite enables non-technical users to build professional quality web forms and surveys with no HTML or coding experience."
+      description={`Formsite enables non-technical users to build professional quality web forms and surveys with no HTML or coding experience.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Formsite</title>
-          <meta name="description" content="Formsite enables non-technical users to build professional quality web forms and surveys with no HTML or coding experience." />
+          <meta name="description" content={`Formsite enables non-technical users to build professional quality web forms and surveys with no HTML or coding experience.`} />
         </>
       ),
     },

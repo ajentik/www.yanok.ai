@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Lucidchart"
-      description="Lucidchart is your solution for visual communication and cross-platform collaboration."
+      description={`Lucidchart is your solution for visual communication and cross-platform collaboration.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -92,7 +92,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Lucidchart</title>
-          <meta name="description" content="Lucidchart is your solution for visual communication and cross-platform collaboration." />
+          <meta name="description" content={`Lucidchart is your solution for visual communication and cross-platform collaboration.`} />
         </>
       ),
     },

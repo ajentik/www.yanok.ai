@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Byteplant Email Validator"
-      description="Byteplant Email-Validator validates email addresses right at the point of entry with a real-time live check to find out if they really exist and accept mail. Stop Bouncing - Start Connecting!"
+      description={`Byteplant Email-Validator validates email addresses right at the point of entry with a real-time live check to find out if they really exist and accept mail. Stop Bouncing - Start Connecting!`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Byteplant Email Validator</title>
-          <meta name="description" content="Byteplant Email-Validator validates email addresses right at the point of entry with a real-time live check to find out if they really exist and accept mail. Stop Bouncing - Start Connecting!" />
+          <meta name="description" content={`Byteplant Email-Validator validates email addresses right at the point of entry with a real-time live check to find out if they really exist and accept mail. Stop Bouncing - Start Connecting!`} />
         </>
       ),
     },

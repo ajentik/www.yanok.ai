@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Project Manager"
-      description="ProjectManager.com is a simple yet powerful online project management tool that enables you and your team to plan, track, monitor and report on your projects in real-time."
+      description={`ProjectManager.com is a simple yet powerful online project management tool that enables you and your team to plan, track, monitor and report on your projects in real-time.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -91,7 +91,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Project Manager</title>
-          <meta name="description" content="ProjectManager.com is a simple yet powerful online project management tool that enables you and your team to plan, track, monitor and report on your projects in real-time." />
+          <meta name="description" content={`ProjectManager.com is a simple yet powerful online project management tool that enables you and your team to plan, track, monitor and report on your projects in real-time.`} />
         </>
       ),
     },

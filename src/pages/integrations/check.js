@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Check"
-      description="Check is an open source web platform for collaborative fact-checking and annotation."
+      description={`Check is an open source web platform for collaborative fact-checking and annotation.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -101,7 +101,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Check</title>
-          <meta name="description" content="Check is an open source web platform for collaborative fact-checking and annotation." />
+          <meta name="description" content={`Check is an open source web platform for collaborative fact-checking and annotation.`} />
         </>
       ),
     },

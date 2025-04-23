@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Wrike"
-      description="Wrike is a flexible project management and collaboration platform that enables you to organize your projects, tasks, plans and discussions. It helps you sync your team’s efforts and track your work progress in real time."
+      description={`Wrike is a flexible project management and collaboration platform that enables you to organize your projects, tasks, plans and discussions. It helps you sync your team’s efforts and track your work progress in real time.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -81,7 +81,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Wrike</title>
-          <meta name="description" content="Wrike is a flexible project management and collaboration platform that enables you to organize your projects, tasks, plans and discussions. It helps you sync your team’s efforts and track your work progress in real time." />
+          <meta name="description" content={`Wrike is a flexible project management and collaboration platform that enables you to organize your projects, tasks, plans and discussions. It helps you sync your team’s efforts and track your work progress in real time.`} />
         </>
       ),
     },

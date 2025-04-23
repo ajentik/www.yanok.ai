@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Steam"
-      description="Steam is a digital distribution platform developed by Valve Corporation for purchasing and playing video games."
+      description={`Steam is a digital distribution platform developed by Valve Corporation for purchasing and playing video games.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -67,7 +67,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Steam</title>
-          <meta name="description" content="Steam is a digital distribution platform developed by Valve Corporation for purchasing and playing video games." />
+          <meta name="description" content={`Steam is a digital distribution platform developed by Valve Corporation for purchasing and playing video games.`} />
         </>
       ),
     },

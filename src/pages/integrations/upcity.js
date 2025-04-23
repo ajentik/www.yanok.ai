@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="UpCity"
-      description="UpCity is a local inbound marketing platform for agencies, providing tools for SEO, reputation management, social media, and reporting."
+      description={`UpCity is a local inbound marketing platform for agencies, providing tools for SEO, reputation management, social media, and reporting.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>UpCity</title>
-          <meta name="description" content="UpCity is a local inbound marketing platform for agencies, providing tools for SEO, reputation management, social media, and reporting." />
+          <meta name="description" content={`UpCity is a local inbound marketing platform for agencies, providing tools for SEO, reputation management, social media, and reporting.`} />
         </>
       ),
     },

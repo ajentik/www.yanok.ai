@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="TextUs"
-      description="TextUs is the leading business-class text messaging platform built specifically for inside sales, recruiting and customer service teams."
+      description={`TextUs is the leading business-class text messaging platform built specifically for inside sales, recruiting and customer service teams.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +53,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>TextUs</title>
-          <meta name="description" content="TextUs is the leading business-class text messaging platform built specifically for inside sales, recruiting and customer service teams." />
+          <meta name="description" content={`TextUs is the leading business-class text messaging platform built specifically for inside sales, recruiting and customer service teams.`} />
         </>
       ),
     },

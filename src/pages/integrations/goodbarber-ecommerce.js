@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="GoodBarber eCommerce"
-      description="GoodBarber is a no-code app building platform to create iOS and Android native apps. With GoodBarber eCommerce, create and manage your online store to sell your products on mobile."
+      description={`GoodBarber is a no-code app building platform to create iOS and Android native apps. With GoodBarber eCommerce, create and manage your online store to sell your products on mobile.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -126,7 +126,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>GoodBarber eCommerce</title>
-          <meta name="description" content="GoodBarber is a no-code app building platform to create iOS and Android native apps. With GoodBarber eCommerce, create and manage your online store to sell your products on mobile." />
+          <meta name="description" content={`GoodBarber is a no-code app building platform to create iOS and Android native apps. With GoodBarber eCommerce, create and manage your online store to sell your products on mobile.`} />
         </>
       ),
     },

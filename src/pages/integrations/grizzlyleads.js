@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="GrizzlyLeads"
-      description="GrizzlyLeads uses multi-platform advertising to connect real estate agents with potential clients."
+      description={`GrizzlyLeads uses multi-platform advertising to connect real estate agents with potential clients.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>GrizzlyLeads</title>
-          <meta name="description" content="GrizzlyLeads uses multi-platform advertising to connect real estate agents with potential clients." />
+          <meta name="description" content={`GrizzlyLeads uses multi-platform advertising to connect real estate agents with potential clients.`} />
         </>
       ),
     },

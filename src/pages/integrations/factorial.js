@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Factorial"
-      description="Factorial is an HR platform for SMEs."
+      description={`Factorial is an HR platform for SMEs.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -336,7 +336,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Factorial</title>
-          <meta name="description" content="Factorial is an HR platform for SMEs." />
+          <meta name="description" content={`Factorial is an HR platform for SMEs.`} />
         </>
       ),
     },

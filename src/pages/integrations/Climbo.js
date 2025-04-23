@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Climbo"
-      description="Climbo is a piece of software for managing, sharing, and generating reviews by invitation."
+      description={`Climbo is a piece of software for managing, sharing, and generating reviews by invitation.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -62,7 +62,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Climbo</title>
-          <meta name="description" content="Climbo is a piece of software for managing, sharing, and generating reviews by invitation." />
+          <meta name="description" content={`Climbo is a piece of software for managing, sharing, and generating reviews by invitation.`} />
         </>
       ),
     },

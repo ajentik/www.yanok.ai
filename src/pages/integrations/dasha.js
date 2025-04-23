@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Dasha"
-      description="Dasha is a conversational-AI-as-a-service platform that lets you embed realistic voice and text conversational capabilities into your apps or products. With a single integration, create smart conversational apps for web, desktop, mobile, IoT and call centers."
+      description={`Dasha is a conversational-AI-as-a-service platform that lets you embed realistic voice and text conversational capabilities into your apps or products. With a single integration, create smart conversational apps for web, desktop, mobile, IoT and call centers.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -81,7 +81,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Dasha</title>
-          <meta name="description" content="Dasha is a conversational-AI-as-a-service platform that lets you embed realistic voice and text conversational capabilities into your apps or products. With a single integration, create smart conversational apps for web, desktop, mobile, IoT and call centers." />
+          <meta name="description" content={`Dasha is a conversational-AI-as-a-service platform that lets you embed realistic voice and text conversational capabilities into your apps or products. With a single integration, create smart conversational apps for web, desktop, mobile, IoT and call centers.`} />
         </>
       ),
     },

@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Bookly"
-      description="Bookly is a free scheduling plugin for WordPress that allows accepting online bookings on your website. Join more than 40,000 businesses all around the world that have already automated their online booking system!"
+      description={`Bookly is a free scheduling plugin for WordPress that allows accepting online bookings on your website. Join more than 40,000 businesses all around the world that have already automated their online booking system!`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -72,7 +72,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Bookly</title>
-          <meta name="description" content="Bookly is a free scheduling plugin for WordPress that allows accepting online bookings on your website. Join more than 40,000 businesses all around the world that have already automated their online booking system!" />
+          <meta name="description" content={`Bookly is a free scheduling plugin for WordPress that allows accepting online bookings on your website. Join more than 40,000 businesses all around the world that have already automated their online booking system!`} />
         </>
       ),
     },

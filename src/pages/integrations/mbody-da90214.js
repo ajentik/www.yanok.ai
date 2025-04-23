@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Mbody 360"
-      description="MBODY360 – Puts an Integrative Health Practitioner in Your Pocket. View custom plans and share your nutrition, exercise, sleep and meditation data with your practitioner."
+      description={`MBODY360 – Puts an Integrative Health Practitioner in Your Pocket. View custom plans and share your nutrition, exercise, sleep and meditation data with your practitioner.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -62,7 +62,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Mbody 360</title>
-          <meta name="description" content="MBODY360 – Puts an Integrative Health Practitioner in Your Pocket. View custom plans and share your nutrition, exercise, sleep and meditation data with your practitioner." />
+          <meta name="description" content={`MBODY360 – Puts an Integrative Health Practitioner in Your Pocket. View custom plans and share your nutrition, exercise, sleep and meditation data with your practitioner.`} />
         </>
       ),
     },

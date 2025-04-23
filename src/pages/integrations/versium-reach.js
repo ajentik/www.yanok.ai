@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Versium REACH"
-      description="Data enrichment tool powered by an industry-leading identity resolution engine that adds contact and insight information to first-party data."
+      description={`Data enrichment tool powered by an industry-leading identity resolution engine that adds contact and insight information to first-party data.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -92,7 +92,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Versium REACH</title>
-          <meta name="description" content="Data enrichment tool powered by an industry-leading identity resolution engine that adds contact and insight information to first-party data." />
+          <meta name="description" content={`Data enrichment tool powered by an industry-leading identity resolution engine that adds contact and insight information to first-party data.`} />
         </>
       ),
     },

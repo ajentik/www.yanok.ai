@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="VerticalResponse"
-      description="VerticalResponse helps you connect with your customers and grow your business through email and social media marketing. With our drag and drop email creator, integrations with Facebook and Twitter, and free templates optimized for mobile phones, you can do all your marketing from one account!"
+      description={`VerticalResponse helps you connect with your customers and grow your business through email and social media marketing. With our drag and drop email creator, integrations with Facebook and Twitter, and free templates optimized for mobile phones, you can do all your marketing from one account!`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -71,7 +71,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>VerticalResponse</title>
-          <meta name="description" content="VerticalResponse helps you connect with your customers and grow your business through email and social media marketing. With our drag and drop email creator, integrations with Facebook and Twitter, and free templates optimized for mobile phones, you can do all your marketing from one account!" />
+          <meta name="description" content={`VerticalResponse helps you connect with your customers and grow your business through email and social media marketing. With our drag and drop email creator, integrations with Facebook and Twitter, and free templates optimized for mobile phones, you can do all your marketing from one account!`} />
         </>
       ),
     },

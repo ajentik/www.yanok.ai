@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="HR Cloud"
-      description="HR Cloud provides seamless On-boarding experience to process new hires."
+      description={`HR Cloud provides seamless On-boarding experience to process new hires.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -111,7 +111,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>HR Cloud</title>
-          <meta name="description" content="HR Cloud provides seamless On-boarding experience to process new hires." />
+          <meta name="description" content={`HR Cloud provides seamless On-boarding experience to process new hires.`} />
         </>
       ),
     },

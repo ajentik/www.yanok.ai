@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="AdEPT AutoText"
-      description="Send TextMessages to Ad-Hoc groups within your school"
+      description={`Send TextMessages to Ad-Hoc groups within your school`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -67,7 +67,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>AdEPT AutoText</title>
-          <meta name="description" content="Send TextMessages to Ad-Hoc groups within your school" />
+          <meta name="description" content={`Send TextMessages to Ad-Hoc groups within your school`} />
         </>
       ),
     },

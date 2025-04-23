@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="NeonCRM"
-      description="Neon is a CRM built by and for people who run nonprofits. Our nonprofit solutions grow communities, inspire audiences and scale your impact."
+      description={`Neon is a CRM built by and for people who run nonprofits. Our nonprofit solutions grow communities, inspire audiences and scale your impact.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -106,7 +106,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>NeonCRM</title>
-          <meta name="description" content="Neon is a CRM built by and for people who run nonprofits. Our nonprofit solutions grow communities, inspire audiences and scale your impact." />
+          <meta name="description" content={`Neon is a CRM built by and for people who run nonprofits. Our nonprofit solutions grow communities, inspire audiences and scale your impact.`} />
         </>
       ),
     },

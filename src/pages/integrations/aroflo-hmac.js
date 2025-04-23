@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="AroFlo"
-      description="AroFlo is a job management system for trade/service based businesses."
+      description={`AroFlo is a job management system for trade/service based businesses.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -151,7 +151,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>AroFlo</title>
-          <meta name="description" content="AroFlo is a job management system for trade/service based businesses." />
+          <meta name="description" content={`AroFlo is a job management system for trade/service based businesses.`} />
         </>
       ),
     },

@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Big Tickets"
-      description="Big Tickets is an online ticketing solution for events of all sizes. Big Tickets empowers event organizers to manage, execute, and grow their events."
+      description={`Big Tickets is an online ticketing solution for events of all sizes. Big Tickets empowers event organizers to manage, execute, and grow their events.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +53,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Big Tickets</title>
-          <meta name="description" content="Big Tickets is an online ticketing solution for events of all sizes. Big Tickets empowers event organizers to manage, execute, and grow their events." />
+          <meta name="description" content={`Big Tickets is an online ticketing solution for events of all sizes. Big Tickets empowers event organizers to manage, execute, and grow their events.`} />
         </>
       ),
     },

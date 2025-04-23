@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Buildkite"
-      description="Buildkite is a platform for running fast, secure, and scalable continuous integration pipelines on your own infrastructure."
+      description={`Buildkite is a platform for running fast, secure, and scalable continuous integration pipelines on your own infrastructure.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +53,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Buildkite</title>
-          <meta name="description" content="Buildkite is a platform for running fast, secure, and scalable continuous integration pipelines on your own infrastructure." />
+          <meta name="description" content={`Buildkite is a platform for running fast, secure, and scalable continuous integration pipelines on your own infrastructure.`} />
         </>
       ),
     },

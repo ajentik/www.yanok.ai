@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Recruiterflow"
-      description="Recruiterflow is a modern recruiting software that helps ambitious recruiting and staffing businesses to be productive."
+      description={`Recruiterflow is a modern recruiting software that helps ambitious recruiting and staffing businesses to be productive.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -91,7 +91,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Recruiterflow</title>
-          <meta name="description" content="Recruiterflow is a modern recruiting software that helps ambitious recruiting and staffing businesses to be productive." />
+          <meta name="description" content={`Recruiterflow is a modern recruiting software that helps ambitious recruiting and staffing businesses to be productive.`} />
         </>
       ),
     },

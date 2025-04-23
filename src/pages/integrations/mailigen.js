@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Mailigen"
-      description="Mailigen is a new generation of integrated marketing platform, which includes social, email and mobile marketing."
+      description={`Mailigen is a new generation of integrated marketing platform, which includes social, email and mobile marketing.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -101,7 +101,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Mailigen</title>
-          <meta name="description" content="Mailigen is a new generation of integrated marketing platform, which includes social, email and mobile marketing." />
+          <meta name="description" content={`Mailigen is a new generation of integrated marketing platform, which includes social, email and mobile marketing.`} />
         </>
       ),
     },

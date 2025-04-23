@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="inFlow Inventory"
-      description="Get an unfair advantage with inFlow Inventory management software. A complete system to run your small business used by 1000's."
+      description={`Get an unfair advantage with inFlow Inventory management software. A complete system to run your small business used by 1000's.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -96,7 +96,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>inFlow Inventory</title>
-          <meta name="description" content="Get an unfair advantage with inFlow Inventory management software. A complete system to run your small business used by 1000's." />
+          <meta name="description" content={`Get an unfair advantage with inFlow Inventory management software. A complete system to run your small business used by 1000's.`} />
         </>
       ),
     },

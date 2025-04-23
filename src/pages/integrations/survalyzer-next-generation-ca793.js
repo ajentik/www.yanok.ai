@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Survalyzer"
-      description="Survalyzer is a professional survey tool."
+      description={`Survalyzer is a professional survey tool.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -91,7 +91,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Survalyzer</title>
-          <meta name="description" content="Survalyzer is a professional survey tool." />
+          <meta name="description" content={`Survalyzer is a professional survey tool.`} />
         </>
       ),
     },

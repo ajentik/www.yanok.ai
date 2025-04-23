@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Pikaso"
-      description="Pikaso is a tool that lets you screentshot tweets."
+      description={`Pikaso is a tool that lets you screentshot tweets.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Pikaso</title>
-          <meta name="description" content="Pikaso is a tool that lets you screentshot tweets." />
+          <meta name="description" content={`Pikaso is a tool that lets you screentshot tweets.`} />
         </>
       ),
     },

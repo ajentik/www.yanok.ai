@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Evernote"
-      description="Evernote is a powerful note taking application that makes it easy to capture ideas, images, contacts, and anything else you need to remember. Bring your life's work together in one digital workspace—available on all major mobile platforms and devices. Using Evernote for work? See Evernote Business."
+      description={`Evernote is a powerful note taking application that makes it easy to capture ideas, images, contacts, and anything else you need to remember. Bring your life's work together in one digital workspace—available on all major mobile platforms and devices. Using Evernote for work? See Evernote Business.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -116,7 +116,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Evernote</title>
-          <meta name="description" content="Evernote is a powerful note taking application that makes it easy to capture ideas, images, contacts, and anything else you need to remember. Bring your life's work together in one digital workspace—available on all major mobile platforms and devices. Using Evernote for work? See Evernote Business." />
+          <meta name="description" content={`Evernote is a powerful note taking application that makes it easy to capture ideas, images, contacts, and anything else you need to remember. Bring your life's work together in one digital workspace—available on all major mobile platforms and devices. Using Evernote for work? See Evernote Business.`} />
         </>
       ),
     },

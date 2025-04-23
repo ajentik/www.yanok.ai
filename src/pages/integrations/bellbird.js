@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Bellbird"
-      description="Bellbird is a video calling service that offers simple and secure browser based video calls. Just send a link, no accounts required."
+      description={`Bellbird is a video calling service that offers simple and secure browser based video calls. Just send a link, no accounts required.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Bellbird</title>
-          <meta name="description" content="Bellbird is a video calling service that offers simple and secure browser based video calls. Just send a link, no accounts required." />
+          <meta name="description" content={`Bellbird is a video calling service that offers simple and secure browser based video calls. Just send a link, no accounts required.`} />
         </>
       ),
     },

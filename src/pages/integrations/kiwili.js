@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Kiwili"
-      description="ERP & online account management software for your small business"
+      description={`ERP & online account management software for your small business`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -516,7 +516,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Kiwili</title>
-          <meta name="description" content="ERP & online account management software for your small business" />
+          <meta name="description" content={`ERP & online account management software for your small business`} />
         </>
       ),
     },

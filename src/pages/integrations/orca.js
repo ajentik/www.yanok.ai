@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Orca"
-      description="Orca enables B2B sales teams to efficiently and effectively engage prospects to drive more pipeline and close more deals through automated Linkedin engagements."
+      description={`Orca enables B2B sales teams to efficiently and effectively engage prospects to drive more pipeline and close more deals through automated Linkedin engagements.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +53,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Orca</title>
-          <meta name="description" content="Orca enables B2B sales teams to efficiently and effectively engage prospects to drive more pipeline and close more deals through automated Linkedin engagements." />
+          <meta name="description" content={`Orca enables B2B sales teams to efficiently and effectively engage prospects to drive more pipeline and close more deals through automated Linkedin engagements.`} />
         </>
       ),
     },

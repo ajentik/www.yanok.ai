@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Outfy"
-      description="Outfy is a social media tool which helps online sellers promote their products on social networks. Outfy provides powerful tools to create engaging content like Collage, Animated Gifs and VIDEOS from the user’s product images."
+      description={`Outfy is a social media tool which helps online sellers promote their products on social networks. Outfy provides powerful tools to create engaging content like Collage, Animated Gifs and VIDEOS from the user’s product images.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Outfy</title>
-          <meta name="description" content="Outfy is a social media tool which helps online sellers promote their products on social networks. Outfy provides powerful tools to create engaging content like Collage, Animated Gifs and VIDEOS from the user’s product images." />
+          <meta name="description" content={`Outfy is a social media tool which helps online sellers promote their products on social networks. Outfy provides powerful tools to create engaging content like Collage, Animated Gifs and VIDEOS from the user’s product images.`} />
         </>
       ),
     },

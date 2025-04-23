@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Chatter"
-      description="Chatter makes business processes social. Collaborate in real time, in context, from anywhere."
+      description={`Chatter makes business processes social. Collaborate in real time, in context, from anywhere.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -76,7 +76,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Chatter</title>
-          <meta name="description" content="Chatter makes business processes social. Collaborate in real time, in context, from anywhere." />
+          <meta name="description" content={`Chatter makes business processes social. Collaborate in real time, in context, from anywhere.`} />
         </>
       ),
     },

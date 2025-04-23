@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Mailjoy"
-      description="Mailjoy is a DIY direct mail platform that makes real mail as easy and data-driven as email. Design, target, and track postcard & letter campaigns."
+      description={`Mailjoy is a DIY direct mail platform that makes real mail as easy and data-driven as email. Design, target, and track postcard & letter campaigns.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -111,7 +111,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Mailjoy</title>
-          <meta name="description" content="Mailjoy is a DIY direct mail platform that makes real mail as easy and data-driven as email. Design, target, and track postcard & letter campaigns." />
+          <meta name="description" content={`Mailjoy is a DIY direct mail platform that makes real mail as easy and data-driven as email. Design, target, and track postcard & letter campaigns.`} />
         </>
       ),
     },

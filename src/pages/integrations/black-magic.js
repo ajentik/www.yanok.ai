@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Black Magic"
-      description="Black Magic helps tweeters measure and analyze tweet data to understand their followers, thus optimizing their future tweets."
+      description={`Black Magic helps tweeters measure and analyze tweet data to understand their followers, thus optimizing their future tweets.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -76,7 +76,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Black Magic</title>
-          <meta name="description" content="Black Magic helps tweeters measure and analyze tweet data to understand their followers, thus optimizing their future tweets." />
+          <meta name="description" content={`Black Magic helps tweeters measure and analyze tweet data to understand their followers, thus optimizing their future tweets.`} />
         </>
       ),
     },

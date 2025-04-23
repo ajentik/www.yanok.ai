@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="LeadConnector"
-      description="LeadConnector is a platform for marketing agencies to manage marketing automation to customer communications and beyond."
+      description={`LeadConnector is a platform for marketing agencies to manage marketing automation to customer communications and beyond.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -81,7 +81,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>LeadConnector</title>
-          <meta name="description" content="LeadConnector is a platform for marketing agencies to manage marketing automation to customer communications and beyond." />
+          <meta name="description" content={`LeadConnector is a platform for marketing agencies to manage marketing automation to customer communications and beyond.`} />
         </>
       ),
     },

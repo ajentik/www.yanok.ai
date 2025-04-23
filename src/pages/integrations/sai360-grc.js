@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="SAI360 GRC"
-      description="The SAI360 platform covers many use cases in the Environmental, Social, Governance, Risk and Compliance Space."
+      description={`The SAI360 platform covers many use cases in the Environmental, Social, Governance, Risk and Compliance Space.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -61,7 +61,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>SAI360 GRC</title>
-          <meta name="description" content="The SAI360 platform covers many use cases in the Environmental, Social, Governance, Risk and Compliance Space." />
+          <meta name="description" content={`The SAI360 platform covers many use cases in the Environmental, Social, Governance, Risk and Compliance Space.`} />
         </>
       ),
     },

@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Shortcut"
-      description="Shortcut helps modern software teams work collaboratively and ship quickly. Plan, build, and measure success with Shortcut."
+      description={`Shortcut helps modern software teams work collaboratively and ship quickly. Plan, build, and measure success with Shortcut.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -62,7 +62,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Shortcut</title>
-          <meta name="description" content="Shortcut helps modern software teams work collaboratively and ship quickly. Plan, build, and measure success with Shortcut." />
+          <meta name="description" content={`Shortcut helps modern software teams work collaboratively and ship quickly. Plan, build, and measure success with Shortcut.`} />
         </>
       ),
     },

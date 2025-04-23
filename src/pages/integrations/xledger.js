@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Xledger"
-      description="Xledger is cloud based accounting platform. It leverages automation to save users time and use complex worflows."
+      description={`Xledger is cloud based accounting platform. It leverages automation to save users time and use complex worflows.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -181,7 +181,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Xledger</title>
-          <meta name="description" content="Xledger is cloud based accounting platform. It leverages automation to save users time and use complex worflows." />
+          <meta name="description" content={`Xledger is cloud based accounting platform. It leverages automation to save users time and use complex worflows.`} />
         </>
       ),
     },

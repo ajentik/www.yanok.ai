@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="On2Air"
-      description="On2Air is the complete suite of products to be efficient and maximize platforms such as Airtable."
+      description={`On2Air is the complete suite of products to be efficient and maximize platforms such as Airtable.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -76,7 +76,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>On2Air</title>
-          <meta name="description" content="On2Air is the complete suite of products to be efficient and maximize platforms such as Airtable." />
+          <meta name="description" content={`On2Air is the complete suite of products to be efficient and maximize platforms such as Airtable.`} />
         </>
       ),
     },

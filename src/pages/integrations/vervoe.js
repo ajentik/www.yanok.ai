@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Vervoe"
-      description="Vervoe's AI-powered skill testing platform automatically recommends the strongest candidates to employers based purely on their performance in 'Talent Trials,' saving time and letting top candidates shine through sooner."
+      description={`Vervoe's AI-powered skill testing platform automatically recommends the strongest candidates to employers based purely on their performance in 'Talent Trials,' saving time and letting top candidates shine through sooner.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -111,7 +111,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Vervoe</title>
-          <meta name="description" content="Vervoe's AI-powered skill testing platform automatically recommends the strongest candidates to employers based purely on their performance in 'Talent Trials,' saving time and letting top candidates shine through sooner." />
+          <meta name="description" content={`Vervoe's AI-powered skill testing platform automatically recommends the strongest candidates to employers based purely on their performance in 'Talent Trials,' saving time and letting top candidates shine through sooner.`} />
         </>
       ),
     },

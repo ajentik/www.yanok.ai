@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="8x8"
-      description="8x8’s integrated communications platform as a service(CPaaS) providing SMS, Voice, Chat Apps and Video Interaction integrations"
+      description={`8x8’s integrated communications platform as a service(CPaaS) providing SMS, Voice, Chat Apps and Video Interaction integrations`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -81,7 +81,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>8x8</title>
-          <meta name="description" content="8x8’s integrated communications platform as a service(CPaaS) providing SMS, Voice, Chat Apps and Video Interaction integrations" />
+          <meta name="description" content={`8x8’s integrated communications platform as a service(CPaaS) providing SMS, Voice, Chat Apps and Video Interaction integrations`} />
         </>
       ),
     },

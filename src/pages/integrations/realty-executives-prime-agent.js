@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Realty Executives Prime Agent"
-      description="Prime Agent is Realty Executives' proprietary intranet dashboard that provides quick access to business tools, marketing collateral, news, and resources in one ecosystem."
+      description={`Prime Agent is Realty Executives' proprietary intranet dashboard that provides quick access to business tools, marketing collateral, news, and resources in one ecosystem.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Realty Executives Prime Agent</title>
-          <meta name="description" content="Prime Agent is Realty Executives' proprietary intranet dashboard that provides quick access to business tools, marketing collateral, news, and resources in one ecosystem." />
+          <meta name="description" content={`Prime Agent is Realty Executives' proprietary intranet dashboard that provides quick access to business tools, marketing collateral, news, and resources in one ecosystem.`} />
         </>
       ),
     },

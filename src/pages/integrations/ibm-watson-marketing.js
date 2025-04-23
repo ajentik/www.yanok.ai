@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="IBM Watson Marketing"
-      description="IBM Watson Marketing, an AI-powered digital marketing platform designed to help you engage and understand your customers at scale, wherever they are."
+      description={`IBM Watson Marketing, an AI-powered digital marketing platform designed to help you engage and understand your customers at scale, wherever they are.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +53,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>IBM Watson Marketing</title>
-          <meta name="description" content="IBM Watson Marketing, an AI-powered digital marketing platform designed to help you engage and understand your customers at scale, wherever they are." />
+          <meta name="description" content={`IBM Watson Marketing, an AI-powered digital marketing platform designed to help you engage and understand your customers at scale, wherever they are.`} />
         </>
       ),
     },

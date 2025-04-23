@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="DOPE360"
-      description="DOPE360 makes direct mail simple for your business. Use our Neighborhood Blitz tool to target any neighborhood. Get laser targeted mailing lists by income, home value, and more."
+      description={`DOPE360 makes direct mail simple for your business. Use our Neighborhood Blitz tool to target any neighborhood. Get laser targeted mailing lists by income, home value, and more.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -62,7 +62,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>DOPE360</title>
-          <meta name="description" content="DOPE360 makes direct mail simple for your business. Use our Neighborhood Blitz tool to target any neighborhood. Get laser targeted mailing lists by income, home value, and more." />
+          <meta name="description" content={`DOPE360 makes direct mail simple for your business. Use our Neighborhood Blitz tool to target any neighborhood. Get laser targeted mailing lists by income, home value, and more.`} />
         </>
       ),
     },

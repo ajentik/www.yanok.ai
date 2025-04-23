@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Shindig"
-      description="Shindig is a virtual events app, with "work the room" networking for attendees to mingle or for staff to confer privately with participants, a virtual backstage for preparing guests, and more."
+      description={`Shindig is a virtual events app, with `}work the room" networking for attendees to mingle or for staff to confer privately with participants, a virtual backstage for preparing guests, and more."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -72,7 +72,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Shindig</title>
-          <meta name="description" content="Shindig is a virtual events app, with "work the room" networking for attendees to mingle or for staff to confer privately with participants, a virtual backstage for preparing guests, and more." />
+          <meta name="description" content={`Shindig is a virtual events app, with `}work the room" networking for attendees to mingle or for staff to confer privately with participants, a virtual backstage for preparing guests, and more." />
         </>
       ),
     },

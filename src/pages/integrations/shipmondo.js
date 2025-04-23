@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Shipmondo"
-      description="Shipmondo is a freight booking platform that makes it possible for businesses to book freight and manage shipments across carriers. The integration will import order data from your webshop to your Shipmondo account"
+      description={`Shipmondo is a freight booking platform that makes it possible for businesses to book freight and manage shipments across carriers. The integration will import order data from your webshop to your Shipmondo account`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -67,7 +67,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Shipmondo</title>
-          <meta name="description" content="Shipmondo is a freight booking platform that makes it possible for businesses to book freight and manage shipments across carriers. The integration will import order data from your webshop to your Shipmondo account" />
+          <meta name="description" content={`Shipmondo is a freight booking platform that makes it possible for businesses to book freight and manage shipments across carriers. The integration will import order data from your webshop to your Shipmondo account`} />
         </>
       ),
     },

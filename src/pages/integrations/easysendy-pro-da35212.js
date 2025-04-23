@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="EasySendy"
-      description="EasySendy is a hybrid marketing platform for online gig creators like, bloggers, podcasters, vlogger, business coach, YouTubers, makers, writers, course creators, consultants, freelancers, author, coaches, musicians, photographers and startups"
+      description={`EasySendy is a hybrid marketing platform for online gig creators like, bloggers, podcasters, vlogger, business coach, YouTubers, makers, writers, course creators, consultants, freelancers, author, coaches, musicians, photographers and startups`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>EasySendy</title>
-          <meta name="description" content="EasySendy is a hybrid marketing platform for online gig creators like, bloggers, podcasters, vlogger, business coach, YouTubers, makers, writers, course creators, consultants, freelancers, author, coaches, musicians, photographers and startups" />
+          <meta name="description" content={`EasySendy is a hybrid marketing platform for online gig creators like, bloggers, podcasters, vlogger, business coach, YouTubers, makers, writers, course creators, consultants, freelancers, author, coaches, musicians, photographers and startups`} />
         </>
       ),
     },

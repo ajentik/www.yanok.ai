@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="docMaker"
-      description="docMaker helps you create pixel perfect pdfs from docx templates, pdf forms or webpages."
+      description={`docMaker helps you create pixel perfect pdfs from docx templates, pdf forms or webpages.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -67,7 +67,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>docMaker</title>
-          <meta name="description" content="docMaker helps you create pixel perfect pdfs from docx templates, pdf forms or webpages." />
+          <meta name="description" content={`docMaker helps you create pixel perfect pdfs from docx templates, pdf forms or webpages.`} />
         </>
       ),
     },

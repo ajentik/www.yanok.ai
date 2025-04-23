@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Soundee"
-      description="Soundee is a social music marketplace where artists and producers can connect and license music."
+      description={`Soundee is a social music marketplace where artists and producers can connect and license music.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -81,7 +81,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Soundee</title>
-          <meta name="description" content="Soundee is a social music marketplace where artists and producers can connect and license music." />
+          <meta name="description" content={`Soundee is a social music marketplace where artists and producers can connect and license music.`} />
         </>
       ),
     },

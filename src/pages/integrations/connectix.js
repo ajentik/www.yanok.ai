@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Connectix"
-      description="Connectix is a messaging platform allowing you to send SMS and Viber messages."
+      description={`Connectix is a messaging platform allowing you to send SMS and Viber messages.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -86,7 +86,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Connectix</title>
-          <meta name="description" content="Connectix is a messaging platform allowing you to send SMS and Viber messages." />
+          <meta name="description" content={`Connectix is a messaging platform allowing you to send SMS and Viber messages.`} />
         </>
       ),
     },

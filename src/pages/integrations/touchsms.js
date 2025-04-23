@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="touchSMS"
-      description="touchSMS is a simple app to send and receive SMS from any application."
+      description={`touchSMS is a simple app to send and receive SMS from any application.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -66,7 +66,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>touchSMS</title>
-          <meta name="description" content="touchSMS is a simple app to send and receive SMS from any application." />
+          <meta name="description" content={`touchSMS is a simple app to send and receive SMS from any application.`} />
         </>
       ),
     },

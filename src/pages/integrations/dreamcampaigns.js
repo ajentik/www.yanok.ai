@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="DreamCampaigns"
-      description="DreamCampaigns is an email & SMS marketing platform. Create beautiful and engaging emails & texts and send them to your subscribers."
+      description={`DreamCampaigns is an email & SMS marketing platform. Create beautiful and engaging emails & texts and send them to your subscribers.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -161,7 +161,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>DreamCampaigns</title>
-          <meta name="description" content="DreamCampaigns is an email & SMS marketing platform. Create beautiful and engaging emails & texts and send them to your subscribers." />
+          <meta name="description" content={`DreamCampaigns is an email & SMS marketing platform. Create beautiful and engaging emails & texts and send them to your subscribers.`} />
         </>
       ),
     },

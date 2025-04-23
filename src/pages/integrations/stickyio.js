@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="sticky.io"
-      description="Eliminate the need for numerous plugins with sticky.io. Our API-driven platform simplifies subscription billing and order management — turning one-time transactions into recurring revenue."
+      description={`Eliminate the need for numerous plugins with sticky.io. Our API-driven platform simplifies subscription billing and order management — turning one-time transactions into recurring revenue.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -81,7 +81,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>sticky.io</title>
-          <meta name="description" content="Eliminate the need for numerous plugins with sticky.io. Our API-driven platform simplifies subscription billing and order management — turning one-time transactions into recurring revenue." />
+          <meta name="description" content={`Eliminate the need for numerous plugins with sticky.io. Our API-driven platform simplifies subscription billing and order management — turning one-time transactions into recurring revenue.`} />
         </>
       ),
     },

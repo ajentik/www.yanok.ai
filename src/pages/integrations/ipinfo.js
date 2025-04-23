@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="IPInfo"
-      description="The trusted source for IP address data that provides information about geolocation, ASN, company details, career details, abuse information, hosted domains and much more."
+      description={`The trusted source for IP address data that provides information about geolocation, ASN, company details, career details, abuse information, hosted domains and much more.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -92,7 +92,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>IPInfo</title>
-          <meta name="description" content="The trusted source for IP address data that provides information about geolocation, ASN, company details, career details, abuse information, hosted domains and much more." />
+          <meta name="description" content={`The trusted source for IP address data that provides information about geolocation, ASN, company details, career details, abuse information, hosted domains and much more.`} />
         </>
       ),
     },

@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Facebook Groups"
-      description="Groups provide a space to communicate about shared interests with certain people. You can create a group for anything — your family reunion, your after-work sports team, your book club — and customize the group's privacy settings depending on who you want to be able to join and see the group."
+      description={`Groups provide a space to communicate about shared interests with certain people. You can create a group for anything — your family reunion, your after-work sports team, your book club — and customize the group's privacy settings depending on who you want to be able to join and see the group.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -81,7 +81,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Facebook Groups</title>
-          <meta name="description" content="Groups provide a space to communicate about shared interests with certain people. You can create a group for anything — your family reunion, your after-work sports team, your book club — and customize the group's privacy settings depending on who you want to be able to join and see the group." />
+          <meta name="description" content={`Groups provide a space to communicate about shared interests with certain people. You can create a group for anything — your family reunion, your after-work sports team, your book club — and customize the group's privacy settings depending on who you want to be able to join and see the group.`} />
         </>
       ),
     },

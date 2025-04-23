@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="TRYTN"
-      description="TRYTN is an online booking and centralized reservation management system for tour and activity businesses. The simple, intuitive interface means setup can be completed in minutes."
+      description={`TRYTN is an online booking and centralized reservation management system for tour and activity businesses. The simple, intuitive interface means setup can be completed in minutes.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -107,7 +107,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>TRYTN</title>
-          <meta name="description" content="TRYTN is an online booking and centralized reservation management system for tour and activity businesses. The simple, intuitive interface means setup can be completed in minutes." />
+          <meta name="description" content={`TRYTN is an online booking and centralized reservation management system for tour and activity businesses. The simple, intuitive interface means setup can be completed in minutes.`} />
         </>
       ),
     },

@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="VirtualPBX"
-      description="VirtualPBX delivers leading edge VoIP phone systems for businesses of all sizes, backed by award-winning, 24/7 support."
+      description={`VirtualPBX delivers leading edge VoIP phone systems for businesses of all sizes, backed by award-winning, 24/7 support.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -86,7 +86,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>VirtualPBX</title>
-          <meta name="description" content="VirtualPBX delivers leading edge VoIP phone systems for businesses of all sizes, backed by award-winning, 24/7 support." />
+          <meta name="description" content={`VirtualPBX delivers leading edge VoIP phone systems for businesses of all sizes, backed by award-winning, 24/7 support.`} />
         </>
       ),
     },

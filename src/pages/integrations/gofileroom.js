@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="GoFileRoom"
-      description="GoFileRoom is a cloud-based document management and workflow solution. With the GoFileRoom connector, you can perform document, user management, and FirmFlow actions."
+      description={`GoFileRoom is a cloud-based document management and workflow solution. With the GoFileRoom connector, you can perform document, user management, and FirmFlow actions.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -137,7 +137,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>GoFileRoom</title>
-          <meta name="description" content="GoFileRoom is a cloud-based document management and workflow solution. With the GoFileRoom connector, you can perform document, user management, and FirmFlow actions." />
+          <meta name="description" content={`GoFileRoom is a cloud-based document management and workflow solution. With the GoFileRoom connector, you can perform document, user management, and FirmFlow actions.`} />
         </>
       ),
     },

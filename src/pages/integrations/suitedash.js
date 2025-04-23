@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="SuiteDash"
-      description="SuiteDash is a multi-tool business management platform that enables collaboration & communication both with your team, and with your clients."
+      description={`SuiteDash is a multi-tool business management platform that enables collaboration & communication both with your team, and with your clients.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -136,7 +136,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>SuiteDash</title>
-          <meta name="description" content="SuiteDash is a multi-tool business management platform that enables collaboration & communication both with your team, and with your clients." />
+          <meta name="description" content={`SuiteDash is a multi-tool business management platform that enables collaboration & communication both with your team, and with your clients.`} />
         </>
       ),
     },

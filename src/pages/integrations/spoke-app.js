@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Spoke"
-      description="Spoke is the best way to record, edit and share all your conversations."
+      description={`Spoke is the best way to record, edit and share all your conversations.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -67,7 +67,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Spoke</title>
-          <meta name="description" content="Spoke is the best way to record, edit and share all your conversations." />
+          <meta name="description" content={`Spoke is the best way to record, edit and share all your conversations.`} />
         </>
       ),
     },

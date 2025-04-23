@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Blastable"
-      description="Blastable is a simple but powerful email software that focuses on email inbox deliverability."
+      description={`Blastable is a simple but powerful email software that focuses on email inbox deliverability.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -81,7 +81,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Blastable</title>
-          <meta name="description" content="Blastable is a simple but powerful email software that focuses on email inbox deliverability." />
+          <meta name="description" content={`Blastable is a simple but powerful email software that focuses on email inbox deliverability.`} />
         </>
       ),
     },

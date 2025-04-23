@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Pennylane"
-      description="Pennylane centralizes all your cash flows and connects with your financial tools to ease and automate collaboration with your accountant."
+      description={`Pennylane centralizes all your cash flows and connects with your financial tools to ease and automate collaboration with your accountant.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -131,7 +131,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Pennylane</title>
-          <meta name="description" content="Pennylane centralizes all your cash flows and connects with your financial tools to ease and automate collaboration with your accountant." />
+          <meta name="description" content={`Pennylane centralizes all your cash flows and connects with your financial tools to ease and automate collaboration with your accountant.`} />
         </>
       ),
     },

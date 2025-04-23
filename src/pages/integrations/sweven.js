@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Sweven"
-      description="SWEVEN allows businesses to seamlessly connect and collaborate with your team. This multi-platform and cloud-based SaaS solution gives you the power to receive, manage, assign, track, and bill for work (or product) orders of any trade. With SWEVEN in your workflow, you can bring together clients, vendors, and field staff in one place."
+      description={`SWEVEN allows businesses to seamlessly connect and collaborate with your team. This multi-platform and cloud-based SaaS solution gives you the power to receive, manage, assign, track, and bill for work (or product) orders of any trade. With SWEVEN in your workflow, you can bring together clients, vendors, and field staff in one place.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -171,7 +171,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Sweven</title>
-          <meta name="description" content="SWEVEN allows businesses to seamlessly connect and collaborate with your team. This multi-platform and cloud-based SaaS solution gives you the power to receive, manage, assign, track, and bill for work (or product) orders of any trade. With SWEVEN in your workflow, you can bring together clients, vendors, and field staff in one place." />
+          <meta name="description" content={`SWEVEN allows businesses to seamlessly connect and collaborate with your team. This multi-platform and cloud-based SaaS solution gives you the power to receive, manage, assign, track, and bill for work (or product) orders of any trade. With SWEVEN in your workflow, you can bring together clients, vendors, and field staff in one place.`} />
         </>
       ),
     },

@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="HelloLeads"
-      description="HelloLeads offers sales CRM software to manage leads, improve customer relationships & more."
+      description={`HelloLeads offers sales CRM software to manage leads, improve customer relationships & more.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -66,7 +66,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>HelloLeads</title>
-          <meta name="description" content="HelloLeads offers sales CRM software to manage leads, improve customer relationships & more." />
+          <meta name="description" content={`HelloLeads offers sales CRM software to manage leads, improve customer relationships & more.`} />
         </>
       ),
     },

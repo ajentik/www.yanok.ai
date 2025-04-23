@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Kantree"
-      description="Kantree allows teams to work together in real-time and visually manage any kind of activities. Self-hosted and cloud versions available."
+      description={`Kantree allows teams to work together in real-time and visually manage any kind of activities. Self-hosted and cloud versions available.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +53,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Kantree</title>
-          <meta name="description" content="Kantree allows teams to work together in real-time and visually manage any kind of activities. Self-hosted and cloud versions available." />
+          <meta name="description" content={`Kantree allows teams to work together in real-time and visually manage any kind of activities. Self-hosted and cloud versions available.`} />
         </>
       ),
     },

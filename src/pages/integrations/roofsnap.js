@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="RoofSnap"
-      description="RoofSnap offers aerial roof measurement and estimating apps that make your roof measurements more accurate and your roofing estimators more efficient."
+      description={`RoofSnap offers aerial roof measurement and estimating apps that make your roof measurements more accurate and your roofing estimators more efficient.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +53,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>RoofSnap</title>
-          <meta name="description" content="RoofSnap offers aerial roof measurement and estimating apps that make your roof measurements more accurate and your roofing estimators more efficient." />
+          <meta name="description" content={`RoofSnap offers aerial roof measurement and estimating apps that make your roof measurements more accurate and your roofing estimators more efficient.`} />
         </>
       ),
     },

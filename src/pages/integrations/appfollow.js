@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="AppFollow"
-      description="Appfollow is a one-stop platform for app analytics, app reviews management, and app store optimization. Get reviews from the App Store, Google Play to monitor and analyse them."
+      description={`Appfollow is a one-stop platform for app analytics, app reviews management, and app store optimization. Get reviews from the App Store, Google Play to monitor and analyse them.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -71,7 +71,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>AppFollow</title>
-          <meta name="description" content="Appfollow is a one-stop platform for app analytics, app reviews management, and app store optimization. Get reviews from the App Store, Google Play to monitor and analyse them." />
+          <meta name="description" content={`Appfollow is a one-stop platform for app analytics, app reviews management, and app store optimization. Get reviews from the App Store, Google Play to monitor and analyse them.`} />
         </>
       ),
     },

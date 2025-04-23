@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Kixie"
-      description="Seamless Integrated Voice Powerful voice and software tools for sales and customer service teams."
+      description={`Seamless Integrated Voice Powerful voice and software tools for sales and customer service teams.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -77,7 +77,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Kixie</title>
-          <meta name="description" content="Seamless Integrated Voice Powerful voice and software tools for sales and customer service teams." />
+          <meta name="description" content={`Seamless Integrated Voice Powerful voice and software tools for sales and customer service teams.`} />
         </>
       ),
     },

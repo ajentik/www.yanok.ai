@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Highrise"
-      description="Highrise CRM helps you manage your contacts, keep track of who said what when, schedule follow-ups, set reminders, and convert leads into done deals."
+      description={`Highrise CRM helps you manage your contacts, keep track of who said what when, schedule follow-ups, set reminders, and convert leads into done deals.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -166,7 +166,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Highrise</title>
-          <meta name="description" content="Highrise CRM helps you manage your contacts, keep track of who said what when, schedule follow-ups, set reminders, and convert leads into done deals." />
+          <meta name="description" content={`Highrise CRM helps you manage your contacts, keep track of who said what when, schedule follow-ups, set reminders, and convert leads into done deals.`} />
         </>
       ),
     },

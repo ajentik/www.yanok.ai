@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Helpwise"
-      description="Helpwise is a tool to share team inbox among the team members and track all the emails."
+      description={`Helpwise is a tool to share team inbox among the team members and track all the emails.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -121,7 +121,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Helpwise</title>
-          <meta name="description" content="Helpwise is a tool to share team inbox among the team members and track all the emails." />
+          <meta name="description" content={`Helpwise is a tool to share team inbox among the team members and track all the emails.`} />
         </>
       ),
     },

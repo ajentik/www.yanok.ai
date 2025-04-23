@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="ClickBank"
-      description="ClickBank is a global digital retailer and leading affiliate marketplace. Our ecosystem enables our clients to launch, scale and support physical and digital products and connect with affiliates to promote them. We empower entrepreneurs with the freedom to work and live across the globe, fuel their purpose and live the life of their dreams."
+      description={`ClickBank is a global digital retailer and leading affiliate marketplace. Our ecosystem enables our clients to launch, scale and support physical and digital products and connect with affiliates to promote them. We empower entrepreneurs with the freedom to work and live across the globe, fuel their purpose and live the life of their dreams.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -87,7 +87,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>ClickBank</title>
-          <meta name="description" content="ClickBank is a global digital retailer and leading affiliate marketplace. Our ecosystem enables our clients to launch, scale and support physical and digital products and connect with affiliates to promote them. We empower entrepreneurs with the freedom to work and live across the globe, fuel their purpose and live the life of their dreams." />
+          <meta name="description" content={`ClickBank is a global digital retailer and leading affiliate marketplace. Our ecosystem enables our clients to launch, scale and support physical and digital products and connect with affiliates to promote them. We empower entrepreneurs with the freedom to work and live across the globe, fuel their purpose and live the life of their dreams.`} />
         </>
       ),
     },

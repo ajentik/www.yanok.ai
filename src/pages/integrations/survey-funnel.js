@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Survey Funnel"
-      description="Survey Funnel creates automated survey funnels for your marketing so that you can segment leads as they opt in and send their data to your CRM."
+      description={`Survey Funnel creates automated survey funnels for your marketing so that you can segment leads as they opt in and send their data to your CRM.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Survey Funnel</title>
-          <meta name="description" content="Survey Funnel creates automated survey funnels for your marketing so that you can segment leads as they opt in and send their data to your CRM." />
+          <meta name="description" content={`Survey Funnel creates automated survey funnels for your marketing so that you can segment leads as they opt in and send their data to your CRM.`} />
         </>
       ),
     },

@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Zadarma"
-      description="Zadarma is a VOIP client for support and sales teams that helps agents increase their productivity."
+      description={`Zadarma is a VOIP client for support and sales teams that helps agents increase their productivity.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -136,7 +136,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Zadarma</title>
-          <meta name="description" content="Zadarma is a VOIP client for support and sales teams that helps agents increase their productivity." />
+          <meta name="description" content={`Zadarma is a VOIP client for support and sales teams that helps agents increase their productivity.`} />
         </>
       ),
     },

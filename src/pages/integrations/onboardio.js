@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Onboard.io"
-      description="Onboard is a SaaS made specifically for customer implementation. Customized MAPS allow teams to automate the best implementation plans and provide visibility for every customer."
+      description={`Onboard is a SaaS made specifically for customer implementation. Customized MAPS allow teams to automate the best implementation plans and provide visibility for every customer.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -166,7 +166,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Onboard.io</title>
-          <meta name="description" content="Onboard is a SaaS made specifically for customer implementation. Customized MAPS allow teams to automate the best implementation plans and provide visibility for every customer." />
+          <meta name="description" content={`Onboard is a SaaS made specifically for customer implementation. Customized MAPS allow teams to automate the best implementation plans and provide visibility for every customer.`} />
         </>
       ),
     },

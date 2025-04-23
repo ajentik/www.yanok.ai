@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Sales Cookie"
-      description="Sales Cookie automate all aspects of sales commission programs."
+      description={`Sales Cookie automate all aspects of sales commission programs.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -61,7 +61,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Sales Cookie</title>
-          <meta name="description" content="Sales Cookie automate all aspects of sales commission programs." />
+          <meta name="description" content={`Sales Cookie automate all aspects of sales commission programs.`} />
         </>
       ),
     },

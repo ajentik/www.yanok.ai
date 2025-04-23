@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="GuideCX"
-      description="GuideCX was created by professionals in a number of industries who were similarly frustrated by the lack of solutions and automation in the ‘sale to implementation’ process."
+      description={`GuideCX was created by professionals in a number of industries who were similarly frustrated by the lack of solutions and automation in the ‘sale to implementation’ process.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -77,7 +77,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>GuideCX</title>
-          <meta name="description" content="GuideCX was created by professionals in a number of industries who were similarly frustrated by the lack of solutions and automation in the ‘sale to implementation’ process." />
+          <meta name="description" content={`GuideCX was created by professionals in a number of industries who were similarly frustrated by the lack of solutions and automation in the ‘sale to implementation’ process.`} />
         </>
       ),
     },

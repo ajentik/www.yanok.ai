@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="HighGear"
-      description="HighGear is a true no-code workflow platform that allows everyday business users to build enterprise-grade workflow applications to orchestrate work at scale without writing a single line of code."
+      description={`HighGear is a true no-code workflow platform that allows everyday business users to build enterprise-grade workflow applications to orchestrate work at scale without writing a single line of code.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -111,7 +111,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>HighGear</title>
-          <meta name="description" content="HighGear is a true no-code workflow platform that allows everyday business users to build enterprise-grade workflow applications to orchestrate work at scale without writing a single line of code." />
+          <meta name="description" content={`HighGear is a true no-code workflow platform that allows everyday business users to build enterprise-grade workflow applications to orchestrate work at scale without writing a single line of code.`} />
         </>
       ),
     },

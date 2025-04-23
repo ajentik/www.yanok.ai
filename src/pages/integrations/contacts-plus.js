@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Contacts+"
-      description="Contacts+, formerly known as FullContact, is a modern contact management app to keep your contacts up-to-date across all leading platforms."
+      description={`Contacts+, formerly known as FullContact, is a modern contact management app to keep your contacts up-to-date across all leading platforms.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -131,7 +131,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Contacts+</title>
-          <meta name="description" content="Contacts+, formerly known as FullContact, is a modern contact management app to keep your contacts up-to-date across all leading platforms." />
+          <meta name="description" content={`Contacts+, formerly known as FullContact, is a modern contact management app to keep your contacts up-to-date across all leading platforms.`} />
         </>
       ),
     },

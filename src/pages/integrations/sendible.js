@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Sendible"
-      description="Sendible is an elegant software that provides social media management to businesses of all sizes across all industries."
+      description={`Sendible is an elegant software that provides social media management to businesses of all sizes across all industries.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +53,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Sendible</title>
-          <meta name="description" content="Sendible is an elegant software that provides social media management to businesses of all sizes across all industries." />
+          <meta name="description" content={`Sendible is an elegant software that provides social media management to businesses of all sizes across all industries.`} />
         </>
       ),
     },

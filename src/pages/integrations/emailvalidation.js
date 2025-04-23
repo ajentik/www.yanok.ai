@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Emailvalidation"
-      description="Emailvalidation is an email verification tool that helps marketers & developers to clean their mailing lists."
+      description={`Emailvalidation is an email verification tool that helps marketers & developers to clean their mailing lists.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Emailvalidation</title>
-          <meta name="description" content="Emailvalidation is an email verification tool that helps marketers & developers to clean their mailing lists." />
+          <meta name="description" content={`Emailvalidation is an email verification tool that helps marketers & developers to clean their mailing lists.`} />
         </>
       ),
     },

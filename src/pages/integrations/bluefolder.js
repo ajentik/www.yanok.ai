@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="BlueFolder"
-      description="BlueFolder provides easy and professional field service management and work order software."
+      description={`BlueFolder provides easy and professional field service management and work order software.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +53,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>BlueFolder</title>
-          <meta name="description" content="BlueFolder provides easy and professional field service management and work order software." />
+          <meta name="description" content={`BlueFolder provides easy and professional field service management and work order software.`} />
         </>
       ),
     },

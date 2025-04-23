@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Scoop.it"
-      description="You are the content you publish. Discover, curate and publish great content to get visibility online."
+      description={`You are the content you publish. Discover, curate and publish great content to get visibility online.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -66,7 +66,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Scoop.it</title>
-          <meta name="description" content="You are the content you publish. Discover, curate and publish great content to get visibility online." />
+          <meta name="description" content={`You are the content you publish. Discover, curate and publish great content to get visibility online.`} />
         </>
       ),
     },

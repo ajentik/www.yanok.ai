@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Waitwhile"
-      description="Waitwhile is a leading waitlist and scheduling service that helps you improve your lines and create a radically better wait experience for your customers."
+      description={`Waitwhile is a leading waitlist and scheduling service that helps you improve your lines and create a radically better wait experience for your customers.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -71,7 +71,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Waitwhile</title>
-          <meta name="description" content="Waitwhile is a leading waitlist and scheduling service that helps you improve your lines and create a radically better wait experience for your customers." />
+          <meta name="description" content={`Waitwhile is a leading waitlist and scheduling service that helps you improve your lines and create a radically better wait experience for your customers.`} />
         </>
       ),
     },

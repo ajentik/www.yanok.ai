@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Daylite"
-      description="Daylite is a CRM for macOS & iOS that helps you and your team manage more clients, close more deals, and finish more projects. It works with many of the built-in Apple features you know and love like Apple Mail, Contacts, Calendar, Siri, and more!"
+      description={`Daylite is a CRM for macOS & iOS that helps you and your team manage more clients, close more deals, and finish more projects. It works with many of the built-in Apple features you know and love like Apple Mail, Contacts, Calendar, Siri, and more!`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -396,7 +396,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Daylite</title>
-          <meta name="description" content="Daylite is a CRM for macOS & iOS that helps you and your team manage more clients, close more deals, and finish more projects. It works with many of the built-in Apple features you know and love like Apple Mail, Contacts, Calendar, Siri, and more!" />
+          <meta name="description" content={`Daylite is a CRM for macOS & iOS that helps you and your team manage more clients, close more deals, and finish more projects. It works with many of the built-in Apple features you know and love like Apple Mail, Contacts, Calendar, Siri, and more!`} />
         </>
       ),
     },

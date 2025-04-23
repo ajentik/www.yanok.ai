@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Coda"
-      description="Coda is a new type of document that blends the flexibility of documents, the power of spreadsheets, and the utility of apps into a single new canvas."
+      description={`Coda is a new type of document that blends the flexibility of documents, the power of spreadsheets, and the utility of apps into a single new canvas.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -86,7 +86,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Coda</title>
-          <meta name="description" content="Coda is a new type of document that blends the flexibility of documents, the power of spreadsheets, and the utility of apps into a single new canvas." />
+          <meta name="description" content={`Coda is a new type of document that blends the flexibility of documents, the power of spreadsheets, and the utility of apps into a single new canvas.`} />
         </>
       ),
     },

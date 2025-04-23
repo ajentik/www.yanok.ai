@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="WOXO"
-      description="WOXO is a platform that enables you to effortlessly create videos from spreadsheets and display social content with widgets to level up your marketing."
+      description={`WOXO is a platform that enables you to effortlessly create videos from spreadsheets and display social content with widgets to level up your marketing.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>WOXO</title>
-          <meta name="description" content="WOXO is a platform that enables you to effortlessly create videos from spreadsheets and display social content with widgets to level up your marketing." />
+          <meta name="description" content={`WOXO is a platform that enables you to effortlessly create videos from spreadsheets and display social content with widgets to level up your marketing.`} />
         </>
       ),
     },

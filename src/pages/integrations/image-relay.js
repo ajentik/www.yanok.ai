@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Image Relay"
-      description="The Digital Asset Management system designed with your time in mind. Upload, organize, and distribute your files from one centralized, secure, easy-to-use spot in the cloud."
+      description={`The Digital Asset Management system designed with your time in mind. Upload, organize, and distribute your files from one centralized, secure, easy-to-use spot in the cloud.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -81,7 +81,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Image Relay</title>
-          <meta name="description" content="The Digital Asset Management system designed with your time in mind. Upload, organize, and distribute your files from one centralized, secure, easy-to-use spot in the cloud." />
+          <meta name="description" content={`The Digital Asset Management system designed with your time in mind. Upload, organize, and distribute your files from one centralized, secure, easy-to-use spot in the cloud.`} />
         </>
       ),
     },

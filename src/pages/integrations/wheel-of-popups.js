@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Wheel of Popups"
-      description="Wheel of Popups offers small discounts to your website visitors for giving you their email address through a gamified pop-up."
+      description={`Wheel of Popups offers small discounts to your website visitors for giving you their email address through a gamified pop-up.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -62,7 +62,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Wheel of Popups</title>
-          <meta name="description" content="Wheel of Popups offers small discounts to your website visitors for giving you their email address through a gamified pop-up." />
+          <meta name="description" content={`Wheel of Popups offers small discounts to your website visitors for giving you their email address through a gamified pop-up.`} />
         </>
       ),
     },

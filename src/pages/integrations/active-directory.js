@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Active Directory"
-      description="Microsoft's Active Directory is a directory service often bundled with Microsoft Windows Server operating systems or as a part of Azure hosting. It is an interface for user authentication and identity as well as a device (like computers or printers) registration."
+      description={`Microsoft's Active Directory is a directory service often bundled with Microsoft Windows Server operating systems or as a part of Azure hosting. It is an interface for user authentication and identity as well as a device (like computers or printers) registration.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +53,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Active Directory</title>
-          <meta name="description" content="Microsoft's Active Directory is a directory service often bundled with Microsoft Windows Server operating systems or as a part of Azure hosting. It is an interface for user authentication and identity as well as a device (like computers or printers) registration." />
+          <meta name="description" content={`Microsoft's Active Directory is a directory service often bundled with Microsoft Windows Server operating systems or as a part of Azure hosting. It is an interface for user authentication and identity as well as a device (like computers or printers) registration.`} />
         </>
       ),
     },

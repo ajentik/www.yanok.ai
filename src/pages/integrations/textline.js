@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Textline"
-      description="Textline is a text messaging platform for your business. Share one or more phone numbers for receiving, managing, & responding to messages."
+      description={`Textline is a text messaging platform for your business. Share one or more phone numbers for receiving, managing, & responding to messages.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -96,7 +96,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Textline</title>
-          <meta name="description" content="Textline is a text messaging platform for your business. Share one or more phone numbers for receiving, managing, & responding to messages." />
+          <meta name="description" content={`Textline is a text messaging platform for your business. Share one or more phone numbers for receiving, managing, & responding to messages.`} />
         </>
       ),
     },

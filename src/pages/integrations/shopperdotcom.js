@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Shopper.com"
-      description="Shopper.com is a platform that helps to manage, monetise and measure all your shopping recommendations in one place and share wherever your audience are."
+      description={`Shopper.com is a platform that helps to manage, monetise and measure all your shopping recommendations in one place and share wherever your audience are.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Shopper.com</title>
-          <meta name="description" content="Shopper.com is a platform that helps to manage, monetise and measure all your shopping recommendations in one place and share wherever your audience are." />
+          <meta name="description" content={`Shopper.com is a platform that helps to manage, monetise and measure all your shopping recommendations in one place and share wherever your audience are.`} />
         </>
       ),
     },

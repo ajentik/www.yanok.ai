@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="IRC"
-      description="Internet Relay Chat is a popular protocol for real time messaging and is in use by millions of users every day. Great for team collaboration, IRC has lots of good client and server software options."
+      description={`Internet Relay Chat is a popular protocol for real time messaging and is in use by millions of users every day. Great for team collaboration, IRC has lots of good client and server software options.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +53,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>IRC</title>
-          <meta name="description" content="Internet Relay Chat is a popular protocol for real time messaging and is in use by millions of users every day. Great for team collaboration, IRC has lots of good client and server software options." />
+          <meta name="description" content={`Internet Relay Chat is a popular protocol for real time messaging and is in use by millions of users every day. Great for team collaboration, IRC has lots of good client and server software options.`} />
         </>
       ),
     },

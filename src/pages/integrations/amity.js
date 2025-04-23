@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Amity"
-      description="Amity provides the world’s most powerful Customer Success software. Amity, senses changes in customer health or rhythms, recommends the right actions and measures effectiveness."
+      description={`Amity provides the world’s most powerful Customer Success software. Amity, senses changes in customer health or rhythms, recommends the right actions and measures effectiveness.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +53,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Amity</title>
-          <meta name="description" content="Amity provides the world’s most powerful Customer Success software. Amity, senses changes in customer health or rhythms, recommends the right actions and measures effectiveness." />
+          <meta name="description" content={`Amity provides the world’s most powerful Customer Success software. Amity, senses changes in customer health or rhythms, recommends the right actions and measures effectiveness.`} />
         </>
       ),
     },

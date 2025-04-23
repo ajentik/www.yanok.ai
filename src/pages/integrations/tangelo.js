@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Tangelo"
-      description="Tangelo is making employee onboarding approachable and easy. With our simple checklists, employees know exactly what to focus on to get ramped up faster than ever."
+      description={`Tangelo is making employee onboarding approachable and easy. With our simple checklists, employees know exactly what to focus on to get ramped up faster than ever.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Tangelo</title>
-          <meta name="description" content="Tangelo is making employee onboarding approachable and easy. With our simple checklists, employees know exactly what to focus on to get ramped up faster than ever." />
+          <meta name="description" content={`Tangelo is making employee onboarding approachable and easy. With our simple checklists, employees know exactly what to focus on to get ramped up faster than ever.`} />
         </>
       ),
     },

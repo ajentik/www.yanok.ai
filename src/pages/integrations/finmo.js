@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Finmo"
-      description="Finmo manages the end to end mortgage process."
+      description={`Finmo manages the end to end mortgage process.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -77,7 +77,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Finmo</title>
-          <meta name="description" content="Finmo manages the end to end mortgage process." />
+          <meta name="description" content={`Finmo manages the end to end mortgage process.`} />
         </>
       ),
     },

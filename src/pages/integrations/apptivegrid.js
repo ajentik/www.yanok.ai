@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="ApptiveGrid"
-      description="ApptiveGrid enables anyone to create digital products and workflows. ApptiveGrid is a visual spreadsheet and database hybrid, api driven and highly integratable."
+      description={`ApptiveGrid enables anyone to create digital products and workflows. ApptiveGrid is a visual spreadsheet and database hybrid, api driven and highly integratable.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -91,7 +91,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>ApptiveGrid</title>
-          <meta name="description" content="ApptiveGrid enables anyone to create digital products and workflows. ApptiveGrid is a visual spreadsheet and database hybrid, api driven and highly integratable." />
+          <meta name="description" content={`ApptiveGrid enables anyone to create digital products and workflows. ApptiveGrid is a visual spreadsheet and database hybrid, api driven and highly integratable.`} />
         </>
       ),
     },

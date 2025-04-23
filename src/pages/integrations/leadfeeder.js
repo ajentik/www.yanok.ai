@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Leadfeeder"
-      description="Leadfeeder is a B2B sales tool that uncovers the companies visiting your website and what they do there. By simply inserting a snippet of code, Leadfeeder empowers sales and marketing teams to connect with the leads that matter most to their business."
+      description={`Leadfeeder is a B2B sales tool that uncovers the companies visiting your website and what they do there. By simply inserting a snippet of code, Leadfeeder empowers sales and marketing teams to connect with the leads that matter most to their business.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -66,7 +66,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Leadfeeder</title>
-          <meta name="description" content="Leadfeeder is a B2B sales tool that uncovers the companies visiting your website and what they do there. By simply inserting a snippet of code, Leadfeeder empowers sales and marketing teams to connect with the leads that matter most to their business." />
+          <meta name="description" content={`Leadfeeder is a B2B sales tool that uncovers the companies visiting your website and what they do there. By simply inserting a snippet of code, Leadfeeder empowers sales and marketing teams to connect with the leads that matter most to their business.`} />
         </>
       ),
     },

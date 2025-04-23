@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Salespanel"
-      description="Salespanel brings all your leads in a single screen when they engage with your emails, marketing newsletters, website page or webforms."
+      description={`Salespanel brings all your leads in a single screen when they engage with your emails, marketing newsletters, website page or webforms.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -91,7 +91,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Salespanel</title>
-          <meta name="description" content="Salespanel brings all your leads in a single screen when they engage with your emails, marketing newsletters, website page or webforms." />
+          <meta name="description" content={`Salespanel brings all your leads in a single screen when they engage with your emails, marketing newsletters, website page or webforms.`} />
         </>
       ),
     },

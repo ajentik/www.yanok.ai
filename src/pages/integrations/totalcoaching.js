@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="TotalCoaching"
-      description="TotalCoaching is a web-based software for personal trainers, allowing them to build programs online, and deliver them to their clients smartphone."
+      description={`TotalCoaching is a web-based software for personal trainers, allowing them to build programs online, and deliver them to their clients smartphone.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -67,7 +67,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>TotalCoaching</title>
-          <meta name="description" content="TotalCoaching is a web-based software for personal trainers, allowing them to build programs online, and deliver them to their clients smartphone." />
+          <meta name="description" content={`TotalCoaching is a web-based software for personal trainers, allowing them to build programs online, and deliver them to their clients smartphone.`} />
         </>
       ),
     },

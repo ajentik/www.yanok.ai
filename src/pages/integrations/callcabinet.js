@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="CallCabinet Atmos"
-      description="Call Cabinet Atmos is a cloud based enterprise call recording and quality management platform."
+      description={`Call Cabinet Atmos is a cloud based enterprise call recording and quality management platform.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>CallCabinet Atmos</title>
-          <meta name="description" content="Call Cabinet Atmos is a cloud based enterprise call recording and quality management platform." />
+          <meta name="description" content={`Call Cabinet Atmos is a cloud based enterprise call recording and quality management platform.`} />
         </>
       ),
     },

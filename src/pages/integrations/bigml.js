@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="BigML"
-      description="BigML is a Machine Learning platform to solve and automate Classification, Regression, Time Series Forecasting, Cluster Analysis, Anomaly Detection, and Topic Modeling tasks. BigML seamlessly transforms data into actionable models that are used as remote services or, locally, embedded into applications to make predictions."
+      description={`BigML is a Machine Learning platform to solve and automate Classification, Regression, Time Series Forecasting, Cluster Analysis, Anomaly Detection, and Topic Modeling tasks. BigML seamlessly transforms data into actionable models that are used as remote services or, locally, embedded into applications to make predictions.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -81,7 +81,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>BigML</title>
-          <meta name="description" content="BigML is a Machine Learning platform to solve and automate Classification, Regression, Time Series Forecasting, Cluster Analysis, Anomaly Detection, and Topic Modeling tasks. BigML seamlessly transforms data into actionable models that are used as remote services or, locally, embedded into applications to make predictions." />
+          <meta name="description" content={`BigML is a Machine Learning platform to solve and automate Classification, Regression, Time Series Forecasting, Cluster Analysis, Anomaly Detection, and Topic Modeling tasks. BigML seamlessly transforms data into actionable models that are used as remote services or, locally, embedded into applications to make predictions.`} />
         </>
       ),
     },

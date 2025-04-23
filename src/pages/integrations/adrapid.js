@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Adrapid"
-      description="Adrapid is a banner creation tool. Create images, html5 or video banners."
+      description={`Adrapid is a banner creation tool. Create images, html5 or video banners.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -66,7 +66,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Adrapid</title>
-          <meta name="description" content="Adrapid is a banner creation tool. Create images, html5 or video banners." />
+          <meta name="description" content={`Adrapid is a banner creation tool. Create images, html5 or video banners.`} />
         </>
       ),
     },

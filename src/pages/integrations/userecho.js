@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="UserEcho"
-      description="UserEcho is an online customer support software. UserEcho allow to create helpdesk, ideas forum, livechat and knowledge base in one place that make it simple to provide great customer support."
+      description={`UserEcho is an online customer support software. UserEcho allow to create helpdesk, ideas forum, livechat and knowledge base in one place that make it simple to provide great customer support.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -62,7 +62,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>UserEcho</title>
-          <meta name="description" content="UserEcho is an online customer support software. UserEcho allow to create helpdesk, ideas forum, livechat and knowledge base in one place that make it simple to provide great customer support." />
+          <meta name="description" content={`UserEcho is an online customer support software. UserEcho allow to create helpdesk, ideas forum, livechat and knowledge base in one place that make it simple to provide great customer support.`} />
         </>
       ),
     },

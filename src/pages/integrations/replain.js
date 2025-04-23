@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Re:plain"
-      description="Re:plain is a live chat platform for your messenger. Send messages from your website directly to Facebook Messenger or Telegram and back. Currently only Telegram is supported in the integration."
+      description={`Re:plain is a live chat platform for your messenger. Send messages from your website directly to Facebook Messenger or Telegram and back. Currently only Telegram is supported in the integration.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -62,7 +62,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Re:plain</title>
-          <meta name="description" content="Re:plain is a live chat platform for your messenger. Send messages from your website directly to Facebook Messenger or Telegram and back. Currently only Telegram is supported in the integration." />
+          <meta name="description" content={`Re:plain is a live chat platform for your messenger. Send messages from your website directly to Facebook Messenger or Telegram and back. Currently only Telegram is supported in the integration.`} />
         </>
       ),
     },

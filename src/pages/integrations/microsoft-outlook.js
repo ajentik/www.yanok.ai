@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Microsoft Outlook"
-      description="Microsoft Outlook is a web-based suite of webmail, contacts, tasks, and calendaring services."
+      description={`Microsoft Outlook is a web-based suite of webmail, contacts, tasks, and calendaring services.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -111,7 +111,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Microsoft Outlook</title>
-          <meta name="description" content="Microsoft Outlook is a web-based suite of webmail, contacts, tasks, and calendaring services." />
+          <meta name="description" content={`Microsoft Outlook is a web-based suite of webmail, contacts, tasks, and calendaring services.`} />
         </>
       ),
     },

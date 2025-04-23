@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="FormCan"
-      description="FormCan is the next generation of online form builders with stunning form builders, live previews and a huge range of gorgeous templates and themes."
+      description={`FormCan is the next generation of online form builders with stunning form builders, live previews and a huge range of gorgeous templates and themes.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -61,7 +61,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>FormCan</title>
-          <meta name="description" content="FormCan is the next generation of online form builders with stunning form builders, live previews and a huge range of gorgeous templates and themes." />
+          <meta name="description" content={`FormCan is the next generation of online form builders with stunning form builders, live previews and a huge range of gorgeous templates and themes.`} />
         </>
       ),
     },

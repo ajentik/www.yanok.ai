@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="ReviewSender"
-      description="ReviewSender notifies you about new reviews on Amazon, Walmart, Target and many other sites."
+      description={`ReviewSender notifies you about new reviews on Amazon, Walmart, Target and many other sites.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -61,7 +61,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>ReviewSender</title>
-          <meta name="description" content="ReviewSender notifies you about new reviews on Amazon, Walmart, Target and many other sites." />
+          <meta name="description" content={`ReviewSender notifies you about new reviews on Amazon, Walmart, Target and many other sites.`} />
         </>
       ),
     },

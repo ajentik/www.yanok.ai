@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Macanta"
-      description="Macanta allows you to create a CRM as unique as your business, without the risk, cost or need for custom development. Macanta does for CRM as WIX does for websites."
+      description={`Macanta allows you to create a CRM as unique as your business, without the risk, cost or need for custom development. Macanta does for CRM as WIX does for websites.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -97,7 +97,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Macanta</title>
-          <meta name="description" content="Macanta allows you to create a CRM as unique as your business, without the risk, cost or need for custom development. Macanta does for CRM as WIX does for websites." />
+          <meta name="description" content={`Macanta allows you to create a CRM as unique as your business, without the risk, cost or need for custom development. Macanta does for CRM as WIX does for websites.`} />
         </>
       ),
     },

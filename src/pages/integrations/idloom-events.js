@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="idloom-events"
-      description="Idloom-events is a complete and professional tool that manages and automates all key aspects of event management."
+      description={`Idloom-events is a complete and professional tool that manages and automates all key aspects of event management.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -86,7 +86,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>idloom-events</title>
-          <meta name="description" content="Idloom-events is a complete and professional tool that manages and automates all key aspects of event management." />
+          <meta name="description" content={`Idloom-events is a complete and professional tool that manages and automates all key aspects of event management.`} />
         </>
       ),
     },

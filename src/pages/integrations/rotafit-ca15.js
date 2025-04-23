@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Rota.fit Connect"
-      description="Rota.fit offers a suite of tools for fitness studio owners using Mindbody. Our unique solution allows you to connect your Mindbody studio to thousands of other apps."
+      description={`Rota.fit offers a suite of tools for fitness studio owners using Mindbody. Our unique solution allows you to connect your Mindbody studio to thousands of other apps.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -181,7 +181,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Rota.fit Connect</title>
-          <meta name="description" content="Rota.fit offers a suite of tools for fitness studio owners using Mindbody. Our unique solution allows you to connect your Mindbody studio to thousands of other apps." />
+          <meta name="description" content={`Rota.fit offers a suite of tools for fitness studio owners using Mindbody. Our unique solution allows you to connect your Mindbody studio to thousands of other apps.`} />
         </>
       ),
     },

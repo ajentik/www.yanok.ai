@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Pavlok Wearable Device"
-      description="Pavlok is a haptic wearable device. You can signal the device to vibrate, beep, shine LEDs, or electrically signal the wearer at varying levels of intensity."
+      description={`Pavlok is a haptic wearable device. You can signal the device to vibrate, beep, shine LEDs, or electrically signal the wearer at varying levels of intensity.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -72,7 +72,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Pavlok Wearable Device</title>
-          <meta name="description" content="Pavlok is a haptic wearable device. You can signal the device to vibrate, beep, shine LEDs, or electrically signal the wearer at varying levels of intensity." />
+          <meta name="description" content={`Pavlok is a haptic wearable device. You can signal the device to vibrate, beep, shine LEDs, or electrically signal the wearer at varying levels of intensity.`} />
         </>
       ),
     },

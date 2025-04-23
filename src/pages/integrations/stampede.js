@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Stampede"
-      description="Stampede offers customer insights and effective marketing campaigns that will increase your sales and returning customers."
+      description={`Stampede offers customer insights and effective marketing campaigns that will increase your sales and returning customers.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -86,7 +86,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Stampede</title>
-          <meta name="description" content="Stampede offers customer insights and effective marketing campaigns that will increase your sales and returning customers." />
+          <meta name="description" content={`Stampede offers customer insights and effective marketing campaigns that will increase your sales and returning customers.`} />
         </>
       ),
     },

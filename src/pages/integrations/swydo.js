@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Swydo"
-      description="Adwords, PPC and Analytics reporting, monitoring and workflow tool for online marketers to save time and show their impact."
+      description={`Adwords, PPC and Analytics reporting, monitoring and workflow tool for online marketers to save time and show their impact.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +53,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Swydo</title>
-          <meta name="description" content="Adwords, PPC and Analytics reporting, monitoring and workflow tool for online marketers to save time and show their impact." />
+          <meta name="description" content={`Adwords, PPC and Analytics reporting, monitoring and workflow tool for online marketers to save time and show their impact.`} />
         </>
       ),
     },

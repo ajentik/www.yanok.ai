@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Zenler"
-      description="Zenler is a super easy platform that lets you start your own branded website. It allows you to make money teaching your own courses online."
+      description={`Zenler is a super easy platform that lets you start your own branded website. It allows you to make money teaching your own courses online.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -121,7 +121,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Zenler</title>
-          <meta name="description" content="Zenler is a super easy platform that lets you start your own branded website. It allows you to make money teaching your own courses online." />
+          <meta name="description" content={`Zenler is a super easy platform that lets you start your own branded website. It allows you to make money teaching your own courses online.`} />
         </>
       ),
     },

@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Troops"
-      description="Troops is a HR tool for staffing agencies to organize candidates, clients and contracts."
+      description={`Troops is a HR tool for staffing agencies to organize candidates, clients and contracts.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -67,7 +67,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Troops</title>
-          <meta name="description" content="Troops is a HR tool for staffing agencies to organize candidates, clients and contracts." />
+          <meta name="description" content={`Troops is a HR tool for staffing agencies to organize candidates, clients and contracts.`} />
         </>
       ),
     },

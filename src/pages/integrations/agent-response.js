@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Agent Response"
-      description="We help Letting and Estate Agents get better leads, freeing up your staff to make better use of their time & improve your customer service."
+      description={`We help Letting and Estate Agents get better leads, freeing up your staff to make better use of their time & improve your customer service.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -66,7 +66,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Agent Response</title>
-          <meta name="description" content="We help Letting and Estate Agents get better leads, freeing up your staff to make better use of their time & improve your customer service." />
+          <meta name="description" content={`We help Letting and Estate Agents get better leads, freeing up your staff to make better use of their time & improve your customer service.`} />
         </>
       ),
     },

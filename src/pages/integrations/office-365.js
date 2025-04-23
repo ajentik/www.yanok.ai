@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Microsoft Office 365"
-      description="Microsoft Office 365 Business is a complete office suite in the cloud. It provides all the standard office products like Excel, Outlook, Word, SharePoint and more, but available from any internet enabled computer! Zapier does not currently support Outlook.com addresses or Home 365 accounts, only business or Enterprise."
+      description={`Microsoft Office 365 Business is a complete office suite in the cloud. It provides all the standard office products like Excel, Outlook, Word, SharePoint and more, but available from any internet enabled computer! Zapier does not currently support Outlook.com addresses or Home 365 accounts, only business or Enterprise.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -111,7 +111,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Microsoft Office 365</title>
-          <meta name="description" content="Microsoft Office 365 Business is a complete office suite in the cloud. It provides all the standard office products like Excel, Outlook, Word, SharePoint and more, but available from any internet enabled computer! Zapier does not currently support Outlook.com addresses or Home 365 accounts, only business or Enterprise." />
+          <meta name="description" content={`Microsoft Office 365 Business is a complete office suite in the cloud. It provides all the standard office products like Excel, Outlook, Word, SharePoint and more, but available from any internet enabled computer! Zapier does not currently support Outlook.com addresses or Home 365 accounts, only business or Enterprise.`} />
         </>
       ),
     },

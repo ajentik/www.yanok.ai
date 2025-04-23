@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="App Status by Zapier"
-      description="Get notifications when Apps with Zapier integrations experience downtime or other incidents."
+      description={`Get notifications when Apps with Zapier integrations experience downtime or other incidents.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>App Status by Zapier</title>
-          <meta name="description" content="Get notifications when Apps with Zapier integrations experience downtime or other incidents." />
+          <meta name="description" content={`Get notifications when Apps with Zapier integrations experience downtime or other incidents.`} />
         </>
       ),
     },

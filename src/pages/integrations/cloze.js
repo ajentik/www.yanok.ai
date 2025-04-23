@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Cloze"
-      description="Cloze is like a personal assistant for your professional relationships that is always prompting you at the right moment, and remembering what you don’t. It’s the no-work way to see everything about your contacts in one place. Email, phone calls, meetings, notes, follow-ups and social."
+      description={`Cloze is like a personal assistant for your professional relationships that is always prompting you at the right moment, and remembering what you don’t. It’s the no-work way to see everything about your contacts in one place. Email, phone calls, meetings, notes, follow-ups and social.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -101,7 +101,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Cloze</title>
-          <meta name="description" content="Cloze is like a personal assistant for your professional relationships that is always prompting you at the right moment, and remembering what you don’t. It’s the no-work way to see everything about your contacts in one place. Email, phone calls, meetings, notes, follow-ups and social." />
+          <meta name="description" content={`Cloze is like a personal assistant for your professional relationships that is always prompting you at the right moment, and remembering what you don’t. It’s the no-work way to see everything about your contacts in one place. Email, phone calls, meetings, notes, follow-ups and social.`} />
         </>
       ),
     },

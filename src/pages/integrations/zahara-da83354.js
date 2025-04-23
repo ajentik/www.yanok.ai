@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Zahara"
-      description="Zahara is a complete purchase management platform enabling paperless approvals for supplier invoices and purchase requisition."
+      description={`Zahara is a complete purchase management platform enabling paperless approvals for supplier invoices and purchase requisition.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -141,7 +141,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Zahara</title>
-          <meta name="description" content="Zahara is a complete purchase management platform enabling paperless approvals for supplier invoices and purchase requisition." />
+          <meta name="description" content={`Zahara is a complete purchase management platform enabling paperless approvals for supplier invoices and purchase requisition.`} />
         </>
       ),
     },

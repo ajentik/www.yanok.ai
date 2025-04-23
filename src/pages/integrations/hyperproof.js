@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Hyperproof"
-      description="Hyperproof is a tool for managing your compliance programs."
+      description={`Hyperproof is a tool for managing your compliance programs.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -71,7 +71,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Hyperproof</title>
-          <meta name="description" content="Hyperproof is a tool for managing your compliance programs." />
+          <meta name="description" content={`Hyperproof is a tool for managing your compliance programs.`} />
         </>
       ),
     },

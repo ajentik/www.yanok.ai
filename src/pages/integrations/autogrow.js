@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Autogrow"
-      description="An app you can access from anywhere for quick communication with your team there at Autogrow and easy delegation for your digital marketing tasks in one place."
+      description={`An app you can access from anywhere for quick communication with your team there at Autogrow and easy delegation for your digital marketing tasks in one place.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -71,7 +71,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Autogrow</title>
-          <meta name="description" content="An app you can access from anywhere for quick communication with your team there at Autogrow and easy delegation for your digital marketing tasks in one place." />
+          <meta name="description" content={`An app you can access from anywhere for quick communication with your team there at Autogrow and easy delegation for your digital marketing tasks in one place.`} />
         </>
       ),
     },

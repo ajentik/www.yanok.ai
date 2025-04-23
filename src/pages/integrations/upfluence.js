@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Upfluence"
-      description="Upfluence is an influencer platform that lets you identify organic influencers in your own customer base & website audience. Collect social data when visitors are browsing your site or during checkout and analyze their social data."
+      description={`Upfluence is an influencer platform that lets you identify organic influencers in your own customer base & website audience. Collect social data when visitors are browsing your site or during checkout and analyze their social data.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Upfluence</title>
-          <meta name="description" content="Upfluence is an influencer platform that lets you identify organic influencers in your own customer base & website audience. Collect social data when visitors are browsing your site or during checkout and analyze their social data." />
+          <meta name="description" content={`Upfluence is an influencer platform that lets you identify organic influencers in your own customer base & website audience. Collect social data when visitors are browsing your site or during checkout and analyze their social data.`} />
         </>
       ),
     },

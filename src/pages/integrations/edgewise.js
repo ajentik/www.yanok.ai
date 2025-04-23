@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Edgewise"
-      description="Edgewise Realty is a Philadelphia-based startup that transforms how developers build and sell homes in cities across the U.S."
+      description={`Edgewise Realty is a Philadelphia-based startup that transforms how developers build and sell homes in cities across the U.S.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +53,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Edgewise</title>
-          <meta name="description" content="Edgewise Realty is a Philadelphia-based startup that transforms how developers build and sell homes in cities across the U.S." />
+          <meta name="description" content={`Edgewise Realty is a Philadelphia-based startup that transforms how developers build and sell homes in cities across the U.S.`} />
         </>
       ),
     },

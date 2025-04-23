@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Paycove"
-      description="Paycove is a quoting, invoicing, and payments platform."
+      description={`Paycove is a quoting, invoicing, and payments platform.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -81,7 +81,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Paycove</title>
-          <meta name="description" content="Paycove is a quoting, invoicing, and payments platform." />
+          <meta name="description" content={`Paycove is a quoting, invoicing, and payments platform.`} />
         </>
       ),
     },

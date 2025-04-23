@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="SMS by Zapier"
-      description="Using our built-in number, you can send a limited number of SMS / text messages. This is great for reminders!"
+      description={`Using our built-in number, you can send a limited number of SMS / text messages. This is great for reminders!`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>SMS by Zapier</title>
-          <meta name="description" content="Using our built-in number, you can send a limited number of SMS / text messages. This is great for reminders!" />
+          <meta name="description" content={`Using our built-in number, you can send a limited number of SMS / text messages. This is great for reminders!`} />
         </>
       ),
     },

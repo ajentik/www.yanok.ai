@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="AidaForm"
-      description="AidaForm is a SaaS solution allowing you to create and publish online forms, Instagram Bio links, and landing pages. Collect and analyze response data, process and share the data with other services and tools."
+      description={`AidaForm is a SaaS solution allowing you to create and publish online forms, Instagram Bio links, and landing pages. Collect and analyze response data, process and share the data with other services and tools.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -67,7 +67,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>AidaForm</title>
-          <meta name="description" content="AidaForm is a SaaS solution allowing you to create and publish online forms, Instagram Bio links, and landing pages. Collect and analyze response data, process and share the data with other services and tools." />
+          <meta name="description" content={`AidaForm is a SaaS solution allowing you to create and publish online forms, Instagram Bio links, and landing pages. Collect and analyze response data, process and share the data with other services and tools.`} />
         </>
       ),
     },

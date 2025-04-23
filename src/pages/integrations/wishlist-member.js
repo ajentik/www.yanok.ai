@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="WishList Member"
-      description="WishList Member is a powerful & easy to use plugin for running a membership site with WordPress. (Requires WishList Member 3.0 or higher)."
+      description={`WishList Member is a powerful & easy to use plugin for running a membership site with WordPress. (Requires WishList Member 3.0 or higher).`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -106,7 +106,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>WishList Member</title>
-          <meta name="description" content="WishList Member is a powerful & easy to use plugin for running a membership site with WordPress. (Requires WishList Member 3.0 or higher)." />
+          <meta name="description" content={`WishList Member is a powerful & easy to use plugin for running a membership site with WordPress. (Requires WishList Member 3.0 or higher).`} />
         </>
       ),
     },

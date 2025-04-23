@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Cycle"
-      description="Cycle connects customer feedback to product delivery workflows so you can close the feedback loop and wow your customers at each release."
+      description={`Cycle connects customer feedback to product delivery workflows so you can close the feedback loop and wow your customers at each release.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -61,7 +61,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Cycle</title>
-          <meta name="description" content="Cycle connects customer feedback to product delivery workflows so you can close the feedback loop and wow your customers at each release." />
+          <meta name="description" content={`Cycle connects customer feedback to product delivery workflows so you can close the feedback loop and wow your customers at each release.`} />
         </>
       ),
     },

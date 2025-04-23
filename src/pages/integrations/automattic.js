@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Automattic"
-      description="Automattic Inc. is a web development corporation founded in August 2005. It is most notable for WordPress.com, as well as its contributions to WordPress."
+      description={`Automattic Inc. is a web development corporation founded in August 2005. It is most notable for WordPress.com, as well as its contributions to WordPress.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +53,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Automattic</title>
-          <meta name="description" content="Automattic Inc. is a web development corporation founded in August 2005. It is most notable for WordPress.com, as well as its contributions to WordPress." />
+          <meta name="description" content={`Automattic Inc. is a web development corporation founded in August 2005. It is most notable for WordPress.com, as well as its contributions to WordPress.`} />
         </>
       ),
     },

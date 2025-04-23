@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="BP Pay"
-      description="BP Pay provides blockchain payment solutions for fast, frictionless, low-cost transactions using Stellar Blockchain and Circle's USDC."
+      description={`BP Pay provides blockchain payment solutions for fast, frictionless, low-cost transactions using Stellar Blockchain and Circle's USDC.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>BP Pay</title>
-          <meta name="description" content="BP Pay provides blockchain payment solutions for fast, frictionless, low-cost transactions using Stellar Blockchain and Circle's USDC." />
+          <meta name="description" content={`BP Pay provides blockchain payment solutions for fast, frictionless, low-cost transactions using Stellar Blockchain and Circle's USDC.`} />
         </>
       ),
     },

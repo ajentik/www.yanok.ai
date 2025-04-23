@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="PassKit Event Tickets"
-      description="PassKit Event Tickets lets you manage your event productions and passes for Apple Wallet and Google Pay"
+      description={`PassKit Event Tickets lets you manage your event productions and passes for Apple Wallet and Google Pay`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -71,7 +71,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>PassKit Event Tickets</title>
-          <meta name="description" content="PassKit Event Tickets lets you manage your event productions and passes for Apple Wallet and Google Pay" />
+          <meta name="description" content={`PassKit Event Tickets lets you manage your event productions and passes for Apple Wallet and Google Pay`} />
         </>
       ),
     },

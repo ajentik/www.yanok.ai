@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Gridfox"
-      description="Manage your work, your way with Gridfox. The tool for team collaboration that helps you build custom applications in minutes."
+      description={`Manage your work, your way with Gridfox. The tool for team collaboration that helps you build custom applications in minutes.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -62,7 +62,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Gridfox</title>
-          <meta name="description" content="Manage your work, your way with Gridfox. The tool for team collaboration that helps you build custom applications in minutes." />
+          <meta name="description" content={`Manage your work, your way with Gridfox. The tool for team collaboration that helps you build custom applications in minutes.`} />
         </>
       ),
     },

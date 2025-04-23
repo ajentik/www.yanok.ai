@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Paperless"
-      description="Paperless lets you create, sign, and manage intelligent documents on a single platform. For more productivity and a better experience for everyone involved."
+      description={`Paperless lets you create, sign, and manage intelligent documents on a single platform. For more productivity and a better experience for everyone involved.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -61,7 +61,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Paperless</title>
-          <meta name="description" content="Paperless lets you create, sign, and manage intelligent documents on a single platform. For more productivity and a better experience for everyone involved." />
+          <meta name="description" content={`Paperless lets you create, sign, and manage intelligent documents on a single platform. For more productivity and a better experience for everyone involved.`} />
         </>
       ),
     },

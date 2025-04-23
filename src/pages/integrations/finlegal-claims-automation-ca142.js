@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="FinLegal Claims Automation"
-      description="FinLegal Claims Automation is a total solution for legal claims automation."
+      description={`FinLegal Claims Automation is a total solution for legal claims automation.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -246,7 +246,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>FinLegal Claims Automation</title>
-          <meta name="description" content="FinLegal Claims Automation is a total solution for legal claims automation." />
+          <meta name="description" content={`FinLegal Claims Automation is a total solution for legal claims automation.`} />
         </>
       ),
     },

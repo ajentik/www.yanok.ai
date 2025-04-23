@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Instamojo"
-      description="Instamojo is a payments solution that allows businesses to collect payments from their customers with ease."
+      description={`Instamojo is a payments solution that allows businesses to collect payments from their customers with ease.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -62,7 +62,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Instamojo</title>
-          <meta name="description" content="Instamojo is a payments solution that allows businesses to collect payments from their customers with ease." />
+          <meta name="description" content={`Instamojo is a payments solution that allows businesses to collect payments from their customers with ease.`} />
         </>
       ),
     },

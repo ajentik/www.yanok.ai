@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="AppointmentPlus"
-      description="Discover an online appointment scheduling software flexible for any volume of your business scheduling & security needs. Scheduling ahead of its time."
+      description={`Discover an online appointment scheduling software flexible for any volume of your business scheduling & security needs. Scheduling ahead of its time.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +53,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>AppointmentPlus</title>
-          <meta name="description" content="Discover an online appointment scheduling software flexible for any volume of your business scheduling & security needs. Scheduling ahead of its time." />
+          <meta name="description" content={`Discover an online appointment scheduling software flexible for any volume of your business scheduling & security needs. Scheduling ahead of its time.`} />
         </>
       ),
     },

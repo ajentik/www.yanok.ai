@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Glip"
-      description="Real-time messaging with integrated task management, video conferencing, shared calendars and more."
+      description={`Real-time messaging with integrated task management, video conferencing, shared calendars and more.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Glip</title>
-          <meta name="description" content="Real-time messaging with integrated task management, video conferencing, shared calendars and more." />
+          <meta name="description" content={`Real-time messaging with integrated task management, video conferencing, shared calendars and more.`} />
         </>
       ),
     },

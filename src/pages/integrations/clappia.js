@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Clappia"
-      description="Clappia provides a cloud workplace where a suite of custom apps can be created within minutes by any business user."
+      description={`Clappia provides a cloud workplace where a suite of custom apps can be created within minutes by any business user.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -67,7 +67,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Clappia</title>
-          <meta name="description" content="Clappia provides a cloud workplace where a suite of custom apps can be created within minutes by any business user." />
+          <meta name="description" content={`Clappia provides a cloud workplace where a suite of custom apps can be created within minutes by any business user.`} />
         </>
       ),
     },

@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Zavitac"
-      description="Zavitac is an easy-to-use yet amazingly capable CRM platform that engages your whole team to win deals faster."
+      description={`Zavitac is an easy-to-use yet amazingly capable CRM platform that engages your whole team to win deals faster.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -181,7 +181,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Zavitac</title>
-          <meta name="description" content="Zavitac is an easy-to-use yet amazingly capable CRM platform that engages your whole team to win deals faster." />
+          <meta name="description" content={`Zavitac is an easy-to-use yet amazingly capable CRM platform that engages your whole team to win deals faster.`} />
         </>
       ),
     },

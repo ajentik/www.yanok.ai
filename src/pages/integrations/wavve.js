@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Wavve"
-      description="Turn your podcast or musical audio into engaging animated videos to share on social media!"
+      description={`Turn your podcast or musical audio into engaging animated videos to share on social media!`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -61,7 +61,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Wavve</title>
-          <meta name="description" content="Turn your podcast or musical audio into engaging animated videos to share on social media!" />
+          <meta name="description" content={`Turn your podcast or musical audio into engaging animated videos to share on social media!`} />
         </>
       ),
     },

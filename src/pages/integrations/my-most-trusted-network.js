@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="My Most Trusted Network"
-      description="My Most Trusted Network is a network building Chrome Extension for LinkedIn that allows its users to make business referrals and introductions in a safe and trusted way. It also allows users to link and sync LinkedIn data to a CRM."
+      description={`My Most Trusted Network is a network building Chrome Extension for LinkedIn that allows its users to make business referrals and introductions in a safe and trusted way. It also allows users to link and sync LinkedIn data to a CRM.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -72,7 +72,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>My Most Trusted Network</title>
-          <meta name="description" content="My Most Trusted Network is a network building Chrome Extension for LinkedIn that allows its users to make business referrals and introductions in a safe and trusted way. It also allows users to link and sync LinkedIn data to a CRM." />
+          <meta name="description" content={`My Most Trusted Network is a network building Chrome Extension for LinkedIn that allows its users to make business referrals and introductions in a safe and trusted way. It also allows users to link and sync LinkedIn data to a CRM.`} />
         </>
       ),
     },

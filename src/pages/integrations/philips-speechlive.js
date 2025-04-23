@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Philips SpeechLive"
-      description="Philips SpeechLive is a leading cloud-based dictation solution: smartphone recorder included, work from anywhere at anytime. Offering speech recognition, transcription service, browser-based transcription and administration."
+      description={`Philips SpeechLive is a leading cloud-based dictation solution: smartphone recorder included, work from anywhere at anytime. Offering speech recognition, transcription service, browser-based transcription and administration.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -61,7 +61,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Philips SpeechLive</title>
-          <meta name="description" content="Philips SpeechLive is a leading cloud-based dictation solution: smartphone recorder included, work from anywhere at anytime. Offering speech recognition, transcription service, browser-based transcription and administration." />
+          <meta name="description" content={`Philips SpeechLive is a leading cloud-based dictation solution: smartphone recorder included, work from anywhere at anytime. Offering speech recognition, transcription service, browser-based transcription and administration.`} />
         </>
       ),
     },

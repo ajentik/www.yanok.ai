@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Acquire (Legacy)"
-      description="Acquire is a customer communication platform. We help users bridge gaps between customers and sales and support teams to empower all involved."
+      description={`Acquire is a customer communication platform. We help users bridge gaps between customers and sales and support teams to empower all involved.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Acquire (Legacy)</title>
-          <meta name="description" content="Acquire is a customer communication platform. We help users bridge gaps between customers and sales and support teams to empower all involved." />
+          <meta name="description" content={`Acquire is a customer communication platform. We help users bridge gaps between customers and sales and support teams to empower all involved.`} />
         </>
       ),
     },

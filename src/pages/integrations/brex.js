@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Brex"
-      description="Handle your company’s deposits, payments, credit cards, spend management, and accounting in one place. Brex makes it refreshingly easy to see how your money’s being used and control how it’s spent."
+      description={`Handle your company’s deposits, payments, credit cards, spend management, and accounting in one place. Brex makes it refreshingly easy to see how your money’s being used and control how it’s spent.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -171,7 +171,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Brex</title>
-          <meta name="description" content="Handle your company’s deposits, payments, credit cards, spend management, and accounting in one place. Brex makes it refreshingly easy to see how your money’s being used and control how it’s spent." />
+          <meta name="description" content={`Handle your company’s deposits, payments, credit cards, spend management, and accounting in one place. Brex makes it refreshingly easy to see how your money’s being used and control how it’s spent.`} />
         </>
       ),
     },

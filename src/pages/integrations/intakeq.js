@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="IntakeQ"
-      description="IntakeQ is a tool that sends private electronic intake forms to your clients. We are HIPAA compliant and support e-signatures."
+      description={`IntakeQ is a tool that sends private electronic intake forms to your clients. We are HIPAA compliant and support e-signatures.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +53,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>IntakeQ</title>
-          <meta name="description" content="IntakeQ is a tool that sends private electronic intake forms to your clients. We are HIPAA compliant and support e-signatures." />
+          <meta name="description" content={`IntakeQ is a tool that sends private electronic intake forms to your clients. We are HIPAA compliant and support e-signatures.`} />
         </>
       ),
     },

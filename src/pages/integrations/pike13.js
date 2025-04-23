@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Pike13"
-      description="The mobile-friendly Pike13 platform allows class-based businesses like strength and conditioning gyms, yoga studios, and pilates studios to manage everything from clients and schedules to billing and payroll."
+      description={`The mobile-friendly Pike13 platform allows class-based businesses like strength and conditioning gyms, yoga studios, and pilates studios to manage everything from clients and schedules to billing and payroll.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -116,7 +116,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Pike13</title>
-          <meta name="description" content="The mobile-friendly Pike13 platform allows class-based businesses like strength and conditioning gyms, yoga studios, and pilates studios to manage everything from clients and schedules to billing and payroll." />
+          <meta name="description" content={`The mobile-friendly Pike13 platform allows class-based businesses like strength and conditioning gyms, yoga studios, and pilates studios to manage everything from clients and schedules to billing and payroll.`} />
         </>
       ),
     },

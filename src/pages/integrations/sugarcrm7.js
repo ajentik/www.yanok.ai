@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="SugarCRM 7+"
-      description="SugarCRM is an online CRM platform that helps you manage your sales, marketing, and customer support better."
+      description={`SugarCRM is an online CRM platform that helps you manage your sales, marketing, and customer support better.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -81,7 +81,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>SugarCRM 7+</title>
-          <meta name="description" content="SugarCRM is an online CRM platform that helps you manage your sales, marketing, and customer support better." />
+          <meta name="description" content={`SugarCRM is an online CRM platform that helps you manage your sales, marketing, and customer support better.`} />
         </>
       ),
     },

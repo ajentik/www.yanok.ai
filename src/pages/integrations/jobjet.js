@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Jobjet"
-      description="Jobjet is a solution to quickly find & contact people."
+      description={`Jobjet is a solution to quickly find & contact people.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -66,7 +66,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Jobjet</title>
-          <meta name="description" content="Jobjet is a solution to quickly find & contact people." />
+          <meta name="description" content={`Jobjet is a solution to quickly find & contact people.`} />
         </>
       ),
     },

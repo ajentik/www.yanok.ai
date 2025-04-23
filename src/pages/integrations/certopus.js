@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Certopus"
-      description="Certopus is a complete certificate management platform, where you can design, generate, send and verify certificates seamlessly."
+      description={`Certopus is a complete certificate management platform, where you can design, generate, send and verify certificates seamlessly.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Certopus</title>
-          <meta name="description" content="Certopus is a complete certificate management platform, where you can design, generate, send and verify certificates seamlessly." />
+          <meta name="description" content={`Certopus is a complete certificate management platform, where you can design, generate, send and verify certificates seamlessly.`} />
         </>
       ),
     },

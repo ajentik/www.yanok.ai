@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="ManicTime Cloud"
-      description="ManicTime allows you to keep up with your employees’ work, send accurate progress reports, and manage your time better than ever before."
+      description={`ManicTime allows you to keep up with your employees’ work, send accurate progress reports, and manage your time better than ever before.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>ManicTime Cloud</title>
-          <meta name="description" content="ManicTime allows you to keep up with your employees’ work, send accurate progress reports, and manage your time better than ever before." />
+          <meta name="description" content={`ManicTime allows you to keep up with your employees’ work, send accurate progress reports, and manage your time better than ever before.`} />
         </>
       ),
     },

@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="New York Times"
-      description="The New York Times is an American daily newspaper which features top articles across many sections, including politics, technology, and opinion."
+      description={`The New York Times is an American daily newspaper which features top articles across many sections, including politics, technology, and opinion.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>New York Times</title>
-          <meta name="description" content="The New York Times is an American daily newspaper which features top articles across many sections, including politics, technology, and opinion." />
+          <meta name="description" content={`The New York Times is an American daily newspaper which features top articles across many sections, including politics, technology, and opinion.`} />
         </>
       ),
     },

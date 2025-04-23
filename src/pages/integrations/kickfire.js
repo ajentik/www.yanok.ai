@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="KickFire"
-      description="KickFire, the leader in IP address intelligence, provides B2B firmographics based on IP address through its LIVE Leads, API and Prospector"
+      description={`KickFire, the leader in IP address intelligence, provides B2B firmographics based on IP address through its LIVE Leads, API and Prospector`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +53,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>KickFire</title>
-          <meta name="description" content="KickFire, the leader in IP address intelligence, provides B2B firmographics based on IP address through its LIVE Leads, API and Prospector" />
+          <meta name="description" content={`KickFire, the leader in IP address intelligence, provides B2B firmographics based on IP address through its LIVE Leads, API and Prospector`} />
         </>
       ),
     },

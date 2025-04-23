@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Evenium"
-      description="Evenium is a comprehensive solution for managing professional events. Evenium .NET handles registration, while OnSite takes care of entry management. ConnexMe, our mobile event app, provides interactive tools to your attendees and meetings."
+      description={`Evenium is a comprehensive solution for managing professional events. Evenium .NET handles registration, while OnSite takes care of entry management. ConnexMe, our mobile event app, provides interactive tools to your attendees and meetings.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -81,7 +81,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Evenium</title>
-          <meta name="description" content="Evenium is a comprehensive solution for managing professional events. Evenium .NET handles registration, while OnSite takes care of entry management. ConnexMe, our mobile event app, provides interactive tools to your attendees and meetings." />
+          <meta name="description" content={`Evenium is a comprehensive solution for managing professional events. Evenium .NET handles registration, while OnSite takes care of entry management. ConnexMe, our mobile event app, provides interactive tools to your attendees and meetings.`} />
         </>
       ),
     },

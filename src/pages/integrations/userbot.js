@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Userbot"
-      description="Userbot helps you to reply to all messages quickly, easily and in a personalized manner."
+      description={`Userbot helps you to reply to all messages quickly, easily and in a personalized manner.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -66,7 +66,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Userbot</title>
-          <meta name="description" content="Userbot helps you to reply to all messages quickly, easily and in a personalized manner." />
+          <meta name="description" content={`Userbot helps you to reply to all messages quickly, easily and in a personalized manner.`} />
         </>
       ),
     },

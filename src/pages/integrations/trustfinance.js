@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="TrustFinance"
-      description="TrustFinance encourages financial companies to be more reliable and provide for the best interests of their customers."
+      description={`TrustFinance encourages financial companies to be more reliable and provide for the best interests of their customers.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>TrustFinance</title>
-          <meta name="description" content="TrustFinance encourages financial companies to be more reliable and provide for the best interests of their customers." />
+          <meta name="description" content={`TrustFinance encourages financial companies to be more reliable and provide for the best interests of their customers.`} />
         </>
       ),
     },

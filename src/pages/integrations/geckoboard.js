@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Geckoboard"
-      description="Geckoboard: TV dashboards that make key business data visible for your team"
+      description={`Geckoboard: TV dashboards that make key business data visible for your team`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -72,7 +72,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Geckoboard</title>
-          <meta name="description" content="Geckoboard: TV dashboards that make key business data visible for your team" />
+          <meta name="description" content={`Geckoboard: TV dashboards that make key business data visible for your team`} />
         </>
       ),
     },

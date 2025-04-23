@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Sales.Rocks"
-      description="Sales.Rocks is a sales enablement tool that helps companies fill their sales pipeline by allowing them to get quick access to full company and contact data from Europe, United States and Canada."
+      description={`Sales.Rocks is a sales enablement tool that helps companies fill their sales pipeline by allowing them to get quick access to full company and contact data from Europe, United States and Canada.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -62,7 +62,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Sales.Rocks</title>
-          <meta name="description" content="Sales.Rocks is a sales enablement tool that helps companies fill their sales pipeline by allowing them to get quick access to full company and contact data from Europe, United States and Canada." />
+          <meta name="description" content={`Sales.Rocks is a sales enablement tool that helps companies fill their sales pipeline by allowing them to get quick access to full company and contact data from Europe, United States and Canada.`} />
         </>
       ),
     },

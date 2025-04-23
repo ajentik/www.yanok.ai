@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Stamped.io"
-      description="The user-content generation app to gather and leverage on product reviews, questions & answers & feedbacks from your users & customers."
+      description={`The user-content generation app to gather and leverage on product reviews, questions & answers & feedbacks from your users & customers.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +53,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Stamped.io</title>
-          <meta name="description" content="The user-content generation app to gather and leverage on product reviews, questions & answers & feedbacks from your users & customers." />
+          <meta name="description" content={`The user-content generation app to gather and leverage on product reviews, questions & answers & feedbacks from your users & customers.`} />
         </>
       ),
     },

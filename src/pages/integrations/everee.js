@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Everee"
-      description="Everee is a payroll platform for humans."
+      description={`Everee is a payroll platform for humans.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -66,7 +66,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Everee</title>
-          <meta name="description" content="Everee is a payroll platform for humans." />
+          <meta name="description" content={`Everee is a payroll platform for humans.`} />
         </>
       ),
     },

@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Employee Advocacy by Sprout Social"
-      description="Employee Advocacy by Sprout Social is a communication platform built for employee advocacy that helps brands amplify their reach on social media."
+      description={`Employee Advocacy by Sprout Social is a communication platform built for employee advocacy that helps brands amplify their reach on social media.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -66,7 +66,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Employee Advocacy by Sprout Social</title>
-          <meta name="description" content="Employee Advocacy by Sprout Social is a communication platform built for employee advocacy that helps brands amplify their reach on social media." />
+          <meta name="description" content={`Employee Advocacy by Sprout Social is a communication platform built for employee advocacy that helps brands amplify their reach on social media.`} />
         </>
       ),
     },

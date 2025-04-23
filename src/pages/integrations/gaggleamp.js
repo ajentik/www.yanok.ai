@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="GaggleAMP"
-      description="Increase brand reach and employee engagement through your employees' social networks."
+      description={`Increase brand reach and employee engagement through your employees' social networks.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -76,7 +76,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>GaggleAMP</title>
-          <meta name="description" content="Increase brand reach and employee engagement through your employees' social networks." />
+          <meta name="description" content={`Increase brand reach and employee engagement through your employees' social networks.`} />
         </>
       ),
     },

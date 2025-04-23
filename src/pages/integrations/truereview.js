@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="TrueReview"
-      description="TrueReview makes it easy for businesses to request reviews for any website, receive direct customer feedback and improve online reviews!"
+      description={`TrueReview makes it easy for businesses to request reviews for any website, receive direct customer feedback and improve online reviews!`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -62,7 +62,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>TrueReview</title>
-          <meta name="description" content="TrueReview makes it easy for businesses to request reviews for any website, receive direct customer feedback and improve online reviews!" />
+          <meta name="description" content={`TrueReview makes it easy for businesses to request reviews for any website, receive direct customer feedback and improve online reviews!`} />
         </>
       ),
     },

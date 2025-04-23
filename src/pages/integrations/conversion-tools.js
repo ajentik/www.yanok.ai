@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Conversion Tools"
-      description="Converting your documents between different formats (XML, Excel, CSV, PDF, etc). Fast and Simple."
+      description={`Converting your documents between different formats (XML, Excel, CSV, PDF, etc). Fast and Simple.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -81,7 +81,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Conversion Tools</title>
-          <meta name="description" content="Converting your documents between different formats (XML, Excel, CSV, PDF, etc). Fast and Simple." />
+          <meta name="description" content={`Converting your documents between different formats (XML, Excel, CSV, PDF, etc). Fast and Simple.`} />
         </>
       ),
     },

@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Texta Autopilot"
-      description="Texta Autopilot helps you generate posts for your social media accounts automatically."
+      description={`Texta Autopilot helps you generate posts for your social media accounts automatically.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -72,7 +72,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Texta Autopilot</title>
-          <meta name="description" content="Texta Autopilot helps you generate posts for your social media accounts automatically." />
+          <meta name="description" content={`Texta Autopilot helps you generate posts for your social media accounts automatically.`} />
         </>
       ),
     },

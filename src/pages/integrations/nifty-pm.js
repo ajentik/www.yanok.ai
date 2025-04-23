@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Nifty"
-      description="Nifty helps you communicate with your team members and manage your projects — all in one place. Project management has never been easier, fun, and more efficient."
+      description={`Nifty helps you communicate with your team members and manage your projects — all in one place. Project management has never been easier, fun, and more efficient.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -156,7 +156,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Nifty</title>
-          <meta name="description" content="Nifty helps you communicate with your team members and manage your projects — all in one place. Project management has never been easier, fun, and more efficient." />
+          <meta name="description" content={`Nifty helps you communicate with your team members and manage your projects — all in one place. Project management has never been easier, fun, and more efficient.`} />
         </>
       ),
     },

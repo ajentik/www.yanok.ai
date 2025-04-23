@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Tymbl Dialer"
-      description="Power dialer prospecting platform built for salespeople, by salespeople."
+      description={`Power dialer prospecting platform built for salespeople, by salespeople.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -66,7 +66,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Tymbl Dialer</title>
-          <meta name="description" content="Power dialer prospecting platform built for salespeople, by salespeople." />
+          <meta name="description" content={`Power dialer prospecting platform built for salespeople, by salespeople.`} />
         </>
       ),
     },

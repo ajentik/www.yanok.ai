@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="agentOS"
-      description="agentOS is a CRM platform that connects you, via open API, to your PropTech."
+      description={`agentOS is a CRM platform that connects you, via open API, to your PropTech.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -76,7 +76,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>agentOS</title>
-          <meta name="description" content="agentOS is a CRM platform that connects you, via open API, to your PropTech." />
+          <meta name="description" content={`agentOS is a CRM platform that connects you, via open API, to your PropTech.`} />
         </>
       ),
     },

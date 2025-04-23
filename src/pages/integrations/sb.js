@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Sb"
-      description="Best Award-Winning customer relationship management web based CRM software solutions, the most user friendly & affordable hosted crm software solution."
+      description={`Best Award-Winning customer relationship management web based CRM software solutions, the most user friendly & affordable hosted crm software solution.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +53,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Sb</title>
-          <meta name="description" content="Best Award-Winning customer relationship management web based CRM software solutions, the most user friendly & affordable hosted crm software solution." />
+          <meta name="description" content={`Best Award-Winning customer relationship management web based CRM software solutions, the most user friendly & affordable hosted crm software solution.`} />
         </>
       ),
     },

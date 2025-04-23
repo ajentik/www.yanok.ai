@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="EasyPractice"
-      description="EasyPractice is a platform for therapists and clinicians which handles your calendar, SMS reminders, online booking, journals, invoicing, payments and so much more."
+      description={`EasyPractice is a platform for therapists and clinicians which handles your calendar, SMS reminders, online booking, journals, invoicing, payments and so much more.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -77,7 +77,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>EasyPractice</title>
-          <meta name="description" content="EasyPractice is a platform for therapists and clinicians which handles your calendar, SMS reminders, online booking, journals, invoicing, payments and so much more." />
+          <meta name="description" content={`EasyPractice is a platform for therapists and clinicians which handles your calendar, SMS reminders, online booking, journals, invoicing, payments and so much more.`} />
         </>
       ),
     },

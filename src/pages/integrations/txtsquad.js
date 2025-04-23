@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="TxtSquad"
-      description="TxtSquad helps organizations with personalized, real time communications. Adding texting to your engagement toolbox."
+      description={`TxtSquad helps organizations with personalized, real time communications. Adding texting to your engagement toolbox.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -61,7 +61,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>TxtSquad</title>
-          <meta name="description" content="TxtSquad helps organizations with personalized, real time communications. Adding texting to your engagement toolbox." />
+          <meta name="description" content={`TxtSquad helps organizations with personalized, real time communications. Adding texting to your engagement toolbox.`} />
         </>
       ),
     },

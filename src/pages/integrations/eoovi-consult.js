@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Eoovi Consult"
-      description="Consultation service for professionals with long term video storage for legality and indemnity."
+      description={`Consultation service for professionals with long term video storage for legality and indemnity.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -66,7 +66,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Eoovi Consult</title>
-          <meta name="description" content="Consultation service for professionals with long term video storage for legality and indemnity." />
+          <meta name="description" content={`Consultation service for professionals with long term video storage for legality and indemnity.`} />
         </>
       ),
     },

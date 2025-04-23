@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="DNSFilter"
-      description="DNSFilter is a cloud-based, AI-driven content filtering and threat protection service."
+      description={`DNSFilter is a cloud-based, AI-driven content filtering and threat protection service.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -121,7 +121,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>DNSFilter</title>
-          <meta name="description" content="DNSFilter is a cloud-based, AI-driven content filtering and threat protection service." />
+          <meta name="description" content={`DNSFilter is a cloud-based, AI-driven content filtering and threat protection service.`} />
         </>
       ),
     },

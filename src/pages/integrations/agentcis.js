@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Agentcis"
-      description="Agentcis is a business management application for Education and Migration Agencies that goes beyond currently available CRM platforms."
+      description={`Agentcis is a business management application for Education and Migration Agencies that goes beyond currently available CRM platforms.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -81,7 +81,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Agentcis</title>
-          <meta name="description" content="Agentcis is a business management application for Education and Migration Agencies that goes beyond currently available CRM platforms." />
+          <meta name="description" content={`Agentcis is a business management application for Education and Migration Agencies that goes beyond currently available CRM platforms.`} />
         </>
       ),
     },

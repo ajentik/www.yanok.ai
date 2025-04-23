@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="FileInvite"
-      description="FileInvite helps you collect documentation. Request files from clients, and the work to chase and collect them is fully automated for you."
+      description={`FileInvite helps you collect documentation. Request files from clients, and the work to chase and collect them is fully automated for you.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -71,7 +71,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>FileInvite</title>
-          <meta name="description" content="FileInvite helps you collect documentation. Request files from clients, and the work to chase and collect them is fully automated for you." />
+          <meta name="description" content={`FileInvite helps you collect documentation. Request files from clients, and the work to chase and collect them is fully automated for you.`} />
         </>
       ),
     },

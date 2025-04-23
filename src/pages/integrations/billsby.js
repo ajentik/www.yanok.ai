@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Billsby"
-      description="Billsby is a billing service you can rely on for easy and accurate billing whatever your subscription business is."
+      description={`Billsby is a billing service you can rely on for easy and accurate billing whatever your subscription business is.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -111,7 +111,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Billsby</title>
-          <meta name="description" content="Billsby is a billing service you can rely on for easy and accurate billing whatever your subscription business is." />
+          <meta name="description" content={`Billsby is a billing service you can rely on for easy and accurate billing whatever your subscription business is.`} />
         </>
       ),
     },

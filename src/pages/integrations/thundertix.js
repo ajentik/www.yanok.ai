@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="ThunderTix"
-      description="Thundertix is an all-in-one event ticketing platform to integrate your event ticketing, guest lists, customer data, barcode for fraud prevention and even order and donor histories to easily manage your events."
+      description={`Thundertix is an all-in-one event ticketing platform to integrate your event ticketing, guest lists, customer data, barcode for fraud prevention and even order and donor histories to easily manage your events.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -102,7 +102,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>ThunderTix</title>
-          <meta name="description" content="Thundertix is an all-in-one event ticketing platform to integrate your event ticketing, guest lists, customer data, barcode for fraud prevention and even order and donor histories to easily manage your events." />
+          <meta name="description" content={`Thundertix is an all-in-one event ticketing platform to integrate your event ticketing, guest lists, customer data, barcode for fraud prevention and even order and donor histories to easily manage your events.`} />
         </>
       ),
     },

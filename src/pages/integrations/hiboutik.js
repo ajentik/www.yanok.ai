@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Hiboutik"
-      description="Free POS software for all retail shops. Easy to set up, you just need a web browser to create your own POS system."
+      description={`Free POS software for all retail shops. Easy to set up, you just need a web browser to create your own POS system.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +53,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Hiboutik</title>
-          <meta name="description" content="Free POS software for all retail shops. Easy to set up, you just need a web browser to create your own POS system." />
+          <meta name="description" content={`Free POS software for all retail shops. Easy to set up, you just need a web browser to create your own POS system.`} />
         </>
       ),
     },

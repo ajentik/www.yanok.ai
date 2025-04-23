@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Webshipper"
-      description="Webshipper is a shipping platform for all your shipping needs. Webshipper can help you automate and optimize your shipping flow."
+      description={`Webshipper is a shipping platform for all your shipping needs. Webshipper can help you automate and optimize your shipping flow.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -81,7 +81,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Webshipper</title>
-          <meta name="description" content="Webshipper is a shipping platform for all your shipping needs. Webshipper can help you automate and optimize your shipping flow." />
+          <meta name="description" content={`Webshipper is a shipping platform for all your shipping needs. Webshipper can help you automate and optimize your shipping flow.`} />
         </>
       ),
     },

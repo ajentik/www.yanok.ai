@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="AssessTEAM"
-      description="AssessTEAM is a cloud-based performance management & productivity analysis software. We deliver traditional annual reviews, 360-degree feedback, real-time reviews, continuous feedback, project performance evaluation and team profitability analysis."
+      description={`AssessTEAM is a cloud-based performance management & productivity analysis software. We deliver traditional annual reviews, 360-degree feedback, real-time reviews, continuous feedback, project performance evaluation and team profitability analysis.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -97,7 +97,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>AssessTEAM</title>
-          <meta name="description" content="AssessTEAM is a cloud-based performance management & productivity analysis software. We deliver traditional annual reviews, 360-degree feedback, real-time reviews, continuous feedback, project performance evaluation and team profitability analysis." />
+          <meta name="description" content={`AssessTEAM is a cloud-based performance management & productivity analysis software. We deliver traditional annual reviews, 360-degree feedback, real-time reviews, continuous feedback, project performance evaluation and team profitability analysis.`} />
         </>
       ),
     },

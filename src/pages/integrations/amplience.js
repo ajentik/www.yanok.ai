@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Amplience"
-      description="The Amplience platform supports online retailers with a combination of content management, dynamic media transcoding and content delivery."
+      description={`The Amplience platform supports online retailers with a combination of content management, dynamic media transcoding and content delivery.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +53,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Amplience</title>
-          <meta name="description" content="The Amplience platform supports online retailers with a combination of content management, dynamic media transcoding and content delivery." />
+          <meta name="description" content={`The Amplience platform supports online retailers with a combination of content management, dynamic media transcoding and content delivery.`} />
         </>
       ),
     },

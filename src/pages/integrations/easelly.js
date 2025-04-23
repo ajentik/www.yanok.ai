@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Easelly"
-      description="Easelly is a simple infographic maker that lets you visualize any kind of information. It is a web tool that empowers anyone to create and share powerful visuals (infographics, posters)... no design experience needed!"
+      description={`Easelly is a simple infographic maker that lets you visualize any kind of information. It is a web tool that empowers anyone to create and share powerful visuals (infographics, posters)... no design experience needed!`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Easelly</title>
-          <meta name="description" content="Easelly is a simple infographic maker that lets you visualize any kind of information. It is a web tool that empowers anyone to create and share powerful visuals (infographics, posters)... no design experience needed!" />
+          <meta name="description" content={`Easelly is a simple infographic maker that lets you visualize any kind of information. It is a web tool that empowers anyone to create and share powerful visuals (infographics, posters)... no design experience needed!`} />
         </>
       ),
     },

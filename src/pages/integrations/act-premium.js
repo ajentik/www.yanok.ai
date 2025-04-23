@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Act!"
-      description="Collaborate with your team to stay up-to-date on the latest contacts and automate best practice sales processes."
+      description={`Collaborate with your team to stay up-to-date on the latest contacts and automate best practice sales processes.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -131,7 +131,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Act!</title>
-          <meta name="description" content="Collaborate with your team to stay up-to-date on the latest contacts and automate best practice sales processes." />
+          <meta name="description" content={`Collaborate with your team to stay up-to-date on the latest contacts and automate best practice sales processes.`} />
         </>
       ),
     },

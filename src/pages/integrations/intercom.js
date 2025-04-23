@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Intercom"
-      description="Intercom is the Engagement OS, an open channel between customer and business that is in the product, in the moment, and on their terms. We break down silos, unifying data and systems to create an ongoing dialogue, so companies can make the most of every opportunity."
+      description={`Intercom is the Engagement OS, an open channel between customer and business that is in the product, in the moment, and on their terms. We break down silos, unifying data and systems to create an ongoing dialogue, so companies can make the most of every opportunity.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -186,7 +186,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Intercom</title>
-          <meta name="description" content="Intercom is the Engagement OS, an open channel between customer and business that is in the product, in the moment, and on their terms. We break down silos, unifying data and systems to create an ongoing dialogue, so companies can make the most of every opportunity." />
+          <meta name="description" content={`Intercom is the Engagement OS, an open channel between customer and business that is in the product, in the moment, and on their terms. We break down silos, unifying data and systems to create an ongoing dialogue, so companies can make the most of every opportunity.`} />
         </>
       ),
     },

@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Outseta"
-      description="Outseta is a technology stack for early stage SaaS companies. The platform fully integrates CRM, subscription billing & management, and customer success tools (email, chat, help desk)."
+      description={`Outseta is a technology stack for early stage SaaS companies. The platform fully integrates CRM, subscription billing & management, and customer success tools (email, chat, help desk).`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -151,7 +151,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Outseta</title>
-          <meta name="description" content="Outseta is a technology stack for early stage SaaS companies. The platform fully integrates CRM, subscription billing & management, and customer success tools (email, chat, help desk)." />
+          <meta name="description" content={`Outseta is a technology stack for early stage SaaS companies. The platform fully integrates CRM, subscription billing & management, and customer success tools (email, chat, help desk).`} />
         </>
       ),
     },

@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Firebase / Firestore"
-      description="Firebase Realtime Database and Google Cloud Firestore are flexible databases that give you the ability to easily store and sync app data at global scale."
+      description={`Firebase Realtime Database and Google Cloud Firestore are flexible databases that give you the ability to easily store and sync app data at global scale.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -81,7 +81,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Firebase / Firestore</title>
-          <meta name="description" content="Firebase Realtime Database and Google Cloud Firestore are flexible databases that give you the ability to easily store and sync app data at global scale." />
+          <meta name="description" content={`Firebase Realtime Database and Google Cloud Firestore are flexible databases that give you the ability to easily store and sync app data at global scale.`} />
         </>
       ),
     },

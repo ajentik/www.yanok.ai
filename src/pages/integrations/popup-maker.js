@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Popup Maker"
-      description="Popup Maker is a multifunctional marketing tool to boost your sales and grow your email list with variable features."
+      description={`Popup Maker is a multifunctional marketing tool to boost your sales and grow your email list with variable features.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -62,7 +62,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Popup Maker</title>
-          <meta name="description" content="Popup Maker is a multifunctional marketing tool to boost your sales and grow your email list with variable features." />
+          <meta name="description" content={`Popup Maker is a multifunctional marketing tool to boost your sales and grow your email list with variable features.`} />
         </>
       ),
     },

@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Dashmon"
-      description="Dashmon is a Visual Communication Platform allowing you to visualize your data, inform your employers and customers."
+      description={`Dashmon is a Visual Communication Platform allowing you to visualize your data, inform your employers and customers.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -67,7 +67,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Dashmon</title>
-          <meta name="description" content="Dashmon is a Visual Communication Platform allowing you to visualize your data, inform your employers and customers." />
+          <meta name="description" content={`Dashmon is a Visual Communication Platform allowing you to visualize your data, inform your employers and customers.`} />
         </>
       ),
     },

@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Adobe Business Catalyst"
-      description="Business Catalyst is a hosted all-in-one solution for building and managing business websites."
+      description={`Business Catalyst is a hosted all-in-one solution for building and managing business websites.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +53,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Adobe Business Catalyst</title>
-          <meta name="description" content="Business Catalyst is a hosted all-in-one solution for building and managing business websites." />
+          <meta name="description" content={`Business Catalyst is a hosted all-in-one solution for building and managing business websites.`} />
         </>
       ),
     },

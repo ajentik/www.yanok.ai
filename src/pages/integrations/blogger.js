@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Blogger"
-      description="Blogger is an easy-to-use, popular and free web blog publishing service provided by Google. There are millions of blogs available on Blogger today and creating your own is simple!"
+      description={`Blogger is an easy-to-use, popular and free web blog publishing service provided by Google. There are millions of blogs available on Blogger today and creating your own is simple!`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +53,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Blogger</title>
-          <meta name="description" content="Blogger is an easy-to-use, popular and free web blog publishing service provided by Google. There are millions of blogs available on Blogger today and creating your own is simple!" />
+          <meta name="description" content={`Blogger is an easy-to-use, popular and free web blog publishing service provided by Google. There are millions of blogs available on Blogger today and creating your own is simple!`} />
         </>
       ),
     },

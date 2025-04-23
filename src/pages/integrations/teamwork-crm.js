@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Teamwork CRM"
-      description="Teamwork CRM helps you to develop your sales process, plan and manage your company’s growth and bring clarity to a chaotic pipeline."
+      description={`Teamwork CRM helps you to develop your sales process, plan and manage your company’s growth and bring clarity to a chaotic pipeline.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -191,7 +191,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Teamwork CRM</title>
-          <meta name="description" content="Teamwork CRM helps you to develop your sales process, plan and manage your company’s growth and bring clarity to a chaotic pipeline." />
+          <meta name="description" content={`Teamwork CRM helps you to develop your sales process, plan and manage your company’s growth and bring clarity to a chaotic pipeline.`} />
         </>
       ),
     },

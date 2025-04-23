@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Vextras"
-      description="An app which offers connectivity with Volusion ecommerce stores."
+      description={`An app which offers connectivity with Volusion ecommerce stores.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -87,7 +87,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Vextras</title>
-          <meta name="description" content="An app which offers connectivity with Volusion ecommerce stores." />
+          <meta name="description" content={`An app which offers connectivity with Volusion ecommerce stores.`} />
         </>
       ),
     },

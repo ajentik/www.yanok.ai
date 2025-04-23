@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="RealWebsite"
-      description="RealWebsite is a website builder and hosting platform designed to give small business the ability to attract visitors and convert those visitors into leads and customers"
+      description={`RealWebsite is a website builder and hosting platform designed to give small business the ability to attract visitors and convert those visitors into leads and customers`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -71,7 +71,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>RealWebsite</title>
-          <meta name="description" content="RealWebsite is a website builder and hosting platform designed to give small business the ability to attract visitors and convert those visitors into leads and customers" />
+          <meta name="description" content={`RealWebsite is a website builder and hosting platform designed to give small business the ability to attract visitors and convert those visitors into leads and customers`} />
         </>
       ),
     },

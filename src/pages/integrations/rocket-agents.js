@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Rocket Agents"
-      description="RocketAgents is a CRM that automates brokerages from lead generation to closing. Send leads, notes, calls and other triggers in/out of your Rocket CRM"
+      description={`RocketAgents is a CRM that automates brokerages from lead generation to closing. Send leads, notes, calls and other triggers in/out of your Rocket CRM`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -101,7 +101,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Rocket Agents</title>
-          <meta name="description" content="RocketAgents is a CRM that automates brokerages from lead generation to closing. Send leads, notes, calls and other triggers in/out of your Rocket CRM" />
+          <meta name="description" content={`RocketAgents is a CRM that automates brokerages from lead generation to closing. Send leads, notes, calls and other triggers in/out of your Rocket CRM`} />
         </>
       ),
     },

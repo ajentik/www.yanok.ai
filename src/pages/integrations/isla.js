@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Isla"
-      description="Isla is your hub to send and receive structured requests, eliminating the hassle of back-and-forth messages, interruptions, and context-switching at the workplace."
+      description={`Isla is your hub to send and receive structured requests, eliminating the hassle of back-and-forth messages, interruptions, and context-switching at the workplace.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Isla</title>
-          <meta name="description" content="Isla is your hub to send and receive structured requests, eliminating the hassle of back-and-forth messages, interruptions, and context-switching at the workplace." />
+          <meta name="description" content={`Isla is your hub to send and receive structured requests, eliminating the hassle of back-and-forth messages, interruptions, and context-switching at the workplace.`} />
         </>
       ),
     },

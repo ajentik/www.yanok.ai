@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Slimster"
-      description="Integrate Slimster leads into your own workflow."
+      description={`Integrate Slimster leads into your own workflow.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Slimster</title>
-          <meta name="description" content="Integrate Slimster leads into your own workflow." />
+          <meta name="description" content={`Integrate Slimster leads into your own workflow.`} />
         </>
       ),
     },

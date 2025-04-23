@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="once.to"
-      description="once.to is a modern, blazing-fast URL shortener with tons of features including click tracking, targeting and stats."
+      description={`once.to is a modern, blazing-fast URL shortener with tons of features including click tracking, targeting and stats.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -61,7 +61,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>once.to</title>
-          <meta name="description" content="once.to is a modern, blazing-fast URL shortener with tons of features including click tracking, targeting and stats." />
+          <meta name="description" content={`once.to is a modern, blazing-fast URL shortener with tons of features including click tracking, targeting and stats.`} />
         </>
       ),
     },

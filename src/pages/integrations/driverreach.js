@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="DriverReach"
-      description="DriverReach is a Recruiting Management System for hiring CDL drivers. Use the DriverReach Action to send driver lead info to DriverReach."
+      description={`DriverReach is a Recruiting Management System for hiring CDL drivers. Use the DriverReach Action to send driver lead info to DriverReach.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>DriverReach</title>
-          <meta name="description" content="DriverReach is a Recruiting Management System for hiring CDL drivers. Use the DriverReach Action to send driver lead info to DriverReach." />
+          <meta name="description" content={`DriverReach is a Recruiting Management System for hiring CDL drivers. Use the DriverReach Action to send driver lead info to DriverReach.`} />
         </>
       ),
     },

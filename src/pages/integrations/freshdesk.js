@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Freshdesk"
-      description="Freshdesk is an online helpdesk software with multiple channel customer service to support customers across email, phone, chat, web, Twitter and more."
+      description={`Freshdesk is an online helpdesk software with multiple channel customer service to support customers across email, phone, chat, web, Twitter and more.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -121,7 +121,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Freshdesk</title>
-          <meta name="description" content="Freshdesk is an online helpdesk software with multiple channel customer service to support customers across email, phone, chat, web, Twitter and more." />
+          <meta name="description" content={`Freshdesk is an online helpdesk software with multiple channel customer service to support customers across email, phone, chat, web, Twitter and more.`} />
         </>
       ),
     },

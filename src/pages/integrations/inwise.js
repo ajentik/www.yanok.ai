@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="inwise"
-      description="inwise is a platform for email marketing & mobile marketing, landing pages and transactional messaging. Since 2002 we are serving thousands of customers around the globe with a powerful and easy to use web based solution."
+      description={`inwise is a platform for email marketing & mobile marketing, landing pages and transactional messaging. Since 2002 we are serving thousands of customers around the globe with a powerful and easy to use web based solution.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -66,7 +66,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>inwise</title>
-          <meta name="description" content="inwise is a platform for email marketing & mobile marketing, landing pages and transactional messaging. Since 2002 we are serving thousands of customers around the globe with a powerful and easy to use web based solution." />
+          <meta name="description" content={`inwise is a platform for email marketing & mobile marketing, landing pages and transactional messaging. Since 2002 we are serving thousands of customers around the globe with a powerful and easy to use web based solution.`} />
         </>
       ),
     },

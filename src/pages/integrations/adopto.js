@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Bugpilot"
-      description="Automatically collect screenshots and technical info from users."
+      description={`Automatically collect screenshots and technical info from users.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Bugpilot</title>
-          <meta name="description" content="Automatically collect screenshots and technical info from users." />
+          <meta name="description" content={`Automatically collect screenshots and technical info from users.`} />
         </>
       ),
     },

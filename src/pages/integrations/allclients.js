@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Allclients"
-      description="AllClients customer database software built to give you the email marketing and CRM functionality you’ll need to successfully manage and grow your business."
+      description={`AllClients customer database software built to give you the email marketing and CRM functionality you’ll need to successfully manage and grow your business.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +53,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Allclients</title>
-          <meta name="description" content="AllClients customer database software built to give you the email marketing and CRM functionality you’ll need to successfully manage and grow your business." />
+          <meta name="description" content={`AllClients customer database software built to give you the email marketing and CRM functionality you’ll need to successfully manage and grow your business.`} />
         </>
       ),
     },

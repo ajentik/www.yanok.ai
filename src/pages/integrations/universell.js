@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Universell"
-      description="Scale your business faster, minus heavy resources. Fully managed tools & services helping you reach more customers, get paid easily, and scale & grow your business without any additional investment in staff and systems."
+      description={`Scale your business faster, minus heavy resources. Fully managed tools & services helping you reach more customers, get paid easily, and scale & grow your business without any additional investment in staff and systems.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -61,7 +61,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Universell</title>
-          <meta name="description" content="Scale your business faster, minus heavy resources. Fully managed tools & services helping you reach more customers, get paid easily, and scale & grow your business without any additional investment in staff and systems." />
+          <meta name="description" content={`Scale your business faster, minus heavy resources. Fully managed tools & services helping you reach more customers, get paid easily, and scale & grow your business without any additional investment in staff and systems.`} />
         </>
       ),
     },

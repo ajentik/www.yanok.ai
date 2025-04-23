@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="PCRecruiter"
-      description="PCRecruiter is a CRM that serves customers worldwide doing permanent placement, 3rd party recruitment, corporate direct hiring, and staffing/contracting."
+      description={`PCRecruiter is a CRM that serves customers worldwide doing permanent placement, 3rd party recruitment, corporate direct hiring, and staffing/contracting.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -101,7 +101,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>PCRecruiter</title>
-          <meta name="description" content="PCRecruiter is a CRM that serves customers worldwide doing permanent placement, 3rd party recruitment, corporate direct hiring, and staffing/contracting." />
+          <meta name="description" content={`PCRecruiter is a CRM that serves customers worldwide doing permanent placement, 3rd party recruitment, corporate direct hiring, and staffing/contracting.`} />
         </>
       ),
     },

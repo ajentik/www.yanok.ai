@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Gravity Legal"
-      description="Gravity Legal is a credit/debit card and bank transfer acceptance platform specifically designed for law firms."
+      description={`Gravity Legal is a credit/debit card and bank transfer acceptance platform specifically designed for law firms.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -71,7 +71,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Gravity Legal</title>
-          <meta name="description" content="Gravity Legal is a credit/debit card and bank transfer acceptance platform specifically designed for law firms." />
+          <meta name="description" content={`Gravity Legal is a credit/debit card and bank transfer acceptance platform specifically designed for law firms.`} />
         </>
       ),
     },

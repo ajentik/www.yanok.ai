@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Super Send"
-      description="Super Send is an outbound sales automation tool"
+      description={`Super Send is an outbound sales automation tool`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -61,7 +61,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Super Send</title>
-          <meta name="description" content="Super Send is an outbound sales automation tool" />
+          <meta name="description" content={`Super Send is an outbound sales automation tool`} />
         </>
       ),
     },

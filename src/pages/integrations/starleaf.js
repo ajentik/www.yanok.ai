@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="StarLeaf"
-      description="StarLeaf is a collaboration and communication tool that brings people together to work better, wherever they are."
+      description={`StarLeaf is a collaboration and communication tool that brings people together to work better, wherever they are.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -77,7 +77,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>StarLeaf</title>
-          <meta name="description" content="StarLeaf is a collaboration and communication tool that brings people together to work better, wherever they are." />
+          <meta name="description" content={`StarLeaf is a collaboration and communication tool that brings people together to work better, wherever they are.`} />
         </>
       ),
     },

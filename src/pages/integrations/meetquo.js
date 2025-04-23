@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Meetquo"
-      description="Meetquo is a remote meetings platform, where each teammate participates at their own time and final decisions get tracked and signed."
+      description={`Meetquo is a remote meetings platform, where each teammate participates at their own time and final decisions get tracked and signed.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Meetquo</title>
-          <meta name="description" content="Meetquo is a remote meetings platform, where each teammate participates at their own time and final decisions get tracked and signed." />
+          <meta name="description" content={`Meetquo is a remote meetings platform, where each teammate participates at their own time and final decisions get tracked and signed.`} />
         </>
       ),
     },

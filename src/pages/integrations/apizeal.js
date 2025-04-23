@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Apizeal"
-      description="Apizeal is the Insurance Management System that helps you keep insurance policies, commissions, and clients organized."
+      description={`Apizeal is the Insurance Management System that helps you keep insurance policies, commissions, and clients organized.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Apizeal</title>
-          <meta name="description" content="Apizeal is the Insurance Management System that helps you keep insurance policies, commissions, and clients organized." />
+          <meta name="description" content={`Apizeal is the Insurance Management System that helps you keep insurance policies, commissions, and clients organized.`} />
         </>
       ),
     },

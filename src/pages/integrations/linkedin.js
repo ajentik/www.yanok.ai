@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="LinkedIn"
-      description="LinkedIn is the world's largest social network for professionals. Manage your professional identity. Build and engage with your professional network. Access knowledge, insights and opportunities."
+      description={`LinkedIn is the world's largest social network for professionals. Manage your professional identity. Build and engage with your professional network. Access knowledge, insights and opportunities.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -62,7 +62,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>LinkedIn</title>
-          <meta name="description" content="LinkedIn is the world's largest social network for professionals. Manage your professional identity. Build and engage with your professional network. Access knowledge, insights and opportunities." />
+          <meta name="description" content={`LinkedIn is the world's largest social network for professionals. Manage your professional identity. Build and engage with your professional network. Access knowledge, insights and opportunities.`} />
         </>
       ),
     },

@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="GetScreenshot"
-      description="GetScreenshot allows you to take custom screenshots of live websites. GetScreenshot can send the resulting screenshots to your email address or it can pass it to other Actions."
+      description={`GetScreenshot allows you to take custom screenshots of live websites. GetScreenshot can send the resulting screenshots to your email address or it can pass it to other Actions.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -72,7 +72,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>GetScreenshot</title>
-          <meta name="description" content="GetScreenshot allows you to take custom screenshots of live websites. GetScreenshot can send the resulting screenshots to your email address or it can pass it to other Actions." />
+          <meta name="description" content={`GetScreenshot allows you to take custom screenshots of live websites. GetScreenshot can send the resulting screenshots to your email address or it can pass it to other Actions.`} />
         </>
       ),
     },

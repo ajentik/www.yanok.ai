@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Lucid Meetings"
-      description="Lucid Meetings is an end-to-end platform for designing, running, and continuously improving the business meetings that power your organization's success."
+      description={`Lucid Meetings is an end-to-end platform for designing, running, and continuously improving the business meetings that power your organization's success.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -81,7 +81,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Lucid Meetings</title>
-          <meta name="description" content="Lucid Meetings is an end-to-end platform for designing, running, and continuously improving the business meetings that power your organization's success." />
+          <meta name="description" content={`Lucid Meetings is an end-to-end platform for designing, running, and continuously improving the business meetings that power your organization's success.`} />
         </>
       ),
     },

@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Grade.us"
-      description="Grade.us is the simplest tool for businesses to gather, monitor, and manage online reviews."
+      description={`Grade.us is the simplest tool for businesses to gather, monitor, and manage online reviews.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -66,7 +66,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Grade.us</title>
-          <meta name="description" content="Grade.us is the simplest tool for businesses to gather, monitor, and manage online reviews." />
+          <meta name="description" content={`Grade.us is the simplest tool for businesses to gather, monitor, and manage online reviews.`} />
         </>
       ),
     },

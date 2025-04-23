@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Reshape API"
-      description="Reshape API transforms data in real time to make your no-code builder and automation tools work together smoothly."
+      description={`Reshape API transforms data in real time to make your no-code builder and automation tools work together smoothly.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -61,7 +61,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Reshape API</title>
-          <meta name="description" content="Reshape API transforms data in real time to make your no-code builder and automation tools work together smoothly." />
+          <meta name="description" content={`Reshape API transforms data in real time to make your no-code builder and automation tools work together smoothly.`} />
         </>
       ),
     },

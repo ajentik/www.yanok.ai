@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="ThankView"
-      description="ThankView is a donor management platform for creating and sharing personalized videos through email and text."
+      description={`ThankView is a donor management platform for creating and sharing personalized videos through email and text.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -81,7 +81,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>ThankView</title>
-          <meta name="description" content="ThankView is a donor management platform for creating and sharing personalized videos through email and text." />
+          <meta name="description" content={`ThankView is a donor management platform for creating and sharing personalized videos through email and text.`} />
         </>
       ),
     },

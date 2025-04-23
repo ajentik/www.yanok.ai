@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="SignalWire"
-      description="SignalWire is an elastic cloud telecommunications platform that allows you to make calls, send text messages, create faxes and conduct video conferencing across the globe."
+      description={`SignalWire is an elastic cloud telecommunications platform that allows you to make calls, send text messages, create faxes and conduct video conferencing across the globe.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -76,7 +76,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>SignalWire</title>
-          <meta name="description" content="SignalWire is an elastic cloud telecommunications platform that allows you to make calls, send text messages, create faxes and conduct video conferencing across the globe." />
+          <meta name="description" content={`SignalWire is an elastic cloud telecommunications platform that allows you to make calls, send text messages, create faxes and conduct video conferencing across the globe.`} />
         </>
       ),
     },

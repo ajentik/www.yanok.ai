@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Nibo"
-      description="Nibo is a simple but powerful financial management app for SMEs. Among other things, it allows the integration of accounting file."
+      description={`Nibo is a simple but powerful financial management app for SMEs. Among other things, it allows the integration of accounting file.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -122,7 +122,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Nibo</title>
-          <meta name="description" content="Nibo is a simple but powerful financial management app for SMEs. Among other things, it allows the integration of accounting file." />
+          <meta name="description" content={`Nibo is a simple but powerful financial management app for SMEs. Among other things, it allows the integration of accounting file.`} />
         </>
       ),
     },

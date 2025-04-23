@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Vookmark"
-      description="Vookmark is the easiest to bookmark videos across the web and mobile and watch it later on your browser, Apple TV, iOS or Android devices."
+      description={`Vookmark is the easiest to bookmark videos across the web and mobile and watch it later on your browser, Apple TV, iOS or Android devices.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Vookmark</title>
-          <meta name="description" content="Vookmark is the easiest to bookmark videos across the web and mobile and watch it later on your browser, Apple TV, iOS or Android devices." />
+          <meta name="description" content={`Vookmark is the easiest to bookmark videos across the web and mobile and watch it later on your browser, Apple TV, iOS or Android devices.`} />
         </>
       ),
     },

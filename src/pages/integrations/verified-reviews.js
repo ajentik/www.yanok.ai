@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Verified Reviews"
-      description="Verified Reviews is a solution specialising in gathering customer reviews, allowing customers to provide opinions of products they have bought and their overall shopping experience."
+      description={`Verified Reviews is a solution specialising in gathering customer reviews, allowing customers to provide opinions of products they have bought and their overall shopping experience.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -76,7 +76,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Verified Reviews</title>
-          <meta name="description" content="Verified Reviews is a solution specialising in gathering customer reviews, allowing customers to provide opinions of products they have bought and their overall shopping experience." />
+          <meta name="description" content={`Verified Reviews is a solution specialising in gathering customer reviews, allowing customers to provide opinions of products they have bought and their overall shopping experience.`} />
         </>
       ),
     },

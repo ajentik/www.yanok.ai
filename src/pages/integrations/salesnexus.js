@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="SalesNexus"
-      description="SalesNexus is lead generation, lead management plus sales process automation and full featured CRM, that's simple to set up and use."
+      description={`SalesNexus is lead generation, lead management plus sales process automation and full featured CRM, that's simple to set up and use.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -77,7 +77,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>SalesNexus</title>
-          <meta name="description" content="SalesNexus is lead generation, lead management plus sales process automation and full featured CRM, that's simple to set up and use." />
+          <meta name="description" content={`SalesNexus is lead generation, lead management plus sales process automation and full featured CRM, that's simple to set up and use.`} />
         </>
       ),
     },

@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Freshcaller"
-      description="Freshcaller is a cloud-based phone system for businesses of all sizes."
+      description={`Freshcaller is a cloud-based phone system for businesses of all sizes.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -76,7 +76,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Freshcaller</title>
-          <meta name="description" content="Freshcaller is a cloud-based phone system for businesses of all sizes." />
+          <meta name="description" content={`Freshcaller is a cloud-based phone system for businesses of all sizes.`} />
         </>
       ),
     },

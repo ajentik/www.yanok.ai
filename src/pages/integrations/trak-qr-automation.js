@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Trak Qr Automation"
-      description="Trak enables using smartphones and QR codes to track actions on physical artifacts like documents, envelopes, boxes, tools, buildings, etc."
+      description={`Trak enables using smartphones and QR codes to track actions on physical artifacts like documents, envelopes, boxes, tools, buildings, etc.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -72,7 +72,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Trak Qr Automation</title>
-          <meta name="description" content="Trak enables using smartphones and QR codes to track actions on physical artifacts like documents, envelopes, boxes, tools, buildings, etc." />
+          <meta name="description" content={`Trak enables using smartphones and QR codes to track actions on physical artifacts like documents, envelopes, boxes, tools, buildings, etc.`} />
         </>
       ),
     },

@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="tuGerente"
-      description="tuGerente is an administrative, financial, and accounting software whose purpose is to make our customers' lives easier"
+      description={`tuGerente is an administrative, financial, and accounting software whose purpose is to make our customers' lives easier`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -116,7 +116,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>tuGerente</title>
-          <meta name="description" content="tuGerente is an administrative, financial, and accounting software whose purpose is to make our customers' lives easier" />
+          <meta name="description" content={`tuGerente is an administrative, financial, and accounting software whose purpose is to make our customers' lives easier`} />
         </>
       ),
     },

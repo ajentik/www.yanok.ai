@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Hiveage"
-      description="Simple, powerful online billing for freelancers and small businesses. Track time, expenses and mileage. Manage multiple teams & businesses."
+      description={`Simple, powerful online billing for freelancers and small businesses. Track time, expenses and mileage. Manage multiple teams & businesses.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -176,7 +176,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Hiveage</title>
-          <meta name="description" content="Simple, powerful online billing for freelancers and small businesses. Track time, expenses and mileage. Manage multiple teams & businesses." />
+          <meta name="description" content={`Simple, powerful online billing for freelancers and small businesses. Track time, expenses and mileage. Manage multiple teams & businesses.`} />
         </>
       ),
     },

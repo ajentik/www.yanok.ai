@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Lexicata"
-      description="Lexicata is a law firm CRM and client intake software featuring a legal CRM, online intake forms, e-signature, referral tracking, and more."
+      description={`Lexicata is a law firm CRM and client intake software featuring a legal CRM, online intake forms, e-signature, referral tracking, and more.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +53,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Lexicata</title>
-          <meta name="description" content="Lexicata is a law firm CRM and client intake software featuring a legal CRM, online intake forms, e-signature, referral tracking, and more." />
+          <meta name="description" content={`Lexicata is a law firm CRM and client intake software featuring a legal CRM, online intake forms, e-signature, referral tracking, and more.`} />
         </>
       ),
     },

@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="MailMunch"
-      description="MailMunch captures leads from your website and converts visitors into life-long readers, email subscribers and customers."
+      description={`MailMunch captures leads from your website and converts visitors into life-long readers, email subscribers and customers.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>MailMunch</title>
-          <meta name="description" content="MailMunch captures leads from your website and converts visitors into life-long readers, email subscribers and customers." />
+          <meta name="description" content={`MailMunch captures leads from your website and converts visitors into life-long readers, email subscribers and customers.`} />
         </>
       ),
     },

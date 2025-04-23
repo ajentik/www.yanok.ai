@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Project Broadcast"
-      description="Project Broadcast is a robust business texting platform that allows you to communicate with your customers with ease while maintaining that personal connection."
+      description={`Project Broadcast is a robust business texting platform that allows you to communicate with your customers with ease while maintaining that personal connection.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -87,7 +87,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Project Broadcast</title>
-          <meta name="description" content="Project Broadcast is a robust business texting platform that allows you to communicate with your customers with ease while maintaining that personal connection." />
+          <meta name="description" content={`Project Broadcast is a robust business texting platform that allows you to communicate with your customers with ease while maintaining that personal connection.`} />
         </>
       ),
     },

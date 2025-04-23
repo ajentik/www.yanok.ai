@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="AutoRepl"
-      description="AutoRepl is a powerful and easy no-code chatbot builder."
+      description={`AutoRepl is a powerful and easy no-code chatbot builder.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>AutoRepl</title>
-          <meta name="description" content="AutoRepl is a powerful and easy no-code chatbot builder." />
+          <meta name="description" content={`AutoRepl is a powerful and easy no-code chatbot builder.`} />
         </>
       ),
     },

@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Aptivada"
-      description="Aptivada provides an integrated digital marketing solution for media companies of all sizes."
+      description={`Aptivada provides an integrated digital marketing solution for media companies of all sizes.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +53,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Aptivada</title>
-          <meta name="description" content="Aptivada provides an integrated digital marketing solution for media companies of all sizes." />
+          <meta name="description" content={`Aptivada provides an integrated digital marketing solution for media companies of all sizes.`} />
         </>
       ),
     },

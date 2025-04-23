@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Zoho Books"
-      description="Zoho Books is cloud-based accounting software in which you can record, audit and analyze all financial transactions easily. With secure data storage, easy navigation and customizable features, Zoho Books provide a head start in accounting for small businesses."
+      description={`Zoho Books is cloud-based accounting software in which you can record, audit and analyze all financial transactions easily. With secure data storage, easy navigation and customizable features, Zoho Books provide a head start in accounting for small businesses.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -101,7 +101,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Zoho Books</title>
-          <meta name="description" content="Zoho Books is cloud-based accounting software in which you can record, audit and analyze all financial transactions easily. With secure data storage, easy navigation and customizable features, Zoho Books provide a head start in accounting for small businesses." />
+          <meta name="description" content={`Zoho Books is cloud-based accounting software in which you can record, audit and analyze all financial transactions easily. With secure data storage, easy navigation and customizable features, Zoho Books provide a head start in accounting for small businesses.`} />
         </>
       ),
     },

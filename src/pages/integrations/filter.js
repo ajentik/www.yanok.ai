@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Filter by Zapier"
-      description="Only allow a Zap to proceed when a certain condition is met. For example, if you're sending a text message when you receive a new email, you could use a Filter that only sends a text message when the email received is from a certain address."
+      description={`Only allow a Zap to proceed when a certain condition is met. For example, if you're sending a text message when you receive a new email, you could use a Filter that only sends a text message when the email received is from a certain address.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Filter by Zapier</title>
-          <meta name="description" content="Only allow a Zap to proceed when a certain condition is met. For example, if you're sending a text message when you receive a new email, you could use a Filter that only sends a text message when the email received is from a certain address." />
+          <meta name="description" content={`Only allow a Zap to proceed when a certain condition is met. For example, if you're sending a text message when you receive a new email, you could use a Filter that only sends a text message when the email received is from a certain address.`} />
         </>
       ),
     },

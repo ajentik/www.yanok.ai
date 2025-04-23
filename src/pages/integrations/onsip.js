@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="OnSIP"
-      description="OnSIP is a powerfully simple cloud phone system and CPaaS that starts with free."
+      description={`OnSIP is a powerfully simple cloud phone system and CPaaS that starts with free.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +53,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>OnSIP</title>
-          <meta name="description" content="OnSIP is a powerfully simple cloud phone system and CPaaS that starts with free." />
+          <meta name="description" content={`OnSIP is a powerfully simple cloud phone system and CPaaS that starts with free.`} />
         </>
       ),
     },

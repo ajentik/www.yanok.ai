@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Capsule CRM"
-      description="Capsule is an online CRM for managing contacts, tasks and sales opportunities. Add tasks, track communication logs, and close deals in your pipeline faster with Capsule."
+      description={`Capsule is an online CRM for managing contacts, tasks and sales opportunities. Add tasks, track communication logs, and close deals in your pipeline faster with Capsule.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -141,7 +141,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Capsule CRM</title>
-          <meta name="description" content="Capsule is an online CRM for managing contacts, tasks and sales opportunities. Add tasks, track communication logs, and close deals in your pipeline faster with Capsule." />
+          <meta name="description" content={`Capsule is an online CRM for managing contacts, tasks and sales opportunities. Add tasks, track communication logs, and close deals in your pipeline faster with Capsule.`} />
         </>
       ),
     },

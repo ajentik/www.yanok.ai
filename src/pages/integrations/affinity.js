@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Affinity"
-      description="Affinity is a collective intelligence CRM, helping you keep track of the people and organizations in your network."
+      description={`Affinity is a collective intelligence CRM, helping you keep track of the people and organizations in your network.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -181,7 +181,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Affinity</title>
-          <meta name="description" content="Affinity is a collective intelligence CRM, helping you keep track of the people and organizations in your network." />
+          <meta name="description" content={`Affinity is a collective intelligence CRM, helping you keep track of the people and organizations in your network.`} />
         </>
       ),
     },

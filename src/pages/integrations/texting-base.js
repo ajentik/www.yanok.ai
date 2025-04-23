@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Texting Base"
-      description="Texting Base is an automation and personalization texting platform for business."
+      description={`Texting Base is an automation and personalization texting platform for business.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -76,7 +76,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Texting Base</title>
-          <meta name="description" content="Texting Base is an automation and personalization texting platform for business." />
+          <meta name="description" content={`Texting Base is an automation and personalization texting platform for business.`} />
         </>
       ),
     },

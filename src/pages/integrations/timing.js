@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Timing"
-      description="Timing is an automatic time tracking app for macOS. It also offers a web service to manage your tasks on the go, retrieve data via the API, and connect to other services."
+      description={`Timing is an automatic time tracking app for macOS. It also offers a web service to manage your tasks on the go, retrieve data via the API, and connect to other services.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -96,7 +96,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Timing</title>
-          <meta name="description" content="Timing is an automatic time tracking app for macOS. It also offers a web service to manage your tasks on the go, retrieve data via the API, and connect to other services." />
+          <meta name="description" content={`Timing is an automatic time tracking app for macOS. It also offers a web service to manage your tasks on the go, retrieve data via the API, and connect to other services.`} />
         </>
       ),
     },

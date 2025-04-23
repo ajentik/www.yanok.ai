@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="HappyForms"
-      description="HappyForms helps you to grow customer interactions through better forms, sign-ups, surveys, polls and checkouts for WordPress."
+      description={`HappyForms helps you to grow customer interactions through better forms, sign-ups, surveys, polls and checkouts for WordPress.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>HappyForms</title>
-          <meta name="description" content="HappyForms helps you to grow customer interactions through better forms, sign-ups, surveys, polls and checkouts for WordPress." />
+          <meta name="description" content={`HappyForms helps you to grow customer interactions through better forms, sign-ups, surveys, polls and checkouts for WordPress.`} />
         </>
       ),
     },

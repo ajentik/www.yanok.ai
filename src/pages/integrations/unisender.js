@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Unisender"
-      description="UniSender is one of the leading email marketing service providers in the Eastern Europe, provides Email and SMS deliveries."
+      description={`UniSender is one of the leading email marketing service providers in the Eastern Europe, provides Email and SMS deliveries.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -81,7 +81,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Unisender</title>
-          <meta name="description" content="UniSender is one of the leading email marketing service providers in the Eastern Europe, provides Email and SMS deliveries." />
+          <meta name="description" content={`UniSender is one of the leading email marketing service providers in the Eastern Europe, provides Email and SMS deliveries.`} />
         </>
       ),
     },

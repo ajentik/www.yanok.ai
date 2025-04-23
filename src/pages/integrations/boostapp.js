@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Boostapp"
-      description="Boostapp is a leading all-in-one stop platform for manage memberships, sales and marketing."
+      description={`Boostapp is a leading all-in-one stop platform for manage memberships, sales and marketing.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -106,7 +106,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Boostapp</title>
-          <meta name="description" content="Boostapp is a leading all-in-one stop platform for manage memberships, sales and marketing." />
+          <meta name="description" content={`Boostapp is a leading all-in-one stop platform for manage memberships, sales and marketing.`} />
         </>
       ),
     },

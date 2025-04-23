@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="videoremix"
-      description="Videoremix is an online video editor to create simple and personalized videos from scratch."
+      description={`Videoremix is an online video editor to create simple and personalized videos from scratch.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -61,7 +61,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>videoremix</title>
-          <meta name="description" content="Videoremix is an online video editor to create simple and personalized videos from scratch." />
+          <meta name="description" content={`Videoremix is an online video editor to create simple and personalized videos from scratch.`} />
         </>
       ),
     },

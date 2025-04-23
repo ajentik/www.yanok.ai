@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Pointagram"
-      description="Pointagram is a free gamification tool that helps motivate teams and individuals in any organization or private group of people."
+      description={`Pointagram is a free gamification tool that helps motivate teams and individuals in any organization or private group of people.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -81,7 +81,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Pointagram</title>
-          <meta name="description" content="Pointagram is a free gamification tool that helps motivate teams and individuals in any organization or private group of people." />
+          <meta name="description" content={`Pointagram is a free gamification tool that helps motivate teams and individuals in any organization or private group of people.`} />
         </>
       ),
     },

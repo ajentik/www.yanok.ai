@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Sunivo"
-      description="Sunivo is an All-In-One virtual solar sales platform."
+      description={`Sunivo is an All-In-One virtual solar sales platform.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -121,7 +121,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Sunivo</title>
-          <meta name="description" content="Sunivo is an All-In-One virtual solar sales platform." />
+          <meta name="description" content={`Sunivo is an All-In-One virtual solar sales platform.`} />
         </>
       ),
     },

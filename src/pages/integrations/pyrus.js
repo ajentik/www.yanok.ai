@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Pyrus"
-      description="Pyrus is a platform for real-time messaging, task management, and workflow automation."
+      description={`Pyrus is a platform for real-time messaging, task management, and workflow automation.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -62,7 +62,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Pyrus</title>
-          <meta name="description" content="Pyrus is a platform for real-time messaging, task management, and workflow automation." />
+          <meta name="description" content={`Pyrus is a platform for real-time messaging, task management, and workflow automation.`} />
         </>
       ),
     },

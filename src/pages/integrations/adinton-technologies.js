@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Adinton-Technologies"
-      description="Adinton is a marketing attribution and autobidding software that helps companies to get the real value of their marketing strategies and optimize the bid management to succeed their marketing goals."
+      description={`Adinton is a marketing attribution and autobidding software that helps companies to get the real value of their marketing strategies and optimize the bid management to succeed their marketing goals.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Adinton-Technologies</title>
-          <meta name="description" content="Adinton is a marketing attribution and autobidding software that helps companies to get the real value of their marketing strategies and optimize the bid management to succeed their marketing goals." />
+          <meta name="description" content={`Adinton is a marketing attribution and autobidding software that helps companies to get the real value of their marketing strategies and optimize the bid management to succeed their marketing goals.`} />
         </>
       ),
     },

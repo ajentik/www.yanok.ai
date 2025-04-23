@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="openHandwerk"
-      description="openHandwerk is invoice & project management software which includes many features like CRM, DMS, Calendar & many more supporting the daily workflow as an artisan."
+      description={`openHandwerk is invoice & project management software which includes many features like CRM, DMS, Calendar & many more supporting the daily workflow as an artisan.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -86,7 +86,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>openHandwerk</title>
-          <meta name="description" content="openHandwerk is invoice & project management software which includes many features like CRM, DMS, Calendar & many more supporting the daily workflow as an artisan." />
+          <meta name="description" content={`openHandwerk is invoice & project management software which includes many features like CRM, DMS, Calendar & many more supporting the daily workflow as an artisan.`} />
         </>
       ),
     },

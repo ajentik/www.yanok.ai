@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="SalesFort"
-      description="SalesFort is your local, freelance, cloud-based telesales team. Hire local sales agents in your state or country instantly to conduct sales calls. Hire on a daily, weekly or monthly basis."
+      description={`SalesFort is your local, freelance, cloud-based telesales team. Hire local sales agents in your state or country instantly to conduct sales calls. Hire on a daily, weekly or monthly basis.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -66,7 +66,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>SalesFort</title>
-          <meta name="description" content="SalesFort is your local, freelance, cloud-based telesales team. Hire local sales agents in your state or country instantly to conduct sales calls. Hire on a daily, weekly or monthly basis." />
+          <meta name="description" content={`SalesFort is your local, freelance, cloud-based telesales team. Hire local sales agents in your state or country instantly to conduct sales calls. Hire on a daily, weekly or monthly basis.`} />
         </>
       ),
     },

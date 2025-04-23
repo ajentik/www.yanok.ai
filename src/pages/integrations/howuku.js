@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Howuku"
-      description="Howuku is a UX testing tool to help business collects feedback and records user behavior."
+      description={`Howuku is a UX testing tool to help business collects feedback and records user behavior.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -71,7 +71,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Howuku</title>
-          <meta name="description" content="Howuku is a UX testing tool to help business collects feedback and records user behavior." />
+          <meta name="description" content={`Howuku is a UX testing tool to help business collects feedback and records user behavior.`} />
         </>
       ),
     },

@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Compass"
-      description="Compass CRM empowers Compass agents to manage their business end-to-end in one platform."
+      description={`Compass CRM empowers Compass agents to manage their business end-to-end in one platform.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Compass</title>
-          <meta name="description" content="Compass CRM empowers Compass agents to manage their business end-to-end in one platform." />
+          <meta name="description" content={`Compass CRM empowers Compass agents to manage their business end-to-end in one platform.`} />
         </>
       ),
     },

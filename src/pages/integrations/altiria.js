@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Altiria"
-      description="Altiria is a text messaging platform for sending SMS globally. Great for transactional SMS: alerts, notifications and automation systems."
+      description={`Altiria is a text messaging platform for sending SMS globally. Great for transactional SMS: alerts, notifications and automation systems.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Altiria</title>
-          <meta name="description" content="Altiria is a text messaging platform for sending SMS globally. Great for transactional SMS: alerts, notifications and automation systems." />
+          <meta name="description" content={`Altiria is a text messaging platform for sending SMS globally. Great for transactional SMS: alerts, notifications and automation systems.`} />
         </>
       ),
     },

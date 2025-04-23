@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Funnelking"
-      description="Funnelking is an all-in-one software for small and medium-sized companies to successfully digitize their design, marketing, and sales."
+      description={`Funnelking is an all-in-one software for small and medium-sized companies to successfully digitize their design, marketing, and sales.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -106,7 +106,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Funnelking</title>
-          <meta name="description" content="Funnelking is an all-in-one software for small and medium-sized companies to successfully digitize their design, marketing, and sales." />
+          <meta name="description" content={`Funnelking is an all-in-one software for small and medium-sized companies to successfully digitize their design, marketing, and sales.`} />
         </>
       ),
     },

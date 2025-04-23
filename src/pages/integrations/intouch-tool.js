@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="InTouch Tool"
-      description="InTouch Tool automates your LinkedIn outreach with auto connections and followups. Setup your search filters to collect prospects, set your messages sequence aka drip campaign and get replies from new potential customers at scale."
+      description={`InTouch Tool automates your LinkedIn outreach with auto connections and followups. Setup your search filters to collect prospects, set your messages sequence aka drip campaign and get replies from new potential customers at scale.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -76,7 +76,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>InTouch Tool</title>
-          <meta name="description" content="InTouch Tool automates your LinkedIn outreach with auto connections and followups. Setup your search filters to collect prospects, set your messages sequence aka drip campaign and get replies from new potential customers at scale." />
+          <meta name="description" content={`InTouch Tool automates your LinkedIn outreach with auto connections and followups. Setup your search filters to collect prospects, set your messages sequence aka drip campaign and get replies from new potential customers at scale.`} />
         </>
       ),
     },

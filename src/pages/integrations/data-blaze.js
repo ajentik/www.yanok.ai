@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Data Blaze"
-      description="Data Blaze is a spreadsheet app that can be used in any website by using snippets and templates from the companion application Text Blaze."
+      description={`Data Blaze is a spreadsheet app that can be used in any website by using snippets and templates from the companion application Text Blaze.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -91,7 +91,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Data Blaze</title>
-          <meta name="description" content="Data Blaze is a spreadsheet app that can be used in any website by using snippets and templates from the companion application Text Blaze." />
+          <meta name="description" content={`Data Blaze is a spreadsheet app that can be used in any website by using snippets and templates from the companion application Text Blaze.`} />
         </>
       ),
     },

@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="URL Shortener by Zapier"
-      description="Create ready-to-share links on the fly. Zapier's URL Shortener spits out a simplified version of any link you throw its way. Pass that link to Twitter, drop it in an email, or send it along to any Zapier-connected app."
+      description={`Create ready-to-share links on the fly. Zapier's URL Shortener spits out a simplified version of any link you throw its way. Pass that link to Twitter, drop it in an email, or send it along to any Zapier-connected app.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>URL Shortener by Zapier</title>
-          <meta name="description" content="Create ready-to-share links on the fly. Zapier's URL Shortener spits out a simplified version of any link you throw its way. Pass that link to Twitter, drop it in an email, or send it along to any Zapier-connected app." />
+          <meta name="description" content={`Create ready-to-share links on the fly. Zapier's URL Shortener spits out a simplified version of any link you throw its way. Pass that link to Twitter, drop it in an email, or send it along to any Zapier-connected app.`} />
         </>
       ),
     },

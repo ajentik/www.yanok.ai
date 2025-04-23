@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Stackla"
-      description="Stackla is a social content marketing platform used by hundreds of global brands, agencies, media companies, and nonprofits to discover, curate and publish the best content from the social web."
+      description={`Stackla is a social content marketing platform used by hundreds of global brands, agencies, media companies, and nonprofits to discover, curate and publish the best content from the social web.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -131,7 +131,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Stackla</title>
-          <meta name="description" content="Stackla is a social content marketing platform used by hundreds of global brands, agencies, media companies, and nonprofits to discover, curate and publish the best content from the social web." />
+          <meta name="description" content={`Stackla is a social content marketing platform used by hundreds of global brands, agencies, media companies, and nonprofits to discover, curate and publish the best content from the social web.`} />
         </>
       ),
     },

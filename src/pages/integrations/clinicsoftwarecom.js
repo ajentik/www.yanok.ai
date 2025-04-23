@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="ClinicSoftware.com"
-      description="ClinicSoftware.com is a full suite of cloud-based tools created to help appointment-based businesses to Grow Sales & Save Time."
+      description={`ClinicSoftware.com is a full suite of cloud-based tools created to help appointment-based businesses to Grow Sales & Save Time.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -76,7 +76,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>ClinicSoftware.com</title>
-          <meta name="description" content="ClinicSoftware.com is a full suite of cloud-based tools created to help appointment-based businesses to Grow Sales & Save Time." />
+          <meta name="description" content={`ClinicSoftware.com is a full suite of cloud-based tools created to help appointment-based businesses to Grow Sales & Save Time.`} />
         </>
       ),
     },

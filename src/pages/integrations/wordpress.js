@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="WordPress"
-      description="WordPress is web software you can use to create a beautiful website or blog. Nearly 20% of the top 10 million websites and over 60 million people have chosen WordPress to power the place on the web they call "home"."
+      description={`WordPress is web software you can use to create a beautiful website or blog. Nearly 20% of the top 10 million websites and over 60 million people have chosen WordPress to power the place on the web they call `}home"."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -101,7 +101,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>WordPress</title>
-          <meta name="description" content="WordPress is web software you can use to create a beautiful website or blog. Nearly 20% of the top 10 million websites and over 60 million people have chosen WordPress to power the place on the web they call "home"." />
+          <meta name="description" content={`WordPress is web software you can use to create a beautiful website or blog. Nearly 20% of the top 10 million websites and over 60 million people have chosen WordPress to power the place on the web they call `}home"." />
         </>
       ),
     },

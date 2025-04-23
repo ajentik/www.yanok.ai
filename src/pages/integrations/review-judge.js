@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Review Judge"
-      description="Getting clients to leave 5-star reviews for your law firm has never been easier. Take the work out of following up with your clients with friendly automatic reminders. And don’t worry, Review Judge prevents negative reviews, too."
+      description={`Getting clients to leave 5-star reviews for your law firm has never been easier. Take the work out of following up with your clients with friendly automatic reminders. And don’t worry, Review Judge prevents negative reviews, too.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -81,7 +81,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Review Judge</title>
-          <meta name="description" content="Getting clients to leave 5-star reviews for your law firm has never been easier. Take the work out of following up with your clients with friendly automatic reminders. And don’t worry, Review Judge prevents negative reviews, too." />
+          <meta name="description" content={`Getting clients to leave 5-star reviews for your law firm has never been easier. Take the work out of following up with your clients with friendly automatic reminders. And don’t worry, Review Judge prevents negative reviews, too.`} />
         </>
       ),
     },

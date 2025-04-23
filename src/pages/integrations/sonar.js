@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Sonar"
-      description="Sonar is a platform that enables companies to communicate with customers over 2-way text messages such as SMS and mobile chat channels."
+      description={`Sonar is a platform that enables companies to communicate with customers over 2-way text messages such as SMS and mobile chat channels.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +53,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Sonar</title>
-          <meta name="description" content="Sonar is a platform that enables companies to communicate with customers over 2-way text messages such as SMS and mobile chat channels." />
+          <meta name="description" content={`Sonar is a platform that enables companies to communicate with customers over 2-way text messages such as SMS and mobile chat channels.`} />
         </>
       ),
     },

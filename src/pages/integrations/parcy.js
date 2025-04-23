@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Parcy"
-      description="Parcy helps you easily create live, hybrid, and virtual events that are fully customizable and personalized for each attendee."
+      description={`Parcy helps you easily create live, hybrid, and virtual events that are fully customizable and personalized for each attendee.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -66,7 +66,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Parcy</title>
-          <meta name="description" content="Parcy helps you easily create live, hybrid, and virtual events that are fully customizable and personalized for each attendee." />
+          <meta name="description" content={`Parcy helps you easily create live, hybrid, and virtual events that are fully customizable and personalized for each attendee.`} />
         </>
       ),
     },

@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Reckon One"
-      description="Reckon One is an easy to use cloud accounting system built for every day small business owners who want a no fuss, simple and inexpensive solution. Easily add and remove modules such as payroll as your business needs them."
+      description={`Reckon One is an easy to use cloud accounting system built for every day small business owners who want a no fuss, simple and inexpensive solution. Easily add and remove modules such as payroll as your business needs them.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -121,7 +121,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Reckon One</title>
-          <meta name="description" content="Reckon One is an easy to use cloud accounting system built for every day small business owners who want a no fuss, simple and inexpensive solution. Easily add and remove modules such as payroll as your business needs them." />
+          <meta name="description" content={`Reckon One is an easy to use cloud accounting system built for every day small business owners who want a no fuss, simple and inexpensive solution. Easily add and remove modules such as payroll as your business needs them.`} />
         </>
       ),
     },

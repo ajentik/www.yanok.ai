@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Workflow86"
-      description="Workflow86 is an all-in-one workflow automation platform for complex and mission-critical business operations."
+      description={`Workflow86 is an all-in-one workflow automation platform for complex and mission-critical business operations.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -61,7 +61,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Workflow86</title>
-          <meta name="description" content="Workflow86 is an all-in-one workflow automation platform for complex and mission-critical business operations." />
+          <meta name="description" content={`Workflow86 is an all-in-one workflow automation platform for complex and mission-critical business operations.`} />
         </>
       ),
     },

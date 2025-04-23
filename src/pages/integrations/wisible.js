@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Wisible"
-      description="Wisible is a Sales Intelligence Platform that helps business increase win rates, shorten sales cycles and improve forecast accuracy."
+      description={`Wisible is a Sales Intelligence Platform that helps business increase win rates, shorten sales cycles and improve forecast accuracy.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -66,7 +66,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Wisible</title>
-          <meta name="description" content="Wisible is a Sales Intelligence Platform that helps business increase win rates, shorten sales cycles and improve forecast accuracy." />
+          <meta name="description" content={`Wisible is a Sales Intelligence Platform that helps business increase win rates, shorten sales cycles and improve forecast accuracy.`} />
         </>
       ),
     },

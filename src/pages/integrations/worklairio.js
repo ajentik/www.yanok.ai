@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Worklair"
-      description="Worklair is a team collaboration tool that organizes tasks and keeps projects on track"
+      description={`Worklair is a team collaboration tool that organizes tasks and keeps projects on track`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -61,7 +61,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Worklair</title>
-          <meta name="description" content="Worklair is a team collaboration tool that organizes tasks and keeps projects on track" />
+          <meta name="description" content={`Worklair is a team collaboration tool that organizes tasks and keeps projects on track`} />
         </>
       ),
     },

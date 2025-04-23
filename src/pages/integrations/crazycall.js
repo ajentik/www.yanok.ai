@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="CrazyCall"
-      description="CrazyCall is a browser-based calling application. It allows you to make and take calls directly from your browser."
+      description={`CrazyCall is a browser-based calling application. It allows you to make and take calls directly from your browser.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -71,7 +71,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>CrazyCall</title>
-          <meta name="description" content="CrazyCall is a browser-based calling application. It allows you to make and take calls directly from your browser." />
+          <meta name="description" content={`CrazyCall is a browser-based calling application. It allows you to make and take calls directly from your browser.`} />
         </>
       ),
     },

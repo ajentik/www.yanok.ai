@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Sterblue"
-      description="Sterblue builds software for automatic inspection of industrial assets, using drones and artificial intelligence."
+      description={`Sterblue builds software for automatic inspection of industrial assets, using drones and artificial intelligence.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -76,7 +76,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Sterblue</title>
-          <meta name="description" content="Sterblue builds software for automatic inspection of industrial assets, using drones and artificial intelligence." />
+          <meta name="description" content={`Sterblue builds software for automatic inspection of industrial assets, using drones and artificial intelligence.`} />
         </>
       ),
     },

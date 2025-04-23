@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="CloudSpot"
-      description="CloudSpot is the fastest and easiest way for photographers to deliver, share, and sell their work!"
+      description={`CloudSpot is the fastest and easiest way for photographers to deliver, share, and sell their work!`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -71,7 +71,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>CloudSpot</title>
-          <meta name="description" content="CloudSpot is the fastest and easiest way for photographers to deliver, share, and sell their work!" />
+          <meta name="description" content={`CloudSpot is the fastest and easiest way for photographers to deliver, share, and sell their work!`} />
         </>
       ),
     },

@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Teletrac Navman 360"
-      description="Teletrac Navman is a fleet and asset management platform."
+      description={`Teletrac Navman is a fleet and asset management platform.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Teletrac Navman 360</title>
-          <meta name="description" content="Teletrac Navman is a fleet and asset management platform." />
+          <meta name="description" content={`Teletrac Navman is a fleet and asset management platform.`} />
         </>
       ),
     },

@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="InsTrack"
-      description="InsTrack offers powerful in-depth Instagram analytics and actionable insights for brands, influencers and agencies."
+      description={`InsTrack offers powerful in-depth Instagram analytics and actionable insights for brands, influencers and agencies.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -87,7 +87,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>InsTrack</title>
-          <meta name="description" content="InsTrack offers powerful in-depth Instagram analytics and actionable insights for brands, influencers and agencies." />
+          <meta name="description" content={`InsTrack offers powerful in-depth Instagram analytics and actionable insights for brands, influencers and agencies.`} />
         </>
       ),
     },

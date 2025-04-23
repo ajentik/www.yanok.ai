@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Widen Collective"
-      description="Widen Collective is a digital asset management solution that brings together all of your image, video and creative files in one location to quickly find, access and share – anytime, anywhere, on any device."
+      description={`Widen Collective is a digital asset management solution that brings together all of your image, video and creative files in one location to quickly find, access and share – anytime, anywhere, on any device.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Widen Collective</title>
-          <meta name="description" content="Widen Collective is a digital asset management solution that brings together all of your image, video and creative files in one location to quickly find, access and share – anytime, anywhere, on any device." />
+          <meta name="description" content={`Widen Collective is a digital asset management solution that brings together all of your image, video and creative files in one location to quickly find, access and share – anytime, anywhere, on any device.`} />
         </>
       ),
     },

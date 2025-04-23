@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Customer.io"
-      description="With Customer.io you can send email, SMS, and push based on what people do or don't do in your app."
+      description={`With Customer.io you can send email, SMS, and push based on what people do or don't do in your app.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -67,7 +67,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Customer.io</title>
-          <meta name="description" content="With Customer.io you can send email, SMS, and push based on what people do or don't do in your app." />
+          <meta name="description" content={`With Customer.io you can send email, SMS, and push based on what people do or don't do in your app.`} />
         </>
       ),
     },

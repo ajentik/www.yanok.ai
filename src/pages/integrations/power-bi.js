@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Power Bi"
-      description="Power BI aims to provide interactive visualizations and business intelligence capabilities with an interface simple enough for end users to create their own reports and dashboards."
+      description={`Power BI aims to provide interactive visualizations and business intelligence capabilities with an interface simple enough for end users to create their own reports and dashboards.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +53,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Power Bi</title>
-          <meta name="description" content="Power BI aims to provide interactive visualizations and business intelligence capabilities with an interface simple enough for end users to create their own reports and dashboards." />
+          <meta name="description" content={`Power BI aims to provide interactive visualizations and business intelligence capabilities with an interface simple enough for end users to create their own reports and dashboards.`} />
         </>
       ),
     },

@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Magic Minutes"
-      description="Magic Minutes is a meeting management tool that helps you run more productive meetings and stay on top of your actions."
+      description={`Magic Minutes is a meeting management tool that helps you run more productive meetings and stay on top of your actions.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Magic Minutes</title>
-          <meta name="description" content="Magic Minutes is a meeting management tool that helps you run more productive meetings and stay on top of your actions." />
+          <meta name="description" content={`Magic Minutes is a meeting management tool that helps you run more productive meetings and stay on top of your actions.`} />
         </>
       ),
     },

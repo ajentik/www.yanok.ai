@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="DailyBot"
-      description="DailyBot is your team's daily assistant. Put your stand-up meetings, status reports and check-ins on cruise control, save time and increase productivity."
+      description={`DailyBot is your team's daily assistant. Put your stand-up meetings, status reports and check-ins on cruise control, save time and increase productivity.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -81,7 +81,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>DailyBot</title>
-          <meta name="description" content="DailyBot is your team's daily assistant. Put your stand-up meetings, status reports and check-ins on cruise control, save time and increase productivity." />
+          <meta name="description" content={`DailyBot is your team's daily assistant. Put your stand-up meetings, status reports and check-ins on cruise control, save time and increase productivity.`} />
         </>
       ),
     },

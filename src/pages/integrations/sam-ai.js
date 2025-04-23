@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="SAM.ai"
-      description="SAM is a sales and marketing tool that lets you organize and manage your leads, opportunities, accounts & partners with efficient features."
+      description={`SAM is a sales and marketing tool that lets you organize and manage your leads, opportunities, accounts & partners with efficient features.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -126,7 +126,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>SAM.ai</title>
-          <meta name="description" content="SAM is a sales and marketing tool that lets you organize and manage your leads, opportunities, accounts & partners with efficient features." />
+          <meta name="description" content={`SAM is a sales and marketing tool that lets you organize and manage your leads, opportunities, accounts & partners with efficient features.`} />
         </>
       ),
     },

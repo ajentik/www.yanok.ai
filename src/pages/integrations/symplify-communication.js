@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Symplify Communication"
-      description="Symplify is an omnichannel marketing automation platform that helps marketers leverage their data in their digital 1:1 communications."
+      description={`Symplify is an omnichannel marketing automation platform that helps marketers leverage their data in their digital 1:1 communications.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -92,7 +92,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Symplify Communication</title>
-          <meta name="description" content="Symplify is an omnichannel marketing automation platform that helps marketers leverage their data in their digital 1:1 communications." />
+          <meta name="description" content={`Symplify is an omnichannel marketing automation platform that helps marketers leverage their data in their digital 1:1 communications.`} />
         </>
       ),
     },

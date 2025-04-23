@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Google Forms"
-      description="Google Forms is an easy way to collect data from the web with a simple UI and powerful editor. Works hand-in-hand with Google Sheets!"
+      description={`Google Forms is an easy way to collect data from the web with a simple UI and powerful editor. Works hand-in-hand with Google Sheets!`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -62,7 +62,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Google Forms</title>
-          <meta name="description" content="Google Forms is an easy way to collect data from the web with a simple UI and powerful editor. Works hand-in-hand with Google Sheets!" />
+          <meta name="description" content={`Google Forms is an easy way to collect data from the web with a simple UI and powerful editor. Works hand-in-hand with Google Sheets!`} />
         </>
       ),
     },

@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Dialog"
-      description="Handy and feature-rich enterprise multi-device messenger available for server or cloud."
+      description={`Handy and feature-rich enterprise multi-device messenger available for server or cloud.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +53,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Dialog</title>
-          <meta name="description" content="Handy and feature-rich enterprise multi-device messenger available for server or cloud." />
+          <meta name="description" content={`Handy and feature-rich enterprise multi-device messenger available for server or cloud.`} />
         </>
       ),
     },

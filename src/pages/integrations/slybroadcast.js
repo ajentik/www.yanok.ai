@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Slybroadcast"
-      description="Slybroadcast is an application that allows you to send a voice message directly to the voice-mailboxes of thousands of phones, within minutes."
+      description={`Slybroadcast is an application that allows you to send a voice message directly to the voice-mailboxes of thousands of phones, within minutes.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -62,7 +62,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Slybroadcast</title>
-          <meta name="description" content="Slybroadcast is an application that allows you to send a voice message directly to the voice-mailboxes of thousands of phones, within minutes." />
+          <meta name="description" content={`Slybroadcast is an application that allows you to send a voice message directly to the voice-mailboxes of thousands of phones, within minutes.`} />
         </>
       ),
     },

@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="CallHippo"
-      description="CallHippo is a VOIP service provider."
+      description={`CallHippo is a VOIP service provider.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -66,7 +66,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>CallHippo</title>
-          <meta name="description" content="CallHippo is a VOIP service provider." />
+          <meta name="description" content={`CallHippo is a VOIP service provider.`} />
         </>
       ),
     },

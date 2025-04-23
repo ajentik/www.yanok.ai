@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Firmao"
-      description="CRM and ERP software for your business to manage customers and tasks."
+      description={`CRM and ERP software for your business to manage customers and tasks.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -71,7 +71,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Firmao</title>
-          <meta name="description" content="CRM and ERP software for your business to manage customers and tasks." />
+          <meta name="description" content={`CRM and ERP software for your business to manage customers and tasks.`} />
         </>
       ),
     },

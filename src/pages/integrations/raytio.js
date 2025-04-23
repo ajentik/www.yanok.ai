@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Raytio"
-      description="Raytio provides verified customers for growing digital businesses. Reduce fraud, chargebacks, spam and scams."
+      description={`Raytio provides verified customers for growing digital businesses. Reduce fraud, chargebacks, spam and scams.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -76,7 +76,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Raytio</title>
-          <meta name="description" content="Raytio provides verified customers for growing digital businesses. Reduce fraud, chargebacks, spam and scams." />
+          <meta name="description" content={`Raytio provides verified customers for growing digital businesses. Reduce fraud, chargebacks, spam and scams.`} />
         </>
       ),
     },

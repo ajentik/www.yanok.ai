@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Image-Charts"
-      description="Image-Charts is a service to generate images of bar charts, line charts, pie chart, QR Code (and much more) to embed inside PDF reports, emails, and more."
+      description={`Image-Charts is a service to generate images of bar charts, line charts, pie chart, QR Code (and much more) to embed inside PDF reports, emails, and more.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -102,7 +102,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Image-Charts</title>
-          <meta name="description" content="Image-Charts is a service to generate images of bar charts, line charts, pie chart, QR Code (and much more) to embed inside PDF reports, emails, and more." />
+          <meta name="description" content={`Image-Charts is a service to generate images of bar charts, line charts, pie chart, QR Code (and much more) to embed inside PDF reports, emails, and more.`} />
         </>
       ),
     },

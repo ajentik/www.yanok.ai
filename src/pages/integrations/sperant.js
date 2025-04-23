@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Sperant"
-      description="Sperant is a complete software that covers the lead lifecycle: lead creation, sale, and post-sale. / Somos un Software completo que va desde la captación de un Lead hasta la post-venta."
+      description={`Sperant is a complete software that covers the lead lifecycle: lead creation, sale, and post-sale. / Somos un Software completo que va desde la captación de un Lead hasta la post-venta.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -66,7 +66,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Sperant</title>
-          <meta name="description" content="Sperant is a complete software that covers the lead lifecycle: lead creation, sale, and post-sale. / Somos un Software completo que va desde la captación de un Lead hasta la post-venta." />
+          <meta name="description" content={`Sperant is a complete software that covers the lead lifecycle: lead creation, sale, and post-sale. / Somos un Software completo que va desde la captación de un Lead hasta la post-venta.`} />
         </>
       ),
     },

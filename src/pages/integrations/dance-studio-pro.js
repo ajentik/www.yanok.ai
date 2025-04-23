@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Dance Studio Pro"
-      description="Dance Studio Pro is the world's best dance studio software"
+      description={`Dance Studio Pro is the world's best dance studio software`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -117,7 +117,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Dance Studio Pro</title>
-          <meta name="description" content="Dance Studio Pro is the world's best dance studio software" />
+          <meta name="description" content={`Dance Studio Pro is the world's best dance studio software`} />
         </>
       ),
     },

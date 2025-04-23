@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="OnePgr"
-      description="OnePgr offers a communication & collaboration platform to help automate your organizational workflow for business processes such as Sales, Support, IT, HR, allowing you to hold online meetings, make phone calls, share documents, and send text messages seamlessly from your tools."
+      description={`OnePgr offers a communication & collaboration platform to help automate your organizational workflow for business processes such as Sales, Support, IT, HR, allowing you to hold online meetings, make phone calls, share documents, and send text messages seamlessly from your tools.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -62,7 +62,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>OnePgr</title>
-          <meta name="description" content="OnePgr offers a communication & collaboration platform to help automate your organizational workflow for business processes such as Sales, Support, IT, HR, allowing you to hold online meetings, make phone calls, share documents, and send text messages seamlessly from your tools." />
+          <meta name="description" content={`OnePgr offers a communication & collaboration platform to help automate your organizational workflow for business processes such as Sales, Support, IT, HR, allowing you to hold online meetings, make phone calls, share documents, and send text messages seamlessly from your tools.`} />
         </>
       ),
     },

@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Wine Ambassador"
-      description="Communicate with the Wine Ambassador Grapevine Marketing System"
+      description={`Communicate with the Wine Ambassador Grapevine Marketing System`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -62,7 +62,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Wine Ambassador</title>
-          <meta name="description" content="Communicate with the Wine Ambassador Grapevine Marketing System" />
+          <meta name="description" content={`Communicate with the Wine Ambassador Grapevine Marketing System`} />
         </>
       ),
     },

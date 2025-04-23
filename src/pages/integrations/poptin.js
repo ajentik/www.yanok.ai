@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Poptin"
-      description="Poptin is a free lead capture platform that lets you create engaging web and mobile popups and improve your website's conversion rate."
+      description={`Poptin is a free lead capture platform that lets you create engaging web and mobile popups and improve your website's conversion rate.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Poptin</title>
-          <meta name="description" content="Poptin is a free lead capture platform that lets you create engaging web and mobile popups and improve your website's conversion rate." />
+          <meta name="description" content={`Poptin is a free lead capture platform that lets you create engaging web and mobile popups and improve your website's conversion rate.`} />
         </>
       ),
     },

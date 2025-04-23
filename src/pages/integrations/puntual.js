@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Puntual"
-      description="Puntual is a scheduling platform to connect with professionals like lawyers and consultants."
+      description={`Puntual is a scheduling platform to connect with professionals like lawyers and consultants.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -62,7 +62,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Puntual</title>
-          <meta name="description" content="Puntual is a scheduling platform to connect with professionals like lawyers and consultants." />
+          <meta name="description" content={`Puntual is a scheduling platform to connect with professionals like lawyers and consultants.`} />
         </>
       ),
     },

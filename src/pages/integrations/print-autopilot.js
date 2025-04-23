@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Print Autopilot"
-      description="The easy way to automate your printing needs"
+      description={`The easy way to automate your printing needs`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Print Autopilot</title>
-          <meta name="description" content="The easy way to automate your printing needs" />
+          <meta name="description" content={`The easy way to automate your printing needs`} />
         </>
       ),
     },

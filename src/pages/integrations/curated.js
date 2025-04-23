@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Curated"
-      description="Curated is the quickest and easiest way to publish a digest newsletter by email and also on the web. Collect links, pick the best, add your commentary and publish it to your subscribers."
+      description={`Curated is the quickest and easiest way to publish a digest newsletter by email and also on the web. Collect links, pick the best, add your commentary and publish it to your subscribers.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -86,7 +86,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Curated</title>
-          <meta name="description" content="Curated is the quickest and easiest way to publish a digest newsletter by email and also on the web. Collect links, pick the best, add your commentary and publish it to your subscribers." />
+          <meta name="description" content={`Curated is the quickest and easiest way to publish a digest newsletter by email and also on the web. Collect links, pick the best, add your commentary and publish it to your subscribers.`} />
         </>
       ),
     },

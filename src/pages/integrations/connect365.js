@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Connect 365"
-      description="Connect 365 is a sales email automation tool designed to help you deliver personal emails at scale."
+      description={`Connect 365 is a sales email automation tool designed to help you deliver personal emails at scale.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -91,7 +91,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Connect 365</title>
-          <meta name="description" content="Connect 365 is a sales email automation tool designed to help you deliver personal emails at scale." />
+          <meta name="description" content={`Connect 365 is a sales email automation tool designed to help you deliver personal emails at scale.`} />
         </>
       ),
     },

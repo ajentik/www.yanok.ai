@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Mailcastr"
-      description="Mailcastr is an email service that helps you send the right email at the right time and collect leads from your website"
+      description={`Mailcastr is an email service that helps you send the right email at the right time and collect leads from your website`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Mailcastr</title>
-          <meta name="description" content="Mailcastr is an email service that helps you send the right email at the right time and collect leads from your website" />
+          <meta name="description" content={`Mailcastr is an email service that helps you send the right email at the right time and collect leads from your website`} />
         </>
       ),
     },

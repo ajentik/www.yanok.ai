@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="V-Unite"
-      description="V-Unite is an interactive, self-service, virtual event and experience platform."
+      description={`V-Unite is an interactive, self-service, virtual event and experience platform.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -81,7 +81,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>V-Unite</title>
-          <meta name="description" content="V-Unite is an interactive, self-service, virtual event and experience platform." />
+          <meta name="description" content={`V-Unite is an interactive, self-service, virtual event and experience platform.`} />
         </>
       ),
     },

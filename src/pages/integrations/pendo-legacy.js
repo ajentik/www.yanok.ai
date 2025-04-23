@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Pendo"
-      description="Pendo is an extension of your product that captures user behavior, gathers feedback, and guides users."
+      description={`Pendo is an extension of your product that captures user behavior, gathers feedback, and guides users.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -62,7 +62,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Pendo</title>
-          <meta name="description" content="Pendo is an extension of your product that captures user behavior, gathers feedback, and guides users." />
+          <meta name="description" content={`Pendo is an extension of your product that captures user behavior, gathers feedback, and guides users.`} />
         </>
       ),
     },

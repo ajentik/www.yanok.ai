@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="BONZO"
-      description="Bonzo is a multi-channel communication tool that keeps you top of mind."
+      description={`Bonzo is a multi-channel communication tool that keeps you top of mind.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -101,7 +101,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>BONZO</title>
-          <meta name="description" content="Bonzo is a multi-channel communication tool that keeps you top of mind." />
+          <meta name="description" content={`Bonzo is a multi-channel communication tool that keeps you top of mind.`} />
         </>
       ),
     },

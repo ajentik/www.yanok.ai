@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="meetergo"
-      description="Meetergo is appointment scheduling software to help anyone quickly and easily schedule meetings with you from anywhere. Manage your appointments, join calls, and accept payments all in one place."
+      description={`Meetergo is appointment scheduling software to help anyone quickly and easily schedule meetings with you from anywhere. Manage your appointments, join calls, and accept payments all in one place.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -71,7 +71,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>meetergo</title>
-          <meta name="description" content="Meetergo is appointment scheduling software to help anyone quickly and easily schedule meetings with you from anywhere. Manage your appointments, join calls, and accept payments all in one place." />
+          <meta name="description" content={`Meetergo is appointment scheduling software to help anyone quickly and easily schedule meetings with you from anywhere. Manage your appointments, join calls, and accept payments all in one place.`} />
         </>
       ),
     },

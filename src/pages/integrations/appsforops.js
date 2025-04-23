@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="AppsForOps Timeline"
-      description="AppsForOps Timeline is a game changing Customer Success software platform. Customer Success - powered by being in the know. It provides next level visibility on customer activity spanning your organisation's people, processes and systems. It allows you to easily see the whole picture and act on what matters most."
+      description={`AppsForOps Timeline is a game changing Customer Success software platform. Customer Success - powered by being in the know. It provides next level visibility on customer activity spanning your organisation's people, processes and systems. It allows you to easily see the whole picture and act on what matters most.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -66,7 +66,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>AppsForOps Timeline</title>
-          <meta name="description" content="AppsForOps Timeline is a game changing Customer Success software platform. Customer Success - powered by being in the know. It provides next level visibility on customer activity spanning your organisation's people, processes and systems. It allows you to easily see the whole picture and act on what matters most." />
+          <meta name="description" content={`AppsForOps Timeline is a game changing Customer Success software platform. Customer Success - powered by being in the know. It provides next level visibility on customer activity spanning your organisation's people, processes and systems. It allows you to easily see the whole picture and act on what matters most.`} />
         </>
       ),
     },

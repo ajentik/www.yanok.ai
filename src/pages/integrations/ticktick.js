@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="TickTick"
-      description="TickTick is a simple and effective to-do list and task manager app with seamless cloud synchronization across all your devices."
+      description={`TickTick is a simple and effective to-do list and task manager app with seamless cloud synchronization across all your devices.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -86,7 +86,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>TickTick</title>
-          <meta name="description" content="TickTick is a simple and effective to-do list and task manager app with seamless cloud synchronization across all your devices." />
+          <meta name="description" content={`TickTick is a simple and effective to-do list and task manager app with seamless cloud synchronization across all your devices.`} />
         </>
       ),
     },

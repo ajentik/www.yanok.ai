@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Sensible"
-      description="Sensible is an API that transforms documents into structured data"
+      description={`Sensible is an API that transforms documents into structured data`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -61,7 +61,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Sensible</title>
-          <meta name="description" content="Sensible is an API that transforms documents into structured data" />
+          <meta name="description" content={`Sensible is an API that transforms documents into structured data`} />
         </>
       ),
     },

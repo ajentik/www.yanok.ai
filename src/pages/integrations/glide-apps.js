@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Glide"
-      description="Glide is an app builder that turns Google Sheets into easy-to-use apps without code."
+      description={`Glide is an app builder that turns Google Sheets into easy-to-use apps without code.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -57,7 +57,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Glide</title>
-          <meta name="description" content="Glide is an app builder that turns Google Sheets into easy-to-use apps without code." />
+          <meta name="description" content={`Glide is an app builder that turns Google Sheets into easy-to-use apps without code.`} />
         </>
       ),
     },

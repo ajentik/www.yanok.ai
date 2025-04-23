@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="I Done This"
-      description="I Done This makes it easy to track and celebrate the progress that you and your colleagues make at work every day. We email you at day's end and ask, "What'd you get done today?" Just reply. The next morning, you'll get a digest that shows your team's accomplishments from yesterday. Start a conversation and share your thanks."
+      description={`I Done This makes it easy to track and celebrate the progress that you and your colleagues make at work every day. We email you at day's end and ask, `}What'd you get done today?" Just reply. The next morning, you'll get a digest that shows your team's accomplishments from yesterday. Start a conversation and share your thanks."
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -61,7 +61,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>I Done This</title>
-          <meta name="description" content="I Done This makes it easy to track and celebrate the progress that you and your colleagues make at work every day. We email you at day's end and ask, "What'd you get done today?" Just reply. The next morning, you'll get a digest that shows your team's accomplishments from yesterday. Start a conversation and share your thanks." />
+          <meta name="description" content={`I Done This makes it easy to track and celebrate the progress that you and your colleagues make at work every day. We email you at day's end and ask, `}What'd you get done today?" Just reply. The next morning, you'll get a digest that shows your team's accomplishments from yesterday. Start a conversation and share your thanks." />
         </>
       ),
     },

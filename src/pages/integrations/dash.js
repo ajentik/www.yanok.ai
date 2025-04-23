@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Dash"
-      description="Dash is the new home for your visual content. Streamlined, lightning-fast digital asset management (DAM) for growing brands."
+      description={`Dash is the new home for your visual content. Streamlined, lightning-fast digital asset management (DAM) for growing brands.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -71,7 +71,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Dash</title>
-          <meta name="description" content="Dash is the new home for your visual content. Streamlined, lightning-fast digital asset management (DAM) for growing brands." />
+          <meta name="description" content={`Dash is the new home for your visual content. Streamlined, lightning-fast digital asset management (DAM) for growing brands.`} />
         </>
       ),
     },

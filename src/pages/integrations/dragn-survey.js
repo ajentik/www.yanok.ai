@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Drag'n Survey"
-      description="Drag'n Survey make it easy to build powerful surveys to get and analyze the information you need."
+      description={`Drag'n Survey make it easy to build powerful surveys to get and analyze the information you need.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -61,7 +61,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Drag'n Survey</title>
-          <meta name="description" content="Drag'n Survey make it easy to build powerful surveys to get and analyze the information you need." />
+          <meta name="description" content={`Drag'n Survey make it easy to build powerful surveys to get and analyze the information you need.`} />
         </>
       ),
     },

@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="InterCloud9 SMS"
-      description="Connect with InterCloud9 SMS' simple messaging solution for sending Texts and Automated Voice Messages. Easily integrate your CRM or Application today!"
+      description={`Connect with InterCloud9 SMS' simple messaging solution for sending Texts and Automated Voice Messages. Easily integrate your CRM or Application today!`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -67,7 +67,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>InterCloud9 SMS</title>
-          <meta name="description" content="Connect with InterCloud9 SMS' simple messaging solution for sending Texts and Automated Voice Messages. Easily integrate your CRM or Application today!" />
+          <meta name="description" content={`Connect with InterCloud9 SMS' simple messaging solution for sending Texts and Automated Voice Messages. Easily integrate your CRM or Application today!`} />
         </>
       ),
     },

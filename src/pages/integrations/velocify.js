@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Velocify"
-      description="Velocify, Inc. is a cloud computing company that provides cloud-based intelligent sales automation software designed for fast-paced sales environments."
+      description={`Velocify, Inc. is a cloud computing company that provides cloud-based intelligent sales automation software designed for fast-paced sales environments.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +53,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Velocify</title>
-          <meta name="description" content="Velocify, Inc. is a cloud computing company that provides cloud-based intelligent sales automation software designed for fast-paced sales environments." />
+          <meta name="description" content={`Velocify, Inc. is a cloud computing company that provides cloud-based intelligent sales automation software designed for fast-paced sales environments.`} />
         </>
       ),
     },

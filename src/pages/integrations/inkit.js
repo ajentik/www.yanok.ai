@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Inkit"
-      description="Inkit is a reach enablement platform. It autocompletes and verifies addresses, automates customer campaigns, and manages paperless documents securely at scale."
+      description={`Inkit is a reach enablement platform. It autocompletes and verifies addresses, automates customer campaigns, and manages paperless documents securely at scale.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -67,7 +67,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Inkit</title>
-          <meta name="description" content="Inkit is a reach enablement platform. It autocompletes and verifies addresses, automates customer campaigns, and manages paperless documents securely at scale." />
+          <meta name="description" content={`Inkit is a reach enablement platform. It autocompletes and verifies addresses, automates customer campaigns, and manages paperless documents securely at scale.`} />
         </>
       ),
     },

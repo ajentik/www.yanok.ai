@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="SocialBee"
-      description="Social Media on Autopilot All-in-One Tools and Services for Content Posting & Recycling, Follower Growth, Engagement, and More"
+      description={`Social Media on Autopilot All-in-One Tools and Services for Content Posting & Recycling, Follower Growth, Engagement, and More`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -61,7 +61,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>SocialBee</title>
-          <meta name="description" content="Social Media on Autopilot All-in-One Tools and Services for Content Posting & Recycling, Follower Growth, Engagement, and More" />
+          <meta name="description" content={`Social Media on Autopilot All-in-One Tools and Services for Content Posting & Recycling, Follower Growth, Engagement, and More`} />
         </>
       ),
     },

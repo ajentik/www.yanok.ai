@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Vidalytics"
-      description="Video hosting & analytics for marketers. See conversions in videos, mobile auto-play, in video Call-to-Actions, custom pause screens & more."
+      description={`Video hosting & analytics for marketers. See conversions in videos, mobile auto-play, in video Call-to-Actions, custom pause screens & more.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -72,7 +72,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Vidalytics</title>
-          <meta name="description" content="Video hosting & analytics for marketers. See conversions in videos, mobile auto-play, in video Call-to-Actions, custom pause screens & more." />
+          <meta name="description" content={`Video hosting & analytics for marketers. See conversions in videos, mobile auto-play, in video Call-to-Actions, custom pause screens & more.`} />
         </>
       ),
     },

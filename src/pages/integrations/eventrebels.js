@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Eventrebels"
-      description="Eventrebels software makes event and conference registration efficient for everything from a small hundred person event to a full conference with thousands of attendees."
+      description={`Eventrebels software makes event and conference registration efficient for everything from a small hundred person event to a full conference with thousands of attendees.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +53,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Eventrebels</title>
-          <meta name="description" content="Eventrebels software makes event and conference registration efficient for everything from a small hundred person event to a full conference with thousands of attendees." />
+          <meta name="description" content={`Eventrebels software makes event and conference registration efficient for everything from a small hundred person event to a full conference with thousands of attendees.`} />
         </>
       ),
     },

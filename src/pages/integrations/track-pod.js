@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Track-POD"
-      description="Track-POD is a delivery software featuring an electronic proof of delivery app, solution for efficient performance monitoring and delivery confirmation. This unique paperless delivery system also works as a route planning software for arranging multiple deliveries with ease."
+      description={`Track-POD is a delivery software featuring an electronic proof of delivery app, solution for efficient performance monitoring and delivery confirmation. This unique paperless delivery system also works as a route planning software for arranging multiple deliveries with ease.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -116,7 +116,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Track-POD</title>
-          <meta name="description" content="Track-POD is a delivery software featuring an electronic proof of delivery app, solution for efficient performance monitoring and delivery confirmation. This unique paperless delivery system also works as a route planning software for arranging multiple deliveries with ease." />
+          <meta name="description" content={`Track-POD is a delivery software featuring an electronic proof of delivery app, solution for efficient performance monitoring and delivery confirmation. This unique paperless delivery system also works as a route planning software for arranging multiple deliveries with ease.`} />
         </>
       ),
     },

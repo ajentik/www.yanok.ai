@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="SaleDrum"
-      description="SaleDrum is an automated repricing tool for Amazon marketplace sellers"
+      description={`SaleDrum is an automated repricing tool for Amazon marketplace sellers`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -101,7 +101,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>SaleDrum</title>
-          <meta name="description" content="SaleDrum is an automated repricing tool for Amazon marketplace sellers" />
+          <meta name="description" content={`SaleDrum is an automated repricing tool for Amazon marketplace sellers`} />
         </>
       ),
     },

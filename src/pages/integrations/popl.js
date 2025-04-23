@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Popl"
-      description="Popl is a digital business card platform that allows you to share contact info and capture leads."
+      description={`Popl is a digital business card platform that allows you to share contact info and capture leads.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -62,7 +62,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Popl</title>
-          <meta name="description" content="Popl is a digital business card platform that allows you to share contact info and capture leads." />
+          <meta name="description" content={`Popl is a digital business card platform that allows you to share contact info and capture leads.`} />
         </>
       ),
     },

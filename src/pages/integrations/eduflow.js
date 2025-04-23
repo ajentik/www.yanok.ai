@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Eduflow"
-      description="Learning experiences made easy, social and interactive"
+      description={`Learning experiences made easy, social and interactive`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -81,7 +81,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Eduflow</title>
-          <meta name="description" content="Learning experiences made easy, social and interactive" />
+          <meta name="description" content={`Learning experiences made easy, social and interactive`} />
         </>
       ),
     },

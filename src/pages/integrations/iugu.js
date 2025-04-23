@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Iugu"
-      description="Iugu offers an online platform for financial automation, signature management and marketplace."
+      description={`Iugu offers an online platform for financial automation, signature management and marketplace.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -53,7 +53,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Iugu</title>
-          <meta name="description" content="Iugu offers an online platform for financial automation, signature management and marketplace." />
+          <meta name="description" content={`Iugu offers an online platform for financial automation, signature management and marketplace.`} />
         </>
       ),
     },

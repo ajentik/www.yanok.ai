@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Firepoint CRM"
-      description="Firepoint CRM is a customer relationship management tool designed specifically for real estate teams."
+      description={`Firepoint CRM is a customer relationship management tool designed specifically for real estate teams.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -71,7 +71,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Firepoint CRM</title>
-          <meta name="description" content="Firepoint CRM is a customer relationship management tool designed specifically for real estate teams." />
+          <meta name="description" content={`Firepoint CRM is a customer relationship management tool designed specifically for real estate teams.`} />
         </>
       ),
     },

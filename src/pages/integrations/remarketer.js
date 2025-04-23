@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="REMARKETER"
-      description="REMARKETER helps you manage your online marketing & daily business tasks under one, easy-to-use management console that's specifically designed for Real Estate Professionals!"
+      description={`REMARKETER helps you manage your online marketing & daily business tasks under one, easy-to-use management console that's specifically designed for Real Estate Professionals!`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -61,7 +61,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>REMARKETER</title>
-          <meta name="description" content="REMARKETER helps you manage your online marketing & daily business tasks under one, easy-to-use management console that's specifically designed for Real Estate Professionals!" />
+          <meta name="description" content={`REMARKETER helps you manage your online marketing & daily business tasks under one, easy-to-use management console that's specifically designed for Real Estate Professionals!`} />
         </>
       ),
     },

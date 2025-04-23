@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Zoho Cliq"
-      description="Zoho Cliq is a real time messaging software built to provide enhanced productivity and team collaboration."
+      description={`Zoho Cliq is a real time messaging software built to provide enhanced productivity and team collaboration.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -72,7 +72,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Zoho Cliq</title>
-          <meta name="description" content="Zoho Cliq is a real time messaging software built to provide enhanced productivity and team collaboration." />
+          <meta name="description" content={`Zoho Cliq is a real time messaging software built to provide enhanced productivity and team collaboration.`} />
         </>
       ),
     },

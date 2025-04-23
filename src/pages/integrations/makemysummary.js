@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="MakeMySummary"
-      description="MakeMySummary is an app to summarize any news articles or youtube videos into a few short sentences."
+      description={`MakeMySummary is an app to summarize any news articles or youtube videos into a few short sentences.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -76,7 +76,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>MakeMySummary</title>
-          <meta name="description" content="MakeMySummary is an app to summarize any news articles or youtube videos into a few short sentences." />
+          <meta name="description" content={`MakeMySummary is an app to summarize any news articles or youtube videos into a few short sentences.`} />
         </>
       ),
     },

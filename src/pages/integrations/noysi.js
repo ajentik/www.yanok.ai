@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Noysi"
-      description="Noysi is an Intelligent Communication Services Platform. Noysi unifies the tools needed to increase efficiency in companies."
+      description={`Noysi is an Intelligent Communication Services Platform. Noysi unifies the tools needed to increase efficiency in companies.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -81,7 +81,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Noysi</title>
-          <meta name="description" content="Noysi is an Intelligent Communication Services Platform. Noysi unifies the tools needed to increase efficiency in companies." />
+          <meta name="description" content={`Noysi is an Intelligent Communication Services Platform. Noysi unifies the tools needed to increase efficiency in companies.`} />
         </>
       ),
     },

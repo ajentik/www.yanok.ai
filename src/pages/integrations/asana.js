@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <IntegrationLayout 
       title="Asana"
-      description="Asana is a leading work management platform that helps teams orchestrate their work, from daily tasks to strategic initiatives. With Asana, organizations have a living system of clarity where everyone can see, discuss, and execute their team’s priorities."
+      description={`Asana is a leading work management platform that helps teams orchestrate their work, from daily tasks to strategic initiatives. With Asana, organizations have a living system of clarity where everyone can see, discuss, and execute their team’s priorities.`}
     >
       <div dangerouslySetInnerHTML={{ __html: `<div class="flex flex-col items-center pt-10">
   <div class="flex flex-row gap-12">
@@ -201,7 +201,7 @@ export async function getStaticProps() {
       metaTags: (
         <>
           <title>Asana</title>
-          <meta name="description" content="Asana is a leading work management platform that helps teams orchestrate their work, from daily tasks to strategic initiatives. With Asana, organizations have a living system of clarity where everyone can see, discuss, and execute their team’s priorities." />
+          <meta name="description" content={`Asana is a leading work management platform that helps teams orchestrate their work, from daily tasks to strategic initiatives. With Asana, organizations have a living system of clarity where everyone can see, discuss, and execute their team’s priorities.`} />
         </>
       ),
     },
