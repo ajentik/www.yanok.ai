@@ -7,12 +7,13 @@ const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
 
-  // Enable static HTML export for GitHub Pages
-  output: 'export',
-
-  // Base path and asset prefix for GitHub Pages
-  basePath,
-  assetPrefix: basePath,
+  ...(isProduction ? {
+    // Enable static HTML export for GitHub Pages
+    output: 'export',
+    // Base path and asset prefix for GitHub Pages
+    basePath,
+    assetPrefix: basePath,
+  } : {}),
 
   // Image configuration for static export
   images: {
