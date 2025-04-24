@@ -63,7 +63,6 @@ export function mapJekyllLayoutToNextComponent(layout) {
     'default': 'Layout',
     'page': 'PageLayout',
     'post': 'PostLayout',
-    'integration': 'IntegrationLayout',
     'solutions': 'SolutionsLayout',
     'markdown': 'MarkdownLayout'
   };
