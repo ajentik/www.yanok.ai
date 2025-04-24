@@ -5,7 +5,14 @@ const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '';
 
 const nextConfig = {
   reactStrictMode: true,
-  swcMinify: true,
+  // Enable SWC compiler
+  experimental: {
+    forceSwcTransforms: true,
+  },
+  // Allow cross-origin requests in development
+  allowedDevOrigins: [
+    'http://192.168.50.235:3001'
+  ],
 
   ...(isProduction ? {
     // Enable static HTML export for GitHub Pages

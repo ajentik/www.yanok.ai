@@ -1,6 +1,4 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
 
 /* Import Jost font */
 @import url('https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700&display=swap');
@@ -8,7 +6,7 @@
 @layer base {
   body {
     font-family: 'Jost', sans-serif;
-    @apply antialiased text-white bg-gradient-to-br from-darkerBlue to-darkBlue;
+    @apply antialiased text-[#ffffff] bg-gradient-to-br from-[#051b30] to-[#0a2540];
   }
 }
 
@@ -22,26 +20,26 @@
   }
 
   .btn-cta {
-    @apply bg-gradient-to-r from-teal to-blue text-white hover:from-blue hover:to-teal;
+    @apply bg-gradient-to-r from-[#22d3ee] to-[#4ade80] text-[#ffffff] hover:from-[#4ade80] hover:to-[#22d3ee];
   }
 
   .hero-badge {
-    @apply bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full flex items-center mb-6 border border-white/20;
+    @apply bg-[#ffffff]/10 backdrop-blur-sm px-4 py-2 rounded-full flex items-center mb-6 border border-[#ffffff]/20;
   }
 
   .gradient-text {
-    @apply bg-gradient-to-r from-blue to-teal bg-clip-text text-transparent;
+    @apply bg-gradient-to-r from-[#4ade80] to-[#22d3ee] bg-clip-text text-transparent;
   }
 
   .feature-card {
-    @apply transition-all duration-300 border border-white/10 rounded-lg p-6 bg-white/5;
+    @apply transition-all duration-300 border border-[#ffffff]/10 rounded-lg p-6 bg-[#ffffff]/5;
   }
 
   .feature-card:hover {
-    @apply transform -translate-y-1 shadow-lg shadow-black/30;
+    @apply transform -translate-y-1 shadow-lg shadow-[#000000]/30;
   }
 
   .feature-icon {
-    @apply bg-gradient-to-br from-blue to-teal w-12 h-12 rounded-xl flex items-center justify-center mb-4;
+    @apply bg-gradient-to-br from-[#4ade80] to-[#22d3ee] w-12 h-12 rounded-xl flex items-center justify-center mb-4;
   }
 }

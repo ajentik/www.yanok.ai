@@ -250,7 +250,7 @@ export default function Page() {
   <div class="site-gutter max-w-container mx-auto flex flex-col items-center gap-10 md:px-24 px-10">
     <h2 class="text-4xl md:text-5xl text-center font-bold">Trusted by <span class="gradient-text">Leading Companies</span></h2>
     <p class="text-xl text-center text-gray-600 max-w-3xl">Join the growing network of businesses transforming their operations with Yanok\'s agentic workflow solutions</p>
-    <img data-intersection-once="fadeIn" src="/assets/images/partners.webp" class="my-8" alt="Partner companies" />
+    <img data-intersection-once="fadeIn" src="/images/partners.webp" class="my-8" alt="Partner companies" />
     
     <div class="grid md:grid-cols-3 gap-8 w-full mt-8">
       <div class="bg-gray-50 p-6 rounded-lg border border-gray-200 shadow-sm">
@@ -359,12 +359,8 @@ export default function Page() {
 export async function getStaticProps() {
   return {
     props: {
-      metaTags: (
-        <>
-          <title>Yanok Agentic Workflow for Business</title>
-          <meta name="description" content="Build and run agentic workflows, turn the best practices into yes-no-ok decision for experts" />
-        </>
-      ),
+      metaTitle: "Yanok Agentic Workflow for Business",
+      metaDescription: "Build and run agentic workflows, turn the best practices into yes-no-ok decision for experts"
     },
   };
 }

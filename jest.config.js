@@ -6,7 +6,7 @@ module.exports = {
   },
   setupFilesAfterEnv: ['<rootDir>/jest.setup.js'],
   transform: {
-    '^.+\\.[jt]sx?$': 'babel-jest'
+    '^.+\\.[jt]sx?$': ['next/dist/build/swc/jest-transformer', {}]
   },
   moduleFileExtensions: ['js', 'jsx', 'ts', 'tsx', 'json', 'node']
 };
