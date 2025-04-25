@@ -5,6 +5,9 @@ on:
   # Runs on pushes targeting the default branch
   push:
     branches: [master]
+  pull_request:
+    branches:
+      - '*'
   
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -30,12 +33,11 @@ jobs:
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
-        with:
-          cache: 'yarn'
 
       - name: Install dependencies
         run: |
-          yarn install
+          corepack enable
+          corepack yarn install
           
           # Debug information for lightningcss
           echo "Node architecture: $(node -p "process.arch")"
@@ -45,10 +47,10 @@ jobs:
           
           # Try multiple approaches to get the correct binary
           echo "Rebuilding lightningcss with explicit platform..."
-          yarn rebuild lightningcss --platform=linux --arch=x64 || echo "Rebuild failed, trying alternative approaches"
+          corepack yarn rebuild lightningcss --platform=linux --arch=x64 || echo "Rebuild failed, trying alternative approaches"
           
           echo "Direct installation of lightningcss..."
-          yarn add lightningcss@latest --platform=linux --arch=x64 --target_platform=linux --target_arch=x64 --target_libc=glibc
+          corepack yarn add lightningcss@latest --platform=linux --arch=x64 --target_platform=linux --target_arch=x64 --target_libc=glibc
           
           # Check if the binary exists after our attempts
           echo "Checking if binary exists now..."
@@ -64,7 +66,7 @@ jobs:
           fi
 
       - name: Run tests
-        run: yarn test --if-present
+        run: corepack yarn test --if-present
 
       - name: Setup Pages
         id: pages
@@ -75,7 +77,7 @@ jobs:
           echo "Node version: $(node -v)"
           echo "Yarn version: $(yarn -v)"
           echo "Starting build with CI optimizations..."
-          CI=true yarn build:ci || (echo "Standard build failed, trying fallback approach..." && CI=true NODE_OPTIONS="--max_old_space_size=8192" NEXT_DISABLE_OPTIMIZED_LOADING=true yarn build)
+          CI=true corepack yarn build:ci || (echo "Standard build failed, trying fallback approach..." && CI=true NODE_OPTIONS="--max_old_space_size=8192" NEXT_DISABLE_OPTIMIZED_LOADING=true corepack yarn build)
         env:
           NEXT_PUBLIC_BASE_PATH: ${{ steps.pages.outputs.base_path }}
           # Skip telemetry during builds
