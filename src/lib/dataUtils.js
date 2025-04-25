@@ -146,12 +146,8 @@ export default function Page() {
 export async function getStaticProps() {
   return {
     props: {
-      metaTags: (
-        <>
-          <title>${frontMatter.title || ''}</title>
-          <meta name="description" content="${frontMatter.description || ''}" />
-        </>
-      ),
+      metaTitle: "${frontMatter.title || ''}",
+      metaDescription: "${frontMatter.description || ''}"
     },
   };
 }

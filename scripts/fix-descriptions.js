@@ -9,11 +9,11 @@ fs.readdirSync(integrationsDir).forEach((file) => {
     let content = fs.readFileSync(filePath, 'utf8');
 
     content = content
-      .replace(/description="([\\s\\S]*?)"/g, (match, inner) => {
+      .replace(/description="([\s\S]*?)"/g, (match, inner) => {
         const escaped = inner.replace(/`/g, '\\`');
         return 'description={' + '`' + escaped + '`' + '}';
       })
-      .replace(/content="([\\s\\S]*?)"/g, (match, inner) => {
+      .replace(/content="([\s\S]*?)"/g, (match, inner) => {
         const escaped = inner.replace(/`/g, '\\`');
         return 'content={' + '`' + escaped + '`' + '}';
       });
