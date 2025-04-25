@@ -36,7 +36,8 @@ jobs:
 
       - name: Install dependencies
         run: |
-          yarn install
+          corepack enable
+          corepack yarn install
           
           # Debug information for lightningcss
           echo "Node architecture: $(node -p "process.arch")"
@@ -46,10 +47,10 @@ jobs:
           
           # Try multiple approaches to get the correct binary
           echo "Rebuilding lightningcss with explicit platform..."
-          yarn rebuild lightningcss --platform=linux --arch=x64 || echo "Rebuild failed, trying alternative approaches"
+          corepack yarn rebuild lightningcss --platform=linux --arch=x64 || echo "Rebuild failed, trying alternative approaches"
           
           echo "Direct installation of lightningcss..."
-          yarn add lightningcss@latest --platform=linux --arch=x64 --target_platform=linux --target_arch=x64 --target_libc=glibc
+          corepack yarn add lightningcss@latest --platform=linux --arch=x64 --target_platform=linux --target_arch=x64 --target_libc=glibc
           
           # Check if the binary exists after our attempts
           echo "Checking if binary exists now..."
@@ -63,11 +64,6 @@ jobs:
             echo "Found alternative binary, creating symlink"
             ln -sf "node_modules/lightningcss/lightningcss-linux-x64.node" "node_modules/lightningcss/lightningcss.linux-x64-gnu.node"
           fi
-
-      - name: Enable corepack
-        run: |
-          corepack enable
-          corepack yarn install
 
       - name: Run tests
         run: corepack yarn test --if-present
