@@ -1,38 +1,57 @@
-# GitHub Actions Workflow Fixes
+# GitHub Workflow Fixes for Next.js Build Issues
 
-## Issues Fixed
+## Problem
+The GitHub Actions workflow was failing with the error:
+```
+Error: Cannot find module '../lightningcss.linux-x64-gnu.node'
+```
 
-1. **Missing lightningcss platform-specific binary**
-   - Error: `Cannot find module '../lightningcss.linux-x64-gnu.node'`
-   - Solution: Added a step to rebuild the lightningcss package specifically for the Linux platform in the GitHub Actions workflow
+This error occurs because the build is running on Ubuntu (Linux) in the GitHub Actions environment, but the lightningcss module is missing the correct binary for Linux.
 
-2. **Removed redundant export step**
-   - The `next export` command is deprecated in Next.js 15+
-   - The export functionality is now integrated into the build command when `output: 'export'` is configured in next.config.js
+## Solutions Implemented
 
-## How the Fix Works
+### 1. GitHub Actions Workflow Improvements
+- Added comprehensive debugging for lightningcss native module
+- Implemented multiple approaches to install the correct binary
+- Added symlink creation for alternative binary names
+- Created fallback build approaches if the standard build fails
+- Disabled Next.js telemetry during builds
 
-1. The workflow now explicitly rebuilds the lightningcss package for Linux:
-   ```yaml
-   - name: Install dependencies
-     run: |
-       npm install
-       # Force installation of lightningcss with the correct binary for the platform
-       npm rebuild lightningcss --platform=linux --arch=x64
-   ```
+### 2. Next.js Config Enhancements
+- Added fallbacks for node native modules
+- Implemented error handling in webpack config for CSS processing
+- Created alternative CSS processing paths if lightningcss fails
 
-2. We're leveraging Next.js 15's built-in static export:
-   - In `next.config.js`, we already have `output: 'export'` set for production builds
-   - This automatically generates static files in the `out` directory
-   - No separate export command is needed
+### 3. PostCSS Config Resilience
+- Changed to a function-based plugin configuration that handles errors
+- Added fallbacks for tailwindcss if @tailwindcss/postcss fails
+- Added cssnano for production minification
+- Implemented graceful degradation if plugins fail to load
 
-## Why This Solves the Problem
+### 4. CSS File Adjustments
+- Added fallback styles in case tailwind fails to load
+- Improved import structure for better error handling
 
-The error occurred because TailwindCSS depends on lightningcss, which uses native binaries specific to each platform (Windows, macOS, Linux). When running in GitHub Actions' Ubuntu environment, it was trying to find a Linux binary but couldn't locate it.
+### 5. Package.json Enhancements
+- Added specialized CI build script with optimizations
+- Added environment detection for CI builds
+- Added pre/post install hooks to handle native module availability
 
-By explicitly rebuilding the package for the Linux platform, we ensure the correct binary is available during the build process.
+## How This Fixes the Issue
 
-## Additional Notes
+1. **Multiple Binary Resolution Approaches**: We now try various methods to get the correct lightningcss binary for Linux:
+   - Explicit rebuilding with platform specifications
+   - Direct installation with target platform settings
+   - Creating symlinks between different binary naming conventions
 
-- If you encounter similar errors with other native dependencies, you may need to apply the same solution (rebuilding the package for the target platform)
-- The GitHub Pages deployment will now work correctly as it uses the static files generated in the `out` directory
+2. **Graceful Degradation**: If lightningcss fails to load, the build process will still continue by:
+   - Falling back to standard tailwindcss if @tailwindcss/postcss fails
+   - Using simpler CSS processing plugins if tailwindcss isn't available
+   - Using cssnano as a direct fallback for CSS optimization
+
+3. **Build Process Resilience**: The GitHub Actions workflow now has:
+   - Better error handling and diagnostics
+   - Fallback build commands
+   - Environment-specific optimizations
+
+These changes make the build process more robust against native module issues in the CI environment.

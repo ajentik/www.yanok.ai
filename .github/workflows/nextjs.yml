@@ -37,8 +37,32 @@ jobs:
       - name: Install dependencies
         run: |
           npm install
-          # Force installation of lightningcss with the correct binary for the platform
-          npm rebuild lightningcss --platform=linux --arch=x64
+          
+          # Debug information for lightningcss
+          echo "Node architecture: $(node -p "process.arch")"
+          echo "Node platform: $(node -p "process.platform")"
+          echo "Looking for lightningcss binaries..."
+          find node_modules/lightningcss -name "*.node" || echo "No binary found"
+          
+          # Try multiple approaches to get the correct binary
+          echo "Rebuilding lightningcss with explicit platform..."
+          npm rebuild lightningcss --platform=linux --arch=x64 || echo "Rebuild failed, trying alternative approaches"
+          
+          echo "Direct installation of lightningcss..."
+          npm install lightningcss@latest --platform=linux --arch=x64 --target_platform=linux --target_arch=x64 --target_libc=glibc
+          
+          # Check if the binary exists after our attempts
+          echo "Checking if binary exists now..."
+          find node_modules/lightningcss -name "*.node" || echo "Still no binary found"
+          
+          # Create required symlinks if needed
+          echo "Setting up any needed symlinks..."
+          if [ -f "node_modules/lightningcss/lightningcss.linux-x64-gnu.node" ]; then
+            echo "Binary exists, proceeding with build"
+          elif [ -f "node_modules/lightningcss/lightningcss-linux-x64.node" ]; then
+            echo "Found alternative binary, creating symlink"
+            ln -sf "node_modules/lightningcss/lightningcss-linux-x64.node" "node_modules/lightningcss/lightningcss.linux-x64-gnu.node"
+          fi
 
       - name: Run tests
         run: npm run test --if-present
@@ -47,12 +71,16 @@ jobs:
         id: pages
         uses: actions/configure-pages@v4
       
-      - name: Build with Next.js (with increased memory)
+      - name: Build with Next.js
         run: |
-          export NODE_OPTIONS="--max_old_space_size=8192"
-          npm run build
+          echo "Node version: $(node -v)"
+          echo "NPM version: $(npm -v)"
+          echo "Starting build with CI optimizations..."
+          CI=true npm run build:ci || (echo "Standard build failed, trying fallback approach..." && CI=true NODE_OPTIONS="--max_old_space_size=8192" NEXT_DISABLE_OPTIMIZED_LOADING=true npm run build)
         env:
           NEXT_PUBLIC_BASE_PATH: ${{ steps.pages.outputs.base_path }}
+          # Skip telemetry during builds
+          NEXT_TELEMETRY_DISABLED: 1
 
       - name: Disable Jekyll
         run: touch out/.nojekyll

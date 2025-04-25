@@ -1,4 +1,4 @@
-import Layout from '@/components/Layout';
+i mport Layout from '@/components/Layout';
 
 export default function Page() {
   return (

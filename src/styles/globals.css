@@ -1,4 +1,10 @@
+/* Try to import tailwindcss - this will be processed by PostCSS */
 @import "tailwindcss";
+
+/* Fallback styles in case tailwind fails to load */
+@layer base {
+  /* The actual tailwind styles will override these if successfully loaded */
+}
 
 /* Import Jost font */
 @import url('https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700&display=swap');

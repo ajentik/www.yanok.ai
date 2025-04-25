@@ -5,10 +5,14 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "build:ci": "NODE_ENV=production NEXT_DISABLE_OPTIMIZED_LOADING=true node --max_old_space_size=8192 node_modules/.bin/next build",
+    "prebuild": "node -e \"if(process.env.CI) { console.log('CI environment detected, setting up fallbacks...') }\"",
     "export": "next export",
     "start": "next start",
     "lint": "next lint",
-    "test": "jest"
+    "test": "jest",
+    "preinstall": "node -e \"console.log('Checking environment...')\"",
+    "postinstall": "node -e \"if(process.env.CI) { console.log('CI environment detected, ensuring native modules...'); try { require('lightningcss'); } catch(e) { console.warn('lightningcss not available'); } }\""
   },
   "dependencies": {
     "js-yaml": "^4.1.0",

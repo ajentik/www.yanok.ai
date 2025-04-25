@@ -28,8 +28,53 @@ const nextConfig = {
     domains: ['www.yanok.ai'],
   },
 
-  // Customize webpack if needed
-  webpack: (config) => {
+  // Customize webpack with CSS processing fallbacks
+  webpack: (config, { isServer }) => {
+    // Add fallbacks for node native modules
+    if (!isServer) {
+      config.resolve.fallback = {
+        ...config.resolve.fallback,
+        fs: false,
+        path: false,
+      };
+    }
+    
+    // Handle native module errors - provide alternate CSS processing if lightningcss fails
+    config.module.rules.forEach((rule) => {
+      if (rule.oneOf) {
+        rule.oneOf.forEach((oneOfRule) => {
+          if (
+            oneOfRule.test &&
+            oneOfRule.test.toString().includes('css') &&
+            oneOfRule.use &&
+            Array.isArray(oneOfRule.use)
+          ) {
+            // Add error handling for CSS loaders
+            oneOfRule.use = oneOfRule.use.map((loader) => {
+              if (typeof loader === 'object' && loader.loader && loader.loader.includes('postcss-loader')) {
+                return {
+                  ...loader,
+                  options: {
+                    ...loader.options,
+                    postcssOptions: {
+                      ...loader.options?.postcssOptions,
+                      // Add a plugin that will work in CI even if lightningcss fails
+                      plugins: {
+                        ...loader.options?.postcssOptions?.plugins,
+                        // Use cssnano directly as a fallback
+                        'cssnano': {},
+                      }
+                    }
+                  }
+                };
+              }
+              return loader;
+            });
+          }
+        });
+      }
+    });
+
     return config;
   },
 
