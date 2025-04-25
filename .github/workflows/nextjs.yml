@@ -35,7 +35,10 @@ jobs:
           cache: 'npm'
 
       - name: Install dependencies
-        run: npm install
+        run: |
+          npm install
+          # Force installation of lightningcss with the correct binary for the platform
+          npm rebuild lightningcss --platform=linux --arch=x64
 
       - name: Run tests
         run: npm run test --if-present
@@ -50,9 +53,6 @@ jobs:
           npm run build
         env:
           NEXT_PUBLIC_BASE_PATH: ${{ steps.pages.outputs.base_path }}
-      
-      - name: Static HTML Export
-        run: npm run export || npx next export
 
       - name: Disable Jekyll
         run: touch out/.nojekyll
