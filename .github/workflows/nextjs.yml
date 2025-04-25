@@ -5,6 +5,9 @@ on:
   # Runs on pushes targeting the default branch
   push:
     branches: [master]
+  pull_request:
+    branches:
+      - '*'
   
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -63,8 +66,13 @@ jobs:
             ln -sf "node_modules/lightningcss/lightningcss-linux-x64.node" "node_modules/lightningcss/lightningcss.linux-x64-gnu.node"
           fi
 
+      - name: Enable corepack
+        run: |
+          corepack enable
+          corepack yarn install
+
       - name: Run tests
-        run: yarn test --if-present
+        run: corepack yarn test --if-present
 
       - name: Setup Pages
         id: pages
@@ -75,7 +83,7 @@ jobs:
           echo "Node version: $(node -v)"
           echo "Yarn version: $(yarn -v)"
           echo "Starting build with CI optimizations..."
-          CI=true yarn build:ci || (echo "Standard build failed, trying fallback approach..." && CI=true NODE_OPTIONS="--max_old_space_size=8192" NEXT_DISABLE_OPTIMIZED_LOADING=true yarn build)
+          CI=true corepack yarn build:ci || (echo "Standard build failed, trying fallback approach..." && CI=true NODE_OPTIONS="--max_old_space_size=8192" NEXT_DISABLE_OPTIMIZED_LOADING=true corepack yarn build)
         env:
           NEXT_PUBLIC_BASE_PATH: ${{ steps.pages.outputs.base_path }}
           # Skip telemetry during builds
