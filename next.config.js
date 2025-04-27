@@ -5,14 +5,22 @@ const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '';
 
 const nextConfig = {
   reactStrictMode: true,
-  // Enable SWC compiler
-  experimental: {
-    forceSwcTransforms: true,
-  },
+  swcMinify: true,
+  
   // Allow cross-origin requests in development
-  allowedDevOrigins: [
-    'http://192.168.50.235:3001'
-  ],
+  async headers() {
+    return [
+      {
+        source: '/(.*)',
+        headers: [
+          {
+            key: 'Access-Control-Allow-Origin',
+            value: '*',
+          },
+        ],
+      },
+    ];
+  },
 
   ...(isProduction ? {
     // Enable static HTML export for GitHub Pages
@@ -28,7 +36,7 @@ const nextConfig = {
     domains: ['www.yanok.ai'],
   },
 
-  // Customize webpack with CSS processing fallbacks
+  // Webpack configuration for node modules in browser
   webpack: (config, { isServer }) => {
     // Add fallbacks for node native modules
     if (!isServer) {
@@ -39,42 +47,6 @@ const nextConfig = {
       };
     }
     
-    // Handle native module errors - provide alternate CSS processing if lightningcss fails
-    config.module.rules.forEach((rule) => {
-      if (rule.oneOf) {
-        rule.oneOf.forEach((oneOfRule) => {
-          if (
-            oneOfRule.test &&
-            oneOfRule.test.toString().includes('css') &&
-            oneOfRule.use &&
-            Array.isArray(oneOfRule.use)
-          ) {
-            // Add error handling for CSS loaders
-            oneOfRule.use = oneOfRule.use.map((loader) => {
-              if (typeof loader === 'object' && loader.loader && loader.loader.includes('postcss-loader')) {
-                return {
-                  ...loader,
-                  options: {
-                    ...loader.options,
-                    postcssOptions: {
-                      ...loader.options?.postcssOptions,
-                      // Add a plugin that will work in CI even if lightningcss fails
-                      plugins: {
-                        ...loader.options?.postcssOptions?.plugins,
-                        // Use cssnano directly as a fallback
-                        'cssnano': {},
-                      }
-                    }
-                  }
-                };
-              }
-              return loader;
-            });
-          }
-        });
-      }
-    });
-
     return config;
   },
 
